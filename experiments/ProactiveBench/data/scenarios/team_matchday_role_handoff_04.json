@@ -1,0 +1,421 @@
+{
+  "scenario_id": "team_matchday_role_handoff_04",
+  "domain": "sports_team_operations",
+  "description": "Pre-game plans changed late, and assistant staff need to know which tactical notes, substitution plans, player restrictions, and last-minute instructions are still current on match day. All team names are fictional.",
+  "user_profile": {
+    "persona": "39-year-old match operations coordinator supporting a coaching staff under time pressure",
+    "context": "Several late adjustments were made verbally, and the staff now risks acting on outdated plans",
+    "communication_style": "Fast and operational, wants the current plan separated from discarded ideas"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "current_tactics",
+      "fact": "The current formation for the match against River Valley United is a 4-3-3."
+    },
+    {
+      "id": "F02",
+      "category": "current_tactics",
+      "fact": "The primary pressing trigger is any backward pass made by River Valley's central midfielders."
+    },
+    {
+      "id": "F03",
+      "category": "current_tactics",
+      "fact": "Kaelen Ross (#10) is instructed to play as a 'false nine', dropping deep to link with the midfield."
+    },
+    {
+      "id": "F04",
+      "category": "current_tactics",
+      "fact": "Full-backs are authorized to overlap only when the ball is securely in the opponent's final third."
+    },
+    {
+      "id": "F05",
+      "category": "discarded_tactics",
+      "fact": "DISCARDED PLAN: The initial 4-4-2 diamond formation has been scrapped due to opponent's wide threat."
+    },
+    {
+      "id": "F06",
+      "category": "discarded_tactics",
+      "fact": "DISCARDED PLAN: The man-to-man marking scheme for set pieces is no longer in effect; we have switched to zonal."
+    },
+    {
+      "id": "F07",
+      "category": "player_restrictions",
+      "fact": "Liam Jensen (#7) is on a strict 60-minute playing time limit as per Dr. Evans' final assessment."
+    },
+    {
+      "id": "F08",
+      "category": "player_restrictions",
+      "fact": "Ben Carter (#4) is one yellow card away from a suspension and must avoid unnecessary challenges."
+    },
+    {
+      "id": "F09",
+      "category": "player_restrictions",
+      "fact": "Goalkeeper Samira Khan (#1) is cleared to play but must only take goal kicks with her left foot due to a minor calf strain."
+    },
+    {
+      "id": "F10",
+      "category": "player_status",
+      "fact": "Marco Diaz (#11) passed his late fitness test at 11:00 AM and is confirmed for the starting lineup."
+    },
+    {
+      "id": "F11",
+      "category": "player_status",
+      "fact": "Aiden Chen (#18) reported a mild headache this morning but was cleared by medical staff at 12:15 PM."
+    },
+    {
+      "id": "F12",
+      "category": "current_substitutions",
+      "fact": "First planned substitution: At the 60-minute mark, Elias Vance (#22) will replace Liam Jensen (#7)."
+    },
+    {
+      "id": "F13",
+      "category": "current_substitutions",
+      "fact": "Second planned substitution: If we are trailing after 70 minutes, Noah Patel (#19), an attacker, will replace Ben Carter (#4), a defender."
+    },
+    {
+      "id": "F14",
+      "category": "current_substitutions",
+      "fact": "Third planned substitution is tactical and at the discretion of Head Coach Valerius, with a preference for subbing a midfielder."
+    },
+    {
+      "id": "F15",
+      "category": "discarded_substitutions",
+      "fact": "DISCARDED PLAN: The original plan to substitute Marco Diaz (#11) at halftime has been cancelled."
+    },
+    {
+      "id": "F16",
+      "category": "set_piece_assignments",
+      "fact": "CURRENT: Kaelen Ross (#10) will take all right-sided corner kicks."
+    },
+    {
+      "id": "F17",
+      "category": "set_piece_assignments",
+      "fact": "CURRENT: Maria Flores (#6) will take all left-sided corner kicks and direct free kicks within 30 yards."
+    },
+    {
+      "id": "F18",
+      "category": "set_piece_assignments",
+      "fact": "CURRENT: For defensive corners, our two tallest players, Ivan Petrov (#5) and Ben Carter (#4), will mark the 6-yard box."
+    },
+    {
+      "id": "F19",
+      "category": "set_piece_assignments",
+      "fact": "CURRENT: Marco Diaz (#11) is assigned to the top of the box for defensive corners to initiate counter-attacks."
+    },
+    {
+      "id": "F20",
+      "category": "set_piece_assignments",
+      "fact": "DISCARDED PLAN: Ivan Petrov (#5) is no longer the primary penalty kick taker; Kaelen Ross (#10) is now designated."
+    },
+    {
+      "id": "F21",
+      "category": "match_day_logistics",
+      "fact": "The team will wear the primary blue home kit. The alternate white kit must also be brought to the stadium."
+    },
+    {
+      "id": "F22",
+      "category": "match_day_logistics",
+      "fact": "Northwood FC is assigned to home locker room #A-101 at Oakwood Stadium."
+    },
+    {
+      "id": "F23",
+      "category": "match_day_logistics",
+      "fact": "On-field warm-up begins exactly at 6:45 PM, led by fitness coach Ramirez."
+    },
+    {
+      "id": "F24",
+      "category": "match_day_logistics",
+      "fact": "Post-game meal consists of grilled chicken, quinoa, and steamed vegetables, to be delivered to the locker room at 9:30 PM."
+    },
+    {
+      "id": "F25",
+      "category": "match_day_logistics",
+      "fact": "All match-worn GPS units must be returned to kit manager Leo Finch's station by 10:00 PM."
+    },
+    {
+      "id": "F26",
+      "category": "staff_communications",
+      "fact": "All real-time tactical adjustments during the match must be communicated via the #matchday-live Slack channel."
+    },
+    {
+      "id": "F27",
+      "category": "staff_communications",
+      "fact": "Head Coach Valerius has the final say on all in-game decisions; his verbal command overrides any pre-written plan."
+    },
+    {
+      "id": "F28",
+      "category": "staff_communications",
+      "fact": "The official, finalized team sheet was submitted to the league official by Manager Anya Sharma at 5:30 PM."
+    },
+    {
+      "id": "F29",
+      "category": "staff_communications",
+      "fact": "Any urgent medical issues must be reported directly to Dr. Evans on radio channel 3."
+    },
+    {
+      "id": "F30",
+      "category": "opponent_notes",
+      "fact": "River Valley's striker, #9 Jonas Schmidt, has scored 5 of his last 6 goals in the final 15 minutes of a match."
+    },
+    {
+      "id": "F31",
+      "category": "opponent_notes",
+      "fact": "River Valley's left-back, #3, is known for aggressive forward runs, creating space to counter-attack behind him."
+    },
+    {
+      "id": "F32",
+      "category": "last_minute_instructions",
+      "fact": "The pre-match team talk by Coach Valerius is scheduled for 6:15 PM in locker room #A-101."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the confirmed tactical formation for today, and which formation was discarded?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current vs Discarded Tactics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the specific instructions for the 4-3-3 formation regarding pressing, Kaelen Ross's role, and full-back movement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the formation, the user will need the specific tactical details associated with it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current vs Discarded Tactics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the final fitness status for Marco Diaz and Aiden Chen?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Player Fitness Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which players have specific restrictions or instructions I need to monitor during the match?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Player Restrictions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the specific substitution plan for Liam Jensen, who has a 60-minute limit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F12"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning about a player's minute restriction, the immediate operational question is how that restriction will be managed via substitution.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Specific Substitution Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are the second and third planned substitutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After discussing the first planned substitution, the user will want to know the rest of the substitution strategy.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "General Substitution Plans",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Was the original plan to substitute Marco Diaz at halftime cancelled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "To avoid confusion, after hearing the current substitution plans, the user will want to confirm which prior plans are now outdated.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "General Substitution Plans",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Who is assigned to take our attacking set pieces like corners and free kicks?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Set Piece Assignments",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the updated defensive set piece plan, specifically regarding marking and counter-attacks?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18",
+        "F19",
+        "F06"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After covering attacking set pieces, the user will likely want to confirm the defensive set piece setup.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Set Piece Assignments",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Is Ivan Petrov still the primary penalty kick taker?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: While discussing set pieces, the user might remember a previous instruction about penalty takers and want to confirm if it has also changed.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Penalty Taker Confirmation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What are the key notes on River Valley's striker and left-back?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30",
+        "F31"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After reviewing internal tactics, a natural next step is to review the key opponent threats that those tactics are designed to counter.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Opponent Notes",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Current vs Discarded Tactics",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Player Fitness Status",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Player Restrictions",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Specific Substitution Plan",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "General Substitution Plans",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Set Piece Assignments",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Penalty Taker Confirmation",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Opponent Notes",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "team_matchday_role_handoff_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

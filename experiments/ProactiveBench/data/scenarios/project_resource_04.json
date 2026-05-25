@@ -1,0 +1,421 @@
+{
+  "scenario_id": "project_resource_04",
+  "domain": "project_kickoff",
+  "description": "A lead designer is assigned to two high-priority projects simultaneously. Both projects have 'critical' milestones on the same week. They need to negotiate resource allocation and trade-offs between two different department heads.",
+  "user_profile": {
+    "persona": "29-year-old UI/UX Lead",
+    "context": "Feeling burned out and stuck between two 'Priority 1' demands",
+    "communication_style": "Assertive, data-driven regarding workload"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "projects",
+      "fact": "Project 'Orion' is a marketing campaign redesign for the 'Innovatech Pro' software suite."
+    },
+    {
+      "id": "F02",
+      "category": "projects",
+      "fact": "Project 'Phoenix' is the UI/UX development for a new 'AI-Assisted Analytics' feature."
+    },
+    {
+      "id": "F03",
+      "category": "projects",
+      "fact": "The internal project code for Project Orion is 'MKT-2024-003'."
+    },
+    {
+      "id": "F04",
+      "category": "projects",
+      "fact": "The internal project code for Project Phoenix is 'PRD-2024-011'."
+    },
+    {
+      "id": "F05",
+      "category": "team",
+      "fact": "Anya Sharma is the sole Lead UI/UX Designer assigned to both Project Orion and Project Phoenix."
+    },
+    {
+      "id": "F06",
+      "category": "team",
+      "fact": "Ben Carter, Head of Marketing, is the executive sponsor for Project Orion."
+    },
+    {
+      "id": "F07",
+      "category": "team",
+      "fact": "Maria Flores, Head of Product Development, is the executive sponsor for Project Phoenix."
+    },
+    {
+      "id": "F08",
+      "category": "team",
+      "fact": "Anya Sharma's direct manager is David Chen, Director of Design."
+    },
+    {
+      "id": "F09",
+      "category": "team",
+      "fact": "Ben Carter's office is located at Desk 4A-11."
+    },
+    {
+      "id": "F10",
+      "category": "team",
+      "fact": "Maria Flores's primary contact email is m.flores@innovatech-solutions. fictional."
+    },
+    {
+      "id": "F11",
+      "category": "process",
+      "fact": "Project Orion's 'Final Design Approval' milestone is due on October 23, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "process",
+      "fact": "Project Phoenix's 'User-Ready Prototype' milestone is due on October 25, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "process",
+      "fact": "A negotiation meeting between Anya Sharma, Ben Carter, and Maria Flores is scheduled for October 14, 2024, at 10:00 AM PST."
+    },
+    {
+      "id": "F14",
+      "category": "process",
+      "fact": "The meeting will take place in conference room 'Delta-7'."
+    },
+    {
+      "id": "F15",
+      "category": "process",
+      "fact": "All design work requires a final sign-off from the respective project's executive sponsor via Jira."
+    },
+    {
+      "id": "F16",
+      "category": "workload",
+      "fact": "Anya Sharma's estimated workload for Project Orion's final milestone is 28 hours."
+    },
+    {
+      "id": "F17",
+      "category": "workload",
+      "fact": "Anya Sharma's estimated workload for Project Phoenix's final milestone is 35 hours."
+    },
+    {
+      "id": "F18",
+      "category": "workload",
+      "fact": "The total estimated design work for Anya Sharma for the week of October 21, 2024, is 63 hours."
+    },
+    {
+      "id": "F19",
+      "category": "workload",
+      "fact": "Anya Sharma's standard contracted work week is 40 hours."
+    },
+    {
+      "id": "F20",
+      "category": "workload",
+      "fact": "Over the past 8 weeks, Anya Sharma has logged an average of 52 hours per week in the company's time-tracking system."
+    },
+    {
+      "id": "F21",
+      "category": "tooling",
+      "fact": "Project Orion tasks are tracked on the Jira board at https://innovatech.atlassian.net/browse/MKT."
+    },
+    {
+      "id": "F22",
+      "category": "tooling",
+      "fact": "Project Phoenix tasks are tracked on the Jira board at https://innovatech.atlassian.net/browse/PRD."
+    },
+    {
+      "id": "F23",
+      "category": "tooling",
+      "fact": "The primary design tool used for both projects is Figma."
+    },
+    {
+      "id": "F24",
+      "category": "tooling",
+      "fact": "The Slack channel for Project Orion is #proj-orion-2024."
+    },
+    {
+      "id": "F25",
+      "category": "tooling",
+      "fact": "The Slack channel for Project Phoenix is #proj-phoenix-feature."
+    },
+    {
+      "id": "F26",
+      "category": "docs",
+      "fact": "Project Orion's design brief is located in Confluence at page ID 781192."
+    },
+    {
+      "id": "F27",
+      "category": "docs",
+      "fact": "Project Phoenix's product requirements document (PRD) is located in Confluence at page ID 803451."
+    },
+    {
+      "id": "F28",
+      "category": "infra",
+      "fact": "All approved design assets for Project Orion must be uploaded to the asset server at '//NAS-01/Marketing/Orion/FinalAssets'."
+    },
+    {
+      "id": "F29",
+      "category": "infra",
+      "fact": "The Figma file for Project Phoenix's interactive prototype is named 'Phoenix_AI_Prototype_v4.2.fig'."
+    },
+    {
+      "id": "F30",
+      "category": "infra",
+      "fact": "The Git repository for Project Phoenix's front-end components is git@github.com:innovatech/phoenix-ui.git."
+    },
+    {
+      "id": "F31",
+      "category": "personal",
+      "fact": "Anya Sharma's employee ID is 86753."
+    },
+    {
+      "id": "F32",
+      "category": "personal",
+      "fact": "Anya Sharma has not taken a vacation longer than two consecutive days in the last 11 months."
+    },
+    {
+      "id": "F33",
+      "category": "projects",
+      "fact": "Project Orion has a budget allocation of $75,000 for external marketing assets."
+    },
+    {
+      "id": "F34",
+      "category": "projects",
+      "fact": "Project Phoenix is classified as 'Priority 1' by the C-suite due to competitive pressure."
+    },
+    {
+      "id": "F35",
+      "category": "projects",
+      "fact": "Project Orion is classified as 'Priority 1' by the C-suite for the Q4 revenue goals."
+    },
+    {
+      "id": "F36",
+      "category": "personal",
+      "fact": "The lead designer described in this scenario is Anya Sharma."
+    },
+    {
+      "id": "F37",
+      "category": "process",
+      "fact": "For cross-department priority conflicts involving both project sponsors, Anya Sharma is expected to keep her direct manager, David Chen, informed."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my total estimated design workload for the week of October 21, 2024, and what is my standard contracted work week?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Workload Summary",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What have my average logged hours been per week over the last 8 weeks?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up: After seeing the immediate workload crisis, the user would want historical data to show a pattern of overwork.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Workload Summary",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the due dates for the 'Final Design Approval' for Project Orion and the 'User-Ready Prototype' for Project Phoenix?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Project Conflict Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the estimated hour breakdown for the final milestones of Project Orion and Project Phoenix?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group follow-up: After confirming the conflicting deadlines, the next logical step is to quantify the work required for each.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Project Conflict Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Who are the executive sponsors for Project Orion and Project Phoenix?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Stakeholder & Meeting Info",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Is there already a negotiation meeting scheduled with Ben Carter and Maria Flores, and if so what are the date, time, and location?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group follow-up: Once the key stakeholders are identified, a natural next step is to check whether a negotiation meeting with them is already on the calendar and, if so, confirm the logistics.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Stakeholder & Meeting Info",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the C-suite priority classifications for Project Phoenix and Project Orion?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F34",
+        "F35"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After quantifying the work for both projects, a data-driven user will want to know their official business priority to understand the negotiation landscape.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Project Justification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Have I taken any vacation longer than two consecutive days in the last 11 months?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After reviewing recent average overtime, a burned-out user may next check whether they have had any meaningful time off recently.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Personal Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Who should I keep in the loop from my own leadership chain on this conflict?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08",
+        "F36",
+        "F37"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying the executive sponsors they need to negotiate with, a user may next ask who from their own leadership chain should be kept informed.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Supporting Info",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What are the internal project codes for Project Orion and Project Phoenix, and which code should I use to tag each project in Jira, email, or meeting notes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the negotiation meeting logistics, a practical next step is to ask which internal project codes should be used to tag each project in Jira, email, or meeting notes during coordination and follow-up.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Project Identifiers",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Workload Summary",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Project Conflict Details",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Stakeholder & Meeting Info",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Project Justification",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Personal Context",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Supporting Info",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Project Identifiers",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "project_resource_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

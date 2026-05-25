@@ -1,0 +1,419 @@
+{
+  "scenario_id": "onboard_evolution_05",
+  "domain": "employee_onboarding",
+  "description": "A management trainee enters a 2-year rotational program. They need to track learnings from one department (Sales) and proactively apply them to the next (Operations), while maintaining a long-term professional development log and mentor feedback loop.",
+  "user_profile": {
+    "persona": "24-year-old high-achiever, ambitious",
+    "context": "End of the first 6-month rotation, preparing for the transition to a new department",
+    "communication_style": "Reflective, focuses on long-term growth and cross-functional synergy"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "HR",
+      "fact": "Management Trainee Alex Chen's 2-year rotational program at Innovate Solutions Inc. started on July 1, 2023."
+    },
+    {
+      "id": "F02",
+      "category": "HR",
+      "fact": "Alex Chen's first 6-month rotation in the Sales department concludes on December 29, 2023."
+    },
+    {
+      "id": "F03",
+      "category": "HR",
+      "fact": "The second rotation in the Operations department is scheduled to begin on January 8, 2024."
+    },
+    {
+      "id": "F04",
+      "category": "team",
+      "fact": "Alex Chen's mentor in the Sales department is Sarah Jenkins, Senior Account Executive."
+    },
+    {
+      "id": "F05",
+      "category": "team",
+      "fact": "Alex Chen's new manager for the Operations rotation will be David Rodriguez, Director of Logistics."
+    },
+    {
+      "id": "F06",
+      "category": "professional_development",
+      "fact": "The final performance review for the Sales rotation is scheduled with Sarah Jenkins for December 28, 2023, at 2:00 PM PST."
+    },
+    {
+      "id": "F07",
+      "category": "professional_development",
+      "fact": "Alex Chen uses the 'GrowthTrack' platform, accessible at https://growthtrack.innovatesolutions.net, to log professional development activities."
+    },
+    {
+      "id": "F08",
+      "category": "professional_development",
+      "fact": "A key learning documented by Alex on December 15, 2023, was that a 10% price reduction on the 'Zenith' software bundle increased lead conversion by 18% in Q4."
+    },
+    {
+      "id": "F09",
+      "category": "professional_development",
+      "fact": "Alex's pre-rotation goal for Operations is to analyze the impact of the 'Zenith' price reduction on supply chain fulfillment times."
+    },
+    {
+      "id": "F10",
+      "category": "IT",
+      "fact": "Alex Chen's employee ID is 78451."
+    },
+    {
+      "id": "F11",
+      "category": "IT",
+      "fact": "Alex's corporate email address is achen@innovatesolutions.net."
+    },
+    {
+      "id": "F12",
+      "category": "IT",
+      "fact": "Access to the Salesforce CRM (ID: achen-sales) will be revoked on January 5, 2024, at 5:00 PM PST."
+    },
+    {
+      "id": "F13",
+      "category": "IT",
+      "fact": "A new Jira license (ID: achen-ops) for tracking operational tasks will be provisioned for Alex Chen by January 8, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "IT",
+      "fact": "The IT helpdesk can be reached by creating a ticket at https://help.innovatesolutions.net or calling extension 4357."
+    },
+    {
+      "id": "F15",
+      "category": "logistics",
+      "fact": "Alex's current workstation in the Sales department is on the 14th floor, desk 14-B12."
+    },
+    {
+      "id": "F16",
+      "category": "logistics",
+      "fact": "Alex's new workstation in the Operations department will be on the 11th floor, desk 11-D04."
+    },
+    {
+      "id": "F17",
+      "category": "logistics",
+      "fact": "Alex must return the Sales-issued Dell Latitude 7420 laptop to IT asset management in room 3B-105 by December 29, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "team",
+      "fact": "The weekly Sales team stand-up meeting occurs every Monday at 9:00 AM PST in conference room 14A, 'Everest'."
+    },
+    {
+      "id": "F19",
+      "category": "team",
+      "fact": "The introductory meeting with the Operations team and David Rodriguez is scheduled for January 8, 2024, at 10:00 AM PST."
+    },
+    {
+      "id": "F20",
+      "category": "professional_development",
+      "fact": "Alex received written feedback from Sarah Jenkins on November 30, 2023, praising presentation skills but suggesting improvement in data forecasting accuracy."
+    },
+    {
+      "id": "F21",
+      "category": "HR",
+      "fact": "The HR contact for the 'Innovate Leaders Rotational Program' is Maria Garcia, reachable at mgarcia@innovatesolutions.net."
+    },
+    {
+      "id": "F22",
+      "category": "IT",
+      "fact": "Alex's primary project in Sales involved tracking Q4 leads for 'Project Zenith' using Salesforce."
+    },
+    {
+      "id": "F23",
+      "category": "team",
+      "fact": "The Operations team's primary communication channel is the #ops-logistics Slack channel."
+    },
+    {
+      "id": "F24",
+      "category": "professional_development",
+      "fact": "Alex has completed 3 of the 12 required professional development courses, with the last one being 'Advanced Negotiation Tactics' on October 18, 2023."
+    },
+    {
+      "id": "F25",
+      "category": "office",
+      "fact": "The Innovate Tower building access badge (ID: 78451) will automatically update floor permissions from 14 to 11 on January 8, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "culture",
+      "fact": "The annual company-wide holiday party is on December 21, 2023, at the Grand Sheraton Hotel from 7:00 PM to 11:00 PM."
+    },
+    {
+      "id": "F27",
+      "category": "IT",
+      "fact": "The shared network drive for the Sales department is located at \\\\corpnet\\shares\\Sales\\Q4_2023."
+    },
+    {
+      "id": "F28",
+      "category": "IT",
+      "fact": "The shared network drive for the Operations department is located at \\\\corpnet\\shares\\Operations\\Logistics."
+    },
+    {
+      "id": "F29",
+      "category": "team",
+      "fact": "Alex's main contribution to 'Project Zenith' was the creation of a competitive analysis report, saved as 'Zenith_Comp_Analysis_v3.pptx' in the project folder."
+    },
+    {
+      "id": "F30",
+      "category": "professional_development",
+      "fact": "In GrowthTrack, mentor feedback from a rotation is logged under the 'Development Log' section as a new 'Mentor Check-in' entry."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "When and with whom is my final performance review for the Sales rotation scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Sales Rotation Wrap-up",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Can you remind me what written feedback I received from my Sales mentor in our last check-in so I can prepare for the final review?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the final review meeting, the user will likely want to gather and review prior feedback to prepare.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Sales Rotation Wrap-up",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was the specific data point I documented about the Zenith software price reduction's impact on lead conversion?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Key Learnings Transfer",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is my pre-rotation goal for the Operations department that builds on this Zenith learning?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After recalling a key learning, the user's next logical thought is how they planned to apply it in their next role.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Key Learnings Transfer",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Who is my incoming Operations manager, and when is my introductory meeting with them so I can prepare for the transition?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Operations Onboarding",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the primary communication channel for the Operations team?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Knowing about the first team meeting prompts a need to know how the team communicates day-to-day. This is an auditable proactive target.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "New Team Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Where is my new desk in Operations and where was my old desk in Sales?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Logistics and Asset Transition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What do I need to do with my Sales-issued laptop and by what date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Discussing the physical desk move naturally leads to questions about other physical assets that need to be transitioned, like the laptop.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Logistics and Asset Transition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What are the dates for my Salesforce access revocation and new Jira license provisioning?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Logistics and Asset Transition",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N10",
+      "description": "Which section of GrowthTrack should I use to log mentor feedback from this rotation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F30"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "After reviewing prior feedback, the user may want to capture or organize it in the company's professional development platform.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Professional Development Platform",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is the main HR contact for the rotational program?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Program Administration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "How many professional development courses have I completed out of the required total?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: Accessing the professional development platform (GrowthTrack) would naturally lead to checking progress on mandatory training requirements.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Coursework Progress",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Sales Rotation Wrap-up",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Key Learnings Transfer",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Operations Onboarding",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "New Team Communication",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Logistics and Asset Transition",
+      "member_need_ids": [
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Professional Development Platform",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Program Administration",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Coursework Progress",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "onboard_evolution_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

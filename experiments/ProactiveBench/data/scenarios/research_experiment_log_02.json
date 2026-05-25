@@ -1,0 +1,373 @@
+{
+  "scenario_id": "research_experiment_log_02",
+  "domain": "research_management",
+  "description": "A lab member keeps rerunning similar experiments and needs a reliable way to remember which parameter changes were already tested, which failed, and which conditions still remain unexplored.",
+  "user_profile": {
+    "persona": "28-year-old experimental researcher working on an iterative project",
+    "context": "The project is moving fast enough that failed branches are starting to repeat unintentionally",
+    "communication_style": "Technical and iterative, values a clean record of what not to retry"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Project Details",
+      "fact": "The official name of the research project is 'Project Chimera'."
+    },
+    {
+      "id": "F02",
+      "category": "Team & Personnel",
+      "fact": "Dr. Aris Thorne is the primary experimental researcher assigned to Project Chimera."
+    },
+    {
+      "id": "F03",
+      "category": "Project Details",
+      "fact": "The primary objective of Project Chimera is to map cellular adhesion profiles under variable shear stress conditions."
+    },
+    {
+      "id": "F04",
+      "category": "Software & Systems",
+      "fact": "All experimental parameters and results are mandated to be logged in the 'LabLogix' electronic lab notebook system."
+    },
+    {
+      "id": "F05",
+      "category": "Software & Systems",
+      "fact": "The access URL for the LabLogix system is https://lablogix.bmil.institute."
+    },
+    {
+      "id": "F06",
+      "category": "Software & Systems",
+      "fact": "Dr. Aris Thorne's username for LabLogix is 'athorne'."
+    },
+    {
+      "id": "F07",
+      "category": "Experimental Parameters",
+      "fact": "The three substrate coatings being tested are Fibronectin (FN), Collagen Type I (C1), and Laminin (LN)."
+    },
+    {
+      "id": "F08",
+      "category": "Experimental Parameters",
+      "fact": "The specific shear stress levels being investigated are 5, 10, 15, and 20 dyn/cm²."
+    },
+    {
+      "id": "F09",
+      "category": "Experimental Parameters",
+      "fact": "The two cell types used in the assays are HUVEC-C (Lot #H4882-03B) and MSC-TERT (Lot #M9101-11A)."
+    },
+    {
+      "id": "F10",
+      "category": "Results & History",
+      "fact": "Experiment ID 'EXP-CHM-087', run on 2023-10-11, failed due to complete HUVEC-C cell detachment on a Fibronectin substrate at 20 dyn/cm²."
+    },
+    {
+      "id": "F11",
+      "category": "Results & History",
+      "fact": "The failure of EXP-CHM-087 was tagged in LabLogix with '#detachment_failure' to prevent re-running this condition."
+    },
+    {
+      "id": "F12",
+      "category": "Results & History",
+      "fact": "Experiment ID 'EXP-CHM-102', run on 2023-10-18, showed optimal MSC-TERT adhesion on a Collagen Type I substrate at 5 dyn/cm² after a 24-hour incubation."
+    },
+    {
+      "id": "F13",
+      "category": "Results & History",
+      "fact": "A search in LabLogix on 2023-11-01 confirms that the combination of Laminin substrate with MSC-TERT cells at any shear stress level remains unexplored."
+    },
+    {
+      "id": "F14",
+      "category": "Results & History",
+      "fact": "As of 2023-11-01, no experiments have been conducted using a 48-hour incubation period for any parameter set."
+    },
+    {
+      "id": "F15",
+      "category": "Protocols & Procedures",
+      "fact": "The standard operating procedure for the 'Cellular Adhesion Assay under Shear Stress' is documented in file CAA-SOP-004b.pdf."
+    },
+    {
+      "id": "F16",
+      "category": "Protocols & Procedures",
+      "fact": "The CAA-SOP-004b.pdf is stored on the lab server at '//bmil-server/protocols/active/CAA-SOP-004b.pdf'."
+    },
+    {
+      "id": "F17",
+      "category": "Data Management",
+      "fact": "Raw image files must follow the naming convention: YYYYMMDD_EXP-ID_CellType-Substrate-Shear_Replicate#.tiff."
+    },
+    {
+      "id": "F18",
+      "category": "Data Management",
+      "fact": "The analysis scripts for Project Chimera are version-controlled in a Git repository at 'git@git.bmil.institute:chimera/analysis.git'."
+    },
+    {
+      "id": "F19",
+      "category": "Lab Resources",
+      "fact": "The Ibidi Pump System 3, serial number IB-PS3-9440B, is the designated equipment for applying shear stress."
+    },
+    {
+      "id": "F20",
+      "category": "Lab Resources",
+      "fact": "The Ibidi Pump System 3 is permanently located at the workstation on Wet Lab Bench 4."
+    },
+    {
+      "id": "F21",
+      "category": "Team & Personnel",
+      "fact": "The Principal Investigator overseeing Project Chimera is Dr. Lena Petrova."
+    },
+    {
+      "id": "F22",
+      "category": "Team & Personnel",
+      "fact": "Kenji Tanaka is the Lab Manager and the point of contact for ordering consumables; his email is ktanaka@bmil.institute."
+    },
+    {
+      "id": "F23",
+      "category": "Team & Personnel",
+      "fact": "For IT support specifically related to the LabLogix system, the designated contact email is support-lablogix@bmil.institute."
+    },
+    {
+      "id": "F24",
+      "category": "Communication",
+      "fact": "The dedicated Slack channel for all informal, daily discussions related to Project Chimera is #proj-chimera."
+    },
+    {
+      "id": "F25",
+      "category": "Communication",
+      "fact": "The weekly Project Chimera progress meeting is held every Friday at 10:00 AM Eastern Time via Zoom link https://bmil.zoom.us/j/9876543210."
+    },
+    {
+      "id": "F26",
+      "category": "Protocol Access",
+      "fact": "The current SOP to consult for the Cellular Adhesion Assay under Shear Stress is `CAA-SOP-004b.pdf`, stored at `//bmil-server/protocols/active/CAA-SOP-004b.pdf`."
+    },
+    {
+      "id": "F27",
+      "category": "Data Management",
+      "fact": "For Project Chimera, raw image files must be named using the pattern `YYYYMMDD_EXP-ID_CellType-Substrate-Shear_Replicate#.tiff`."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What were the exact parameters for the HUVEC-C experiment that failed due to complete cell detachment at a high shear stress?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Recall a specific failure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How was the failure of experiment EXP-CHM-087 tagged in LabLogix to prevent it from being re-run?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After recalling the details of a specific failure, the user's immediate next concern is how that failure is recorded to prevent it from happening again.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Recall a specific failure",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "According to the LabLogix search, what combination of substrate and cell type remains completely unexplored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming how to avoid a past failure, the user's focus shifts to future work, specifically identifying what experimental conditions have not yet been tested.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Find unexplored territory",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Have any experiments been conducted using a 48-hour incubation period for any parameter set?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After identifying an unexplored combination of core parameters (substrate/cell), the user drills down to check for other unexplored variables like incubation time.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Find unexplored territory",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the current SOP file I should consult for the 'Cellular Adhesion Assay under Shear Stress'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Access the protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Where on the lab server is the current SOP file CAA-SOP-004b.pdf stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the current SOP filename is identified, the immediate next step is to retrieve it from the lab server.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Access the protocol",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Which system is Project Chimera supposed to use to log experimental parameters and mark failed conditions so they are not repeated?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04",
+        "F11"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After checking which conditions remain unexplored, a natural next step is to ask how tested and failed branches are systematically logged so redundant reruns can be avoided.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Track tested conditions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the LabLogix access URL and Dr. Aris Thorne's username for that logging system?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Once the user identifies LabLogix as the required system for tracking tried conditions, the immediate follow-up is how to access it.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Access the logging system",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What were the conditions for the successful MSC-TERT adhesion experiment that was run on October 18th, 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "General project lookup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "If I cannot access LabLogix, what is the designated IT support contact email?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "General project lookup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Who is the Principal Investigator overseeing Project Chimera?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "General project lookup",
+      "reveal_priority": 3
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Recall a specific failure",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Find unexplored territory",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Access the protocol",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Track tested conditions",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Access the logging system",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "General project lookup",
+      "member_need_ids": [
+        "N9",
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "research_experiment_log_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

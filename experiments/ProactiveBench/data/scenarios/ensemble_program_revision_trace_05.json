@@ -1,0 +1,366 @@
+{
+  "scenario_id": "ensemble_program_revision_trace_05",
+  "domain": "music_ensemble_management",
+  "description": "The concert program changed several times, and the team now needs to know which bowings, rehearsal notes, printed materials, and announcements still reflect outdated repertoire or order. All concerts and pieces are fictional.",
+  "user_profile": {
+    "persona": "37-year-old production coordinator responsible for aligning artistic and operational materials",
+    "context": "The final program is now set, but too many supporting materials were created under older versions of the plan",
+    "communication_style": "Version-aware and tidy, wants outdated materials identified before they cause embarrassment"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Concert_Program",
+      "fact": "The final, approved program for the 'Winter Solstice Gala' is version 3.0, documented in 'Gala_Program_v3_FINAL.pdf' and dated November 28, 2023."
+    },
+    {
+      "id": "F02",
+      "category": "Concert_Program",
+      "fact": "The final repertoire order for the 'Winter Solstice Gala' is: 1. Haydn - String Quartet Op. 76, No. 3 'Emperor', 2. Vance - 'Nocturne for a Fading Star', 3. Beethoven - String Quartet No. 14, Op. 131."
+    },
+    {
+      "id": "F03",
+      "category": "Concert_Program",
+      "fact": "Philip Glass's String Quartet No. 3 'Mishima' was part of the initial program (v1.0) but was removed on November 15, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "Concert_Program",
+      "fact": "Mozart's 'Dissonance' Quartet was removed from the program in the final v3.0 revision, having been the opening piece in v1.0 and the closing piece in v2.0."
+    },
+    {
+      "id": "F05",
+      "category": "Printed_Materials",
+      "fact": "A batch of 250 concert posters printed on November 10, 2023, by 'VividPrint Inc.' under order #784A, incorrectly lists the Mozart and Glass quartets."
+    },
+    {
+      "id": "F06",
+      "category": "Printed_Materials",
+      "fact": "The draft program booklet file 'program_notes_v2.docx' contains 450 words of analysis for the now-removed Mozart quartet."
+    },
+    {
+      "id": "F07",
+      "category": "Printed_Materials",
+      "fact": "The graphic designer, Javier Rios, must be instructed to discard the design assets located in the '//server/ASQ/Designs/Gala_v1' folder."
+    },
+    {
+      "id": "F08",
+      "category": "Printed_Materials",
+      "fact": "The final, approved program notes are in the file 'Gala_Notes_v3_FINAL.docx', which was emailed to the printer on November 30, 2023 at 9:15 AM."
+    },
+    {
+      "id": "F09",
+      "category": "Digital_Assets",
+      "fact": "The event page on the Aethelred String Quartet website was updated with the v3.0 program on November 29, 2023, by webmaster Anya Sharma."
+    },
+    {
+      "id": "F10",
+      "category": "Digital_Assets",
+      "fact": "A Facebook event post from November 8, 2023, still has the original program description mentioning 'a journey from Mozart to Glass'."
+    },
+    {
+      "id": "F11",
+      "category": "Digital_Assets",
+      "fact": "The internal production schedule on Google Sheets, 'Gala_RunOfShow_v1', allocates a 25-minute performance slot for the Philip Glass piece."
+    },
+    {
+      "id": "F12",
+      "category": "Digital_Assets",
+      "fact": "The audio engineer's input list, 'Gala_Audio_Plan_v2.pdf', has microphone placement notes for the Glass quartet, which required a different stage plot."
+    },
+    {
+      "id": "F13",
+      "category": "Musical_Scores",
+      "fact": "The first violinist, Liam Chen, has a score of Beethoven's Op. 131 with bowings marked for an opening performance, which reflects the outdated v2.0 program."
+    },
+    {
+      "id": "F14",
+      "category": "Musical_Scores",
+      "fact": "The official bowing master copy for the final program is located at '//server/ASQ/Scores/2023_Season/WinterGala/Bowings_MASTER_v3.pdf'."
+    },
+    {
+      "id": "F15",
+      "category": "Musical_Scores",
+      "fact": "All physical parts for the Mozart 'Dissonance' Quartet are still in the active rehearsal folders in Rehearsal Room B."
+    },
+    {
+      "id": "F16",
+      "category": "Musical_Scores",
+      "fact": "The violist, Kenji Tanaka, reported on December 1st that his printed part for the Haydn quartet has handwritten notes pertaining to the Mozart transition from v2.0."
+    },
+    {
+      "id": "F17",
+      "category": "Rehearsal_Logistics",
+      "fact": "Rehearsal notes from November 6-10, 2023, logged in the 'rehearsal_log.txt' file, are now obsolete as they primarily concern the Glass quartet."
+    },
+    {
+      "id": "F18",
+      "category": "Rehearsal_Logistics",
+      "fact": "The stage manager's lighting cue sheet ('Gala_Lighting_v1.xls') is based on the original program order with Mozart as the opener."
+    },
+    {
+      "id": "F19",
+      "category": "Rehearsal_Logistics",
+      "fact": "The rehearsal scheduled for December 18, 2023, at 10:00 AM is still labeled 'Beethoven Opener Practice' in the shared ensemble calendar."
+    },
+    {
+      "id": "F20",
+      "category": "Personnel_Communication",
+      "fact": "An email sent to the donor list on November 12, 2023, with the subject 'A Special Winter Gala Preview', highlighted the now-removed Mozart quartet."
+    },
+    {
+      "id": "F21",
+      "category": "Personnel_Communication",
+      "fact": "The Slack channel '#winter-gala-prod' has a pinned message from November 14, 2023, with a link to the outdated 'Gala_Program_v1.pdf' document."
+    },
+    {
+      "id": "F22",
+      "category": "Personnel_Communication",
+      "fact": "Production Coordinator Elara Vance's master version-tracking document is named 'Gala_Version_Control_Log.xlsx' and is stored on the shared drive."
+    },
+    {
+      "id": "F23",
+      "category": "Announcements",
+      "fact": "The pre-concert radio spot script, approved on November 20, 2023, for broadcast on station WQXR 96.3, mistakenly announces the Beethoven quartet as the concert opener."
+    },
+    {
+      "id": "F24",
+      "category": "Announcements",
+      "fact": "The Artistic Director, Dr. Aris Thorne, is scheduled to give a pre-concert talk; his notes, received on November 22, 2023, still reference the Mozart piece."
+    },
+    {
+      "id": "F25",
+      "category": "Announcements",
+      "fact": "The copy for the lobby signage, sent to the venue on November 21, 2023, reflects program v2.0, listing Beethoven, Vance, and Mozart in that order."
+    },
+    {
+      "id": "F26",
+      "category": "Concert_Program",
+      "fact": "The total runtime for the final program (v3.0) is estimated at 85 minutes, including a 15-minute intermission, which is 10 minutes shorter than the v1.0 plan."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the final, approved program version and repertoire order for the 'Winter Solstice Gala'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Final Program Definition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which specific pieces were removed from the program during revisions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the final program, the user will want to know which pieces to specifically look for in outdated materials.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Final Program Definition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which specific outdated materials are explicitly identified: the printed concert posters and the draft program booklet file?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Outdated Printed Materials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which two internal digital production documents still contain details for the removed Philip Glass piece?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Internal Production Documents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which internal communication channel has a pinned link to the outdated 'Gala_Program_v1.pdf'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Once the user identifies outdated internal production files, they will likely want to check internal communication channels for similar errors.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Internal Production Documents",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Which public-facing digital asset still mentions 'a journey from Mozart to Glass'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discovering errors in internal digital documents would prompt a user to immediately check for similar, more embarrassing errors in public-facing assets.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Public-Facing Digital Assets",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Which two musicians are explicitly identified as having outdated scores or parts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Musician Scores and Parts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Where can I find the master copies of the final bowings and program notes to distribute correct versions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08",
+        "F14"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After identifying errors in musicians' parts, the user's next logical step is to locate the correct master copies to fix the issues.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Musician Scores and Parts",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Which public announcements, scripts, or signage contain incorrect program details?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Finding an error on a public website (digital asset) would naturally lead the user to check other forms of public communication like radio spots and signage.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Public Announcements and Signage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Which two rehearsal logistics items are explicitly identified as outdated: the lighting cue sheet and the shared calendar event?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After finding errors in core production documents like schedules, a tidy coordinator would think to check ancillary logistics like lighting and calendar entries.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Rehearsal Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Final Program Definition",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Outdated Printed Materials",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Internal Production Documents",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Public-Facing Digital Assets",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Musician Scores and Parts",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Public Announcements and Signage",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Rehearsal Logistics",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "ensemble_program_revision_trace_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "scenario_id": "trouble_cloud_outage_03",
+  "domain": "troubleshooting",
+  "description": "An SRE (Site Reliability Engineer) faces a production outage. Conflict: The logs suggest a database timeout, but the DB dashboard shows low load. The conflict lies in a hidden network latency issue in the cloud provider's regional zone.",
+  "user_profile": {
+    "persona": "32-year-old Senior SRE",
+    "context": "Production is down, high-pressure situation",
+    "communication_style": "Concise, data-heavy, focused on Root Cause Analysis"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Incident Details",
+      "fact": "Incident QLA-INC-20240523-001 was declared on May 23, 2024, at 14:02 UTC."
+    },
+    {
+      "id": "F02",
+      "category": "Incident Details",
+      "fact": "The incident was classified as Severity-1 (SEV-1), indicating a critical production outage affecting external customers."
+    },
+    {
+      "id": "F03",
+      "category": "Incident Details",
+      "fact": "The 'QuantumLeap Analytics' user dashboard and data ingestion API (api.quantumleap.io) are returning HTTP 503 Service Unavailable errors."
+    },
+    {
+      "id": "F04",
+      "category": "Incident Details",
+      "fact": "The first alert was triggered by the Prometheus monitoring system with the message: 'HighErrorRate: Job core-processor-svc has a 5xx error rate > 80%'."
+    },
+    {
+      "id": "F05",
+      "category": "Personnel & Communication",
+      "fact": "The designated Incident Commander is Maya Singh, Director of Engineering."
+    },
+    {
+      "id": "F06",
+      "category": "Personnel & Communication",
+      "fact": "The primary on-call Site Reliability Engineer responding to the incident is Alex Chen."
+    },
+    {
+      "id": "F07",
+      "category": "Personnel & Communication",
+      "fact": "The primary communication channel for the incident is the Slack channel #inc-20240523-sev1-api-outage."
+    },
+    {
+      "id": "F08",
+      "category": "Personnel & Communication",
+      "fact": "The incident war room is hosted on a persistent video conference link: meet.quantumleap.io/war-room-alpha."
+    },
+    {
+      "id": "F09",
+      "category": "System & Infrastructure",
+      "fact": "The company experiencing the outage is QuantumLeap Analytics, a B2B data insights provider."
+    },
+    {
+      "id": "F10",
+      "category": "System & Infrastructure",
+      "fact": "All affected infrastructure is hosted on AetherCloud Services (ACS) in the us-east-4 region."
+    },
+    {
+      "id": "F11",
+      "category": "System & Infrastructure",
+      "fact": "The primary microservice experiencing failures is the 'core-processor-svc', running on Docker version 25.0.3."
+    },
+    {
+      "id": "F12",
+      "category": "System & Infrastructure",
+      "fact": "The service connects to a ChronoDB managed database cluster, version 12.5."
+    },
+    {
+      "id": "F13",
+      "category": "System & Infrastructure",
+      "fact": "The 'core-processor-svc' instances are deployed exclusively in the us-east-4a availability zone."
+    },
+    {
+      "id": "F14",
+      "category": "Initial Investigation & Logs",
+      "fact": "Application logs for 'core-processor-svc' show repeated entries of 'Error: Connection timeout expired while connecting to database endpoint chrono-prod-1.c4xyz123.us-east-4.rds.aethercloud.com:5432'."
+    },
+    {
+      "id": "F15",
+      "category": "Initial Investigation & Logs",
+      "fact": "Centralized logging is managed by LogStashPro, accessible at logs.quantumleap.io."
+    },
+    {
+      "id": "F16",
+      "category": "Initial Investigation & Logs",
+      "fact": "At the peak of the incident, 92% of API requests to 'core-processor-svc' were failing."
+    },
+    {
+      "id": "F17",
+      "category": "Initial Investigation & Logs",
+      "fact": "The first database timeout error was logged at 13:58:15 UTC, four minutes before the SEV-1 was declared."
+    },
+    {
+      "id": "F18",
+      "category": "Database State",
+      "fact": "The ChronoDB dashboard shows CPU utilization on the primary instance is stable at 18%."
+    },
+    {
+      "id": "F19",
+      "category": "Database State",
+      "fact": "The number of active database connections is 35, well below the configured maximum of 500."
+    },
+    {
+      "id": "F20",
+      "category": "Database State",
+      "fact": "Database Read/Write IOPS are averaging 1,200, which is 30% of the provisioned capacity."
+    },
+    {
+      "id": "F21",
+      "category": "Network Investigation",
+      "fact": "A 'ping' from a 'core-processor-svc' container to the database endpoint shows an average RTT of 250ms with 15% packet loss."
+    },
+    {
+      "id": "F22",
+      "category": "Network Investigation",
+      "fact": "An 'mtr' trace from a service instance to the DB endpoint revealed a high latency hop (avg 245ms) within the 10.40.1.0/24 subnet, internal to the us-east-4a zone."
+    },
+    {
+      "id": "F23",
+      "category": "Network Investigation",
+      "fact": "The network monitoring tool 'NetFlow-Analyzer' confirmed a 15-20% packet loss rate for traffic between subnets in us-east-4a."
+    },
+    {
+      "id": "F24",
+      "category": "Network Investigation",
+      "fact": "The AetherCloud Services status page was updated at 14:35 UTC to acknowledge 'Intermittent Packet Loss within a single Availability Zone in the US-EAST-4 Region.'"
+    },
+    {
+      "id": "F25",
+      "category": "Resolution & Root Cause",
+      "fact": "The root cause was identified as a degraded network fabric switch within the ACS us-east-4a availability zone."
+    },
+    {
+      "id": "F26",
+      "category": "Resolution & Root Cause",
+      "fact": "The immediate resolution was to initiate a blue-green deployment, failing over all 'core-processor-svc' traffic to new instances in the us-east-4b availability zone."
+    },
+    {
+      "id": "F27",
+      "category": "Resolution & Root Cause",
+      "fact": "The failover process was completed at 14:51 UTC, and service health was confirmed by 14:55 UTC."
+    },
+    {
+      "id": "F28",
+      "category": "Post-Incident",
+      "fact": "A blameless post-mortem for incident QLA-INC-20240523-001 is scheduled for May 24, 2024, at 15:00 UTC."
+    },
+    {
+      "id": "F29",
+      "category": "Post-Incident",
+      "fact": "An action item was created for the SRE team lead, David Rodriguez, to implement a multi-AZ deployment strategy for 'core-processor-svc' by Q3 2024."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the incident ID, its declaration time, and severity level?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Triage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the user-facing symptoms and the initial system alert that triggered?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning about a new incident, the immediate follow-up is to understand its impact and how it was detected.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Triage",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Who is the Incident Commander and what is the primary Slack channel for communication?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Coordination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which microservice is failing and what specific error is it logging?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F14"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Knowing the alert (high error rate for 'core-processor-svc') directly leads to checking the logs for that specific service to find the error message.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Application Log Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "The logs show database timeouts. What is the current state of the database cluster regarding CPU, connections, and IOPS?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: The application logs explicitly blame the database with timeout errors, so the next logical step is to verify the database's health.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Database Health Assessment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Given the database metrics are normal, what were the results of a direct network ping from the service container to the database?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: A conflict exists (logs show DB timeouts, but DB is healthy). The next step is to test the connectivity layer between the application and the database.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Network Diagnostics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What did a deeper MTR trace from the service instance to the database endpoint reveal?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After a basic ping test confirms high latency and packet loss, the natural follow-up is to use a more advanced tool like MTR to pinpoint where the latency is occurring.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Network Diagnostics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What was the confirmed packet loss rate between subnets in the us-east-4a zone according to the network monitoring tool?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After a trace points to a problematic subnet, an SRE would want to confirm the scale of the issue (e.g., packet loss percentage) using a dedicated network monitoring tool.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Network Diagnostics",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "Has the cloud provider, AetherCloud Services, acknowledged any issues on their status page for the US-EAST-4 region?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Root Cause Confirmation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What was the identified root cause of the network degradation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Once the cloud provider acknowledges an issue that matches the observed symptoms, the next question is to get the specific root cause from the provider or internal investigation.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Root Cause Confirmation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What was the immediate resolution action taken to restore service?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After identifying the root cause (a faulty switch in one AZ), the immediate question is what action was taken to mitigate it (failing over to another AZ).",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Resolution Implementation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "At what time was the failover process completed and service health confirmed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Resolution Implementation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is the long-term preventative action item created from this incident and who owns it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Knowing the immediate fix was to fail over between availability zones, a senior SRE would proactively think about the permanent solution, which is a proper multi-AZ deployment strategy.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Post-Incident Actions",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Incident Triage",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Incident Coordination",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Application Log Analysis",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Database Health Assessment",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Network Diagnostics",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Root Cause Confirmation",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Resolution Implementation",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Post-Incident Actions",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "trouble_cloud_outage_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

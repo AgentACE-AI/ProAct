@@ -1,0 +1,447 @@
+{
+  "scenario_id": "study_abroad_arrival_02",
+  "domain": "study_abroad",
+  "description": "An admitted international student is about to move to the UK for a master's program. They need to learn about enrollment registration, housing, bank account setup, and visa considerations.",
+  "user_profile": {
+    "persona": "23-year-old recent graduate, admitted to a UK university",
+    "context": "Departing in one month, preparing all pre-arrival logistics",
+    "communication_style": "Detail-oriented and cautious"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "academics",
+      "fact": "The MSc in Data Analytics program at the University of Westhaven has a program code of 'UOW-DA-M24'."
+    },
+    {
+      "id": "F02",
+      "category": "academics",
+      "fact": "Online enrollment for the Autumn term must be completed via the WesthavenConnect student portal at https://connect.westhaven.ac.uk/enroll by September 15th, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "academics",
+      "fact": "Course registration for modules DA501 (Advanced Statistics) and DA502 (Machine Learning Foundations) opens on September 18th, 2024 at 10:00 AM GMT."
+    },
+    {
+      "id": "F04",
+      "category": "academics",
+      "fact": "The mandatory international student orientation is scheduled for September 12th, 2024, in the Grand Hall, Ashton Building."
+    },
+    {
+      "id": "F05",
+      "category": "documents",
+      "fact": "Your Biometric Residence Permit (BRP) must be collected from the Westhaven Post Office at 14 Market Street, Westhaven, WH1 2BC, within 10 days of your arrival in the UK."
+    },
+    {
+      "id": "F06",
+      "category": "documents",
+      "fact": "To complete in-person registration, you must present your original passport, visa vignette, and the University of Westhaven offer letter at the Student Services Hub, ground floor, Miller Building."
+    },
+    {
+      "id": "F07",
+      "category": "documents",
+      "fact": "A 'Proof of Student Status' letter, required for bank account opening, can be downloaded from the 'Documents' section of the WesthavenConnect portal after completing online enrollment."
+    },
+    {
+      "id": "F08",
+      "category": "documents",
+      "fact": "Your Confirmation of Acceptance for Studies (CAS) number is WHN789456123UKVI, which was issued on July 10th, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "finance",
+      "fact": "The remaining tuition fee balance of £12,500 must be paid by October 31st, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "finance",
+      "fact": "The 'Westhaven Global Scholar' award provides a £2,000 tuition fee discount, which will be automatically applied to your second tuition installment."
+    },
+    {
+      "id": "F11",
+      "category": "finance",
+      "fact": "Britannia Global Bank offers a student account with no monthly fees, which can be pre-booked for an appointment at https://britannia.co.uk/student-appoint."
+    },
+    {
+      "id": "F12",
+      "category": "finance",
+      "fact": "To open a UK student bank account, you generally need your passport, BRP, and the University's 'Proof of Student Status' letter; Britannia Global Bank accepts these documents for its student account."
+    },
+    {
+      "id": "F13",
+      "category": "housing",
+      "fact": "Your assigned room in Northwood Hall is Room 4B, located on the 4th floor."
+    },
+    {
+      "id": "F14",
+      "category": "housing",
+      "fact": "The move-in date for Northwood Hall is September 10th, 2024, between 9:00 AM and 5:00 PM."
+    },
+    {
+      "id": "F15",
+      "category": "housing",
+      "fact": "A housing deposit of £250 was paid on June 5th, 2024, and is refundable at the end of the 44-week contract period, pending a room inspection."
+    },
+    {
+      "id": "F16",
+      "category": "housing",
+      "fact": "The address for Northwood Hall is: 25 Chancellor's Way, Westhaven, WH3 5RJ, United Kingdom."
+    },
+    {
+      "id": "F17",
+      "category": "housing",
+      "fact": "Key collection for Northwood Hall is at the reception desk, where you must show your passport and accommodation offer email to the Residential Life Officer, Mr. David Chen."
+    },
+    {
+      "id": "F18",
+      "category": "life",
+      "fact": "You must register with a local General Practitioner (GP); the Westhaven University Health Centre is located on campus and registration forms are available online."
+    },
+    {
+      "id": "F19",
+      "category": "life",
+      "fact": "The Immigration Health Surcharge (IHS) of £776 was paid as part of your visa application, granting you access to the National Health Service (NHS)."
+    },
+    {
+      "id": "F20",
+      "category": "life",
+      "fact": "A monthly student bus pass for the Westhaven city area costs £45 and can be purchased via the 'Westhaven Go' mobile app."
+    },
+    {
+      "id": "F21",
+      "category": "life",
+      "fact": "Giffgaff and Voxi are popular Pay-As-You-Go SIM card providers; a SIM can be ordered online to your UK hall address before you arrive."
+    },
+    {
+      "id": "F22",
+      "category": "academics",
+      "fact": "Your academic advisor is Dr. Alistair Finch, whose office is Room 3.14 in the Department of Computer Science, Turing Building."
+    },
+    {
+      "id": "F23",
+      "category": "finance",
+      "fact": "The first rent payment of £620 for Northwood Hall is due on September 25th, 2024, via the accommodation portal."
+    },
+    {
+      "id": "F24",
+      "category": "documents",
+      "fact": "You must obtain a TV Licence if you plan to watch live TV or BBC iPlayer in your room; the annual cost is £159."
+    },
+    {
+      "id": "F25",
+      "category": "life",
+      "fact": "The International Student Support office is located in Room G-08 of the Miller Building and their contact email is international.support@westhaven.ac.uk."
+    },
+    {
+      "id": "F26",
+      "category": "visa",
+      "fact": "Your Student Visa is valid from August 20th, 2024, to January 30th, 2026, allowing for a 4-month wrap-up period after your 12-month course."
+    },
+    {
+      "id": "F27",
+      "category": "visa",
+      "fact": "Under your Student Visa, you are permitted to work a maximum of 20 hours per week during term-time and full-time during official university holidays."
+    },
+    {
+      "id": "F28",
+      "category": "visa",
+      "fact": "You must report any changes to your address or contact details to the university's Visa Compliance Team within 7 days via the WesthavenConnect portal."
+    },
+    {
+      "id": "F29",
+      "category": "housing",
+      "fact": "The Northwood Hall contract includes Wi-Fi access via the 'UoW-ResNet' network, with a download speed of 100 Mbps."
+    },
+    {
+      "id": "F30",
+      "category": "academics",
+      "fact": "The Welcome Week schedule, including library tours and department introductions, is available on the Westhaven Student Union website at westhavensu.co.uk/welcome24."
+    },
+    {
+      "id": "F31",
+      "category": "finance",
+      "fact": "The estimated weekly cost of living in Westhaven, excluding rent, is approximately £150-£200, covering food, transport, and social activities."
+    },
+    {
+      "id": "F32",
+      "category": "life",
+      "fact": "To prove your right to rent to a private landlord, you will need a 'share code' generated from the UK government website: https://www.gov.uk/prove-right-to-rent."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my full accommodation address and what is the move-in date and time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Housing Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the procedure for collecting my keys at Northwood Hall?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the move-in date and address, the user will naturally want to know the specific process for getting their keys on that day.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Housing Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where and by when do I need to collect my Biometric Residence Permit (BRP)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Arrival & Registration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What documents do I need for in-person registration and where do I go?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Collecting the BRP is a prerequisite for many registration steps, so asking about the next registration task is a logical follow-up.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Arrival & Registration",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "How and by what date do I need to complete my online enrollment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Online Enrollment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What documents do I generally need to open a student bank account in the UK?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After confirming the documents needed for university registration (passport, BRP), a cautious user's next thought is often about what other essential setup tasks those same documents unlock, such as opening a student bank account.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Banking Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "How do I obtain the 'Proof of Student Status' letter that the bank requires?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After learning that a specific document is required for banking, the immediate follow-up question is how to get that document.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Banking Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "When and where is the mandatory international student orientation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the administrative process of in-person registration, the next logical step in their onboarding journey is the official academic welcome event.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Academic Onboarding",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the deadline for paying the rest of my tuition fees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How will my 'Westhaven Global Scholar' award be applied to my tuition?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After asking about the main tuition payment, a user with a scholarship will naturally inquire about how that award affects their payments.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Financials",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "How many hours can I work part-time on my Student Visa during term-time and official university holidays?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Discussing large financial outlays like tuition fees often prompts thoughts about income and budgeting, making a question about work permissions a likely next step.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Visa Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Where can I find GP registration forms at Westhaven University?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Health & Wellbeing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "When does course registration open for modules DA501 and DA502?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After confirming the date for the general orientation, the user's focus shifts to the next specific academic task, which is registering for their actual courses.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Course Registration",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Housing Logistics",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Arrival & Registration",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Online Enrollment",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Banking Setup",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Academic Onboarding",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Financials",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Visa Rules",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Health & Wellbeing",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Course Registration",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "study_abroad_arrival_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

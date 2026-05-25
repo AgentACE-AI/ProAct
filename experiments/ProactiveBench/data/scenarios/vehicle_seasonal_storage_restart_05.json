@@ -1,0 +1,391 @@
+{
+  "scenario_id": "vehicle_seasonal_storage_restart_05",
+  "domain": "vehicle_ownership_management",
+  "description": "A car kept in storage for part of the year needs a restart checklist covering battery condition, fluids, tires, registration, insurance status, and first-drive precautions before regular use resumes.",
+  "user_profile": {
+    "persona": "55-year-old owner of a seasonal vehicle used only part of the year",
+    "context": "The car was stored properly, but the owner wants to resume use without overlooking age- or storage-related issues",
+    "communication_style": "Cautious and methodical, prefers staged restart checks over improvisation"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "vehicle_identification",
+      "fact": "The vehicle is a 2015 Aventura Roadster with Vehicle Identification Number (VIN) 1AVRD56G8FZA90123."
+    },
+    {
+      "id": "F02",
+      "category": "vehicle_identification",
+      "fact": "The vehicle's exterior color is Catalina Blue and its license plate is SUMR-DRV."
+    },
+    {
+      "id": "F03",
+      "category": "owner_information",
+      "fact": "The registered owner of the vehicle is Arthur Finch, age 55."
+    },
+    {
+      "id": "F04",
+      "category": "storage_details",
+      "fact": "The vehicle was stored from October 15, 2023, to April 10, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "storage_details",
+      "fact": "The storage location was a climate-controlled unit, B-27, at Guardian Self-Storage."
+    },
+    {
+      "id": "F06",
+      "category": "battery_system",
+      "fact": "The car is equipped with a Voltex Gold series battery, model VTX-24F, purchased in July 2022."
+    },
+    {
+      "id": "F07",
+      "category": "battery_system",
+      "fact": "During storage, the battery was maintained with a NEXAPower NP1 trickle charger."
+    },
+    {
+      "id": "F08",
+      "category": "battery_system",
+      "fact": "After disconnecting the trickle charger, the battery's voltage measured 12.4V."
+    },
+    {
+      "id": "F09",
+      "category": "battery_system",
+      "fact": "A visual inspection confirmed the battery terminals are clean and free of corrosion."
+    },
+    {
+      "id": "F10",
+      "category": "fluid_levels_condition",
+      "fact": "The engine oil is Quantum Synthetics 5W-30, and the dipstick indicates the level is full."
+    },
+    {
+      "id": "F11",
+      "category": "fluid_levels_condition",
+      "fact": "The last oil change was performed at 48,500 miles; the current odometer reading is 48,650 miles."
+    },
+    {
+      "id": "F12",
+      "category": "fluid_levels_condition",
+      "fact": "The coolant reservoir contains PeakLife 50/50 Pre-mixed fluid, with the level 1 inch below the 'MAX' line."
+    },
+    {
+      "id": "F13",
+      "category": "fluid_levels_condition",
+      "fact": "The DOT 4 brake fluid is at the 'MAX' mark in its reservoir and has a light amber color."
+    },
+    {
+      "id": "F14",
+      "category": "fluid_levels_condition",
+      "fact": "The windshield washer fluid reservoir was topped off with ClearView All-Season solution."
+    },
+    {
+      "id": "F15",
+      "category": "tire_wheel_system",
+      "fact": "The vehicle has four Endurance Touring Pro tires, size 225/50R17."
+    },
+    {
+      "id": "F16",
+      "category": "tire_wheel_system",
+      "fact": "For storage, the tires were over-inflated to 45 PSI to prevent flat spots."
+    },
+    {
+      "id": "F17",
+      "category": "tire_wheel_system",
+      "fact": "The vehicle's door jamb sticker specifies a recommended operating pressure of 32 PSI for the front tires."
+    },
+    {
+      "id": "F18",
+      "category": "tire_wheel_system",
+      "fact": "The vehicle's door jamb sticker specifies a recommended operating pressure of 34 PSI for the rear tires."
+    },
+    {
+      "id": "F19",
+      "category": "tire_wheel_system",
+      "fact": "A tread depth measurement with a digital gauge showed 6/32\" of tread remaining on all four tires."
+    },
+    {
+      "id": "F20",
+      "category": "documentation_legal",
+      "fact": "The vehicle is insured through Aegis Auto Assurance under policy number AXP-987654321."
+    },
+    {
+      "id": "F21",
+      "category": "documentation_legal",
+      "fact": "The current insurance plan is 'Storage/Comprehensive-Only' and must be changed to 'Full Coverage' before driving."
+    },
+    {
+      "id": "F22",
+      "category": "documentation_legal",
+      "fact": "Arthur Finch's agent at Aegis is Brenda Miles, reachable at 1-800-555-AEGIS, extension 234."
+    },
+    {
+      "id": "F23",
+      "category": "documentation_legal",
+      "fact": "The vehicle's registration in the state of Calivada is valid until July 31, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "pre_drive_inspection",
+      "fact": "A check of the engine bay and exhaust pipe outlet showed no signs of rodent nests or damage."
+    },
+    {
+      "id": "F25",
+      "category": "pre_drive_inspection",
+      "fact": "The windshield wiper blades have visible cracking and left streaks during a test with washer fluid."
+    },
+    {
+      "id": "F26",
+      "category": "pre_drive_inspection",
+      "fact": "A systems check confirmed that all exterior lights (headlights, taillights, turn signals) are operational."
+    },
+    {
+      "id": "F27",
+      "category": "pre_drive_inspection",
+      "fact": "The cabin air filter, a PureFlow C35667 model, was last replaced two years ago."
+    },
+    {
+      "id": "F28",
+      "category": "first_drive_protocol",
+      "fact": "The restart procedure requires letting the engine idle for a minimum of 3 minutes after starting to circulate fluids."
+    },
+    {
+      "id": "F29",
+      "category": "first_drive_protocol",
+      "fact": "The planned first drive is a 5-mile loop around the Willow Creek neighborhood, not exceeding 40 mph."
+    },
+    {
+      "id": "F30",
+      "category": "first_drive_protocol",
+      "fact": "Before leaving the storage facility, the driver will perform five gentle stops from 15 mph to check brake responsiveness."
+    },
+    {
+      "id": "F31",
+      "category": "maintenance_tools",
+      "fact": "A CraftPro digital tire pressure gauge is stored in the glove compartment next to the owner's manual."
+    },
+    {
+      "id": "F32",
+      "category": "maintenance_tools",
+      "fact": "The vehicle's next scheduled major service is due at 50,000 miles at Precision Auto Works."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the battery's voltage after disconnecting the trickle charger, and are the terminals clean?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Battery Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the engine oil level and type?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming the battery is healthy, a methodical user would proceed to check other under-the-hood items like essential fluids.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Fluid Levels",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is the coolant level and what type of fluid is in the reservoir?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: Follow-up question about another critical fluid after checking the engine oil.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Fluid Levels",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What pressure were the tires inflated to for storage?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Tire Pressure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the recommended operating tire pressures for the front and rear tires?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After learning the high storage pressure, the immediate next step is to find out the correct operating pressure to adjust them to.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Tire Pressure",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the current insurance plan for the vehicle and what does it need to be changed to before driving?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Insurance Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who is my insurance agent and what is their contact information?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: Once the user knows they need to change their insurance plan, they will need the contact information to do so.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Insurance Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "When does my vehicle registration expire?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: While dealing with insurance paperwork, checking the status of other legal documents like registration is a very common and related concern.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Registration Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Are there any issues with the windshield wipers or signs of rodent damage?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After adjusting the tires, the user is physically at the vehicle and would logically perform a final walk-around inspection for visible issues before driving.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Pre-Drive Inspection",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "After the pre-start inspections are done, what are the first engine-idle and initial brake-check steps before leaving storage?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F30"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Once the final physical inspection is complete, the user's next action is to start the car and perform the first operational tests.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "First Drive Protocol",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Battery Status",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Fluid Levels",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Tire Pressure",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Insurance Status",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Registration Status",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Pre-Drive Inspection",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "First Drive Protocol",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vehicle_seasonal_storage_restart_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

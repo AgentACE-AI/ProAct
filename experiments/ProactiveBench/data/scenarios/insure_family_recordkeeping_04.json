@@ -1,0 +1,472 @@
+{
+  "scenario_id": "insure_family_recordkeeping_04",
+  "domain": "insurance_navigation",
+  "description": "A parent is trying to keep all family deductibles, prior authorizations, provider visits, prescriptions, and reimbursement paperwork in one usable system across several dependents.",
+  "user_profile": {
+    "persona": "42-year-old parent managing healthcare admin for a household of five",
+    "context": "Too many separate appointments and receipts have made it hard to remember what has already been submitted or approved",
+    "communication_style": "Structured and detail-heavy, prefers a household-wide view"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "insurance_plan_details",
+      "fact": "The Chen family is enrolled in the 'Aegis Gold PPO Plan' provided by Aegis Health Alliance."
+    },
+    {
+      "id": "F02",
+      "category": "insurance_plan_details",
+      "fact": "The family's insurance Group ID is CHENFAM-5 and the Plan ID is AGP-789123."
+    },
+    {
+      "id": "F03",
+      "category": "insurance_plan_details",
+      "fact": "The annual family deductible for the Aegis Gold PPO Plan is $3,000; the family has met $1,250.50 as of November 15, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "insurance_plan_details",
+      "fact": "The annual individual deductible for the Aegis Gold PPO Plan is $1,500 per person."
+    },
+    {
+      "id": "F05",
+      "category": "insurance_plan_details",
+      "fact": "The Chen family's annual out-of-pocket maximum is $6,500."
+    },
+    {
+      "id": "F06",
+      "category": "member_profiles",
+      "fact": "Alex Chen's member ID with Aegis Health Alliance is AHC34598701."
+    },
+    {
+      "id": "F07",
+      "category": "member_profiles",
+      "fact": "Jordan Chen's member ID with Aegis Health Alliance is AHC34598702."
+    },
+    {
+      "id": "F08",
+      "category": "member_profiles",
+      "fact": "Maya Chen, member ID AHC34598703, has a diagnosis of moderate persistent asthma (ICD-10 code: J45.40)."
+    },
+    {
+      "id": "F09",
+      "category": "member_profiles",
+      "fact": "Leo Chen, member ID AHC34598704, was treated for a fractured left radius on October 28, 2023."
+    },
+    {
+      "id": "F10",
+      "category": "member_profiles",
+      "fact": "Nina Chen, member ID AHC34598705, had her 6-year well-child visit on September 5, 2023."
+    },
+    {
+      "id": "F11",
+      "category": "provider_information",
+      "fact": "The family's Primary Care Physician is Dr. Evelyn Reed at Maple Creek Family Practice, located at 123 Wellness Avenue, Harmony City, HC 54321."
+    },
+    {
+      "id": "F12",
+      "category": "provider_information",
+      "fact": "The children's pediatrician, Dr. Ben Carter at Willowbrook Pediatrics, can be reached at 555-123-4567."
+    },
+    {
+      "id": "F13",
+      "category": "provider_information",
+      "fact": "Leo Chen's orthopedic specialist is Dr. Sarah Jenkins at Summit Orthopedics, 450 Peak View Road, Harmony City, HC 54322."
+    },
+    {
+      "id": "F14",
+      "category": "provider_information",
+      "fact": "The family's primary pharmacy is WellLife Pharmacy, located at 789 Main Street, Harmony City, HC 54321."
+    },
+    {
+      "id": "F15",
+      "category": "medical_events",
+      "fact": "Leo Chen has a follow-up appointment with Dr. Sarah Jenkins on December 4, 2023, at 2:30 PM to check his fractured radius."
+    },
+    {
+      "id": "F16",
+      "category": "medical_events",
+      "fact": "Maya Chen has an appointment with dermatologist Dr. Mark O'Connell for an eczema consultation on January 10, 2024, at 11:00 AM."
+    },
+    {
+      "id": "F17",
+      "category": "medical_events",
+      "fact": "Nina Chen's 6-year well-child visit with Dr. Ben Carter occurred on September 5, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "medical_events",
+      "fact": "Alex Chen's last annual physical exam was on July 17, 2023, with Dr. Evelyn Reed."
+    },
+    {
+      "id": "F19",
+      "category": "medical_events",
+      "fact": "Jordan Chen received an out-of-network dental cleaning on November 1, 2023, at 'Bright Smile Dental'."
+    },
+    {
+      "id": "F20",
+      "category": "medical_events",
+      "fact": "The CPT code submitted for Leo Chen's left arm X-ray on October 28, 2023, was 73070 (X-ray of the elbow, 2 views)."
+    },
+    {
+      "id": "F21",
+      "category": "prescriptions",
+      "fact": "Maya Chen's Albuterol Sulfate HFA inhaler prescription (Rx #9876543) is for 2 puffs every 4-6 hours as needed for asthma symptoms."
+    },
+    {
+      "id": "F22",
+      "category": "prescriptions",
+      "fact": "Leo Chen was prescribed Ibuprofen 600mg (Rx #9876599) to be taken every 8 hours for 5 days following his arm fracture."
+    },
+    {
+      "id": "F23",
+      "category": "prescriptions",
+      "fact": "The co-pay for a 30-day supply of any Tier 1 generic medication under the family's plan is $15."
+    },
+    {
+      "id": "F24",
+      "category": "prescriptions",
+      "fact": "The next refill for Maya Chen's Albuterol inhaler (Rx #9876543) is available after December 18, 2023."
+    },
+    {
+      "id": "F25",
+      "category": "claims_and_reimbursements",
+      "fact": "Claim ID C45-88291 was filed for Leo Chen's emergency room visit at Harmony City General Hospital on October 28, 2023."
+    },
+    {
+      "id": "F26",
+      "category": "claims_and_reimbursements",
+      "fact": "Reimbursement request R-2023-11-0045 for Jordan Chen's $150 out-of-network dental cleaning was submitted on November 3, 2023, and is 'In Process'."
+    },
+    {
+      "id": "F27",
+      "category": "claims_and_reimbursements",
+      "fact": "Alex Chen paid a $40 co-pay for Nina's sick visit on October 12, 2023, which has not yet been logged in the family's HealthHive system."
+    },
+    {
+      "id": "F28",
+      "category": "claims_and_reimbursements",
+      "fact": "The Explanation of Benefits for claim #C45-88291 showed a total charge of $850, an insurance payment of $774.50, and a patient responsibility of $75.50."
+    },
+    {
+      "id": "F29",
+      "category": "prior_authorizations",
+      "fact": "Prior authorization #PA-772034 was approved on November 10, 2023, for Maya Chen's comprehensive allergy testing panel."
+    },
+    {
+      "id": "F30",
+      "category": "prior_authorizations",
+      "fact": "Prior authorization request PR-98B34 for an in-lab sleep study (CPT 95810) for Jordan Chen was submitted on November 14, 2023, and its status is 'Pending Review'."
+    },
+    {
+      "id": "F31",
+      "category": "system_and_tools",
+      "fact": "The official member portal for Aegis Health Alliance is located at https://my.aegishealth.com."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is our annual family deductible for the Aegis Gold PPO Plan, and how much of it have we met as of November 15, 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Deductible Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the annual individual deductible for our plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After asking about the family deductible, the user is likely to inquire about the individual deductible for comparison and detailed planning.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Deductible Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What were the financial details for Leo Chen's emergency room visit claim, ID C45-88291, including total charge, insurance payment, and patient responsibility?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Leo's Fracture Claim",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What medication was prescribed for Leo Chen following his arm fracture?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After reviewing the claim details for an injury, the user would naturally want to see the related prescription information.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Leo's Fracture Claim",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "When is Leo Chen's follow-up appointment with Dr. Sarah Jenkins for his fracture?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing a claim for an acute event like a fracture, the user's next logical concern is the upcoming follow-up care appointment.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Leo's Follow-up Care",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the status of the prior authorization #PA-772034 for Maya Chen's allergy testing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After confirming one child's upcoming appointment, the parent's attention often shifts to another child's pending healthcare item.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Maya's Care Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the authorization number and approval date for Maya Chen's allergy testing panel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After checking the status of Maya's prior authorization, the immediate follow-up is to confirm the approval details needed for recordkeeping, especially the authorization number and approval date.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Maya's Care Management",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "When is Maya's Albuterol inhaler, Rx #9876543, available for its next refill?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Maya's Care Management",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "What is the co-pay for a 30-day supply of a Tier 1 generic medication under our plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After checking a specific prescription's refill date, the system can proactively offer general information about prescription costs, which is a related but broader topic.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Prescription Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the status of reimbursement request R-2023-11-0045 for Jordan Chen's out-of-network dental cleaning?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Jordan's Pending Items",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the status of the prior authorization request PR-98B34 for Jordan Chen's sleep study?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "After checking on one pending item (reimbursement) for a specific family member, the user is likely to check on other pending items for the same person.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Jordan's Pending Items",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "How much was the co-pay Alex paid for Nina's sick visit on October 12, 2023, that hasn't been logged yet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Unlogged Payments",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Where has the $40 co-pay for Nina's October 12, 2023 sick visit not yet been logged?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After identifying the unlogged $40 payment, the direct follow-up is to confirm where that payment still needs to be recorded.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Additional Record Checks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "When was Alex Chen's last annual physical exam?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After reviewing high-level plan details like deductibles, a detail-oriented user might shift focus to ensuring all family members are up-to-date on their preventative care.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Additional Record Checks",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N15",
+      "description": "What is our insurance plan name, group ID, and plan ID?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "General Plan Info",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Deductible Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Leo's Fracture Claim",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Leo's Follow-up Care",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Maya's Care Management",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Prescription Costs",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Jordan's Pending Items",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Unlogged Payments",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Additional Record Checks",
+      "member_need_ids": [
+        "N13",
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "General Plan Info",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "insure_family_recordkeeping_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

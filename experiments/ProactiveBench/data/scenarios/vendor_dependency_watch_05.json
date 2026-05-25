@@ -1,0 +1,460 @@
+{
+  "scenario_id": "vendor_dependency_watch_05",
+  "domain": "vendor_management",
+  "description": "An operations leader wants a lightweight way to detect when one vendor is quietly becoming too central to multiple workflows, teams, and reporting obligations before dependency risk becomes obvious.",
+  "user_profile": {
+    "persona": "46-year-old operations director with a broad view across internal functions",
+    "context": "Recent incidents showed that some dependencies had grown long before anyone named them explicitly",
+    "communication_style": "Strategic and pattern-seeking, looks for early warning signals"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "vendor_information",
+      "fact": "Innovatech Solutions is an active vendor with Vendor ID 88-INV-451."
+    },
+    {
+      "id": "F02",
+      "category": "vendor_information",
+      "fact": "The primary technical contact for Innovatech Solutions is Anya Sharma, reachable at anya.s@innovatech.ext."
+    },
+    {
+      "id": "F03",
+      "category": "vendor_information",
+      "fact": "Apex Analytics is an active vendor with Vendor ID 72-APX-903, specializing in BI dashboards."
+    },
+    {
+      "id": "F04",
+      "category": "vendor_information",
+      "fact": "SecureData Corp is an active vendor with Vendor ID 65-SDC-112, providing data encryption services."
+    },
+    {
+      "id": "F05",
+      "category": "contracts_financials",
+      "fact": "The Marketing department signed contract MKT-2022-015 with Innovatech Solutions on January 10, 2022, for $60,000 annually."
+    },
+    {
+      "id": "F06",
+      "category": "contracts_financials",
+      "fact": "The Finance department signed a separate contract FIN-2023-004 with Innovatech Solutions on March 5, 2023, for $95,000 annually."
+    },
+    {
+      "id": "F07",
+      "category": "contracts_financials",
+      "fact": "The Operations department added an addendum to contract FIN-2023-004 on September 1, 2023, increasing the total value by $70,000 for workflow automation tools."
+    },
+    {
+      "id": "F08",
+      "category": "contracts_financials",
+      "fact": "Total spend on Innovatech Solutions for FY2023 was $225,000 across three separate budget codes."
+    },
+    {
+      "id": "F09",
+      "category": "contracts_financials",
+      "fact": "Contract SEC-2023-088 with SecureData Corp is valued at $45,000 annually and covers a single service for the entire organization."
+    },
+    {
+      "id": "F10",
+      "category": "contracts_financials",
+      "fact": "The renewal date for Innovatech Solutions contract MKT-2022-015 is January 10, 2025."
+    },
+    {
+      "id": "F11",
+      "category": "software_services",
+      "fact": "Innovatech Solutions provides the 'FusionFlow' platform, used by the Operations team for process mapping."
+    },
+    {
+      "id": "F12",
+      "category": "software_services",
+      "fact": "The Marketing Analytics team uses Innovatech's 'InsightStream' module for customer segmentation analysis."
+    },
+    {
+      "id": "F13",
+      "category": "software_services",
+      "fact": "The Finance team uses Innovatech's 'QuantumLedger' module for quarterly financial reporting consolidation."
+    },
+    {
+      "id": "F14",
+      "category": "software_services",
+      "fact": "The IT department utilizes the 'Innovatech Connect' API gateway to pipe sales data from Salesforce into the company's data warehouse."
+    },
+    {
+      "id": "F15",
+      "category": "software_services",
+      "fact": "Apex Analytics provides the 'VizPro' dashboard tool, which is used exclusively by the Sales department."
+    },
+    {
+      "id": "F16",
+      "category": "team_integration",
+      "fact": "Project Chimera, a cross-functional initiative involving Operations, Finance, and IT, has designated 'FusionFlow' as its single source of truth for project status."
+    },
+    {
+      "id": "F17",
+      "category": "team_integration",
+      "fact": "Three employees from Innovatech Solutions have named user accounts in the company's Jira instance with 'External Contractor' roles."
+    },
+    {
+      "id": "F18",
+      "category": "team_integration",
+      "fact": "The Marketing Analytics daily stand-up meeting at 9:15 AM EST frequently discusses data discrepancies originating from the 'InsightStream' module."
+    },
+    {
+      "id": "F19",
+      "category": "team_integration",
+      "fact": "The quarterly business review (QBR) presentation for the board of directors includes 4 slides with charts generated directly from 'QuantumLedger'."
+    },
+    {
+      "id": "F20",
+      "category": "team_integration",
+      "fact": "The Head of Operations, David Chen, has a bi-weekly 30-minute sync call with Anya Sharma from Innovatech Solutions."
+    },
+    {
+      "id": "F21",
+      "category": "incidents_performance",
+      "fact": "On October 26, 2023, an outage of the 'Innovatech Connect' API gateway caused a 4-hour delay in sales data reporting, affecting both the Sales and Finance teams."
+    },
+    {
+      "id": "F22",
+      "category": "incidents_performance",
+      "fact": "Incident report #INC-2023-4812 details the October 26 outage and identifies a single point of failure in the data pipeline dependent on Innovatech."
+    },
+    {
+      "id": "F23",
+      "category": "incidents_performance",
+      "fact": "The average support ticket resolution time for Innovatech Solutions in Q4 2023 was 3.8 business hours, compared to 5.2 hours for Apex Analytics."
+    },
+    {
+      "id": "F24",
+      "category": "communication_support",
+      "fact": "There is a dedicated Slack channel, #vendor-innovatech, with 28 members from 4 different internal departments."
+    },
+    {
+      "id": "F25",
+      "category": "communication_support",
+      "fact": "The number of support tickets logged in Jira with the 'Innovatech' component tag increased from 12 in Q1 2023 to 48 in Q4 2023."
+    },
+    {
+      "id": "F26",
+      "category": "communication_support",
+      "fact": "The #vendor-apex-analytics Slack channel has 7 members, all from the Sales department."
+    },
+    {
+      "id": "F27",
+      "category": "reporting_compliance",
+      "fact": "The annual SOC 2 Type II audit requires an evidence export from Innovatech's 'QuantumLedger' system to verify financial controls."
+    },
+    {
+      "id": "F28",
+      "category": "reporting_compliance",
+      "fact": "The monthly Customer Churn Report, delivered to the executive team, is 80% dependent on data processed by the 'InsightStream' module."
+    },
+    {
+      "id": "F29",
+      "category": "reporting_compliance",
+      "fact": "Data lineage documentation, last updated on May 15, 2023, shows Innovatech systems as upstream sources for 7 critical business reports."
+    },
+    {
+      "id": "F30",
+      "category": "contracts_financials",
+      "fact": "The master services agreement with Innovatech Solutions does not have a consolidated enterprise-level pricing tier."
+    },
+    {
+      "id": "F31",
+      "category": "incidents_performance",
+      "fact": "FusionFlow's uptime for the last 90 days was 99.8%, as per the status page at status.innovatech.ext, which is within the 99.5% SLA defined in contract FIN-2023-004."
+    },
+    {
+      "id": "F32",
+      "category": "contracts_financials",
+      "fact": "As of the FY2023 vendor review, the only internal departments with direct Innovatech Solutions contracts or addendums are Marketing, Finance, and Operations; no other department holds a separate Innovatech agreement or addendum."
+    },
+    {
+      "id": "F33",
+      "category": "reporting_compliance",
+      "fact": "The 7 critical business reports with Innovatech systems as upstream or direct sources are: Monthly Customer Churn Report (InsightStream, about 80% dependent), Quarterly Revenue Consolidation Pack (QuantumLedger, primary source), Board QBR Financial Charts (QuantumLedger, direct source for 4 slides), Weekly Sales Pipeline Reconciliation (Innovatech Connect, primary upstream feed), Monthly Marketing Segment Performance Summary (InsightStream, primary segmentation source), Operations Workflow Bottleneck Review (FusionFlow, primary process-status source), and IT Salesforce-to-Warehouse Sync Exception Report (Innovatech Connect, primary integration-status source)."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Which departments have contracts or addendums with Innovatech Solutions, and what were their signing dates and values?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07",
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Financial Footprint",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the total spend on Innovatech Solutions for FY2023 and across how many budget codes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After seeing individual contracts, asking for the aggregated total is a natural next step to understand the overall financial scale.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Financial Footprint",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What specific software services or platforms does Innovatech provide to which internal teams?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After understanding the financial commitment by department, the user will naturally want to know what specific services those departments are actually using.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Service Integration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which cross-functional project has designated an Innovatech platform as its single source of truth, and which platform is it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Learning that a specific service is used in a major, cross-functional project is a key detail that deepens the understanding of its centrality.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Service Integration",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Which critical business reports are dependent on data from Innovatech systems, and what is the extent of that dependency?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F29",
+        "F33"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Reporting & Compliance Dependency",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which compliance audit currently requires evidence from an Innovatech system, and from which system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After establishing dependency for internal business reporting, the user would logically check for external-facing compliance and audit dependencies, which often carry higher risk.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Reporting & Compliance Dependency",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Was there a recent outage involving an Innovatech service, and which teams were affected?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After identifying the services and the teams that use them, a strategic user will immediately consider the operational risk, making past incidents a highly relevant and predictable next topic.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Operational Incidents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How many internal staff from how many departments are in the dedicated Slack channel for Innovatech?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Communication & Support Volume",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "How did the number of support tickets tagged with 'Innovatech' change between Q1 and Q4 2023?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: Seeing the broad informal communication in Slack naturally leads to questioning the volume of formal support interactions, like tickets, to gauge operational load.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Communication & Support Volume",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Who is the primary technical contact at Innovatech?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After seeing that a dedicated Innovatech Slack channel spans many internal staff and departments, a strategic user would naturally want to identify the main external technical contact for coordinated escalation and dependency management.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Key Personnel Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Which internal leader has a recurring meeting with a contact from Innovatech Solutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Direct Leadership Engagement",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Are any charts generated from Innovatech's systems included in the board of directors' quarterly business review presentation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the dependency for critical business reports, the next logical question is about the visibility of that dependency at the highest level of the company (the board).",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Board-Level Visibility",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Does the master services agreement with Innovatech Solutions include a consolidated enterprise-level pricing tier?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After seeing that multiple departments have separate contracts, a strategic director would question the overall contractual structure and whether it's optimized at an enterprise level.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Contractual Structure",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Financial Footprint",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Service Integration",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Reporting & Compliance Dependency",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Operational Incidents",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Communication & Support Volume",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Key Personnel Contact",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Direct Leadership Engagement",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Board-Level Visibility",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G9",
+      "label": "Contractual Structure",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vendor_dependency_watch_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

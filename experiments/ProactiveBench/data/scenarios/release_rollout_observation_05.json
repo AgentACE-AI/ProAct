@@ -1,0 +1,459 @@
+{
+  "scenario_id": "release_rollout_observation_05",
+  "domain": "software_release_management",
+  "description": "A team is using a phased rollout and needs to decide what signals over the next few days should trigger pause, continue, rollback, or intensified monitoring instead of treating launch as a one-time event.",
+  "user_profile": {
+    "persona": "34-year-old reliability-minded product engineer",
+    "context": "The code is already live for part of the user base, so the key challenge is interpreting rollout signals well",
+    "communication_style": "Observational and threshold-based, prefers operational criteria over intuition"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Release Details",
+      "fact": "The software release is NexusDB version v4.7.1, which introduces the 'Real-time Query Cache' (RQC) feature."
+    },
+    {
+      "id": "F02",
+      "category": "Release Details",
+      "fact": "The lead product engineer for the v4.7.1 RQC rollout is Alex Chen."
+    },
+    {
+      "id": "F03",
+      "category": "Release Details",
+      "fact": "The main tracking ticket for this release is in Jira under the ID NEX-1138."
+    },
+    {
+      "id": "F04",
+      "category": "Release Details",
+      "fact": "The Git commit hash for the v4.7.1 release build is `a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4`."
+    },
+    {
+      "id": "F05",
+      "category": "Rollout Strategy",
+      "fact": "The phased rollout began on October 26, 2023, at 10:00 UTC."
+    },
+    {
+      "id": "F06",
+      "category": "Rollout Strategy",
+      "fact": "The RQC feature is currently enabled for 10% of users in the `us-east-1` region."
+    },
+    {
+      "id": "F07",
+      "category": "Rollout Strategy",
+      "fact": "The next planned stage is to increase the rollout to 25% of `us-east-1` users on October 28, 2023, at 14:00 UTC."
+    },
+    {
+      "id": "F08",
+      "category": "Rollout Strategy",
+      "fact": "The feature is controlled by a feature flag named `enable-realtime-query-cache` in the 'LaunchDarkly' platform."
+    },
+    {
+      "id": "F09",
+      "category": "Rollout Strategy",
+      "fact": "The initial rollout cohort is limited to users on the 'Free-Tier' subscription plan."
+    },
+    {
+      "id": "F10",
+      "category": "Monitoring & Alerting",
+      "fact": "The primary monitoring dashboard for the rollout is Grafana Dashboard ID `nexus-rqc-rollout`, accessible at `https://grafana.quantumleap.tech/d/nexus-rqc-rollout`."
+    },
+    {
+      "id": "F11",
+      "category": "Monitoring & Alerting",
+      "fact": "The key success metric is 'Cache Hit Rate', with a target of over 85%."
+    },
+    {
+      "id": "F12",
+      "category": "Monitoring & Alerting",
+      "fact": "All critical alerts related to the rollout are routed to the Slack channel `#nexus-alerts`."
+    },
+    {
+      "id": "F13",
+      "category": "Monitoring & Alerting",
+      "fact": "A key stability metric being monitored is the P99 query latency for reads."
+    },
+    {
+      "id": "F14",
+      "category": "Monitoring & Alerting",
+      "fact": "The Splunk query to search for new fatal errors is `index=nexusdb level=FATAL error_code=CacheConsistencyViolation`."
+    },
+    {
+      "id": "F15",
+      "category": "Decision Criteria",
+      "fact": "A full rollback is automatically triggered if the P99 query latency exceeds 500ms for 5 consecutive minutes."
+    },
+    {
+      "id": "F16",
+      "category": "Decision Criteria",
+      "fact": "The rollout will be paused if the API 5xx error rate increases by more than 20% over the baseline for a 10-minute window."
+    },
+    {
+      "id": "F17",
+      "category": "Decision Criteria",
+      "fact": "The rollout is considered safe to continue to the next phase if all key metrics remain within +/- 5% of their baseline for 4 continuous hours."
+    },
+    {
+      "id": "F18",
+      "category": "Decision Criteria",
+      "fact": "Intensified monitoring is initiated if the cache hit rate drops below 90% but remains above the rollback threshold of 80%."
+    },
+    {
+      "id": "F19",
+      "category": "Decision Criteria",
+      "fact": "The discovery of any new `CacheConsistencyViolation` error type in the logs requires an immediate manual rollback."
+    },
+    {
+      "id": "F20",
+      "category": "Team & Communication",
+      "fact": "The current on-call engineer for the Core Platform Team is Priya Sharma, contactable on Slack at `@priya.sharma`."
+    },
+    {
+      "id": "F21",
+      "category": "Team & Communication",
+      "fact": "The on-call engineer has full authority to initiate a rollback without requiring management approval."
+    },
+    {
+      "id": "F22",
+      "category": "Team & Communication",
+      "fact": "A daily rollout status meeting occurs at 09:00 PST via the Google Meet link `meet.google.com/xyz-abc-def`."
+    },
+    {
+      "id": "F23",
+      "category": "Team & Communication",
+      "fact": "All decisions to pause, continue, or rollback are documented in the Confluence 'RQC Rollout Log' page, ID `7891234`."
+    },
+    {
+      "id": "F24",
+      "category": "Infrastructure & Tooling",
+      "fact": "The command-line tool for managing the deployment is named `deployment-cli`."
+    },
+    {
+      "id": "F25",
+      "category": "Infrastructure & Tooling",
+      "fact": "The specific command to execute a rollback is `./deployment-cli rollback --service nexusdb --version 4.7.0 --feature-flag enable-realtime-query-cache=false`."
+    },
+    {
+      "id": "F26",
+      "category": "Team & Communication",
+      "fact": "The daily rollout status meeting at 09:00 PST is used to review the current rollout percentage and cohort, check key signals such as cache hit rate, P99 query latency, API 5xx error rate, and any new `CacheConsistencyViolation` events, and decide whether to continue, pause, rollback, or move to intensified monitoring for the next phase."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current rollout status for the NexusDB v4.7.1 release, including start time, current percentage, and region?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current Rollout Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which specific user cohort is part of the initial rollout?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After understanding the general rollout status, the user would want to know the specific audience affected.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current Rollout Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where can I find the primary monitoring dashboard for this rollout?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Monitoring Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the key success metric and its target value?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Once the user accesses the dashboard, their immediate next step is to understand what 'good' looks like.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Monitoring Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the automatic rollback condition related to P99 query latency?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Rollback Criteria (Latency)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the condition for pausing the rollout based on the API 5xx error rate?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After understanding one critical failure condition (latency), the user will want to know about other key failure conditions like error rates.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Pause Criteria (Errors)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the Splunk query for the specific error type that requires an immediate manual rollback?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F19"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Following questions about threshold-based alerts, the user would want to know how to find specific, non-threshold-based critical errors.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Rollback Criteria (Fatal Error)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Under what conditions is the rollout considered safe to continue to the next phase?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning the success metric (what is good), the user will naturally want to know the criteria for proceeding (how good is good enough).",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Continuation Criteria",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When is the next rollout stage planned and what is the target percentage?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: After learning the criteria for continuing, the user will want to know the schedule for the next step.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Continuation Criteria",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the threshold for initiating intensified monitoring?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After asking about the primary success metric, it is helpful to proactively provide information on the 'warning' threshold that isn't a failure but requires closer attention.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Intensified Monitoring Criteria",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the specific command-line instruction to execute a rollback?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning about a condition that requires a manual rollback, the user might need the exact command to perform that action.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Rollback Execution",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Who is the current on-call engineer and what is their authority regarding rollbacks?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Team & On-call",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Where are all rollout decisions documented?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After identifying the person responsible for making decisions, the user will likely want to know where those decisions are logged for audit purposes.",
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Communication & Documentation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Which Slack channel receives critical alerts for this rollout?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning how to query for fatal errors, a natural follow-up is to ask where automated alerts for such issues are sent.",
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Communication & Documentation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N15",
+      "description": "What are the details and working agenda for the daily rollout status meeting?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22",
+        "F26"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "Intra-group: After establishing which Slack channel receives critical rollout alerts, a natural next communication question is the schedule and working agenda of the daily rollout status meeting where those signals are reviewed.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Communication & Documentation",
+      "reveal_priority": 3
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Current Rollout Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Monitoring Setup",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Rollback Criteria (Latency)",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Pause Criteria (Errors)",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Rollback Criteria (Fatal Error)",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Continuation Criteria",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Intensified Monitoring Criteria",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "Rollback Execution",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G9",
+      "label": "Team & On-call",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Communication & Documentation",
+      "member_need_ids": [
+        "N13",
+        "N14",
+        "N15"
+      ],
+      "trigger_after": "G9"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "release_rollout_observation_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

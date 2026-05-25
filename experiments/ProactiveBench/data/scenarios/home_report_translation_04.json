@@ -1,0 +1,485 @@
+{
+  "scenario_id": "home_report_translation_04",
+  "domain": "home_maintenance",
+  "description": "A homeowner receives a dense inspection or maintenance report and needs it translated into concrete follow-up actions, priority levels, and clarification questions for contractors. All report issuers are fictional.",
+  "user_profile": {
+    "persona": "46-year-old homeowner comfortable with practical tasks but not technical jargon",
+    "context": "The report is long enough to feel important, but too abstract to turn into an actual work plan",
+    "communication_style": "Action-focused and plainspoken, wants technical findings converted into plain English next steps"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "report_details",
+      "fact": "The home inspection report, ID PHA-2024-8817, was issued by 'Precision Home Analytics'."
+    },
+    {
+      "id": "F02",
+      "category": "report_details",
+      "fact": "The property inspection was conducted on October 15, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "report_details",
+      "fact": "Frank Miller was the certified inspector who authored the 'Comprehensive Home Health Assessment' report."
+    },
+    {
+      "id": "F04",
+      "category": "report_details",
+      "fact": "The report's overall summary describes the property as 'structurally sound with age-related wear requiring immediate attention in electrical and roofing systems'."
+    },
+    {
+      "id": "F05",
+      "category": "homeowner_profile",
+      "fact": "The homeowner, Alex Chen, received the report for the property located at 123 Maple Lane."
+    },
+    {
+      "id": "F06",
+      "category": "homeowner_profile",
+      "fact": "Alex Chen's goal is to create a prioritized checklist of repairs and a list of specific questions to ask contractors."
+    },
+    {
+      "id": "F07",
+      "category": "property_details",
+      "fact": "The inspected property is a single-family home located at 123 Maple Lane, Crestwood, IL 60418."
+    },
+    {
+      "id": "F08",
+      "category": "property_details",
+      "fact": "The house was constructed in 1988."
+    },
+    {
+      "id": "F09",
+      "category": "property_details",
+      "fact": "The total living area of the house is 2,150 square feet."
+    },
+    {
+      "id": "F10",
+      "category": "finding_roof",
+      "fact": "The report identified 'significant granule loss and cupping' on the asphalt shingles on the south-facing roof slope."
+    },
+    {
+      "id": "F11",
+      "category": "finding_roof",
+      "fact": "The inspector estimates the current roof has only 2-3 years of remaining useful life out of a typical 25-year lifespan."
+    },
+    {
+      "id": "F12",
+      "category": "finding_roof",
+      "fact": "The aluminum flashing around the base of the chimney has pulled away, creating a 1/4-inch gap."
+    },
+    {
+      "id": "F13",
+      "category": "finding_roof",
+      "fact": "Light moss growth was observed on shingles on the north-facing roof section due to prolonged shade."
+    },
+    {
+      "id": "F14",
+      "category": "finding_plumbing",
+      "fact": "Water pressure in the master bathroom shower was measured at 35 PSI, which is below the recommended minimum of 45 PSI."
+    },
+    {
+      "id": "F15",
+      "category": "finding_plumbing",
+      "fact": "The kitchen sink drain takes over 90 seconds to clear a full basin of water, indicating a partial clog."
+    },
+    {
+      "id": "F16",
+      "category": "finding_plumbing",
+      "fact": "The inspector noted the anode rod on the 8-year-old water heater (Model WH-40G) has likely never been checked or replaced."
+    },
+    {
+      "id": "F17",
+      "category": "finding_plumbing",
+      "fact": "There is minor blue-green corrosion visible on the cold water shut-off valve for the basement utility sink."
+    },
+    {
+      "id": "F18",
+      "category": "finding_electrical",
+      "fact": "The main electrical panel is a 'Federal Pacific Electric Stab-Lok' model, which is known for breaker failures."
+    },
+    {
+      "id": "F19",
+      "category": "finding_electrical",
+      "fact": "None of the three electrical outlets within six feet of the kitchen sink are GFCI (Ground Fault Circuit Interrupter) protected."
+    },
+    {
+      "id": "F20",
+      "category": "finding_electrical",
+      "fact": "A circuit tester revealed that two outlets on the west wall of the master bedroom have open grounds."
+    },
+    {
+      "id": "F21",
+      "category": "finding_electrical",
+      "fact": "The main electrical service to the house is rated at 100 amps."
+    },
+    {
+      "id": "F22",
+      "category": "finding_structure",
+      "fact": "A 4-inch long, vertical, hairline crack (less than 1/16-inch wide) was found in the poured concrete foundation on the west wall."
+    },
+    {
+      "id": "F23",
+      "category": "finding_structure",
+      "fact": "A faint water stain, approximately 8 inches in diameter, is visible on the concrete block wall behind the washing machine in the basement."
+    },
+    {
+      "id": "F24",
+      "category": "action_item_high_priority",
+      "fact": "Task: Obtain quotes from at least two licensed electricians to replace the Federal Pacific electrical panel with a modern 150-amp panel."
+    },
+    {
+      "id": "F25",
+      "category": "action_item_high_priority",
+      "fact": "Task: Hire a roofer to reseal or replace the chimney flashing immediately to prevent water intrusion."
+    },
+    {
+      "id": "F26",
+      "category": "action_item_high_priority",
+      "fact": "Task: Have an electrician install GFCI outlets in the kitchen and both bathrooms within the next 30 days."
+    },
+    {
+      "id": "F27",
+      "category": "action_item_medium_priority",
+      "fact": "Task: Budget for a full roof replacement within the next 12-24 months, with an estimated cost of $12,000-$18,000."
+    },
+    {
+      "id": "F28",
+      "category": "action_item_medium_priority",
+      "fact": "Task: Ask a plumber to investigate the cause of low water pressure, possibly related to a failing pressure-reducing valve."
+    },
+    {
+      "id": "F29",
+      "category": "action_item_low_priority",
+      "fact": "Task: Mark the ends of the hairline foundation crack with a pencil and date (10/15/2024) to monitor for any growth over the next year."
+    },
+    {
+      "id": "F30",
+      "category": "action_item_low_priority",
+      "fact": "Task: Schedule a plumber to inspect and likely replace the water heater's anode rod to extend the tank's life, at an estimated cost of $150-$250."
+    },
+    {
+      "id": "F31",
+      "category": "contractor_communication",
+      "fact": "The report recommends contacting Sarah Jenkins at 'Ridgeline Roofing Solutions' at (555) 234-5678 for roof-related estimates."
+    },
+    {
+      "id": "F32",
+      "category": "contractor_communication",
+      "fact": "For plumbing issues, the suggested contact is Mike Davis of 'ClearFlow Plumbing & Drains' at (555) 987-6543."
+    },
+    {
+      "id": "F33",
+      "category": "contractor_communication",
+      "fact": "Question for the electrician: 'What is the all-inclusive cost to replace the FPE panel with a 150-amp Siemens or Square D panel, including permits?'"
+    },
+    {
+      "id": "F34",
+      "category": "contractor_communication",
+      "fact": "Question for the roofer: 'What is the price difference per square foot between standard architectural shingles and impact-resistant Class 4 shingles?'"
+    },
+    {
+      "id": "F35",
+      "category": "finding_electrical",
+      "fact": "The report treats the Federal Pacific Stab-Lok panel as a high-priority electrical safety concern because these panels are associated with breaker failures, and the recommended remedy is replacement with a modern 150-amp panel rather than continued monitoring."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the overall summary of the property's condition from the report?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Report Summary",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which specific systems require immediate attention according to the summary?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After hearing the overall summary, the user's natural next question is to clarify the most critical parts.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Report Summary",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Why does the report treat the main electrical panel as a high-priority safety concern?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F35"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Electrical Panel Action",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the high-priority action item for the electrical panel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once the user understands the electrical panel problem, they will immediately want to know the recommended solution.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Electrical Panel Action",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the immediate problem with the roof that requires attention?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Chimney Flashing Action",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the recommended immediate action for the chimney flashing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning about the chimney flashing gap, the user will want to know the specific repair task.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Chimney Flashing Action",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What specific question should I ask an electrician about replacing the panel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After identifying the need to replace the electrical panel, the user will need to communicate with a contractor, making a pre-formulated question highly relevant.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Electrical Contractor Question",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the long-term condition and remaining life of the roof shingles?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Discussing an immediate roof repair (flashing) naturally leads to questions about the overall, long-term health of the entire roof.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Long-Term Roof Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the medium-priority task and estimated budget for the roof?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Once the user understands the limited lifespan of the roof, they will want to know the recommended action and associated cost for planning purposes.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Long-Term Roof Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What question can I ask a roofer about different shingle options?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning about the need to budget for a roof replacement, a user planning to hire a contractor would find a specific, value-oriented question about materials very helpful.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Roofing Contractor Question",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the recommended action and estimated cost for the water heater maintenance?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Water Heater Maintenance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the low-priority task for the hairline foundation crack?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Foundation Monitoring",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Who does the report suggest I contact for roofing estimates?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After discussing the need for a roof replacement, the user will need to find a contractor, making the report's specific recommendation a logical next piece of information.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Roofer Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Who is the suggested contact for plumbing issues?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After learning about a specific plumbing task (water heater), the user would likely want to know who to call to perform that task.",
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Plumber Contact",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Report Summary",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Electrical Panel Action",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Chimney Flashing Action",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Electrical Contractor Question",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Long-Term Roof Plan",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Roofing Contractor Question",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Water Heater Maintenance",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Foundation Monitoring",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Roofer Contact",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G10",
+      "label": "Plumber Contact",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "home_report_translation_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

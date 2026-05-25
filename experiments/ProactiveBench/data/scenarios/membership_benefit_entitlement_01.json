@@ -1,0 +1,424 @@
+{
+  "scenario_id": "membership_benefit_entitlement_01",
+  "domain": "subscription_membership_administration",
+  "description": "A support team needs to know which member benefits belong to which tier, campaign, grandfathered rule, or legacy promise for current subscribers. All programs and companies are fictional.",
+  "user_profile": {
+    "persona": "31-year-old membership operations specialist handling a program with several legacy cohorts",
+    "context": "Support replies are becoming inconsistent because current entitlement depends on more than just today's published tier chart",
+    "communication_style": "Rule-aware and exact, wants entitlements tied to enrollment context rather than generic tier labels"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Tier Definition",
+      "fact": "The 'Spark' membership tier, priced at $19/month, includes access to the AuraVerse Digital Library and bi-weekly newsletters."
+    },
+    {
+      "id": "F02",
+      "category": "Tier Definition",
+      "fact": "The 'Glow' membership tier, priced at $49/month, includes all 'Spark' benefits plus one Monthly Wellness Box."
+    },
+    {
+      "id": "F03",
+      "category": "Tier Definition",
+      "fact": "The 'Radiant' membership tier was introduced on January 15, 2023, at a price of $99/month, and includes all 'Glow' benefits plus a Quarterly Strategy Call with an AuraLife coach."
+    },
+    {
+      "id": "F04",
+      "category": "Benefit Detail",
+      "fact": "The Monthly Wellness Box for 'Glow' tier members ships on the 5th of every month and contains 4-6 curated wellness products."
+    },
+    {
+      "id": "F05",
+      "category": "Benefit Detail",
+      "fact": "Quarterly Strategy Calls for 'Radiant' members are 45 minutes long and must be booked via the Calendly link in the member portal."
+    },
+    {
+      "id": "F06",
+      "category": "Legacy Program",
+      "fact": "The 'Founders Circle' was a one-time-fee program that closed to new members on December 31, 2019."
+    },
+    {
+      "id": "F07",
+      "category": "Legacy Program",
+      "fact": "All 150 members of the 'Founders Circle' receive one complimentary Annual Retreat Pass for life, valued at $1,200."
+    },
+    {
+      "id": "F08",
+      "category": "Legacy Program",
+      "fact": "The 'Pioneer Program' was an early subscription model running from 2020 to 2021, which granted members a permanent 20% discount on merchandise."
+    },
+    {
+      "id": "F09",
+      "category": "Grandfathered Rule",
+      "fact": "Members who subscribed to any tier before July 1, 2022, are locked into their original subscription price as long as their membership remains active."
+    },
+    {
+      "id": "F10",
+      "category": "Grandfathered Rule",
+      "fact": "Subscribers who were on the 'Glow' tier before the 'Radiant' tier was introduced (pre-Jan 15, 2023) were granted 'Glow+' status, which includes priority email support."
+    },
+    {
+      "id": "F11",
+      "category": "Grandfathered Rule",
+      "fact": "Any member who joined before 2021 has their data stored in the legacy CRM 'MemberBase', not the current 'MemberHub' system."
+    },
+    {
+      "id": "F12",
+      "category": "Campaign Entitlement",
+      "fact": "The 'Summer Surge 2022' campaign (June 1 - Aug 31, 2022) offered new 'Glow' subscribers three free 'Friend Passes' for the AuraVerse Digital Library."
+    },
+    {
+      "id": "F13",
+      "category": "Campaign Entitlement",
+      "fact": "The 'Innovator2021' campaign offered the first 500 subscribers a lifetime 15% discount on all add-on purchases, including special workshops."
+    },
+    {
+      "id": "F14",
+      "category": "Campaign Entitlement",
+      "fact": "Members who joined using the partner code 'ZENITHCORP' receive a co-branded digital welcome kit, accessible via a unique link sent to their registration email."
+    },
+    {
+      "id": "F15",
+      "category": "System & Tools",
+      "fact": "The definitive source for a member's specific entitlements is the 'BenefitMatrix' internal tool, accessible at https://internal.auralife.co/matrix."
+    },
+    {
+      "id": "F16",
+      "category": "System & Tools",
+      "fact": "All member support tickets are managed in Zendesk, instance 'auralife1138'."
+    },
+    {
+      "id": "F17",
+      "category": "System & Tools",
+      "fact": "Member subscription and billing history is managed through Stripe; the customer ID can be found in the 'MemberHub' profile under 'Billing Info'."
+    },
+    {
+      "id": "F18",
+      "category": "Operational Procedure",
+      "fact": "To verify a 'Founders Circle' member's status, check for the 'FC-LIFE' tag in their MemberHub profile."
+    },
+    {
+      "id": "F19",
+      "category": "Operational Procedure",
+      "fact": "Any request to change a grandfathered pricing plan must be escalated to a Tier 2 support specialist via the 'Escalate-Pricing' macro in Zendesk."
+    },
+    {
+      "id": "F20",
+      "category": "Operational Procedure",
+      "fact": "Questions about entitlement discrepancies should be posted in the Slack channel #entitlement-qna with the member's anonymous ID."
+    },
+    {
+      "id": "F21",
+      "category": "Personnel",
+      "fact": "Javier Rios is the Senior Entitlement Analyst and the final authority on legacy benefit interpretation; he can be reached at j.rios@auralife.co."
+    },
+    {
+      "id": "F22",
+      "category": "Personnel",
+      "fact": "Priya Sharma is the Head of Member Success and must approve any refunds exceeding $200."
+    },
+    {
+      "id": "F23",
+      "category": "Benefit Detail",
+      "fact": "The AuraVerse Digital Library contains over 500 guided meditations and 80+ wellness courses."
+    },
+    {
+      "id": "F24",
+      "category": "Tier Definition",
+      "fact": "The 'Spark' tier does not include access to the priority support queue; average response time is 24-48 hours."
+    },
+    {
+      "id": "F25",
+      "category": "Grandfathered Rule",
+      "fact": "The 'Glow+' status is automatically revoked if a member downgrades their plan or their subscription lapses for more than 14 days."
+    },
+    {
+      "id": "F26",
+      "category": "Legacy Program",
+      "fact": "The 'Pioneer Program' 20% merchandise discount is applied automatically at checkout when the member is logged into their account; no coupon code is needed."
+    },
+    {
+      "id": "F27",
+      "category": "Campaign Entitlement",
+      "fact": "The 'Friend Passes' from the 'Summer Surge 2022' campaign expired on December 31, 2022, and are no longer valid."
+    },
+    {
+      "id": "F28",
+      "category": "System & Tools",
+      "fact": "The BenefitMatrix tool syncs with the production database every 15 minutes, starting at the top of the hour."
+    },
+    {
+      "id": "F29",
+      "category": "Benefit Detail",
+      "fact": "The Annual Retreat Pass for 'Founders Circle' members covers event admission only; travel and accommodation are not included."
+    },
+    {
+      "id": "F30",
+      "category": "Operational Procedure",
+      "fact": "A member's original sign-up campaign code, if any, is logged as a permanent custom field named 'origin_campaign' in their MemberHub profile."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+  "description": "What is the monthly price of the 'Glow' tier, and what extra entitlement does it add beyond 'Spark'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Standard Tier Benefits",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+  "description": "For 'Glow' members, when does the Monthly Wellness Box ship each month, and how many products does it contain?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up: After learning the 'Glow' tier includes a Wellness Box, the user naturally wants details about that specific benefit.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Standard Tier Benefits",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "For 'Glow' members who subscribed before Jan 15, 2023, what is their 'Glow+' status benefit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Glow+ Grandfathered Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How can a member lose their 'Glow+' status?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group follow-up: Understanding the conditions of a special status is a direct consequence of learning about its existence.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Glow+ Grandfathered Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the lifetime benefit for 'Founders Circle' members and how is their status identified in MemberHub?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Founders Circle Legacy Program",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What costs are not included in the Annual Retreat Pass for 'Founders Circle' members?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying a high-value benefit like a retreat pass, the next logical question is about its limitations or exclusions to set correct expectations for the member.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Founders Circle Benefit Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the 'Pioneer Program' benefit and how is it applied?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Pioneer Program",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the 'Summer Surge 2022' campaign offer for new 'Glow' subscribers and what is the current validity of the 'Friend Passes'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Summer Surge Campaign",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "How is a member's original sign-up campaign recorded in their MemberHub profile?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After answering a question about a specific campaign, the specialist will need to know the general procedure for how to verify if any member was part of a campaign.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Checking Campaign Origin",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the pricing rule for members who subscribed to any tier before July 1, 2022?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Grandfathered Pricing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the required procedure to handle a request to change a grandfathered pricing plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group follow-up: After learning about a protected pricing rule, the immediate operational question is how to handle exceptions or changes to it.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Grandfathered Pricing",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What is the name and URL of the internal tool that is the definitive source for a member's entitlements?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: Discussing a complex rule like grandfathered pricing often prompts the need to know where the ultimate source of truth is for all such rules.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Master Entitlement Tool",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Standard Tier Benefits",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Glow+ Grandfathered Status",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Founders Circle Legacy Program",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Founders Circle Benefit Details",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Pioneer Program",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Summer Surge Campaign",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Checking Campaign Origin",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Grandfathered Pricing",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Master Entitlement Tool",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "membership_benefit_entitlement_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

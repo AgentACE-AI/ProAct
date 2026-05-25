@@ -1,0 +1,399 @@
+{
+  "scenario_id": "localization_market_exception_register_04",
+  "domain": "translation_localization_workflow",
+  "description": "A global marketing message must stay broadly consistent, but several markets require local legal or cultural exceptions that keep getting forgotten when campaigns are reused. All campaigns and brands are fictional.",
+  "user_profile": {
+    "persona": "38-year-old regional localization strategist responsible for maintaining local exceptions across campaign cycles",
+    "context": "A reused campaign recently shipped with one market-specific exception missing, causing an avoidable correction",
+    "communication_style": "Systematic and exception-aware, wants local deviations recorded in a reusable format"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "personnel_and_roles",
+      "fact": "Priya Sharma is the Regional Localization Strategist for the EMEA region at Globexy Inc."
+    },
+    {
+      "id": "F02",
+      "category": "personnel_and_roles",
+      "fact": "Priya Sharma's employee ID is GS-8841 and her workstation is at desk 4B-11."
+    },
+    {
+      "id": "F03",
+      "category": "personnel_and_roles",
+      "fact": "Kenji Tanaka is the Japan Market Lead, based in the Tokyo office."
+    },
+    {
+      "id": "F04",
+      "category": "personnel_and_roles",
+      "fact": "Sofia Garcia is the Spain Market Lead, contactable at s.garcia@globexy.es."
+    },
+    {
+      "id": "F05",
+      "category": "personnel_and_roles",
+      "fact": "Marco Rossi is the Senior Legal Counsel for EU marketing compliance; his direct extension is 4512."
+    },
+    {
+      "id": "F06",
+      "category": "campaign_details",
+      "fact": "The 'AuraGlow Spring 2023' campaign was reused as the template for the 'AuraGlow Spring 2024' launch."
+    },
+    {
+      "id": "F07",
+      "category": "campaign_details",
+      "fact": "The 'AuraGlow Spring 2024' campaign ID in the LingoHub system is AG-S24-001."
+    },
+    {
+      "id": "F08",
+      "category": "campaign_details",
+      "fact": "The budget code for the 'AuraGlow Spring 2024' campaign's localization is MKT-LOC-24-9103."
+    },
+    {
+      "id": "F09",
+      "category": "campaign_details",
+      "fact": "The 'Zenith Precision Launch' campaign is scheduled for Q4 2024, with a global kickoff on October 1st, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "localization_platform",
+      "fact": "The central repository for all localization assets is a proprietary platform named 'LingoHub'."
+    },
+    {
+      "id": "F11",
+      "category": "localization_platform",
+      "fact": "The login URL for the LingoHub production environment is https://lingohub.globexy-internal.com."
+    },
+    {
+      "id": "F12",
+      "category": "localization_platform",
+      "fact": "The LingoHub platform version is currently 3.7.2, updated on May 5th, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "localization_platform",
+      "fact": "The 'Market Exceptions' module in LingoHub was introduced in version 3.5 and is accessible via the 'Compliance' tab."
+    },
+    {
+      "id": "F14",
+      "category": "localization_platform",
+      "fact": "Priya Sharma's user role in LingoHub is 'Regional Admin', granting her permission to edit market exceptions."
+    },
+    {
+      "id": "F15",
+      "category": "market_specific_exceptions",
+      "fact": "For Germany, all 'Aura Skincare' product claims must include the legal disclaimer 'Ergebnisse können variieren' in 8pt font size."
+    },
+    {
+      "id": "F16",
+      "category": "market_specific_exceptions",
+      "fact": "In Japan, the 'Zenith Watches' tagline 'Mastery of Time' must be localized to '時の巧者' (Toki no Kōsha), not a direct translation."
+    },
+    {
+      "id": "F17",
+      "category": "market_specific_exceptions",
+      "fact": "In Spain, any promotional material for 'Aura Skincare' offering a discount must explicitly state the pre-discount price for at least 30 days prior, as per Royal Decree-Law 7/2021."
+    },
+    {
+      "id": "F18",
+      "category": "market_specific_exceptions",
+      "fact": "For the French market, the term 'anti-aging' is prohibited and must be replaced with 'soin pro-âge' (pro-aging care) for all 'Aura Skincare' campaigns."
+    },
+    {
+      "id": "F19",
+      "category": "market_specific_exceptions",
+      "fact": "The legal disclaimer for Canada (Quebec) requires all text to be in both French and English, with French being of equal or greater prominence, as mandated by Bill 96."
+    },
+    {
+      "id": "F20",
+      "category": "market_specific_exceptions",
+      "fact": "The 'AuraGlow Spring 2024' campaign for the UK must not feature models who appear to be under the age of 25, per ASA guidelines."
+    },
+    {
+      "id": "F21",
+      "category": "workflow_and_process",
+      "fact": "The standard localization workflow requires a mandatory 'Local Market Review' step in LingoHub before final asset delivery."
+    },
+    {
+      "id": "F22",
+      "category": "workflow_and_process",
+      "fact": "All market-specific exceptions must be logged in the LingoHub 'Market Exceptions' module under the corresponding brand and market tags."
+    },
+    {
+      "id": "F23",
+      "category": "workflow_and_process",
+      "fact": "Final sign-off for any EMEA campaign requires digital approval from both Priya Sharma and Marco Rossi within the LingoHub platform."
+    },
+    {
+      "id": "F24",
+      "category": "workflow_and_process",
+      "fact": "A new campaign localization project must be initiated in LingoHub at least 6 weeks prior to the global launch date."
+    },
+    {
+      "id": "F25",
+      "category": "system_and_tools",
+      "fact": "The master source content for all campaigns is stored in the Git repository at git@git.globexy.com:marketing/master-copy.git."
+    },
+    {
+      "id": "F26",
+      "category": "incident_report",
+      "fact": "The 'AuraGlow Spring 2024' campaign was launched in Spain on April 15, 2024, without the required pre-discount pricing disclaimer."
+    },
+    {
+      "id": "F27",
+      "category": "incident_report",
+      "fact": "The missing disclaimer incident was reported by Sofia Garcia via ticket LOC-INC-2024-018 in the Jira system on April 16, 2024."
+    },
+    {
+      "id": "F28",
+      "category": "incident_report",
+      "fact": "The cost of the correction for incident LOC-INC-2024-018, including ad recall and re-issuing digital assets, was €12,500."
+    },
+    {
+      "id": "F29",
+      "category": "incident_report",
+      "fact": "The root cause analysis for LOC-INC-2024-018 identified that the 'Market Exceptions' module was not checked during the reuse of the 2023 campaign assets."
+    },
+    {
+      "id": "F30",
+      "category": "system_and_tools",
+      "fact": "The project management tool used for tracking localization tasks is Asana, under the 'Global Marketing' workspace."
+    },
+    {
+      "id": "F31",
+      "category": "system_and_tools",
+      "fact": "The team's primary communication channel for urgent localization issues is the Slack channel #loc-alerts-emea."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the specific compliance issue with the 'AuraGlow Spring 2024' campaign in Spain and what was the requirement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Investigation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who reported the Spanish campaign incident and what is the Jira ticket number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning about the incident, the user would naturally want to know the administrative details like the reporter and ticket for tracking.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Investigation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was the cost to correct the Spanish campaign incident?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Understanding the financial impact is a primary concern for a strategist after learning about a significant error.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Investigation",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What was the root cause identified for the Spanish campaign incident?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After understanding the 'what' of the incident, the most logical next question for a systematic strategist is the 'why' or root cause.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Root Cause Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Where in the LingoHub platform are market exceptions supposed to be recorded, and under what organizational tags?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F22"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Knowing the root cause was a failure to check the 'Market Exceptions' module, the user's next step is to understand exactly where that module is and how it's supposed to be used.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "System & Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What permissions does my 'Regional Admin' role have regarding market exceptions in LingoHub?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning about the system module for exceptions, the user will want to confirm their own ability to interact with and manage it.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "System & Process",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the specific legal disclaimer required for 'Aura Skincare' products in Germany?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Exception Audit",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the mandatory replacement term for 'anti-aging' in France for 'Aura Skincare' campaigns?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After checking one market's exception for a brand, it's common to continue the audit by checking another market's rules for the same brand.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Exception Audit",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Which individuals are required to give final sign-off for an EMEA campaign within LingoHub?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the root cause is identified as a process failure, a strategist will investigate the official approval workflow to see where the breakdown in accountability occurred.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Approval Workflow",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "For the upcoming 'Zenith' campaign, what is the required Japanese localization for the tagline 'Mastery of Time'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Future Campaign Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the direct extension for Marco Rossi, the EU legal counsel?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning that Marco Rossi is a mandatory approver, asking for his contact information is a practical and highly predictable next step.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Contact Information",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Incident Investigation",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Root Cause Analysis",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "System & Process",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Exception Audit",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Approval Workflow",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Future Campaign Check",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Contact Information",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "localization_market_exception_register_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

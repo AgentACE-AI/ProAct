@@ -1,0 +1,430 @@
+{
+  "scenario_id": "product_choice_01",
+  "domain": "product_analysis",
+  "description": "A small business owner is choosing a CRM (Customer Relationship Management) tool. They need to compare features, pricing tiers, and integration capabilities of three major fictional platforms.",
+  "user_profile": {
+    "persona": "42-year-old boutique owner",
+    "context": "Current manual system is failing, needs a digital solution",
+    "communication_style": "Practical, dislikes technical jargon"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "crm_platform_details",
+      "fact": "The 'ConnectSphere' CRM platform was founded in 2018."
+    },
+    {
+      "id": "F02",
+      "category": "pricing_tier",
+      "fact": "ConnectSphere's 'Starter' plan costs $15 per user, per month, when billed annually."
+    },
+    {
+      "id": "F03",
+      "category": "pricing_tier",
+      "fact": "ConnectSphere's 'Pro' plan costs $45 per user, per month, and includes marketing automation features."
+    },
+    {
+      "id": "F04",
+      "category": "feature_contact_management",
+      "fact": "The ConnectSphere 'Starter' plan allows for a maximum of 1,500 contacts."
+    },
+    {
+      "id": "F05",
+      "category": "feature_sales_pipeline",
+      "fact": "ConnectSphere offers a drag-and-drop visual sales pipeline on all its paid plans."
+    },
+    {
+      "id": "F06",
+      "category": "feature_reporting",
+      "fact": "ConnectSphere's 'Pro' plan provides customizable sales dashboards, while the 'Starter' plan has 5 pre-built report templates."
+    },
+    {
+      "id": "F07",
+      "category": "integration_capability",
+      "fact": "ConnectSphere offers a native integration with QuickBooks Online for syncing invoices."
+    },
+    {
+      "id": "F08",
+      "category": "integration_capability",
+      "fact": "ConnectSphere integrates with Mailchimp for email marketing campaigns."
+    },
+    {
+      "id": "F09",
+      "category": "support_and_training",
+      "fact": "ConnectSphere 'Starter' plan customers receive support via email with a 24-hour response time guarantee."
+    },
+    {
+      "id": "F10",
+      "category": "support_and_training",
+      "fact": "ConnectSphere offers a one-on-one onboarding session for users on its 'Pro' plan for a one-time fee of $250."
+    },
+    {
+      "id": "F11",
+      "category": "crm_platform_details",
+      "fact": "The 'SalesHarbor' CRM is designed specifically for B2C retail businesses."
+    },
+    {
+      "id": "F12",
+      "category": "pricing_tier",
+      "fact": "SalesHarbor's 'Growth' plan is priced at $29 per user, per month."
+    },
+    {
+      "id": "F13",
+      "category": "pricing_tier",
+      "fact": "SalesHarbor's 'Business' plan, at $75 per user per month, includes advanced sales forecasting."
+    },
+    {
+      "id": "F14",
+      "category": "feature_contact_management",
+      "fact": "SalesHarbor's 'Growth' plan allows for up to 10,000 contacts and unlimited custom fields."
+    },
+    {
+      "id": "F15",
+      "category": "feature_sales_pipeline",
+      "fact": "SalesHarbor includes an automated lead scoring feature in its 'Business' plan to prioritize hot leads."
+    },
+    {
+      "id": "F16",
+      "category": "feature_reporting",
+      "fact": "SalesHarbor provides a mobile app for iOS and Android with full access to reporting dashboards."
+    },
+    {
+      "id": "F17",
+      "category": "integration_capability",
+      "fact": "SalesHarbor has a direct integration with Slack for real-time deal notifications."
+    },
+    {
+      "id": "F18",
+      "category": "integration_capability",
+      "fact": "SalesHarbor can connect to over 3,000 other applications via its Zapier integration."
+    },
+    {
+      "id": "F19",
+      "category": "support_and_training",
+      "fact": "SalesHarbor provides 24/7 live chat support for all paying customers."
+    },
+    {
+      "id": "F20",
+      "category": "support_and_training",
+      "fact": "SalesHarbor hosts a live webinar titled 'Mastering Your Pipeline' every Tuesday at 11:00 AM PST."
+    },
+    {
+      "id": "F21",
+      "category": "crm_platform_details",
+      "fact": "'ClientFlow' CRM promotes itself as the simplest CRM for solo entrepreneurs and micro-businesses."
+    },
+    {
+      "id": "F22",
+      "category": "pricing_tier",
+      "fact": "ClientFlow offers a 'Free Forever' plan for a single user."
+    },
+    {
+      "id": "F23",
+      "category": "pricing_tier",
+      "fact": "ClientFlow's 'Plus' plan costs $12 per user per month and increases the contact limit to 2,500."
+    },
+    {
+      "id": "F24",
+      "category": "pricing_tier",
+      "fact": "ClientFlow's 'Premium' plan costs $30 per user per month and includes phone support."
+    },
+    {
+      "id": "F25",
+      "category": "feature_contact_management",
+      "fact": "The ClientFlow 'Free Forever' plan is limited to 500 total contacts."
+    },
+    {
+      "id": "F26",
+      "category": "feature_contact_management",
+      "fact": "ClientFlow can automatically import contacts from a Gmail account."
+    },
+    {
+      "id": "F27",
+      "category": "feature_sales_pipeline",
+      "fact": "ClientFlow uses a Kanban-style board to visualize deal stages."
+    },
+    {
+      "id": "F28",
+      "category": "integration_capability",
+      "fact": "ClientFlow integrates directly with Google Calendar to schedule appointments."
+    },
+    {
+      "id": "F29",
+      "category": "integration_capability",
+      "fact": "ClientFlow's 'Plus' plan includes a direct integration with the Stripe payment gateway."
+    },
+    {
+      "id": "F30",
+      "category": "support_and_training",
+      "fact": "Support for ClientFlow's 'Free Forever' plan is limited to a community support forum."
+    },
+    {
+      "id": "F31",
+      "category": "feature_reporting",
+      "fact": "ClientFlow's free plan includes one dashboard with three standard reports: 'Deals Won', 'Deals Lost', and 'Activity'."
+    },
+    {
+      "id": "F32",
+      "category": "crm_platform_details",
+      "fact": "The data center for SalesHarbor is located in Dublin, Ireland."
+    },
+    {
+      "id": "F33",
+      "category": "feature_contact_management",
+      "fact": "ConnectSphere allows users to create and send 10 email templates on its 'Starter' plan."
+    },
+    {
+      "id": "F34",
+      "category": "feature_sales_pipeline",
+      "fact": "SalesHarbor allows for the creation of up to 15 unique sales pipelines on the 'Business' plan."
+    },
+    {
+      "id": "F35",
+      "category": "crm_platform_details",
+      "fact": "All three CRM platforms—ConnectSphere, SalesHarbor, and ClientFlow—offer a 14-day free trial of their paid plans."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Is there a CRM option that offers a free plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Cost & Free Options",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the limitations on contacts, support, and reporting for ClientFlow's free plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F30",
+        "F31"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning about a free plan, the user will naturally want to know its limitations and constraints.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Cost & Free Options",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the advertised per-user monthly prices for the entry-level paid plans, and which one assumes annual billing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F12",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Paid Plan Pricing Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the contact limits for ConnectSphere's 'Starter', SalesHarbor's 'Growth', and ClientFlow's 'Plus' plans?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F14",
+        "F23"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once the user knows the prices of the entry-level plans, the next logical step is to compare their core limitations, such as contact capacity.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Core Feature Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Does ConnectSphere offer a native integration with QuickBooks Online?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Specific Integrations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which ClientFlow plan includes a direct integration with the Stripe payment gateway?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After asking about an accounting integration, the user is likely thinking about other financial tools, making a question about payment gateway integration highly probable.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Specific Integrations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What kind of support does SalesHarbor provide for its paying customers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After comparing core features and limits of the plans, a practical business owner will consider the support model for when they need assistance.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Support Model",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Does SalesHarbor host any live training webinars?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After inquiring about a platform's customer support, the user may also be interested in proactive training resources like webinars to learn the system.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Training Resources",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Which SalesHarbor plan includes an automated lead scoring feature?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Advanced Features",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Does ConnectSphere's 'Pro' plan include marketing automation features?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Inquiring about one advanced feature like lead scoring often leads to questions about other advanced capabilities, such as marketing automation, to compare platforms.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Advanced Features",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Do any of these CRM platforms offer a free trial of their paid plans?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F35"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the prices of the paid plans, a user's immediate next step before making a financial commitment is to determine if they can try the product first.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Trial Options",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Cost & Free Options",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Paid Plan Pricing Comparison",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Core Feature Comparison",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Specific Integrations",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Support Model",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Training Resources",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Advanced Features",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Trial Options",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "product_choice_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

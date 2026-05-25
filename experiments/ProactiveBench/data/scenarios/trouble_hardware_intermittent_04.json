@@ -1,0 +1,493 @@
+{
+  "scenario_id": "trouble_hardware_intermittent_04",
+  "domain": "troubleshooting",
+  "description": "A technician is fixing a complex industrial sensor. Conflict: The sensor only fails when the temperature exceeds 40°C AND the vibration is high. Standard tests pass in the lab. They need to design a stress test that replicates the conflicting environmental conditions.",
+  "user_profile": {
+    "persona": "40-year-old Field Engineer",
+    "context": "Customer is complaining about 'ghost' failures",
+    "communication_style": "Practical, observant, skeptical of 'easy' fixes"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "The Field Engineer assigned to the case is Marcus Thorne, employee ID 743-B."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "The primary customer contact at Apex Petrochemicals is Dr. Aris Thorne, Head of Operations."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel",
+      "fact": "The lead lab technician at the manufacturer, OmniSensors Inc., is Lena Petrova."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel",
+      "fact": "Marcus Thorne's direct manager is Sarah Jenkins, Director of Field Operations."
+    },
+    {
+      "id": "F05",
+      "category": "Equipment",
+      "fact": "The failing sensor is the OmniSensors Inc. model 'VibraTherm 9000', serial number VT9K-881-04B."
+    },
+    {
+      "id": "F06",
+      "category": "Equipment",
+      "fact": "The VibraTherm 9000 is officially rated for operation up to 85°C and 15 G-rms vibration."
+    },
+    {
+      "id": "F07",
+      "category": "Equipment",
+      "fact": "The standard diagnostic tool used is the 'Omni-Calibrator Pro 3' software, version 3.7.2."
+    },
+    {
+      "id": "F08",
+      "category": "Equipment",
+      "fact": "The proposed stress test requires a 'Thermotron S-8-8200' environmental chamber."
+    },
+    {
+      "id": "F09",
+      "category": "Equipment",
+      "fact": "The stress test also requires a 'Data Physics V-200' electromagnetic shaker table."
+    },
+    {
+      "id": "F10",
+      "category": "Customer & Site",
+      "fact": "The customer experiencing the failures is Apex Petrochemicals, located at 15 Industrial Way, Port Arthur, TX."
+    },
+    {
+      "id": "F11",
+      "category": "Customer & Site",
+      "fact": "The specific installation site for sensor VT9K-881-04B is on the primary catalytic cracker unit, location ID CCU-P2."
+    },
+    {
+      "id": "F12",
+      "category": "Customer & Site",
+      "fact": "Apex Petrochemicals filed the initial service ticket, #APX-2024-05-118, on May 15, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "Customer & Site",
+      "fact": "The ambient temperature at location CCU-P2 regularly reaches 45°C during peak afternoon operations."
+    },
+    {
+      "id": "F14",
+      "category": "Failure Conditions",
+      "fact": "The sensor logs show intermittent data dropouts, specifically when ambient temperature exceeds 40°C."
+    },
+    {
+      "id": "F15",
+      "category": "Failure Conditions",
+      "fact": "On-site vibration monitoring data from a secondary accelerometer shows vibration spikes of 12 G-rms during the failure periods."
+    },
+    {
+      "id": "F16",
+      "category": "Failure Conditions",
+      "fact": "The 'ghost' failures occur for an average duration of 90 seconds before the sensor self-recovers."
+    },
+    {
+      "id": "F17",
+      "category": "Failure Conditions",
+      "fact": "The mean time between failures (MTBF) for this specific issue has been logged by the customer as 72 hours."
+    },
+    {
+      "id": "F18",
+      "category": "Failure Conditions",
+      "fact": "The sensor's internal error log code for the failure is 'E-0x7F: Data Bus Timeout'."
+    },
+    {
+      "id": "F19",
+      "category": "Standard Procedures",
+      "fact": "The standard lab test protocol, 'STP-VT9K-001', cycles the sensor from -20°C to 85°C at a constant, low vibration of 1 G-rms."
+    },
+    {
+      "id": "F20",
+      "category": "Standard Procedures",
+      "fact": "The standard vibration test, 'SVP-VT9K-003', subjects the sensor to 20 G-rms vibration, but only at a controlled room temperature of 22°C."
+    },
+    {
+      "id": "F21",
+      "category": "Standard Procedures",
+      "fact": "The Omni-Calibrator Pro 3 software diagnostics, run on the returned unit in the lab, reported 'All Systems Nominal'."
+    },
+    {
+      "id": "F22",
+      "category": "Proposed Stress Test",
+      "fact": "Marcus Thorne has designed a new test protocol named 'ENV-STRESS-VT9K-MThorne-01'."
+    },
+    {
+      "id": "F23",
+      "category": "Proposed Stress Test",
+      "fact": "The new protocol specifies ramping the environmental chamber temperature to 42°C over 30 minutes."
+    },
+    {
+      "id": "F24",
+      "category": "Proposed Stress Test",
+      "fact": "Simultaneously, the shaker table will apply a random vibration profile with a peak of 13 G-rms."
+    },
+    {
+      "id": "F25",
+      "category": "Proposed Stress Test",
+      "fact": "The total duration for the combined stress test cycle is specified as 4 hours."
+    },
+    {
+      "id": "F26",
+      "category": "Proposed Stress Test",
+      "fact": "The test requires continuous data logging from the sensor's UART port at a baud rate of 115200."
+    },
+    {
+      "id": "F27",
+      "category": "Communication & Reporting",
+      "fact": "All case notes and test results are logged in the company's Jira instance under ticket 'FS-9103'."
+    },
+    {
+      "id": "F28",
+      "category": "Communication & Reporting",
+      "fact": "Marcus Thorne sent the proposed test plan 'ENV-STRESS-VT9K-MThorne-01' to Lena Petrova via email on June 5, 2024, at 14:30 CST for lab implementation."
+    },
+    {
+      "id": "F29",
+      "category": "Standard Procedures",
+      "fact": "Omni-Calibrator Pro 3 diagnostics are run under bench conditions and do not expose the sensor to simultaneous elevated temperature and high vibration."
+    },
+    {
+      "id": "F30",
+      "category": "Failure Conditions",
+      "fact": "OmniSensors' internal troubleshooting note states that VibraTherm 9000 timeout faults like E-0x7F typically appear only after 60 to 90 seconds of concurrent temperature above 40°C and vibration above 12 G-rms."
+    },
+    {
+      "id": "F31",
+      "category": "Standard Procedures",
+      "fact": "There is no standard OmniSensors validation protocol that combines temperature above 40°C with vibration above 12 G-rms in the same test run."
+    },
+    {
+      "id": "F32",
+      "category": "Proposed Stress Test",
+      "fact": "For ENV-STRESS-VT9K-MThorne-01, the lab must log UART output continuously for the full 4-hour cycle while also recording chamber temperature, shaker vibration level, timestamps, and any E-0x7F timeout events."
+    },
+    {
+      "id": "F33",
+      "category": "Equipment",
+      "fact": "An internal OmniSensors reliability bulletin documents two prior VibraTherm 9000 field cases with intermittent data dropouts under combined heat and vibration exposure."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What specific environmental conditions are linked to the sensor data dropouts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the specific error code logged by the sensor during these failures?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the conditions of the failure, the user will want to know the specific error the system recorded.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Why did the lab diagnostics miss the issue and still report 'All Systems Nominal'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Knowing the field error code (N2), the user's next logical question is why the standard lab procedure failed to detect it.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Standard Test Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What do the standard temperature and vibration protocols cover separately, and do they include any combined high-temperature/high-vibration run?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20",
+        "F31"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After learning that standard diagnostics passed, the user needs to understand the parameters of those tests to see why they were insufficient.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Standard Test Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the name of my new test protocol and what are its core temperature and vibration parameters?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23",
+        "F24"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing the inadequate standard test parameters (N4), the user will define the parameters for the new, more accurate test.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "New Test Plan - Definition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the total duration for the new combined stress test cycle?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Once the core parameters of the new test are established, the next detail needed is its duration.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "New Test Plan - Definition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What specific environmental chamber and shaker table are required to run this test?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After defining the new test's environmental parameters (N5), the user needs to identify the specific equipment required to execute it.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "New Test Plan - Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "For the new 4-hour stress test, what data has to be logged continuously?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25",
+        "F26",
+        "F32"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Once the physical test equipment is identified (N7), the user will consider how to capture the data generated during the test.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "New Test Plan - Data Capture",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the customer's service ticket number for this issue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Case and Sensor Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the sensor's model and serial number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After referencing the service ticket, the user will confirm the specific piece of hardware involved.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Case and Sensor Context",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Has the VibraTherm 9000 model had similar field issues under combined heat and vibration conditions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05",
+        "F33"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "After identifying the exact model and serial family, a natural follow-up is whether this hardware line has a known history of similar combined-condition failures.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Case and Sensor Context",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N12",
+      "description": "Who at the lab needs to receive the proposed test plan, and when was it sent?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Who is the primary customer contact for this case?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Communication",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "Who is my direct manager?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Internal Info",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What are the sensor's official rated operating limits?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After defining the new stress test parameters (N5), the user may want to cross-reference them with the sensor's official specifications to ensure the test is valid but not destructive.",
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Equipment Specs",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Problem Definition",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Standard Test Analysis",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "New Test Plan - Definition",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "New Test Plan - Logistics",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "New Test Plan - Data Capture",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Case and Sensor Context",
+      "member_need_ids": [
+        "N9",
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Communication",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Internal Info",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Equipment Specs",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "trouble_hardware_intermittent_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

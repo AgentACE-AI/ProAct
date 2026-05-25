@@ -1,0 +1,499 @@
+{
+  "scenario_id": "polling_incident_timeline_04",
+  "domain": "election_polling_operations",
+  "description": "Several small incidents occurred during the day, and the lead needs a reliable chronological account before filing a formal summary upward. All locations and election offices are fictional.",
+  "user_profile": {
+    "persona": "42-year-old polling site lead closing out an unusually eventful election day",
+    "context": "Each incident was handled in the moment, but the sequence and overlap are already becoming difficult to reconstruct accurately",
+    "communication_style": "Chronological and calm, wants a factual timeline rather than an emotional recap"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel & Assignments",
+      "fact": "Maya Singh was the designated Polling Site Lead for the Northwood Community Center location."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel & Assignments",
+      "fact": "Poll workers Liam Johnson and Sarah Kim were assigned to the voter check-in stations for the entire day."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel & Assignments",
+      "fact": "Poll workers Omar Hassan and Chloe Garcia were assigned to ballot assistance and machine monitoring."
+    },
+    {
+      "id": "F04",
+      "category": "Timeline: Morning",
+      "fact": "The polling location at Northwood Community Center, 1550 Arbor Lane, officially opened to voters at 07:00 on November 5, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "Timeline: Morning",
+      "fact": "At 07:15, the ballot scanner at Station 3, a Dominion ImageCast Precinct 2 model, rejected three consecutive ballots."
+    },
+    {
+      "id": "F06",
+      "category": "Incidents & Resolutions",
+      "fact": "The cause of the scanner rejections at Station 3 was identified as a misaligned internal paper guide."
+    },
+    {
+      "id": "F07",
+      "category": "Incidents & Resolutions",
+      "fact": "Poll worker Omar Hassan realigned the paper guide on the Station 3 scanner at 07:18, which resolved the issue."
+    },
+    {
+      "id": "F08",
+      "category": "Communications",
+      "fact": "Maya Singh recorded the scanner malfunction and resolution as entry #1 in the official site logbook at 07:20."
+    },
+    {
+      "id": "F09",
+      "category": "Equipment & Supplies",
+      "fact": "The polling site was equipped with a total of five Dominion ImageCast Precinct 2 ballot scanners."
+    },
+    {
+      "id": "F10",
+      "category": "Equipment & Supplies",
+      "fact": "The site began the day with an inventory of 2,500 pre-printed paper ballots."
+    },
+    {
+      "id": "F11",
+      "category": "Timeline: Morning",
+      "fact": "At 09:42, a voter named Mr. Albert Finch stated his name was not found on the electronic poll book."
+    },
+    {
+      "id": "F12",
+      "category": "Incidents & Resolutions",
+      "fact": "Poll worker Sarah Kim used the county lookup tool and verified Mr. Finch was correctly registered at the Redwood Elementary School precinct."
+    },
+    {
+      "id": "F13",
+      "category": "Incidents & Resolutions",
+      "fact": "Mr. Albert Finch was issued a provisional ballot at 09:48 per Sterling County Elections procedure."
+    },
+    {
+      "id": "F14",
+      "category": "Communications",
+      "fact": "At 09:50, Maya Singh called David Chen, Field Operations Supervisor at Sterling County Elections (555-0182), to confirm the provisional ballot protocol."
+    },
+    {
+      "id": "F15",
+      "category": "Voter Information",
+      "fact": "As of the 12:00 noon count, a total of 312 voters had cast their ballots."
+    },
+    {
+      "id": "F16",
+      "category": "Timeline: Afternoon",
+      "fact": "At 13:15, a power strip connected to voting Stations 1 and 2 tripped, causing a momentary power loss to the scanners."
+    },
+    {
+      "id": "F17",
+      "category": "Incidents & Resolutions",
+      "fact": "Liam Johnson reset the tripped power strip at 13:16, immediately restoring power to the affected stations."
+    },
+    {
+      "id": "F18",
+      "category": "Equipment & Supplies",
+      "fact": "The internal battery backups on the Dominion scanners at Stations 1 and 2 functioned correctly, preventing any data loss or machine shutdown."
+    },
+    {
+      "id": "F19",
+      "category": "Timeline: Afternoon",
+      "fact": "At 14:30, a mid-day resupply of 500 additional ballots was delivered from the Sterling County Elections warehouse."
+    },
+    {
+      "id": "F20",
+      "category": "Personnel & Assignments",
+      "fact": "The ballot resupply delivery was signed for by Maya Singh; the courier's name was Mark O'Connell."
+    },
+    {
+      "id": "F21",
+      "category": "Timeline: Afternoon",
+      "fact": "At 16:05, a slow water leak was discovered originating from a pipe under the sink in the men's restroom."
+    },
+    {
+      "id": "F22",
+      "category": "Incidents & Resolutions",
+      "fact": "At 16:07, Chloe Garcia placed a 'Caution: Wet Floor' sign and a collection bucket at the site of the restroom leak."
+    },
+    {
+      "id": "F23",
+      "category": "Communications",
+      "fact": "Maya Singh sent a text message to the community center's facility manager, Ms. Janice Gable, at 16:10 to report the water leak."
+    },
+    {
+      "id": "F24",
+      "category": "Voter Information",
+      "fact": "As of the 18:00 (6 PM) count, a total of 745 voters had cast their ballots."
+    },
+    {
+      "id": "F25",
+      "category": "Timeline: Evening & Closing",
+      "fact": "At 19:55, a voter named Ms. Evelyn Reed was the last person to get in line before the official closing time."
+    },
+    {
+      "id": "F26",
+      "category": "Timeline: Evening & Closing",
+      "fact": "The doors to the polling place were officially closed to new arrivals at exactly 20:00."
+    },
+    {
+      "id": "F27",
+      "category": "Timeline: Evening & Closing",
+      "fact": "The last voter in line, Ms. Evelyn Reed, successfully cast her ballot at 20:12."
+    },
+    {
+      "id": "F28",
+      "category": "Voter Information",
+      "fact": "The total number of voters who cast ballots at the Northwood Community Center location for the day was 815."
+    },
+    {
+      "id": "F29",
+      "category": "Voter Information",
+      "fact": "The site processed a total of 12 new same-day voter registrations on Election Day."
+    },
+    {
+      "id": "F30",
+      "category": "Timeline: Evening & Closing",
+      "fact": "The formal process of shutting down and securing all voting machines began at 20:15."
+    },
+    {
+      "id": "F31",
+      "category": "Equipment & Supplies",
+      "fact": "Final ballot counts were printed from all five machines and reconciled with the poll book by 20:45."
+    },
+    {
+      "id": "F32",
+      "category": "Incidents & Resolutions",
+      "fact": "The single provisional ballot cast by Mr. Finch was sealed in security envelope #PV-S0341."
+    },
+    {
+      "id": "F33",
+      "category": "Timeline: Evening & Closing",
+      "fact": "Two authorized Sterling County Elections officials collected all sealed ballot boxes and secured equipment at 21:30."
+    },
+    {
+      "id": "F34",
+      "category": "Communications",
+      "fact": "Maya Singh submitted the final digital end-of-day report via the 'PollChief' portal at 21:55, receiving confirmation ID #EOD-NC-78B34."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What time did the Northwood Community Center polling location officially open?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Opening Time",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the first equipment issue of the day and when did it occur?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Scanner Malfunction",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What was the cause of the ballot scanner rejections and how and when was it resolved?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group follow-up: After learning about an issue, the user will want to know its cause and resolution.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Scanner Malfunction",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "When was the scanner malfunction officially recorded in the site logbook?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming an incident's resolution, the next logical step for a lead is to confirm it was properly documented.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Incident Logging",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "After the scanner malfunction was logged at 07:20, what was the next incident later that morning?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After confirming when the scanner malfunction was logged, a direct chronological follow-up is the next incident that occurred later in the day.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Voter Registration Issue",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "In that next incident, what action was taken for Mr. Finch at 09:48?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group follow-up: After identifying Mr. Finch's registration-related incident, the direct next question is what action was taken for him at 09:48.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Voter Registration Issue",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "After Mr. Finch was issued a provisional ballot, at what time was the procedure confirmed and who was contacted?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After confirming that Mr. Finch was issued a provisional ballot, a direct follow-up is when that procedure was confirmed and who was contacted.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Protocol Confirmation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Describe the power-related incident that occurred in the afternoon.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Power Strip Incident",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "How was the power strip issue resolved and was any data lost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group follow-up: The user needs to know both the fix for the power issue and its impact on the voting machines.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Power Strip Incident",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "When was a ballot resupply delivered and how many ballots were in it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Ballot Resupply",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who signed for the ballot resupply delivery?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group follow-up: A secondary detail about the delivery is who was responsible for receiving it.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Ballot Resupply",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What facility issue was discovered later in the afternoon?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Continuing the chronological reconstruction of incidents, after detailing the power issue, the user would ask about the next problem that occurred.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Facility Leak",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What immediate actions were taken after the water leak was discovered?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "Intra-group follow-up: After identifying the problem, the required report information is what was done about it.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Facility Leak",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "What time did the last voter get in line, and when did they finish voting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Last Voter",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What was the total number of voters who cast ballots at the Northwood Community Center location for the day?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "CROSS-GROUP: After confirming the last vote was cast, a natural concluding statistic for the report is the final voter turnout.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Final Turnout",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Opening Time",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Scanner Malfunction",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Incident Logging",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Voter Registration Issue",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Protocol Confirmation",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Power Strip Incident",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Ballot Resupply",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Facility Leak",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G9",
+      "label": "Last Voter",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Final Turnout",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G9"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "polling_incident_timeline_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

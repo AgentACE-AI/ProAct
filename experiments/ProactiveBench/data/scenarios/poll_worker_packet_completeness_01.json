@@ -1,0 +1,370 @@
+{
+  "scenario_id": "poll_worker_packet_completeness_01",
+  "domain": "election_polling_operations",
+  "description": "A polling place lead needs to confirm that each worker packet includes the right materials, credentials, emergency contacts, opening procedures, and quick-reference instructions before the day begins. All election offices and locations are fictional.",
+  "user_profile": {
+    "persona": "44-year-old site lead responsible for opening a polling location smoothly",
+    "context": "The site has enough materials overall, but not enough confidence that each worker packet is complete and correctly assembled",
+    "communication_style": "Orderly and procedural, wants completeness checked by role rather than by memory"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "packet_contents_general",
+      "fact": "Each Poll Worker Packet must contain one 'Form CW-04: Packet Contents Checklist', dated October 15, 2024."
+    },
+    {
+      "id": "F02",
+      "category": "credentials_and_access",
+      "fact": "Each worker's laminated ID badge must display a unique 6-digit Worker ID number and their assigned role."
+    },
+    {
+      "id": "F03",
+      "category": "emergency_contacts",
+      "fact": "The primary contact for ballot shortages or material discrepancies is Deputy Clerk Maria Garcia at the Aethelburg County Elections Office, phone number 555-0123."
+    },
+    {
+      "id": "F04",
+      "category": "opening_procedures",
+      "fact": "The 'Zero Report' tape, confirming zero votes have been cast, must be printed from each Pro-Vote 3000 machine at 6:15 AM."
+    },
+    {
+      "id": "F05",
+      "category": "packet_contents_role_specific",
+      "fact": "The Site Lead packet contains the master key, labeled 'NCC-MASTER-01', for the main ballot storage closet (Room 104B)."
+    },
+    {
+      "id": "F06",
+      "category": "packet_contents_role_specific",
+      "fact": "Each Ballot Judge packet must include a logbook titled 'Form BJ-11: Tamper-Evident Seal Log'."
+    },
+    {
+      "id": "F07",
+      "category": "packet_contents_role_specific",
+      "fact": "The Check-in Clerk packets must each contain a password card for the 'PollPad' electronic check-in system; the password for November 5, 2024 is 'NorthwoodVote!24'."
+    },
+    {
+      "id": "F08",
+      "category": "packet_contents_role_specific",
+      "fact": "The Greeter role packet must include one (1) blue 'Voter Assistance' vest, size Large."
+    },
+    {
+      "id": "F09",
+      "category": "equipment_and_materials",
+      "fact": "The Northwood Community Center polling location is assigned five (5) Pro-Vote 3000 voting machines for this election."
+    },
+    {
+      "id": "F10",
+      "category": "emergency_contacts",
+      "fact": "For technical support with the Pro-Vote 3000 machines or PollPad tablets, call the Aethelburg County IT Help Desk at 555-0182."
+    },
+    {
+      "id": "F11",
+      "category": "opening_procedures",
+      "fact": "All poll workers are required to sign the 'Oath of Office' (Form PW-01) before handling any official election materials, no later than 6:00 AM."
+    },
+    {
+      "id": "F12",
+      "category": "packet_contents_general",
+      "fact": "Every worker packet must contain a laminated 4x6 inch 'Quick Reference Guide' (QRG-2024) outlining common voter issues."
+    },
+    {
+      "id": "F13",
+      "category": "credentials_and_access",
+      "fact": "The Site Lead's ID badge has a red border for easy identification by workers and election officials."
+    },
+    {
+      "id": "F14",
+      "category": "emergency_contacts",
+      "fact": "In case of a medical emergency, first call 911, then immediately notify the Central Command office at 555-0100."
+    },
+    {
+      "id": "F15",
+      "category": "opening_procedures",
+      "fact": "The Site Lead must verify the serial numbers on all five Pro-Vote 3000 machines against the 'Form OP-01: Equipment Inventory' by 5:30 AM."
+    },
+    {
+      "id": "F16",
+      "category": "equipment_and_materials",
+      "fact": "The asset tag for the single ADA-compliant voting machine at the Northwood location is PV3K-AET-8805."
+    },
+    {
+      "id": "F17",
+      "category": "packet_contents_general",
+      "fact": "Each worker packet includes one voucher for a complimentary beverage from the 'Corner Perk Cafe' located next to the polling place."
+    },
+    {
+      "id": "F18",
+      "category": "emergency_contacts",
+      "fact": "To report a media inquiry or press presence, contact the County Communications Director, Liam Smith, at 555-0112 before providing any statements."
+    },
+    {
+      "id": "F19",
+      "category": "packet_contents_role_specific",
+      "fact": "The Check-in Clerk packet contains the official hard-copy voter roll in a red binder as a backup for the electronic system."
+    },
+    {
+      "id": "F20",
+      "category": "opening_procedures",
+      "fact": "The American flag must be displayed outside the main entrance of the Northwood Community Center by 6:45 AM as per Aethelburg County Election Code 113.4."
+    },
+    {
+      "id": "F21",
+      "category": "credentials_and_access",
+      "fact": "To access the county's end-of-day reporting portal, the Site Lead must use the URL https://reports.aethelburg.gov/electionday and their assigned 8-digit PIN."
+    },
+    {
+      "id": "F22",
+      "category": "equipment_and_materials",
+      "fact": "Each of the three main supply bins (labeled BIN-GEN-01 through BIN-GEN-03) should contain 500 'I Voted' stickers of the 'Aethelburg Oak Tree' design."
+    },
+    {
+      "id": "F23",
+      "category": "packet_contents_role_specific",
+      "fact": "Each Ballot Judge packet contains a set of two unique, paired keys (labeled VMAK-1A and VMAK-1B) required to activate a Pro-Vote 3000 machine."
+    },
+    {
+      "id": "F24",
+      "category": "emergency_contacts",
+      "fact": "The non-emergency security contact for the Northwood Community Center is building manager Frank Miller, reachable at 555-0199."
+    },
+    {
+      "id": "F25",
+      "category": "opening_procedures",
+      "fact": "The signed 'Zero Report' tapes from all five machines must be posted on the 'Official Notices' board by 6:55 AM for public viewing."
+    },
+    {
+      "id": "F26",
+      "category": "packet_contents_general",
+      "fact": "Each packet must contain two black ink pens from the brand 'PenCo' and one pre-sharpened No. 2 pencil."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Which general items are explicitly required in every poll worker packet: the contents checklist, quick reference guide, pens, and pencil?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F12",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "General Packet Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What must each worker ID badge display, and what extra visual marker does the Site Lead badge have?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After checking for general packet contents, verifying the specific details of a key item like the ID badge is a logical next step.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "General Packet Verification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which two items are explicitly listed for the Check-in Clerk packet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Role-Specific Packet: Check-in Clerk",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which two unique items are explicitly listed for each Ballot Judge packet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Role-Specific Packet: Ballot Judge",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the role-specific item for the Greeter's packet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Role-Specific Packet: Greeter",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the master key label that should be in my Site Lead packet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After verifying the packets for all other roles, the site lead would naturally turn their attention to verifying their own role-specific materials.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Role-Specific Packet: Site Lead",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Now that packets are verified, what is the first official procedure all poll workers must complete and by what time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Once the materials and packets are confirmed to be correct, the user's focus naturally shifts from inventory to the sequence of opening procedures.",
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Opening Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "By what time must the Site Lead verify machine serial numbers, and at what time must the Zero Report be printed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F04"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After learning about the first administrative task (oath), the user will likely ask about the next critical procedure, which involves the voting equipment.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Opening Procedures",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Who is the primary contact for ballot shortages or material discrepancies?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: While reviewing procedures for verifying materials and machines, a procedural lead will proactively think about who to contact if they discover a problem.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Contacts: Materials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Which checklist form should be used to verify the contents of each poll worker packet?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After reviewing the general items that must appear in every poll worker packet, a direct follow-up is which checklist form should be used to verify each packet's contents.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Packet Verification Checklist",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "General Packet Verification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Role-Specific Packet: Check-in Clerk",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Role-Specific Packet: Ballot Judge",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Role-Specific Packet: Greeter",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Role-Specific Packet: Site Lead",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Opening Procedures",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Contacts: Materials",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+    "label": "Packet Verification Checklist",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "poll_worker_packet_completeness_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

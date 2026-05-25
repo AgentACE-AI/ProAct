@@ -1,0 +1,436 @@
+{
+  "scenario_id": "library_accessibility_program_prep_04",
+  "domain": "public_library_services",
+  "description": "Library staff are preparing a public program and need to align room setup, assistive devices, large-print materials, interpretation support, and participant-specific accessibility requests.",
+  "user_profile": {
+    "persona": "37-year-old public programs librarian coordinating an inclusive event",
+    "context": "The event itself is planned, but accessibility details are currently spread across RSVP notes and staff memory",
+    "communication_style": "Inclusive and detail-oriented, wants accommodations treated as core logistics rather than add-ons"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "event_details",
+      "fact": "The public program is titled 'Modern Calligraphy Workshop'."
+    },
+    {
+      "id": "F02",
+      "category": "event_details",
+      "fact": "The workshop is scheduled for Saturday, October 26, 2024, from 2:00 PM to 4:00 PM."
+    },
+    {
+      "id": "F03",
+      "category": "event_details",
+      "fact": "The event will be held in Community Room B at the Oakridge Public Library."
+    },
+    {
+      "id": "F04",
+      "category": "staff_coordination",
+      "fact": "Lena Petrova is the lead Public Programs Librarian coordinating the event."
+    },
+    {
+      "id": "F05",
+      "category": "room_setup",
+      "fact": "The room setup request specifies five round tables, each seating a maximum of six participants."
+    },
+    {
+      "id": "F06",
+      "category": "room_setup",
+      "fact": "A minimum pathway width of 48 inches must be maintained between all tables to ensure wheelchair accessibility."
+    },
+    {
+      "id": "F07",
+      "category": "room_setup",
+      "fact": "The presenter's lectern must be an adjustable height model, set to 40 inches at the start of the event."
+    },
+    {
+      "id": "F08",
+      "category": "room_setup",
+      "fact": "Overhead lighting in Community Room B will be set to 800 lux to accommodate participants with low vision."
+    },
+    {
+      "id": "F09",
+      "category": "participant_requests",
+      "fact": "Participant RSVP #1152, Anika Sharma, requested a seat with a clear line of sight to the ASL interpreter."
+    },
+    {
+      "id": "F10",
+      "category": "participant_requests",
+      "fact": "Participant RSVP #1201, David Chen, requested a workspace with an additional task light and access to a power outlet for a personal device."
+    },
+    {
+      "id": "F11",
+      "category": "participant_requests",
+      "fact": "Participant RSVP #1099, Maria Flores, has a severe latex allergy; all provided art supplies have been confirmed to be latex-free."
+    },
+    {
+      "id": "F12",
+      "category": "participant_requests",
+      "fact": "Two participants, identified in RSVP notes #1088 and #1124, have requested left-handed calligraphy pens."
+    },
+    {
+      "id": "F13",
+      "category": "assistive_devices",
+      "fact": "An FM assistive listening system has been requested by participant RSVP #1138."
+    },
+    {
+      "id": "F14",
+      "category": "assistive_devices",
+      "fact": "The library is renting one Phonak Roger FM system from AccessTech Solutions under purchase order #78-AC9."
+    },
+    {
+      "id": "F15",
+      "category": "assistive_devices",
+      "fact": "The rented FM system is scheduled for delivery to the library's receiving dock on Friday, October 25, 2024, by 3:00 PM."
+    },
+    {
+      "id": "F16",
+      "category": "assistive_devices",
+      "fact": "The library will provide a portable video magnifier (CCTV), model Ruby XL HD, for participant David Chen (RSVP #1201)."
+    },
+    {
+      "id": "F17",
+      "category": "materials",
+      "fact": "Ten copies of the workshop instruction booklet have been printed in large-print format using 18-point Arial font."
+    },
+    {
+      "id": "F18",
+      "category": "materials",
+      "fact": "The large-print booklets are stored in the Programs Office, in Cabinet 4, labeled 'Calligraphy Workshop - LP'."
+    },
+    {
+      "id": "F19",
+      "category": "materials",
+      "fact": "A screen-reader accessible PDF of the instruction booklet was emailed to all 28 registered participants on October 22, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "interpretation_support",
+      "fact": "An American Sign Language (ASL) interpreter is required for the full two-hour duration of the workshop."
+    },
+    {
+      "id": "F21",
+      "category": "interpretation_support",
+      "fact": "The library has contracted with LinguaConnect Services to provide the ASL interpreter."
+    },
+    {
+      "id": "F22",
+      "category": "interpretation_support",
+      "fact": "The assigned interpreter's name is Elias Vance, and his confirmation number is LC-8842."
+    },
+    {
+      "id": "F23",
+      "category": "interpretation_support",
+      "fact": "Elias Vance is scheduled to arrive at the library's welcome desk at 1:30 PM for setup and briefing."
+    },
+    {
+      "id": "F24",
+      "category": "interpretation_support",
+      "fact": "A specific armless chair and a dedicated floor lamp have been placed at the front-right of the room for the interpreter."
+    },
+    {
+      "id": "F25",
+      "category": "interpretation_support",
+      "fact": "The total cost for the interpretation service for this event is $350, invoiced under #INV-2024-512."
+    },
+    {
+      "id": "F26",
+      "category": "staff_coordination",
+      "fact": "Marco Diaz, the Facilities Coordinator, is responsible for executing the physical room setup based on diagram v3.1."
+    },
+    {
+      "id": "F27",
+      "category": "staff_coordination",
+      "fact": "All accommodation details are centralized in a shared document titled 'Calligraphy_Accessibility_Plan' on the library's G-Drive."
+    },
+    {
+      "id": "F28",
+      "category": "logistics",
+      "fact": "Lena Petrova and Marco Diaz will conduct a final accessibility and setup walkthrough of Community Room B at 1:00 PM on the day of the event."
+    },
+    {
+      "id": "F29",
+      "category": "logistics",
+      "fact": "A reserved parking space, #A-04, located closest to the main entrance, has been designated for the ASL interpreter."
+    },
+    {
+      "id": "F30",
+      "category": "room_setup",
+      "fact": "Power strips will be provided at Table 1 and Table 4 to accommodate participants' electronic devices."
+    },
+    {
+      "id": "F31",
+      "category": "logistics",
+      "fact": "A printed seating chart is attached to the event coordination binder, placing Anika Sharma and David Chen at Table 1."
+    },
+    {
+      "id": "F32",
+      "category": "event_details",
+      "fact": "The workshop has a total of 28 registered participants out of a possible 30."
+    },
+    {
+      "id": "F33",
+      "category": "assistive_devices",
+      "fact": "The library's portable video magnifier is stored in the Assistive Tech closet, key #112, held at the main circulation desk."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who is responsible for the physical room setup for the 'Modern Calligraphy Workshop'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Staff & High-Level Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "When is the final accessibility and setup walkthrough scheduled with the Facilities Coordinator?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the person responsible for setup, the user will want to know about the final coordination and sign-off step with that person.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Staff & High-Level Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Who is the contracted American Sign Language interpreter and when are they scheduled to arrive?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Interpretation Services",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What specific setup, including chair and lighting, is required for the interpreter's station?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once the interpreter's arrival is confirmed, the next logical step is to verify their required physical setup in the room.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Interpretation Services",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Which participant requested a seat with a clear line of sight to the interpreter, and where is that seat located on the chart?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F31"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After confirming the interpreter's setup, the coordinator's focus naturally shifts to the participant who directly relies on that service.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Participant-Specific Seating",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are David Chen's workspace requirements for lighting and power, and where is he seated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F31"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After addressing one participant's specific seating needs, the coordinator will likely continue by reviewing other participants with assigned seating and special requests.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Participant-Specific Workspace",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the delivery details for the rented FM assistive listening system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Assistive Devices",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What portable video magnifier is being provided by the library and where is it stored?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16",
+        "F33"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After confirming the logistics for a rented assistive device, the user would check on the status and location of library-owned assistive technology for the event.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Assistive Devices",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How many large-print instruction booklets have been prepared and where are they stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Specialized Materials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Besides the large-print copies, was a screen-reader accessible PDF of the instruction booklet sent to participants, and when?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After confirming the quantity and storage location of the large-print booklets, a direct follow-up is whether the instruction booklet was also distributed in another accessible reading format.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Specialized Materials",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the status of the latex allergy accommodation regarding art supplies?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: Discussing specialized art supplies (left-handed pens) naturally leads to confirming other supply-related accommodations, especially those concerning health and safety like allergies.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Allergy Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What are the general requirements for the room's pathway width and overhead lighting levels?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06",
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying who is responsible for the room setup, the user will want to confirm the high-level accessibility specifications that person must follow.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "General Room Specs",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Staff & High-Level Plan",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Interpretation Services",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Participant-Specific Seating",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Participant-Specific Workspace",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Assistive Devices",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Specialized Materials",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Allergy Safety",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "General Room Specs",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "library_accessibility_program_prep_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

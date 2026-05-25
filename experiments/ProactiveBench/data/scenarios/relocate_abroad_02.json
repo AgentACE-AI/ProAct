@@ -1,0 +1,423 @@
+{
+  "scenario_id": "relocate_abroad_02",
+  "domain": "relocation",
+  "description": "A professional is relocating to Singapore for a new job. They need to learn about work visa, housing, and cultural adjustment.",
+  "user_profile": {
+    "persona": "29-year-old data scientist, single",
+    "context": "Starting in two months, needs to prepare everything from scratch",
+    "communication_style": "Logical and clear"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "admin",
+      "fact": "Alex Chen's Employment Pass (EP) application number is EP-2024-881729, submitted by his employer, Nexus Analytics."
+    },
+    {
+      "id": "F02",
+      "category": "admin",
+      "fact": "The In-Principle Approval (IPA) letter for Alex Chen's EP is valid for a single entry into Singapore until October 15, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "admin",
+      "fact": "An appointment for Alex Chen's biometrics and EP card issuance is scheduled for September 5, 2024, at 10:30 AM at the MOM Services Centre - Hall C."
+    },
+    {
+      "id": "F04",
+      "category": "admin",
+      "fact": "Priya Sharma (priya.sharma@nexusanalytics.sg, +65 9123 4567) is the HR Business Partner at Nexus Analytics managing Alex Chen's relocation."
+    },
+    {
+      "id": "F05",
+      "category": "work",
+      "fact": "Alex Chen's first day of work at Nexus Analytics is September 2, 2024, starting at 9:00 AM SGT."
+    },
+    {
+      "id": "F06",
+      "category": "admin",
+      "fact": "On his first day, Alex Chen must bring his original passport, a printed copy of the IPA letter, and the signed employment contract to the office."
+    },
+    {
+      "id": "F07",
+      "category": "services",
+      "fact": "Nexus Analytics has engaged 'GlobalMove SG' (contact: Ken Tan, ken.tan@globalmovesg.com) to assist with home-finding and school registration."
+    },
+    {
+      "id": "F08",
+      "category": "housing",
+      "fact": "Nexus Analytics provides 14 days of temporary accommodation at the 'Orchard Park Suites', located at 15 Claymore Drive, Singapore 229598."
+    },
+    {
+      "id": "F09",
+      "category": "finance",
+      "fact": "Alex Chen will receive a one-time relocation allowance of S$7,500 to cover initial housing costs like security deposit and agent fees."
+    },
+    {
+      "id": "F10",
+      "category": "housing",
+      "fact": "The recommended housing portal for finding long-term rentals is SGHomeFind.com, which has a partnership with Nexus Analytics for verified listings."
+    },
+    {
+      "id": "F11",
+      "category": "housing",
+      "fact": "A 2-bedroom, 700 sq ft HDB flat at Block 450, Toa Payoh Lorong 6, #12-188, is listed for rent at S$3,200 per month."
+    },
+    {
+      "id": "F12",
+      "category": "housing",
+      "fact": "The standard security deposit for a rental property in Singapore is two months' rent for a 24-month lease, payable upon signing the Tenancy Agreement."
+    },
+    {
+      "id": "F13",
+      "category": "housing",
+      "fact": "The standard lease tenure for private apartments and HDB flats is 24 months, with a diplomatic clause applicable after 12 months."
+    },
+    {
+      "id": "F14",
+      "category": "finance",
+      "fact": "To open a bank account in Singapore, such as a 'Merlion Financial Global Currency Account', Alex Chen needs his passport, Employment Pass (or IPA letter), and proof of residential address."
+    },
+    {
+      "id": "F15",
+      "category": "utilities",
+      "fact": "'SingaTelco' offers a 1Gbps fibre broadband plan for S$45.90 per month on a 24-month contract, which includes free router installation."
+    },
+    {
+      "id": "F16",
+      "category": "utilities",
+      "fact": "To set up an electricity account, Alex Chen must register with SP Group at spgroup.com.sg using his SingPass, which can be created after the EP is issued."
+    },
+    {
+      "id": "F17",
+      "category": "finance",
+      "fact": "Salary from Nexus Analytics will be credited to Alex Chen's designated bank account on the 25th of each month."
+    },
+    {
+      "id": "F18",
+      "category": "utilities",
+      "fact": "A recommended SIM-only mobile plan is the 'CircleLife 50GB' plan for S$18 per month, which operates on a no-contract basis and can be ordered online."
+    },
+    {
+      "id": "F19",
+      "category": "transport",
+      "fact": "An EZ-Link public transport card can be purchased for S$12 (S$5 non-refundable card cost, S$7 stored value) at any MRT station TransitLink Ticket Office."
+    },
+    {
+      "id": "F20",
+      "category": "transport",
+      "fact": "The MRT commute from Toa Payoh Station (NS19) to Raffles Place Station (NS26/EW14), near the office, takes approximately 18 minutes and costs S$1.48."
+    },
+    {
+      "id": "F21",
+      "category": "transport",
+      "fact": "The 'Grab' app is the primary ride-hailing service; an off-peak trip from Toa Payoh to the Nexus Analytics office costs approximately S$16."
+    },
+    {
+      "id": "F22",
+      "category": "work",
+      "fact": "The Nexus Analytics office is located at 1 Raffles Quay, North Tower, Level 35, Singapore 048583."
+    },
+    {
+      "id": "F23",
+      "category": "work",
+      "fact": "Standard working hours at Nexus Analytics are from 9:00 AM to 6:00 PM, Monday to Friday, with a one-hour lunch break."
+    },
+    {
+      "id": "F24",
+      "category": "work",
+      "fact": "As a Data Scientist, Alex Chen will be joining the 'Predictive Modelling' team, reporting to the Head of Data Science, Dr. Evelyn Reed."
+    },
+    {
+      "id": "F25",
+      "category": "culture",
+      "fact": "A guide to Singaporean workplace etiquette is available on the company intranet at intranet.nexusanalytics.sg/guides/SG_Culture_Guide_v2.pdf."
+    },
+    {
+      "id": "F26",
+      "category": "community",
+      "fact": "The 'Singapore Professional Expats' group on LinkedIn, moderated by GlobalMove SG, is a recommended resource for networking and local advice."
+    },
+    {
+      "id": "F27",
+      "category": "services",
+      "fact": "Alex Chen can register for a SingPass account at any SingPost outlet once his Employment Pass card is issued, which is required for most government digital services."
+    },
+    {
+      "id": "F28",
+      "category": "services",
+      "fact": "For non-emergency medical needs, Alex Chen can visit the 'Raffles Medical' clinic at Raffles City Shopping Centre, which is part of the company's 'Aetna' health insurance network."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the validity period for my In-Principle Approval (IPA) letter to enter Singapore?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Visa & Entry Formalities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the next scheduled step after I enter Singapore to complete my Employment Pass?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming how long the IPA letter is valid for entry, a natural next question is what the next scheduled post-arrival step is to complete the Employment Pass process.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Visa & Entry Formalities",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is my start date and what specific documents do I need to bring on my first day of work?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Day at Work",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Does the company provide temporary accommodation upon arrival, and if so, where is it located and for how many days?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming the first-day start date and required documents, a natural pre-arrival follow-up is whether the company provides temporary accommodation and the basic arrival-stay details.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Housing & Relocation Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Who is the company's designated relocation agent and what is the recommended portal for finding long-term rentals?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F10"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After learning about the temporary accommodation, the user will naturally want to know how to begin the search for a permanent residence.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Housing & Relocation Support",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "How much is the one-time relocation allowance, and what is the standard security deposit for a 24-month lease?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F12"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "While planning the search for long-term housing, understanding the financial aspects, such as the allowance provided and the typical upfront costs, is a critical next step.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Housing & Relocation Support",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N7",
+      "description": "What documents do I need to open a bank account in Singapore?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After reviewing the relocation allowance and standard rental deposit, the next practical step is to understand what is needed to open a local bank account to handle these payments.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Banking Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the name, data allowance, monthly price, and contract status of the recommended mobile plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Utilities Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the monthly price, contract length, and installation inclusion for the SingaTelco 1Gbps fibre broadband plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After inquiring about a mobile plan, asking about another essential utility like home internet is a common and logical follow-up.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Utilities Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Where is the Nexus Analytics office located, and who will I be reporting to?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming first-day logistics, a common next question is where to go for work and who the user will report to once they arrive.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Workplace Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "If I plan to use public transport for commuting, where can I get an EZ-Link card and how much does it cost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After learning the office location and reporting line, a natural commute-planning follow-up is how to get started with public transport, including where to obtain an EZ-Link card and its upfront cost.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Daily Commute",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the estimated MRT travel time and cost from Toa Payoh to the office at Raffles Place?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After learning how to get a transport card, the user would want to understand the specifics of a potential commute from a sample residential area to the office.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Daily Commute",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Is there a recommended online community or group for professional expats in Singapore?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After learning about their immediate team and manager, a user might be interested in broader professional networking and community integration.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Professional Networking",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Visa & Entry Formalities",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "First Day at Work",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Housing & Relocation Support",
+      "member_need_ids": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Banking Setup",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Utilities Setup",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Workplace Details",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Daily Commute",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Professional Networking",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "relocate_abroad_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

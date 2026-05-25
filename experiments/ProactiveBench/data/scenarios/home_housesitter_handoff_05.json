@@ -1,0 +1,404 @@
+{
+  "scenario_id": "home_housesitter_handoff_05",
+  "domain": "home_maintenance",
+  "description": "A family leaving for several weeks needs to brief a house sitter on alarms, deliveries, watering routines, utility shutoffs, known quirks, and what counts as an emergency versus a wait-until-return issue.",
+  "user_profile": {
+    "persona": "40-year-old parent coordinating departure logistics for a long trip",
+    "context": "The house sitter is trustworthy but unfamiliar with the home's systems and recurring quirks",
+    "communication_style": "Preventive and specific, wants a handoff note that reduces avoidable calls"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "alarms_and_security",
+      "fact": "The security system disarm code is 1-2-5-8."
+    },
+    {
+      "id": "F02",
+      "category": "alarms_and_security",
+      "fact": "To arm the system when leaving, press the 'Away' button and enter the code 1-2-5-8; you will have 60 seconds to exit."
+    },
+    {
+      "id": "F03",
+      "category": "alarms_and_security",
+      "fact": "The monitoring company, Sentinel Secure Systems, will call from 555-0188 if the alarm is triggered."
+    },
+    {
+      "id": "F04",
+      "category": "alarms_and_security",
+      "fact": "If you accidentally trigger the alarm, the safe word to give the monitoring company is 'Blue Jay'."
+    },
+    {
+      "id": "F05",
+      "category": "alarms_and_security",
+      "fact": "The main security system keypad is located on the wall to the left of the door leading from the garage into the kitchen."
+    },
+    {
+      "id": "F06",
+      "category": "deliveries_and_mail",
+      "fact": "The key for mailbox #7B is in the small ceramic bowl on the entryway console table."
+    },
+    {
+      "id": "F07",
+      "category": "deliveries_and_mail",
+      "fact": "Our large package delivery box, a ParcelDrop Box, is located by the garage door and the access code is 9-8-7-6."
+    },
+    {
+      "id": "F08",
+      "category": "deliveries_and_mail",
+      "fact": "We are expecting a package from 'CraftyKits' containing yarn, scheduled to arrive around July 15th."
+    },
+    {
+      "id": "F09",
+      "category": "deliveries_and_mail",
+      "fact": "The 'Crestwood Chronicle' newspaper delivery has been paused and will resume on August 5th; please discard any papers delivered by mistake."
+    },
+    {
+      "id": "F10",
+      "category": "plant_and_pet_care",
+      "fact": "The cat, Whiskers, eats 1/2 cup of 'Purrfect Morsels' dry food at 8 AM and 6 PM daily."
+    },
+    {
+      "id": "F11",
+      "category": "plant_and_pet_care",
+      "fact": "The cat's food is stored in a large blue bin labeled 'Whiskers' on the top left shelf of the kitchen pantry."
+    },
+    {
+      "id": "F12",
+      "category": "plant_and_pet_care",
+      "fact": "The litter box, located in the laundry room, should be scooped daily."
+    },
+    {
+      "id": "F13",
+      "category": "plant_and_pet_care",
+      "fact": "Water the fiddle-leaf fig in the living room with 2 cups of water every Saturday morning."
+    },
+    {
+      "id": "F14",
+      "category": "plant_and_pet_care",
+      "fact": "The three tomato plants in pots on the back patio need to be watered every other day, preferably before 10 AM."
+    },
+    {
+      "id": "F15",
+      "category": "plant_and_pet_care",
+      "fact": "In case of a pet emergency, contact Dr. Evans at Crestwood Animal Hospital at 555-0123."
+    },
+    {
+      "id": "F16",
+      "category": "utilities",
+      "fact": "The main water shutoff valve is in the basement on the back wall, behind the furnace, and has a red handle."
+    },
+    {
+      "id": "F17",
+      "category": "utilities",
+      "fact": "The main electrical circuit breaker panel is in the garage, on the wall to the left of the interior door to the house."
+    },
+    {
+      "id": "F18",
+      "category": "utilities",
+      "fact": "The gas shutoff wrench is hanging on a hook next to the gas meter on the exterior west wall of the house."
+    },
+    {
+      "id": "F19",
+      "category": "utilities",
+      "fact": "The Wi-Fi network name is 'MillerHomeNet' and the password is 'Trip2Europe!'."
+    },
+    {
+      "id": "F20",
+      "category": "home_quirks",
+      "fact": "The deadbolt on the back patio door sticks; you must pull the door firmly toward you while turning the key to lock it."
+    },
+    {
+      "id": "F21",
+      "category": "home_quirks",
+      "fact": "The garbage disposal switch is not on the wall; it is a black push-button located under the sink cabinet, on the right side."
+    },
+    {
+      "id": "F22",
+      "category": "home_quirks",
+      "fact": "If the toilet in the upstairs guest bathroom continues to run after flushing, jiggle the silver flush handle to make it stop."
+    },
+    {
+      "id": "F23",
+      "category": "home_quirks",
+      "fact": "The kitchen outlets are on breaker #12, which can trip if you run the microwave and the toaster oven at the same time."
+    },
+    {
+      "id": "F24",
+      "category": "home_quirks",
+      "fact": "The 'EcoHome' smart thermostat is programmed to lower the AC to 68°F at 10 PM; please do not override this schedule."
+    },
+    {
+      "id": "F25",
+      "category": "contacts_and_emergencies",
+      "fact": "An emergency is defined as an unstoppable water leak, any sign of fire, or a security breach."
+    },
+    {
+      "id": "F26",
+      "category": "contacts_and_emergencies",
+      "fact": "A non-emergency issue, such as a burnt-out lightbulb or slow internet, can wait until we return."
+    },
+    {
+      "id": "F27",
+      "category": "contacts_and_emergencies",
+      "fact": "Our next-door neighbor, Sarah Jenkins, has a spare key. Her number is 555-0199 and she lives at 458 Maple Creek Drive."
+    },
+    {
+      "id": "F28",
+      "category": "contacts_and_emergencies",
+      "fact": "For a major plumbing emergency like a burst pipe, call Reliable Rooter Plumbing at 555-0150."
+    },
+    {
+      "id": "F29",
+      "category": "contacts_and_emergencies",
+      "fact": "The fire extinguisher is located under the kitchen sink, behind the cleaning supplies."
+    },
+    {
+      "id": "F30",
+      "category": "contacts_and_emergencies",
+      "fact": "Trash day is Tuesday morning. Please put the black bin (garbage) and blue bin (recycling) on the curb Monday night."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "How do I disarm the security system when I arrive and where is the keypad located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Security System Basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the procedure for arming the system when I leave the house?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning how to disarm the system, the user will naturally want to know the opposite procedure for arming it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Security System Basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What should I do if I accidentally trigger the alarm, and what is the safe word?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Discussing the alarm system's operation naturally leads to considering what to do if something goes wrong.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Security System Basics",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "If the alarm goes off and Sentinel Secure calls, what number will they call from and what safe word do I need to give?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning what to do if they trigger the alarm, the most direct follow-up is how to handle the monitoring company's call if the alarm sounds.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Alarm Monitoring Follow-up",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the cat's daily feeding and litter instructions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Daily Routines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the watering schedule for the indoor and outdoor plants?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After covering pet care, the other main daily/weekly routine is typically plant care.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Daily Routines",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Who is the emergency contact for the cat?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning the standard pet care routine, a responsible sitter would want to know the procedure for a pet-related emergency.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Pet Emergency",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How do I handle mail, packages, and the weekly trash/recycling pickup?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "External Chores",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Are there any operational quirks I should know about, like with the back door lock, garbage disposal, or a specific toilet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After covering external tasks like mail and trash, the user's focus naturally shifts to how things work inside the house, especially non-obvious issues.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Home Quirks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What defines a major emergency and where is the main water shutoff valve?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F16"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Discussing minor operational quirks is a natural springboard to considering major problems and emergency procedures.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Major Emergencies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "For a major plumbing emergency, who do I call, and where is the fire extinguisher?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F29"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "This is a direct follow-up to the definition of an emergency, seeking specific contacts and locations for the scenarios mentioned.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Major Emergencies",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Security System Basics",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Alarm Monitoring Follow-up",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Daily Routines",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Pet Emergency",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "External Chores",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Home Quirks",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Major Emergencies",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "home_housesitter_handoff_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

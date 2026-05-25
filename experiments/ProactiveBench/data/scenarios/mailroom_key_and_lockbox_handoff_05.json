@@ -1,0 +1,415 @@
+{
+  "scenario_id": "mailroom_key_and_lockbox_handoff_05",
+  "domain": "postal_mailroom_operations",
+  "description": "Staff rotation requires a clear record of who currently controls lockers, keys, overflow cages, and access codes so secure mail handling does not depend on informal verbal memory. All facilities are fictional.",
+  "user_profile": {
+    "persona": "36-year-old operations coordinator responsible for secure storage access control",
+    "context": "Turnover and shift changes have made physical access knowledge too dependent on whoever happens to be present",
+    "communication_style": "Control-focused and concise, wants access responsibility tied to named assets and current holders"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "Javier Rossi is the Operations Coordinator at the Metroplex Distribution Center."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "Lena Petrova is a Mailroom Clerk, employee ID 784-B, assigned to the day shift."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel",
+      "fact": "Marcus Thorne is the Night Shift Supervisor, employee ID 512-C."
+    },
+    {
+      "id": "F04",
+      "category": "Locations",
+      "fact": "The main mailroom is located in Wing B, Room B-112, at the Metroplex Distribution Center."
+    },
+    {
+      "id": "F05",
+      "category": "Locations",
+      "fact": "The secure overflow storage area is designated as Cage Bay 4, located in the sub-level warehouse."
+    },
+    {
+      "id": "F06",
+      "category": "Physical_Assets_Keys",
+      "fact": "Key KEY-MSTR-01 is the master key for all lockers in the LKR-A series (A01-A20)."
+    },
+    {
+      "id": "F07",
+      "category": "Physical_Assets_Keys",
+      "fact": "Key KEY-CAGE-03 provides access to Overflow Cage C-03 in Cage Bay 4."
+    },
+    {
+      "id": "F08",
+      "category": "Physical_Assets_Keys",
+      "fact": "The key cabinet is a wall-mounted unit, model 'Securall SKC-50', located next to the supervisor's desk in Room B-112."
+    },
+    {
+      "id": "F09",
+      "category": "Physical_Assets_Keys",
+      "fact": "Key KEY-A14 is a single-use key for high-value package locker LKR-A14."
+    },
+    {
+      "id": "F10",
+      "category": "Physical_Assets_Lockers",
+      "fact": "Locker LKR-A05 is designated for holding certified mail pending recipient verification."
+    },
+    {
+      "id": "F11",
+      "category": "Physical_Assets_Lockers",
+      "fact": "The LKR-A series lockers are located along the north wall of Room B-112."
+    },
+    {
+      "id": "F12",
+      "category": "Physical_Assets_Lockers",
+      "fact": "Locker LKR-A20 has a faulty latch and was reported for maintenance on November 14, 2023, under work order #MNT-9811."
+    },
+    {
+      "id": "F13",
+      "category": "Physical_Assets_Cages",
+      "fact": "Overflow Cage C-03 has dimensions of 10ft x 10ft x 8ft and is constructed of steel mesh."
+    },
+    {
+      "id": "F14",
+      "category": "Physical_Assets_Cages",
+      "fact": "Overflow Cage C-01 is currently at 75% capacity with unsorted bulk mail from the morning delivery."
+    },
+    {
+      "id": "F15",
+      "category": "Access_Control_Assignments",
+      "fact": "Lena Petrova is the current holder of the master key KEY-MSTR-01, checked out at 07:55 on November 15, 2023."
+    },
+    {
+      "id": "F16",
+      "category": "Access_Control_Assignments",
+      "fact": "Marcus Thorne is the assigned holder of Key KEY-CAGE-03 for the duration of the night shift (22:00-06:00)."
+    },
+    {
+      "id": "F17",
+      "category": "Access_Control_Assignments",
+      "fact": "Control of locker LKR-A05 was transferred from Marcus Thorne to Lena Petrova at 06:05 on November 15, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "Access_Control_Codes",
+      "fact": "The access code for the main mailroom (Room B-112) is 8842#."
+    },
+    {
+      "id": "F19",
+      "category": "Access_Control_Codes",
+      "fact": "The mailroom access code 8842# is changed on the first Monday of every month by the Operations Coordinator."
+    },
+    {
+      "id": "F20",
+      "category": "Access_Control_Codes",
+      "fact": "The override code for the electronic key cabinet is 919-ALPHA-3, known only to Javier Rossi."
+    },
+    {
+      "id": "F21",
+      "category": "Procedures",
+      "fact": "Shift handovers require a signed entry in the physical logbook, 'Logbook-MDC-B112', detailing the transfer of all keys and access cards."
+    },
+    {
+      "id": "F22",
+      "category": "Procedures",
+      "fact": "Any lost key must be reported to the on-duty supervisor within 15 minutes of discovery."
+    },
+    {
+      "id": "F23",
+      "category": "Procedures",
+      "fact": "Access to Cage Bay 4 requires dual authorization: one clerk and one supervisor must be present."
+    },
+    {
+      "id": "F24",
+      "category": "Digital_Systems",
+      "fact": "All key and asset assignments are digitally tracked in the 'KeyTrack Pro' system, accessible at https://apex.keytrackpro.local."
+    },
+    {
+      "id": "F25",
+      "category": "Digital_Systems",
+      "fact": "The 'KeyTrack Pro' system automatically sends an email notification to Javier Rossi when a master key is checked out for more than 8 hours."
+    },
+    {
+      "id": "F26",
+      "category": "Digital_Systems",
+      "fact": "The daily access log from the Room B-112 keypad is automatically archived to the shared drive at `//MDC-SERVER/logs/mailroom/`."
+    },
+    {
+      "id": "F27",
+      "category": "Locations",
+      "fact": "The physical asset handoff logbook, 'Logbook-MDC-B112', is kept on the metal lectern inside the entrance to Room B-112."
+    },
+    {
+      "id": "F28",
+      "category": "Personnel",
+      "fact": "The primary contact for after-hours security issues is the Central Security Desk at extension 5555."
+    },
+    {
+      "id": "F29",
+      "category": "Access_Control_Assignments",
+      "fact": "As of 14:30 on November 15, 2023, there are no unassigned secure assets; all keys and codes are accounted for."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who currently has the master key for the LKR-A series lockers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current Key Holder Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who is assigned the key for Overflow Cage C-03 during the night shift?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F16"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After asking about one major key, the user is likely to inquire about other critical keys.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current Key Holder Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+  "description": "What issue was reported for locker LKR-A20, and under what work order was it logged?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Specific Asset Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the official procedure for recording shift handovers of keys?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Handoff Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Show me the last control transfer record for the certified mail locker, LKR-A05.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After learning the general procedure for handovers, the user wants to see a specific, recent example.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Handoff Procedures",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What digital system is used to track all key and asset assignments?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After asking about specific key assignments, the user will likely want to know about the official system used to track all such assignments.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Digital Tracking System",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the access code for the main mailroom, Room B-112?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Access Code Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the policy for changing the mailroom access code?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After getting the current access code, the user is interested in the maintenance and security policy for that code.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Access Code Information",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+  "description": "If a key is discovered to be lost, who must be notified and within what timeframe?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After learning about the system for tracking keys, a natural follow-up is to ask about the procedure for handling exceptions, such as a lost key.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Security Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who changes the mailroom access code, and how often is it changed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After asking about the access-code policy, a direct follow-up is who performs the code change and on what schedule.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Access Code Maintenance Detail",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the authorization protocol for entering Cage Bay 4?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "High-Security Area Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+  "description": "Who should be contacted after hours about security issues involving secure-area access?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N11",
+  "prediction_reason": "CROSS-GROUP: After inquiring about a high-security access protocol, a direct follow-up is who handles related secure-area access issues after hours.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Security Procedures",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Current Key Holder Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Specific Asset Status",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Handoff Procedures",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Digital Tracking System",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Access Code Information",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Security Procedures",
+      "member_need_ids": [
+        "N9",
+        "N12"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Access Code Maintenance Detail",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G8",
+      "label": "High-Security Area Protocol",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "mailroom_key_and_lockbox_handoff_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "scenario_id": "vehicle_service_history_reconstruction_01",
+  "domain": "vehicle_ownership_management",
+  "description": "A car owner needs to reconstruct past service dates, replaced parts, recurring advisories, and open maintenance items from scattered receipts, stickers, and messages from different repair shops. All business names are fictional.",
+  "user_profile": {
+    "persona": "42-year-old driver who bought the car used and inherited partial records",
+    "context": "Upcoming service decisions feel risky because no one document shows what has already been done",
+    "communication_style": "Evidence-based and organized, wants the vehicle's history turned into one coherent timeline"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "vehicle_information",
+      "fact": "The vehicle is a 2016 Subaru Forester 2.5i Premium."
+    },
+    {
+      "id": "F02",
+      "category": "vehicle_information",
+      "fact": "The Vehicle Identification Number (VIN) is JF2SJGABC7G812345."
+    },
+    {
+      "id": "F03",
+      "category": "vehicle_information",
+      "fact": "The current owner purchased the vehicle on July 15, 2021, with 72,500 miles on the odometer."
+    },
+    {
+      "id": "F04",
+      "category": "vehicle_information",
+      "fact": "The vehicle's current odometer reading as of February 20, 2024, is 112,850 miles."
+    },
+    {
+      "id": "F05",
+      "category": "source_documents",
+      "fact": "A faded paper receipt from 'Grease Monkey Garage' dated May 10, 2023, shows a service for '$95.50'."
+    },
+    {
+      "id": "F06",
+      "category": "source_documents",
+      "fact": "A text message from 'Apex Auto' on June 20, 2022, confirms completion of a brake service."
+    },
+    {
+      "id": "F07",
+      "category": "source_documents",
+      "fact": "A windshield oil change sticker from 'QuickLube Plus' indicates the next service is due at 113,900 miles."
+    },
+    {
+      "id": "F08",
+      "category": "source_documents",
+      "fact": "A handwritten note from the previous owner states 'Spark plugs done at 100k'."
+    },
+    {
+      "id": "F09",
+      "category": "service_history",
+      "fact": "An oil and filter change was performed at 82,450 miles on June 20, 2022, at Apex Auto."
+    },
+    {
+      "id": "F10",
+      "category": "service_history",
+      "fact": "Front brake pads and rotors were replaced at 82,450 miles on June 20, 2022, at Apex Auto for a total cost of $489.75."
+    },
+    {
+      "id": "F11",
+      "category": "service_history",
+      "fact": "A transmission fluid exchange was performed at 90,050 miles on January 5, 2023, at Grease Monkey Garage."
+    },
+    {
+      "id": "F12",
+      "category": "service_history",
+      "fact": "An engine air filter and cabin air filter were replaced at 90,050 miles on January 5, 2023, at Grease Monkey Garage."
+    },
+    {
+      "id": "F13",
+      "category": "service_history",
+      "fact": "A battery was purchased from 'Auto Parts Pro' and self-installed by the owner on December 5, 2022."
+    },
+    {
+      "id": "F14",
+      "category": "service_history",
+      "fact": "Four new tires were installed and balanced at 105,200 miles on September 1, 2023, at 'TireWorld Direct'."
+    },
+    {
+      "id": "F15",
+      "category": "service_history",
+      "fact": "The most recent oil and filter change was performed at 110,330 miles on February 12, 2024, at QuickLube Plus."
+    },
+    {
+      "id": "F16",
+      "category": "service_history",
+      "fact": "The annual state safety inspection was passed on October 18, 2023, at 'Reliable Auto Center'."
+    },
+    {
+      "id": "F17",
+      "category": "parts_replaced",
+      "fact": "The front brake pads were replaced with part number 'DBC-1455' from 'Dynamic Brake Co.'."
+    },
+    {
+      "id": "F18",
+      "category": "parts_replaced",
+      "fact": "The front brake rotors were replaced with part number 'BR-900621' from 'Centric Parts'."
+    },
+    {
+      "id": "F19",
+      "category": "parts_replaced",
+      "fact": "The engine air filter was replaced with a 'Wix WA10171' filter."
+    },
+    {
+      "id": "F20",
+      "category": "parts_replaced",
+      "fact": "The cabin air filter was replaced with a 'Bosch P3910' HEPA filter."
+    },
+    {
+      "id": "F21",
+      "category": "parts_replaced",
+      "fact": "The battery was replaced with a 'DieHard Gold' Group 35 battery with 640 CCA."
+    },
+    {
+      "id": "F22",
+      "category": "parts_replaced",
+      "fact": "The tires were replaced with 'Goodyear Assurance WeatherReady' in size 225/60R17."
+    },
+    {
+      "id": "F23",
+      "category": "recurring_advisories",
+      "fact": "The service invoice from Apex Auto on June 20, 2022, noted 'Minor oil seep from valve cover gaskets'."
+    },
+    {
+      "id": "F24",
+      "category": "recurring_advisories",
+      "fact": "Grease Monkey Garage's invoice from January 5, 2023, also advised to 'Monitor oil leak at valve covers'."
+    },
+    {
+      "id": "F25",
+      "category": "recurring_advisories",
+      "fact": "The technician at TireWorld Direct on September 1, 2023, noted that the 'front lower control arm bushings are showing minor cracks'."
+    },
+    {
+      "id": "F26",
+      "category": "recurring_advisories",
+      "fact": "The most recent invoice from QuickLube Plus on February 12, 2024, includes a note: 'Suspension is noisy over bumps, recommend further diagnosis'."
+    },
+    {
+      "id": "F27",
+      "category": "open_maintenance_items",
+      "fact": "The manufacturer's service schedule recommends replacing the timing belt at 105,000 miles; there is no record of this service being performed."
+    },
+    {
+      "id": "F28",
+      "category": "open_maintenance_items",
+      "fact": "The brake fluid is due for a flush; it has not been changed in the current owner's possession (over 40,000 miles)."
+    },
+    {
+      "id": "F29",
+      "category": "open_maintenance_items",
+      "fact": "The rear differential fluid is scheduled for service every 30,000 miles and is currently overdue by 12,850 miles."
+    },
+    {
+      "id": "F30",
+      "category": "open_maintenance_items",
+      "fact": "The rear brake pads were measured at 4mm thickness on February 12, 2024, and will need replacement soon."
+    },
+    {
+      "id": "F31",
+      "category": "service_history",
+      "fact": "The coolant was flushed and replaced with OEM Subaru Super Blue Coolant at 98,900 miles on July 10, 2023, at Reliable Auto Center."
+    },
+    {
+      "id": "F32",
+      "category": "parts_replaced",
+      "fact": "Both front wiper blades were replaced with 'Rain-X Latitude 26-inch and 17-inch' blades on October 18, 2023."
+    },
+    {
+      "id": "F33",
+      "category": "source_documents",
+      "fact": "An email confirmation from 'TireWorld Direct' on September 1, 2023, details the purchase and installation of four tires for $812.44."
+    },
+    {
+      "id": "F34",
+      "category": "vehicle_information",
+      "fact": "The vehicle's paint code is H6Q, which corresponds to the 'Jasmine Green Metallic' color."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the date and mileage of the most recent oil and filter change?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Recent Service",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the current thickness of the rear brake pads and what was noted about them on Feb 12, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Upcoming Maintenance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is the manufacturer's recommended replacement interval for the timing belt and is there a record of this service being performed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Overdue Maintenance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What other fluid services are currently overdue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F29"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After learning about a major overdue service like the timing belt, the user will likely want to know about other overdue items.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Overdue Maintenance",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What front brake work was performed at Apex Auto on June 20, 2022 and what was the total cost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Brake Service History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What were the specific part numbers for the front brake pads and rotors that were replaced during that service?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: A detail-oriented user will want to know the specific parts used after confirming a major repair was done.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Brake Service History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What recurring advisory about an oil seep has been noted on service invoices from Apex Auto and Grease Monkey Garage?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After reviewing a specific past service, the user is likely to become curious about unresolved issues or warnings that were noted on invoices.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Recurring Advisories",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "When was the coolant last flushed and what specific type of coolant was used?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning about overdue fluid services, the user would find it helpful to know about a major fluid service that *has* been completed, providing a more balanced view of the vehicle's state.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Completed Fluid Service",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When were the four new tires installed, at what mileage, and what brand and size were they?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Tire Service History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When did the owner replace the battery, and which battery model was installed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13",
+        "F21"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After confirming one completed maintenance item in the vehicle's history, a detail-oriented owner may next ask which other replacement items were already taken care of, including the battery.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Component Replacement History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What advisories were noted about the suspension at TireWorld Direct and QuickLube Plus?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After discussing the tires, a user's attention naturally shifts to related components like the suspension, especially if they are trying to diagnose issues like noise or poor ride quality.",
+      "turn_order": 11,
+      "reveal_group": "G5",
+      "reveal_group_label": "Recurring Advisories",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Recent Service",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Upcoming Maintenance",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Overdue Maintenance",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Brake Service History",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Recurring Advisories",
+      "member_need_ids": [
+        "N7",
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Completed Fluid Service",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Tire Service History",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Component Replacement History",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vehicle_service_history_reconstruction_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

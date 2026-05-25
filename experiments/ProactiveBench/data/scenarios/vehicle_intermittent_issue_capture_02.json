@@ -1,0 +1,423 @@
+{
+  "scenario_id": "vehicle_intermittent_issue_capture_02",
+  "domain": "vehicle_ownership_management",
+  "description": "A driver wants to log an intermittent noise or warning sign precisely enough that a mechanic can reproduce it, including temperature, speed, road conditions, and dashboard behavior.",
+  "user_profile": {
+    "persona": "31-year-old commuter whose car behaves differently on longer highway drives",
+    "context": "The issue never appears on command, making verbal descriptions too vague to be useful at the shop",
+    "communication_style": "Observational and systematic, prefers to collect evidence before seeking conclusions"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Driver Profile",
+      "fact": "The driver's name is Alex Corbin, born on July 15, 1993."
+    },
+    {
+      "id": "F02",
+      "category": "Driver Profile",
+      "fact": "Alex Corbin's daily commute is a 45-mile trip each way on the I-580 highway."
+    },
+    {
+      "id": "F03",
+      "category": "Vehicle Information",
+      "fact": "The vehicle is a 2019 Lumina Veloce sedan in 'Graphite Gray Metallic'."
+    },
+    {
+      "id": "F04",
+      "category": "Vehicle Information",
+      "fact": "The Vehicle Identification Number (VIN) is 9KLM890PQR7S123T4."
+    },
+    {
+      "id": "F05",
+      "category": "Vehicle Information",
+      "fact": "As of October 25, 2024, the vehicle's odometer reads 72,451 miles."
+    },
+    {
+      "id": "F06",
+      "category": "Vehicle Information",
+      "fact": "The Lumina Veloce is equipped with a 2.0L turbocharged engine and an 8-speed automatic transmission."
+    },
+    {
+      "id": "F07",
+      "category": "Issue Description",
+      "fact": "An intermittent, high-pitched whining noise emanates from the front-right wheel area of the vehicle."
+    },
+    {
+      "id": "F08",
+      "category": "Issue Description",
+      "fact": "The whining noise is consistently accompanied by the 'Traction Control Off' dashboard light flickering."
+    },
+    {
+      "id": "F09",
+      "category": "Issue Description",
+      "fact": "The issue has only been observed after the vehicle has been driven continuously for at least 30 minutes."
+    },
+    {
+      "id": "F10",
+      "category": "Issue Description",
+      "fact": "The issue has never occurred at vehicle speeds below 60 miles per hour."
+    },
+    {
+      "id": "F11",
+      "category": "Logged Incident Data",
+      "fact": "On October 18, 2024, at 5:45 PM, the issue occurred for 90 seconds while driving at a constant 72 mph."
+    },
+    {
+      "id": "F12",
+      "category": "Logged Incident Data",
+      "fact": "During the October 18th incident, the ambient air temperature reported by the car's sensor was 58°F (14.4°C)."
+    },
+    {
+      "id": "F13",
+      "category": "Logged Incident Data",
+      "fact": "The road condition during the October 18th incident was dry asphalt on a straight highway section."
+    },
+    {
+      "id": "F14",
+      "category": "Logged Incident Data",
+      "fact": "On October 22, 2024, at 7:10 AM, the issue reappeared for approximately 3 minutes while traveling at 68 mph on a slight incline."
+    },
+    {
+      "id": "F15",
+      "category": "Logged Incident Data",
+      "fact": "The ambient temperature during the October 22nd incident was 65°F (18.3°C)."
+    },
+    {
+      "id": "F16",
+      "category": "Logged Incident Data",
+      "fact": "No specific driver actions, such as braking or turning, seem to trigger the onset or conclusion of the issue."
+    },
+    {
+      "id": "F17",
+      "category": "Evidence Collection",
+      "fact": "Alex Corbin recorded a 25-second audio clip of the whining noise on October 22nd; the file is named `whine_102224.m4a`."
+    },
+    {
+      "id": "F18",
+      "category": "Diagnostic Tools",
+      "fact": "Alex uses the 'CarLog Pro' mobile app, version 3.1.2, to record incident data."
+    },
+    {
+      "id": "F19",
+      "category": "Diagnostic Tools",
+      "fact": "The CarLog Pro app connects to the vehicle's OBD-II port using a 'BlueLink Mini' Bluetooth adapter."
+    },
+    {
+      "id": "F20",
+      "category": "Diagnostic Tools",
+      "fact": "Alex's user account for sharing CarLog Pro data with the mechanic is `ac Corbin@email-host.net`."
+    },
+    {
+      "id": "F21",
+      "category": "Service Provider",
+      "fact": "The vehicle is serviced at Apex Auto Repair, located at 1550 Industrial Way, Northwood, CA 94063."
+    },
+    {
+      "id": "F22",
+      "category": "Service Provider",
+      "fact": "The primary service advisor for Alex Corbin at Apex Auto Repair is David Chen."
+    },
+    {
+      "id": "F23",
+      "category": "Service Provider",
+      "fact": "The lead technician assigned to diagnose complex electronic issues is Maria Rodriguez."
+    },
+    {
+      "id": "F24",
+      "category": "Service History",
+      "fact": "The vehicle's last service was a 70,000-mile maintenance check on September 5, 2024, with no reported issues."
+    },
+    {
+      "id": "F25",
+      "category": "Scheduled Appointment",
+      "fact": "A diagnostic appointment is scheduled at Apex Auto Repair for October 28, 2024, at 9:00 AM."
+    },
+    {
+      "id": "F26",
+      "category": "Scheduled Appointment",
+      "fact": "The work order number for the October 28th appointment is WO-2024-8915."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What specific noise and dashboard behavior define the intermittent issue I'm tracking?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What minimum drive duration and speed threshold have been common when the issue appears?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After describing the symptoms, the user will naturally want to detail the conditions under which they occur.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Can you summarize the first logged incident from October 18th, including speed, temperature, and road conditions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Logged Incident",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "On October 22nd, what time, duration, speed, incline condition, and ambient temperature were logged for the second incident?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing the first logged incident, the user will logically proceed to review the next one to establish a pattern.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Incident & Evidence",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the filename of the audio I recorded during the October 22nd incident?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: While discussing the second incident, the user may want to recall the specific evidence they captured at that time.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Incident & Evidence",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "When and where is my upcoming diagnostic appointment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Appointment Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What work order number should I reference when I send my incident log in for the October 28th appointment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After confirming the appointment details, a methodical user would want the work order number to label the incident log and audio they send ahead of time.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Appointment Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Which service advisor at Apex Auto Repair should receive my incident notes and audio clip before the appointment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Once the appointment is set, the next practical question is who should receive the user's notes and evidence so the shop can review them before diagnostics begin.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Service Provider Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the name and version of the app I use for logging vehicle data?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Diagnostic Tools",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is my user account for sharing CarLog Pro data?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After identifying the diagnostic tool, the user will likely need to know their credentials for sharing the data it collected.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Diagnostic Tools",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What VIN should I include when I share the CarLog Pro data with the mechanic?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After confirming the account used to share CarLog Pro data, the next practical detail is the vehicle identifier to attach so the shop can match the log to the correct car.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Vehicle Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Before the October 28th diagnostic visit, when was my last completed maintenance service and what kind of service was it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After pulling the work order number for the upcoming visit, a careful user may also want the most recent service history ready to mention on that ticket.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Service History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What are the make, model, and engine specifications of my vehicle?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Vehicle Specifications",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Problem Definition",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "First Logged Incident",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Second Incident & Evidence",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Appointment Logistics",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Service Provider Contacts",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Diagnostic Tools",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Vehicle Identification",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Service History",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G9",
+      "label": "Vehicle Specifications",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vehicle_intermittent_issue_capture_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

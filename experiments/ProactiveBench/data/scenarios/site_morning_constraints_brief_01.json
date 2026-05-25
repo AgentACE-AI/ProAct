@@ -1,0 +1,454 @@
+{
+  "scenario_id": "site_morning_constraints_brief_01",
+  "domain": "construction_site_coordination",
+  "description": "A site lead needs a reliable morning brief covering access limits, weather impacts, material arrivals, crew overlaps, and blocked tasks before the day starts. All projects and subcontractors are fictional.",
+  "user_profile": {
+    "persona": "42-year-old site superintendent coordinating several active trades",
+    "context": "Too much of the day's coordination currently depends on informal updates that arrive after work has already started",
+    "communication_style": "Direct and operational, wants the day's constraints surfaced before momentum takes over"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Project_Info",
+      "fact": "The current project is the 'Apex Tower Project', located at 123 Industrial Way, Meridian City."
+    },
+    {
+      "id": "F02",
+      "category": "Project_Info",
+      "fact": "The general contractor for the Apex Tower Project is Stonework Construction."
+    },
+    {
+      "id": "F03",
+      "category": "Project_Info",
+      "fact": "Today's date is Thursday, October 26, 2023. The project is on day 182 of a 450-day schedule."
+    },
+    {
+      "id": "F04",
+      "category": "Site_Access",
+      "fact": "The North Gate (Gate A) will be closed to all vehicle traffic from 8:00 AM to 11:00 AM for the tower crane lift."
+    },
+    {
+      "id": "F05",
+      "category": "Site_Access",
+      "fact": "All personnel must enter through the South Gate (Gate C) and present their 'Apex-ID' badge for scanning."
+    },
+    {
+      "id": "F06",
+      "category": "Site_Access",
+      "fact": "The material hoist on the west elevation is reserved for AeroVent HVAC from 7:00 AM to 10:00 AM."
+    },
+    {
+      "id": "F07",
+      "category": "Weather_Advisory",
+      "fact": "The forecast for October 26, 2023, predicts a 70% chance of heavy rain starting at 2:00 PM, with wind gusts up to 25 mph."
+    },
+    {
+      "id": "F08",
+      "category": "Weather_Advisory",
+      "fact": "As per site protocol, all crane operations must cease if wind speeds exceed a sustained 20 mph."
+    },
+    {
+      "id": "F09",
+      "category": "Material_Logistics",
+      "fact": "A delivery of 12 tons of I-beams from 'Keystone Steel Fab' is scheduled to arrive at the South Gate (Gate C) staging area at 9:30 AM."
+    },
+    {
+      "id": "F10",
+      "category": "Material_Logistics",
+      "fact": "The concrete pour for the Level 5 slab, requiring 80 cubic yards, is scheduled with 'Meridian Concrete Pumping' for 1:00 PM."
+    },
+    {
+      "id": "F11",
+      "category": "Material_Logistics",
+      "fact": "A shipment of 250 sheets of drywall is currently stored in Laydown Area 4B, which is not covered and must be moved before the 2:00 PM rain."
+    },
+    {
+      "id": "F12",
+      "category": "Crew_Coordination",
+      "fact": "Voltstream Electrical and HydraFlow Plumbing crews are both scheduled to work in the Level 3 West Wing utility corridor from 10:00 AM to 3:00 PM."
+    },
+    {
+      "id": "F13",
+      "category": "Crew_Coordination",
+      "fact": "SteelFrame Erectors will be performing the crane lift on the northeast corner, Levels 8-10, from 8:00 AM to 11:00 AM."
+    },
+    {
+      "id": "F14",
+      "category": "Crew_Coordination",
+      "fact": "The 'Apex Glazing' crew will be installing window panels on the south elevation of Level 2, requiring the area below to be cordoned off."
+    },
+    {
+      "id": "F15",
+      "category": "Task_Status_Blockers",
+      "fact": "Task ID #ELEC-305 (Level 4 Conduit Run) is blocked pending the city electrical inspection, which failed yesterday due to improper grounding."
+    },
+    {
+      "id": "F16",
+      "category": "Task_Status_Blockers",
+      "fact": "Task ID #PLMB-210 (Level 2 Restroom Rough-in) is blocked because the specified P-trap fixtures (Part #HX-45B) were not included in the last delivery from 'PipeMasters Supply'."
+    },
+    {
+      "id": "F17",
+      "category": "Task_Status_Blockers",
+      "fact": "The architectural drawings for the Level 6 interior partitions (Revision 4.1) have a dimensional conflict; awaiting RFI #072 response from 'Kestrel Architects'."
+    },
+    {
+      "id": "F18",
+      "category": "Equipment_Status",
+      "fact": "The primary tower crane (TC-1) is fully operational and scheduled for the SteelFrame Erectors lift."
+    },
+    {
+      "id": "F19",
+      "category": "Equipment_Status",
+      "fact": "The large forklift (LF-02) is out of service for hydraulic repairs until approximately 1:00 PM. The smaller forklift (LF-03) is available."
+    },
+    {
+      "id": "F20",
+      "category": "Equipment_Status",
+      "fact": "The scissor lift designated for Level 5 interior work (SL-05) has not been returned to the charging station and currently has a 15% battery level."
+    },
+    {
+      "id": "F21",
+      "category": "Safety_Briefing",
+      "fact": "A mandatory toolbox talk on 'Fall Protection around Leading Edges' will be held at 7:00 AM at the central muster point for all crews working above Level 1."
+    },
+    {
+      "id": "F22",
+      "category": "Safety_Briefing",
+      "fact": "The exclusion zone for the crane lift is a 100-foot radius from the base of TC-1 on the northeast corner."
+    },
+    {
+      "id": "F23",
+      "category": "Safety_Briefing",
+      "fact": "The site's designated First Aid station is located in the main site office trailer; the certified attendant today is David Chen."
+    },
+    {
+      "id": "F24",
+      "category": "Personnel_Contact",
+      "fact": "The lead foreman for SteelFrame Erectors is Lena Petrova, reachable at mobile number 555-0182."
+    },
+    {
+      "id": "F25",
+      "category": "Personnel_Contact",
+      "fact": "The project manager for Voltstream Electrical is Kenji Tanaka. His on-site office is Trailer #4."
+    },
+    {
+      "id": "F26",
+      "category": "Personnel_Contact",
+      "fact": "The Stonework Construction site superintendent is Marco Vega, reachable at 555-0100."
+    },
+    {
+      "id": "F27",
+      "category": "Inspections_Permits",
+      "fact": "A city structural inspection for the Level 4 concrete slab reinforcement is scheduled for 11:30 AM with Inspector Miles Warren."
+    },
+    {
+      "id": "F28",
+      "category": "Inspections_Permits",
+      "fact": "The re-inspection for the failed electrical grounding (Task #ELEC-305) is scheduled for October 27, 2023, at 10:00 AM."
+    },
+    {
+      "id": "F29",
+      "category": "Inspections_Permits",
+      "fact": "The hot work permit for welding on Level 7 expires at 4:00 PM today and must be renewed for tomorrow's work."
+    },
+    {
+      "id": "F30",
+      "category": "Project_Info",
+      "fact": "The daily site coordination meeting for all subcontractor foremen is at 7:15 AM in the main conference trailer."
+    },
+    {
+      "id": "F31",
+      "category": "Material_Logistics",
+      "fact": "The designated waste and recycling dumpsters are at 95% capacity and a pickup has been scheduled with 'Titan Waste Management' for 4:00 PM."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the topic, time, and location of this morning's mandatory toolbox talk?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Morning Meetings",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are today's site entry and access restrictions for personnel and vehicles?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Site Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Are there any reservations for the material hoist?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After learning about general site access, a user would naturally inquire about specific access points like the material hoist.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Site Access",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What are the details of the crane lift, including which crew is involved and the exclusion zone?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F22"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: The site access brief mentioned a gate closure for a crane lift, making it the logical next question to understand the specifics of that major operation.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Crane Operations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is today's weather forecast?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Weather Advisory",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the site protocol for crane operations regarding wind speed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: The forecast mentioned high wind gusts, so the user's immediate follow-up would be to understand the operational impact based on site rules.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Weather Advisory",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Is there any material that needs to be moved due to the forecasted rain?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After hearing the rain forecast, a site lead's next thought is to identify and mitigate risks, such as protecting exposed materials.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Urgent Material Handling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What major material deliveries are scheduled for today?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Material Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Are there any crews scheduled to work in the same area at the same time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Crew Coordination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Which tasks are currently blocked and why?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Task Blockers",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Is any equipment out of service or in a non-ready state?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After reviewing tasks that are blocked by external factors, it's logical to check for internal blockers like equipment availability.",
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "Equipment Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Besides the currently blocked tasks, what city structural inspection is still scheduled later today?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After reviewing the tasks already blocked by inspection-related issues, a practical morning-planning follow-up is what other inspection is still on today's schedule and could affect site coordination.",
+      "turn_order": 12,
+      "reveal_group": "G10",
+      "reveal_group_label": "Upcoming Inspections",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "When is the re-inspection scheduled for the failed electrical grounding?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: A direct follow-up to learning about the failed inspection blocker (Task #ELEC-305) is to ask when the issue can be resolved.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Task Blockers",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Morning Meetings",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Site Access",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Crane Operations",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Weather Advisory",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Urgent Material Handling",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Material Logistics",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Crew Coordination",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Task Blockers",
+      "member_need_ids": [
+        "N10",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Equipment Status",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Upcoming Inspections",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "site_morning_constraints_brief_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

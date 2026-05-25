@@ -1,0 +1,430 @@
+{
+  "scenario_id": "research_submission_materials_04",
+  "domain": "research_management",
+  "description": "A research team preparing a paper needs to keep the manuscript, appendix, code release notes, data statement, and presentation materials aligned as small edits continue across all of them.",
+  "user_profile": {
+    "persona": "31-year-old postdoc coordinating the final submission package",
+    "context": "The science is done, but version drift between materials is becoming the main risk",
+    "communication_style": "Detail-oriented and consistency-driven, notices mismatches quickly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "submission_details",
+      "fact": "The manuscript is titled 'Quantum Entanglement in Cepheid Variable Analogs' for Project Stellara."
+    },
+    {
+      "id": "F02",
+      "category": "submission_details",
+      "fact": "The target journal for submission is the 'Journal of Astrophysical Dynamics'."
+    },
+    {
+      "id": "F03",
+      "category": "submission_details",
+      "fact": "The final submission deadline is October 25, 2024, at 5:00 PM EST."
+    },
+    {
+      "id": "F04",
+      "category": "submission_details",
+      "fact": "The manuscript's submission portal tracking ID is JAD-2024-8817."
+    },
+    {
+      "id": "F05",
+      "category": "personnel_and_roles",
+      "fact": "Dr. Aris Thorne is the coordinating author responsible for assembling the final submission package."
+    },
+    {
+      "id": "F06",
+      "category": "personnel_and_roles",
+      "fact": "The Principal Investigator, Dr. Lena Petrova, must give final approval on all submission materials."
+    },
+    {
+      "id": "F07",
+      "category": "personnel_and_roles",
+      "fact": "Dr. Kenji Tanaka is responsible for the final code package and its release notes."
+    },
+    {
+      "id": "F08",
+      "category": "personnel_and_roles",
+      "fact": "Samira El-Amin is the lead for the dataset, its documentation, and the data availability statement."
+    },
+    {
+      "id": "F09",
+      "category": "document_management",
+      "fact": "The main manuscript is edited in an Overleaf project with URL: https://www.overleaf.com/project/671b9f3d4e5c6a7b8d9e0f1a."
+    },
+    {
+      "id": "F10",
+      "category": "document_management",
+      "fact": "The current working version of the manuscript and appendix is v3.1.2, tagged in Overleaf history on October 15, 2024."
+    },
+    {
+      "id": "F11",
+      "category": "document_management",
+      "fact": "The presentation slides for conferences are stored in a shared Dropbox folder named 'Stellara_JAD_Submission/Presentation'."
+    },
+    {
+      "id": "F12",
+      "category": "document_management",
+      "fact": "The presentation slide deck file is named 'Stellara_Presentation_v2.4.pptx'."
+    },
+    {
+      "id": "F13",
+      "category": "document_management",
+      "fact": "The data availability statement is a standalone document named 'DataStatement_v1.3.docx' located in the root of the Dropbox folder."
+    },
+    {
+      "id": "F14",
+      "category": "code_management",
+      "fact": "The project's code is hosted in a private Git repository at git.nit.edu/stellara/cepheid-q-sim.git."
+    },
+    {
+      "id": "F15",
+      "category": "code_management",
+      "fact": "The primary branch for the submission release is named 'submission-v1.2'."
+    },
+    {
+      "id": "F16",
+      "category": "code_management",
+      "fact": "The final, tagged version of the code for release is 'v1.2.0-final'."
+    },
+    {
+      "id": "F17",
+      "category": "code_management",
+      "fact": "The 'CODE_RELEASE_NOTES.md' file corresponds to code version 'v1.2.0-final'."
+    },
+    {
+      "id": "F18",
+      "category": "code_management",
+      "fact": "The Docker container for reproducing results is specified in the 'Dockerfile' located in the repository root."
+    },
+    {
+      "id": "F19",
+      "category": "data_management",
+      "fact": "The final dataset is stored on the Northwood Institute of Technology's 'Orion' cluster."
+    },
+    {
+      "id": "F20",
+      "category": "data_management",
+      "fact": "The full path to the final dataset directory is /data/orion/projects/stellara/final_dataset_v4/."
+    },
+    {
+      "id": "F21",
+      "category": "data_management",
+      "fact": "The dataset is archived as a single file named 'stellara_dataset_v4.tar.gz' with a SHA256 checksum of 'a3f8e5b1...c9d0'."
+    },
+    {
+      "id": "F22",
+      "category": "data_management",
+      "fact": "The public access DOI for the dataset will be provided by the Zenodo repository upon upload, with placeholder '10.5281/zenodo.XXXXXXX' used in the manuscript."
+    },
+    {
+      "id": "F23",
+      "category": "communication_and_coordination",
+      "fact": "All submission-related discussions must take place in the dedicated Slack channel: #stellara-submission."
+    },
+    {
+      "id": "F24",
+      "category": "communication_and_coordination",
+      "fact": "The team holds a mandatory daily sync meeting at 9:30 AM EST via Zoom link https://nit.zoom.us/j/9876543210."
+    },
+    {
+      "id": "F25",
+      "category": "communication_and_coordination",
+      "fact": "Any change to one document that affects another must be announced in the #stellara-submission channel using the '@here' tag."
+    },
+    {
+      "id": "F26",
+      "category": "review_and_approval_process",
+      "fact": "A master checklist for submission components is maintained as a Google Sheet named 'JAD Submission Checklist'."
+    },
+    {
+      "id": "F27",
+      "category": "review_and_approval_process",
+      "fact": "Each component on the checklist requires a sign-off from its responsible owner and a final sign-off from Dr. Lena Petrova."
+    },
+    {
+      "id": "F28",
+      "category": "review_and_approval_process",
+      "fact": "Dr. Aris Thorne is responsible for locking each document from further edits after Dr. Petrova's final approval is received."
+    },
+    {
+      "id": "F29",
+      "category": "consistency_checks",
+      "fact": "Figure 3 in the manuscript, which shows simulation output, must be cross-referenced with the 'generate_figure_3.py' script in the code repository."
+    },
+    {
+      "id": "F30",
+      "category": "consistency_checks",
+      "fact": "The number of data points cited in the manuscript's 'Methods' section (currently 1,482,910) must match the record count in the 'summary.txt' file within the final dataset."
+    },
+    {
+      "id": "F31",
+      "category": "consistency_checks",
+      "fact": "All author affiliations must be listed exactly as 'Astrophysics Department, Northwood Institute of Technology, Meridian, CA 90210'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Where is the master checklist for all the submission components being tracked?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Overall Coordination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the final submission deadline and the journal's tracking ID for our paper?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After locating the master checklist, confirming the ultimate deadline and submission identifier is the most logical next step for the coordinating author.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Overall Coordination",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the URL for the manuscript's Overleaf project and what is the current version tag?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Manuscript Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the exact affiliation string I need to ensure is used for all authors in the manuscript?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After checking the manuscript's status, a detail-oriented user is concerned with content consistency. The author affiliation is a critical, easily-missed detail within that document.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Consistency Detail - Affiliation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "For the code package, what is the final tagged version for release and what is its corresponding release notes filename?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Code Package Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which specific Git branch is designated for the submission release?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After confirming the code version tag, verifying the correct development branch is a natural follow-up for ensuring no un-intended code is included.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Code Package Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Which script file needs to be checked to ensure it matches Figure 3 in the manuscript?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: While discussing the code package, the user is likely thinking about how it connects to the manuscript. Proactively providing a specific, known consistency check between a script and a manuscript figure addresses this anticipated need.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Consistency Detail - Figure Script",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the full path to the final dataset on the Orion cluster and what is the archived file's SHA256 checksum?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Data Package Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the filename and version of the standalone data availability statement document?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: After confirming the status of the primary dataset, the user's focus shifts to the associated documentation that must align with it, like the data statement.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Data Package Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the exact number of data points cited in the Methods section that must match the dataset's summary file?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After locating the final dataset, the user's next concern is data consistency with the manuscript. Providing the specific data point count to check is a direct and predictable next step for a consistency-driven user.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Consistency Detail - Data Count",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the approval process, specifically who signs off on components and who gives the final package approval?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Approval Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the required procedure for announcing a change that affects more than one document?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Understanding the approval process immediately raises the question of what to do if a change is needed, which could disrupt approvals. The communication protocol for changes is the direct answer to this risk.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Communication Protocol",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Overall Coordination",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Manuscript Status",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Consistency Detail - Affiliation",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Code Package Status",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Consistency Detail - Figure Script",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Data Package Status",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Consistency Detail - Data Count",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Approval Process",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "Communication Protocol",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "research_submission_materials_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

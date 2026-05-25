@@ -1,0 +1,423 @@
+{
+  "scenario_id": "team_availability_shift_03",
+  "domain": "sports_team_operations",
+  "description": "Player availability keeps changing because of school, work, illness, and family obligations, and the staff needs one reliable picture of who is actually available for which upcoming session. All team names are fictional.",
+  "user_profile": {
+    "persona": "37-year-old assistant coach juggling lineups around constantly changing attendance",
+    "context": "Repeated verbal updates are creating conflicting assumptions about who will be present at training",
+    "communication_style": "Scheduling-focused and no-nonsense, wants availability captured in a way that prevents rechecking the same players"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Team Roster",
+      "fact": "The team is named the 'River City Raptors'."
+    },
+    {
+      "id": "F02",
+      "category": "Team Roster",
+      "fact": "Liam Chen is a midfielder and wears jersey number 10."
+    },
+    {
+      "id": "F03",
+      "category": "Team Roster",
+      "fact": "Maria Garcia is a defender and wears jersey number 4."
+    },
+    {
+      "id": "F04",
+      "category": "Team Roster",
+      "fact": "Ben Carter is the goalkeeper and wears jersey number 1."
+    },
+    {
+      "id": "F05",
+      "category": "Team Roster",
+      "fact": "Olivia Jones is a forward and wears jersey number 9."
+    },
+    {
+      "id": "F06",
+      "category": "Team Roster",
+      "fact": "Sam Williams is a defender and wears jersey number 6."
+    },
+    {
+      "id": "F07",
+      "category": "Staff Roles",
+      "fact": "Alex Riley is the Assistant Coach and is responsible for managing training session lineups."
+    },
+    {
+      "id": "F08",
+      "category": "Staff Roles",
+      "fact": "Sarah Jenkins is the Head Coach and provides final approval on game-day rosters."
+    },
+    {
+      "id": "F09",
+      "category": "Team Schedule",
+      "fact": "Training is scheduled for Tuesday, October 24th, 2023, from 6:00 PM to 8:00 PM at Northwood Field."
+    },
+    {
+      "id": "F10",
+      "category": "Team Schedule",
+      "fact": "The next training session is on Thursday, October 26th, 2023, from 6:00 PM to 8:00 PM at Northwood Field."
+    },
+    {
+      "id": "F11",
+      "category": "Team Schedule",
+      "fact": "A team meeting is scheduled for Saturday, October 28th, 2023, at 10:00 AM in the Crestview Community Center Room B."
+    },
+    {
+      "id": "F12",
+      "category": "Player Availability",
+      "fact": "Liam Chen has marked himself 'Unavailable' for the Oct 24th session due to a midterm exam at Riverbend University."
+    },
+    {
+      "id": "F13",
+      "category": "Player Availability",
+      "fact": "Maria Garcia is marked as 'Questionable' for the Oct 26th session; she is recovering from a mild ankle sprain."
+    },
+    {
+      "id": "F14",
+      "category": "Player Availability",
+      "fact": "Ben Carter has a recurring work conflict at his job at 'The Daily Grind Cafe' and is unavailable for all Thursday sessions, including Oct 26th."
+    },
+    {
+      "id": "F15",
+      "category": "Player Availability",
+      "fact": "Olivia Jones has confirmed her status as 'Available' for all sessions scheduled for the week of October 23rd."
+    },
+    {
+      "id": "F16",
+      "category": "Player Availability",
+      "fact": "Sam Williams has set his status to 'Late Arrival' for the Oct 24th session, noting an expected arrival time of 6:30 PM due to a family dinner."
+    },
+    {
+      "id": "F17",
+      "category": "Player Availability",
+      "fact": "Chloe Davis, jersey number 15, is 'Unavailable' for all team activities until October 30th due to influenza."
+    },
+    {
+      "id": "F18",
+      "category": "Player Availability",
+      "fact": "As of 11:00 AM on October 24th, 14 out of 18 players have confirmed their availability for that evening's session."
+    },
+    {
+      "id": "F19",
+      "category": "Player Availability",
+      "fact": "Maria Garcia notified Coach Riley via text at 9:15 AM that her attendance on Oct 26th depends on a physio assessment at 4:00 PM that day."
+    },
+    {
+      "id": "F20",
+      "category": "Player Availability",
+      "fact": "Liam Chen confirmed he is 'Available' for the Thursday, October 26th session."
+    },
+    {
+      "id": "F21",
+      "category": "Communication Protocol",
+      "fact": "Players are required to update their availability status in the 'TeamStatus Pro' app no later than 12:00 PM on the day of a training session."
+    },
+    {
+      "id": "F22",
+      "category": "Communication Protocol",
+      "fact": "Failure to update availability by the 12:00 PM deadline results in the player being marked 'Unavailable' by default."
+    },
+    {
+      "id": "F23",
+      "category": "Communication Protocol",
+      "fact": "Urgent, same-day availability changes must be communicated directly to Assistant Coach Alex Riley via the 'Raptors-Coaching' Slack channel."
+    },
+    {
+      "id": "F24",
+      "category": "Communication Protocol",
+      "fact": "Coach Alex Riley sends the final confirmed attendance list to Head Coach Jenkins via email at 5:00 PM on training days."
+    },
+    {
+      "id": "F25",
+      "category": "System & Tools",
+      "fact": "The team uses the 'TeamStatus Pro' mobile app for all official availability tracking."
+    },
+    {
+      "id": "F26",
+      "category": "System & Tools",
+      "fact": "The login URL for the team's 'TeamStatus Pro' portal is https://app.teamstatuspro.com/rivercityraptors."
+    },
+    {
+      "id": "F27",
+      "category": "System & Tools",
+      "fact": "The possible availability statuses in 'TeamStatus Pro' are 'Available', 'Unavailable', and 'Questionable'."
+    },
+    {
+      "id": "F28",
+      "category": "System & Tools",
+      "fact": "The 'TeamStatus Pro' app allows players to add a short note of up to 100 characters to explain their status."
+    },
+    {
+      "id": "F29",
+      "category": "System & Tools",
+      "fact": "An automated email reminder is sent from 'TeamStatus Pro' at 10:00 AM on session days to any player who has not yet updated their status."
+    },
+    {
+      "id": "F30",
+      "category": "Staff Roles",
+      "fact": "The team manager, David Kim, is responsible for booking all training fields and meeting rooms."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the date, time, and location for tonight's training session?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Tonight's Session Overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "As of 11:00 AM today, how many players have confirmed their availability for this evening's session?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up: After confirming the session details, the coach's immediate next concern is the overall attendance count.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Tonight's Session Overview",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which players are marked as 'Unavailable' for the training session on October 24th?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F17"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning the total number of confirmed players, the user will want to know the specific players who are unavailable to understand the shortfall.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Tonight's Absences",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which player is arriving late to the Oct 24th session and what is their expected arrival time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After identifying players who are completely unavailable, the next logical step is to check for players who will be partially available (i.e., arriving late).",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Tonight's Late Arrivals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "When and where is the next training session after tonight?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Next Session Planning",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Who is unavailable for the Thursday, October 26th session due to a recurring conflict?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group follow-up: Once the details of the next session are known, the user will begin planning for it by checking known absences.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Next Session Planning",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is Liam Chen's availability status for the Thursday, October 26th session?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group follow-up: After reviewing general unavailability for Thursday, the coach would check on a specific player who was absent for the prior session (Liam Chen).",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Next Session Planning",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N8",
+      "description": "Which player is 'Questionable' for the Oct 26th session and what is the reason?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F19"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Once the user has a list of players who are definitively unavailable for the next session, they will naturally want to resolve the status of players who are uncertain or 'Questionable'.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Player Status Uncertainty",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the official deadline for players to update their availability status in the TeamStatus Pro app?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Availability Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What happens if a player fails to update their availability by the noon deadline?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After asking about the rule (the deadline), the user is likely to wonder about the consequence of breaking that rule.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Policy Consequence",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the required communication method for urgent, same-day changes to player availability?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Urgent Communication Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "By what time do I need to send the final confirmed attendance list to Head Coach Jenkins on training days?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After clarifying the protocol for receiving urgent updates from players, the user will likely consider their own communication responsibilities, such as reporting to the Head Coach.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Coaching Staff Reporting",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Tonight's Session Overview",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Tonight's Absences",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Tonight's Late Arrivals",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Next Session Planning",
+      "member_need_ids": [
+        "N5",
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Player Status Uncertainty",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Availability Policy",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Policy Consequence",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Urgent Communication Protocol",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Coaching Staff Reporting",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "team_availability_shift_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "scenario_id": "project_new_01",
+  "domain": "project_kickoff",
+  "description": "A developer joins a new team to work on an existing mid-size web project. They need to learn about the code repository, dev environment, and team roles.",
+  "user_profile": {
+    "persona": "26-year-old full-stack engineer",
+    "context": "First day on the new project team, needs to ramp up quickly",
+    "communication_style": "Hands-on learner"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "team",
+      "fact": "Anya Sharma is the Tech Lead for Project Phoenix."
+    },
+    {
+      "id": "F02",
+      "category": "team",
+      "fact": "Ben Carter is the Senior Backend Engineer and your assigned onboarding buddy."
+    },
+    {
+      "id": "F03",
+      "category": "team",
+      "fact": "The team's primary Slack channel for project communication is #proj-phoenix."
+    },
+    {
+      "id": "F04",
+      "category": "team",
+      "fact": "Carlos Diaz is the primary DevOps contact; his Slack handle is @carlos.diaz."
+    },
+    {
+      "id": "F05",
+      "category": "team",
+      "fact": "Dana White is the Product Manager for Project Phoenix."
+    },
+    {
+      "id": "F06",
+      "category": "process",
+      "fact": "The daily stand-up meeting is at 9:15 AM PST via the Google Meet link meet.google.com/abc-xyz-pqr."
+    },
+    {
+      "id": "F07",
+      "category": "process",
+      "fact": "The team operates on a 2-week sprint cycle, starting on Mondays."
+    },
+    {
+      "id": "F08",
+      "category": "process",
+      "fact": "All development tasks are tracked as tickets in Jira under the project key 'PHX'."
+    },
+    {
+      "id": "F09",
+      "category": "process",
+      "fact": "The active sprint board is located at innovatech.atlassian.net/jira/software/projects/PHX/boards/123."
+    },
+    {
+      "id": "F10",
+      "category": "process",
+      "fact": "Pull Requests (PRs) to the 'develop' branch require a minimum of two approvals from team members."
+    },
+    {
+      "id": "F11",
+      "category": "process",
+      "fact": "One of the two required PR approvals must be from a senior developer: Anya Sharma or Ben Carter."
+    },
+    {
+      "id": "F12",
+      "category": "codebase",
+      "fact": "The project's primary code repository is hosted on GitHub Enterprise at github.innovatech.com/phoenix/phoenix-web-app."
+    },
+    {
+      "id": "F13",
+      "category": "codebase",
+      "fact": "The main development branch is named 'develop'; feature branches must be created from this branch."
+    },
+    {
+      "id": "F14",
+      "category": "codebase",
+      "fact": "The backend is a monolithic application written in Python 3.11 using the Django 4.2 framework."
+    },
+    {
+      "id": "F15",
+      "category": "codebase",
+      "fact": "The frontend is a Single Page Application (SPA) built with React 18 and TypeScript 5.1."
+    },
+    {
+      "id": "F16",
+      "category": "codebase",
+      "fact": "The repository uses a pre-commit hook to enforce the Conventional Commits v1.0.0 specification."
+    },
+    {
+      "id": "F17",
+      "category": "tooling",
+      "fact": "The local development environment is managed entirely through Docker and Docker Compose."
+    },
+    {
+      "id": "F18",
+      "category": "tooling",
+      "fact": "To build and start the local environment, run the command 'docker-compose up --build -d' from the project root directory."
+    },
+    {
+      "id": "F19",
+      "category": "tooling",
+      "fact": "The team's standard Integrated Development Environment (IDE) is JetBrains PyCharm Professional 2023.2."
+    },
+    {
+      "id": "F20",
+      "category": "tooling",
+      "fact": "A license for PyCharm can be requested by filing an IT ticket in Jira under the 'ITSUP' project."
+    },
+    {
+      "id": "F21",
+      "category": "tooling",
+      "fact": "The Continuous Integration/Continuous Deployment (CI/CD) pipeline is managed by Jenkins, accessible at ci.innovatech.internal."
+    },
+    {
+      "id": "F22",
+      "category": "tooling",
+      "fact": "Backend Python dependencies are managed using Poetry 1.5."
+    },
+    {
+      "id": "F23",
+      "category": "infra",
+      "fact": "The staging environment is deployed automatically upon every successful merge to the 'develop' branch."
+    },
+    {
+      "id": "F24",
+      "category": "infra",
+      "fact": "The URL for the staging environment is https://staging.phoenix-app.io."
+    },
+    {
+      "id": "F25",
+      "category": "infra",
+      "fact": "The local development database is a PostgreSQL 15 instance running in a dedicated Docker container."
+    },
+    {
+      "id": "F26",
+      "category": "infra",
+      "fact": "The production environment is hosted on Amazon Web Services (AWS) in the us-west-2 (Oregon) region."
+    },
+    {
+      "id": "F27",
+      "category": "infra",
+      "fact": "Read-only access credentials for the staging database can be found in the 1Password 'Phoenix-Staging' vault."
+    },
+    {
+      "id": "F28",
+      "category": "docs",
+      "fact": "The project's primary documentation and knowledge base is in Confluence at innovatech.atlassian.net/wiki/spaces/PHX."
+    },
+    {
+      "id": "F29",
+      "category": "docs",
+      "fact": "A link to the 'New Developer Setup Guide' is pinned in the #proj-phoenix Slack channel."
+    },
+    {
+      "id": "F30",
+      "category": "docs",
+      "fact": "The REST API documentation is generated via Swagger and is browsable on the staging environment at https://staging.phoenix-app.io/api/v1/docs."
+    },
+    {
+      "id": "F31",
+      "category": "docs",
+      "fact": "Architectural Decision Records (ADRs) are maintained in Markdown format within the '/docs/adr' directory of the main code repository."
+    },
+    {
+      "id": "F32",
+      "category": "process",
+      "fact": "Sprint planning meetings occur every other Monday at 10:00 AM PST."
+    },
+    {
+      "id": "F33",
+      "category": "process",
+      "fact": "Code is deployed to production every Thursday at 2:00 PM PST, following a successful staging verification."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Where is the project's main code repository hosted?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Code Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the command to build and start the local development environment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After finding the code repository, the immediate next step for a hands-on developer is to get the environment running locally.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Code Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Who is the Tech Lead and who is my assigned onboarding buddy?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Team Roles & Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the team's primary Slack channel for project communication?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After identifying key team members, the user will want to know the primary channel to communicate with them and the rest of the team.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Team Roles & Communication",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Where are development tasks tracked and what is the link to the active sprint board?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Development Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are the approval requirements for pull requests to the 'develop' branch?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the user knows where to find tasks, they will need to understand the process for submitting the resulting code for review and merging.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Development Process",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Where can I find the new developer setup guide?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After the user asks how to start the local environment, it's helpful to proactively offer a link to the comprehensive setup guide for further details.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Documentation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What time is the daily stand-up meeting and what is the meeting link?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Team Meetings",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What are the primary frameworks and languages used for the backend and frontend?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After getting the location of the codebase, a developer is likely to be curious about the tech stack they will be working with.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Tech Stack & Environments",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the URL for the staging environment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Understanding the PR approval process naturally leads to questions about the subsequent steps in the pipeline, such as where to view the changes in a deployed environment.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Tech Stack & Environments",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Who is the primary DevOps contact?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: While discussing the local Docker-based environment setup, it's a relevant and helpful time to proactively mention who to contact for DevOps or infrastructure-related issues.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Code Setup",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Team Roles & Communication",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Development Process",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Documentation",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Team Meetings",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Tech Stack & Environments",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Contacts",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "project_new_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

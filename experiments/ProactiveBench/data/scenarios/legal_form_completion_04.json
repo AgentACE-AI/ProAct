@@ -1,0 +1,390 @@
+{
+  "scenario_id": "legal_form_completion_04",
+  "domain": "legal_documentation",
+  "description": "A family is completing several related legal forms and keeps getting confused about which names, dates, addresses, and supporting documents must stay consistent across all of them.",
+  "user_profile": {
+    "persona": "45-year-old sibling coordinating paperwork for multiple family members",
+    "context": "Each form looks manageable on its own, but the overlap between them is causing repeated mistakes",
+    "communication_style": "Careful and cross-checking, wants consistency more than speed"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personal Information",
+      "fact": "The full legal name to be used for the family matriarch on all legal forms is 'Eleanor Vance Sinclair'."
+    },
+    {
+      "id": "F02",
+      "category": "Personal Information",
+      "fact": "Eleanor Vance Sinclair's date of birth, to be used for identity verification, is April 5, 1948."
+    },
+    {
+      "id": "F03",
+      "category": "Personal Information",
+      "fact": "The primary residential address to be listed consistently across all documents is '456 Oak Avenue, Meadowbrook, WA 98052'."
+    },
+    {
+      "id": "F04",
+      "category": "Personal Information",
+      "fact": "The full legal name for the family patriarch is 'Robert James Sinclair', born June 22, 1946."
+    },
+    {
+      "id": "F05",
+      "category": "Key Roles",
+      "fact": "Alex Morgan Sinclair is designated as the Primary Agent on the 'Durable Power of Attorney' document, Form DPA-112."
+    },
+    {
+      "id": "F06",
+      "category": "Key Roles",
+      "fact": "Brenda Chloe Sinclair is designated as the Successor Agent on Form DPA-112, to act only if Alex Morgan Sinclair is unable."
+    },
+    {
+      "id": "F07",
+      "category": "Document Specifics",
+      "fact": "The 'Advance Healthcare Directive' is officially identified as Form HCD-7B."
+    },
+    {
+      "id": "F08",
+      "category": "Document Specifics",
+      "fact": "On Form HCD-7B, Section 4, 'End-of-Life Decisions', requires the declarant to initial next to each of the three choices, not just check the box."
+    },
+    {
+      "id": "F09",
+      "category": "Document Specifics",
+      "fact": "The 'Last Will and Testament' for Eleanor Vance Sinclair was drafted by Evergreen Law Group on August 1, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "Process & Submission",
+      "fact": "All signed and notarized documents must be mailed to 'Evergreen Law Group, Attn: Sinclair Estate, 789 Birch Street, Suite 200, Meadowbrook, WA 98052'."
+    },
+    {
+      "id": "F11",
+      "category": "Process & Submission",
+      "fact": "The deadline for submitting the initial draft review of all forms is September 30, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "Process & Submission",
+      "fact": "The final notarized document package must be physically received by Evergreen Law Group no later than 5:00 PM on November 15, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "Supporting Documents",
+      "fact": "A certified copy of Eleanor and Robert Sinclair's marriage certificate, issued by King County on July 10, 1971, is required as a supporting document."
+    },
+    {
+      "id": "F14",
+      "category": "Supporting Documents",
+      "fact": "A clear photocopy of the front and back of Alex Morgan Sinclair's current Washington State Driver's License (ID# SINCLEM890A2) must be attached to Form DPA-112."
+    },
+    {
+      "id": "F15",
+      "category": "Supporting Documents",
+      "fact": "All digital copies of supporting documents must be uploaded to the law firm's portal as PDF files, with a maximum size of 4MB per file."
+    },
+    {
+      "id": "F16",
+      "category": "Supporting Documents",
+      "fact": "The required file naming convention for uploads is 'LastName_FirstName_DocumentType_YYYYMMDD.pdf', for example, 'Sinclair_Eleanor_MarriageCert_20240905.pdf'."
+    },
+    {
+      "id": "F17",
+      "category": "Process & Submission",
+      "fact": "The notary public scheduled for the signing appointment on October 10, 2024, is David Chen, whose commission number is 1234567 and expires on June 30, 2027."
+    },
+    {
+      "id": "F18",
+      "category": "Process & Submission",
+      "fact": "The signing of the 'Last Will and Testament' requires two witnesses who are not family members, beneficiaries, or the named notary."
+    },
+    {
+      "id": "F19",
+      "category": "Key Roles",
+      "fact": "The primary paralegal contact at Evergreen Law Group is Ms. Jennifer Riley, reachable at j.riley@evergreenlaw.com."
+    },
+    {
+      "id": "F20",
+      "category": "Key Roles",
+      "fact": "The executor named in Robert James Sinclair's will is his brother, Michael David Sinclair."
+    },
+    {
+      "id": "F21",
+      "category": "Consistency Rules",
+      "fact": "The street name 'Oak Avenue' must be written out in full on all documents; do not use the abbreviation 'Oak Ave.'."
+    },
+    {
+      "id": "F22",
+      "category": "Consistency Rules",
+      "fact": "All dates entered on the forms must follow the MM/DD/YYYY format, for example, 09/15/2024."
+    },
+    {
+      "id": "F23",
+      "category": "Consistency Rules",
+      "fact": "Middle names or middle initials must be included on every signature line and printed name field to match government-issued identification."
+    },
+    {
+      "id": "F24",
+      "category": "Document Specifics",
+      "fact": "Form DPA-112 requires the signature of the Principal (Eleanor Sinclair) on page 5 and the acceptance signature of the Agent (Alex Sinclair) on page 6."
+    },
+    {
+      "id": "F25",
+      "category": "Supporting Documents",
+      "fact": "The property deed for 456 Oak Avenue (Parcel ID: 3345-001-023) must be attached as 'Exhibit A' to the Sinclair Family Trust document."
+    },
+    {
+      "id": "F26",
+      "category": "Key Roles",
+      "fact": "The two non-family witnesses chosen for the will signing are neighbor Susan Davis and family friend Thomas Schmidt."
+    },
+    {
+      "id": "F27",
+      "category": "Personal Information",
+      "fact": "Alex Morgan Sinclair's current mailing address for all correspondence is '110 Pine Street, Apt 3B, River City, WA 98101'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "To ensure consistency, what is Eleanor Sinclair's full legal name and date of birth that should be used on all documents?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Personal Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the primary residential address that must be listed consistently across all documents?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the primary individual's personal details, their address is the next logical piece of core information needed for consistency.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Personal Information",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Are there specific formatting rules for how names, dates, and street addresses must be written on the forms?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After providing the core data (name, address, date), a user focused on consistency would immediately want to know the exact formatting rules for that data.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Data Formatting Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "For the Durable Power of Attorney, Form DPA-112, who is designated as the Primary Agent and who is the Successor Agent?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Power of Attorney Roles",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What supporting document is required from Alex Morgan Sinclair for the Power of Attorney form?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the user identifies Alex Sinclair as the Primary Agent, the immediate next step is to determine what documentation is required from them to fulfill that role.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Agent Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the mailing address for submitting the final, notarized document package to the law group?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Submission and Deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the deadlines for the initial draft review and the final submission?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After getting the submission address, the user's next logical concern is the timeline and deadlines associated with that submission.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Submission and Deadlines",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the required file naming convention for uploading digital copies of supporting documents?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Discussing submission deadlines may trigger a thought about the process for submitting supporting documents, making the specific digital formatting rules a relevant and helpful next piece of information.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Digital Submission Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What are the requirements for the witnesses who need to be present for the signing of the Last Will and Testament?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Will Signing Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who are the two specific individuals that have been chosen to act as the non-family witnesses?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After learning the rules for witnesses, the user may want to confirm who has been selected to fulfill those roles.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Will Signing Requirements",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "On the Advance Healthcare Directive, Form HCD-7B, what specific action is required in the 'End-of-Life Decisions' section?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Specific Form Instruction",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Personal Information",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Data Formatting Rules",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Power of Attorney Roles",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Agent Requirements",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Submission and Deadlines",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Digital Submission Rules",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Will Signing Requirements",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Specific Form Instruction",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "legal_form_completion_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

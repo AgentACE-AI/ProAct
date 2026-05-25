@@ -1,0 +1,435 @@
+{
+  "scenario_id": "museum_conservation_priority_queue_05",
+  "domain": "museum_collection_management",
+  "description": "A curator and conservator must decide which objects need attention first based on fragility, current condition, exhibit schedule, research value, and the consequences of deferring treatment.",
+  "user_profile": {
+    "persona": "45-year-old collections leader managing more needs than conservation capacity",
+    "context": "Nothing is in immediate disaster mode, but postponing the wrong items could create avoidable damage later",
+    "communication_style": "Prioritization-oriented and evidence-based, wants decisions tied to object-specific risk"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel_and_Systems",
+      "fact": "The collections management software is named 'CollectioDB' and is accessible internally at the URL https://ama.collectiodb.internal."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel_and_Systems",
+      "fact": "The Head Conservator, Lena Petrova, can be reached at office phone extension 721 or via email at l.petrova@aethelburgmuseum.org."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel_and_Systems",
+      "fact": "Dr. Aris Thorne, the Collections Leader, reviews object condition reports at his workstation, C-04, in the Curatorial Office."
+    },
+    {
+      "id": "F04",
+      "category": "Conservation_Resources",
+      "fact": "The conservation lab currently has a documented backlog of 240 work-hours as of July 1, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "Conservation_Resources",
+      "fact": "The estimated conservation time required to stabilize the 'Scribe's Palette of Amenhotep' (AMA-EGY-0112) is 80 hours."
+    },
+    {
+      "id": "F06",
+      "category": "Conservation_Resources",
+      "fact": "Consolidating the crack on the 'Etruscan Terracotta Sarcophagus Lid' requires a specific acrylic resin, Paraloid B-72, which has a 3-week delivery lead time."
+    },
+    {
+      "id": "F07",
+      "category": "Conservation_Resources",
+      "fact": "The museum's fiscal year 2024 conservation budget has $8,500 remaining for specialized materials and external consultations."
+    },
+    {
+      "id": "F08",
+      "category": "Object_Condition",
+      "fact": "The 'Scribe's Palette of Amenhotep' (AMA-EGY-0112), made of ivory, is rated at Condition Score 4/5 (5=Critical) due to observed micro-cracks."
+    },
+    {
+      "id": "F09",
+      "category": "Object_Condition",
+      "fact": "The 'Etruscan Terracotta Sarcophagus Lid' (AMA-ETR-0089) has a stable 12cm hairline crack near its base, documented on May 20, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "Object_Condition",
+      "fact": "The 'Roman Glass Amphora' (AMA-ROM-0351) is exhibiting early-stage crizzling, a form of glass disease."
+    },
+    {
+      "id": "F11",
+      "category": "Object_Condition",
+      "fact": "'The Mariner's Astrolabe' (AMA-REN-0045) is structurally stable (Condition Score: 2/5), but heavy surface tarnish obscures its scientific engravings."
+    },
+    {
+      "id": "F12",
+      "category": "Object_Condition",
+      "fact": "The 'Qing Dynasty Silk Robe' (AMA-QIN-0210) has a cumulative light exposure of 45,000 lux hours, approaching its annual limit of 50,000 lux hours."
+    },
+    {
+      "id": "F13",
+      "category": "Object_Condition",
+      "fact": "The environmental monitor in Storage Bay 4C, housing the 'Roman Glass Amphora', registered a peak relative humidity of 65% on June 15, 2024, exceeding the recommended 45% RH."
+    },
+    {
+      "id": "F14",
+      "category": "Object_Condition",
+      "fact": "The last condition report for the 'Scribe's Palette of Amenhotep' (AMA-EGY-0112) was filed by Lena Petrova on June 1, 2024."
+    },
+    {
+      "id": "F15",
+      "category": "Exhibition_Schedule",
+      "fact": "The 'Scribe's Palette of Amenhotep' (AMA-EGY-0112) is a confirmed highlight object for the 'Echoes of the Nile' exhibition, opening October 15, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "Exhibition_Schedule",
+      "fact": "All objects for the 'Echoes of the Nile' exhibition must be moved to the pre-exhibit staging area by September 1, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "Exhibition_Schedule",
+      "fact": "'The Mariner's Astrolabe' (AMA-REN-0045) is scheduled for the 'Navigating the Renaissance' exhibition in the third quarter of 2025."
+    },
+    {
+      "id": "F18",
+      "category": "Exhibition_Schedule",
+      "fact": "The 'Qing Dynasty Silk Robe' (AMA-QIN-0210) is not scheduled for public display within the next 24 months."
+    },
+    {
+      "id": "F19",
+      "category": "Research_Access",
+      "fact": "Dr. Evelyn Reed from Northwood University has formally requested access to the 'Etruscan Terracotta Sarcophagus Lid' for non-destructive XRF analysis in November 2024."
+    },
+    {
+      "id": "F20",
+      "category": "Research_Access",
+      "fact": "Dr. Reed's research access is contingent on the object being stable enough for transport from storage to the on-site imaging lab."
+    },
+    {
+      "id": "F21",
+      "category": "Research_Access",
+      "fact": "A pending publication by Dr. Alistair Finch requires new high-resolution photographs of 'The Mariner's Astrolabe' after its tarnish is removed."
+    },
+    {
+      "id": "F22",
+      "category": "Risk_Assessment",
+      "fact": "Deferring treatment on the 'Roman Glass Amphora' (AMA-ROM-0351) carries a high risk of irreversible surface weeping if humidity is not stabilized within the next 3 months."
+    },
+    {
+      "id": "F23",
+      "category": "Risk_Assessment",
+      "fact": "The consequence of not stabilizing the 'Scribe's Palette of Amenhotep' (AMA-EGY-0112) is a high probability of crack propagation and material loss during transport for exhibition."
+    },
+    {
+      "id": "F24",
+      "category": "Risk_Assessment",
+      "fact": "Postponing the cleaning of 'The Mariner's Astrolabe' (AMA-REN-0045) has a low risk of structural damage but will delay Dr. Finch's research publication by an estimated six months."
+    },
+    {
+      "id": "F25",
+      "category": "Risk_Assessment",
+      "fact": "The fragility of the 'Qing Dynasty Silk Robe' (AMA-QIN-0210) is primarily linked to light exposure and fiber degradation, not immediate handling risks."
+    },
+    {
+      "id": "F26",
+      "category": "Personnel_and_Systems",
+      "fact": "The weekly conservation prioritization meeting between Dr. Aris Thorne and Lena Petrova occurs every Tuesday at 10:00 AM in the Harrison Conference Room."
+    },
+    {
+      "id": "F27",
+      "category": "Conservation_Resources",
+      "fact": "The estimated time to clean and apply a protective coating to 'The Mariner's Astrolabe' (AMA-REN-0045) is 25 hours."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the current condition score and upcoming exhibition commitment for the Scribe's Palette of Amenhotep?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Palette Exhibition Urgency",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the deadline for moving the Scribe's Palette to the pre-exhibit area and what is the risk of deferring its treatment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F23"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning about the exhibition, the user needs to know the specific deadline and the consequences of missing it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Palette Exhibition Urgency",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "How many hours of conservation work are estimated to stabilize the Scribe's Palette?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "After understanding the urgency and risk, the user needs to quantify the effort required to mitigate it.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Palette Exhibition Urgency",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is the condition of the Roman Glass Amphora and what is the risk associated with deferring its treatment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Amphora Environmental Risk",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What was the recent peak humidity reading in the Amphora's storage bay?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After learning the risk is tied to humidity, the user will ask for the specific environmental data that confirms the problem.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Amphora Environmental Risk",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the upcoming research request for the Etruscan Sarcophagus Lid and what is its current documented condition?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Sarcophagus Research Request",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What condition must be met before the Sarcophagus Lid can be transported to the on-site imaging lab for Dr. Reed's research access?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After reviewing the exhibition urgency of the Scribe's Palette, a prioritization-focused curator may next ask about the gating condition on another object with a pending research request.",
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "Sarcophagus Research Request",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the research need for the Mariner's Astrolabe and what is the consequence of postponing its cleaning?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Astrolabe Research Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "For the Mariner's Astrolabe, what is its structural condition score?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After discussing the Astrolabe's research need and the consequence of postponing cleaning, a natural follow-up is to check its structural condition score.",
+      "turn_order": 9,
+      "reveal_group": "G4",
+      "reveal_group_label": "Astrolabe Research Impact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the current conservation lab backlog in work-hours?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning that a single high-priority object requires 80 hours, the user's immediate next thought will be to contextualize that effort against the lab's total capacity.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Lab Capacity",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the delivery lead time for the specific resin needed to treat the Sarcophagus Lid?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After confirming that the Sarcophagus needs to be stabilized for research, a key logistical question is whether there are any delays in acquiring the necessary materials.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Material Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the current cumulative light exposure for the Qing Dynasty Silk Robe and is it scheduled for display?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12",
+        "F18"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After learning about the significant lab backlog, the user will want to identify and confirm items that are low priority and can be safely deferred, such as the silk robe.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Low-Priority Monitoring",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the primary nature of the fragility risk for the silk robe?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "After confirming the robe is a low-priority item, the user will want to understand the specific nature of its risk to ensure deferral is safe.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Low-Priority Monitoring",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "What is the estimated conservation time for the Mariner's Astrolabe?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After assessing the research impact and consequences for the Astrolabe, the user will need to know the time investment required to decide if it can be fit into the schedule.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Astrolabe Time Estimate",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Palette Exhibition Urgency",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Amphora Environmental Risk",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Sarcophagus Research Request",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Astrolabe Research Impact",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Lab Capacity",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Material Logistics",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Low-Priority Monitoring",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G8",
+      "label": "Astrolabe Time Estimate",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "museum_conservation_priority_queue_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

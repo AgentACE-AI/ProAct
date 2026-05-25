@@ -1,0 +1,480 @@
+{
+  "scenario_id": "travel_family_01",
+  "domain": "group_travel",
+  "description": "A user is planning a 3-generation family trip to Japan (6 people). They need to arrange flights, hotels with varied accessibility needs, and a mix of historical and kid-friendly activities.",
+  "user_profile": {
+    "persona": "35-year-old parent, trip organizer",
+    "context": "Planning for summer vacation",
+    "communication_style": "Organized, focuses on logistics and group harmony"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Travelers",
+      "fact": "Traveler 1 is Kenji Ito, age 72, with passport number JPN78901234."
+    },
+    {
+      "id": "F02",
+      "category": "Travelers",
+      "fact": "Traveler 2 is Yumi Ito, age 70, with passport number JPN89012345, who requires wheelchair access."
+    },
+    {
+      "id": "F03",
+      "category": "Travelers",
+      "fact": "Traveler 3 is Akio Sasaki, age 35, the trip organizer, with passport number USA12345678."
+    },
+    {
+      "id": "F04",
+      "category": "Travelers",
+      "fact": "Traveler 4 is Hana Sasaki, age 34, with passport number USA23456789."
+    },
+    {
+      "id": "F05",
+      "category": "Travelers",
+      "fact": "Traveler 5 is Sora Sasaki, age 8, with passport number USA34567890."
+    },
+    {
+      "id": "F06",
+      "category": "Travelers",
+      "fact": "Traveler 6 is Ren Sasaki, age 6, with passport number USA45678901."
+    },
+    {
+      "id": "F07",
+      "category": "Flights",
+      "fact": "The group is flying on 'Pacific Crest Air', flight PC305 from LAX to NRT on July 15, 2024, departing at 12:00 PM PST."
+    },
+    {
+      "id": "F08",
+      "category": "Flights",
+      "fact": "The return flight is 'Pacific Crest Air', flight PC306 from NRT to LAX on July 29, 2024, departing at 5:30 PM JST."
+    },
+    {
+      "id": "F09",
+      "category": "Flights",
+      "fact": "The total cost for the 6 round-trip economy tickets was $9,300 USD."
+    },
+    {
+      "id": "F10",
+      "category": "Flights",
+      "fact": "The airline booking confirmation number is `A4B7C9`."
+    },
+    {
+      "id": "F11",
+      "category": "Flights",
+      "fact": "A request for wheelchair assistance for Yumi Ito has been confirmed by the airline for both departure and arrival."
+    },
+    {
+      "id": "F12",
+      "category": "Accommodation",
+      "fact": "From July 16-22, the family will stay at the 'Tokyo Metropolitan Hotel' in Shinjuku."
+    },
+    {
+      "id": "F13",
+      "category": "Accommodation",
+      "fact": "The Tokyo booking includes one 'Family Suite' (Room 1401) and one 'Accessible Queen Room' (Room 305) with a roll-in shower."
+    },
+    {
+      "id": "F14",
+      "category": "Accommodation",
+      "fact": "The booking reference for the 'Tokyo Metropolitan Hotel' is `TMH-88234`."
+    },
+    {
+      "id": "F15",
+      "category": "Accommodation",
+      "fact": "From July 22-28, the family will stay at the 'Kyoto Traditions Inn', a ryokan in the Gion district."
+    },
+    {
+      "id": "F16",
+      "category": "Accommodation",
+      "fact": "The 'Kyoto Traditions Inn' booking is for the 'Sakura Grand Suite', which is a ground-floor unit to accommodate accessibility needs."
+    },
+    {
+      "id": "F17",
+      "category": "Accommodation",
+      "fact": "The booking reference for the 'Kyoto Traditions Inn' is `KTI-519-A`."
+    },
+    {
+      "id": "F18",
+      "category": "Activities",
+      "fact": "Six tickets have been purchased for the 'Mecha Anime Wonderland' theme park for July 18, 2024, with timed entry at 10:00 AM."
+    },
+    {
+      "id": "F19",
+      "category": "Activities",
+      "fact": "The ticket confirmation code for 'Mecha Anime Wonderland' is `MAW-E-TICKET-90210`."
+    },
+    {
+      "id": "F20",
+      "category": "Activities",
+      "fact": "A private, wheelchair-accessible walking tour of the Arashiyama Bamboo Grove is booked for July 24, 2024 at 9:00 AM with 'Kyoto Discovery Tours'."
+    },
+    {
+      "id": "F21",
+      "category": "Activities",
+      "fact": "The guide for the Arashiyama tour is Mr. Takeda, and his contact number is +81 90-5555-1234."
+    },
+    {
+      "id": "F22",
+      "category": "Activities",
+      "fact": "A family calligraphy class is booked at 'The Kyoto Brush' studio for July 25, 2024, from 2:00 PM to 4:00 PM."
+    },
+    {
+      "id": "F23",
+      "category": "Transportation",
+      "fact": "Six 14-day Japan Rail Passes have been purchased; the voucher exchange number is `JR-VOU-XYZ789`."
+    },
+    {
+      "id": "F24",
+      "category": "Transportation",
+      "fact": "A wheelchair-accessible van has been reserved with 'Japan Mobility Hire' for airport transfer from NRT to the hotel on July 16. Confirmation: `JMH-4567`."
+    },
+    {
+      "id": "F25",
+      "category": "Transportation",
+      "fact": "Reserved seats are booked on the Nozomi Shinkansen from Tokyo to Kyoto on July 22, 2024, departing at 11:10 AM."
+    },
+    {
+      "id": "F26",
+      "category": "Budget",
+      "fact": "The total trip budget is set at $20,000 USD."
+    },
+    {
+      "id": "F27",
+      "category": "Budget",
+      "fact": "The accommodation in Tokyo cost a total of $2,400 USD for 6 nights."
+    },
+    {
+      "id": "F28",
+      "category": "Budget",
+      "fact": "The accommodation in Kyoto cost a total of ¥420,000 for 6 nights."
+    },
+    {
+      "id": "F29",
+      "category": "Logistics",
+      "fact": "The shared trip planning document is a Google Sheet named 'Japan Family Trip 2024' shared with Hana Sasaki."
+    },
+    {
+      "id": "F30",
+      "category": "Logistics",
+      "fact": "A pocket Wi-Fi device from 'Connect Japan' has been reserved for pickup at Narita Airport Terminal 1. Reservation number: `CJW-88431`."
+    },
+    {
+      "id": "F31",
+      "category": "Logistics",
+      "fact": "A group chat for the trip has been created in WhatsApp named 'Sasaki-Ito Japan Adventure'."
+    },
+    {
+      "id": "F32",
+      "category": "Health",
+      "fact": "A travel insurance policy with 'VoyagerSafe Insurance' has been purchased for all 6 travelers, policy number `VS-98765-INTL`."
+    },
+    {
+      "id": "F33",
+      "category": "Health",
+      "fact": "Yumi Ito's portable oxygen concentrator (Model: 'OxyGo-5') has been cleared for in-flight use with Pacific Crest Air on June 20, 2024."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the departure and return flight dates, times, and flight numbers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Flight Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the airline booking confirmation number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After getting flight times, the user will likely want the confirmation number for check-in or reference.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Flight Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Has wheelchair assistance been confirmed for Yumi Ito for our flights?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F11"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming general flight logistics, the user's focus shifts to special needs, a critical aspect of their planning.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Flight Accessibility",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Where are we staying in Tokyo and for which dates?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Tokyo Accommodation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What room types and room numbers are included at the Tokyo hotel, and which room has the roll-in shower?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After confirming the Tokyo hotel and dates, the user will naturally want the specific room assignments, especially to verify which room is the accessible one.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Tokyo Accommodation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What are the details of our ryokan stay in Kyoto, including its accessibility?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After finalizing the details for the first city's accommodation (Tokyo), the user will naturally move on to the next major lodging in Kyoto.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Kyoto Accommodation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the arrangements for our airport transfer from Narita?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Ground Transportation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What train, date, and departure time are booked for our Tokyo-to-Kyoto trip?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After confirming the airport transfer, the user will likely want the basic booking details for the other major ground-transport leg.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Ground Transportation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What date, timed entry, and confirmation code do we have for the Tokyo theme park tickets?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the Tokyo stay is settled, it is natural for the organizer to check the concrete booking details for a major Tokyo family activity.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Tokyo Activities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Do we have a booked wheelchair-accessible tour in Kyoto, and who is the guide/contact?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the Kyoto lodging and accessibility setup, a natural next question is whether there is a booked accessible activity in Kyoto and who to contact for it.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Kyoto Activities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Besides that tour, do we have another Kyoto family activity booked, and when is it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: After confirming one Kyoto activity, it is natural to ask whether there is another Kyoto family activity on the itinerary and when it takes place.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Kyoto Activities",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What is the pickup location and reservation number for our pocket Wi-Fi at Narita Airport?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming the arrival flight into Narita, the organizer may naturally check another arrival-day airport task: where to pick up the pocket Wi-Fi and the reservation number.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Connectivity",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the total trip budget, and what were the costs for the flights and the Tokyo accommodation?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09",
+        "F26",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Budget",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is our travel insurance policy number for all 6 travelers?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Health & Safety",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Flight Details",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Flight Accessibility",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Tokyo Accommodation",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Kyoto Accommodation",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Ground Transportation",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Tokyo Activities",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Kyoto Activities",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "Connectivity",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "Budget",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Health & Safety",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "travel_family_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

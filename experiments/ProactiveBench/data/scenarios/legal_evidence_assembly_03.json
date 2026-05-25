@@ -1,0 +1,382 @@
+{
+  "scenario_id": "legal_evidence_assembly_03",
+  "domain": "legal_documentation",
+  "description": "A founder needs to organize emails, invoices, milestone notes, and timeline details into a coherent factual record before meeting legal counsel about a deteriorating client relationship.",
+  "user_profile": {
+    "persona": "32-year-old startup founder with messy documentation habits",
+    "context": "The facts exist, but they are scattered across tools and hard to narrate cleanly",
+    "communication_style": "Fast-moving but willing to slow down if it improves clarity"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Contractual Agreements",
+      "fact": "The Master Services Agreement (MSA) between Innovatech Solutions LLC and Global Retail Corp was signed on January 15, 2023."
+    },
+    {
+      "id": "F02",
+      "category": "Contractual Agreements",
+      "fact": "Statement of Work SOW-004, titled 'Project Omni E-commerce Platform', was attached to the MSA, with a total value of $250,000."
+    },
+    {
+      "id": "F03",
+      "category": "Contractual Agreements",
+      "fact": "The payment terms specified in SOW-004 are Net 30 upon completion and approval of each of the four milestones."
+    },
+    {
+      "id": "F04",
+      "category": "Contractual Agreements",
+      "fact": "Mark Chen, Head of Digital Transformation at Global Retail Corp, is listed as the primary client contact in the MSA."
+    },
+    {
+      "id": "F05",
+      "category": "Contractual Agreements",
+      "fact": "The contract includes a clause for a 1.5% monthly interest penalty on overdue invoices."
+    },
+    {
+      "id": "F06",
+      "category": "Project Milestones",
+      "fact": "Milestone 1, 'Discovery & Technical Scoping', was completed and signed off by Global Retail Corp on February 15, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "Project Milestones",
+      "fact": "Milestone 2, 'UI/UX Wireframes & Design Approval', was delivered on March 31, 2023, but client approval was delayed until April 20, 2023."
+    },
+    {
+      "id": "F08",
+      "category": "Project Milestones",
+      "fact": "Milestone 3, 'Backend Development & API Delivery', was completed and delivered by Innovatech Solutions on May 30, 2023."
+    },
+    {
+      "id": "F09",
+      "category": "Project Milestones",
+      "fact": "Global Retail Corp has not provided formal sign-off for Milestone 3 as of August 18, 2023."
+    },
+    {
+      "id": "F10",
+      "category": "Project Milestones",
+      "fact": "Work on Milestone 4, 'Frontend & Systems Integration', is currently blocked pending client feedback on the API endpoints delivered in Milestone 3."
+    },
+    {
+      "id": "F11",
+      "category": "Financials & Invoicing",
+      "fact": "Invoice #INV-1001 for Milestone 1 ($50,000) was issued on February 16, 2023, and paid in full on March 10, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "Financials & Invoicing",
+      "fact": "Invoice #INV-1002 for Milestone 2 ($75,000) was issued on April 21, 2023, and paid in full on May 25, 2023."
+    },
+    {
+      "id": "F13",
+      "category": "Financials & Invoicing",
+      "fact": "Invoice #INV-1003 for Milestone 3 ($75,000) was issued on May 31, 2023, and is currently 79 days overdue."
+    },
+    {
+      "id": "F14",
+      "category": "Financials & Invoicing",
+      "fact": "The total amount invoiced to Global Retail Corp to date is $200,000."
+    },
+    {
+      "id": "F15",
+      "category": "Financials & Invoicing",
+      "fact": "The total amount paid by Global Retail Corp to date is $125,000."
+    },
+    {
+      "id": "F16",
+      "category": "Financials & Invoicing",
+      "fact": "The current outstanding balance owed by Global Retail Corp is $75,000, excluding any late fees."
+    },
+    {
+      "id": "F17",
+      "category": "Communications",
+      "fact": "On June 5, 2023, Mark Chen requested a change from 'real-time inventory sync' to 'batch inventory sync every 15 minutes' via email, which was accepted by Innovatech Solutions."
+    },
+    {
+      "id": "F18",
+      "category": "Communications",
+      "fact": "On June 12, 2023, Mark Chen requested the addition of a 'customer loyalty points system' via email, which was not in the original SOW."
+    },
+    {
+      "id": "F19",
+      "category": "Communications",
+      "fact": "Innovatech Solutions submitted Change Request CR-001 for the loyalty system, with a cost of $25,000, on June 14, 2023; Global Retail Corp never signed or responded to the document."
+    },
+    {
+      "id": "F20",
+      "category": "Communications",
+      "fact": "The shared Slack channel for daily project communication is #proj-omni-grc."
+    },
+    {
+      "id": "F21",
+      "category": "Communications",
+      "fact": "An email from Mark Chen on August 5, 2023, with the subject 'Regarding Invoice INV-1003', stated an intent to withhold payment due to 'unacceptable project delays'."
+    },
+    {
+      "id": "F22",
+      "category": "Performance Issues",
+      "fact": "The original project launch date per SOW-004 was September 30, 2023."
+    },
+    {
+      "id": "F23",
+      "category": "Performance Issues",
+      "fact": "Global Retail Corp missed the 5-business-day feedback deadline for the API schema in July 2023 by an additional 12 business days."
+    },
+    {
+      "id": "F24",
+      "category": "Performance Issues",
+      "fact": "The project's staging server, hosted at staging.omni.innovatech.dev, was inaccessible for 48 hours (July 19-21, 2023) due to a firewall misconfiguration on the client's network."
+    },
+    {
+      "id": "F25",
+      "category": "Performance Issues",
+      "fact": "Global Retail Corp's primary subject matter expert for logistics was unavailable for three scheduled weekly check-in meetings on July 7, July 14, and July 28, 2023."
+    },
+    {
+      "id": "F26",
+      "category": "Performance Issues",
+      "fact": "Innovatech Solutions' project management tool (Jira) shows that 85% of the logged project delays are attributed to 'Waiting for Client Feedback'."
+    },
+    {
+      "id": "F27",
+      "category": "Legal Consultation",
+      "fact": "The founder, Jian Li, is the sole proprietor of Innovatech Solutions LLC."
+    },
+    {
+      "id": "F28",
+      "category": "Legal Consultation",
+      "fact": "Jian Li has scheduled a consultation with Sarah Miller of the law firm Sterling & Wright LLP."
+    },
+    {
+      "id": "F29",
+      "category": "Legal Consultation",
+      "fact": "The legal consultation is scheduled for August 25, 2023, at 2:00 PM EST via video conference."
+    },
+    {
+      "id": "F30",
+      "category": "Legal Consultation",
+      "fact": "The stated purpose of the meeting is to discuss options for contract enforcement, payment collection, and potential termination of the agreement with Global Retail Corp."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current outstanding balance from Global Retail Corp, and which invoice is overdue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Financial Summary",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the total amount invoiced and the total amount paid to date by Global Retail Corp?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After seeing an outstanding balance, the user will want to confirm the overall financial totals for context.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Financial Summary",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which project milestone is associated with the overdue invoice INV-1003, and when was it delivered?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Milestone Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Has Global Retail Corp provided formal sign-off for Milestone 3?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Knowing a milestone was delivered but the invoice is unpaid leads directly to questioning the approval status.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Milestone Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What was the client's stated reason for withholding payment on invoice INV-1003?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After establishing that a milestone was delivered but not signed off, the user's next logical step is to find any communication from the client explaining why.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Client Justification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the primary cause of project delays according to the project management tool?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Performance Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "By how many business days did the client miss the feedback deadline for the API schema in July?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After seeing a general statement about client feedback causing delays, the user would want a specific, quantifiable example.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Performance Issues",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Is there a penalty for overdue invoices specified in the contract?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the client's refusal to pay is established, the user will want to know what contractual remedies are available, such as late fees.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Contractual Penalties",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Did the client request a 'customer loyalty points system' and was a formal Change Request submitted for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Scope Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who am I meeting with for the legal consultation and when is it scheduled?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28",
+        "F29"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After reviewing the contractual basis for penalties, the user's focus shifts to the upcoming legal meeting where these facts will be discussed, making the meeting details relevant.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Legal Meeting Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Financial Summary",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Milestone Status",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Client Justification",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Performance Issues",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Contractual Penalties",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Scope Management",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Legal Meeting Logistics",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "legal_evidence_assembly_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "scenario_id": "vessel_cargo_condition_chain_04",
+  "domain": "maritime_vessel_operations",
+  "description": "Cargo condition notes, seal records, handling restrictions, and exception reports must stay aligned across loading, transit, and arrival so the full custody chain remains intact. All cargoes and ports are fictional.",
+  "user_profile": {
+    "persona": "40-year-old cargo officer coordinating documentation across several handling stages",
+    "context": "The cargo itself is routine, but the record chain must remain precise enough to withstand scrutiny if a claim arises later",
+    "communication_style": "Chain-of-custody focused and exact, wants every state change linked to the right handoff point"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Vessel_Information",
+      "fact": "The cargo is transported aboard the MV Stellar Tide, a container ship with IMO number 9876543."
+    },
+    {
+      "id": "F02",
+      "category": "Vessel_Information",
+      "fact": "The MV Stellar Tide's call sign is ZVQA7 and it is operated by Globex Maritime Logistics."
+    },
+    {
+      "id": "F03",
+      "category": "Voyage_Details",
+      "fact": "The voyage number for this transit is ST-23-08, originating from Port Meridian and terminating at the Port of Argent."
+    },
+    {
+      "id": "F04",
+      "category": "Voyage_Details",
+      "fact": "The vessel departed Port Meridian on October 25, 2023, at 18:00 UTC and is scheduled to arrive at the Port of Argent on November 10, 2023, at 09:00 UTC."
+    },
+    {
+      "id": "F05",
+      "category": "Cargo_Manifest",
+      "fact": "The primary cargo is detailed under Bill of Lading B/L-PMG-7712, covering 24 pallets of 'Cryo-Gel Canisters'."
+    },
+    {
+      "id": "F06",
+      "category": "Cargo_Manifest",
+      "fact": "The total declared weight for B/L-PMG-7712 is 18,500 kilograms."
+    },
+    {
+      "id": "F07",
+      "category": "Cargo_Manifest",
+      "fact": "The shipper of record for B/L-PMG-7712 is 'Innovatech Solutions' and the consignee is 'Argent Dynamics Inc.'"
+    },
+    {
+      "id": "F08",
+      "category": "Container_Information",
+      "fact": "The 24 pallets of 'Cryo-Gel Canisters' are consolidated into a single 40-foot high-cube refrigerated container, number TCKU-598245-3."
+    },
+    {
+      "id": "F09",
+      "category": "Handling_Restrictions",
+      "fact": "Container TCKU-598245-3 must be maintained at a constant temperature of -5°C (± 2°C) throughout the entire transit."
+    },
+    {
+      "id": "F10",
+      "category": "Handling_Restrictions",
+      "fact": "The 'Cryo-Gel Canisters' are classified under handling code 'SHC-3B', indicating 'Sensitive to Shock, No Stacking Above 2 Meters'."
+    },
+    {
+      "id": "F11",
+      "category": "Loading_Operations",
+      "fact": "Container TCKU-598245-3 was loaded at Port Meridian, Terminal B, Berth 7 on October 25, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "Loading_Operations",
+      "fact": "The final stowage position for container TCKU-598245-3 on the MV Stellar Tide is Bay 22, Row 08, Tier 84."
+    },
+    {
+      "id": "F13",
+      "category": "Loading_Operations",
+      "fact": "A pre-loading condition report, #PCR-PM-915, was completed by surveyor Jian Li, confirming no external damage to the container at 10:30 UTC, October 25, 2023."
+    },
+    {
+      "id": "F14",
+      "category": "Seal_Management",
+      "fact": "A high-security bolt seal, number GMX-4A9918, was affixed to container TCKU-598245-3 by Port Meridian stevedore lead Marco Diaz."
+    },
+    {
+      "id": "F15",
+      "category": "Seal_Management",
+      "fact": "The application of seal GMX-4A9918 was logged in the LogiChain system at 11:45 UTC on October 25, 2023, with photographic evidence attached to the record."
+    },
+    {
+      "id": "F16",
+      "category": "Seal_Management",
+      "fact": "The seal number GMX-4A9918 was physically verified against the manifest by Chief Mate Anya Sharma prior to departure."
+    },
+    {
+      "id": "F17",
+      "category": "Documentation_System",
+      "fact": "All chain-of-custody events are logged in the 'LogiChain v2.1' system, accessible at https://custody.globexmaritime.net."
+    },
+    {
+      "id": "F18",
+      "category": "Documentation_System",
+      "fact": "The Cargo Officer, Kaelen Vance, has 'Level 3 - Audit' access to the LogiChain system with username 'kvance3'."
+    },
+    {
+      "id": "F19",
+      "category": "Documentation_System",
+      "fact": "Any discrepancy or exception report automatically triggers an email and SMS alert to the individuals listed in Distribution Group 'CargoWatch-ST2308'."
+    },
+    {
+      "id": "F20",
+      "category": "Transit_Procedures",
+      "fact": "The reefer unit for container TCKU-598245-3 is checked every 4 hours, with temperature and power status logged in the vessel's digital deck log."
+    },
+    {
+      "id": "F21",
+      "category": "Transit_Procedures",
+      "fact": "At 16:00 UTC on November 2, 2023, the 2nd Engineer, Leo Santos, recorded the reefer temperature at -5.1°C, which is within the acceptable range."
+    },
+    {
+      "id": "F22",
+      "category": "Personnel_Contacts",
+      "fact": "The Port Captain at Port Meridian is Elena Petrova, reachable at elena.petrova@portmeridian.gov."
+    },
+    {
+      "id": "F23",
+      "category": "Personnel_Contacts",
+      "fact": "The Terminal Manager for Argent Dynamics Inc. at the Port of Argent is Ben Carter, contactable at +1-555-827-4001."
+    },
+    {
+      "id": "F24",
+      "category": "Personnel_Contacts",
+      "fact": "For urgent issues with the LogiChain system, the 24/7 support desk number is +44-20-7946-0882."
+    },
+    {
+      "id": "F25",
+      "category": "Exception_Reporting",
+      "fact": "On October 29, 2023, at 03:15 UTC, the reefer unit on TCKU-598245-3 briefly deviated to -7.3°C for 12 minutes due to a sensor recalibration cycle."
+    },
+    {
+      "id": "F26",
+      "category": "Exception_Reporting",
+      "fact": "This temperature deviation was logged as Exception Report ER-001-ST, noting that the duration was below the 30-minute threshold for cargo damage protocol."
+    },
+    {
+      "id": "F27",
+      "category": "Exception_Reporting",
+      "fact": "Exception Report ER-001-ST was reviewed and closed by Cargo Officer Kaelen Vance at 04:00 UTC on October 29, 2023, with the note 'Standard recalibration cycle, no action required'."
+    },
+    {
+      "id": "F28",
+      "category": "Arrival_Procedures",
+      "fact": "Upon arrival at the Port of Argent, Terminal F, Berth 3, a port authority surveyor must be present to witness the breaking of seal GMX-4A9918."
+    },
+    {
+      "id": "F29",
+      "category": "Arrival_Procedures",
+      "fact": "The designated surveyor for the Port of Argent is from 'Argent Maritime Surveyors', appointment reference A-MS-602."
+    },
+    {
+      "id": "F30",
+      "category": "Arrival_Procedures",
+      "fact": "Before discharge, the reefer unit's full temperature log must be downloaded from its internal memory stick (Port USB-B) and uploaded to the LogiChain system under file name 'TCKU5982453_LOG_10NOV23.csv'."
+    },
+    {
+      "id": "F31",
+      "category": "Custody_Handoff",
+      "fact": "The official custody transfer from Globex Maritime to Argent Dynamics Inc. occurs when terminal manager Ben Carter signs the digital 'Cargo Receipt Confirmation' form in the LogiChain system."
+    },
+    {
+      "id": "F32",
+      "category": "Custody_Handoff",
+      "fact": "The cargo release code, required by the terminal operator to move the container from the quay, is 'AD-7742-XRAY'."
+    },
+    {
+      "id": "F33",
+      "category": "Contingency_Plans",
+      "fact": "In case of a total reefer failure, the Master is authorized to contact the 'Global Reefer Tech' support line at +65-6777-8900, quoting vessel account GLM-901."
+    },
+    {
+      "id": "F34",
+      "category": "Contingency_Plans",
+      "fact": "If a seal is found broken or tampered with mid-transit, per protocol GS-14B, the area must be secured and photographic evidence immediately uploaded to LogiChain with a 'Priority 1' alert."
+    },
+    {
+      "id": "F35",
+      "category": "Insurance_Details",
+      "fact": "The cargo under B/L-PMG-7712 is insured by 'Oceanic Shield Insurers' under policy number OS-CARGO-2023-58190."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the Bill of Lading number for the 'Cryo-Gel Canisters' shipment, and who are the shipper and consignee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Cargo Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which specific container holds this cargo and what is its declared weight?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the cargo by B/L, the user needs to link it to a physical container.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Cargo Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where and when was container TCKU-598245-3 loaded, and what is its final stowage position on the MV Stellar Tide?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Loading Operations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Was a pre-loading condition report filed for this container, and who was the surveyor?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After confirming the loading details, verifying the container's condition at that time is a logical next step in the custody chain.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Loading Operations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the high-security seal number that was affixed to the container at Port Meridian?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming the container was loaded, the next critical chain-of-custody event is securing it with a seal.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Seal Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Show me the log entry for when seal GMX-4A9918 was applied and who verified it against the manifest.",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the seal number is known, the user will want to see the documentation proving it was applied and verified correctly.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Seal Management",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the specific temperature and handling restrictions for container TCKU-598245-3?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After identifying the specific container, a primary concern is understanding its special handling and environmental requirements for the voyage.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Transit Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How is the reefer unit's temperature being monitored during the voyage?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Knowing the strict temperature requirements naturally leads to the question of how compliance with those requirements is being monitored.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "In-Transit Events",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "I see an alert for this voyage. What was the nature of the temperature deviation on October 29th?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "In-Transit Events",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "How was Exception Report ER-001-ST reviewed and closed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After learning about an exception, the immediate follow-up is to understand its resolution and impact.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "In-Transit Events",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N11",
+      "description": "What are the procedures for breaking the seal upon arrival at the Port of Argent?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Arrival Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What data needs to be downloaded from the reefer unit at arrival and what is the required file name?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Intra-group: As part of the arrival process, the user needs to know the specific data handling tasks required to complete the transit record.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Arrival Procedures",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "How is the final custody transfer to Argent Dynamics officially documented, and what is the cargo release code?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F32"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: While reviewing arrival procedures, the ultimate goal is the final handoff, making this the next logical topic to ensure a clean transfer of custody.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Custody Handoff",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Who signs the digital Cargo Receipt Confirmation form that completes the transfer to Argent Dynamics?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "After confirming how the final custody transfer is documented, a direct follow-up is who signs the digital Cargo Receipt Confirmation that completes that transfer.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Custody Transfer Verification",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Cargo Identification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Loading Operations",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Seal Management",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Transit Requirements",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "In-Transit Events",
+      "member_need_ids": [
+        "N8",
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Arrival Procedures",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Custody Handoff",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+    "label": "Custody Transfer Verification",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vessel_cargo_condition_chain_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

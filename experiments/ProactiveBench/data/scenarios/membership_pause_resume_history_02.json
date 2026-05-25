@@ -1,0 +1,501 @@
+{
+  "scenario_id": "membership_pause_resume_history_02",
+  "domain": "subscription_membership_administration",
+  "description": "A user has paused and resumed several times, and support needs the exact history to determine what should reactivate now, what expired earlier, and what should not be restored automatically. All programs are fictional.",
+  "user_profile": {
+    "persona": "35-year-old customer support lead handling edge-case membership lifecycle questions",
+    "context": "The account looks simple at first glance, but several past pauses changed the benefit timeline in ways that are not obvious now",
+    "communication_style": "Lifecycle-focused and patient, wants state changes understood in order before answering confidently"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Account_Information",
+      "fact": "The user account is for Alina Vance."
+    },
+    {
+      "id": "F02",
+      "category": "Account_Information",
+      "fact": "The user ID associated with the account is 'AVANCE-8814'."
+    },
+    {
+      "id": "F03",
+      "category": "Account_Information",
+      "fact": "The registered email address for the account is alina.vance.8814@email.co."
+    },
+    {
+      "id": "F04",
+      "category": "Account_Information",
+      "fact": "The account was created on January 15, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "Subscription_Details",
+      "fact": "The user is subscribed to the 'CogniQuest Pro Annual' plan."
+    },
+    {
+      "id": "F06",
+      "category": "Subscription_Details",
+      "fact": "The annual subscription fee is $180.00 USD."
+    },
+    {
+      "id": "F07",
+      "category": "Subscription_Details",
+      "fact": "The subscription provides access to three core benefits: 'NeuroLeap AI', 'MindWeaver Cloud', and 'Synapse Quarterly'."
+    },
+    {
+      "id": "F08",
+      "category": "Subscription_Details",
+      "fact": "The initial subscription period was from January 15, 2023, to January 14, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "Billing_Information",
+      "fact": "The last successful payment of $180.00 USD was processed on January 15, 2023."
+    },
+    {
+      "id": "F10",
+      "category": "Billing_Information",
+      "fact": "The next billing date is currently projected for August 24, 2024, due to pause adjustments."
+    },
+    {
+      "id": "F11",
+      "category": "Pause_Event_1",
+      "fact": "The first pause was initiated by the user on May 1, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "Pause_Event_1",
+      "fact": "The requested duration for the first pause was 90 days."
+    },
+    {
+      "id": "F13",
+      "category": "Pause_Event_1",
+      "fact": "The subscription automatically resumed from the first pause on July 30, 2023."
+    },
+    {
+      "id": "F14",
+      "category": "Pause_Event_2",
+      "fact": "The second pause was initiated by the user on December 10, 2023."
+    },
+    {
+      "id": "F15",
+      "category": "Pause_Event_2",
+      "fact": "The requested duration for the second pause was 30 days."
+    },
+    {
+      "id": "F16",
+      "category": "Pause_Event_2",
+      "fact": "The subscription automatically resumed from the second pause on January 9, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "Pause_Event_3",
+      "fact": "A third, partial pause was initiated on April 25, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "Pause_Event_3",
+      "fact": "The third pause only applies to the 'NeuroLeap AI' benefit."
+    },
+    {
+      "id": "F19",
+      "category": "Pause_Event_3",
+      "fact": "The requested duration for the third pause is 60 days, ending on June 24, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "Benefit_Status",
+      "fact": "The 'MindWeaver Cloud' benefit had an original expiration date of January 14, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "Benefit_Status",
+      "fact": "The first two pauses extended the 'MindWeaver Cloud' benefit's expiration date by a total of 120 days."
+    },
+    {
+      "id": "F22",
+      "category": "Benefit_Status",
+      "fact": "The 'MindWeaver Cloud' benefit's adjusted expiration date was May 13, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "Benefit_Status",
+      "fact": "The 'MindWeaver Cloud' benefit is currently in an 'Expired' state as of May 14, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "Benefit_Status",
+      "fact": "The 'Synapse Quarterly' benefit was also extended by 120 days due to the first two pauses."
+    },
+    {
+      "id": "F25",
+      "category": "Benefit_Status",
+      "fact": "The 'Synapse Quarterly' benefit's adjusted expiration date is May 13, 2024, and it is also 'Expired'."
+    },
+    {
+      "id": "F26",
+      "category": "Benefit_Status",
+      "fact": "The 'NeuroLeap AI' benefit's expiration date was also adjusted by the first two pauses to May 13, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "Benefit_Status",
+      "fact": "The 'NeuroLeap AI' benefit is currently in a 'Paused' state."
+    },
+    {
+      "id": "F28",
+      "category": "Benefit_Status",
+      "fact": "The third pause on 'NeuroLeap AI' began on April 25, 2024, when it had 18 days of active time remaining."
+    },
+    {
+      "id": "F29",
+      "category": "Benefit_Status",
+      "fact": "Upon resuming on June 24, 2024, the 'NeuroLeap AI' benefit will have 18 days of access left, expiring on July 12, 2024."
+    },
+    {
+      "id": "F30",
+      "category": "Support_Interaction",
+      "fact": "The current investigation is tied to support ticket #T-9A3B-4C5D."
+    },
+    {
+      "id": "F31",
+      "category": "Support_Interaction",
+      "fact": "The support ticket was created on June 5, 2024, at 11:15 AM UTC."
+    },
+    {
+      "id": "F32",
+      "category": "Support_Interaction",
+      "fact": "The assigned support lead for the ticket is Kenji Tanaka."
+    },
+    {
+      "id": "F33",
+      "category": "Support_Interaction",
+      "fact": "The user's stated issue is: 'My MindWeaver access expired but NeuroLeap seems paused. I am confused about what is active.'"
+    },
+    {
+      "id": "F34",
+      "category": "System_Information",
+      "fact": "The membership lifecycle data is being viewed in the 'Chronos' internal admin tool, version 2.7.1."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who is the account holder and what is their user ID?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Account and Subscription Baseline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the user's subscription plan and its original term?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the user, the support lead needs to understand the basic subscription they signed up for.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Account and Subscription Baseline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What were the start date, requested duration, and resume date of the first pause?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Pause Event",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What were the start date, requested duration, and resume date of the second pause?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Following the chronological lifecycle, understanding the second pause is the natural next step after reviewing the first.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Pause Event",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+  "description": "What adjusted expiration date is recorded for 'MindWeaver Cloud' and 'Synapse Quarterly'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F25"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After establishing the history of the two full pauses, the immediate consequence is their effect on the benefit expiration dates.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Status of Standard Benefits",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What status is currently shown for the 'MindWeaver Cloud' benefit as of May 14, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Knowing the adjusted expiration date leads directly to questioning the current state of that benefit.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Status of Standard Benefits",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What was the third pause event, including its start date and the specific benefit affected?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "The Special Case - NeuroLeap AI",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the current status of the 'NeuroLeap AI' benefit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Once the third, partial pause is identified, the immediate question is the current state of the affected benefit.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "The Special Case - NeuroLeap AI",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How many days of access for 'NeuroLeap AI' remained when the third pause began?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Understanding that the benefit is paused leads to a detailed question about how much time was 'saved' by the pause.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "The Special Case - NeuroLeap AI",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N10",
+      "description": "When will 'NeuroLeap AI' resume, and what is its final expiration date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After confirming how much time was left, the logical conclusion is to ask when that time will be usable and when it will finally run out.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "NeuroLeap AI Future State",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What next billing date is currently projected in the account due to pause adjustments?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the impact on benefit expiration is understood, the financial impact on the next billing date is a critical, related piece of information.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Overall Billing Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What exact sentence did the user submit in their support ticket?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "User's Perspective",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the support ticket number for this investigation?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "After reading the user's issue, confirming the associated ticket number is a standard administrative step.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "User's Perspective",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "Which internal admin tool is being used to inspect this membership lifecycle history?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After identifying the user's stated issue and support ticket context, a natural follow-up is which internal tool the support lead is using to inspect the lifecycle history.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Investigation Tooling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What was the amount and date of the last successful payment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Payment History",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Account and Subscription Baseline",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "First Pause Event",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Second Pause Event",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Status of Standard Benefits",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "The Special Case - NeuroLeap AI",
+      "member_need_ids": [
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "NeuroLeap AI Future State",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Overall Billing Impact",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "User's Perspective",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Investigation Tooling",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G10",
+      "label": "Payment History",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "membership_pause_resume_history_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

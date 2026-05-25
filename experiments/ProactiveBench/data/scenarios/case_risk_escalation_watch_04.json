@@ -1,0 +1,368 @@
+{
+  "scenario_id": "case_risk_escalation_watch_04",
+  "domain": "nonprofit_case_management",
+  "description": "A caseworker needs a structured way to notice when a client situation is drifting from manageable instability toward immediate crisis instead of reacting only once a clear emergency occurs.",
+  "user_profile": {
+    "persona": "41-year-old senior case manager used to handling many non-crisis cases that can worsen suddenly",
+    "context": "The warning signs tend to emerge gradually and are easy to overlook when each change seems small on its own",
+    "communication_style": "Calm and threshold-oriented, wants patterns and escalation triggers named clearly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Caseworker Information",
+      "fact": "Senior Case Manager Maria Garcia's employee ID at Hope Harbor Community Services (HHCS) is MG-7845."
+    },
+    {
+      "id": "F02",
+      "category": "Caseworker Information",
+      "fact": "Maria Garcia is responsible for a caseload of 45 clients, primarily in the 'Stable but Vulnerable' category."
+    },
+    {
+      "id": "F03",
+      "category": "Caseworker Information",
+      "fact": "Maria Garcia's direct supervisor, who must be notified of Orange-level alerts, is David Chen, Director of Case Management."
+    },
+    {
+      "id": "F04",
+      "category": "System & Tools",
+      "fact": "HHCS uses a proprietary software called the 'Beacon Client Stability Tracker' to monitor client well-being."
+    },
+    {
+      "id": "F05",
+      "category": "System & Tools",
+      "fact": "The login URL for the Beacon tracker is https://hhcs.beacon-tracker.com."
+    },
+    {
+      "id": "F06",
+      "category": "System & Tools",
+      "fact": "The Beacon system tracks five key stability domains: Housing, Financial, Health & Wellness, Social Support, and Employment."
+    },
+    {
+      "id": "F07",
+      "category": "System & Tools",
+      "fact": "Each stability domain in Beacon is scored on a scale from 0 (Critical Crisis) to 100 (Fully Stable)."
+    },
+    {
+      "id": "F08",
+      "category": "System & Tools",
+      "fact": "The Beacon system automatically calculates a client's Overall Stability Score, which is a weighted average of the five domain scores."
+    },
+    {
+      "id": "F09",
+      "category": "System & Tools",
+      "fact": "IT support for the Beacon system is available by emailing beacon.help@hhcs.internal or calling extension 555."
+    },
+    {
+      "id": "F10",
+      "category": "Client Profile",
+      "fact": "Client John Miller (ID: JM-2023-04B) is assigned to caseworker Maria Garcia."
+    },
+    {
+      "id": "F11",
+      "category": "Client Profile",
+      "fact": "John Miller's baseline Overall Stability Score on March 1, 2024, was 82."
+    },
+    {
+      "id": "F12",
+      "category": "Client Profile",
+      "fact": "John Miller's 'Financial' domain score dropped from 75 to 55 on March 15, 2024, after he logged a reduction in work hours."
+    },
+    {
+      "id": "F13",
+      "category": "Client Profile",
+      "fact": "John Miller missed a scheduled therapy appointment on March 20, 2024, which lowered his 'Health & Wellness' score from 90 to 70."
+    },
+    {
+      "id": "F14",
+      "category": "Client Profile",
+      "fact": "As of March 22, 2024, John Miller's Overall Stability Score is 68, down from 82 at the start of the month."
+    },
+    {
+      "id": "F15",
+      "category": "Escalation Protocol",
+      "fact": "A 'Yellow Alert' is triggered in Beacon when a client's Overall Stability Score drops below 70."
+    },
+    {
+      "id": "F16",
+      "category": "Escalation Protocol",
+      "fact": "John Miller's profile triggered a 'Yellow Alert' on March 22, 2024, which automatically sent an email notification to m.garcia@hhcs.org."
+    },
+    {
+      "id": "F17",
+      "category": "Escalation Protocol",
+      "fact": "The standard operating procedure for a 'Yellow Alert' requires the assigned caseworker to make phone contact with the client within one business day."
+    },
+    {
+      "id": "F18",
+      "category": "Escalation Protocol",
+      "fact": "An 'Orange Alert' is triggered when a client's Overall Stability Score drops below 50."
+    },
+    {
+      "id": "F19",
+      "category": "Escalation Protocol",
+      "fact": "An 'Orange Alert' requires an in-person wellness check within 48 hours and a mandatory case review meeting with the supervisor."
+    },
+    {
+      "id": "F20",
+      "category": "Escalation Protocol",
+      "fact": "A 'Red Alert' is triggered when any single domain score drops below 20, regardless of the overall score."
+    },
+    {
+      "id": "F21",
+      "category": "Escalation Protocol",
+      "fact": "A 'Red Alert' activates the immediate crisis response protocol, which involves notifying the on-call crisis intervention specialist, Dr. Susan Reed, at 555-212-9876."
+    },
+    {
+      "id": "F22",
+      "category": "Reporting & Metrics",
+      "fact": "Maria Garcia is required to log all client interactions related to an active alert in the Beacon 'Alert Resolution Log' within 3 hours of the interaction."
+    },
+    {
+      "id": "F23",
+      "category": "Reporting & Metrics",
+      "fact": "The Beacon system generates a 'Weekly Watchlist Report' every Monday at 8:00 AM, listing all clients with active Yellow or Orange alerts."
+    },
+    {
+      "id": "F24",
+      "category": "Reporting & Metrics",
+      "fact": "The monthly performance metric for senior caseworkers is to resolve at least 90% of Yellow Alerts before they escalate to Orange status."
+    },
+    {
+      "id": "F25",
+      "category": "Training",
+      "fact": "All caseworkers must complete the 'BCN-101: Introduction to Beacon Tracker' online training module before gaining system access."
+    },
+    {
+      "id": "F26",
+      "category": "Training",
+      "fact": "The advanced training module, 'BCN-205: Proactive Intervention Strategies,' is mandatory for all senior caseworkers and is held quarterly."
+    },
+    {
+      "id": "F27",
+      "category": "Training",
+      "fact": "The next session for 'BCN-205' is scheduled for April 18, 2024, in Conference Room 3B at the main office located at 123 Aspen Way, Riverbend."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current Overall Stability Score for my client John Miller (JM-2023-04B), and what was his baseline score at the beginning of the month?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Client Status Inquiry",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which specific stability domains for John Miller have declined this month, and what events were logged that caused the score changes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning the overall score has dropped, the natural next question is to ask for the specific reasons and contributing factors for the decline.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Client Status Inquiry",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Based on his score drop, what specific alert was triggered for John Miller and on what date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: Understanding the specific score changes logically leads to asking about the formal alert status that resulted from them.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Current Alert Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "For a Yellow Alert, what is the required immediate contact action and deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Once the alert level is identified, the immediate need is to know the required action protocol.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Current Alert Protocol",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the score threshold for the next level, an Orange Alert, and what actions does it require?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding the required actions for the current alert, a proactive caseworker will want to know the threshold and requirements for the next level of escalation to anticipate future risk.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Future Escalation Thresholds",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the trigger for an immediate crisis Red Alert?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning about the Yellow and Orange alert thresholds, the user may want to complete their understanding of the escalation framework by asking about the highest-level alert.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Crisis Alert Definition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "For an active alert, where in Beacon must client interactions be logged and within what deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning the required action (make phone contact), the user's next procedural thought is about the documentation and reporting requirements for that action.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Reporting and Performance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the monthly performance metric related to resolving Yellow Alerts?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Thinking about the requirement to log alert resolutions can naturally lead to curiosity about how those resolutions are measured for performance evaluation.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Reporting and Performance",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How can I get a summary of all my clients with active Yellow or Orange alerts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Caseload Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When and where is the next advanced training on 'Proactive Intervention Strategies' being held?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Professional Development",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Client Status Inquiry",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Current Alert Protocol",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Future Escalation Thresholds",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Crisis Alert Definition",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Reporting and Performance",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Caseload Management",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Professional Development",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "case_risk_escalation_watch_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

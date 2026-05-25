@@ -1,0 +1,397 @@
+{
+  "scenario_id": "travel_annual_summit_05",
+  "domain": "group_travel",
+  "description": "A global NGO plans an annual summit for 100 people across different continents. They need to track 5 years of historical location data to ensure geographic fairness, manage visa evolution for different nationalities, and proactively plan for 'climate-safe' travel seasons.",
+  "user_profile": {
+    "persona": "45-year-old Events Director",
+    "context": "Early planning for the 2027 summit",
+    "communication_style": "Visionary, focused on equity and long-term sustainability"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "summit_history",
+      "fact": "The 2022 Global Harmony Initiative (GHI) Summit was held in Nairobi, Kenya, from October 10-14."
+    },
+    {
+      "id": "F02",
+      "category": "summit_history",
+      "fact": "The 2023 GHI Summit took place in Bogotá, Colombia, from September 4-8."
+    },
+    {
+      "id": "F03",
+      "category": "summit_history",
+      "fact": "The 2024 GHI Summit was hosted in Kuala Lumpur, Malaysia, from November 11-15."
+    },
+    {
+      "id": "F04",
+      "category": "summit_history",
+      "fact": "The 2025 GHI Summit convened in Lisbon, Portugal, from June 16-20."
+    },
+    {
+      "id": "F05",
+      "category": "summit_history",
+      "fact": "The upcoming 2026 GHI Summit is scheduled to be held in Montreal, Canada, from August 17-21."
+    },
+    {
+      "id": "F06",
+      "category": "governance",
+      "fact": "GHI Policy #401a, the 'Continental Rotation Mandate', dictates that the annual summit must cycle through Africa, South America, Asia, Europe, and North America in that order."
+    },
+    {
+      "id": "F07",
+      "category": "future_planning_2027",
+      "fact": "Based on the Continental Rotation Mandate, the designated continent for the 2027 summit is Oceania."
+    },
+    {
+      "id": "F08",
+      "category": "future_planning_2027",
+      "fact": "The two shortlisted host cities for the 2027 summit are Auckland, New Zealand, and Suva, Fiji."
+    },
+    {
+      "id": "F09",
+      "category": "participant_logistics",
+      "fact": "For the 2025 Lisbon summit, 18 of the 100 attendees required Schengen visas, with an average application processing time of 45 days."
+    },
+    {
+      "id": "F10",
+      "category": "planning_operations",
+      "fact": "The GHI travel coordinator, Kenji Tanaka, uses the 'VisaTrack Pro' platform, accessible at https://ghi.visatrack.pro, to monitor all visa applications."
+    },
+    {
+      "id": "F11",
+      "category": "planning_operations",
+      "fact": "Kenji Tanaka's direct contact email for urgent travel matters is k.tanaka@globalharmony.org."
+    },
+    {
+      "id": "F12",
+      "category": "participant_logistics",
+      "fact": "The most complex visa case in 2025 involved a delegate from Yemen, requiring a specialized invitation letter signed by GHI's President, Dr. Aris Thorne."
+    },
+    {
+      "id": "F13",
+      "category": "sustainability_policy",
+      "fact": "GHI Policy #720, the 'Climate-Safe Season Protocol', prohibits scheduling summits in locations during their defined peak natural disaster seasons."
+    },
+    {
+      "id": "F14",
+      "category": "sustainability_policy",
+      "fact": "The Climate-Safe Season Protocol forbids scheduling a summit in Suva, Fiji, between November 1st and April 30th due to high cyclone risk."
+    },
+    {
+      "id": "F15",
+      "category": "sustainability_policy",
+      "fact": "GHI maintains a mandatory carbon offset program for all summit-related air travel through its partnership with 'Verdant Future Carbon Credits'."
+    },
+    {
+      "id": "F16",
+      "category": "sustainability_policy",
+      "fact": "The total audited carbon footprint for the 2024 Kuala Lumpur summit was 215 metric tons of CO2 equivalent."
+    },
+    {
+      "id": "F17",
+      "category": "planning_operations",
+      "fact": "Events Director Anya Sharma manages all 2027 summit tasks in Asana under Project ID #8801-SUMMIT2027."
+    },
+    {
+      "id": "F18",
+      "category": "planning_operations",
+      "fact": "The approved preliminary budget for the 2027 GHI Summit is $450,000 USD."
+    },
+    {
+      "id": "F19",
+      "category": "planning_operations",
+      "fact": "All historical summit data, including expense reports and post-event surveys, is archived on the secure server at \\\\ghi-datastore\\events\\archives."
+    },
+    {
+      "id": "F20",
+      "category": "summit_history",
+      "fact": "The average attendance across the last four completed summits (2022-2025) was 98 participants."
+    },
+    {
+      "id": "F21",
+      "category": "participant_logistics",
+      "fact": "GHI's contracted travel agency for all official flight and accommodation bookings is 'Equinox Global Travel'."
+    },
+    {
+      "id": "F22",
+      "category": "planning_operations",
+      "fact": "The internal finance code for all expenses related to the 2027 summit is EVT-SUM-GL-2027."
+    },
+    {
+      "id": "F23",
+      "category": "governance",
+      "fact": "The GHI Board of Directors requires the final decision on the 2027 host city to be ratified no later than June 30, 2026."
+    },
+    {
+      "id": "F24",
+      "category": "future_planning_2027",
+      "fact": "Anya Sharma has proposed the working theme 'Bridging Divides: Climate Justice and Digital Equity' for the 2027 summit."
+    },
+    {
+      "id": "F25",
+      "category": "participant_logistics",
+      "fact": "All registered summit attendees receive a standard travel per diem of $75 USD for incidental expenses."
+    },
+    {
+      "id": "F26",
+      "category": "participant_logistics",
+      "fact": "In 2023, four delegates from the GHI Africa regional office in Accra, Ghana, experienced visa processing delays of over 60 days for the summit in Bogotá."
+    },
+    {
+      "id": "F27",
+      "category": "sustainability_policy",
+      "fact": "GHI subscribes to 'ClimAdapt Analytics' for climate risk modeling at an annual cost of $12,000."
+    },
+    {
+      "id": "F28",
+      "category": "planning_operations",
+      "fact": "Bi-weekly planning meetings for the 2027 summit are held on Tuesdays at 14:00 UTC via the recurring Zoom link: https://ghi.zoom.us/j/9876543210."
+    },
+    {
+      "id": "F29",
+      "category": "summit_history",
+      "fact": "The Estrela Convention Center in Lisbon (2025) received the highest post-event satisfaction score of any venue at 9.4 out of 10."
+    },
+    {
+      "id": "F30",
+      "category": "future_planning_2027",
+      "fact": "The initial site inspection visit for the Auckland bid is tentatively scheduled for the week of March 10, 2026."
+    },
+    {
+      "id": "F31",
+      "category": "governance",
+      "fact": "Policy #401b, the 'Geographic Equity Scorecard', weights host city bids based on visa accessibility (40%), travel cost from major hubs (30%), and local partner engagement (30%)."
+    },
+    {
+      "id": "F32",
+      "category": "participant_logistics",
+      "fact": "The official delegate information packet, including visa support letters and the code of conduct, is distributed via a secure portal at https://summit.globalharmony.org."
+    },
+    {
+      "id": "F33",
+      "category": "planning_operations",
+      "fact": "The primary stakeholder communication channel for summit planning is the private Slack channel #summit-2027-planning."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Where were the GHI summits held from 2022 to 2026?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Summit History and Governance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the official 'Continental Rotation Mandate' for the annual summit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After reviewing the list of past summit locations, the user will naturally question the policy or pattern governing their selection.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Summit History and Governance",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which continent is designated for the 2027 summit according to the rotation mandate, and what are the two shortlisted host cities?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Understanding the rotation policy (N2) directly leads to the question of its application for the next planning cycle (2027).",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "2027 Shortlisted Cities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "According to the 'Climate-Safe Season Protocol', are there any months when a summit cannot be held in Suva, Fiji?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once the shortlisted cities are identified (N3), a sustainability-focused director will immediately check for known climate-related constraints on those locations.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Climate-Safe Scheduling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the criteria and percentage weightings of the 'Geographic Equity Scorecard' for evaluating host city bids?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Host City Decision Framework",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the final deadline for the Board of Directors to ratify the 2027 host city decision?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After learning the evaluation criteria (N5), the user's next logical concern is the timeline and deadline for making the decision.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Host City Decision Framework",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Can you provide a specific example of significant visa processing delays experienced by our delegates for a past summit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: The 'visa accessibility' criterion in the scorecard (N5) makes the user want to understand the real-world impact by asking for historical examples of visa problems.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Visa Logistics and History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "For the 2025 Lisbon summit, how many attendees needed Schengen visas and what was the average application processing time?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After hearing about a specific delay incident (N7), the user would seek quantitative data from another recent summit to establish a baseline for comparison.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Visa Logistics and History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the URL for the 'VisaTrack Pro' platform that Kenji Tanaka uses to monitor visa applications?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Discussing past visa difficulties (N7) creates a natural opportunity to proactively provide information on the tool used to manage and mitigate such issues.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Operational Tools",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the Project ID for the 2027 summit in Asana?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Project Management Details",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Summit History and Governance",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "2027 Shortlisted Cities",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Climate-Safe Scheduling",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Host City Decision Framework",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Visa Logistics and History",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Operational Tools",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Project Management Details",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "travel_annual_summit_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

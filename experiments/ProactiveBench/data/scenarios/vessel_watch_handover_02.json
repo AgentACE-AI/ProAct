@@ -1,0 +1,446 @@
+{
+  "scenario_id": "vessel_watch_handover_02",
+  "domain": "maritime_vessel_operations",
+  "description": "One watch team is handing over to the next and must communicate route deviations, equipment quirks, weather observations, pending checks, and unresolved concerns without omission. All vessels and routes are fictional.",
+  "user_profile": {
+    "persona": "31-year-old watch officer taking over after a complicated overnight segment",
+    "context": "Several minor issues emerged during the prior watch, and the handover quality will determine whether they are handled smoothly or rediscovered later",
+    "communication_style": "Chronological and alert-focused, prefers handover notes grouped by urgency and watch responsibility"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Immediate Action Required",
+      "fact": "A fishing vessel, 'Triton's Net' (MMSI: 367123456), is on a converging course at 3 nautical miles, bearing 035 degrees relative, and is not responding to hails on VHF Channel 16 or 13."
+    },
+    {
+      "id": "F02",
+      "category": "Immediate Action Required",
+      "fact": "The primary X-band radar (Furuno FAR-3220, S/N 9921-4075) has been non-responsive since 03:45 UTC; a system hard reboot from the breaker panel is required."
+    },
+    {
+      "id": "F03",
+      "category": "Immediate Action Required",
+      "fact": "An 'AIS Target Lost' alarm for the tanker 'Orion Trader' (IMO: 9876543) has been active for 10 minutes; last known position was 12 nautical miles ahead."
+    },
+    {
+      "id": "F04",
+      "category": "Navigational Update",
+      "fact": "Vessel's current course is 225 degrees true, speed is 18.5 knots over ground."
+    },
+    {
+      "id": "F05",
+      "category": "Navigational Update",
+      "fact": "A temporary course deviation was executed at 02:15 UTC to avoid a reported submerged container field at 34°15'N, 120°40'W."
+    },
+    {
+      "id": "F06",
+      "category": "Navigational Update",
+      "fact": "The next waypoint, 'ZEPHYR' (33°50'N, 121°10'W), is planned for 06:30 UTC."
+    },
+    {
+      "id": "F07",
+      "category": "Navigational Update",
+      "fact": "The vessel is currently 2.1 nautical miles north of the planned route track."
+    },
+    {
+      "id": "F08",
+      "category": "Navigational Update",
+      "fact": "The echo sounder is registering depths consistently 15 meters shallower than charted on ENC-US5CA98M."
+    },
+    {
+      "id": "F09",
+      "category": "Equipment Status",
+      "fact": "The ECDIS-2 monitor (Sperry Marine VisionMaster FT, S/N VMFT-92B) flickers every 15-20 minutes; cycling power to the monitor temporarily resolves the issue."
+    },
+    {
+      "id": "F10",
+      "category": "Equipment Status",
+      "fact": "Engine Room reports a minor hydraulic fluid leak on the starboard crane (Crane #2), logged under Maintenance Request #MR-20231026-004."
+    },
+    {
+      "id": "F11",
+      "category": "Equipment Status",
+      "fact": "The GMDSS printer (Model: JRC NQE-3150A) is out of thermal paper; a new roll is in the chart room cabinet, third shelf."
+    },
+    {
+      "id": "F12",
+      "category": "Equipment Status",
+      "fact": "The port bridge wing gyro repeater has a 2-degree error to the west; it has been flagged for calibration at the next port."
+    },
+    {
+      "id": "F13",
+      "category": "Equipment Status",
+      "fact": "The auto-log feature of the VDR (Voyage Data Recorder) failed its 02:00 UTC self-test; manual log entries are required."
+    },
+    {
+      "id": "F14",
+      "category": "Equipment Status",
+      "fact": "GPS-1 (Kongsberg Seatex DPS 110) is showing a high HDOP value of 1.8; GPS-2 is nominal at 0.9."
+    },
+    {
+      "id": "F15",
+      "category": "Weather & Environment",
+      "fact": "Observed sea state increased to 4 at 03:00 UTC, with swells from the northwest at 2.5 meters."
+    },
+    {
+      "id": "F16",
+      "category": "Weather & Environment",
+      "fact": "Barometric pressure has dropped 4 millibars since 00:00 UTC, currently at 1008 mb and steady."
+    },
+    {
+      "id": "F17",
+      "category": "Weather & Environment",
+      "fact": "A squall line is visible on the S-band radar approximately 40 nautical miles to the west, moving east at 15 knots."
+    },
+    {
+      "id": "F18",
+      "category": "Weather & Environment",
+      "fact": "The latest NAVTEX forecast (ID: FZUS56 KLOX) predicts winds increasing to 30 knots by 09:00 UTC."
+    },
+    {
+      "id": "F19",
+      "category": "Weather & Environment",
+      "fact": "Visibility has decreased to 6 nautical miles due to light haze since 03:30 UTC."
+    },
+    {
+      "id": "F20",
+      "category": "Pending Tasks & Checks",
+      "fact": "The hourly engine room status check is due at 04:30 UTC; report must be logged in the 'SeaLog Pro' software."
+    },
+    {
+      "id": "F21",
+      "category": "Pending Tasks & Checks",
+      "fact": "A security round of the main deck is required before 06:00 UTC due to the increased sea state and loose lashings reported on Bay 14."
+    },
+    {
+      "id": "F22",
+      "category": "Pending Tasks & Checks",
+      "fact": "The weekly test of Fire Pump #1 is scheduled for this watch, to be completed and logged by 08:00 UTC."
+    },
+    {
+      "id": "F23",
+      "category": "Pending Tasks & Checks",
+      "fact": "Confirm receipt of updated cargo manifest from shoreside operations via Inmarsat-C email before 07:00 UTC."
+    },
+    {
+      "id": "F24",
+      "category": "Pending Tasks & Checks",
+      "fact": "A new set of chart corrections (Week 43/23) needs to be applied to the paper chart portfolio for the Port Meridian approach."
+    },
+    {
+      "id": "F25",
+      "category": "Unresolved Concerns",
+      "fact": "A faint smell of burnt electronics was noted near the forward ventilation unit at 01:45 UTC but could not be traced."
+    },
+    {
+      "id": "F26",
+      "category": "Unresolved Concerns",
+      "fact": "A single, unidentified light was sighted at 02:50 UTC at bearing 310, it disappeared after 5 minutes and was not detected on radar."
+    },
+    {
+      "id": "F27",
+      "category": "Unresolved Concerns",
+      "fact": "Received a garbled Securité broadcast on VHF Channel 16 at 03:22 UTC mentioning 'drifting object' and 'latitude 34'; no further transmission was heard."
+    },
+    {
+      "id": "F28",
+      "category": "General Information",
+      "fact": "Chief Engineer Sorenson requested a call upon waking at 06:00 UTC regarding the hydraulic leak on Crane #2."
+    },
+    {
+      "id": "F29",
+      "category": "General Information",
+      "fact": "Night rations (sandwiches and coffee) are in the mess hall refrigerator, labeled for the 04:00-08:00 watch."
+    },
+    {
+      "id": "F30",
+      "category": "General Information",
+      "fact": "The vessel's call sign is WXYZ, and the IMO number is 9912345."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the immediate traffic threats I need to deal with right now?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Immediate Threats & Actions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the status of the primary X-band radar?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning about traffic threats, the status of the primary collision avoidance tool (radar) is the most logical next question.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Immediate Threats & Actions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is our current course, speed, and position relative to the planned route?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Navigational Situation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the reason for the route deviation and what is our next waypoint?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Learning that the vessel is off-track naturally leads to asking why and where the vessel is headed next.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Navigational Situation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Besides the main radar, are there any other navigation system faults?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: A failure in a primary system like radar prompts a broader inquiry into the health of other critical navigation equipment like the VDR and GPS.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Bridge Equipment Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Are there any known errors or quirks with the bridge displays or repeaters?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F12"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After discussing major system faults, the user would then ask about less critical but still important equipment quirks affecting their interface.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Bridge Equipment Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the summary of the current and developing weather?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the immediate traffic and navigational picture is clear, the next major external factor affecting the voyage is the weather.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Weather & Environment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Are there any other environmental observations, like visibility or depth anomalies?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08",
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After getting the main weather forecast, the user would likely ask for other relevant environmental details that affect watchkeeping.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Weather & Environment",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What scheduled operational tasks are due at 04:30 UTC and before 06:00 UTC during this watch?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: The mention of increased sea state in the weather brief directly triggers the need to know about related tasks, such as the security round for loose lashings.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Priority Tasks for this Watch",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Were there any unresolved sightings or strange communications during the last watch?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Unresolved Concerns",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the status of the hydraulic leak on Crane #2?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Non-Urgent Maintenance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Do I need to apply any chart corrections for the Port Meridian approach during this watch?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After reviewing the watch's time-sensitive operational tasks, a direct follow-up is whether there are any route-relevant chart corrections that must also be handled during this watch.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Chart Corrections",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Do I need to call Chief Engineer Sorenson at 06:00 UTC about the hydraulic leak on Crane #2?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After reviewing the status of the hydraulic leak on Crane #2, a direct follow-up is whether there is a required callback to the Chief Engineer about that same issue.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Chief Engineer Follow-up",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Immediate Threats & Actions",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Navigational Situation",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Bridge Equipment Status",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Weather & Environment",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Priority Tasks for this Watch",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Unresolved Concerns",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Non-Urgent Maintenance",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+    "label": "Chart Corrections",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G9",
+    "label": "Chief Engineer Follow-up",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vessel_watch_handover_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

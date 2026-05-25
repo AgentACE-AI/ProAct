@@ -1,0 +1,407 @@
+{
+  "scenario_id": "travel_dietary_conflict_03",
+  "domain": "group_travel",
+  "description": "A group of friends is planning a culinary tour in France. Conflict: One is Vegan, one is Keto, and one has a severe nut allergy. They need to find restaurants and cooking classes that can accommodate all conflicting dietary needs in a meat/nut-heavy food culture.",
+  "user_profile": {
+    "persona": "30-year-old 'foodie'",
+    "context": "Trying to keep everyone happy without sacrificing the 'experience'",
+    "communication_style": "Empathetic but overwhelmed"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "traveler_profile",
+      "fact": "Chloé Dubois is the designated planner for a group culinary tour in France."
+    },
+    {
+      "id": "F02",
+      "category": "traveler_profile",
+      "fact": "Liam Chen requires a strict vegan diet, avoiding all meat, dairy, eggs, and honey."
+    },
+    {
+      "id": "F03",
+      "category": "traveler_profile",
+      "fact": "Sophie Valois follows a ketogenic diet, with a daily goal of less than 25 grams of net carbohydrates."
+    },
+    {
+      "id": "F04",
+      "category": "traveler_profile",
+      "fact": "Ben Carter has a life-threatening allergy to all tree nuts and peanuts, requiring zero cross-contamination."
+    },
+    {
+      "id": "F05",
+      "category": "trip_details",
+      "fact": "The culinary tour is scheduled from September 14th to September 21st, 2024."
+    },
+    {
+      "id": "F06",
+      "category": "trip_details",
+      "fact": "The travel itinerary includes Paris from September 14-17 and Lyon from September 18-21."
+    },
+    {
+      "id": "F07",
+      "category": "trip_details",
+      "fact": "The group's shared travel plan is located in a Google Sheet titled 'France Foodie Tour Sept 2024'."
+    },
+    {
+      "id": "F08",
+      "category": "restaurant_booking",
+      "fact": "A dinner reservation for four is confirmed at 'Le Jardin Étoilé' in Paris for September 15th at 8:00 PM under the name 'Dubois'."
+    },
+    {
+      "id": "F09",
+      "category": "restaurant_booking",
+      "fact": "On August 20th, 'Le Jardin Étoilé' emailed Chloé confirming they can provide separate, dedicated vegan, keto, and nut-free tasting menus."
+    },
+    {
+      "id": "F10",
+      "category": "restaurant_booking",
+      "fact": "A lunch reservation is booked at 'Fleur de Lyon' in Lyon for September 19th at 1:00 PM."
+    },
+    {
+      "id": "F11",
+      "category": "restaurant_booking",
+      "fact": "Chef Antoine, head chef at 'Fleur de Lyon', personally called Chloé on August 22nd to discuss their kitchen's nut-free cross-contamination protocols."
+    },
+    {
+      "id": "F12",
+      "category": "restaurant_booking",
+      "fact": "The group has a reservation at 'La Table Végétale', a fully vegan restaurant in Paris, for lunch on September 16th at 12:30 PM."
+    },
+    {
+      "id": "F13",
+      "category": "cooking_class_details",
+      "fact": "The group is enrolled in a private cooking class at 'L'Atelier Culinaire de Lyon' on September 20th from 10:00 AM to 2:00 PM, and the class was explicitly confirmed as a custom session arranged for the group's vegan, keto, and strict nut-free requirements."
+    },
+    {
+      "id": "F14",
+      "category": "cooking_class_details",
+      "fact": "The custom menu for the cooking class includes a vegan ratatouille course for Liam, a keto pan-seared duck with cauliflower purée for Sophie, and a nut-free berry coulis dessert prepared under the class's no-nut protocol for Ben."
+    },
+    {
+      "id": "F15",
+      "category": "cooking_class_details",
+      "fact": "'L'Atelier Culinaire de Lyon' provided a signed declaration confirming their kitchen will be sanitized and free of all nut products for the class."
+    },
+    {
+      "id": "F16",
+      "category": "budget_item",
+      "fact": "The total cost for the private cooking class for four people was €800, paid in full on August 15th via Chloé's credit card."
+    },
+    {
+      "id": "F17",
+      "category": "budget_item",
+      "fact": "A pre-paid deposit of €100 was charged for the reservation at 'Le Jardin Étoilé'."
+    },
+    {
+      "id": "F18",
+      "category": "dietary_communication",
+      "fact": "Chloé has created and printed laminated dietary restriction cards in French for each group member to present at restaurants."
+    },
+    {
+      "id": "F19",
+      "category": "dietary_communication",
+      "fact": "Ben Carter's card states in French: 'Allergie mortelle aux noix et aux arachides. Aucune contamination croisée.'"
+    },
+    {
+      "id": "F20",
+      "category": "dietary_communication",
+      "fact": "The group uses a WhatsApp group named 'French Food Adventure 🇫🇷' for real-time communication about menu options."
+    },
+    {
+      "id": "F21",
+      "category": "contingency_plan",
+      "fact": "Ben Carter carries two EpiPen auto-injectors at all times in the front pocket of his blue backpack."
+    },
+    {
+      "id": "F22",
+      "category": "contingency_plan",
+      "fact": "The nearest hospital to their Paris hotel is Hôpital Saint-Louis, located at 1 Avenue Claude Vellefaux."
+    },
+    {
+      "id": "F23",
+      "category": "contingency_plan",
+      "fact": "The French emergency medical service number, 15 (SAMU), is saved in Chloé's phone contacts under 'ICE - France Emergency'."
+    },
+    {
+      "id": "F24",
+      "category": "accommodation",
+      "fact": "In Paris, the group is staying in an Airbnb with a full kitchen at 15 Rue de la Verrerie, 75004."
+    },
+    {
+      "id": "F25",
+      "category": "accommodation",
+      "fact": "The Paris Airbnb host, Elodie, confirmed on August 10th via message that the apartment has been cleaned and contains no nut-based food products."
+    },
+    {
+      "id": "F26",
+      "category": "accommodation",
+      "fact": "In Lyon, the group is staying at the 'Hôtel Bellecour', which does not offer an in-room kitchen but has a mini-fridge for storing safe snacks."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the dates and cities for our culinary tour?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Trip Overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which Paris restaurant has confirmed they can accommodate all our dietary restrictions and when is our reservation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Paris Dining Confirmations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "When and where is our other confirmed meal in Paris?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group follow-up: After confirming one Paris meal, the user would naturally want to confirm the others.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Paris Dining Confirmations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "When is our lunch reservation at 'Fleur de Lyon', and who discussed the kitchen's nut-free cross-contamination protocols with Chloé?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Lyon Dining Confirmations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "When is our private cooking class in Lyon, and what custom menu is planned for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After confirming the Lyon restaurant booking, the user's focus would logically shift to the other major culinary event planned in Lyon.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cooking Class Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What was the total cost for the cooking class and when was it paid?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cooking Class Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Where are Ben's EpiPen auto-injectors located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Allergy Contingency Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the address of the nearest hospital to our Paris hotel and what is the French emergency number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group follow-up: Confirming the location of the EpiPen logically leads to reviewing the broader emergency plan.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Allergy Contingency Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the exact French text on Ben's nut allergy card?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After reviewing emergency procedures (what to do if something goes wrong), the user would be interested in preventative measures like the communication card.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "On-the-Ground Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What confirmation did we receive from our Paris Airbnb host about the apartment being nut-free?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Discussing allergy prevention tools (like the card) naturally extends to ensuring the safety of the living space.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Accommodation Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Was a deposit paid for the 'Le Jardin Étoilé' reservation?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: While discussing the confirmation for a specific high-end restaurant, the user might appreciate a proactive reminder about the financial commitment already made for it.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Reservation Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What food-storage facilities does our hotel in Lyon provide for safe snacks?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After confirming dining plans in Lyon, a logical next thought is about storing safe snacks or preparing simple meals, which depends on accommodation facilities.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Lyon Accommodation Facilities",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Trip Overview",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Paris Dining Confirmations",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Lyon Dining Confirmations",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Cooking Class Details",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Allergy Contingency Plan",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "On-the-Ground Communication",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Accommodation Safety",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Reservation Financials",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G9",
+      "label": "Lyon Accommodation Facilities",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "travel_dietary_conflict_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

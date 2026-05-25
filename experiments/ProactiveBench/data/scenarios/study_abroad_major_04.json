@@ -1,0 +1,417 @@
+{
+  "scenario_id": "study_abroad_major_04",
+  "domain": "study_abroad",
+  "description": "A student in Japan wants to switch from Architecture to Digital Media. This creates a conflict: their current visa is tied to the specific faculty, and their credits may not transfer. They need to navigate the immigration and academic policy collision.",
+  "user_profile": {
+    "persona": "20-year-old sophomore, creative but overwhelmed by bureaucracy",
+    "context": "Realized their passion lies elsewhere, but fears deportation or restarting from year one",
+    "communication_style": "Emotional but seeking logical paths"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "academics",
+      "fact": "The student, Kenji Tanaka, is enrolled at the Kyoto Institute of Global Arts (KIGA) with student ID 8945-2023."
+    },
+    {
+      "id": "F02",
+      "category": "academics",
+      "fact": "Kenji is a second-year (sophomore) student in the Faculty of Urban Design, majoring in Architecture."
+    },
+    {
+      "id": "F03",
+      "category": "academics",
+      "fact": "He wishes to transfer to the Faculty of Creative Informatics to major in Digital Media."
+    },
+    {
+      "id": "F04",
+      "category": "application",
+      "fact": "The internal application deadline for a faculty change for the Spring 2025 semester is November 15, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "application",
+      "fact": "The \"Internal Faculty Transfer Application\" must be submitted through the KIGA-CampusWeb portal at https://campusweb.kiga.ac.jp."
+    },
+    {
+      "id": "F06",
+      "category": "documents",
+      "fact": "A digital portfolio consisting of 5 to 8 creative works is a mandatory submission for the Digital Media program application."
+    },
+    {
+      "id": "F07",
+      "category": "academics",
+      "fact": "A maximum of 12 credits from the Architecture curriculum are transferable to the Digital Media curriculum."
+    },
+    {
+      "id": "F08",
+      "category": "academics",
+      "fact": "Kenji has completed 36 credits, of which only his 'UD205: History of Modern Architecture' course will count as a general arts elective."
+    },
+    {
+      "id": "F09",
+      "category": "academics",
+      "fact": "His 'UD101: Principles of Structural Design' course (4 credits) is not transferable and will not count towards the new degree."
+    },
+    {
+      "id": "F10",
+      "category": "academics",
+      "fact": "His current academic advisor is Professor Ito Hamada, whose office is in Building C, Room 402."
+    },
+    {
+      "id": "F11",
+      "category": "academics",
+      "fact": "The Program Director for Digital Media, who must approve the transfer, is Dr. Akemi Sato."
+    },
+    {
+      "id": "F12",
+      "category": "immigration",
+      "fact": "Kenji's current Status of Residence is \"Student\" (留学), which is valid until April 30, 2026."
+    },
+    {
+      "id": "F13",
+      "category": "immigration",
+      "fact": "His visa is specifically linked to his enrollment in the \"Faculty of Urban Design\" at KIGA."
+    },
+    {
+      "id": "F14",
+      "category": "immigration",
+      "fact": "Changing faculties requires filing an \"Application for Change of Status of Residence\" with the immigration authorities."
+    },
+    {
+      "id": "F15",
+      "category": "documents",
+      "fact": "The official form required for the visa status change is Form EX-03, downloadable from the Immigration Services Agency of Japan website."
+    },
+    {
+      "id": "F16",
+      "category": "immigration",
+      "fact": "The application must be submitted in person at the Kansai Regional Immigration Services Bureau, Kyoto Branch."
+    },
+    {
+      "id": "F17",
+      "category": "documents",
+      "fact": "The immigration application requires an official \"Letter of Acceptance\" into the Faculty of Creative Informatics from KIGA."
+    },
+    {
+      "id": "F18",
+      "category": "documents",
+      "fact": "A new Certificate of Enrollment (在学証明書) reflecting the Digital Media major must be obtained from the KIGA registrar's office for ¥300."
+    },
+    {
+      "id": "F19",
+      "category": "documents",
+      "fact": "Proof of financial stability, such as a bank statement showing a balance of at least ¥1,500,000, is required for the visa application."
+    },
+    {
+      "id": "F20",
+      "category": "immigration",
+      "fact": "The standard government processing fee for a Change of Status of Residence application is ¥4,000, payable via a revenue stamp."
+    },
+    {
+      "id": "F21",
+      "category": "support",
+      "fact": "The KIGA International Student Center (ISC) provides guidance on immigration procedures and is located in the Student Union Building, 2nd Floor."
+    },
+    {
+      "id": "F22",
+      "category": "support",
+      "fact": "Ms. Yui Nakamura is the designated immigration advisor at the ISC; her direct email is y.nakamura@support.kiga.ac.jp."
+    },
+    {
+      "id": "F23",
+      "category": "support",
+      "fact": "Appointments with Ms. Nakamura can be booked through the \"KIGA-LifeSupport\" online system, with slots available on Tuesdays and Thursdays from 10:00 to 16:00."
+    },
+    {
+      "id": "F24",
+      "category": "immigration",
+      "fact": "Kenji must continue attending all his Architecture classes until both the faculty transfer and the visa change have been officially approved."
+    },
+    {
+      "id": "F25",
+      "category": "finance",
+      "fact": "The annual tuition for the Faculty of Urban Design is ¥1,200,000."
+    },
+    {
+      "id": "F26",
+      "category": "finance",
+      "fact": "The annual tuition for the Faculty of Creative Informatics is ¥1,350,000, an increase of ¥150,000 per year."
+    },
+    {
+      "id": "F27",
+      "category": "finance",
+      "fact": "Kenji currently holds the \"KIGA Global Leaders Scholarship,\" which provides a stipend of ¥50,000 per month."
+    },
+    {
+      "id": "F28",
+      "category": "finance",
+      "fact": "The \"KIGA Global Leaders Scholarship\" is exclusively for students in the Faculty of Urban Design and will be terminated upon his transfer."
+    },
+    {
+      "id": "F29",
+      "category": "application",
+      "fact": "He can apply for the \"Creative Futures Grant,\" a separate scholarship for Digital Media students, by the deadline of January 31, 2025."
+    },
+    {
+      "id": "F30",
+      "category": "housing",
+      "fact": "Kenji resides in the KIGA-managed Sakura Dormitory, Room 305."
+    },
+    {
+      "id": "F31",
+      "category": "housing",
+      "fact": "His housing contract is contingent on full-time student status at KIGA, not on his specific faculty, so his dorm room is secure."
+    },
+    {
+      "id": "F32",
+      "category": "immigration",
+      "fact": "For Kenji's faculty transfer case, the immigration step required after KIGA approves the move into Digital Media is to file an 'Application for Change of Status of Residence'."
+    },
+    {
+      "id": "F33",
+      "category": "documents",
+      "fact": "For the KIGA-issued documents in this immigration filing, the university specifies two required supporting items: the Letter of Acceptance into the Faculty of Creative Informatics and the updated Certificate of Enrollment showing the Digital Media major."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the deadline and submission portal for an internal faculty transfer application for Spring 2025?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Academic Application Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How many creative works are required in the digital portfolio for the Digital Media program application?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning about the application portal and deadline, the user's next logical question is about the required submission materials.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Academic Application Process",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Because my student status is tied to the Faculty of Urban Design, do I need to file any immigration application for the transfer? If so, which one?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14",
+        "F32"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the academic application process, the most critical and stressful uncertainty is the impact on their visa status, making it a highly predictable next concern.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Immigration Prerequisite",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the official form required for the visa status change and where can I download it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning that an 'Application for Change of Status of Residence' is required, the user's immediate need is to identify and locate the specific form.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Immigration Document Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which KIGA-issued supporting documents are explicitly required for the immigration application?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18",
+        "F33"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After identifying the government form, the user will need to know what supporting documents the university must provide for that application.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Immigration Document Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the government fee for the visa application and what is the required proof of financial stability?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the user has a list of required documents, the associated costs and financial proofs are a natural follow-up question.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Immigration Document Details",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N7",
+      "description": "What are the annual tuitions for the Faculty of Urban Design and the Faculty of Creative Informatics?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What will happen to my 'KIGA Global Leaders Scholarship' if I transfer faculties?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning about the change in base tuition, the user's next financial concern will be the status of their existing scholarship.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial Impact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the maximum number of Architecture credits that can transfer to the Digital Media curriculum?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Academic Credit Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is the designated immigration advisor at the International Student Center and how can I book an appointment with them?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Upon learning about the complex requirement to change their visa status, a user feeling overwhelmed would naturally seek expert guidance, making the university's support system a predictable need.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "University Support System",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Am I required to continue attending my Architecture classes while the faculty transfer and visa change are being processed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After understanding that there is a formal, multi-step process for both academic and immigration changes, the user will need to know their obligations during this transitional period.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Interim Academic Obligation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Academic Application Process",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Immigration Prerequisite",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Immigration Document Details",
+      "member_need_ids": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Financial Impact",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Academic Credit Impact",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "University Support System",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Interim Academic Obligation",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "study_abroad_major_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

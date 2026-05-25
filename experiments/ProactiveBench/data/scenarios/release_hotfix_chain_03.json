@@ -1,0 +1,524 @@
+{
+  "scenario_id": "release_hotfix_chain_03",
+  "domain": "software_release_management",
+  "description": "Several small hotfixes have landed in quick succession, and the team now needs to reconstruct exactly what changed in production, in what order, and which fixes were superseded or partially reverted.",
+  "user_profile": {
+    "persona": "36-year-old engineering manager responsible for production stability",
+    "context": "The rapid fixes solved immediate pain but left the production history harder to reason about",
+    "communication_style": "Precise and change-log minded, wants the sequence made explicit"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Release_Timeline",
+      "fact": "Version v2.5.0 of the 'Aperture Invoicing' service was deployed to production on 2023-10-26 at 10:00 UTC."
+    },
+    {
+      "id": "F02",
+      "category": "Incident_Response",
+      "fact": "DataDog alert `98765-A` fired at 10:15 UTC on 2023-10-26, reporting a 50% failure rate in the `payment-processing` service."
+    },
+    {
+      "id": "F03",
+      "category": "Ticket_Tracking",
+      "fact": "Jira ticket INV-4501, titled 'Critical: Payment Gateway Timeout', was created by SRE Lena Petrova at 10:18 UTC."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel",
+      "fact": "Backend developer Sam Jones was assigned as the primary engineer to investigate and resolve Jira ticket INV-4501."
+    },
+    {
+      "id": "F05",
+      "category": "Code_Changes",
+      "fact": "The initial fix for INV-4501 was committed with Git hash `e9a2b1c3` to the `hotfix/INV-4501` branch."
+    },
+    {
+      "id": "F06",
+      "category": "Release_Timeline",
+      "fact": "Hotfix v2.5.1, containing commit `e9a2b1c3`, was deployed at 11:30 UTC on 2023-10-26 via Jenkins pipeline `deploy-prod-hotfix` build #72."
+    },
+    {
+      "id": "F07",
+      "category": "System_State",
+      "fact": "After the v2.5.1 deployment, the `payment-processing` service error rate on production cluster `prod-us-east-1` dropped to 0.5%."
+    },
+    {
+      "id": "F08",
+      "category": "Incident_Response",
+      "fact": "At 12:05 UTC, support ticket #88124 was raised, reporting that the 'Invoice PDF Export' feature was failing with a 500 Internal Server Error."
+    },
+    {
+      "id": "F09",
+      "category": "Ticket_Tracking",
+      "fact": "Jira ticket INV-4503, titled 'High: PDF Export Failing', was created to track the new issue identified in support ticket #88124."
+    },
+    {
+      "id": "F10",
+      "category": "Code_Changes",
+      "fact": "The root cause of INV-4503 was commit `e9a2b1c3` upgrading the `lib-pdfgen` dependency from v1.2.0 to v1.3.0, which contained a breaking API change."
+    },
+    {
+      "id": "F11",
+      "category": "Code_Changes",
+      "fact": "A fix for INV-4503 was committed by Lena Petrova with Git hash `f0d3e2a1`, which pinned the `lib-pdfgen` dependency back to v1.2.0."
+    },
+    {
+      "id": "F12",
+      "category": "Release_Timeline",
+      "fact": "Hotfix v2.5.2, containing commit `f0d3e2a1`, was deployed at 13:00 UTC on 2023-10-26."
+    },
+    {
+      "id": "F13",
+      "category": "Incident_Response",
+      "fact": "At 13:45 UTC, the finance team reported in the `#finance-support` Slack channel that the 'Quarterly Revenue Report' was showing incorrect currency aggregations."
+    },
+    {
+      "id": "F14",
+      "category": "Ticket_Tracking",
+      "fact": "Jira ticket INV-4505, 'Urgent: Financial reporting data is inaccurate', was created to address the new reporting issue."
+    },
+    {
+      "id": "F15",
+      "category": "Code_Changes",
+      "fact": "The reporting error in INV-4505 was caused by the `lib-pdfgen` v1.2.0 rollback in v2.5.2, which re-introduced a currency formatting bug."
+    },
+    {
+      "id": "F16",
+      "category": "Personnel",
+      "fact": "Engineering Manager David Chen made the decision at 14:00 UTC to partially revert the original payment fix to stabilize reporting."
+    },
+    {
+      "id": "F17",
+      "category": "Communication",
+      "fact": "David Chen's decision was announced in the `#prod-incidents` Slack channel at 14:02 UTC with message ID `slack-msg-1698328920.123456`."
+    },
+    {
+      "id": "F18",
+      "category": "Code_Changes",
+      "fact": "A partial revert was committed by Sam Jones with Git hash `a4b5c6d7`, which kept the payment timeout logic from `e9a2b1c3` but reverted the dependency update."
+    },
+    {
+      "id": "F19",
+      "category": "Release_Timeline",
+      "fact": "Hotfix v2.5.3, containing the partial revert commit `a4b5c6d7`, was deployed at 14:45 UTC on 2023-10-26."
+    },
+    {
+      "id": "F20",
+      "category": "System_State",
+      "fact": "After v2.5.3 deployment, the 'Quarterly Revenue Report' was correct, but the average latency for the `payment-processing` service increased by 150ms."
+    },
+    {
+      "id": "F21",
+      "category": "Release_Timeline",
+      "fact": "The changes in hotfix v2.5.2 (commit `f0d3e2a1`) were fully superseded by the changes in hotfix v2.5.3 (commit `a4b5c6d7`)."
+    },
+    {
+      "id": "F22",
+      "category": "Ticket_Tracking",
+      "fact": "Jira ticket INV-4506, 'Develop stable fix for payment gateway and PDF generation', was created to find a permanent solution."
+    },
+    {
+      "id": "F23",
+      "category": "Personnel",
+      "fact": "Sam Jones and Lena Petrova pair-programmed for 90 minutes to create a comprehensive fix for INV-4506."
+    },
+    {
+      "id": "F24",
+      "category": "Code_Changes",
+      "fact": "The final, stable fix was committed with Git hash `b8c9d0e1` to the `hotfix/INV-4506` branch."
+    },
+    {
+      "id": "F25",
+      "category": "Code_Changes",
+      "fact": "Commit `b8c9d0e1` correctly implemented the `lib-pdfgen` v1.3.0 API and also contained the original payment gateway timeout logic."
+    },
+    {
+      "id": "F26",
+      "category": "Release_Timeline",
+      "fact": "Hotfix v2.5.4, containing commit `b8c9d0e1`, was deployed at 17:00 UTC on 2023-10-26."
+    },
+    {
+      "id": "F27",
+      "category": "System_State",
+      "fact": "After v2.5.4 deployment, all three systems (payment processing, PDF export, revenue reporting) were confirmed to be functioning correctly with no performance degradation."
+    },
+    {
+      "id": "F28",
+      "category": "System_State",
+      "fact": "The production Kubernetes cluster name is `prod-us-east-1` and is managed via ArgoCD at `https://argocd.zenith.internal`."
+    },
+    {
+      "id": "F29",
+      "category": "Code_Changes",
+      "fact": "The `Aperture Invoicing` code repository is located at `git@github.com:ZenithSolutions/aperture-invoicing.git`."
+    },
+    {
+      "id": "F30",
+      "category": "Personnel",
+      "fact": "The Engineering Manager responsible for production stability is David Chen, whose workstation is desk 4B-11 and contact email is dchen@zenithsolutions.io."
+    },
+    {
+      "id": "F31",
+      "category": "Communication",
+      "fact": "The primary incident communication channel used was the private Slack channel `#prod-incidents`."
+    },
+    {
+      "id": "F32",
+      "category": "Communication",
+      "fact": "A post-incident review meeting was scheduled for 2023-10-27 at 15:00 UTC via Google Meet link `https://meet.google.com/xyz-abc-def`."
+    },
+    {
+      "id": "F33",
+      "category": "System_State",
+      "fact": "The final, stable production version at the end of the incident on 2023-10-26 was v2.5.4."
+    },
+    {
+      "id": "F34",
+      "category": "System_State",
+      "fact": "Before hotfix v2.5.1 was deployed, the initial problem in `payment-processing` had already been quantified by DataDog alert `98765-A` as a 50% failure rate at 10:15 UTC; after v2.5.1 was deployed at 11:30 UTC, the error rate dropped to 0.5%, showing a 49.5 percentage-point improvement."
+    },
+    {
+      "id": "F35",
+      "category": "Incident_Response",
+      "fact": "The issue reported after hotfix v2.5.1 was sequenced as follows on 2023-10-26: first the payment-processing failure tracked as INV-4501, then the subsequent 'Invoice PDF Export' failure tracked as INV-4503 after v2.5.1, and then a third distinct incident involving incorrect currency aggregations in the 'Quarterly Revenue Report' tracked as INV-4505 after v2.5.2."
+    },
+    {
+      "id": "F36",
+      "category": "Code_Changes",
+      "fact": "The official decision to address the financial reporting error in INV-4505 was to partially revert the original payment fix by keeping the payment timeout logic but undoing the dependency rollback side effects; this decision was made by David Chen at 14:00 UTC and implemented in commit `a4b5c6d7`."
+    },
+    {
+      "id": "F37",
+      "category": "Code_Changes",
+      "fact": "Commit `b8c9d0e1` was the comprehensive final fix: it restored compatibility with `lib-pdfgen` v1.3.0 by correctly implementing the new API, retained the original payment gateway timeout logic from the first hotfix, and replaced the unstable intermediate state introduced by the v2.5.2 rollback and the v2.5.3 partial revert."
+    },
+    {
+      "id": "F38",
+      "category": "Release_Timeline",
+      "fact": "The explicit production hotfix sequence on 2023-10-26 was: v2.5.1 with commit `e9a2b1c3`, then v2.5.2 with commit `f0d3e2a1`, then v2.5.3 with commit `a4b5c6d7`, and finally v2.5.4 with commit `b8c9d0e1`; in that sequence, v2.5.2 was fully superseded by v2.5.3, and the remaining unstable intermediate changes were replaced by the final stable state in v2.5.4."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the baseline production release and its deployment timestamp on 2023-10-26?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Release and Incident",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the first alert that indicated a problem with that release, and what was the associated ticket?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After establishing the baseline release, the natural next question is to ask what went wrong with it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Release and Incident",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Detail the first hotfix: what was its version, commit hash, and deployment time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Understanding the first incident directly leads to asking how it was fixed.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Fix (v2.5.1)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the immediate observed production outcome after hotfix v2.5.1 was deployed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F07",
+        "F34"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After identifying the first hotfix version, commit, and deployment time, the next chronological question is what production looked like immediately after that deployment.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Fix (v2.5.1)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What issue surfaced next after v2.5.1, and what change in v2.5.1 caused it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F10",
+        "F35"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reconstructing the exact contents and deployment of the first hotfix, a change-log minded manager would naturally ask what problem appeared next and which part of that hotfix caused it.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Incident & Fix (v2.5.2)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What was the code change and release version for the second hotfix, v2.5.2?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Similar to the first incident, after understanding the problem, the user will ask about its specific fix.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Incident & Fix (v2.5.2)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What was the third distinct incident reported that day, and what was its tracking number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14",
+        "F35"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying the subsequent issue introduced after v2.5.1 and its root cause, a change-log minded manager would naturally continue the chronology by asking what the next distinct incident was in the hotfix chain.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Third Incident (Financial Reporting)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "After the third incident was reported, what caused the financial reporting error, and what official decision was made in response within the hotfix sequence?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16",
+        "F36",
+        "F38"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Once the third incident and its tracking number are identified, the immediate sequence-reconstruction follow-up is to ask what caused that incident and what decision directly followed it in the production hotfix chain.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Third Fix (v2.5.3 Partial Revert)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Provide the commit hash and deployment time for the partial revert, hotfix v2.5.3.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Following the decision to revert, the user will want the specifics of the deployment that executed that decision.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Third Fix (v2.5.3 Partial Revert)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Which specific hotfix release was fully superseded by the deployment of v2.5.3?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After understanding the partial revert, a detail-oriented manager would want to explicitly confirm which prior changes were now obsolete.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Consequence of Partial Revert",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What was the Jira ticket number for tracking the permanent, consolidated fix?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Final Resolution (v2.5.4)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What was the version, commit hash, and deployment time of the final, stable hotfix?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F26"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Identifying the tracking ticket for the final fix leads directly to asking for the details of that fix's deployment.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Final Resolution (v2.5.4)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Summarize the technical implementation of the final commit, `b8c9d0e1`.",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25",
+        "F37"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "After getting the high-level details of the final fix, a precise user will want to know what the code actually did.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Final Resolution (v2.5.4)",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N14",
+      "description": "What was the final, confirmed operational status of all systems after v2.5.4 was deployed, and how did the final state relate to the earlier hotfix sequence?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F27",
+        "F33",
+        "F38"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After reviewing the entire sequence of fixes culminating in the final version, the user needs to know the end result and confirm stability.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Final System State",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Provide the date and time for the scheduled post-incident review.",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Administrative Follow-up",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Release and Incident",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "First Fix (v2.5.1)",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Second Incident & Fix (v2.5.2)",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Third Incident (Financial Reporting)",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Third Fix (v2.5.3 Partial Revert)",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Consequence of Partial Revert",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Final Resolution (v2.5.4)",
+      "member_need_ids": [
+        "N11",
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Final System State",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Administrative Follow-up",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "release_hotfix_chain_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "scenario_id": "home_tool_and_spare_inventory_03",
+  "domain": "home_maintenance",
+  "description": "A household is preparing for a maintenance weekend and needs to know which tools, spare parts, paint codes, filters, and consumables are already on hand before buying anything new.",
+  "user_profile": {
+    "persona": "38-year-old homeowner who does light repairs but hates duplicate purchases",
+    "context": "Supplies have accumulated over time in several storage areas, and nobody fully remembers what is already available",
+    "communication_style": "Inventory-minded and efficient, likes grouped lists by task and storage location"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "storage_locations",
+      "fact": "The main tool storage is a red 'Steadfast Pro' 5-drawer rolling tool chest located against the west wall of the garage."
+    },
+    {
+      "id": "F02",
+      "category": "storage_locations",
+      "fact": "All paint and painting supplies are stored on the grey metal shelving unit in the basement's northeast corner."
+    },
+    {
+      "id": "F03",
+      "category": "storage_locations",
+      "fact": "A 'SortMaster' 24-compartment organizer for small hardware is located on the top shelf of the utility closet."
+    },
+    {
+      "id": "F04",
+      "category": "tools",
+      "fact": "A 'TitanDrill' model TD-18V cordless drill, serial #TDX8821, is in the top drawer of the Steadfast Pro tool chest."
+    },
+    {
+      "id": "F05",
+      "category": "tools",
+      "fact": "The TitanDrill TD-18V has two 18-volt lithium-ion batteries, both of which are currently on the charging station and show a full charge."
+    },
+    {
+      "id": "F06",
+      "category": "tools",
+      "fact": "A 'PrecisionCut' 10-inch miter saw, model PC-M10, is mounted on the workbench in the garage."
+    },
+    {
+      "id": "F07",
+      "category": "tools",
+      "fact": "A 25-foot 'LockGrip' brand tape measure is magnetically attached to the side of the tool chest in the garage."
+    },
+    {
+      "id": "F08",
+      "category": "tools",
+      "fact": "A set of 12 'DuraWrench' combination wrenches, ranging from 1/4 inch to 1 inch, is in the second drawer of the tool chest."
+    },
+    {
+      "id": "F09",
+      "category": "paint_supplies",
+      "fact": "There is one half-full gallon of 'EverBrite' interior latex paint, color 'Misty Harbor' (Code: EB7011), on the basement shelf."
+    },
+    {
+      "id": "F10",
+      "category": "paint_supplies",
+      "fact": "A sealed, unopened quart of 'EverBrite' semi-gloss trim paint in 'Pure White' (Code: EB1001) is available."
+    },
+    {
+      "id": "F11",
+      "category": "paint_supplies",
+      "fact": "There are three unused 'ProFinish' 2-inch angled paint brushes in their original packaging in a box labeled 'Brushes'."
+    },
+    {
+      "id": "F12",
+      "category": "paint_supplies",
+      "fact": "A 9-inch paint roller frame and five new 'FluffTex' 3/8-inch nap roller covers are on the second shelf of the basement storage unit."
+    },
+    {
+      "id": "F13",
+      "category": "paint_supplies",
+      "fact": "A blue plastic paint tray with dried paint from the last project is located with the rollers."
+    },
+    {
+      "id": "F14",
+      "category": "hvac_filters",
+      "fact": "There are three new 'ClearFlow' brand 20x25x1 inch furnace filters, MERV rating 8, stored next to the furnace."
+    },
+    {
+      "id": "F15",
+      "category": "hvac_filters",
+      "fact": "The furnace filter was last replaced on April 15th of this year, as noted on the unit's service log."
+    },
+    {
+      "id": "F16",
+      "category": "plumbing_parts",
+      "fact": "A brand new 'AquaStream' model AS-200 chrome bathroom faucet is in its box in the cabinet under the laundry room sink."
+    },
+    {
+      "id": "F17",
+      "category": "plumbing_parts",
+      "fact": "The 'SortMaster' organizer contains an assortment of 12 rubber O-rings for faucet repairs in compartment C4."
+    },
+    {
+      "id": "F18",
+      "category": "plumbing_parts",
+      "fact": "A 10-foot section of 1/2-inch PEX tubing is coiled and hanging from a hook in the garage."
+    },
+    {
+      "id": "F19",
+      "category": "fasteners_hardware",
+      "fact": "Compartment A1 of the 'SortMaster' organizer holds approximately 200 1-5/8 inch drywall screws."
+    },
+    {
+      "id": "F20",
+      "category": "fasteners_hardware",
+      "fact": "A 1-pound box of 3-inch galvanized deck screws (approx. 90 screws) is on the garage workbench."
+    },
+    {
+      "id": "F21",
+      "category": "fasteners_hardware",
+      "fact": "There is a small box containing four 3-inch brass door hinges in the third drawer of the tool chest."
+    },
+    {
+      "id": "F22",
+      "category": "consumables",
+      "fact": "There are two full tubes of 'SealRight' brand white all-purpose acrylic caulk in the garage tool chest's bottom drawer."
+    },
+    {
+      "id": "F23",
+      "category": "consumables",
+      "fact": "An opened but mostly full roll of 'ToughGrip' brand blue painter's tape (1.88-inch width) is on the basement paint shelf."
+    },
+    {
+      "id": "F24",
+      "category": "consumables",
+      "fact": "A multi-pack of 'GritMax' sandpaper containing sheets of 80, 120, and 220 grit is located in the tool chest's third drawer."
+    },
+    {
+      "id": "F25",
+      "category": "consumables",
+      "fact": "A 16-ounce can of 'Lubri-Fast' WD-40 is on the garage workbench, and it feels about 75% full."
+    },
+    {
+      "id": "F26",
+      "category": "maintenance_tasks",
+      "fact": "The primary task for the weekend is repainting the guest bathroom trim using the 'Pure White' (EB1001) semi-gloss paint."
+    },
+    {
+      "id": "F27",
+      "category": "maintenance_tasks",
+      "fact": "A secondary task is to replace the dripping faucet in the half-bath with the spare 'AquaStream' AS-200 faucet."
+    },
+    {
+      "id": "F28",
+      "category": "electrical_parts",
+      "fact": "A pack of six 'BrightLife' A19 60W equivalent LED light bulbs is stored in the utility closet."
+    },
+    {
+      "id": "F29",
+      "category": "electrical_parts",
+      "fact": "There are four unused 'SafeGuard' brand GFCI outlets in their original packaging in a box labeled 'Electrical' in the garage."
+    },
+    {
+      "id": "F30",
+      "category": "consumables",
+      "fact": "A 1-gallon container of 'Weed-B-Gone' concentrate is stored in the outdoor shed and is approximately one-third full."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What 'Pure White' paint do I have for the bathroom trim project, and where is it stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Painting Task Supplies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What brushes, rollers, and painter's tape do I have for the painting job?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F23"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming the existence of the required paint, the user's next logical step is to check for the necessary application tools.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Painting Task Supplies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "I need to replace a faucet. What spare faucet do I have and where is it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Plumbing Task Supplies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What O-rings do I have for faucet repairs and where are they located?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17",
+        "F03"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: When preparing for a faucet replacement, checking for small, easily lost parts like O-rings is a common secondary thought.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Plumbing Task Supplies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What spare PEX tubing do I already have for plumbing repairs, and where is it stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming the spare faucet for the half-bath job, a direct plumbing follow-up is whether any spare tubing is already on hand for related repair needs.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Additional Plumbing Supplies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "How much all-purpose caulk do I have, and where is it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F01"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Faucet replacement projects often require caulk for sealing. After confirming the primary part, the user is likely to think about necessary consumables.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "General Consumables",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the status of my WD-40 can?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After checking on one type of common consumable (caulk), the user may be interested in the status of another (lubricant).",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "General Consumables",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What drywall and deck screws do I have available?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Fasteners & Hardware",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What cordless drill do I own and what is its battery status?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: The most direct follow-up to inventorying screws is to check on the status of the primary tool used to drive them, the cordless drill.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Power Tools",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What combination wrenches do I have in my tool chest?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08",
+        "F01"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After checking the available fasteners, a practical next step is to review other common fastening and assembly tools already in the main tool chest, such as the wrench set.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Power Tools",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What other paint do I have besides the white trim paint?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09",
+        "F02"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the user has confirmed all supplies for the immediate painting task, they may want to take the opportunity to get a full inventory of all other paint on hand.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Other Paint Inventory",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What's the status of my sandpaper supply?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Sanding Supplies",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Painting Task Supplies",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Plumbing Task Supplies",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Additional Plumbing Supplies",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "General Consumables",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Fasteners & Hardware",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Power Tools",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Other Paint Inventory",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Sanding Supplies",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "home_tool_and_spare_inventory_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

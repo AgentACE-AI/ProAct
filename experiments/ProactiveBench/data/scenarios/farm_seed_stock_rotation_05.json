@@ -1,0 +1,405 @@
+{
+  "scenario_id": "farm_seed_stock_rotation_05",
+  "domain": "farm_operations",
+  "description": "A farm wants to know which seed lots or feed lots should be used, tested, rotated, or retired based on age, storage conditions, intended use, and known performance history.",
+  "user_profile": {
+    "persona": "44-year-old farm owner trying to reduce waste without relying on guesswork",
+    "context": "Supplies have accumulated over several seasons, and the cost of using the wrong stock is no longer trivial",
+    "communication_style": "Inventory-aware and pragmatic, wants action labels rather than vague monitoring"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Seed_Inventory",
+      "fact": "Corn seed lot CORN-P2022-01A, purchased from Prairie Grains Co., has a current quantity of 25 bags (50 lbs each)."
+    },
+    {
+      "id": "F02",
+      "category": "Operational_Guidelines",
+      "fact": "The action label for corn seed lot CORN-P2022-01A is 'TEST GERMINATION' due to its purchase date of October 15, 2022."
+    },
+    {
+      "id": "F03",
+      "category": "Seed_Inventory",
+      "fact": "Soybean seed lot SOY-X2024-05C was received on March 1, 2024, from supplier AgriSeed Innovators."
+    },
+    {
+      "id": "F04",
+      "category": "Operational_Guidelines",
+      "fact": "The action label for soybean seed lot SOY-X2024-05C is 'USE FIRST' for the upcoming planting season in the East Field."
+    },
+    {
+      "id": "F05",
+      "category": "Feed_Inventory",
+      "fact": "Hog finisher feed lot HOGFEED-AN2023-B3 has 1.5 tons remaining and is stored in Silo 2."
+    },
+    {
+      "id": "F06",
+      "category": "Operational_Guidelines",
+      "fact": "The action label for feed lot HOGFEED-AN2023-B3 is 'ROTATE TO BACK' as its 'best by' date is December 31, 2024."
+    },
+    {
+      "id": "F07",
+      "category": "Feed_Inventory",
+      "fact": "Cattle protein supplement CATL-PRO-S2023-09F was opened on February 15, 2024, and has an open-container shelf life of 6 months."
+    },
+    {
+      "id": "F08",
+      "category": "Operational_Guidelines",
+      "fact": "The action label for cattle supplement CATL-PRO-S2023-09F is 'USE BY 08/15/2024'."
+    },
+    {
+      "id": "F09",
+      "category": "Storage_Conditions",
+      "fact": "The temperature in the climate-controlled Seed Shed is maintained at a constant 55°F (+/- 2°F)."
+    },
+    {
+      "id": "F10",
+      "category": "Storage_Conditions",
+      "fact": "The humidity alarm for the Seed Shed is set to trigger if relative humidity levels exceed 45% for more than one hour."
+    },
+    {
+      "id": "F11",
+      "category": "Storage_Conditions",
+      "fact": "Silo 2, containing hog feed, recorded a peak internal temperature of 85°F on July 12, 2023, which is above the recommended 75°F maximum."
+    },
+    {
+      "id": "F12",
+      "category": "Performance_History",
+      "fact": "Corn seed lot CORN-P2021-11B (now fully retired) had a tested germination rate of only 78% in the 2022 season, below the 90% threshold."
+    },
+    {
+      "id": "F13",
+      "category": "Operational_Guidelines",
+      "fact": "The standard procedure for any seed lot testing below an 85% germination rate is to label it 'RETIRE' for composting."
+    },
+    {
+      "id": "F14",
+      "category": "Performance_History",
+      "fact": "Soybean lot SOY-X2023-04A from Prairie Grains Co. yielded an average of 62 bushels per acre in the West Field last season."
+    },
+    {
+      "id": "F15",
+      "category": "Performance_History",
+      "fact": "Hog feed lot HOGFEED-AN2023-A1 resulted in an average daily weight gain of 1.8 lbs per head, which is 5% above the farm's target of 1.72 lbs."
+    },
+    {
+      "id": "F16",
+      "category": "Supplier_Information",
+      "fact": "The primary contact at Prairie Grains Co. is Sarah Jenkins, reachable at s.jenkins@prairiegrainsco.net or (555) 823-4455."
+    },
+    {
+      "id": "F17",
+      "category": "Supplier_Information",
+      "fact": "AgriNutrient Solutions offers a 5% discount on feed orders over 10 tons placed before March 1st each year."
+    },
+    {
+      "id": "F18",
+      "category": "Inventory_System",
+      "fact": "The farm's inventory is tracked in a Google Sheet named 'GVA Inventory 2024', accessible via a shared link on the office computer's desktop."
+    },
+    {
+      "id": "F19",
+      "category": "Inventory_System",
+      "fact": "Farm owner Alex Chen performs a full physical inventory count on the first Monday of each quarter (Jan, Apr, Jul, Oct)."
+    },
+    {
+      "id": "F20",
+      "category": "Seed_Inventory",
+      "fact": "Alfalfa seed lot ALF-G2023-07D is designated for overseeding Pasture 3 in Fall 2024 and has 8 bags remaining."
+    },
+    {
+      "id": "F21",
+      "category": "Operational_Guidelines",
+      "fact": "The action label for alfalfa seed lot ALF-G2023-07D is 'HOLD FOR FALL USE'."
+    },
+    {
+      "id": "F22",
+      "category": "Feed_Inventory",
+      "fact": "There are 12 bags of calf starter feed CALF-ST-M2024-01A stored in the Dry Barn, Bay 2."
+    },
+    {
+      "id": "F23",
+      "category": "Operational_Guidelines",
+      "fact": "The action label for calf starter CALF-ST-M2024-01A is 'USE FIRST' as it is the newest stock for the current calving season."
+    },
+    {
+      "id": "F24",
+      "category": "Storage_Conditions",
+      "fact": "The Dry Barn, Bay 2, has a known roof leak near the west wall, which was last patched on April 10, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "Operational_Guidelines",
+      "fact": "Any stock stored in the Dry Barn must be kept on pallets at least 4 inches off the concrete floor to prevent moisture damage."
+    },
+    {
+      "id": "F26",
+      "category": "Testing_Protocols",
+      "fact": "A standard germination test involves placing 100 seeds on a damp paper towel in a sealed bag at 70°F for 7 days and counting sprouts."
+    },
+    {
+      "id": "F27",
+      "category": "Testing_Protocols",
+      "fact": "A feed sample from any lot older than 18 months must be sent to Midwest Labs for mycotoxin screening before use; cost is $75 per sample."
+    },
+    {
+      "id": "F28",
+      "category": "Supplier_Information",
+      "fact": "The last order from AgriNutrient Solutions (PO #45881) on February 20, 2024, was for 5 tons of HOGFEED-AN2024-C1."
+    },
+    {
+      "id": "F29",
+      "category": "Feed_Inventory",
+      "fact": "Feed lot HOGFEED-AN2024-C1 is currently stored in Silo 1 and has a 'best by' date of February 20, 2026."
+    },
+    {
+      "id": "F30",
+      "category": "Performance_History",
+      "fact": "The intended use for corn seed lot CORN-P2022-01A was the high-moisture soil of the River Bottom field, which requires a minimum 95% germination rate for optimal yield."
+    },
+    {
+      "id": "F31",
+      "category": "Inventory_System",
+      "fact": "Inventory action labels ('USE FIRST', 'TEST', 'ROTATE', 'RETIRE') are updated weekly in column 'G' of the 'GVA Inventory 2024' spreadsheet."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current quantity and supplier for corn seed lot CORN-P2022-01A?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Old Corn Seed Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the action label and purchase date for corn seed lot CORN-P2022-01A?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After checking the quantity of an old seed lot, the user's immediate next step is to determine its status and required action.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Old Corn Seed Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the standard procedure for a germination test?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "The prior answer explicitly recommended to 'TEST GERMINATION', making the user likely to ask for the testing protocol next.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Testing Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the intended use for corn seed lot CORN-P2022-01A and what is the minimum germination rate required for that use?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Knowing a test is required for an old seed lot, the user would want to understand the performance standards and stakes associated with that specific lot.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Performance Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Who is the supplier for soybean seed lot SOY-X2024-05C and when was it received?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "New Soybean Seed Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the action label and intended planting location for soybean lot SOY-X2024-05C?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Similar to the corn seed query, after identifying a soybean lot, the user needs to know the operational plan for it.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "New Soybean Seed Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the remaining quantity, storage location, 'best by' date, and action label for hog finisher feed lot HOGFEED-AN2023-B3?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Hog Feed Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the peak internal temperature recorded in Silo 2, where that feed is stored, compared to the recommended maximum?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "The user just learned the feed is in Silo 2. Since storage conditions affect feed quality, inquiring about that specific silo's temperature history is a logical next step to assess risk.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Storage Condition Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When was the cattle protein supplement CATL-PRO-S2023-09F opened and what is its open-container shelf life?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Cattle Supplement Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Given its open date and shelf life, what is the action label for the cattle supplement CATL-PRO-S2023-09F?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After learning the shelf life and open date of a product, the immediate practical question is to know the resulting use-by deadline or action.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Cattle Supplement Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Where in the inventory system are action labels updated, and how often does this happen?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "After seeing several action labels for different products, the user may become curious about the underlying process for maintaining this information in their inventory system.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Inventory System Process",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Old Corn Seed Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Testing Protocol",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Performance Context",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "New Soybean Seed Status",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Hog Feed Management",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Storage Condition Details",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Cattle Supplement Status",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Inventory System Process",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "farm_seed_stock_rotation_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "scenario_id": "localization_glossary_drift_01",
+  "domain": "translation_localization_workflow",
+  "description": "A localization lead notices that product terms are being translated differently across help docs, app UI, and onboarding emails. They need to identify which terms have drifted and establish a single approved wording set for future work. All company names and products are fictional.",
+  "user_profile": {
+    "persona": "35-year-old localization manager coordinating several freelance translators",
+    "context": "Support tickets are starting to reveal that inconsistent translated terms are confusing users in one major market",
+    "communication_style": "Precise and consistency-driven, wants wording differences surfaced with minimal ambiguity"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project_management",
+      "fact": "The project to resolve translation inconsistencies is tracked in Jira under the ticket key LOC-734."
+    },
+    {
+      "id": "F02",
+      "category": "impact_metrics",
+      "fact": "In October 2023, 18 support tickets were filed from the German market specifically mentioning confusion over the 'Insight Hub' feature."
+    },
+    {
+      "id": "F03",
+      "category": "personnel",
+      "fact": "Elara Vance is the Localization Manager at CogniSphere Inc., overseeing the SynapseFlow product."
+    },
+    {
+      "id": "F04",
+      "category": "terminology_issue",
+      "fact": "The English source term 'Insight Hub' has been translated into German as 'Einblicks-Zentrale', 'Wissens-Hub', and 'Analysezentrum'."
+    },
+    {
+      "id": "F05",
+      "category": "technical_stack",
+      "fact": "CogniSphere Inc. uses LingoSync version 4.2 as its primary Translation Management System (TMS)."
+    },
+    {
+      "id": "F06",
+      "category": "resolution_plan",
+      "fact": "A new, centralized termbase for SynapseFlow will be established in LingoSync by November 30, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "personnel",
+      "fact": "Klaus Richter is the primary freelance translator responsible for the German UI text of the SynapseFlow application."
+    },
+    {
+      "id": "F08",
+      "category": "personnel",
+      "fact": "Anja Schmidt is the freelance translator who handles localization for all German-language help documentation."
+    },
+    {
+      "id": "F09",
+      "category": "terminology_issue",
+      "fact": "The translation 'Einblicks-Zentrale' is used in the SynapseFlow application UI, specifically in version 2.5.1 for desktop."
+    },
+    {
+      "id": "F10",
+      "category": "terminology_issue",
+      "fact": "The translation 'Wissens-Hub' is used in the automated onboarding email sequence sent to new German users."
+    },
+    {
+      "id": "F11",
+      "category": "terminology_issue",
+      "fact": "The translation 'Analysezentrum' is used in the online help documentation on the URL /help/insight-hub-overview."
+    },
+    {
+      "id": "F12",
+      "category": "project_management",
+      "fact": "The internal codename for the terminology consistency initiative is 'Project Unify'."
+    },
+    {
+      "id": "F13",
+      "category": "impact_metrics",
+      "fact": "A user survey from Q3 2023 showed a 12% drop in satisfaction scores from German-speaking users regarding feature clarity."
+    },
+    {
+      "id": "F14",
+      "category": "resolution_plan",
+      "fact": "The officially approved and finalized German translation for 'Insight Hub' is 'Einblicks-Zentrale'."
+    },
+    {
+      "id": "F15",
+      "category": "technical_stack",
+      "fact": "The approved termbase is accessible to all translators at the URL: https://cognisphere.lingosync.com/termbase/synapseflow."
+    },
+    {
+      "id": "F16",
+      "category": "personnel",
+      "fact": "Elara Vance's direct contact email for urgent queries is elara.vance@cognisphere.inc."
+    },
+    {
+      "id": "F17",
+      "category": "project_management",
+      "fact": "The deadline for updating all German help documentation with the approved terminology is December 15, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "technical_stack",
+      "fact": "All freelance translators submit their work through the LingoSync portal; email submissions are not accepted."
+    },
+    {
+      "id": "F19",
+      "category": "impact_metrics",
+      "fact": "The support ticket that first identified the inconsistency was #DE-98102, filed on October 5, 2023."
+    },
+    {
+      "id": "F20",
+      "category": "resolution_plan",
+      "fact": "A mandatory training session on using the new termbase is scheduled for all German-language freelancers on November 28, 2023, at 10:00 AM CET."
+    },
+    {
+      "id": "F21",
+      "category": "personnel",
+      "fact": "The final list of 50 approved core terms must be signed off by David Chen, the Head of Product."
+    },
+    {
+      "id": "F22",
+      "category": "terminology_issue",
+      "fact": "Another identified inconsistency is the feature 'Task Cascade', which has been translated as both 'Aufgabenkaskade' and 'Aufgaben-Reihenfolge'."
+    },
+    {
+      "id": "F23",
+      "category": "resolution_plan",
+      "fact": "The approved German translation for 'Task Cascade' has been finalized as 'Aufgabenkaskade'."
+    },
+    {
+      "id": "F24",
+      "category": "technical_stack",
+      "fact": "All internal team communication regarding 'Project Unify' is centralized in the Slack channel #proj-unify."
+    },
+    {
+      "id": "F25",
+      "category": "project_management",
+      "fact": "The total budget allocated for the terminology audit and freelancer training for Project Unify is $4,500."
+    },
+    {
+      "id": "F26",
+      "category": "impact_metrics",
+      "fact": "The average support ticket handling time for term-related confusion is 22 minutes, which is 8 minutes longer than the account average."
+    },
+    {
+      "id": "F27",
+      "category": "technical_stack",
+      "fact": "The source string files for the SynapseFlow UI are stored in a Git repository at git.cognisphere.net/synapseflow/frontend-strings."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the different German translations being used for the English source term 'Insight Hub'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "In which assets are the German translations 'Einblicks-Zentrale', 'Wissens-Hub', and 'Analysezentrum' used?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the inconsistent terms, the user's immediate next question is to locate where each incorrect version appears.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "How many support tickets were filed from the German market in October 2023 due to confusion over the 'Insight Hub' feature?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Impact Metrics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Who is the translator for the German UI text and who handles the German help documentation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the locations of the inconsistencies (UI, help docs) are known, the user needs to identify the personnel responsible for those specific assets.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Personnel Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the officially approved German translation for 'Insight Hub'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After understanding the full scope of the problem (what terms are wrong and where), the user's primary goal is to find the official solution.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Approved Terminology",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the finalized German translation for the feature 'Task Cascade'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After getting the approved translation for the main problematic term, the user may ask about other known inconsistent terms mentioned in the project scope.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Approved Terminology",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the deadline for establishing the new centralized termbase for SynapseFlow in LingoSync?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Knowing the correct term leads to the next logical step: how and when this correct information will be formally stored and distributed via the termbase.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Implementation Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the date and time for the mandatory termbase training for German-language freelancers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: The creation of a new termbase directly implies the need for training. This is a critical next step for ensuring adoption.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Training Schedule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the Jira ticket key for the project to resolve translation inconsistencies?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Project Tracking",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Which manager must provide sign-off for the final list of 50 approved core terms?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Learning about the creation of a formal termbase prompts a managerial question about the final approval process for its contents.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Approval Process",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Problem Definition",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Impact Metrics",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Personnel Identification",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Approved Terminology",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Implementation Plan",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Training Schedule",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Project Tracking",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Approval Process",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "localization_glossary_drift_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "scenario_id": "vendor_service_history_02",
+  "domain": "vendor_management",
+  "description": "A manager wants to review the last six months of support tickets, incidents, and service reviews to determine whether a vendor is actually unreliable or simply memorable when things go wrong.",
+  "user_profile": {
+    "persona": "40-year-old operations manager trying to separate perception from evidence",
+    "context": "Complaints about the vendor are growing, but nobody has yet looked at the full history systematically",
+    "communication_style": "Evidence-first and fair-minded, prefers patterns over anecdotes"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Vendor Information",
+      "fact": "The vendor is InnovateCloud Solutions, providing the 'NexusFlow CRM' platform to Starlight Enterprises."
+    },
+    {
+      "id": "F02",
+      "category": "Vendor Information",
+      "fact": "The current contract with InnovateCloud Solutions is active from January 1, 2023, to December 31, 2025."
+    },
+    {
+      "id": "F03",
+      "category": "Vendor Information",
+      "fact": "The primary account manager at InnovateCloud Solutions is David Chen, reachable at david.chen@innovatecloud.io."
+    },
+    {
+      "id": "F04",
+      "category": "Support Tickets",
+      "fact": "A total of 152 support tickets were filed for NexusFlow CRM between January 1, 2024, and June 30, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "Support Tickets",
+      "fact": "Of the 152 tickets, 8 were Priority 1 (Urgent), 45 were Priority 2 (High), and 99 were Priority 3 (Normal)."
+    },
+    {
+      "id": "F06",
+      "category": "Support Tickets",
+      "fact": "Support ticket #89231, filed on June 5, 2024, was a P1 issue regarding a login authentication failure affecting all users."
+    },
+    {
+      "id": "F07",
+      "category": "Support Tickets",
+      "fact": "Support ticket #91455, filed on March 12, 2024, was a P3 request to update the documentation for the API's 'createContact' endpoint."
+    },
+    {
+      "id": "F08",
+      "category": "Support Tickets",
+      "fact": "The average first response time for all tickets in the last six months was 55 minutes."
+    },
+    {
+      "id": "F09",
+      "category": "Support Tickets",
+      "fact": "The average resolution time for all tickets in the last six months was 8.2 hours."
+    },
+    {
+      "id": "F10",
+      "category": "Support Tickets",
+      "fact": "Ticket #88740, a P2 issue about report generation failures, took 26 hours to resolve, breaching the 24-hour P2 resolution SLA."
+    },
+    {
+      "id": "F11",
+      "category": "Support Tickets",
+      "fact": "For ticket #90112, a feature request, the user Sarah Jenkins left a positive satisfaction rating of 5/5, commenting, 'The support agent was very helpful and provided a great workaround.'"
+    },
+    {
+      "id": "F12",
+      "category": "Support Tickets",
+      "fact": "Ticket breakdown by type for the last six months: 60% Bug Reports, 25% How-To Questions, 15% Feature Requests."
+    },
+    {
+      "id": "F13",
+      "category": "Support Tickets",
+      "fact": "In the last six months, 11 tickets were reopened by Starlight Enterprises staff after being marked as 'Resolved' by InnovateCloud support."
+    },
+    {
+      "id": "F14",
+      "category": "Incidents & Outages",
+      "fact": "There were 3 service incidents logged for NexusFlow CRM between January 1, 2024, and June 30, 2024."
+    },
+    {
+      "id": "F15",
+      "category": "Incidents & Outages",
+      "fact": "A major incident (INC-2024-002) on May 15, 2024, resulted in a complete outage of the NexusFlow CRM platform for 4 hours and 15 minutes."
+    },
+    {
+      "id": "F16",
+      "category": "Incidents & Outages",
+      "fact": "The Root Cause Analysis (RCA) for incident INC-2024-002 was delivered by InnovateCloud on May 20, 2024, five days after the event."
+    },
+    {
+      "id": "F17",
+      "category": "Incidents & Outages",
+      "fact": "A minor incident (INC-2024-001) on March 22, 2024, caused API latency to increase by 200% for 90 minutes."
+    },
+    {
+      "id": "F18",
+      "category": "Incidents & Outages",
+      "fact": "The recorded uptime for the NexusFlow CRM service in Q2 2024 (April-June) was 99.85%."
+    },
+    {
+      "id": "F19",
+      "category": "Incidents & Outages",
+      "fact": "During the May 15th outage, the first notification from InnovateCloud on their status page appeared 25 minutes after Starlight Enterprises reported the issue via a P1 ticket."
+    },
+    {
+      "id": "F20",
+      "category": "Service Level Agreement (SLA)",
+      "fact": "The Service Level Agreement (SLA) with InnovateCloud mandates a 1-hour first response time for all Priority 1 tickets."
+    },
+    {
+      "id": "F21",
+      "category": "Service Level Agreement (SLA)",
+      "fact": "The contractual SLA for service uptime is 99.9% per calendar month."
+    },
+    {
+      "id": "F22",
+      "category": "Service Level Agreement (SLA)",
+      "fact": "InnovateCloud Solutions recorded two SLA breaches in the last six months: one for uptime in May 2024 and one for P2 ticket resolution in April 2024."
+    },
+    {
+      "id": "F23",
+      "category": "Service Level Agreement (SLA)",
+      "fact": "Starlight Enterprises received a service credit of $1,250 for the May 2024 uptime SLA breach."
+    },
+    {
+      "id": "F24",
+      "category": "Service Reviews",
+      "fact": "The last Quarterly Business Review (QBR) with InnovateCloud Solutions was held on April 10, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "Service Reviews",
+      "fact": "A key action item from the April 10 QBR was for InnovateCloud to provide a roadmap for improving their API documentation by June 30, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "Service Reviews",
+      "fact": "The overall satisfaction score from the post-QBR survey sent to Starlight stakeholders was 3.5 out of 5."
+    },
+    {
+      "id": "F27",
+      "category": "Service Reviews",
+      "fact": "The next QBR with InnovateCloud is scheduled for July 12, 2024, via Zoom."
+    },
+    {
+      "id": "F28",
+      "category": "Internal Feedback",
+      "fact": "On June 20, 2024, Mark Riley from the sales team posted in the #vendor-innovatecloud Slack channel: 'NexusFlow is down again for me, can't access my pipeline. This happens every month.'"
+    },
+    {
+      "id": "F29",
+      "category": "Internal Feedback",
+      "fact": "On February 5, 2024, lead developer Anna Schmidt commented in a project meeting that 'The new bulk data import feature from InnovateCloud saved us at least 10 hours of manual work this week.'"
+    },
+    {
+      "id": "F30",
+      "category": "Internal Feedback",
+      "fact": "An internal tracker shows 7 unique user complaints about NexusFlow CRM's performance were logged in June 2024."
+    },
+    {
+      "id": "F31",
+      "category": "Service Level Agreement (SLA)",
+      "fact": "Across the full review period from January 1, 2024, to June 30, 2024, only two SLA breaches were recorded for InnovateCloud Solutions: the April 2024 P2 resolution breach tied to ticket #88740 and the May 2024 monthly uptime breach tied to incident INC-2024-002; no other SLA breaches were logged in that period."
+    },
+    {
+      "id": "F32",
+      "category": "Incidents & Outages",
+      "fact": "The major outage INC-2024-002 on May 15, 2024, was a complete NexusFlow CRM platform outage lasting 4 hours and 15 minutes; InnovateCloud delivered the RCA on May 20, 2024, and Starlight Enterprises recorded that the first vendor status-page notification appeared 25 minutes after the issue was reported through a P1 ticket."
+    },
+    {
+      "id": "F33",
+      "category": "Internal Feedback",
+      "fact": "Internal feedback over the last six months was mixed rather than uniformly negative: at least one negative complaint pattern was logged in June 2024, while positive internal feedback was also recorded, including Anna Schmidt's February 5, 2024 comment that the new bulk data import feature saved at least 10 hours of manual work that week."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the total volume of support tickets and service incidents in the last six months?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Overall Performance Summary",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How many SLA breaches were recorded between January 1, 2024, and June 30, 2024, and for what reasons?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F31"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After getting the total volume of issues, the user would naturally want to know the business impact in terms of SLA breaches.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Overall Performance Summary",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Can you provide the key details of the major service outage, including its duration, follow-up, and vendor communication timing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16",
+        "F19",
+        "F32"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: The user learned there were 3 incidents in the initial summary, so asking for details on the most significant one is a logical next step.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Deep Dive",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Following that outage, what was the service uptime for Q2?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "A major outage directly impacts uptime, so asking for the resulting uptime percentage is an immediate follow-up.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Deep Dive",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "How quickly did the vendor notify us about the major outage on their status page?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP (Auditable Proactive Target): After discussing the details of a major incident, a user focused on vendor management would be concerned about the vendor's communication and proactiveness during the crisis.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Vendor Communication During Incident",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Did we receive any service credits for the May uptime SLA breach?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP (Auditable Proactive Target): Learning about SLA breaches naturally leads to the question of whether the contractual penalties, like service credits, were applied.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial Impact of Breaches",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What was the breakdown of support tickets by priority?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Ticket Volume Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What were the main types of issues reported in tickets?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After understanding the severity (priority) of tickets, the user would want to understand the nature (type) of the issues being reported.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Ticket Volume Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What were the average first response and resolution times for tickets?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Ticket Performance Metrics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Show me a specific example of a ticket that breached its resolution SLA.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: The user was previously told there was a P2 resolution SLA breach, so it's natural to ask for the specific details of that failure while digging into ticket performance.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Ticket Performance Metrics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "How many tickets were reopened by our staff after being marked as resolved?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After reviewing performance metrics like resolution time, a key indicator of resolution *quality* is the ticket reopen rate.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Ticket Resolution Quality",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is an example of recent negative feedback from our team, and how many complaints were logged last month?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Internal Perception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Has there been any contrasting positive feedback internally, or is the feedback uniformly negative?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29",
+        "F33"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "The user's persona is 'fair-minded', so after seeing negative anecdotal evidence, they would actively seek out positive evidence to form a balanced view.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Internal Perception",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "What was the overall satisfaction score from the last Quarterly Business Review?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Formal Governance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "If we need to follow up on the last QBR, what is the contact information for our primary account manager at the vendor?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "After reviewing the overall satisfaction score from the last QBR, a fair-minded manager would naturally want the account manager's contact information in case follow-up on that formal review is needed.",
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Formal Governance",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Overall Performance Summary",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Incident Deep Dive",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Vendor Communication During Incident",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Financial Impact of Breaches",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Ticket Volume Analysis",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Ticket Performance Metrics",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Ticket Resolution Quality",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Internal Perception",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Formal Governance",
+      "member_need_ids": [
+        "N14",
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vendor_service_history_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

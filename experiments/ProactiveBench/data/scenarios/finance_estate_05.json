@@ -1,0 +1,461 @@
+{
+  "scenario_id": "finance_estate_05",
+  "domain": "financial_planning",
+  "description": "A business owner is planning for retirement and eventual wealth transfer to their children over 20 years. They need to manage trust structures, tax-efficient gifting, and the long-term sustainability of their portfolio across market cycles.",
+  "user_profile": {
+    "persona": "55-year-old entrepreneur",
+    "context": "Starting to think about 'Legacy' and retirement exit strategies",
+    "communication_style": "Sophisticated, values discretion and comprehensive strategy"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Client_Profile",
+      "fact": "The primary client is Arthur Vance, born April 12, 1969, making him 55 years old."
+    },
+    {
+      "id": "F02",
+      "category": "Client_Profile",
+      "fact": "Arthur Vance's total net worth as of January 1, 2024, is estimated at $42.5 million."
+    },
+    {
+      "id": "F03",
+      "category": "Client_Profile",
+      "fact": "Arthur Vance is the founder and CEO of 'Vance Innovations Inc.', a private tech hardware company valued at $25 million."
+    },
+    {
+      "id": "F04",
+      "category": "Client_Profile",
+      "fact": "Arthur Vance has two children: Julian Vance (age 28) and Clara Vance (age 25)."
+    },
+    {
+      "id": "F05",
+      "category": "Financial_Advisory",
+      "fact": "The lead financial advisor is Eleanor Shaw of the firm 'Crestview Legacy Partners'."
+    },
+    {
+      "id": "F06",
+      "category": "Financial_Advisory",
+      "fact": "Crestview Legacy Partners charges an annual advisory fee of 0.65% on assets under management, billed quarterly."
+    },
+    {
+      "id": "F07",
+      "category": "Financial_Advisory",
+      "fact": "The secure client portal for document exchange is located at https://portal.crestviewlp.com/vance."
+    },
+    {
+      "id": "F08",
+      "category": "Financial_Advisory",
+      "fact": "Quarterly strategy review meetings are scheduled for the second Tuesday of January, April, July, and October at 10:00 AM EST."
+    },
+    {
+      "id": "F09",
+      "category": "Portfolio_Management",
+      "fact": "The total liquid investment portfolio managed by Crestview is valued at $17.5 million as of Q1 2024."
+    },
+    {
+      "id": "F10",
+      "category": "Portfolio_Management",
+      "fact": "The portfolio's target asset allocation is 50% global equities, 25% fixed income, 15% real estate, and 10% private equity."
+    },
+    {
+      "id": "F11",
+      "category": "Portfolio_Management",
+      "fact": "The portfolio holds a $1.2 million position in the 'Blackwood Private Equity Fund IV'."
+    },
+    {
+      "id": "F12",
+      "category": "Portfolio_Management",
+      "fact": "The portfolio's annual long-term growth target, net of fees, is 6.5% to maintain sustainability through retirement."
+    },
+    {
+      "id": "F13",
+      "category": "Trust_And_Estate",
+      "fact": "'The Vance Irrevocable Legacy Trust' was established on March 15, 2024, with initial funding of $10 million."
+    },
+    {
+      "id": "F14",
+      "category": "Trust_And_Estate",
+      "fact": "Julian Vance and Clara Vance are the primary beneficiaries of The Vance Irrevocable Legacy Trust."
+    },
+    {
+      "id": "F15",
+      "category": "Trust_And_Estate",
+      "fact": "Eleanor Shaw serves as the investment advisor, and 'North Star Trust Company' serves as the corporate trustee for the legacy trust."
+    },
+    {
+      "id": "F16",
+      "category": "Trust_And_Estate",
+      "fact": "A Grantor Retained Annuity Trust (GRAT) was funded with $2 million of Vance Innovations Inc. private stock on May 1, 2024, with a 2-year term."
+    },
+    {
+      "id": "F17",
+      "category": "Trust_And_Estate",
+      "fact": "Arthur Vance's will specifies that 10% of his residual estate is to be donated to the 'Vance Family Charitable Foundation'."
+    },
+    {
+      "id": "F18",
+      "category": "Gifting_Strategy",
+      "fact": "Arthur Vance will gift the maximum annual exclusion amount of $18,000 to each of his two children on December 1st of each year."
+    },
+    {
+      "id": "F19",
+      "category": "Gifting_Strategy",
+      "fact": "A 529 plan for a future grandchild, the 'Clara Vance Progeny Fund', was opened with a $50,000 lump sum contribution on June 1, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "Gifting_Strategy",
+      "fact": "The lifetime gift tax exemption used by Arthur Vance as of the plan's inception is $10,018,000."
+    },
+    {
+      "id": "F21",
+      "category": "Retirement_Planning",
+      "fact": "Arthur Vance's target retirement date is April 30, 2034, at age 65."
+    },
+    {
+      "id": "F22",
+      "category": "Retirement_Planning",
+      "fact": "The financial plan is designed to provide Arthur with an annual after-tax income of $600,000 during retirement, adjusted for 3% annual inflation."
+    },
+    {
+      "id": "F23",
+      "category": "Retirement_Planning",
+      "fact": "The plan's stress test models a 30% market downturn in the first two years of retirement to ensure portfolio resilience."
+    },
+    {
+      "id": "F24",
+      "category": "Business_Succession",
+      "fact": "The succession plan for Vance Innovations Inc. involves a strategic sale to a private equity firm within the next 5-7 years."
+    },
+    {
+      "id": "F25",
+      "category": "Business_Succession",
+      "fact": "The target valuation for the sale of Vance Innovations Inc. is set at a minimum of $40 million."
+    },
+    {
+      "id": "F26",
+      "category": "Business_Succession",
+      "fact": "A key employee retention plan is in place, offering 5% of sale proceeds to a pool for 4 designated senior managers."
+    },
+    {
+      "id": "F27",
+      "category": "Risk_Management",
+      "fact": "Arthur Vance holds a $15 million term life insurance policy, with The Vance Irrevocable Legacy Trust as the sole beneficiary."
+    },
+    {
+      "id": "F28",
+      "category": "Risk_Management",
+      "fact": "A long-term care insurance policy with a daily benefit of $500 and an inflation rider was purchased on February 1, 2024."
+    },
+    {
+      "id": "F29",
+      "category": "Risk_Management",
+      "fact": "The portfolio has a 5% allocation to gold and other commodities as a hedge against inflation and currency risk."
+    },
+    {
+      "id": "F30",
+      "category": "Client_Profile",
+      "fact": "Arthur Vance's primary residence is at 123 Sterling Drive, Greenwich, CT 06830, and is owned outright with a value of $4.5 million."
+    },
+    {
+      "id": "F31",
+      "category": "Financial_Advisory",
+      "fact": "The estate planning attorney on record is David Chen from the law firm 'Chen, Albright & Partners LLP'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who is my lead financial advisor and what is their firm's annual advisory fee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Advisory Team",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who is the estate planning attorney on record for my plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the primary financial advisor, the user would naturally want to know about other key professionals on their team.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Advisory Team",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the current value of my liquid investment portfolio and what is its target asset allocation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Portfolio Strategy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the portfolio's annual long-term growth target, net of fees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Understanding the portfolio's composition directly leads to questions about its performance goals and expected returns.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Portfolio Strategy",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the succession plan for Vance Innovations Inc. and its target sale valuation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Business Succession",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "How are key employees being retained through the company's sale process?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Once the owner understands the overall succession strategy, a logical follow-up is to inquire about the operational details that ensure a smooth transition, such as key employee retention.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Business Succession",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the name of the irrevocable trust, when was it established, and what was its initial funding amount?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Legacy Trust",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Who are the primary beneficiaries of the legacy trust and which company serves as the corporate trustee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After confirming the trust's existence and funding, the next logical questions concern who benefits from it and who manages it.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Legacy Trust",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is my target retirement date and planned annual income?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discussing the portfolio's growth target (N4) naturally prompts the user to think about the ultimate goal of that growth, which is funding their retirement.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Retirement Goal",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the annual gifting plan to my children?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Gifting Strategy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "How much of my lifetime gift tax exemption has been used as of the plan's start?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Learning about the $10 million funding of the irrevocable trust (N7) would immediately make a sophisticated user ask how such a large gift impacts their lifetime gift tax exemption.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Gifting Strategy",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What are the funding details and term of the Grantor Retained Annuity Trust (GRAT)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After discussing the lifetime gift exemption usage (N11), the user would be interested in other specific, tax-efficient wealth transfer vehicles being used, such as the GRAT.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Advanced Gifting Vehicles",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Do I already have life insurance in place to help fund the legacy trust, and if so what is its face value and beneficiary?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After identifying the legacy trust structure, a natural next question is whether any existing life insurance is set up to provide funding or liquidity for it.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Trust Funding & Insurance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the daily benefit of my long-term care insurance policy, when was it purchased, and does it include an inflation rider?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After reviewing the life insurance set up to fund trust liquidity, a prudent follow-up is to look at other existing insurance coverage relevant to the broader retirement and legacy plan.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Long-Term Care Planning",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Advisory Team",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Portfolio Strategy",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Business Succession",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Legacy Trust",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Retirement Goal",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Gifting Strategy",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Advanced Gifting Vehicles",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Trust Funding & Insurance",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G9",
+      "label": "Long-Term Care Planning",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "finance_estate_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "scenario_id": "relocate_city_01",
+  "domain": "relocation",
+  "description": "An employee is relocating from one city to another within the same country. They need to learn about housing, local registration, and schooling for their child.",
+  "user_profile": {
+    "persona": "32-year-old software engineer, married with a 5-year-old child",
+    "context": "Moving next month, completely unfamiliar with the area",
+    "communication_style": "Pragmatic and efficient"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "housing",
+      "fact": "Alex Chen's apartment lease at 'The Aspens at Cedar Creek' begins on August 1, 2024."
+    },
+    {
+      "id": "F02",
+      "category": "housing",
+      "fact": "The full address for the new apartment is 123 Willow Lane, Unit 4B, Cedar Creek, ZP 54321."
+    },
+    {
+      "id": "F03",
+      "category": "housing",
+      "fact": "The monthly rent for apartment 4B is $2,250, due on the first of each month via the 'Appfolio' portal."
+    },
+    {
+      "id": "F04",
+      "category": "housing",
+      "fact": "A security deposit of $2,250 was paid to 'Cedar Creek Homes Realty' on June 15, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "housing",
+      "fact": "The apartment complex has a 'no pets over 40 lbs' policy; Alex Chen's 15-lb beagle, 'Buddy', is approved."
+    },
+    {
+      "id": "F06",
+      "category": "housing",
+      "fact": "The property manager for 'The Aspens at Cedar Creek' is Susan Vance, reachable at 555-0102."
+    },
+    {
+      "id": "F07",
+      "category": "housing",
+      "fact": "The scheduled move-in time for Unit 4B is July 31, 2024, between 9:00 AM and 11:00 AM, using loading bay 2."
+    },
+    {
+      "id": "F08",
+      "category": "housing",
+      "fact": "Realtor David Miller will conduct the apartment key handover on July 31 at 9:00 AM at the leasing office."
+    },
+    {
+      "id": "F09",
+      "category": "admin",
+      "fact": "City registration must be completed at the Cedar Creek Municipal Building, located at 1 Government Plaza, Cedar Creek."
+    },
+    {
+      "id": "F10",
+      "category": "admin",
+      "fact": "Alex Chen has an appointment for city registration with clerk Thomas Bell on August 5, 2024, at 10:30 AM in Room 104."
+    },
+    {
+      "id": "F11",
+      "category": "admin",
+      "fact": "Required documents for city registration are: signed lease agreement, photo ID (passport or state ID), and proof of employment letter from Innovatech."
+    },
+    {
+      "id": "F12",
+      "category": "admin",
+      "fact": "The deadline to update a driver's license with the new Cedar Creek address at the DMV is August 30, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "admin",
+      "fact": "The relocation specialist assigned by Innovatech is Maria Garcia, contactable at m.garcia@innovatech.relocation.com."
+    },
+    {
+      "id": "F14",
+      "category": "services",
+      "fact": "Alex Chen's 5-year-old child, Leo Chen, is enrolled in kindergarten at Cedar Creek Elementary School."
+    },
+    {
+      "id": "F15",
+      "category": "services",
+      "fact": "Leo Chen has been assigned to Mrs. Gable's kindergarten class in classroom K-2."
+    },
+    {
+      "id": "F16",
+      "category": "services",
+      "fact": "The first day of school for Cedar Creek Elementary is Tuesday, September 3, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "services",
+      "fact": "Cedar Creek Elementary School is located at 456 Oak Avenue, Cedar Creek, ZP 54322."
+    },
+    {
+      "id": "F18",
+      "category": "services",
+      "fact": "The school enrollment packet required Leo's birth certificate, immunization records from Dr. Ames, and a copy of the new lease for proof of residency."
+    },
+    {
+      "id": "F19",
+      "category": "services",
+      "fact": "The school registrar is Ms. Linda Howell, and her office phone number is 555-0150, extension 102."
+    },
+    {
+      "id": "F20",
+      "category": "services",
+      "fact": "A new parent orientation is scheduled at the school auditorium on August 28, 2024, at 6:00 PM."
+    },
+    {
+      "id": "F21",
+      "category": "utilities",
+      "fact": "The internet service provider for the apartment is 'Connectify Broadband'."
+    },
+    {
+      "id": "F22",
+      "category": "utilities",
+      "fact": "A 'Connectify Broadband' technician is scheduled for internet installation on August 1, 2024, between 1:00 PM and 3:00 PM."
+    },
+    {
+      "id": "F23",
+      "category": "utilities",
+      "fact": "The monthly cost for the 1 Gbps fiber internet plan is $79.99 before taxes."
+    },
+    {
+      "id": "F24",
+      "category": "utilities",
+      "fact": "The electricity provider is 'Cedar Power & Light,' and the new account number is CP-87654321."
+    },
+    {
+      "id": "F25",
+      "category": "transport",
+      "fact": "The estimated commute time from 123 Willow Lane to the Innovatech office at 500 Tech Parkway is 25 minutes by car during peak hours."
+    },
+    {
+      "id": "F26",
+      "category": "transport",
+      "fact": "The Cedar Creek Transit bus route #12 stops at the corner of Willow Lane and Main Street, a 3-minute walk from the apartment."
+    },
+    {
+      "id": "F27",
+      "category": "services",
+      "fact": "The family has a new patient intake appointment with Dr. Sarah Jenkins at Cedar Creek Family Practice on August 12, 2024, at 2:00 PM."
+    },
+    {
+      "id": "F28",
+      "category": "community",
+      "fact": "The 'Aspens at Cedar Creek' community welcome packet includes a pool access key card (ID: AC-4B) and a gym access code (8520)."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "When and where is my apartment move-in and key handover scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Move-in Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the full address of my new apartment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the move-in time and location, the user will need the full address for navigation and administrative purposes.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Move-in Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "How much is my monthly rent and security deposit, and how do I pay the rent?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Housing Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which internet provider serves my apartment, and is internet installation already scheduled? If so, when?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing rent, deposit, and payment logistics for the apartment, a pragmatic user would naturally check a core utility next—whether internet service for the new home is already arranged and who the provider is.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Utilities Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "When and where is my appointment for city registration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Administrative Tasks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What documents are required for my city registration appointment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After confirming the appointment details, the user's immediate next question would be about the necessary preparations and documents.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Administrative Tasks",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "When is my child's first day of school and where is the school located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "School Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Who is my child's teacher and what is their classroom number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Once the basic school details are known, a parent would naturally want to know more specific information about their child's class.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "School Information",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "When and where is the new parent orientation at the school?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After learning about the school start date, a key follow-up for a new parent is to ask about orientation events.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "School Information",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N10",
+      "description": "What is the estimated commute time from my new apartment to the office?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the user has confirmed their new home address (N2), a practical next thought is to understand the daily commute to their workplace.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Commute Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "When is our new patient intake appointment with the family doctor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Healthcare Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What access items for the community pool and gym are included in my move-in welcome packet?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming move-in and key handover details, a practical follow-up is to ask what access items or credentials come with the apartment's move-in welcome packet.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Community Amenities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Who is my company's relocation specialist and what is their contact information?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: While dealing with official administrative tasks like city registration (N5), the user may realize they need a point of contact for other relocation questions.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Relocation Support",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Move-in Logistics",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Housing Financials",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Utilities Setup",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Administrative Tasks",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "School Information",
+      "member_need_ids": [
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Commute Information",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Healthcare Setup",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Community Amenities",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "Relocation Support",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "relocate_city_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

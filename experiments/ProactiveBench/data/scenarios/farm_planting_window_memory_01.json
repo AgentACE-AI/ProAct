@@ -1,0 +1,397 @@
+{
+  "scenario_id": "farm_planting_window_memory_01",
+  "domain": "farm_operations",
+  "description": "A grower needs to remember which fields, crops, soil conditions, and weather windows matched successful planting timing in recent seasons rather than relying on rough memory and habit. All farm names and field identifiers are fictional.",
+  "user_profile": {
+    "persona": "46-year-old mixed-crop grower with several fields that behave differently",
+    "context": "The current season is approaching a decision point, and past timing lessons are scattered in notebooks and memory",
+    "communication_style": "Seasonal and practical, values field-specific memory over generic advice"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Farm_Profile",
+      "fact": "The primary farming operation is named 'Willow Creek Farms'."
+    },
+    {
+      "id": "F02",
+      "category": "Field_Profile",
+      "fact": "The 'North Ridge' field is 85 acres in size and has a predominantly Clay Loam soil type."
+    },
+    {
+      "id": "F03",
+      "category": "Field_Profile",
+      "fact": "The 'Creek Bottom' field is 120 acres and is characterized by Loam soil with high organic matter."
+    },
+    {
+      "id": "F04",
+      "category": "Field_Profile",
+      "fact": "'Hillside 7' is a 45-acre field with a consistent 4% grade, leading to faster water runoff."
+    },
+    {
+      "id": "F05",
+      "category": "Planting_Record",
+      "fact": "On April 28, 2023, DeKalb DKC62-08RIB corn was planted in the North Ridge field."
+    },
+    {
+      "id": "F06",
+      "category": "Soil_Condition",
+      "fact": "At the time of the April 28, 2023 corn planting, soil moisture in North Ridge at a 4-inch depth was 26%."
+    },
+    {
+      "id": "F07",
+      "category": "Weather_Data",
+      "fact": "The 5-day forecast for the April 28, 2023 planting predicted nighttime lows consistently above 45°F (7.2°C)."
+    },
+    {
+      "id": "F08",
+      "category": "Yield_Outcome",
+      "fact": "The 2023 corn harvest from the North Ridge field yielded an average of 221 bushels per acre."
+    },
+    {
+      "id": "F09",
+      "category": "Planting_Record",
+      "fact": "Asgrow AG34XF1 soybeans were planted in the Creek Bottom field on May 15, 2023."
+    },
+    {
+      "id": "F10",
+      "category": "Soil_Condition",
+      "fact": "The soil temperature at planting depth for the May 15, 2023 soybean planting was 58°F (14.4°C)."
+    },
+    {
+      "id": "F11",
+      "category": "Yield_Outcome",
+      "fact": "The 2023 soybean yield from the Creek Bottom field was 68 bushels per acre."
+    },
+    {
+      "id": "F12",
+      "category": "Planting_Record",
+      "fact": "A late soybean planting occurred on June 5, 2022, in the Hillside 7 field due to a prolonged wet spring."
+    },
+    {
+      "id": "F13",
+      "category": "Yield_Outcome",
+      "fact": "The late-planted soybeans in Hillside 7 from June 5, 2022, yielded only 45 bushels per acre."
+    },
+    {
+      "id": "F14",
+      "category": "Weather_Data",
+      "fact": "A hard frost event on May 10, 2021, required replanting 40 acres of early-emerged corn in the Creek Bottom field."
+    },
+    {
+      "id": "F15",
+      "category": "Planting_Record",
+      "fact": "The corn in Creek Bottom damaged by the 2021 frost had been planted on April 20, 2021."
+    },
+    {
+      "id": "F16",
+      "category": "Yield_Outcome",
+      "fact": "The replanted sections of Creek Bottom in 2021 ultimately yielded 180 bushels per acre, 30 bushels below the field's five-year average."
+    },
+    {
+      "id": "F17",
+      "category": "Equipment_Setting",
+      "fact": "The John Deere 1775NT planter was set to a planting depth of 2.0 inches for the successful 2023 corn planting in North Ridge."
+    },
+    {
+      "id": "F18",
+      "category": "Equipment_Setting",
+      "fact": "For the 2023 soybean planting in Creek Bottom, the planter's pneumatic downforce was set to 150 psi to cut through heavy corn residue."
+    },
+    {
+      "id": "F19",
+      "category": "Soil_Condition",
+      "fact": "The organic matter content of the Creek Bottom field was measured at 4.2% in a soil test from March 2023."
+    },
+    {
+      "id": "F20",
+      "category": "Soil_Condition",
+      "fact": "The pH level of the soil in Hillside 7 was 5.8 in the March 2023 soil test, triggering a variable rate lime application."
+    },
+    {
+      "id": "F21",
+      "category": "Planting_Record",
+      "fact": "Winter wheat (AgriPro SY-Wolf variety) was planted in the Hillside 7 field on October 5, 2022."
+    },
+    {
+      "id": "F22",
+      "category": "Weather_Data",
+      "fact": "Total rainfall in the 14 days following the April 28, 2023 corn planting was 1.2 inches, ensuring even emergence."
+    },
+    {
+      "id": "F23",
+      "category": "Weather_Data",
+      "fact": "In contrast, total rainfall in the 14 days following the April 20, 2021 corn planting was only 0.3 inches, which caused slow and uneven emergence."
+    },
+    {
+      "id": "F24",
+      "category": "Yield_Outcome",
+      "fact": "The highest recorded corn yield for Willow Creek Farms was 225 bushels per acre in the Creek Bottom field during the 2020 season."
+    },
+    {
+      "id": "F25",
+      "category": "Planting_Record",
+      "fact": "The successful 2020 corn crop in Creek Bottom was planted on May 2, 2020."
+    },
+    {
+      "id": "F26",
+      "category": "Soil_Condition",
+      "fact": "Soil temperature at planting for the May 2, 2020 corn crop was 55°F (12.8°C) and the 3-day trend was rising."
+    },
+    {
+      "id": "F27",
+      "category": "Field_Profile",
+      "fact": "A 15-acre section of the North Ridge field, known as the 'West Knoll,' consistently dries out faster than the rest of the field."
+    },
+    {
+      "id": "F28",
+      "category": "Equipment_Setting",
+      "fact": "The seeding rate for the 2023 corn planting in North Ridge was set to 34,500 seeds per acre."
+    },
+    {
+      "id": "F29",
+      "category": "Equipment_Setting",
+      "fact": "A variable seeding rate prescription was used on the West Knoll in 2023, reducing the rate to 28,000 seeds per acre in that zone."
+    },
+    {
+      "id": "F30",
+      "category": "Yield_Outcome",
+      "fact": "The West Knoll section of North Ridge still yielded 198 bushels per acre in 2023, 23 bushels below the field average, due to severe drought stress in late July."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the yield for my 2023 corn crop in the North Ridge field?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Recall 2023 North Ridge Success",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "For that successful 2023 North Ridge corn, when was it planted and what was the soil moisture?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming a successful yield, the user will naturally want to know the specific conditions that led to it, starting with planting date and soil state.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Recall 2023 North Ridge Success",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What did the 5-day forecast say about nighttime lows when the North Ridge corn was planted in 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After discussing the planting date and soil moisture, the weather forecast at that time is the next most critical factor for a planting decision.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Weather Conditions for 2023 NR Planting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How much rain fell in the two weeks after the 2023 North Ridge corn planting?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After checking the forecast (what was expected), the user would want to know the actual outcome (post-planting rainfall) to understand emergence.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Weather Conditions for 2023 NR Planting",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the highest corn yield ever recorded on my farm, and in which field and year did it occur?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Recall Record Corn Yield & Conditions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "For that record 2020 corn crop in Creek Bottom, what was the planting date and soil temperature?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: The immediate follow-up to identifying a record yield is to ask about the specific conditions that produced it.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Recall Record Corn Yield & Conditions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Remind me about the time we had a frost event in Creek Bottom that required replanting corn. What year was that and what was the original planting date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Frost Failure Case",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the final yield for those replanted sections in Creek Bottom in 2021?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After recalling a major problem like a replant, the user's next question is to quantify the financial impact by asking for the final yield.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Frost Failure Case",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What was the yield for the soybeans that were planted late in Hillside 7 back in 2022?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Discussing one type of planting failure (frost/too early) often prompts the user to recall other types of failures, such as planting too late due to weather.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Late Planting Failure Case",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What planter depth and seeding rate were used for the successful 2023 corn in North Ridge?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17",
+        "F28"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: When reviewing the successful conditions of a past planting (N2), it is highly relevant to also recall the specific equipment settings used for that operation.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Equipment Settings for NR",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "For the 2023 season, what was the specific seeding rate and final yield for the West Knoll section of North Ridge?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After discussing the general field-level equipment settings, a grower would logically drill down into the details of a specific, known management zone within that field.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Specific Zone Management in NR",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Recall 2023 North Ridge Success",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Weather Conditions for 2023 NR Planting",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Recall Record Corn Yield & Conditions",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Frost Failure Case",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Late Planting Failure Case",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Equipment Settings for NR",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Specific Zone Management in NR",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "farm_planting_window_memory_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

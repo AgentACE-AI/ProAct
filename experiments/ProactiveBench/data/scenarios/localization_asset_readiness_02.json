@@ -1,0 +1,423 @@
+{
+  "scenario_id": "localization_asset_readiness_02",
+  "domain": "translation_localization_workflow",
+  "description": "A multilingual product release is approaching, and the localization team needs a current picture of which strings, screenshots, legal disclaimers, and voice-over assets are actually ready in each target language. All product names are fictional.",
+  "user_profile": {
+    "persona": "32-year-old release localization coordinator responsible for several language tracks",
+    "context": "Everyone says they are almost done, but no one has a trustworthy cross-asset view of what is truly ready",
+    "communication_style": "Status-focused and practical, prefers a clean readiness breakdown over narrative updates"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Project_Timeline",
+      "fact": "The final release date for the product 'Project Nimbus v3.0' is scheduled for November 15, 2023."
+    },
+    {
+      "id": "F02",
+      "category": "Project_Timeline",
+      "fact": "The code freeze for Project Nimbus v3.0, including all source UI strings, was on October 20, 2023, at 5:00 PM PST."
+    },
+    {
+      "id": "F03",
+      "category": "Project_Timeline",
+      "fact": "The final delivery deadline for all localized assets (strings, media, legal) to the build team is November 8, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "Project_Timeline",
+      "fact": "The multilingual localization Quality Assurance (QA) cycle is scheduled to begin on November 9, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "Asset_Status_Strings",
+      "fact": "The German (de-DE) UI string translation is 100% complete and has passed linguistic review in the LingoHub TMS."
+    },
+    {
+      "id": "F06",
+      "category": "Asset_Status_Strings",
+      "fact": "The Japanese (ja-JP) UI string translation is at 98% completion, with 45 strings remaining in the 'Linguistic Review' stage."
+    },
+    {
+      "id": "F07",
+      "category": "Asset_Status_Strings",
+      "fact": "The French (fr-FR) UI string translation is at 85% completion, blocked by 12 unresolved terminology questions."
+    },
+    {
+      "id": "F08",
+      "category": "Asset_Status_Strings",
+      "fact": "The Spanish (es-ES) UI string translation is 100% complete, but 12 strings are flagged for exceeding character length limits."
+    },
+    {
+      "id": "F09",
+      "category": "Asset_Status_Strings",
+      "fact": "The total source word count for Project Nimbus v3.0 UI strings is 24,580 words."
+    },
+    {
+      "id": "F10",
+      "category": "Asset_Status_Strings",
+      "fact": "The string key 'error.connection.timeout.message' has 3 open clarification requests from the translation team."
+    },
+    {
+      "id": "F11",
+      "category": "Asset_Status_Media",
+      "fact": "All 215 product screenshots for the German (de-DE) market have been captured and are awaiting final approval from the marketing team."
+    },
+    {
+      "id": "F12",
+      "category": "Asset_Status_Media",
+      "fact": "180 out of 215 product screenshots for the Japanese (ja-JP) market have been captured; the remaining 35 are blocked by UI bug #NIM-7812."
+    },
+    {
+      "id": "F13",
+      "category": "Asset_Status_Media",
+      "fact": "The French (fr-FR) voice-over assets for the onboarding tutorial are complete and have been delivered as 'FR_VO_Tutorial_Final.wav'."
+    },
+    {
+      "id": "F14",
+      "category": "Asset_Status_Media",
+      "fact": "The Spanish (es-ES) voice-over assets are blocked; the selected voice actor, Javier Rios, has a scheduling conflict until November 6, 2023."
+    },
+    {
+      "id": "F15",
+      "category": "Asset_Status_Media",
+      "fact": "The budget allocated for voice-over work is $8,500 USD, of which $4,200 has been spent to date."
+    },
+    {
+      "id": "F16",
+      "category": "Asset_Status_Media",
+      "fact": "The master video file requiring voice-over dubbing is located at '//server/assets/Nimbus_v3/video/onboarding_master_v2.mp4'."
+    },
+    {
+      "id": "F17",
+      "category": "Asset_Status_Legal",
+      "fact": "The German (de-DE) legal disclaimer was approved by legal counsel Markus Weber on October 25, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "Asset_Status_Legal",
+      "fact": "The Japanese (ja-JP) legal disclaimer is pending review by the regional legal team in Tokyo; the deadline for feedback is November 3, 2023."
+    },
+    {
+      "id": "F19",
+      "category": "Asset_Status_Legal",
+      "fact": "The French (fr-FR) legal disclaimer requires an update to comply with DGCCRF regulations; a new draft is expected by EOD November 1, 2023."
+    },
+    {
+      "id": "F20",
+      "category": "Asset_Status_Legal",
+      "fact": "The Spanish (es-ES) legal disclaimer was approved on October 28, 2023, and the final text is available in the TMS under key 'legal.disclaimer.es-es'."
+    },
+    {
+      "id": "F21",
+      "category": "Tools_And_Platforms",
+      "fact": "The primary Translation Management System (TMS) is LingoHub, accessible at 'https://stellar-innovations.lingohub.com'."
+    },
+    {
+      "id": "F22",
+      "category": "Tools_And_Platforms",
+      "fact": "Localized UI string files are managed in the Git repository 'git@github.com:StellarInnovations/nimbus-localization.git' in the 'release/v3.0' branch."
+    },
+    {
+      "id": "F23",
+      "category": "Tools_And_Platforms",
+      "fact": "The dedicated Slack channel for all Nimbus v3.0 localization coordination is '#loc-nimbus-v3'."
+    },
+    {
+      "id": "F24",
+      "category": "Tools_And_Platforms",
+      "fact": "All localization-related bugs should be filed in Jira under the project key 'NIMLOC' and linked to the master release epic 'NIM-7500'."
+    },
+    {
+      "id": "F25",
+      "category": "Team_Contacts",
+      "fact": "The release localization coordinator is Alani Kovač, reachable at 'alani.kovac@stellar-innovations.com' or extension 4482."
+    },
+    {
+      "id": "F26",
+      "category": "Team_Contacts",
+      "fact": "The legal counsel responsible for disclaimer approvals is Markus Weber, reachable at 'markus.weber@stellar-innovations.com'."
+    },
+    {
+      "id": "F27",
+      "category": "Team_Contacts",
+      "fact": "The lead reviewer for Japanese (ja-JP) translations is Kenji Tanaka, whose LingoHub username is 'ktanaka'."
+    },
+    {
+      "id": "F28",
+      "category": "Team_Contacts",
+      "fact": "The primary contact for French (fr-FR) terminology questions is Sophie Dubois, the lead French translator, available on Slack as '@sophie.dubois'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the final release date, localized-asset delivery deadline, and QA start date for Project Nimbus v3.0?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Key Project Deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the current status of the German UI strings, product screenshots, and legal disclaimer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F11",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "German Asset Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is the status of the French (fr-FR) UI strings and who do I contact about the terminology blockers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "French Asset Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Are the French voice-over assets ready and where can I find them?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After checking the status of one French asset (strings), the user is likely to ask about other assets for the same language.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "French Asset Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Why is the French legal disclaimer not approved yet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning about blockers with French strings, the user is likely concerned about other French assets, making the status of the legal disclaimer a logical next question.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "French Legal Blocker",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is holding up the Japanese (ja-JP) UI string translation from being 100% complete?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Japanese String Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who is the lead reviewer for the Japanese translations?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After identifying that strings are stuck in review, the user's immediate next step is to find out who the reviewer is to follow up.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Japanese String Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is blocking the capture of the remaining Japanese product screenshots?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: While investigating Japanese string issues, the user would be interested in other blockers for the same language, such as the screenshot problem.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Japanese Media Blocker",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Are there any issues with the Spanish (es-ES) UI strings, even though they are 100% translated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Spanish String Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the status of the Spanish voice-over assets?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After checking on Spanish strings, the user will naturally want to know the status of other key Spanish assets like voice-overs.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Spanish Media Blocker",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "How many Spanish UI strings are flagged for exceeding character length limits?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After confirming that the Spanish UI strings are 100% translated but still have issues, a direct follow-up is how many strings are flagged for those character-length problems.",
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "Spanish String Issue Count",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Which Slack channel is used for coordinating Nimbus v3.0 localization?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G10",
+      "reveal_group_label": "Project Communication",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Key Project Deadlines",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "German Asset Status",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "French Asset Status",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "French Legal Blocker",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Japanese String Status",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Japanese Media Blocker",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Spanish String Issues",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Spanish Media Blocker",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+    "label": "Spanish String Issue Count",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Project Communication",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "localization_asset_readiness_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

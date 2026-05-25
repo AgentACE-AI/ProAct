@@ -1,0 +1,464 @@
+{
+  "scenario_id": "ensemble_guest_artist_handoff_04",
+  "domain": "music_ensemble_management",
+  "description": "A guest artist arrives late in the process, and the ensemble needs one coherent packet of cuts, tempi, program order, rehearsal notes, and practical logistics without sending contradictory versions. All ensembles and artists are fictional.",
+  "user_profile": {
+    "persona": "40-year-old artistic administrator preparing a guest artist handoff under time pressure",
+    "context": "The guest artist can adapt quickly, but only if the ensemble presents one stable working picture instead of fragmented messages",
+    "communication_style": "Editorial and organized, wants the guest packet free of stale or conflicting notes"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "guest_artist_information",
+      "fact": "The guest artist is violinist Ms. Elara Vance."
+    },
+    {
+      "id": "F02",
+      "category": "guest_artist_information",
+      "fact": "Ms. Vance has a severe allergy to peanuts; all backstage and hospitality areas must be peanut-free."
+    },
+    {
+      "id": "F03",
+      "category": "guest_artist_information",
+      "fact": "Ms. Vance's requested dressing room amenities are still mineral water (Evian), green tea with honey, and a bowl of fresh berries."
+    },
+    {
+      "id": "F04",
+      "category": "performance_schedule",
+      "fact": "Ms. Vance's arrival is scheduled for December 14, 2024, at Aethelgard International Airport (AIA)."
+    },
+    {
+      "id": "F05",
+      "category": "performance_schedule",
+      "fact": "The first rehearsal with the Aethelgard Chamber Orchestra is on December 15, 2024, from 10:00 AM to 1:00 PM."
+    },
+    {
+      "id": "F06",
+      "category": "performance_schedule",
+      "fact": "The second rehearsal is on December 16, 2024, from 2:00 PM to 5:00 PM."
+    },
+    {
+      "id": "F07",
+      "category": "performance_schedule",
+      "fact": "The official dress rehearsal is scheduled for December 17, 2024, at 7:30 PM in the Lyra Concert Hall."
+    },
+    {
+      "id": "F08",
+      "category": "performance_schedule",
+      "fact": "The 'Winter Solstice Gala' concert is on December 18, 2024, at 8:00 PM."
+    },
+    {
+      "id": "F09",
+      "category": "program_and_music_details",
+      "fact": "The first half of the program is Clara Holst's 'Symphony No. 5 The North Star'."
+    },
+    {
+      "id": "F10",
+      "category": "program_and_music_details",
+      "fact": "Ms. Vance will perform Anton Valerius's 'Violin Concerto No. 3 in E minor, Op. 77' in the second half of the program."
+    },
+    {
+      "id": "F11",
+      "category": "program_and_music_details",
+      "fact": "Movement 1 (Allegro non troppo) tempo is set to quarter note = 120, as confirmed by Maestro Julian Croft."
+    },
+    {
+      "id": "F12",
+      "category": "program_and_music_details",
+      "fact": "Movement 2 (Adagio cantabile) tempo is set to eighth note = 58."
+    },
+    {
+      "id": "F13",
+      "category": "program_and_music_details",
+      "fact": "Movement 3 (Rondo: Vivace) tempo is set to quarter note = 144."
+    },
+    {
+      "id": "F14",
+      "category": "program_and_music_details",
+      "fact": "A cut will be made in the first movement from measure 188 through measure 212."
+    },
+    {
+      "id": "F15",
+      "category": "program_and_music_details",
+      "fact": "The second repeat in the third movement, starting at measure 310, will be omitted."
+    },
+    {
+      "id": "F16",
+      "category": "program_and_music_details",
+      "fact": "Ms. Vance has confirmed she will be performing the Joachim cadenza for the first movement."
+    },
+    {
+      "id": "F17",
+      "category": "program_and_music_details",
+      "fact": "All orchestra parts are from the Bärenreiter Urtext edition, catalog number BA 9021."
+    },
+    {
+      "id": "F18",
+      "category": "rehearsal_notes",
+      "fact": "Maestro Croft has requested that the first 30 minutes of the first rehearsal be dedicated to the transition from the cadenza to the coda in the first movement."
+    },
+    {
+      "id": "F19",
+      "category": "rehearsal_notes",
+      "fact": "The tutti section in the Rondo (m. 250-280) will be rehearsed at a slower practice tempo of quarter note = 120 before being played at full speed."
+    },
+    {
+      "id": "F20",
+      "category": "logistics_and_travel",
+      "fact": "Airport pickup is arranged with Apex Executive Cars; the driver will meet Ms. Vance at Terminal 3 baggage claim."
+    },
+    {
+      "id": "F21",
+      "category": "logistics_and_travel",
+      "fact": "The pickup driver's name is Robert Paulson, and his contact number is (555) 987-6543."
+    },
+    {
+      "id": "F22",
+      "category": "logistics_and_travel",
+      "fact": "Accommodations are booked at The Seraphina Hotel, 45 Crystal Avenue, Aethelgard City."
+    },
+    {
+      "id": "F23",
+      "category": "logistics_and_travel",
+      "fact": "The hotel reservation confirmation number is 8809-1245-AEC under the name 'Elara Vance/Aethelgard Orchestra'."
+    },
+    {
+      "id": "F24",
+      "category": "logistics_and_travel",
+      "fact": "A car service will transport Ms. Vance from the hotel to the concert hall 45 minutes prior to each scheduled call time."
+    },
+    {
+      "id": "F25",
+      "category": "venue_information",
+      "fact": "The performance venue is The Lyra Concert Hall, located at 1500 Orchestra Plaza."
+    },
+    {
+      "id": "F26",
+      "category": "venue_information",
+      "fact": "Ms. Vance is assigned the Soloist Suite (Dressing Room A), located immediately stage left."
+    },
+    {
+      "id": "F27",
+      "category": "venue_information",
+      "fact": "The keypad code for the backstage artist entrance is 2024*."
+    },
+    {
+      "id": "F28",
+      "category": "venue_information",
+      "fact": "The secure backstage Wi-Fi network is 'Lyra_Artist_WIFI' and the password is 'WinterGala24!'."
+    },
+    {
+      "id": "F29",
+      "category": "key_personnel_and_contacts",
+      "fact": "The primary administrative contact is Artistic Administrator Anya Sharma, reachable at anya.sharma@aethelgard.org or (555) 234-5678."
+    },
+    {
+      "id": "F30",
+      "category": "key_personnel_and_contacts",
+      "fact": "The conductor for the performance is Maestro Julian Croft."
+    },
+    {
+      "id": "F31",
+      "category": "key_personnel_and_contacts",
+      "fact": "The Concertmaster, Leo Chen, will meet Ms. Vance on stage 10 minutes before the first rehearsal begins."
+    },
+    {
+      "id": "F32",
+      "category": "key_personnel_and_contacts",
+      "fact": "The on-site stage manager is David Chen, and he can be reached for any immediate backstage needs at (555) 890-1234."
+    },
+    {
+      "id": "F33",
+      "category": "administrative_and_financial",
+      "fact": "A per diem of $125 will be provided for each of the 5 days (total $625)."
+    },
+    {
+      "id": "F34",
+      "category": "administrative_and_financial",
+      "fact": "The per diem will be delivered as cash in a sealed envelope upon hotel check-in."
+    },
+    {
+      "id": "F35",
+      "category": "administrative_and_financial",
+      "fact": "The final performance fee balance of $15,000 will be initiated via wire transfer on December 19, 2024, as per contract clause 4.B."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the arrival airport, date, and pickup arrangements for Ms. Vance, including the driver's name and contact number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Arrival Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Where is Ms. Vance staying and what is the reservation confirmation number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming arrival details, the next logical step is to confirm where the artist will be staying.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Accommodation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is the full schedule of rehearsals and the concert, including dates, times, and the performance venue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Schedule and Transport",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How will Ms. Vance be transported between the hotel and the venue for her scheduled events?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Once the schedule of events at the venue is established, clarifying the local transportation to and from those events is an immediate follow-up.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Schedule and Transport",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the program order for the concert, and which piece will Ms. Vance perform?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Music and Performance Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are the confirmed tempi for all three movements of the Valerius concerto?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After identifying the concerto, the user will need the specific musical parameters, starting with tempi.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Music and Performance Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the specific cuts and the chosen cadenza for the concerto?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: Continuing the drill-down on musical specifics, any deviations from the standard score (cuts, cadenza choice) are the next critical details after tempi.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Music and Performance Details",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N8",
+      "description": "What two specific rehearsal focus points are mentioned in Maestro Croft's notes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Once all the musical details (tempi, cuts, cadenza) are finalized, the user's focus shifts from 'what' will be played to 'how' it will be rehearsed.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Rehearsal Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What are Ms. Vance's specific hospitality requirements, including allergies and dressing room amenities?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Hospitality and Personal Needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who are the primary on-site contacts for Ms. Vance, specifically the stage manager and concertmaster?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F32"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After establishing the schedule of events, the user will need to know the key personnel the artist will interact with at those events.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key On-Site Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the backstage artist entrance code and the guest Wi-Fi information?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After identifying the on-site contacts, the next logical step is to provide practical access information for the venue where those contacts are located.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Venue Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What are the arrangements for the artist's per diem and final performance fee payment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F33",
+        "F34",
+        "F35"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Financial Arrangements",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Arrival Logistics",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Accommodation",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Schedule and Transport",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Music and Performance Details",
+      "member_need_ids": [
+        "N5",
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Rehearsal Plan",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Hospitality and Personal Needs",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Key On-Site Contacts",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G8",
+      "label": "Venue Access",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Financial Arrangements",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "ensemble_guest_artist_handoff_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

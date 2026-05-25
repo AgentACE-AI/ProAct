@@ -1,0 +1,384 @@
+{
+  "scenario_id": "study_abroad_finance_03",
+  "domain": "study_abroad",
+  "description": "A student in Germany discovers that their scholarship payout is delayed, but their university requires immediate tuition payment to maintain visa status. They must resolve the conflict between the funding body's timeline and the university's strict deadline.",
+  "user_profile": {
+    "persona": "21-year-old student, living on a tight budget",
+    "context": "Received a warning email from the university registrar",
+    "communication_style": "Urgent and stressed, needs creative financial solutions"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "finance",
+      "fact": "Lena Schmidt's winter semester tuition at the University of Westhaven is €8,500."
+    },
+    {
+      "id": "F02",
+      "category": "finance",
+      "fact": "The original tuition payment deadline was October 15, 2023."
+    },
+    {
+      "id": "F03",
+      "category": "university_policy",
+      "fact": "The University of Westhaven Registrar sent a final warning email on October 18, 2023, setting a final payment deadline of October 25, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "finance",
+      "fact": "Lena Schmidt was awarded the 'Global Leadership Scholarship' from the Global Scholars Foundation (GSF) for €10,000."
+    },
+    {
+      "id": "F05",
+      "category": "finance",
+      "fact": "The GSF scholarship payout, originally scheduled for October 1, 2023, is delayed until November 30, 2023."
+    },
+    {
+      "id": "F06",
+      "category": "communication",
+      "fact": "An email from Maria Flores at payments@globalscholars.org on October 16, 2023, cited 'unforeseen international banking transfer delays' as the reason for the payout issue."
+    },
+    {
+      "id": "F07",
+      "category": "visa",
+      "fact": "Lena Schmidt holds a German National Visa for Study Purposes (Type D), which requires proof of continuous enrollment."
+    },
+    {
+      "id": "F08",
+      "category": "visa",
+      "fact": "Failure to pay tuition by October 25, 2023, will trigger an automatic notification from the university to the Westhaven Foreigners' Office (Ausländerbehörde)."
+    },
+    {
+      "id": "F09",
+      "category": "university_policy",
+      "fact": "The University of Westhaven's International Student Office (ISO) is located in the Hansa Building, Room 305."
+    },
+    {
+      "id": "F10",
+      "category": "communication",
+      "fact": "The primary contact at the ISO for financial difficulties is Herr Klaus Müller, reachable at k.mueller@uni-westhaven.de."
+    },
+    {
+      "id": "F11",
+      "category": "finance",
+      "fact": "Lena Schmidt's current balance in her Sparkasse Westhaven checking account (DE89 3704 0044 0532 0130 00) is €350."
+    },
+    {
+      "id": "F12",
+      "category": "life",
+      "fact": "Lena's monthly rent for her apartment at Friedrich-Ebert-Straße 12 is €450, due on the first of each month."
+    },
+    {
+      "id": "F13",
+      "category": "potential_solutions",
+      "fact": "The University of Westhaven offers a short-term emergency loan (Überbrückungsdarlehen) of up to €2,000 through the Studierendenwerk office."
+    },
+    {
+      "id": "F14",
+      "category": "documents",
+      "fact": "To apply for the emergency loan, a student needs their student ID, passport, and a bank statement from the last 3 months."
+    },
+    {
+      "id": "F15",
+      "category": "potential_solutions",
+      "fact": "Herr Müller suggested Lena could formally request a tuition deferment by submitting the 'Antrag auf Stundung der Studiengebühren' form."
+    },
+    {
+      "id": "F16",
+      "category": "documents",
+      "fact": "The deferment application requires official proof of the scholarship delay, such as the email from Maria Flores at GSF."
+    },
+    {
+      "id": "F17",
+      "category": "university_policy",
+      "fact": "The University of Westhaven's payment portal, accessible at pay.uni-westhaven.de, shows an outstanding balance of €8,500 under student ID 743019."
+    },
+    {
+      "id": "F18",
+      "category": "finance",
+      "fact": "A late payment fee of €75 will be added to the tuition if not paid by the October 25 deadline."
+    },
+    {
+      "id": "F19",
+      "category": "communication",
+      "fact": "Lena Schmidt's student email address at the university is l.schmidt2@stu.uni-westhaven.de."
+    },
+    {
+      "id": "F20",
+      "category": "academics",
+      "fact": "Lena is currently registered for 4 courses: Advanced Microeconomics (ECON401), German Language C1 (GER310), European Union Law (LAW250), and Data Analytics with R (STAT302)."
+    },
+    {
+      "id": "F21",
+      "category": "university_policy",
+      "fact": "De-registration due to non-payment results in immediate loss of access to the university's online learning platform, 'WissenPortal'."
+    },
+    {
+      "id": "F22",
+      "category": "documents",
+      "fact": "The Global Scholars Foundation provided an official award letter (Ref: GSF-AL-2023-4815) on July 10, 2023, which Lena can use as supporting documentation."
+    },
+    {
+      "id": "F23",
+      "category": "potential_solutions",
+      "fact": "The university's Financial Aid office offers walk-in appointments for urgent cases on Tuesdays and Thursdays from 10:00 to 12:00 in the Kepler Building, ground floor."
+    },
+    {
+      "id": "F24",
+      "category": "visa",
+      "fact": "The Westhaven Foreigners' Office requires a valid Certificate of Enrollment ('Immatrikulationsbescheinigung') to process any visa extension."
+    },
+    {
+      "id": "F25",
+      "category": "documents",
+      "fact": "The university will not issue the winter semester's Certificate of Enrollment until the tuition fee is paid in full or a formal payment plan is approved."
+    },
+    {
+      "id": "F26",
+      "category": "communication",
+      "fact": "The direct phone number for the University of Westhaven's tuition payment office (Kasse) is +49 561 9537-255."
+    },
+    {
+      "id": "F27",
+      "category": "potential_solutions",
+      "fact": "The student union's legal aid service ('Rechtsberatung') offers free advice on matters concerning university regulations and visa status."
+    },
+    {
+      "id": "F28",
+      "category": "finance",
+      "fact": "The GSF scholarship funds are intended to cover tuition (€8,500) and provide a living stipend (€1,500)."
+    },
+    {
+      "id": "F29",
+      "category": "university_policy",
+      "fact": "A successful tuition deferment request would move Lena's payment deadline to December 5, 2023, providing a buffer after the scholarship payout."
+    },
+    {
+      "id": "F30",
+      "category": "communication",
+      "fact": "Lena has an appointment scheduled with Herr Klaus Müller at the ISO for October 20, 2023, at 11:00 AM to discuss her options."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the final deadline to pay my tuition and what is the immediate consequence if I fail to pay by then?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Payment Deadline and Stakes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How much is the tuition fee and what is my student ID for the payment portal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F17"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning about the urgent deadline, the user will naturally want to confirm the exact amount and the ID needed to access the payment system.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Payment Deadline and Stakes",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the new payout date for my GSF scholarship and what reason was given for the delay?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Scholarship Delay Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What specific documentation for my visa is at risk if my enrollment status is not continuous?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning that non-payment triggers a notification to the Foreigners' Office, the user will want to understand the specific visa-related document that is jeopardized.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Visa Document Risk",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Is it possible to request a tuition deferment, and what would the new payment deadline be if it's approved?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F29"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Knowing the scholarship payout is delayed until November 30th makes asking for a payment deferment until after that date the most logical solution to explore.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Deferment Option",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What scholarship-related documents can I submit to support a tuition deferment request?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F22"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the user knows a deferment is possible, the immediate next question is which scholarship-related supporting documents they can submit with the application.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Deferment Option",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Does the university offer a short-term emergency loan and what is the maximum amount available?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: While investigating the primary solution (deferment), a stressed user will likely want to know about alternative or backup financial options like an emergency loan.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Emergency Loan Option",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What documents are required to apply for the university's emergency loan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning about the existence of an emergency loan, the next logical step is to ask about the application requirements.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Emergency Loan Option",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Who is the main contact for financial difficulties in the International Student Office and where is the office located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "University Support Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "If I am de-registered for non-payment, what happens to my access to the university's online learning platform?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding the severe visa consequences of de-registration, the user may then consider the more immediate academic consequences, such as losing access to course materials.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Academic Access Risk",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Payment Deadline and Stakes",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Scholarship Delay Details",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Visa Document Risk",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Deferment Option",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Emergency Loan Option",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "University Support Contact",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Academic Access Risk",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "study_abroad_finance_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

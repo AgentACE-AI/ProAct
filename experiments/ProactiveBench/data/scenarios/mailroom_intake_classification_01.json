@@ -1,0 +1,410 @@
+{
+  "scenario_id": "mailroom_intake_classification_01",
+  "domain": "postal_mailroom_operations",
+  "description": "A mailroom clerk needs to classify incoming envelopes and parcels by urgency, signature requirement, internal destination, and special handling so downstream distribution starts from a consistent intake state. All organizations are fictional.",
+  "user_profile": {
+    "persona": "28-year-old mailroom lead in a busy office complex",
+    "context": "The incoming volume is manageable, but too much sorting still depends on one experienced person's memory",
+    "communication_style": "Fast and structured, prefers clear intake categories over ad hoc judgment"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Sorting_Protocols",
+      "fact": "All incoming items with a red border envelope or a red 'RUSH' sticker are classified as 'Urgent'."
+    },
+    {
+      "id": "F02",
+      "category": "Sorting_Protocols",
+      "fact": "Items requiring a signature are marked with a yellow 'SIGNATURE REQUIRED' sticker and must be scanned into the 'Signature Log' in the MailFlow Sorter software."
+    },
+    {
+      "id": "F03",
+      "category": "Internal_Destinations",
+      "fact": "Mail for the Quantum Innovations Lab is coded 'QI-L15' and is delivered to the secure drop-box at Room 15-2B."
+    },
+    {
+      "id": "F04",
+      "category": "Internal_Destinations",
+      "fact": "Mail for the Stratos Legal department is coded 'SL-F12' and sorted into the gray bin."
+    },
+    {
+      "id": "F05",
+      "category": "Internal_Destinations",
+      "fact": "Mail for Nova Marketing is coded 'NM-F08' and sorted into the green bin."
+    },
+    {
+      "id": "F06",
+      "category": "Internal_Destinations",
+      "fact": "Mail for Celestial Finance is coded 'CF-F10' and sorted into the blue bin."
+    },
+    {
+      "id": "F07",
+      "category": "Internal_Destinations",
+      "fact": "Mail for Human Resources is coded 'HR-F02' and sorted into the orange bin."
+    },
+    {
+      "id": "F08",
+      "category": "Special_Handling",
+      "fact": "Any item marked 'CONFIDENTIAL' for Stratos Legal must be placed in the locked red pouch (Bag #SL-07) for direct delivery."
+    },
+    {
+      "id": "F09",
+      "category": "Special_Handling",
+      "fact": "Parcels weighing over 20 kg require a 'Team Lift' sticker and must be logged in the 'Heavy Items' physical ledger at workstation M-01."
+    },
+    {
+      "id": "F10",
+      "category": "Special_Handling",
+      "fact": "Perishable items must be immediately placed in the mailroom refrigerator (Unit #M-R4) and the recipient notified via the '#mail-alerts' Slack channel within 15 minutes of arrival."
+    },
+    {
+      "id": "F11",
+      "category": "Personnel_Roles",
+      "fact": "Leo Valdez is the Mailroom Lead, works at workstation M-01, and is responsible for the daily operations report."
+    },
+    {
+      "id": "F12",
+      "category": "Personnel_Roles",
+      "fact": "Anya Sharma is the Senior Mail Clerk, works at workstation M-02, and is the designated expert for resolving unaddressed or misaddressed mail."
+    },
+    {
+      "id": "F13",
+      "category": "Personnel_Roles",
+      "fact": "The direct phone extension for the mailroom front desk is 5512."
+    },
+    {
+      "id": "F14",
+      "category": "Personnel_Roles",
+      "fact": "Questions about sorting protocols should be emailed to Anya Sharma at asharma@stellara.corp."
+    },
+    {
+      "id": "F15",
+      "category": "Tools_and_Software",
+      "fact": "The primary software for logging and tracking all incoming parcels is 'MailFlow Sorter v3.1'."
+    },
+    {
+      "id": "F16",
+      "category": "Tools_and_Software",
+      "fact": "The login URL for the MailFlow Sorter is https://stellara.internal/mailflow."
+    },
+    {
+      "id": "F17",
+      "category": "Tools_and_Software",
+      "fact": "The shared login for the MailFlow Sorter intake station is username 'mailclerk' with password 'StellaraMail#2024'."
+    },
+    {
+      "id": "F18",
+      "category": "Tools_and_Software",
+      "fact": "The handheld scanners used for package check-in are Zebra TC57 models."
+    },
+    {
+      "id": "F19",
+      "category": "Tools_and_Software",
+      "fact": "The postage meter is a Pitney Bowes SendPro C-Series, model #PBC-4598, located at workstation M-03."
+    },
+    {
+      "id": "F20",
+      "category": "External_Couriers",
+      "fact": "SwiftWing Couriers makes a daily delivery of express envelopes between 9:00 AM and 9:30 AM at the mailroom counter."
+    },
+    {
+      "id": "F21",
+      "category": "External_Couriers",
+      "fact": "TerraGlide Logistics handles all palletized freight and delivers exclusively to Loading Dock B between 1:00 PM and 3:00 PM."
+    },
+    {
+      "id": "F22",
+      "category": "External_Couriers",
+      "fact": "The primary USPS mail carrier for the Orion Tower building is named David, and he typically arrives around 10:45 AM."
+    },
+    {
+      "id": "F23",
+      "category": "Security_Procedures",
+      "fact": "Any suspicious, unexpected, or damaged package must be reported immediately to Orion Tower Security at extension 9111."
+    },
+    {
+      "id": "F24",
+      "category": "Security_Procedures",
+      "fact": "The mailroom is located in Room G-112 and the door must be kept locked when the room is unoccupied."
+    },
+    {
+      "id": "F25",
+      "category": "Security_Procedures",
+      "fact": "Access to the mailroom is restricted via keycard to personnel with 'Mail Services' clearance; Leo Valdez's access level is 'Lead'."
+    },
+    {
+      "id": "F26",
+      "category": "Special_Handling",
+      "fact": "All items addressed to Dr. Elara Vance in Quantum Innovations are to be placed in secure locker #QIL-117, not the general department bin."
+    },
+    {
+      "id": "F27",
+      "category": "Sorting_Protocols",
+      "fact": "Inter-office mail being sent between departments must be placed in the reusable blue canvas envelopes before being put in the outbound tray."
+    },
+    {
+      "id": "F28",
+      "category": "Sorting_Protocols",
+      "fact": "All incoming magazines and catalogs are classified as 'Standard - Periodical' and are sorted into a dedicated bin for a single daily delivery run at 3:00 PM."
+    },
+    {
+      "id": "F29",
+      "category": "Special_Handling",
+      "fact": "Any item found to be leaking, emitting a strange odor, or making an unusual noise must not be touched; immediately call the Building Safety Officer, Frank Miller, at extension 8500."
+    },
+    {
+      "id": "F30",
+      "category": "Internal_Destinations",
+      "fact": "The mail cart for the executive floor (Floor 16) is silver, has ID C-EXEC-01, and must be secured with a key when left unattended."
+    },
+    {
+      "id": "F31",
+      "category": "External_Couriers",
+      "fact": "The cut-off time for same-day outbound shipping with SwiftWing Couriers is 4:30 PM; packages must be in the outbound bin by 4:15 PM."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "How do I identify and classify mail that is considered 'Urgent'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Triage Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the procedure for items that require a signature?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning the rule for the highest priority items (Urgent), the user is likely to ask about the next common special handling category (Signature Required).",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Triage Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the login URL and what are the shared credentials for the MailFlow Sorter software?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: The procedure for signature-required items explicitly mentions using the 'MailFlow Sorter' software, making a question about how to access that software a direct and predictable next step.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Software Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the standard sorting destinations for the main departments: Stratos Legal, Nova Marketing, Celestial Finance, and Human Resources?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Department Sorting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Is there a special handling procedure for confidential mail addressed to Stratos Legal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After learning the general sorting rule for Stratos Legal, the user is likely to ask about known exceptions or special handling requirements for that same department.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Department Sorting",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+  "description": "Is there an exception to the standard Quantum Innovations Lab routing for items addressed to Dr. Elara Vance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F26"
+      ],
+      "predictable_after": "N4",
+  "prediction_reason": "CROSS-GROUP: After the user learns the general department sorting rules, a direct follow-up is whether a named recipient in that department has an exception to the normal routing rule.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "VIP and Exception Sorting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "How should I handle parcels that weigh over 20 kg?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Special Physical Handling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the correct procedure for handling incoming perishable items?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning the protocol for one type of physically distinct item (heavy parcels), the user may have follow-up questions about other items requiring special physical handling, like perishables.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Special Physical Handling",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the safety protocol if I encounter a suspicious, damaged, or leaking package?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F29"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Discussing the proper physical handling of difficult items (like heavy parcels) naturally leads to critical safety concerns about how to handle potentially dangerous or compromised packages.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Safety Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is the designated person to contact with questions about sorting protocols?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the basic sorting protocols for different departments, a natural next question is to identify the official point of contact for any future ambiguities or complex cases.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Protocol Questions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the cut-off time for same-day outbound shipping with SwiftWing Couriers?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Outbound Shipping",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Triage Rules",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Software Access",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Department Sorting",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "VIP and Exception Sorting",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Special Physical Handling",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Safety Procedures",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Protocol Questions",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G8",
+      "label": "Outbound Shipping",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "mailroom_intake_classification_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

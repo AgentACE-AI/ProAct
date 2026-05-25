@@ -1,0 +1,470 @@
+{
+  "scenario_id": "case_intake_summary_01",
+  "domain": "nonprofit_case_management",
+  "description": "A caseworker needs to turn a long first conversation into a concise intake summary with immediate action items, existing supports, unresolved questions, and realistic next-contact priorities. All organizations and client names are fictional.",
+  "user_profile": {
+    "persona": "30-year-old caseworker balancing empathy with heavy administrative load",
+    "context": "The first conversation contained important details, but too much was said to rely on memory alone",
+    "communication_style": "Service-oriented and structured, wants a concise record that still preserves nuance"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Client Profile",
+      "fact": "The client's full name is Maria Flores."
+    },
+    {
+      "id": "F02",
+      "category": "Client Profile",
+      "fact": "Maria Flores's date of birth is July 15, 1988."
+    },
+    {
+      "id": "F03",
+      "category": "Client Profile",
+      "fact": "Maria Flores's assigned case ID is MF-2024-0521."
+    },
+    {
+      "id": "F04",
+      "category": "Client Profile",
+      "fact": "The initial intake interview was conducted by caseworker Alex Chen on May 21, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "Client Profile",
+      "fact": "Maria Flores was referred by the Eastwood Community Food Bank."
+    },
+    {
+      "id": "F06",
+      "category": "Client Profile",
+      "fact": "Maria Flores's primary contact phone number is 555-0182."
+    },
+    {
+      "id": "F07",
+      "category": "Housing Situation",
+      "fact": "Maria Flores is currently residing at the Harmony House Shelter, located at 450 River Street."
+    },
+    {
+      "id": "F08",
+      "category": "Housing Situation",
+      "fact": "She has been staying at the Harmony House Shelter since May 9, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "Housing Situation",
+      "fact": "Maria Flores was evicted from her previous apartment at 123 Oak Lane, Apt 2B, on May 8, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "Housing Situation",
+      "fact": "The reason for eviction was failure to pay rent for March and April 2024."
+    },
+    {
+      "id": "F11",
+      "category": "Employment & Financials",
+      "fact": "Maria Flores is currently unemployed."
+    },
+    {
+      "id": "F12",
+      "category": "Employment & Financials",
+      "fact": "Her last place of employment was as a cashier at Greenleaf Market."
+    },
+    {
+      "id": "F13",
+      "category": "Employment & Financials",
+      "fact": "Her last day of work at Greenleaf Market was February 28, 2024, due to the store's closure."
+    },
+    {
+      "id": "F14",
+      "category": "Employment & Financials",
+      "fact": "Maria Flores applied for SNAP benefits online via the state portal on May 20, 2024."
+    },
+    {
+      "id": "F15",
+      "category": "Employment & Financials",
+      "fact": "She has an outstanding utility bill of $215.45 with Apex Power & Light."
+    },
+    {
+      "id": "F16",
+      "category": "Health & Wellness",
+      "fact": "Maria Flores has a standing diagnosis of Type 2 Diabetes."
+    },
+    {
+      "id": "F17",
+      "category": "Health & Wellness",
+      "fact": "Her current medication is Metformin 500mg, taken twice daily with meals."
+    },
+    {
+      "id": "F18",
+      "category": "Health & Wellness",
+      "fact": "Her last prescription refill was from Wellspring Pharmacy on April 30, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "Health & Wellness",
+      "fact": "Maria reports experiencing heightened anxiety and has a previous diagnosis of Generalized Anxiety Disorder (GAD)."
+    },
+    {
+      "id": "F20",
+      "category": "Health & Wellness",
+      "fact": "She has a scheduled appointment with Dr. Evans at the Riverbend Medical Clinic for June 5, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "Support Network",
+      "fact": "Maria's primary emergency contact is her sister, Sofia Reyes."
+    },
+    {
+      "id": "F22",
+      "category": "Support Network",
+      "fact": "Sofia Reyes's phone number is 555-0199."
+    },
+    {
+      "id": "F23",
+      "category": "Support Network",
+      "fact": "Maria occasionally attends a support group at the Cypress Hills Community Center on Thursday evenings."
+    },
+    {
+      "id": "F24",
+      "category": "Action Items",
+      "fact": "Caseworker Alex Chen must contact the Maplewood Housing Authority by May 23, 2024, to inquire about emergency housing voucher eligibility."
+    },
+    {
+      "id": "F25",
+      "category": "Action Items",
+      "fact": "Caseworker Alex Chen will send a referral to New Horizons Mental Health Services for Maria Flores by EOD May 22, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "Action Items",
+      "fact": "A follow-up meeting with Maria Flores is scheduled for May 28, 2024, at 10:00 AM."
+    },
+    {
+      "id": "F27",
+      "category": "Unresolved Questions",
+      "fact": "It is currently unknown if Maria Flores's previous income level qualifies her for the Section 8 housing voucher waitlist."
+    },
+    {
+      "id": "F28",
+      "category": "Unresolved Questions",
+      "fact": "A signed release of information form is needed to obtain medical records from her previous physician, Dr. Ames."
+    },
+    {
+      "id": "F29",
+      "category": "Next Contact Priorities",
+      "fact": "The priority for the May 28th meeting is to review the 'Pathways to Work' program application."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the client's full name and assigned case ID?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Client Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How was the client referred to us and what is her primary phone number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the client, confirming contact and referral source is the next logical step in basic intake.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Client Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where is the client currently living and since what date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Housing Situation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the reason for her eviction from her previous apartment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Understanding that the client is in a shelter naturally leads to questioning the circumstances of her prior housing loss.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Housing Situation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is her employment status and where did she last work?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Cross-group: Learning the eviction was due to failure to pay rent directly prompts an inquiry into her employment and income situation.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Financial Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Has she applied for any financial assistance like SNAP benefits?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After establishing unemployment, the next logical question is what steps have been taken to secure alternative income or benefits.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Financial Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the client's documented physical and mental health diagnoses?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Health Overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What medication is she prescribed for her Type 2 Diabetes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: A diagnosis of Type 2 Diabetes immediately prompts a follow-up question about current treatment and medication.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Health Overview",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Who is listed as her emergency contact?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Support Network",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Does she participate in any community support groups?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Cross-group: Learning about the client's anxiety diagnosis (GAD) can prompt the caseworker to inquire about existing community or peer supports.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Support Network",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What are my immediate action items for housing and mental health referrals, and what are their deadlines?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Caseworker Action Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is needed to obtain the client's previous medical records?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Cross-group: After summarizing the client's health conditions, a caseworker would proactively identify blockers to comprehensive care, such as missing medical records.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Unresolved Medical Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is still unknown about Maria Flores's eligibility for the Section 8 housing voucher waitlist?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Cross-group: After noting the action item to contact the housing authority, the caseworker would specify the key question that needs to be answered by that call.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Unresolved Housing Question",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "When is the next follow-up meeting scheduled with the client?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Cross-group: Defining the immediate action items naturally leads to confirming the date and time of the next client touchpoint to review progress.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Next Client Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What is the main priority for the next client meeting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "Intra-group: Once the date of the next meeting is established, the immediate follow-up is to define its primary goal or agenda item.",
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Next Client Contact",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Client Identification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Housing Situation",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Financial Status",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Health Overview",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Support Network",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Caseworker Action Plan",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Unresolved Medical Information",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Unresolved Housing Question",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Next Client Contact",
+      "member_need_ids": [
+        "N14",
+        "N15"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "case_intake_summary_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

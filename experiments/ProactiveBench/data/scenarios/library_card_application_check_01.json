@@ -1,0 +1,382 @@
+{
+  "scenario_id": "library_card_application_check_01",
+  "domain": "public_library_services",
+  "description": "Library staff need to verify whether new card applications include the right identity and address evidence under several patron categories such as resident, student, or temporary user. All institution names are fictional.",
+  "user_profile": {
+    "persona": "29-year-old circulation supervisor training newer front-desk staff",
+    "context": "Application edge cases keep slowing the desk because staff remember the common cases but not the special categories",
+    "communication_style": "Clear and policy-minded, wants eligibility checks turned into usable front-desk logic"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "patron_categories",
+      "fact": "A 'Resident' patron is defined as any individual who can prove a permanent residential address within the official city limits of Oak Valley."
+    },
+    {
+      "id": "F02",
+      "category": "patron_categories",
+      "fact": "A 'Student' patron is an individual currently enrolled at either Maplewood University or Silver Creek Community College, regardless of their permanent address."
+    },
+    {
+      "id": "F03",
+      "category": "patron_categories",
+      "fact": "A 'Temporary User' card is available for individuals residing at the Harbor Light Shelter, located at 455 Riverfront Drive."
+    },
+    {
+      "id": "F04",
+      "category": "patron_categories",
+      "fact": "A 'Corporate' patron card is available to employees of Innovatec Solutions Inc. as part of the library's corporate partnership program."
+    },
+    {
+      "id": "F05",
+      "category": "id_requirements",
+      "fact": "Acceptable primary photo ID must be an unexpired, government-issued document, such as a state driver's license, state identification card, or military ID."
+    },
+    {
+      "id": "F06",
+      "category": "id_requirements",
+      "fact": "A valid, unexpired passport from any country is an acceptable form of primary photo ID for all applicant types."
+    },
+    {
+      "id": "F07",
+      "category": "id_requirements",
+      "fact": "For applicants aged 13-17, a current photo ID from Northwood High School is acceptable if they do not have a government-issued ID."
+    },
+    {
+      "id": "F08",
+      "category": "id_requirements",
+      "fact": "An applicant whose government-issued ID expired less than 30 days ago may be used for photo verification, but requires a separate document for address verification."
+    },
+    {
+      "id": "F09",
+      "category": "address_verification",
+      "fact": "Acceptable proof of address includes a utility bill (gas, electric, water) or a bank statement dated within the last 60 days."
+    },
+    {
+      "id": "F10",
+      "category": "address_verification",
+      "fact": "A signed, current residential lease agreement is a valid form of address verification for the primary leaseholder."
+    },
+    {
+      "id": "F11",
+      "category": "address_verification",
+      "fact": "Digital bills or statements shown on a smartphone are acceptable, provided the document date, name, and address are clearly visible."
+    },
+    {
+      "id": "F12",
+      "category": "address_verification",
+      "fact": "Mail addressed to a Post Office (P.O.) Box is not accepted as proof of a residential address."
+    },
+    {
+      "id": "F13",
+      "category": "special_cases",
+      "fact": "For patrons without a fixed address, a signed and dated letter on official letterhead from the Harbor Light Shelter serves as proof of temporary address."
+    },
+    {
+      "id": "F14",
+      "category": "special_cases",
+      "fact": "Maplewood University students living in dorms can use their housing assignment letter from the university as proof of address."
+    },
+    {
+      "id": "F15",
+      "category": "special_cases",
+      "fact": "An applicant under 18 must have a parent or legal guardian present, who must show their own valid ID and proof of address to co-sign the application."
+    },
+    {
+      "id": "F16",
+      "category": "system_procedures",
+      "fact": "All new patron registrations must be processed in the LibriSphere ILS via the staff portal at https://ovpl.librisphere.net/staff."
+    },
+    {
+      "id": "F17",
+      "category": "system_procedures",
+      "fact": "When creating a new patron, select the correct patron profile from the dropdown: RES (Resident), STU (Student), or TEMP (Temporary User)."
+    },
+    {
+      "id": "F18",
+      "category": "system_procedures",
+      "fact": "The document scanner at front desk workstation C-3 must be used to upload a copy of the ID and address verification into the patron's file."
+    },
+    {
+      "id": "F19",
+      "category": "system_procedures",
+      "fact": "A new library card costs $1.00 to issue; this fee is waived for applicants under 18 and for Temporary Users from the Harbor Light Shelter."
+    },
+    {
+      "id": "F20",
+      "category": "card_validity",
+      "fact": "Standard Resident library cards are valid for 3 years from the date of issue."
+    },
+    {
+      "id": "F21",
+      "category": "card_validity",
+      "fact": "Student library cards expire annually on August 31st and must be renewed with a current student ID and class schedule."
+    },
+    {
+      "id": "F22",
+      "category": "card_validity",
+      "fact": "Temporary User cards are valid for 90 days and require a new letter from the shelter for renewal."
+    },
+    {
+      "id": "F23",
+      "category": "escalation_policy",
+      "fact": "If an applicant cannot provide any of the listed documents, refer them to the on-duty Circulation Supervisor for assistance."
+    },
+    {
+      "id": "F24",
+      "category": "escalation_policy",
+      "fact": "The Head of Circulation, Janine Davies, must approve any exceptions to the ID policy; she can be reached at extension 415."
+    },
+    {
+      "id": "F25",
+      "category": "address_verification",
+      "fact": "A property tax bill for a residence within Oak Valley city limits is an acceptable proof of address for the property owner."
+    },
+    {
+      "id": "F26",
+      "category": "id_requirements",
+      "fact": "Silver Creek Community College student IDs do not have expiration dates, so they must be presented with a current class schedule printout."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the main categories of library patrons that can be registered in the system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Patron Categories",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "For a standard Resident patron, what documents are acceptable for photo ID?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying the main patron types, the user will need to know the requirements for the most common one, 'Resident'.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Resident Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What can a Resident patron use as proof of their address in Oak Valley?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10",
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "INTRA-GROUP: After checking the photo ID, the next logical step in verifying a Resident is to check their proof of address.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Resident Verification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is the policy if an applicant's government-issued ID expired less than 30 days ago?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the standard ID and address rules, a common edge case to clarify is what to do with a recently expired ID.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "ID and Address Exceptions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What additional document must a Silver Creek Community College student provide with their student ID, and what can a Maplewood University dorm resident use as proof of address?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Student Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "How does a Maplewood University student living in a dorm prove their address?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "INTRA-GROUP: Once the general student requirements are established, a specific follow-up is how to handle students who live in university housing.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Student Verification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the process for issuing a card to someone residing at the Harbor Light Shelter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Temporary User Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the library card validity periods for Resident, Student, and Temporary User cards?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After handling a special category like a Temporary User, it's natural to want to know the different expiration policies for all card types.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Card Policies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Is there a fee for a new library card, and are there any exceptions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "INTRA-GROUP: After learning about card validity, another key policy detail is the cost of issuing the card.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Card Policies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the procedure for registering an applicant under 18 years old?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After clarifying one common exception (expired ID), the user may think of other special cases, such as handling minor applicants.",
+      "turn_order": 10,
+      "reveal_group": "G3",
+      "reveal_group_label": "ID and Address Exceptions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Who should I refer an applicant to if they cannot provide any of the listed documents?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: Discussing a complex case like a minor applicant naturally leads to the question of what to do when any application cannot be resolved at the front desk.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Escalation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Patron Categories",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Resident Verification",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "ID and Address Exceptions",
+      "member_need_ids": [
+        "N4",
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Student Verification",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Temporary User Verification",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Card Policies",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Escalation",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "library_card_application_check_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

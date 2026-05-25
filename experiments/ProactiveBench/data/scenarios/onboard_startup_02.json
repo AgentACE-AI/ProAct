@@ -1,0 +1,484 @@
+{
+  "scenario_id": "onboard_startup_02",
+  "domain": "employee_onboarding",
+  "description": "A new employee joins a 30-person AI startup as a product manager. The company moves fast with informal processes, and much information must be actively sought out. All company names and addresses are fictional.",
+  "user_profile": {
+    "persona": "28-year-old with 3 years of PM experience at a large tech company, switching to a startup",
+    "context": "First day at the startup, unfamiliar with startup work culture",
+    "communication_style": "Good at asking questions, prefers structured information"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "office",
+      "fact": "Your assigned desk is workstation #17 in the open-plan area, next to the west-facing window."
+    },
+    {
+      "id": "F02",
+      "category": "office",
+      "fact": "The main office address is: CogniCore AI, 123 Innovation Drive, Suite 400, Neo-Valley, CA 94043."
+    },
+    {
+      "id": "F03",
+      "category": "office",
+      "fact": "Access to the office building after 6:00 PM and on weekends requires your keycard, which is provided by David Chen."
+    },
+    {
+      "id": "F04",
+      "category": "office",
+      "fact": "The kitchen is stocked with free coffee from 'Venture Beans Roastery', tea, and snacks; the espresso machine code is 1-3-3-7."
+    },
+    {
+      "id": "F05",
+      "category": "office",
+      "fact": "Conference rooms are named 'Turing' (8-person) and 'Lovelace' (4-person) and can be booked via Google Calendar."
+    },
+    {
+      "id": "F06",
+      "category": "IT",
+      "fact": "Your company-issued laptop is a 14-inch MacBook Pro M3 with 16GB of RAM."
+    },
+    {
+      "id": "F07",
+      "category": "IT",
+      "fact": "The primary office Wi-Fi network is 'CogniCore_Secure'; the password will be sent to your personal email by Samira Jones."
+    },
+    {
+      "id": "F08",
+      "category": "IT",
+      "fact": "All employees use 1Password for password management; an invitation to join the company vault has been sent to your new email."
+    },
+    {
+      "id": "F09",
+      "category": "IT",
+      "fact": "To access the company's internal servers, you must connect to the 'CogniCore VPN' using the Cisco AnyConnect client."
+    },
+    {
+      "id": "F10",
+      "category": "IT",
+      "fact": "For IT support, create a ticket in Jira under the 'ITHELP' project or message Samira Jones directly on Slack for emergencies."
+    },
+    {
+      "id": "F11",
+      "category": "IT",
+      "fact": "Your company email address is yourname@cognicore.ai, and it is set up through Google Workspace."
+    },
+    {
+      "id": "F12",
+      "category": "IT",
+      "fact": "Our source code is hosted on GitHub under the organization 'CogniCore-AI-Dev'."
+    },
+    {
+      "id": "F13",
+      "category": "team",
+      "fact": "Your direct manager is Lena Petrova, the Head of Product."
+    },
+    {
+      "id": "F14",
+      "category": "team",
+      "fact": "The daily Product & Engineering team stand-up meeting is at 9:15 AM PST via Google Meet."
+    },
+    {
+      "id": "F15",
+      "category": "team",
+      "fact": "Your recurring weekly 1-on-1 meeting with Lena Petrova is scheduled for Tuesdays at 2:30 PM PST."
+    },
+    {
+      "id": "F16",
+      "category": "team",
+      "fact": "The primary Slack channel for the product team is #product-dev."
+    },
+    {
+      "id": "F17",
+      "category": "team",
+      "fact": "The company-wide all-hands meeting, led by CEO Dr. Aris Thorne, is every Friday at 4:00 PM PST."
+    },
+    {
+      "id": "F18",
+      "category": "team",
+      "fact": "The lead engineer for your initial project, 'Project Chimera', is Kenji Tanaka."
+    },
+    {
+      "id": "F19",
+      "category": "team",
+      "fact": "Product development work is tracked on a Jira board located at cognicore.atlassian.net/jira/projects/CHIM."
+    },
+    {
+      "id": "F20",
+      "category": "HR",
+      "fact": "Payday is on the 15th and the last day of each month, processed via direct deposit through Gusto."
+    },
+    {
+      "id": "F21",
+      "category": "HR",
+      "fact": "You have 30 days from your start date to enroll in the company's health insurance plan with 'Aetna Choice POS II'."
+    },
+    {
+      "id": "F22",
+      "category": "HR",
+      "fact": "The company offers an unlimited Paid Time Off (PTO) policy, which should be coordinated with your manager Lena Petrova at least 2 weeks in advance for planned vacations."
+    },
+    {
+      "id": "F23",
+      "category": "HR",
+      "fact": "The company's 401(k) plan is managed by Guideline, and the company matches 50% of your contributions up to 4% of your salary."
+    },
+    {
+      "id": "F24",
+      "category": "HR",
+      "fact": "All work-related expenses under $250 can be submitted for reimbursement through the Expensify app; larger expenses require pre-approval from Lena Petrova."
+    },
+    {
+      "id": "F25",
+      "category": "HR",
+      "fact": "Your official start date is recorded as today, June 10, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "HR",
+      "fact": "The primary contact for any HR-related questions is Ben Carter, our People Operations Lead."
+    },
+    {
+      "id": "F27",
+      "category": "culture",
+      "fact": "The company dress code is business casual; most employees wear jeans and a company t-shirt or polo."
+    },
+    {
+      "id": "F28",
+      "category": "culture",
+      "fact": "Every Thursday at 4:30 PM, the company hosts a 'Tech & Treats' session where one team member presents on a topic, followed by snacks."
+    },
+    {
+      "id": "F29",
+      "category": "culture",
+      "fact": "The company provides a $75 monthly wellness stipend that can be used for gym memberships, fitness apps, or meditation classes."
+    },
+    {
+      "id": "F30",
+      "category": "culture",
+      "fact": "Decisions are typically made quickly; it is common to message someone directly on Slack for an answer rather than waiting for a formal meeting."
+    },
+    {
+      "id": "F31",
+      "category": "logistics",
+      "fact": "The company provides free, unassigned parking in the lot behind the 123 Innovation Drive building."
+    },
+    {
+      "id": "F32",
+      "category": "logistics",
+      "fact": "The nearest Caltrain station is 'San Antonio', which is a 15-minute walk from the office."
+    },
+    {
+      "id": "F33",
+      "category": "logistics",
+      "fact": "Secure bicycle storage is available in the building's ground-floor garage; request access from the building manager at the front desk."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What model, screen size, chip, and RAM does my company-issued laptop have?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial IT Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the office Wi-Fi network name and how will I receive the password?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After receiving a laptop, the immediate next step is getting it online.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial IT Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is my company email and what service is it on?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: Once connected to the internet, accessing email is a primary task for a new employee.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial IT Setup",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "Where is my assigned desk?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Physical Office Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Who is my direct manager?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Manager & 1-on-1",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "When is my recurring 1-on-1 meeting with my manager?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After identifying their manager, the user's next logical question is about their primary meeting with them.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Manager & 1-on-1",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What recurring meetings are currently confirmed for the Product & Engineering team and company-wide all-hands?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F17"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Discussing the 1-on-1 meeting naturally leads to questions about other important team and company-wide meetings.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Team & Project Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Who is the lead engineer for Project Chimera?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Team & Project Context",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What tools and platforms are used for password management and source code hosting at the company?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After setting up email, the user will need access to other core systems, which requires understanding password and code repository management.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "System Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How do I get IT support?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning about the various IT systems (password manager, GitHub), asking how to get help with them is a natural proactive follow-up.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "IT Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What are the payday dates and the deadline for health insurance enrollment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Core HR",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the company's 401(k) plan and matching policy?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Intra-group: After discussing compensation and core benefits like health insurance, inquiring about retirement benefits is a common next step.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Core HR",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is the Paid Time Off (PTO) policy?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After covering fundamental HR topics like pay and benefits, questions about other policies like time off are a logical next area of interest.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Company Policies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the office dress code?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Company Policies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N15",
+      "description": "How do I get the keycard needed for after-hours and weekend office access?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After finding their assigned desk and getting oriented in the office, the user may reasonably ask how to get the keycard needed for late or weekend access.",
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Office Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial IT Setup",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Physical Office Location",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Manager & 1-on-1",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Team & Project Context",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "System Access",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "IT Support",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Core HR",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Company Policies",
+      "member_need_ids": [
+        "N13",
+        "N14"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Office Logistics",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "onboard_startup_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

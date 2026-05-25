@@ -1,0 +1,436 @@
+{
+  "scenario_id": "museum_accession_backlog_normalization_01",
+  "domain": "museum_collection_management",
+  "description": "A collection manager needs to clean up incomplete accession records so object identity, provenance details, storage location, and accession numbering are consistent across the catalog. All institutions and objects are fictional.",
+  "user_profile": {
+    "persona": "37-year-old museum registrar inheriting a backlog of partially standardized records",
+    "context": "The collection is usable day to day, but record inconsistency is creating growing long-term risk",
+    "communication_style": "Meticulous and records-oriented, wants normalization rules applied consistently"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "Dr. Aris Thorne is the Registrar at the Veridian Gallery of Natural History, hired on May 15, 2023."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "The Head Collections Manager, who supervises Dr. Thorne, is Elara Vance."
+    },
+    {
+      "id": "F03",
+      "category": "Systems & Software",
+      "fact": "The Veridian Gallery uses a custom-built collection management system (CMS) named 'Catalogix Pro'."
+    },
+    {
+      "id": "F04",
+      "category": "Systems & Software",
+      "fact": "The login URL for the production instance of Catalogix Pro is https://veridian.catalogix.local/login."
+    },
+    {
+      "id": "F05",
+      "category": "Accessioning Procedures (Old)",
+      "fact": "Prior to 2018, accession numbers were formatted inconsistently, with examples including '98.12.a', '1998-12-b', and 'A98.12'."
+    },
+    {
+      "id": "F06",
+      "category": "Accessioning Procedures (New Standard)",
+      "fact": "The new standard for accession numbers, effective January 1, 2018, is YYYY.##.## (e.g., 2024.01.01 for the first object lot of the year)."
+    },
+    {
+      "id": "F07",
+      "category": "Object Records (Inconsistent)",
+      "fact": "Object record '03.157', a Pterodactylus fossil cast, is missing its 'Date Acquired' and 'Acquisition Method' fields."
+    },
+    {
+      "id": "F08",
+      "category": "Object Records (Inconsistent)",
+      "fact": "The object '1999-42-c', a collection of Cambrian trilobite fossils, has its dimensions recorded in inches (12\" x 8\") instead of the standard centimeters."
+    },
+    {
+      "id": "F09",
+      "category": "Provenance Records (Inconsistent)",
+      "fact": "The provenance for object 2005.18.01 (a polished ammonite) lists the donor simply as 'J. Smith', with no contact information or deed of gift on file."
+    },
+    {
+      "id": "F10",
+      "category": "Provenance Records (Inconsistent)",
+      "fact": "Accession 'A95.04' (a set of Miocene shark teeth) has a conflicting 'Previous Collection' field, listing both 'Blackwood Institute' and 'Dr. Alistair Finch Collection'."
+    },
+    {
+      "id": "F11",
+      "category": "Storage Locations",
+      "fact": "The Paleontology Compact Storage is located in room B-112 in the museum's basement."
+    },
+    {
+      "id": "F12",
+      "category": "Storage Locations",
+      "fact": "Storage location data in Catalogix Pro uses mixed formats, including 'Shelf 3A, Cab 12', 'B112-C12-S3A', and 'Basement, Cabinet 12, Shelf 3-A'."
+    },
+    {
+      "id": "F13",
+      "category": "Accessioning Procedures (New Standard)",
+      "fact": "The standardized storage location format is BUILDING-ROOM-ROW-CABINET-SHELF (e.g., MAIN-B112-R04-C12-S03)."
+    },
+    {
+      "id": "F14",
+      "category": "Project Management",
+      "fact": "The data cleanup initiative is officially titled 'Project Nightingale'."
+    },
+    {
+      "id": "F15",
+      "category": "Project Management",
+      "fact": "The primary goal of Project Nightingale is to standardize all 12,542 accession records created before January 1, 2018."
+    },
+    {
+      "id": "F16",
+      "category": "Project Management",
+      "fact": "The deadline for completing Project Nightingale is December 31, 2025."
+    },
+    {
+      "id": "F17",
+      "category": "Systems & Software",
+      "fact": "Project Nightingale tasks and progress are tracked using a Jira board at https://jira.veridian.local/projects/NIGHT."
+    },
+    {
+      "id": "F18",
+      "category": "Contact Information",
+      "fact": "For technical issues with Catalogix Pro, the designated IT support contact is Lena Petrova at l.petrova@veridiangallery.org, extension 4401."
+    },
+    {
+      "id": "F19",
+      "category": "Personnel",
+      "fact": "A collections intern, Samuel Chen, has been assigned to Project Nightingale for 20 hours per week, starting September 1, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "Object Records (Inconsistent)",
+      "fact": "The record for '2011.07.b' (a fossilized fern leaf) has three low-resolution (72 dpi) JPG images; the standard requires 300 dpi TIFF files."
+    },
+    {
+      "id": "F21",
+      "category": "Accessioning Procedures (New Standard)",
+      "fact": "The 'Condition Report Date' field is now mandatory for all new accessions and must be populated for all 12,542 records in Project Nightingale."
+    },
+    {
+      "id": "F22",
+      "category": "Systems & Software",
+      "fact": "The current version of Catalogix Pro being used is v3.4.1, which lacks a bulk-editing feature for provenance fields."
+    },
+    {
+      "id": "F23",
+      "category": "Provenance Records (Inconsistent)",
+      "fact": "Accession 2001.22.05 (a Cretaceous amber specimen) is marked as a 'Gift' but the scanned Deed of Gift document (PDF) is not linked in the record."
+    },
+    {
+      "id": "F24",
+      "category": "Storage Locations",
+      "fact": "Cabinet 14 in room B-112 contains 32 objects whose physical location labels do not match their digital records in Catalogix Pro."
+    },
+    {
+      "id": "F25",
+      "category": "Personnel",
+      "fact": "Dr. Aris Thorne's workstation for this project is R-204 in the Collections Management office suite."
+    },
+    {
+      "id": "F26",
+      "category": "Project Management",
+      "fact": "A key milestone for Project Nightingale is to complete the standardization of all 845 records from the 'Blackwood Institute' donation by October 31, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "Object Records (Inconsistent)",
+      "fact": "Object descriptions for accessions prior to 2010 often use subjective terms like 'good condition' instead of the required Getty AAT terminology."
+    },
+    {
+      "id": "F28",
+      "category": "Contact Information",
+      "fact": "For questions regarding the 'Dr. Alistair Finch Collection', the point of contact is his estate's executor, Miriam Finch, at m.finch.estate@emailprovider.net."
+    },
+    {
+      "id": "F29",
+      "category": "Systems & Software",
+      "fact": "The Catalogix Pro database server, 'VGNH-DB01', is backed up nightly at 2:00 AM, with backups retained for 30 days."
+    },
+    {
+      "id": "F30",
+      "category": "Object Records (Inconsistent)",
+      "fact": "The insurance valuation for object '99.01.a' (a complete mosasaur skull) is listed as '$50,000' and was last updated on June 5, 2002."
+    },
+    {
+      "id": "F31",
+      "category": "Project Management",
+      "fact": "A progress report for Project Nightingale is due to Elara Vance by 5:00 PM on the last Friday of every month."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the primary goal and total number of records to be standardized for Project Nightingale?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Scope & Deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the final deadline for Project Nightingale, and when are progress reports due to Elara Vance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F31"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After understanding the project's goal, the user will naturally want to know the timeline and reporting requirements.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Scope & Deadlines",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are some examples of the old accession number formats and what is the new standard I need to apply?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Accession Number Standards",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the inconsistent storage location formats currently in the system, and what is the correct standardized format?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Storage Location Standards",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which specific cabinet contains objects where the physical location labels don't match the digital records?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning about the general problem of inconsistent storage location data, the user would want to know about specific, known discrepancies that require physical verification.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Specific Location Discrepancies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Can you show me an example of a record with conflicting provenance information?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Provenance Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who is the point of contact for the Dr. Alistair Finch Collection mentioned in the conflicting record?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After identifying a record with a specific provenance conflict involving the Finch Collection, the user would need to know who to contact to resolve it.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Provenance Issues",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the version of Catalogix Pro we are using and does it have a bulk-editing feature for provenance fields?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After identifying a provenance issue and a contact person, the user's next thought would be about the technical feasibility and efficiency of fixing such issues at scale.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "System Capabilities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Who is the intern assigned to help with Project Nightingale, when do they start, and how many hours will they work?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Personnel Resources",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the first major milestone for the project, concerning the Blackwood Institute donation, and what is its deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning about the availability of an intern, a manager's next step is to plan their work, starting with the first major project milestone.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Milestones",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is the designated IT support contact for technical issues with Catalogix Pro?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Discovering a significant system limitation (no bulk editing) would prompt the user to find out who the technical support contact is for any related issues or feature requests.",
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "Technical Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Is there a new data field that is now mandatory for all records being updated in Project Nightingale?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning about the new standard for a core identifier like the accession number, the user would likely wonder if there are other new data standardization rules, such as new mandatory fields.",
+      "turn_order": 12,
+      "reveal_group": "G10",
+      "reveal_group_label": "Data Field Requirements",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Scope & Deadlines",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Accession Number Standards",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Storage Location Standards",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Specific Location Discrepancies",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Provenance Issues",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "System Capabilities",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Personnel Resources",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Project Milestones",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Technical Support",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G10",
+      "label": "Data Field Requirements",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "museum_accession_backlog_normalization_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,451 @@
+{
+  "scenario_id": "insure_employer_switch_03",
+  "domain": "insurance_navigation",
+  "description": "A worker changes jobs in the middle of an ongoing medical treatment and needs to keep track of what was authorized under the old insurance, what must be reapproved under the new plan, and which providers remain usable.",
+  "user_profile": {
+    "persona": "37-year-old operations specialist in the middle of a job transition",
+    "context": "The career move is positive, but the insurance change threatens continuity of care",
+    "communication_style": "Cautious and organized, wants to avoid treatment interruptions"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Patient_Profile",
+      "fact": "The patient's name is Alex Chen, born May 12, 1986."
+    },
+    {
+      "id": "F02",
+      "category": "Employment_Transition",
+      "fact": "Alex Chen's last day of employment at Stellar Solutions Inc. was October 20, 2023."
+    },
+    {
+      "id": "F03",
+      "category": "Employment_Transition",
+      "fact": "Alex Chen's first day of employment at Nexus Innovations LLC is October 23, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "Old_Insurance_Plan",
+      "fact": "Alex's health insurance coverage with Veridian Health, policy #VH7782-AC, terminated on October 31, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "New_Insurance_Plan",
+      "fact": "Alex's new health insurance with Aethelgard Mutual, policy #AM901-B4-C3N, becomes effective on November 1, 2023."
+    },
+    {
+      "id": "F06",
+      "category": "New_Insurance_Plan",
+      "fact": "The member services phone number for Aethelgard Mutual is 1-888-555-2345."
+    },
+    {
+      "id": "F07",
+      "category": "Medical_Condition_and_History",
+      "fact": "Alex Chen was diagnosed with a complete tear of the anterior cruciate ligament (ACL) in his left knee on August 15, 2023."
+    },
+    {
+      "id": "F08",
+      "category": "Medical_Condition_and_History",
+      "fact": "Dr. Evelyn Reed performed an arthroscopic ACL reconstruction on Alex Chen's left knee on September 5, 2023, at Pinnacle Orthopedic Hospital."
+    },
+    {
+      "id": "F09",
+      "category": "Authorized_Treatments_Old_Plan",
+      "fact": "Veridian Health issued pre-authorization #VHAUTH-98221 for a total of 24 physical therapy sessions for post-operative recovery."
+    },
+    {
+      "id": "F10",
+      "category": "Authorized_Treatments_Old_Plan",
+      "fact": "As of October 20, 2023, Alex Chen has completed 12 of the 24 authorized physical therapy sessions."
+    },
+    {
+      "id": "F11",
+      "category": "Authorized_Treatments_Old_Plan",
+      "fact": "The authorization #VHAUTH-98221 from Veridian Health is valid for services rendered through December 31, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "Provider_Network_Status",
+      "fact": "Alex's orthopedic surgeon, Dr. Evelyn Reed, is an in-network provider for both the old Veridian Health plan and the new Aethelgard Mutual plan."
+    },
+    {
+      "id": "F13",
+      "category": "Provider_Network_Status",
+      "fact": "Dr. Evelyn Reed's National Provider Identifier (NPI) is 1234567890."
+    },
+    {
+      "id": "F14",
+      "category": "Provider_Network_Status",
+      "fact": "Summit Physical Therapy, located at 4500 Summit View Drive, was an in-network provider under the Veridian Health plan."
+    },
+    {
+      "id": "F15",
+      "category": "Provider_Network_Status",
+      "fact": "A search on the Aethelgard Mutual provider portal on October 18, 2023, confirmed that Summit Physical Therapy is an out-of-network provider."
+    },
+    {
+      "id": "F16",
+      "category": "Provider_Network_Status",
+      "fact": "Alex's primary physical therapist at Summit Physical Therapy is Mark O'Connell, DPT."
+    },
+    {
+      "id": "F17",
+      "category": "New_Insurance_Plan",
+      "fact": "The Aethelgard Mutual PPO Gold plan has a $3,000 annual individual deductible for in-network services."
+    },
+    {
+      "id": "F18",
+      "category": "New_Insurance_Plan",
+      "fact": "The Aethelgard Mutual PPO Gold plan has a $7,500 annual individual deductible for out-of-network services."
+    },
+    {
+      "id": "F19",
+      "category": "Transition_Action_Items",
+      "fact": "Alex needs to request a 'Continuity of Care' application from Aethelgard Mutual before November 1, 2023, to potentially cover Summit Physical Therapy temporarily."
+    },
+    {
+      "id": "F20",
+      "category": "Transition_Action_Items",
+      "fact": "Dr. Reed's office must submit a new pre-authorization request to Aethelgard Mutual for the remaining 12 physical therapy sessions."
+    },
+    {
+      "id": "F21",
+      "category": "Transition_Action_Items",
+      "fact": "The CPT code for the required physical therapy sessions is 97110 (Therapeutic exercise)."
+    },
+    {
+      "id": "F22",
+      "category": "Authorized_Treatments_Old_Plan",
+      "fact": "Alex's prescription for Meloxicam 15mg (30-day supply) was last filled on October 10, 2023, under the Veridian Health pharmacy plan."
+    },
+    {
+      "id": "F23",
+      "category": "New_Insurance_Plan",
+      "fact": "The preferred in-network pharmacy network for Aethelgard Mutual is Apex Pharmacy Services."
+    },
+    {
+      "id": "F24",
+      "category": "Transition_Action_Items",
+      "fact": "Alex must call Aethelgard Mutual to be assigned a case manager for his ongoing treatment; the direct line for care management is 1-888-555-2350."
+    },
+    {
+      "id": "F25",
+      "category": "Medical_Condition_and_History",
+      "fact": "Alex's next scheduled post-operative follow-up with Dr. Evelyn Reed is on November 15, 2023, at 2:00 PM."
+    },
+    {
+      "id": "F26",
+      "category": "Transition_Action_Items",
+      "fact": "Alex must transfer his Meloxicam prescription from his old pharmacy, 'Wellspring Drugs,' to an Apex Pharmacy Services location before his next refill is due."
+    },
+    {
+      "id": "F27",
+      "category": "New_Insurance_Plan",
+      "fact": "Under the Aethelgard Mutual plan, the copay for an in-network specialist visit like Dr. Reed is $50."
+    },
+    {
+      "id": "F28",
+      "category": "Provider_Network_Status",
+      "fact": "An in-network alternative to Summit Physical Therapy, 'Precision Rehab Center,' is located at 123 Progress Avenue, 3 miles from Alex's home."
+    },
+    {
+      "id": "F29",
+      "category": "Transition_Action_Items",
+      "fact": "Aethelgard Mutual requires the treating provider's office, not the member, to submit the new physical therapy pre-authorization request before any of the remaining sessions are billed under the new plan."
+    },
+    {
+      "id": "F30",
+      "category": "Transition_Action_Items",
+      "fact": "For the new physical therapy pre-authorization, Dr. Reed's office must submit the request through Aethelgard Mutual's provider authorization channel and include the request for the remaining 12 sessions under CPT 97110."
+    },
+    {
+      "id": "F31",
+      "category": "Transition_Action_Items",
+      "fact": "The pre-authorization packet for Aethelgard Mutual should include the post-operative diagnosis, recent clinical notes, and physical therapy progress documentation supporting the remaining sessions."
+    },
+    {
+      "id": "F32",
+      "category": "Transition_Action_Items",
+      "fact": "To move the Meloxicam prescription into the new network, Alex must choose an Apex Pharmacy Services location and have that pharmacy request the transfer from Wellspring Drugs before the next refill is due."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "When does my old health insurance coverage end and my new coverage begin?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Coverage Transition Dates",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is my new policy number with Aethelgard Mutual and their member services phone number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the transition dates, the user will need the specific details of the new plan to take any action.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Coverage Transition Dates",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Is my orthopedic surgeon, Dr. Evelyn Reed, an in-network provider under my new Aethelgard Mutual plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Provider Network Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Is my current physical therapy provider, Summit Physical Therapy, in-network with Aethelgard Mutual?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After checking on the surgeon, the user's next logical step is to verify the network status of their other key provider for ongoing treatment.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Provider Network Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What specific action must I take to potentially get temporary coverage for Summit Physical Therapy?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discovering that the current physical therapist is out-of-network immediately prompts the question of how to maintain continuity of care, leading to this specific action item.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Continuity of Care Action",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Is there an in-network physical therapy alternative to Summit Physical Therapy?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: As an alternative to pursuing continuity of care, a practical user would want to know if a straightforward in-network option exists.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "In-Network Provider Alternative",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "How many total physical therapy sessions were authorized by my old plan, and how many have I completed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Learning the PT provider is out-of-network makes it urgent to quantify the remaining treatment to understand the scope of the problem that needs solving.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Treatment Authorization",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What steps and documentation are required to get my remaining 12 physical therapy sessions pre-authorized by Aethelgard Mutual?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21",
+        "F29",
+        "F30",
+        "F31"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After establishing how many sessions are left, the user's next step is to understand the administrative process required to get them approved under the new plan.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Treatment Authorization",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the CPT code for my required physical therapy sessions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "When discussing pre-authorization, an organized user might ask for the specific billing code that will be used in the request.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Treatment Authorization",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N10",
+      "description": "What do I need to do to transfer my Meloxicam prescription from Wellspring Drugs to an in-network Apex Pharmacy Services location?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F23",
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Prescription Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What will my copay be for my upcoming in-network follow-up visit with Dr. Reed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12",
+        "F25",
+        "F27"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once the user confirms their specialist is in-network, a natural follow-up is to inquire about the out-of-pocket cost for the next scheduled appointment.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Plan Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What are the annual deductibles for in-network and out-of-network services under my Aethelgard plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After asking about a specific copay, the user is likely to broaden their inquiry to understand the plan's overall cost structure, specifically the major deductibles.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Plan Costs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Is there a direct phone number to contact Aethelgard Mutual for care management to get a case manager assigned?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: While discussing the complexities of pre-authorization, a user would appreciate being proactively informed about a dedicated resource like a case manager who can help navigate the process.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Care Management Support",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Coverage Transition Dates",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Provider Network Status",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Continuity of Care Action",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "In-Network Provider Alternative",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Treatment Authorization",
+      "member_need_ids": [
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Prescription Management",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Plan Costs",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "Care Management Support",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "insure_employer_switch_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

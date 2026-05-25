@@ -1,0 +1,472 @@
+{
+  "scenario_id": "farm_livestock_treatment_withdrawal_02",
+  "domain": "farm_operations",
+  "description": "A farm manager must track animal treatments and product withdrawal periods so milk, eggs, or meat remain compliant while several animals are on different treatment timelines.",
+  "user_profile": {
+    "persona": "43-year-old livestock manager responsible for both animal care and product handling",
+    "context": "The treatments are manageable individually, but hard to hold together accurately once several animals overlap",
+    "communication_style": "Compliance-minded and exact, wants timelines and restrictions tied to each animal or group"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "Elias Vance is the Livestock Manager at Oakhaven Pastures, responsible for all animal treatment records."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "The consulting veterinarian for Oakhaven Pastures is Dr. Aris Thorne, reachable at 555-010-8821."
+    },
+    {
+      "id": "F03",
+      "category": "Farm Infrastructure",
+      "fact": "All regulated veterinary medicines are stored in Medication Locker M2 in the main barn, which is kept at 15°C."
+    },
+    {
+      "id": "F04",
+      "category": "Farm Infrastructure",
+      "fact": "Animals undergoing treatment with active withdrawal periods are housed in Quarantine Pen #3."
+    },
+    {
+      "id": "F05",
+      "category": "Record Keeping",
+      "fact": "All treatment and withdrawal data is logged in the cloud-based software 'AgriTrack Pro'."
+    },
+    {
+      "id": "F06",
+      "category": "Record Keeping",
+      "fact": "The login URL for Oakhaven Pastures' AgriTrack Pro instance is https://oakhaven.agritrack.pro."
+    },
+    {
+      "id": "F07",
+      "category": "Record Keeping",
+      "fact": "Elias Vance's username for AgriTrack Pro is 'evance43'."
+    },
+    {
+      "id": "F08",
+      "category": "Animal Information",
+      "fact": "Holstein cow with ear tag 'OH-305' was born on April 12, 2020."
+    },
+    {
+      "id": "F09",
+      "category": "Animal Information",
+      "fact": "Jersey cow with ear tag 'OH-218' is currently lactating and produces an average of 22 liters of milk per day."
+    },
+    {
+      "id": "F10",
+      "category": "Animal Information",
+      "fact": "The laying hens in Coop B2 are a flock of 250 Rhode Island Reds."
+    },
+    {
+      "id": "F11",
+      "category": "Animal Information",
+      "fact": "A Duroc boar, identified by ear notch '14-2', is housed in the breeding pen."
+    },
+    {
+      "id": "F12",
+      "category": "Treatment Protocols",
+      "fact": "Cow OH-305 began a 5-day course of 'Mastiguard Forte' on October 15, 2023, for clinical mastitis."
+    },
+    {
+      "id": "F13",
+      "category": "Treatment Protocols",
+      "fact": "The prescribed dosage for Mastiguard Forte for cow OH-305 is 30 mL administered intramuscularly every 24 hours."
+    },
+    {
+      "id": "F14",
+      "category": "Treatment Protocols",
+      "fact": "The entire flock in Coop B2 was treated for coccidiosis with 'Coccid-X' via their water supply from October 10 to October 14, 2023."
+    },
+    {
+      "id": "F15",
+      "category": "Treatment Protocols",
+      "fact": "Cow OH-218 received a single subcutaneous injection of 10 mL of 'RespiraClear' on October 18, 2023, for a respiratory infection."
+    },
+    {
+      "id": "F16",
+      "category": "Treatment Protocols",
+      "fact": "The final dose of Mastiguard Forte for cow OH-305 was administered at 08:00 on October 19, 2023."
+    },
+    {
+      "id": "F17",
+      "category": "Withdrawal Periods",
+      "fact": "The milk withdrawal period for Mastiguard Forte is 72 hours after the final dose."
+    },
+    {
+      "id": "F18",
+      "category": "Withdrawal Periods",
+      "fact": "The meat withdrawal period for Mastiguard Forte is 21 days after the final dose."
+    },
+    {
+      "id": "F19",
+      "category": "Withdrawal Periods",
+      "fact": "The egg withdrawal period for Coccid-X is 10 days from the last day of treatment."
+    },
+    {
+      "id": "F20",
+      "category": "Withdrawal Periods",
+      "fact": "The meat withdrawal period for RespiraClear is 28 days after injection."
+    },
+    {
+      "id": "F21",
+      "category": "Withdrawal Periods",
+      "fact": "The milk withdrawal period for RespiraClear is 96 hours after injection."
+    },
+    {
+      "id": "F22",
+      "category": "Compliance",
+      "fact": "Milk from cow OH-305 must be discarded until after 08:00 on October 22, 2023."
+    },
+    {
+      "id": "F23",
+      "category": "Compliance",
+      "fact": "Eggs from Coop B2 cannot be sold for human consumption until October 25, 2023."
+    },
+    {
+      "id": "F24",
+      "category": "Compliance",
+      "fact": "Milk from cow OH-218 is under a withdrawal hold until 11:00 on October 22, 2023."
+    },
+    {
+      "id": "F25",
+      "category": "Compliance",
+      "fact": "Oakhaven Pastures is subject to a mandatory annual audit by the 'Valley Dairy Cooperative' for antibiotic residue testing."
+    },
+    {
+      "id": "F26",
+      "category": "Compliance",
+      "fact": "The next scheduled Valley Dairy Cooperative audit is on December 5, 2023."
+    },
+    {
+      "id": "F27",
+      "category": "Record Keeping",
+      "fact": "A red tag is physically placed on the stall for any animal with an active milk withdrawal period."
+    },
+    {
+      "id": "F28",
+      "category": "Record Keeping",
+      "fact": "In AgriTrack Pro, the 'Daily Withdrawal Report' (Report ID #DWR-001) must be printed and posted in the milking parlor each morning."
+    },
+    {
+      "id": "F29",
+      "category": "Record Keeping",
+      "fact": "Lot numbers for all administered medications must be entered into the 'Treatment Log' page in AgriTrack Pro."
+    },
+    {
+      "id": "F30",
+      "category": "Treatment Protocols",
+      "fact": "The lot number for the Mastiguard Forte used on cow OH-305 is MG-F-883401B."
+    },
+    {
+      "id": "F31",
+      "category": "Treatment Protocols",
+      "fact": "The lot number for the RespiraClear used on cow OH-218 is RC-229155C."
+    },
+    {
+      "id": "F32",
+      "category": "Animal Information",
+      "fact": "Cow OH-305 is currently housed in Quarantine Pen #3 due to her active treatment."
+    },
+    {
+      "id": "F33",
+      "category": "Compliance",
+      "fact": "The farm's standard operating procedure requires a 'Clear-to-Ship' form to be signed by Elias Vance before any animal is sold for meat."
+    },
+    {
+      "id": "F34",
+      "category": "Record Keeping",
+      "fact": "AgriTrack Pro sends an automated SMS alert to Elias Vance's phone (555-010-1234) 12 hours before a withdrawal period ends."
+    },
+    {
+      "id": "F35",
+      "category": "Personnel",
+      "fact": "Dr. Thorne must approve any off-label use of medication in writing before administration, per farm policy #FP-VET-002."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the name of the daily report I need to print and post in the milking parlor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Daily Compliance Tasks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Under what condition should I place a red tag on an animal's stall?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After asking about the daily report, the user is likely thinking about other physical, daily compliance actions like tagging stalls.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Daily Compliance Tasks",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "When exactly does the milk withdrawal period for cow OH-305 end?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Cow OH-305 Treatment Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the treatment course and dosage for cow OH-305?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After learning the withdrawal end time, the user needs to recall the specific treatment that caused it for record-keeping and context.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Cow OH-305 Treatment Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What was the date and time of the final dose of Mastiguard Forte for cow OH-305?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Understanding the final dose time is critical for verifying the withdrawal calculation, making this a direct follow-up to the treatment details.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Cow OH-305 Treatment Status",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "Where is cow OH-305 currently being housed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After confirming the treatment details and timeline for an animal under withdrawal, the next logical step is to confirm its physical location to ensure it's properly quarantined.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Animal Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "When does the withdrawal hold on milk from cow OH-218 end?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cow OH-218 Treatment Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What medication did cow OH-218 receive and what is the milk withdrawal period for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Similar to the previous animal, after getting the withdrawal end time, the user will want to confirm the treatment details that led to that timeline.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cow OH-218 Treatment Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the date that eggs from Coop B2 can be sold again?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Coop B2 Egg Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What was the treatment given to the flock in Coop B2 and what is the specified egg withdrawal period?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14",
+        "F19"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After learning the return-to-market date for the eggs, the user may want to review the treatment details for their records.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Coop B2 Egg Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the lot number for the Mastiguard Forte used on cow OH-305?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: A compliance-minded manager, after reviewing treatment details for an animal, will need to verify that specific record-keeping data like lot numbers are correctly logged.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Record Keeping Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What lot number needs to be entered for the RespiraClear dose given to cow OH-218?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After confirming the medication and withdrawal period for cow OH-218, a compliance-focused manager would naturally check the lot number that must be recorded for that same treatment.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Record Keeping Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Where in AgriTrack Pro do medication lot numbers have to be recorded?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: Once the manager has the lot number for cow OH-218's treatment, the next practical compliance question is where that lot number must be entered in AgriTrack Pro.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Veterinarian Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What automatic alert does AgriTrack Pro send before a withdrawal period ends?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After asking which withdrawal report must be posted each morning, a compliance-focused manager may next want to know what automated alert helps prevent a withdrawal deadline from being missed.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Future Compliance Events",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Daily Compliance Tasks",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Cow OH-305 Treatment Status",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Animal Location",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Cow OH-218 Treatment Status",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Coop B2 Egg Status",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Record Keeping Details",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Veterinarian Information",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "Future Compliance Events",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "farm_livestock_treatment_withdrawal_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

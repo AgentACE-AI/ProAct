@@ -1,0 +1,420 @@
+{
+  "scenario_id": "library_archive_reference_bundle_05",
+  "domain": "public_library_services",
+  "description": "A patron's local-history request requires staff to gather related maps, photographs, newspaper clippings, catalog references, and archive notes from several places into one usable reference bundle.",
+  "user_profile": {
+    "persona": "43-year-old reference librarian supporting deep local-history queries",
+    "context": "The materials exist, but retrieving them cohesively is harder than finding any one item in isolation",
+    "communication_style": "Research-oriented and service-minded, wants related sources grouped into a coherent response set"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Patron_Request",
+      "fact": "The patron, Julian Croft, submitted Local History Inquiry Form LH-1138 on May 13, 2024."
+    },
+    {
+      "id": "F02",
+      "category": "Patron_Request",
+      "fact": "Mr. Croft's research topic is 'The Great Mill Fire of 1922' at the Northwood Textile Mill."
+    },
+    {
+      "id": "F03",
+      "category": "Library_Personnel",
+      "fact": "Reference Librarian Evelyn Reed is assigned to handle request LH-1138."
+    },
+    {
+      "id": "F04",
+      "category": "Library_Personnel",
+      "fact": "Evelyn Reed's primary workstation is Reference Desk 2 on the main floor."
+    },
+    {
+      "id": "F05",
+      "category": "Library_Personnel",
+      "fact": "The Head Archivist, David Chen, is the subject matter expert for pre-1950 local history."
+    },
+    {
+      "id": "F06",
+      "category": "Library_Personnel",
+      "fact": "David Chen's office is located in Room B-12 in the basement-level archives."
+    },
+    {
+      "id": "F07",
+      "category": "Digital_Systems",
+      "fact": "The Oakwood City Public Library uses the 'LibrisPro' Integrated Library System for its public catalog."
+    },
+    {
+      "id": "F08",
+      "category": "Digital_Systems",
+      "fact": "Staff access the LibrisPro administrative interface at https://admin.oakwoodpl.org/librispro."
+    },
+    {
+      "id": "F09",
+      "category": "Digital_Systems",
+      "fact": "Digitized photographs and documents are managed in the 'ArchiveSphere' Digital Asset Management System (DAMS)."
+    },
+    {
+      "id": "F10",
+      "category": "Digital_Systems",
+      "fact": "The login URL for ArchiveSphere is https://archives.oakwoodpl.org/login."
+    },
+    {
+      "id": "F11",
+      "category": "Physical_Resources",
+      "fact": "Primary archival documents are physically stored in the climate-controlled Oakwood History Room in the basement."
+    },
+    {
+      "id": "F12",
+      "category": "Physical_Resources",
+      "fact": "Oversize historical maps are stored in Oversize Map Cabinet 4B on the 2nd Floor."
+    },
+    {
+      "id": "F13",
+      "category": "Physical_Resources",
+      "fact": "The newspaper collection from 1890-1985 is available only on microfilm, located on Floor 3."
+    },
+    {
+      "id": "F14",
+      "category": "Workflow_Procedure",
+      "fact": "Access to the Oakwood History Room requires Key #B-07, which is checked out from Lockbox 5 at the main circulation desk."
+    },
+    {
+      "id": "F15",
+      "category": "Workflow_Procedure",
+      "fact": "Policy requires staff to use Archival Materials Cart #3 when transporting multiple fragile items between floors."
+    },
+    {
+      "id": "F16",
+      "category": "Workflow_Procedure",
+      "fact": "Handling of original photographic prints requires wearing the library-provided nitrile gloves."
+    },
+    {
+      "id": "F17",
+      "category": "Workflow_Procedure",
+      "fact": "The standard turnaround time for a complex local-history request is 5 business days."
+    },
+    {
+      "id": "F18",
+      "category": "Workflow_Procedure",
+      "fact": "All gathered digital materials for request LH-1138 are to be compiled in the shared network folder: S:\\Reference\\LocalHistory\\Croft_LH-1138."
+    },
+    {
+      "id": "F19",
+      "category": "Resource_Details",
+      "fact": "A key photograph for the request is titled 'Smoldering Ruins of the Northwood Textile Mill' with accession number OPL-PH-1922-0345."
+    },
+    {
+      "id": "F20",
+      "category": "Resource_Details",
+      "fact": "Photograph OPL-PH-1922-0345 is filed in ArchiveSphere under the digital collection 'MillFire1922'."
+    },
+    {
+      "id": "F21",
+      "category": "Resource_Details",
+      "fact": "The most relevant map is the 'Oakwood Industrial District, 1921 Fire Insurance Map', catalog number MAP-1921-004."
+    },
+    {
+      "id": "F22",
+      "category": "Resource_Details",
+      "fact": "The primary newspaper account of the fire is in The Oakwood Daily Chronicle issue dated October 28, 1922."
+    },
+    {
+      "id": "F23",
+      "category": "Resource_Details",
+      "fact": "The newspaper microfilm reel for October 1922 is labeled ODC-1922-Q4."
+    },
+    {
+      "id": "F24",
+      "category": "Resource_Details",
+      "fact": "A set of handwritten notes from the original archivist, Martha Gable, is attached to the LibrisPro record for the mill."
+    },
+    {
+      "id": "F25",
+      "category": "Resource_Details",
+      "fact": "The archivist's notes are in a PDF file named 'MGable_Notes_MillFire_Witnesses.pdf'."
+    },
+    {
+      "id": "F26",
+      "category": "Equipment",
+      "fact": "The microfilm reader/scanner available for staff use is the 'ScanPro 3000' at Station M-03."
+    },
+    {
+      "id": "F27",
+      "category": "Equipment",
+      "fact": "The large-format scanner for maps is the 'Contex SD One+', located in the Digitization Lab (Room 214)."
+    },
+    {
+      "id": "F28",
+      "category": "Patron_Request",
+      "fact": "Mr. Croft specified he needs high-resolution (600 dpi) scans of all visual materials."
+    },
+    {
+      "id": "F29",
+      "category": "Physical_Resources",
+      "fact": "The relevant archive box containing witness statements is Box 7, Shelf 3A, in the Oakwood History Room."
+    },
+    {
+      "id": "F30",
+      "category": "Library_Personnel",
+      "fact": "Evelyn Reed has scheduled a consultation with David Chen for May 15, 2024, at 10:00 AM to review the initial findings."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the patron's request number and specific research topic?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Request Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the login URL for the ArchiveSphere digital asset system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Digital Photo Search",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "For the key photograph 'Smoldering Ruins of the Northwood Textile Mill', what is its accession number and what digital collection is it in?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After accessing the digital photo system, the user will need specific identifiers to locate the relevant image.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Digital Photo Search",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is the publication date of the primary newspaper account of the fire, and which microfilm reel is it on?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Newspaper Research",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Where are the primary archival documents stored, and what is the specific location of the box containing witness statements?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Physical Archive Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "If I need to review original photographic prints for this request, what protective handling is required?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying where the key physical archival materials are stored, a direct retrieval follow-up is what handling protection is required for original photographic prints from the request.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Archive Handling Requirement",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the library's policy on transporting multiple fragile archival items?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying the need to retrieve physical archive boxes, the user may need a reminder about the correct procedure for moving them.",
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Material Handling Procedure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Where can I find the handwritten notes from the original archivist, Martha Gable?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G7",
+      "reveal_group_label": "Cataloged Digital Notes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the catalog number for the 'Oakwood Industrial District, 1921 Fire Insurance Map' and where are oversize maps stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G8",
+      "reveal_group_label": "Map Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "For the key photograph and other visual materials in this request, what scan resolution did Mr. Croft specify?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After identifying the key photograph and its collection, a direct follow-up is the scan resolution the patron specified for that photograph and the other visual materials.",
+      "turn_order": 10,
+      "reveal_group": "G9",
+      "reveal_group_label": "Patron Scanning Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the full network path for the shared folder where I should compile the digital materials for this request?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming the request details, a logical next question is about the final destination for the compiled digital deliverables.",
+      "turn_order": 11,
+      "reveal_group": "G10",
+      "reveal_group_label": "Final Compilation Location",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Request Details",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Digital Photo Search",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Newspaper Research",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Physical Archive Location",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+    "label": "Archive Handling Requirement",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Material Handling Procedure",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Cataloged Digital Notes",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Map Location",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Patron Scanning Requirements",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G10",
+      "label": "Final Compilation Location",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "library_archive_reference_bundle_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

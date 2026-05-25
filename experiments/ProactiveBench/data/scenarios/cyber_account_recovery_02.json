@@ -1,0 +1,413 @@
+{
+  "scenario_id": "cyber_account_recovery_02",
+  "domain": "cybersecurity_incident_response",
+  "description": "An employee's account may be compromised, and the response team must remember which containment steps already happened, what the user was told, and what still needs to be verified before normal access is restored.",
+  "user_profile": {
+    "persona": "35-year-old IT responder coordinating with both security and the affected employee",
+    "context": "The case is moving quickly, and duplicate or contradictory instructions would make recovery harder",
+    "communication_style": "Direct and procedural, wants actions and communications kept aligned"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Incident_Details",
+      "fact": "The incident is being tracked under AetherCorp help desk ticket number INC-2024-8817."
+    },
+    {
+      "id": "F02",
+      "category": "Incident_Details",
+      "fact": "The initial alert was triggered by the SIEM rule 'ID-402: Impossible Travel Activity' on 2024-10-26 at 14:15:00Z."
+    },
+    {
+      "id": "F03",
+      "category": "Incident_Details",
+      "fact": "The incident severity has been classified as 'High' due to successful credential access."
+    },
+    {
+      "id": "F04",
+      "category": "Affected_User",
+      "fact": "The affected employee is Lena Vance, an accountant in the Finance department."
+    },
+    {
+      "id": "F05",
+      "category": "Affected_User",
+      "fact": "Lena Vance's primary workstation is a laptop with asset tag AC-LT-78910."
+    },
+    {
+      "id": "F06",
+      "category": "Affected_User",
+      "fact": "Lena Vance's corporate-issued mobile device is an iPhone 14, Model A2649."
+    },
+    {
+      "id": "F07",
+      "category": "Affected_User",
+      "fact": "Lena Vance's manager, David Schmidt, has been informed of the account containment action."
+    },
+    {
+      "id": "F08",
+      "category": "Initial_Triage",
+      "fact": "Security Analyst Jasmine Kaur confirmed the alert as a true positive at 2024-10-26 at 14:22:00Z."
+    },
+    {
+      "id": "F09",
+      "category": "Investigation_Findings",
+      "fact": "A successful login to the company VPN was recorded from IP address 203.0.113.45 at 14:12:00Z."
+    },
+    {
+      "id": "F10",
+      "category": "Investigation_Findings",
+      "fact": "The source IP address 203.0.113.45 geolocates to a public data center in Bucharest, Romania."
+    },
+    {
+      "id": "F11",
+      "category": "Containment_Actions",
+      "fact": "Lena Vance's Active Directory account 'lvance' was disabled by Mark Chen at 14:30:00Z on 2024-10-26."
+    },
+    {
+      "id": "F12",
+      "category": "Containment_Actions",
+      "fact": "All active O365 and VPN sessions for user 'lvance' were forcibly terminated at 14:32:00Z."
+    },
+    {
+      "id": "F13",
+      "category": "Containment_Actions",
+      "fact": "The network port for workstation AC-LT-78910 was disabled in the switch configuration at 14:45:00Z."
+    },
+    {
+      "id": "F14",
+      "category": "Containment_Actions",
+      "fact": "A remote wipe command was successfully sent to Lena Vance's corporate mobile device to remove the company email profile at 14:50:00Z."
+    },
+    {
+      "id": "F15",
+      "category": "Communication_Log",
+      "fact": "Mark Chen initiated a phone call with Lena Vance at 14:35:00Z to inform her of the account compromise and containment."
+    },
+    {
+      "id": "F16",
+      "category": "Communication_Log",
+      "fact": "Lena Vance was instructed not to use her corporate laptop or access any company systems until further notice."
+    },
+    {
+      "id": "F17",
+      "category": "Communication_Log",
+      "fact": "A follow-up email was sent to Lena Vance's personal email address (l.vance88@email.com) at 14:40:00Z with ticket number INC-2024-8817."
+    },
+    {
+      "id": "F18",
+      "category": "Communication_Log",
+      "fact": "Lena Vance confirmed via a reply from her personal email at 14:48:00Z that she understands the instructions."
+    },
+    {
+      "id": "F19",
+      "category": "Investigation_Findings",
+      "fact": "Log analysis shows the attacker accessed the shared network drive '//ac-files/finance/Q4_Projections/'."
+    },
+    {
+      "id": "F20",
+      "category": "Investigation_Findings",
+      "fact": "The file 'Q4_Projections_DRAFT_v3.xlsx' was accessed by the unauthorized session at 14:14:00Z."
+    },
+    {
+      "id": "F21",
+      "category": "Investigation_Findings",
+      "fact": "A memory scan of workstation AC-LT-78910 revealed a running process 'svchost.exe' with a malicious network connection to 198.51.100.12."
+    },
+    {
+      "id": "F22",
+      "category": "Remediation_Plan",
+      "fact": "Lena Vance's Active Directory password must be reset by an administrator before her account is re-enabled."
+    },
+    {
+      "id": "F23",
+      "category": "Remediation_Plan",
+      "fact": "The workstation AC-LT-78910 is scheduled to be re-imaged by the desktop support team on 2024-10-27."
+    },
+    {
+      "id": "F24",
+      "category": "Remediation_Plan",
+      "fact": "Lena Vance must re-enroll her credentials in the Multi-Factor Authentication (MFA) system at https://auth.aethercorp.internal/mfa-reset."
+    },
+    {
+      "id": "F25",
+      "category": "Verification_Checklist",
+      "fact": "Verification Step 1: Confirm with Lena Vance that she did not perform the login from Romania."
+    },
+    {
+      "id": "F26",
+      "category": "Verification_Checklist",
+      "fact": "Verification Step 2: Confirm the workstation AC-LT-78910 has been successfully re-imaged with the standard corporate image."
+    },
+    {
+      "id": "F27",
+      "category": "Verification_Checklist",
+      "fact": "Verification Step 3: Confirm a new, clean password has been set for the 'lvance' account."
+    },
+    {
+      "id": "F28",
+      "category": "Verification_Checklist",
+      "fact": "Verification Step 4: Confirm successful MFA re-enrollment before restoring full access."
+    },
+    {
+      "id": "F29",
+      "category": "Contact_Information",
+      "fact": "The lead security analyst for this incident is Jasmine Kaur (jkaur@aethercorp.com)."
+    },
+    {
+      "id": "F30",
+      "category": "Contact_Information",
+      "fact": "The primary IT responder is Mark Chen (mchen@aethercorp.com, ext. 5512)."
+    },
+    {
+      "id": "F31",
+      "category": "Containment_Actions",
+      "fact": "All of Lena Vance's active Slack sessions were revoked via the Slack Admin Dashboard at 15:05:00Z."
+    },
+    {
+      "id": "F32",
+      "category": "Remediation_Plan",
+      "fact": "The remediation plan for workstation AC-LT-78910 requires the device to remain isolated from the corporate network and unused by Lena Vance until the re-image is completed and verification is signed off by the response team."
+    },
+    {
+      "id": "F33",
+      "category": "Remediation_Plan",
+      "fact": "Desktop support must notify Mark Chen and Lena Vance after the workstation re-image on 2024-10-27 is finished so that post-reimage verification can begin in a controlled sequence."
+    },
+    {
+      "id": "F34",
+      "category": "Remediation_Plan",
+      "fact": "Before normal workstation access is restored, the response team must verify that AC-LT-78910 was successfully re-imaged with the standard corporate build, that Lena Vance's Active Directory password has been reset, and that MFA re-enrollment has been completed."
+    },
+    {
+      "id": "F35",
+      "category": "Remediation_Plan",
+      "fact": "Normal access for Lena Vance may be restored only after Verification Steps 2 through 4 are completed and confirmed: successful workstation re-image, new clean password set for 'lvance', and successful MFA re-enrollment."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What actions were taken to disable Lena Vance's account and terminate her active sessions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Containment Actions Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What physical containment actions were taken on her workstation and mobile device?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After asking about account-level containment, the user would naturally want to know about device-level containment actions.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Containment Actions Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was Lena Vance instructed to do, and did she confirm her understanding?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "User Communication Log",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How was the follow-up communication with the ticket number sent to her?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After confirming what was communicated, the user would want to know the channel used for follow-up.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "User Communication Log",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are the required steps for resetting the user's password and MFA?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing what the user was told (containment), the next logical step for the coordinator is to review the plan for recovery.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "User Credential Recovery Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the remediation plan for the user's compromised workstation, including containment, communication, verification, and the conditions for restoring access?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F32",
+        "F33",
+        "F34",
+        "F35"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the user credential recovery plan is known, the next logical question is about remediating the physical asset.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Workstation Remediation Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the first verification step that needs to be completed with Lena Vance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Recovery Verification Checklist",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the remaining technical verification steps required before restoring access?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After asking about the first item on a checklist, the user will want to know the rest of the items.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Recovery Verification Checklist",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Has Lena Vance's manager been notified of the account containment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: While reviewing communications with the affected employee, a coordinator would also consider whether key stakeholders like their manager have been informed.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Stakeholder Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What specific file was accessed by the unauthorized session?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Breach Impact Details",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Containment Actions Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "User Communication Log",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "User Credential Recovery Plan",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Workstation Remediation Plan",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Recovery Verification Checklist",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Stakeholder Communication",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Breach Impact Details",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "cyber_account_recovery_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "scenario_id": "health_symptom_escalation_05",
+  "domain": "health_management",
+  "description": "A person has been tracking a recurring set of symptoms for several months and wants to determine when the pattern crosses the threshold for urgent re-evaluation instead of routine monitoring.",
+  "user_profile": {
+    "persona": "41-year-old teacher who documents symptoms carefully but hesitates to seek urgent care",
+    "context": "The symptoms have become more frequent, but the change has been gradual enough to create doubt",
+    "communication_style": "Reflective and evidence-seeking, wants threshold-based guidance"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "patient_profile",
+      "fact": "Elara Vance is a 41-year-old high school history teacher at Crestwood Academy in Oakhaven."
+    },
+    {
+      "id": "F02",
+      "category": "patient_profile",
+      "fact": "Elara uses the 'SymptomTracker Pro' mobile application to log her health data daily."
+    },
+    {
+      "id": "F03",
+      "category": "symptom_tracking",
+      "fact": "Elara first began experiencing intermittent severe headaches approximately eight months ago, in February 2023."
+    },
+    {
+      "id": "F04",
+      "category": "symptom_tracking",
+      "fact": "Initially, the severe headaches occurred about once every 3-4 weeks, primarily on weekends."
+    },
+    {
+      "id": "F05",
+      "category": "symptom_tracking",
+      "fact": "Since September 2023, Elara has recorded severe headaches occurring 2-3 times per week."
+    },
+    {
+      "id": "F06",
+      "category": "symptom_tracking",
+      "fact": "Each severe headache episode is typically accompanied by a brief vision disturbance lasting 10-15 minutes."
+    },
+    {
+      "id": "F07",
+      "category": "symptom_tracking",
+      "fact": "Elara meticulously logs the intensity of her headaches on a scale of 1-10, with recent episodes consistently rated 8 or 9."
+    },
+    {
+      "id": "F08",
+      "category": "symptom_tracking",
+      "fact": "The 'SymptomTracker Pro' app shows a 150% increase in severe headache frequency between August and October 2023."
+    },
+    {
+      "id": "F09",
+      "category": "symptom_tracking",
+      "fact": "The vision disturbances are described as shimmering zig-zag lines that expand across her field of vision."
+    },
+    {
+      "id": "F10",
+      "category": "medical_history",
+      "fact": "Elara was diagnosed with ocular migraines in 2015 by a previous ophthalmologist, Dr. Julian Finch."
+    },
+    {
+      "id": "F11",
+      "category": "medical_history",
+      "fact": "Her previous ocular migraine episodes were characterized by visual aura without significant head pain, typically once every few months."
+    },
+    {
+      "id": "F12",
+      "category": "medical_history",
+      "fact": "Elara has no family history of severe neurological conditions like epilepsy or brain tumors."
+    },
+    {
+      "id": "F13",
+      "category": "medical_history",
+      "fact": "Her last comprehensive physical examination was on April 12, 2023, with Dr. Aris Thorne, her current primary care physician."
+    },
+    {
+      "id": "F14",
+      "category": "current_monitoring",
+      "fact": "Dr. Aris Thorne practices at the Evergreen Health Collective, located at 14 Oak Street, Oakhaven."
+    },
+    {
+      "id": "F15",
+      "category": "current_monitoring",
+      "fact": "Elara has a routine follow-up appointment scheduled with Dr. Thorne for December 15, 2023, to discuss general health."
+    },
+    {
+      "id": "F16",
+      "category": "current_monitoring",
+      "fact": "Elara currently manages her headaches with over-the-counter ibuprofen (200mg) taken as needed, typically 2 tablets per episode."
+    },
+    {
+      "id": "F17",
+      "category": "current_monitoring",
+      "fact": "Ibuprofen effectiveness has decreased from fully resolving pain to only dulling it by 30-40% in recent months."
+    },
+    {
+      "id": "F18",
+      "category": "current_monitoring",
+      "fact": "Elara's blood pressure was 120/80 mmHg at her last check-up on April 12, 2023."
+    },
+    {
+      "id": "F19",
+      "category": "thresholds_for_concern",
+      "fact": "A key concern threshold for Elara is any severe headache occurring more than twice a week for two consecutive weeks."
+    },
+    {
+      "id": "F20",
+      "category": "thresholds_for_concern",
+      "fact": "Another threshold is if the vision disturbance lasts longer than 30 minutes or occurs without a headache."
+    },
+    {
+      "id": "F21",
+      "category": "thresholds_for_concern",
+      "fact": "A loss of 50% or more effectiveness from her usual ibuprofen dose for three consecutive episodes would be a trigger for concern."
+    },
+    {
+      "id": "F22",
+      "category": "thresholds_for_concern",
+      "fact": "The appearance of new symptoms like numbness, weakness on one side of the body, or difficulty speaking would indicate urgent re-evaluation."
+    },
+    {
+      "id": "F23",
+      "category": "thresholds_for_concern",
+      "fact": "If headaches consistently wake her from sleep, this is a significant deviation from her historical pattern."
+    },
+    {
+      "id": "F24",
+      "category": "urgent_care_triggers",
+      "fact": "The emergency contact number for Evergreen Health Collective after-hours is (555) 123-4567."
+    },
+    {
+      "id": "F25",
+      "category": "urgent_care_triggers",
+      "fact": "The nearest urgent care center is Oakhaven RapidCare, open until 10 PM daily, located at 22 Elm Street."
+    },
+    {
+      "id": "F26",
+      "category": "urgent_care_triggers",
+      "fact": "Severe headache accompanied by sudden, extreme dizziness or loss of balance requires immediate medical attention."
+    },
+    {
+      "id": "F27",
+      "category": "urgent_care_triggers",
+      "fact": "Any headache reaching a pain level of 10/10 that is unresponsive to medication and includes vomiting is an emergency."
+    },
+    {
+      "id": "F28",
+      "category": "diagnostic_tests",
+      "fact": "A potential diagnostic step could be a referral to Dr. Lena Petrova, a neurologist at Oakhaven Medical Center."
+    },
+    {
+      "id": "F29",
+      "category": "diagnostic_tests",
+      "fact": "Dr. Petrova's office can be reached at (555) 987-6543 for consultations."
+    },
+    {
+      "id": "F30",
+      "category": "diagnostic_tests",
+      "fact": "Further diagnostic tests might include an MRI of the brain to rule out structural issues."
+    },
+    {
+      "id": "F31",
+      "category": "lifestyle_factors",
+      "fact": "Elara typically sleeps 7 hours per night, but stress from teaching has occasionally reduced this to 5-6 hours in recent months."
+    },
+    {
+      "id": "F32",
+      "category": "lifestyle_factors",
+      "fact": "Elara drinks 2-3 cups of coffee daily, maintaining a consistent caffeine intake."
+    },
+    {
+      "id": "F33",
+      "category": "support_systems",
+      "fact": "Elara's partner, Ben Carter, is aware of her symptoms and encourages her to seek medical advice when needed."
+    },
+    {
+      "id": "F34",
+      "category": "medical_history",
+      "fact": "Compared with her earlier ocular migraine episodes, Elara's current episodes are both far more frequent and now include severe head pain rated 8 or 9 instead of visual aura without significant head pain."
+    },
+    {
+      "id": "F35",
+      "category": "thresholds_for_concern",
+      "fact": "A vision disturbance lasting longer than 30 minutes counts as a concern threshold."
+    },
+    {
+      "id": "F36",
+      "category": "thresholds_for_concern",
+      "fact": "A vision disturbance that occurs without a headache counts as a concern threshold."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "How has the frequency of my severe headaches changed since I started tracking them?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Symptom Change",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What visual symptoms accompany the headaches and how long do they last?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After discussing the change in headache frequency, the user would naturally want to detail the associated symptoms.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Symptom Change",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the specific threshold for headache frequency that I should be concerned about?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Concern Thresholds - Symptoms",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What vision-disturbance situations count as a concern threshold?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F35",
+        "F36"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After asking about the headache frequency threshold, the user would likely ask about thresholds for the other main symptom.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Concern Thresholds - Symptoms",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Compared with before, how much pain relief does ibuprofen provide now?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Concern Thresholds - Medication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the specific concern threshold for reduced ibuprofen effectiveness?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Directly follows the question about medication effectiveness, seeking the specific trigger point for action.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Concern Thresholds - Medication",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What new symptoms would require urgent re-evaluation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After defining the thresholds for existing symptoms, a user focused on evidence would want to know about completely new warning signs.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "New Symptom Triggers",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the after-hours contact number for my doctor's office?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Discussing 'urgent re-evaluation' naturally leads to the practical need for contact information for such situations.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Doctor's Contact Info",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What was my original diagnosis for these types of episodes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Medical History Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "In what two main ways do my current episodes differ from my previous ocular migraine episodes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After recalling the original diagnosis, the user would want to compare the historical presentation with the current symptoms.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Medical History Comparison",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "When is my next scheduled appointment with my primary care physician, Dr. Thorne?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Appointment Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Which two headache situations listed here require immediate medical attention?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning about symptoms for 'urgent re-evaluation', the user may want to know the even higher-severity triggers for an 'immediate emergency'.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Emergency Triggers",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What specialist is mentioned here as a potential referral?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning the new symptoms that would require urgent re-evaluation, a user would naturally ask what specialist might be involved if the pattern continues to escalate.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Specialist & Diagnostics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What diagnostic test might be ordered to rule out structural issues?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "Intra-group: Asking about a specialist naturally leads to questions about the tests that specialist might perform.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Specialist & Diagnostics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N15",
+      "description": "What are the location and hours of the nearest urgent care center?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After learning about the specific symptoms that constitute an emergency, the user would practically want to know where to go.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Urgent Care Location",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Symptom Change",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Concern Thresholds - Symptoms",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Concern Thresholds - Medication",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "New Symptom Triggers",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Doctor's Contact Info",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Medical History Comparison",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Appointment Logistics",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Emergency Triggers",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G9",
+      "label": "Specialist & Diagnostics",
+      "member_need_ids": [
+        "N13",
+        "N14"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G10",
+      "label": "Urgent Care Location",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "health_symptom_escalation_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

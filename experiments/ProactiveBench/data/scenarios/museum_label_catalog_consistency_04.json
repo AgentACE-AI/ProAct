@@ -1,0 +1,453 @@
+{
+  "scenario_id": "museum_label_catalog_consistency_04",
+  "domain": "museum_collection_management",
+  "description": "Exhibit labels, collection records, and internal catalogs have started to drift, and inconsistent titles, dates, or attributions are appearing in public-facing interpretation.",
+  "user_profile": {
+    "persona": "39-year-old curator balancing scholarship with public communication",
+    "context": "Small inconsistencies that once felt cosmetic now risk undermining trust in the exhibition materials",
+    "communication_style": "Clarity-focused and editorial, wants one authoritative wording for repeated facts"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Project Management",
+      "fact": "The official name of the data consistency initiative is 'Project Veracity'."
+    },
+    {
+      "id": "F02",
+      "category": "Project Management",
+      "fact": "The deadline for reconciling the 'Modernist Sculpture' collection data is November 15, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "Project Management",
+      "fact": "Project Veracity's weekly status meeting is held every Tuesday at 10:00 AM PST via Webex."
+    },
+    {
+      "id": "F04",
+      "category": "Project Management",
+      "fact": "The designated project tracking tool for Project Veracity is Asana, under the 'AAM - Curatorial' workspace."
+    },
+    {
+      "id": "F05",
+      "category": "Systems & Software",
+      "fact": "The authoritative source for all collection data is the 'Argos Collections v3.2' system."
+    },
+    {
+      "id": "F06",
+      "category": "Systems & Software",
+      "fact": "The login URL for the Argos Collections production environment is https://aam.argos.cloud/login."
+    },
+    {
+      "id": "F07",
+      "category": "Systems & Software",
+      "fact": "The public-facing website runs on a CMS named 'WeavePress', which pulls data from the Argos API."
+    },
+    {
+      "id": "F08",
+      "category": "Systems & Software",
+      "fact": "High-resolution images are managed in the 'MediaSphere 5.0' Digital Asset Management (DAM) system."
+    },
+    {
+      "id": "F09",
+      "category": "Staff & Roles",
+      "fact": "Dr. Elena Vance, Curator of European Painting, is the lead for Project Veracity."
+    },
+    {
+      "id": "F10",
+      "category": "Staff & Roles",
+      "fact": "David Chen is the Museum Registrar and is responsible for updating accession records in Argos."
+    },
+    {
+      "id": "F11",
+      "category": "Staff & Roles",
+      "fact": "Maria Flores, Head of Digital Initiatives, must approve all changes before they are pushed to the public website."
+    },
+    {
+      "id": "F12",
+      "category": "Staff & Roles",
+      "fact": "For technical support with Argos, contact the IT helpdesk by emailing helpdesk@atheriaart.org or calling extension 4357."
+    },
+    {
+      "id": "F13",
+      "category": "Data Standards",
+      "fact": "All dates must be formatted as YYYY-MM-DD; for date ranges, use YYYY/YYYY; for circa, use 'c. YYYY'."
+    },
+    {
+      "id": "F14",
+      "category": "Data Standards",
+      "fact": "The approved style guide for artist attributions and object descriptions is The Chicago Manual of Style, 17th Edition."
+    },
+    {
+      "id": "F15",
+      "category": "Data Standards",
+      "fact": "The master spreadsheet for tracking data conflicts is located at '\\\\aam-files\\collections\\Project_Veracity\\Data_Conflict_Tracker_v2.xlsx'."
+    },
+    {
+      "id": "F16",
+      "category": "Data Standards",
+      "fact": "When a record is finalized in Argos, the 'Verification Status' field must be changed from 'Pending' to 'Curator-Approved'."
+    },
+    {
+      "id": "F17",
+      "category": "Artwork Records",
+      "fact": "The canonical title for accession number AAM.1954.12.2 is 'Nocturne in Silver and Blue'."
+    },
+    {
+      "id": "F18",
+      "category": "Artwork Records",
+      "fact": "The authoritative creation date for 'Nocturne in Silver and Blue' (AAM.1954.12.2) is 'c. 1888'."
+    },
+    {
+      "id": "F19",
+      "category": "Artwork Records",
+      "fact": "The artist for AAM.1954.12.2 is Julian Croft (1852-1919)."
+    },
+    {
+      "id": "F20",
+      "category": "Artwork Records",
+      "fact": "The official medium for AAM.1954.12.2 is 'Oil on canvas'."
+    },
+    {
+      "id": "F21",
+      "category": "Artwork Records",
+      "fact": "The accession number for Anya Petrova's sculpture is AAM.2003.4.1."
+    },
+    {
+      "id": "F22",
+      "category": "Artwork Records",
+      "fact": "The authoritative title for AAM.2003.4.1 is 'The Gilded Cage', not 'Gilded Birdcage'."
+    },
+    {
+      "id": "F23",
+      "category": "Artwork Records",
+      "fact": "The dimensions for 'The Gilded Cage' (AAM.2003.4.1) must be recorded in centimeters as '120.5 x 45.2 x 45.2 cm'."
+    },
+    {
+      "id": "F24",
+      "category": "Artwork Records",
+      "fact": "The acquisition date for Samuel Ives's photograph 'Market Day at Port Lyra' (AAM.1978.22.5) is 1978-06-12."
+    },
+    {
+      "id": "F25",
+      "category": "Communication Protocols",
+      "fact": "All data correction approvals must be documented via email with the subject line 'VERACITY: Approval for [Accession Number]'."
+    },
+    {
+      "id": "F26",
+      "category": "Communication Protocols",
+      "fact": "The dedicated Slack channel for day-to-day project discussion is #proj-veracity."
+    },
+    {
+      "id": "F27",
+      "category": "Communication Protocols",
+      "fact": "A monthly progress report for Project Veracity is sent to museum leadership on the first business day of each month by Elena Vance."
+    },
+    {
+      "id": "F28",
+      "category": "Systems & Software",
+      "fact": "The API endpoint for fetching verified object data for the website is https://api.atheriaart.org/v2/objects/verified."
+    },
+    {
+      "id": "F29",
+      "category": "Data Standards",
+      "fact": "Artist nationality must be selected from the Getty Union List of Artist Names (ULAN) controlled vocabulary."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the official name of this data consistency project and who is the designated lead?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the authoritative collection management system and what is the login URL?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Systems Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Who do I contact for technical support with the Argos system?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After learning about the primary system, asking for support contact information is a common follow-up.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Systems Access",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Where can I find the master spreadsheet for tracking data conflicts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying the project and its lead, the immediate next step is to locate the list of tasks.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Task Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "For accession number AAM.1954.12.2, what is the canonical title and authoritative creation date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Record Correction Example 1",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the official medium and artist attribution for AAM.1954.12.2?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: This is a natural continuation of gathering all the correct data points for a single artwork.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Record Correction Example 1",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the required format for dates?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Data Standards Reference",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the approved style guide for artist attributions and object descriptions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After correcting a specific record's attribution, the curator may want to confirm the general style guide for consistency in other records.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Data Standards Reference",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Once a record is finalized in Argos, how must the 'Verification Status' field be updated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After gathering all the correct information for a record, the next logical step is to understand the process for marking it as complete in the system.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Approval & Finalization",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is responsible for updating accession records in Argos, and who must approve changes before they go public?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After learning the system step for verification, the user needs to know the human roles involved in the workflow.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Approval & Finalization",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the required email subject line format for documenting data correction approvals?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: This follows directly from learning about the people involved in the approval process; the user now needs the specific communication protocol.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Approval & Finalization",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N12",
+      "description": "Is there a dedicated Slack channel for day-to-day project discussion?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning the formal project leadership, the user may appreciate knowing about informal communication channels. This is an auditable proactive target.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Communication Channels",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Once a correction is approved for public release, which CMS and verified-data endpoint power the public-facing website?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07",
+        "F28"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After understanding how approvals are documented, a detail-oriented user may next ask which public website system consumes the verified data once those approvals are complete.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Technical Implementation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the authoritative title for accession AAM.2003.4.1 and how must its dimensions be recorded?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Record Correction Example 2",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Setup",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Systems Access",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Task Identification",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Record Correction Example 1",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Data Standards Reference",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Approval & Finalization",
+      "member_need_ids": [
+        "N9",
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Communication Channels",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Technical Implementation",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G9",
+      "label": "Record Correction Example 2",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "museum_label_catalog_consistency_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "scenario_id": "shelter_intake_record_completion_01",
+  "domain": "animal_shelter_operations",
+  "description": "Shelter staff need to complete intake records for newly arrived animals when names, ages, prior histories, and health status are uncertain or partially unknown. All shelter and animal names are fictional.",
+  "user_profile": {
+    "persona": "32-year-old intake coordinator at a busy municipal shelter",
+    "context": "Animals are arriving faster than perfect histories can be gathered, but the records still need to support later care and placement",
+    "communication_style": "Compassionate and structured, wants uncertainty documented instead of guessed away"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Intake_Procedures",
+      "fact": "The standard intake form for a new animal is Form 77B, which must be initiated within 15 minutes of the animal's arrival at Oak Valley Animal Haven."
+    },
+    {
+      "id": "F02",
+      "category": "Record_Keeping_Software",
+      "fact": "The shelter's management software, 'ShelterPaws Pro', is accessed via the URL https://ovah.shelterpawspro.net."
+    },
+    {
+      "id": "F03",
+      "category": "Animal_Identification",
+      "fact": "Upon intake, each animal is assigned a temporary ID collar; canines receive blue collars and felines receive green collars."
+    },
+    {
+      "id": "F04",
+      "category": "Medical_Protocols",
+      "fact": "All incoming canines over 6 months old receive a 1 mL dose of Bordetella vaccine administered intranasally."
+    },
+    {
+      "id": "F05",
+      "category": "Staff_Roles_and_Communication",
+      "fact": "For any urgent medical concerns during intake, the on-call veterinarian, Dr. Aris Thorne, must be paged at extension 55."
+    },
+    {
+      "id": "F06",
+      "category": "Facility_Information",
+      "fact": "The primary animal intake processing room is designated as 'Intake Suite A', located next to the main lobby."
+    },
+    {
+      "id": "F07",
+      "category": "Animal_Case_Specifics",
+      "fact": "A male German Shepherd mix, admitted on May 16, 2024, was assigned the temporary ID '24-0516-D01' due to having no name or microchip."
+    },
+    {
+      "id": "F08",
+      "category": "Record_Keeping_Software",
+      "fact": "In ShelterPaws Pro, if an animal's age is unknown, the 'Date of Birth' field should be left blank and the 'Age Estimate' field must be filled with a value like 'Approx. 2 years'."
+    },
+    {
+      "id": "F09",
+      "category": "Intake_Procedures",
+      "fact": "A high-resolution photograph of the animal's face and full body must be uploaded to its profile in ShelterPaws Pro within one hour of intake."
+    },
+    {
+      "id": "F10",
+      "category": "Medical_Protocols",
+      "fact": "All felines are treated for fleas upon arrival with a topical application of selamectin dosed at 6 mg/kg."
+    },
+    {
+      "id": "F11",
+      "category": "Animal_Identification",
+      "fact": "Permanent microchips (brand: HomeAgain) are implanted between the shoulder blades by a vet tech during the initial health screening."
+    },
+    {
+      "id": "F12",
+      "category": "Animal_Case_Specifics",
+      "fact": "A litter of four kittens, case ID '24-0515-F03', arrived without a mother and their health status was marked as 'Requires Neonatal Monitoring' in their records."
+    },
+    {
+      "id": "F13",
+      "category": "Staff_Roles_and_Communication",
+      "fact": "Jenna Carter, the Intake Coordinator, works at workstation #3 in the main administrative office and can be reached at j.carter@ovahaven.org."
+    },
+    {
+      "id": "F14",
+      "category": "Facility_Information",
+      "fact": "All newly arrived animals with unknown vaccination histories are housed in the Quarantine Wing (Kennel Block Q) for a minimum of 10 days."
+    },
+    {
+      "id": "F15",
+      "category": "Record_Keeping_Software",
+      "fact": "To indicate an unknown history, the 'Intake Subtype' dropdown in ShelterPaws Pro should be set to 'Stray - Unknown Origin'."
+    },
+    {
+      "id": "F16",
+      "category": "Medical_Protocols",
+      "fact": "Puppies and kittens under 4 months are administered Pyrantel Pamoate for deworming at a dosage of 5 mg/kg, with a follow-up dose in 2 weeks."
+    },
+    {
+      "id": "F17",
+      "category": "Intake_Procedures",
+      "fact": "If an animal is surrendered with personal items like a blanket or toy, these items must be labeled with the animal's temporary ID and stored in Bin 27."
+    },
+    {
+      "id": "F18",
+      "category": "Animal_Case_Specifics",
+      "fact": "The cat 'Luna', ID '24-0514-F02', was admitted with partial vet records indicating a spay surgery in 2021 but no vaccination history since 2022."
+    },
+    {
+      "id": "F19",
+      "category": "Staff_Roles_and_Communication",
+      "fact": "Daily intake summary reports are automatically generated by ShelterPaws Pro at 8:00 PM and posted to the #intake-reports Slack channel."
+    },
+    {
+      "id": "F20",
+      "category": "Record_Keeping_Software",
+      "fact": "A record can be flagged for 'Behavioral Assessment' by checking the corresponding box under the 'Status Flags' tab in the animal's profile."
+    },
+    {
+      "id": "F21",
+      "category": "Facility_Information",
+      "fact": "The shelter's walk-in refrigerator for storing temperature-sensitive medications like vaccines is kept at a constant 38°F (3.3°C)."
+    },
+    {
+      "id": "F22",
+      "category": "Medical_Protocols",
+      "fact": "A SNAP 4Dx test is performed on all canines over 6 months of age to screen for heartworm, Lyme, anaplasmosis, and ehrlichiosis."
+    },
+    {
+      "id": "F23",
+      "category": "Intake_Procedures",
+      "fact": "Any animal showing signs of aggression during intake must have a red 'Caution' tag added to their physical kennel card and digital record."
+    },
+    {
+      "id": "F24",
+      "category": "Animal_Identification",
+      "fact": "The animal's permanent ID number is generated by combining the year, intake number, and species code (e.g., 2024-1038-C for a canine)."
+    },
+    {
+      "id": "F25",
+      "category": "Animal_Case_Specifics",
+      "fact": "For cat 'Luna' (ID '24-0514-F02'), a note was added to her record: 'Owner deceased. History provided by neighbor, may be incomplete. Recommend full senior blood panel.'"
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the standard form for a new animal intake and what is the deadline for initiating it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Intake Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "If an animal arrives with no known background, how should that uncertainty be recorded in ShelterPaws Pro?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the standard intake form and timing requirement, a direct follow-up is how to record the case in ShelterPaws Pro when the animal's history is unknown.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Intake Process",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the URL for the shelter's management software?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After being reminded of the intake form requirement, the user will need to access the software system to complete it.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Intake Process",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "For a stray animal with no background information, what 'Intake Subtype' should I select in ShelterPaws Pro?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Creating a Stray Record",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "How should I enter an animal's age in the software if the exact date of birth is unknown?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After setting the intake subtype for a stray, the user will proceed to fill out other fields, and age is a common point of uncertainty that needs specific handling.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Creating a Stray Record",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What color temporary ID collar is used for canines versus felines?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the user starts the digital record for a stray, the next immediate physical step is to assign a temporary ID, making this a relevant and predictable next topic.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Animal Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the standard Bordetella vaccine and dosage for incoming canines over six months old?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Canine Medical Protocols",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What screening test is performed on all canines over 6 months of age?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After learning about the required vaccination for canines, the user may also want to know about other standard medical screening procedures for them.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Canine Medical Protocols",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the standard flea treatment and dosage for all incoming felines?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Feline Medical Protocols",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "In case of an urgent medical concern during intake, who is the on-call vet and what is their extension?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: While reviewing standard medical protocols, the user is likely to consider exceptions and emergencies, making the procedure for urgent medical issues a predictable next thought.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Urgent Medical Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the procedure if an animal shows signs of aggression during the intake process?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Handling Special Cases",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "If an animal is surrendered with personal items like a blanket or toy, how should those items be labeled and stored?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Handling Special Cases",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Where are new animals with unknown vaccination histories housed and for what minimum duration?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After documenting that an animal's history is unknown, the next logical step is to determine the appropriate housing, which is often dictated by that unknown status.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Post-Intake Housing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What are the requirements for photographing a new animal for its profile, and what is the deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: While filling out an animal's digital record, the user will need to know about other essential profile components, like the mandatory photographs.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Profile Completion",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Intake Process",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Creating a Stray Record",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Animal Identification",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Canine Medical Protocols",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Feline Medical Protocols",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Urgent Medical Issues",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Handling Special Cases",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Post-Intake Housing",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G9",
+      "label": "Profile Completion",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shelter_intake_record_completion_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

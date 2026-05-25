@@ -1,0 +1,460 @@
+{
+  "scenario_id": "vendor_onboarding_packet_01",
+  "domain": "vendor_management",
+  "description": "A team is bringing on a new vendor and must gather security forms, billing setup details, service contacts, escalation paths, and scope documents so the relationship starts with usable records. All company names are fictional.",
+  "user_profile": {
+    "persona": "37-year-old procurement coordinator responsible for making new vendors operational",
+    "context": "The contract is signed, but the practical setup work is still fragmented across teams",
+    "communication_style": "Process-driven and tidy, likes complete onboarding packets"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Vendor Information",
+      "fact": "The vendor's legal name is QuantumLeap Analytics Inc."
+    },
+    {
+      "id": "F02",
+      "category": "Vendor Information",
+      "fact": "The primary business address for QuantumLeap Analytics is 123 Innovation Drive, Suite 400, Tech City, TC 98765."
+    },
+    {
+      "id": "F03",
+      "category": "Vendor Information",
+      "fact": "The main phone number for QuantumLeap Analytics is +1-888-555-0100."
+    },
+    {
+      "id": "F04",
+      "category": "Vendor Information",
+      "fact": "The primary relationship manager at QuantumLeap Analytics is Alistair Finch."
+    },
+    {
+      "id": "F05",
+      "category": "Contract & Scope",
+      "fact": "The signed contract number for this engagement is QLA-IS-2024-8817."
+    },
+    {
+      "id": "F06",
+      "category": "Contract & Scope",
+      "fact": "The contract start date is October 1, 2024."
+    },
+    {
+      "id": "F07",
+      "category": "Contract & Scope",
+      "fact": "The initial contract term is for 36 months."
+    },
+    {
+      "id": "F08",
+      "category": "Contract & Scope",
+      "fact": "The governing scope document is titled 'Statement of Work for Predictive Analytics Platform Implementation', version 2.1."
+    },
+    {
+      "id": "F09",
+      "category": "Contract & Scope",
+      "fact": "The service provided by QuantumLeap Analytics is a subscription to their 'InsightEngine' predictive analytics platform."
+    },
+    {
+      "id": "F10",
+      "category": "Contract & Scope",
+      "fact": "The contract requires a 90-day written notice for non-renewal."
+    },
+    {
+      "id": "F11",
+      "category": "Security & Compliance",
+      "fact": "The vendor's SOC 2 Type II report, covering the period from June 1, 2023, to May 31, 2024, was received on September 15, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "Security & Compliance",
+      "fact": "The completed security questionnaire on file is the 'Consensus Assessments Initiative Questionnaire (CAIQ) v4.0.2'."
+    },
+    {
+      "id": "F13",
+      "category": "Security & Compliance",
+      "fact": "The Data Processing Agreement (DPA) was signed by both parties on September 20, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "Security & Compliance",
+      "fact": "The designated Data Protection Officer (DPO) for QuantumLeap Analytics is Dr. Evelyn Reed."
+    },
+    {
+      "id": "F15",
+      "category": "Billing & Finance",
+      "fact": "The Tax Identification Number (TIN) for QuantumLeap Analytics Inc. is 98-7654321."
+    },
+    {
+      "id": "F16",
+      "category": "Billing & Finance",
+      "fact": "The monthly recurring cost for the service is $12,500.00 USD."
+    },
+    {
+      "id": "F17",
+      "category": "Billing & Finance",
+      "fact": "The agreed-upon payment terms are Net 30 days from the invoice date."
+    },
+    {
+      "id": "F18",
+      "category": "Billing & Finance",
+      "fact": "All invoices should be sent to ap@innovatesphere.com and reference PO-2024-95123."
+    },
+    {
+      "id": "F19",
+      "category": "Billing & Finance",
+      "fact": "The billing contact email at QuantumLeap Analytics is billing@quantumleap.ai."
+    },
+    {
+      "id": "F20",
+      "category": "Billing & Finance",
+      "fact": "The purchase order number associated with this contract is PO-2024-95123."
+    },
+    {
+      "id": "F21",
+      "category": "Service & Support Contacts",
+      "fact": "The assigned Technical Account Manager (TAM) is Kenji Tanaka."
+    },
+    {
+      "id": "F22",
+      "category": "Service & Support Contacts",
+      "fact": "The direct email for the TAM, Kenji Tanaka, is k.tanaka@quantumleap.ai."
+    },
+    {
+      "id": "F23",
+      "category": "Service & Support Contacts",
+      "fact": "The general email address for submitting support tickets is support@quantumleap.ai."
+    },
+    {
+      "id": "F24",
+      "category": "Service & Support Contacts",
+      "fact": "The vendor's support portal is located at https://support.quantumleap.ai."
+    },
+    {
+      "id": "F25",
+      "category": "Escalation Path",
+      "fact": "The first-level escalation contact is Maria Garcia, Director of Client Success."
+    },
+    {
+      "id": "F26",
+      "category": "Escalation Path",
+      "fact": "The second-level escalation contact is Samuel Jones, VP of Operations."
+    },
+    {
+      "id": "F27",
+      "category": "Escalation Path",
+      "fact": "The 24/7 emergency support phone number for critical service outages is +1-800-555-0199."
+    },
+    {
+      "id": "F28",
+      "category": "Technical Integration",
+      "fact": "The primary API endpoint for the InsightEngine platform is https://api.quantumleap.ai/v2/."
+    },
+    {
+      "id": "F29",
+      "category": "Technical Integration",
+      "fact": "A shared Slack channel for operational communication has been created: #vendor-quantumleap-ops."
+    },
+    {
+      "id": "F30",
+      "category": "Technical Integration",
+      "fact": "The technical kick-off meeting is scheduled for October 5, 2024, at 10:00 AM PST."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the vendor's legal name and primary business address?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Vendor & Contract ID",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the contract number and what is the name of the service being provided?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the vendor, the user will want to reference the specific contract and service.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Vendor & Contract ID",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the contract start date and its initial term length?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Contract Terms",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the title of the governing Statement of Work document?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Scope Document",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which security compliance documents, like the SOC 2 report and security questionnaire, do we have on file?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming contract terms, verifying the vendor's security posture via their compliance documents is a critical next step for a procurement coordinator.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Security Documents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the vendor's Tax ID number and the monthly recurring cost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Billing Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the payment terms and which email address should invoices be sent to?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: Once the cost is known, the next logical questions are about how and where to pay.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Billing Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Who is the billing contact at QuantumLeap Analytics?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Billing Setup",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "Who is our primary relationship manager and the assigned Technical Account Manager?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F21"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: With billing contacts established, the next logical step is to identify the primary relationship and technical contacts for the service itself.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Support & Technical Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the general support email address and the URL for the support portal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After identifying named contacts, the user will want the general, process-based support channels.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Support & Technical Contacts",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Who are the first and second level escalation contacts for service issues?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After getting standard support channels, a process-driven coordinator will want to know the formal escalation path for unresolved issues.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Escalation Path",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Is there a 24/7 emergency support number for critical outages?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Intra-group: Following the standard escalation path, the user would want to know the contact for the most critical, emergency situations.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Escalation Path",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is the primary API endpoint for the InsightEngine platform?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After identifying the primary relationship manager and the assigned Technical Account Manager, a process-driven onboarding coordinator would naturally gather the core implementation detail the technical team will need next, namely the primary API endpoint for the InsightEngine platform.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Technical Integration Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the name of the shared Slack channel for operational communication?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Communication Channels",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Vendor & Contract ID",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Contract Terms",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Scope Document",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Security Documents",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Billing Setup",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Support & Technical Contacts",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Escalation Path",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Technical Integration Details",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G9",
+      "label": "Communication Channels",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vendor_onboarding_packet_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

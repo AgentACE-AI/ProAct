@@ -1,0 +1,441 @@
+{
+  "scenario_id": "mailroom_return_reason_pattern_04",
+  "domain": "postal_mailroom_operations",
+  "description": "Returned mail is increasing, and the supervisor wants to know whether the causes cluster around stale addresses, naming mismatches, delivery timing, or internal routing confusion. All organizations are fictional.",
+  "user_profile": {
+    "persona": "39-year-old mail services supervisor trying to diagnose a rising return rate",
+    "context": "Single returns are easy to explain away, but the aggregate pattern now looks operationally meaningful",
+    "communication_style": "Pattern-seeking and evidence-based, wants return causes grouped before action is chosen"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Mail_Volume_Metrics",
+      "fact": "The total count of returned mail items for October 2023 was 215, an increase from 120 in July 2023."
+    },
+    {
+      "id": "F02",
+      "category": "Mail_Volume_Metrics",
+      "fact": "The average monthly return rate for Q3 2023 was 4.5%, up from 2.1% in Q1 2023."
+    },
+    {
+      "id": "F03",
+      "category": "Mail_Volume_Metrics",
+      "fact": "42% of returned mail in October was addressed to former employees who left Innovatec Solutions more than 90 days ago."
+    },
+    {
+      "id": "F04",
+      "category": "Mail_Volume_Metrics",
+      "fact": "The Research & Development department, located on the 5th floor, accounts for 35% of all returned mail items."
+    },
+    {
+      "id": "F05",
+      "category": "Return_Incidents",
+      "fact": "A package for 'Dr. Aris Thorne' in R&D was returned on Nov 2, 2023, marked 'Addressee Unknown'; Dr. Thorne retired on August 1, 2023."
+    },
+    {
+      "id": "F06",
+      "category": "Return_Incidents",
+      "fact": "A letter for 'Jane Doe, Finance' was returned on Oct 28, 2023; the employee directory lists her as 'Jane Smith-Doe' following a recent marriage."
+    },
+    {
+      "id": "F07",
+      "category": "Return_Incidents",
+      "fact": "A certified letter for the Legal department was returned on Oct 25, 2023, because no one was available to sign for it during the 11:15 AM delivery attempt."
+    },
+    {
+      "id": "F08",
+      "category": "Return_Incidents",
+      "fact": "Twelve return items received in the last week of October were from client 'QuantumLeap Dynamics' due to an incorrect suite number on their shipping labels."
+    },
+    {
+      "id": "F09",
+      "category": "Return_Incidents",
+      "fact": "Five letters addressed to 'Innovatec Solutions' but using the old address at 450 Industry Plaza, Techburg, were returned last month."
+    },
+    {
+      "id": "F10",
+      "category": "Address_Management",
+      "fact": "The primary employee address database is managed by Human Resources through the 'PeopleSphere' platform, accessible at https://hr.innovatec.internal/peoplesphere."
+    },
+    {
+      "id": "F11",
+      "category": "Address_Management",
+      "fact": "The last bulk address verification using the 'AddressVerify API' was performed on May 15, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "Address_Management",
+      "fact": "The Client Success department maintains its own client mailing list in a shared Excel file named 'Client_Contacts_2023_Q4.xlsx' on the company network drive."
+    },
+    {
+      "id": "F13",
+      "category": "Address_Management",
+      "fact": "The 'PeopleSphere' HR system syncs with the 'MailFlow Pro' mailroom software nightly at 2:00 AM via a batch job named 'EMP_DIR_SYNC'."
+    },
+    {
+      "id": "F14",
+      "category": "Address_Management",
+      "fact": "There is no automated process to remove mailing addresses for clients who have terminated their contracts with Innovatec Solutions."
+    },
+    {
+      "id": "F15",
+      "category": "Internal_Routing_Procedures",
+      "fact": "Mail for the 5th floor (R&D) is sorted at sorting station B by mailroom clerk Leo Martinez."
+    },
+    {
+      "id": "F16",
+      "category": "Internal_Routing_Procedures",
+      "fact": "The official procedure for an employee to update their internal mail stop is via a ticket in the 'ServiceNow' portal, which requires manager approval."
+    },
+    {
+      "id": "F17",
+      "category": "Internal_Routing_Procedures",
+      "fact": "The printed mailroom directory for internal mail stops was last updated on July 10, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "Internal_Routing_Procedures",
+      "fact": "The mail stop code for the new 'AI Ethics' team is '5E-112', but it is not yet listed in the printed mailroom directory or in 'MailFlow Pro'."
+    },
+    {
+      "id": "F19",
+      "category": "Internal_Routing_Procedures",
+      "fact": "Mail without a specific recipient name but with a department listed is held at the central mailroom for 48 hours before being returned to sender."
+    },
+    {
+      "id": "F20",
+      "category": "Internal_Routing_Procedures",
+      "fact": "Mail for the executive suite on the 12th floor requires a special hand-off to the executive assistant, Brenda Miles, at her desk (12A)."
+    },
+    {
+      "id": "F21",
+      "category": "Personnel_and_Equipment",
+      "fact": "Mailroom clerk David Chen has been on extended medical leave since October 20, 2023."
+    },
+    {
+      "id": "F22",
+      "category": "Personnel_and_Equipment",
+      "fact": "The 'MailFlow Pro' sorting software, currently version 2.7.1, has not been updated since January 2022."
+    },
+    {
+      "id": "F23",
+      "category": "Personnel_and_Equipment",
+      "fact": "The internal mail delivery cart #3, used by Maria Garcia for the 4th-7th floors, has a broken front wheel, slowing her route by an average of 20 minutes."
+    },
+    {
+      "id": "F24",
+      "category": "Personnel_and_Equipment",
+      "fact": "Leo Martinez is a temporary worker hired on September 1, 2023, whose training was completed in 2 days instead of the standard 5 days."
+    },
+    {
+      "id": "F25",
+      "category": "Personnel_and_Equipment",
+      "fact": "The barcode scanner at workstation A (David Chen's usual station) fails to read approximately 1 in every 20 scans, requiring manual entry."
+    },
+    {
+      "id": "F26",
+      "category": "Personnel_and_Equipment",
+      "fact": "Mail services supervisor Sarah Jenkins's login for the 'MailFlow Pro' analytics dashboard is 's.jenkins'; the dashboard is at http://10.0.5.25/mailflow/dash."
+    },
+    {
+      "id": "F27",
+      "category": "Personnel_and_Equipment",
+      "fact": "The label printer at sorting station C frequently jams when using bulk-roll labels, model #LBL-45B."
+    },
+    {
+      "id": "F28",
+      "category": "Personnel_and_Equipment",
+      "fact": "Maria Garcia's shift is from 7:00 AM to 3:00 PM, and she is responsible for the final sorting of outgoing mail before the 2:30 PM pickup."
+    },
+    {
+      "id": "F29",
+      "category": "External_Factors",
+      "fact": "As of September 1, 2023, the external carrier 'MetroPost' delivers all corporate mail in a single drop between 11:00 AM and 11:30 AM, a change from their previous 9:00 AM slot."
+    },
+    {
+      "id": "F30",
+      "category": "External_Factors",
+      "fact": "MetroPost carrier Tom Wilson reported that the building's main reception desk is often unstaffed between 11:00 AM and 11:20 AM during employee lunch breaks."
+    },
+    {
+      "id": "F31",
+      "category": "Mail_Volume_Metrics",
+      "fact": "18% of returns in October were categorized by mailroom staff under the reason code 'Recipient Name Mismatch'."
+    },
+    {
+      "id": "F32",
+      "category": "Return_Incidents",
+      "fact": "A catalog for 'Chris Evans' in Marketing was returned. The employee directory confirms his full legal name is 'Christopher Evans', which is required for some automated sorting rules."
+    },
+    {
+      "id": "F33",
+      "category": "Address_Management",
+      "fact": "A request to update the address for the 'Finance' department, which moved from the 3rd to the 4th floor, is still pending approval in ServiceNow (Ticket #INC0045891)."
+    },
+    {
+      "id": "F34",
+      "category": "Mail_Volume_Metrics",
+      "fact": "The peak volume for incoming mail is on Tuesdays, with an average of 850 pieces, versus a daily average of 600 pieces."
+    },
+    {
+      "id": "F35",
+      "category": "External_Factors",
+      "fact": "An invoice from vendor 'DataWeave Corp' was returned on Nov 1, 2023, due to a smudged address label printed by their own system."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the total count of returned mail in October 2023, and how does this number compare to July 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Quantify Problem Scale",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the average monthly return rate for Q3 2023, and how did it change from Q1 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the raw count of returns, the user would naturally want to see this expressed as a rate to understand its proportional impact.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Quantify Problem Scale",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What percentage of returned mail in October was addressed to former employees who left more than 90 days ago?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Investigate Stale Addresses",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which retired employee appears in the returned-mail example, and what return reason was used?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Investigate Stale Addresses",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What share of returns in October were categorized under the reason 'Recipient Name Mismatch'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Investigate Name Mismatches",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Can you provide an example of a return caused by a name variation, such as a maiden vs. married name?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After seeing the statistic on name mismatches, the user would request a specific example to see the types of mismatches occurring.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Investigate Name Mismatches",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Which specific department is the source of the largest portion of returned mail, and what is that portion?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Discovering that stale addresses for former employees are a major cause of returns would prompt the supervisor to investigate if this problem is concentrated in a specific department.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Identify Departmental Hotspot",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+  "description": "For the R&D-heavy 5th floor, which sorting station and clerk are responsible for handling that floor's mail?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N7",
+  "prediction_reason": "Once R&D is identified as the main hotspot, the next logical step is to identify the clerk and sorting station handling that floor's mail.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Identify Departmental Hotspot",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "When was the last bulk address verification performed, and which HR system syncs with the mailroom software?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Identifying a departmental hotspot would lead a pattern-seeking supervisor to question the underlying data integrity and system processes that supply addresses for that department.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Check Data Management Processes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the update date of the printed mailroom directory for internal mail stops?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After discussing automated systems for address management (HR sync, verification API), the user might think to check on the status of manual or physical systems, like the printed directory.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Check Manual Routing Aids",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the external carrier's new delivery window, and has any issue been reported with building access during that time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Review External Delivery Factors",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+  "description": "Was Leo Martinez given the standard training duration, and if not, how long was his training?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N8",
+  "prediction_reason": "CROSS-GROUP: After identifying Leo Martinez as the clerk handling the hotspot floor, a direct follow-up is whether he received the standard training duration.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Assess Personnel Factors",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Quantify Problem Scale",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Investigate Stale Addresses",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Investigate Name Mismatches",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Identify Departmental Hotspot",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Check Data Management Processes",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Check Manual Routing Aids",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Review External Delivery Factors",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Assess Personnel Factors",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "mailroom_return_reason_pattern_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

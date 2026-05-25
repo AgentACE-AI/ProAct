@@ -1,0 +1,403 @@
+{
+  "scenario_id": "negotiate_legal_settlement_04",
+  "domain": "negotiation_support",
+  "description": "A business is in a dispute with a contractor over a failed delivery. Conflict: The contract has ambiguous 'Force Majeure' clauses. The business wants a full refund; the contractor offers credit. The user needs to negotiate a settlement to avoid a lawsuit.",
+  "user_profile": {
+    "persona": "48-year-old Business Owner",
+    "context": "Legal letters have been exchanged, trying to avoid court",
+    "communication_style": "Formal, legalistic, but looking for an 'out'"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "parties_involved",
+      "fact": "The business entity in the dispute is 'Acme Innovations Inc.'"
+    },
+    {
+      "id": "F02",
+      "category": "parties_involved",
+      "fact": "The business owner representing Acme Innovations is its CEO, Mr. Julian Vance."
+    },
+    {
+      "id": "F03",
+      "category": "parties_involved",
+      "fact": "The contractor in the dispute is 'LogiCore Solutions LLC.'"
+    },
+    {
+      "id": "F04",
+      "category": "parties_involved",
+      "fact": "LogiCore Solutions is represented by its legal counsel, Ms. Evelyn Reed of 'Reed & Barton Legal Group'."
+    },
+    {
+      "id": "F05",
+      "category": "contract_details",
+      "fact": "The governing contract is identified by the reference number AC-LC-2023-0815."
+    },
+    {
+      "id": "F06",
+      "category": "contract_details",
+      "fact": "The contract was signed by both parties on August 15, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "contract_details",
+      "fact": "The contracted deliverable was one custom-built 'LC-Custom-Rack-42U' server rack."
+    },
+    {
+      "id": "F08",
+      "category": "contract_details",
+      "fact": "The agreed-upon delivery deadline stipulated in the contract was October 30, 2023."
+    },
+    {
+      "id": "F09",
+      "category": "contract_details",
+      "fact": "Section 7.2 of the contract defines a 'Force Majeure' event as 'unforeseeable events beyond reasonable control, including acts of God, governmental actions, and significant supply chain disruptions.'"
+    },
+    {
+      "id": "F10",
+      "category": "contract_details",
+      "fact": "Section 9.1 specifies a penalty of 1.5% of the total contract value for each week of delay, capped at 15%."
+    },
+    {
+      "id": "F11",
+      "category": "financials",
+      "fact": "The total value of the contract is $28,500.00 USD."
+    },
+    {
+      "id": "F12",
+      "category": "financials",
+      "fact": "Acme Innovations made a 50% upfront payment of $14,250.00 on August 18, 2023."
+    },
+    {
+      "id": "F13",
+      "category": "financials",
+      "fact": "The upfront payment was made via wire transfer with confirmation number WT-983451."
+    },
+    {
+      "id": "F14",
+      "category": "financials",
+      "fact": "Acme Innovations has formally requested a full cash refund of the $14,250.00 payment."
+    },
+    {
+      "id": "F15",
+      "category": "financials",
+      "fact": "To date, Acme Innovations has incurred $2,150.00 in legal consultation fees with the firm 'Vance & Associates'."
+    },
+    {
+      "id": "F16",
+      "category": "dispute_timeline",
+      "fact": "LogiCore Solutions first notified Acme Innovations of a potential delivery delay via email on October 27, 2023."
+    },
+    {
+      "id": "F17",
+      "category": "dispute_timeline",
+      "fact": "LogiCore Solutions formally invoked the 'Force Majeure' clause in a certified letter dated November 5, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "dispute_timeline",
+      "fact": "Acme Innovations sent its formal letter of dispute, rejecting the Force Majeure claim, on November 15, 2023."
+    },
+    {
+      "id": "F19",
+      "category": "dispute_timeline",
+      "fact": "LogiCore's official response, which contained the offer for store credit, was received on December 1, 2023."
+    },
+    {
+      "id": "F20",
+      "category": "force_majeure_event",
+      "fact": "The event cited by LogiCore as a Force Majeure incident was a fire at their primary sub-supplier, 'Precision Metals Fab Inc.'"
+    },
+    {
+      "id": "F21",
+      "category": "force_majeure_event",
+      "fact": "The fire at Precision Metals Fab Inc. occurred on October 25, 2023."
+    },
+    {
+      "id": "F22",
+      "category": "force_majeure_event",
+      "fact": "The facility of Precision Metals Fab Inc. is located at 18 Industrial Way, Grand Rapids, MI."
+    },
+    {
+      "id": "F23",
+      "category": "force_majeure_event",
+      "fact": "Acme's counter-argument is that LogiCore had a pre-approved alternative supplier, 'SteelForm Components', who was not affected by the fire."
+    },
+    {
+      "id": "F24",
+      "category": "communication_records",
+      "fact": "The primary point of contact for this matter at LogiCore Solutions is Mr. David Chen, Head of Operations."
+    },
+    {
+      "id": "F25",
+      "category": "communication_records",
+      "fact": "Mr. David Chen's business email address is d.chen@logicore-sol.com."
+    },
+    {
+      "id": "F26",
+      "category": "communication_records",
+      "fact": "The internal dispute reference number used by LogiCore's system is 'LC-DISP-77B-2023'."
+    },
+    {
+      "id": "F27",
+      "category": "communication_records",
+      "fact": "The most recent direct communication was a phone call between Julian Vance and David Chen on December 5, 2023, at 2:15 PM EST."
+    },
+    {
+      "id": "F28",
+      "category": "communication_records",
+      "fact": "During the call on December 5, 2023, Mr. Chen stated that the offer of store credit was 'final and non-negotiable'."
+    },
+    {
+      "id": "F29",
+      "category": "settlement_status",
+      "fact": "LogiCore's current and only settlement offer is $14,250.00 in store credit, valid for 24 months."
+    },
+    {
+      "id": "F30",
+      "category": "settlement_status",
+      "fact": "Acme's initial demand was a full cash refund of $14,250.00 plus a 5% penalty for breach of contract."
+    },
+    {
+      "id": "F31",
+      "category": "settlement_status",
+      "fact": "Acme's most recent pre-litigation settlement offer, sent December 10, 2023, is for a cash refund of $12,000, with both parties waiving all further claims."
+    },
+    {
+      "id": "F32",
+      "category": "legal_status",
+      "fact": "No formal lawsuit has been filed by either party as of today's date."
+    },
+    {
+      "id": "F33",
+      "category": "legal_status",
+      "fact": "Section 12.4 of the contract specifies that the jurisdiction for any legal action shall be the State of Delaware."
+    },
+    {
+      "id": "F34",
+      "category": "settlement_status",
+      "fact": "The deadline set by LogiCore Solutions for Acme Innovations to accept the store credit offer is December 20, 2023."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the contract reference number and what was the total value of the agreement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Contract & Financial Basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How much did we pay upfront and what is the amount of the cash refund we have formally requested?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming the total contract value, the user would naturally want to review the specific amounts paid and requested.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Contract & Financial Basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What specific event did LogiCore Solutions cite as the 'Force Majeure' incident and on what date did it occur?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Contractor's Position",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the current settlement offer from LogiCore and what is the deadline for us to accept it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F34"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Understanding the contractor's reason for non-delivery (Force Majeure) directly leads to asking about their proposed resolution.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Contractor's Position",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is our main counter-argument to their Force Majeure claim?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing the contractor's Force Majeure claim, the immediate logical next step for the user is to recall their own counter-position to prepare for negotiation.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Acme's Counter-Argument",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What was our most recent pre-litigation settlement offer to them?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the user has reviewed the contractor's current offer, they will want to contrast it with their own most recent offer to establish the negotiation gap.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Acme's Settlement Position",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who is the primary operations contact at LogiCore for this matter, and who is their legal counsel?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the date of our last phone call with LogiCore's Head of Operations, and what was the key takeaway from that call?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After identifying the key contacts, the user would likely want to recall the status of the last direct communication with them.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Which state's jurisdiction governs the contract for any potential legal action?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After reviewing both parties' settlement offers and realizing they are far apart, a user preparing for legal escalation would naturally inquire about the legal jurisdiction.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Legal Parameters",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How much have we spent on legal consultation fees related to this dispute so far?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Associated Costs",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Contract & Financial Basics",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Contractor's Position",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Acme's Counter-Argument",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Acme's Settlement Position",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Key Contacts",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Legal Parameters",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Associated Costs",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "negotiate_legal_settlement_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

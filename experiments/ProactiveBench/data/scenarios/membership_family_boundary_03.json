@@ -1,0 +1,410 @@
+{
+  "scenario_id": "membership_family_boundary_03",
+  "domain": "subscription_membership_administration",
+  "description": "A shared or family membership has unclear household boundaries, and the team must remember who is included, excluded, invited, or pending verification under the current account rules. All companies and account names are fictional.",
+  "user_profile": {
+    "persona": "38-year-old account specialist managing family-plan edge cases",
+    "context": "The account evolved gradually as people moved, split households, and rejoined, leaving the current member boundary unclear",
+    "communication_style": "Boundary-sensitive and structured, wants person-by-person membership status stated explicitly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "account_details",
+      "fact": "The ConnectSphere Plus family membership account is identified by the ID 'VANCE-FAM-8817'."
+    },
+    {
+      "id": "F02",
+      "category": "account_details",
+      "fact": "The account is subscribed to the 'ConnectSphere Plus Premium Family' plan."
+    },
+    {
+      "id": "F03",
+      "category": "account_details",
+      "fact": "The primary account holder is Elias Vance."
+    },
+    {
+      "id": "F04",
+      "category": "account_details",
+      "fact": "The account was created on June 12, 2018."
+    },
+    {
+      "id": "F05",
+      "category": "account_details",
+      "fact": "The primary email address associated with the account is elias.vance.8817@emailfic.com."
+    },
+    {
+      "id": "F06",
+      "category": "membership_rules",
+      "fact": "The 'Premium Family' plan allows a maximum of 6 active members."
+    },
+    {
+      "id": "F07",
+      "category": "membership_rules",
+      "fact": "The household boundary is defined as individuals cohabitating at the same primary residential address, verified via a utility bill."
+    },
+    {
+      "id": "F08",
+      "category": "membership_rules",
+      "fact": "An exception to the cohabitation rule is granted for dependent children under 24 enrolled full-time in college."
+    },
+    {
+      "id": "F09",
+      "category": "membership_rules",
+      "fact": "New members must accept an email invitation and complete address verification within 14 days."
+    },
+    {
+      "id": "F10",
+      "category": "membership_rules",
+      "fact": "A member who moves to a different primary residence is no longer eligible and must be removed from the plan within 30 days."
+    },
+    {
+      "id": "F11",
+      "category": "member_status_active",
+      "fact": "Elias Vance is the primary member and his status is 'Active'."
+    },
+    {
+      "id": "F12",
+      "category": "member_status_active",
+      "fact": "Maria Vance, spouse of Elias, is an 'Active' member, verified on June 15, 2018."
+    },
+    {
+      "id": "F13",
+      "category": "member_status_active",
+      "fact": "Chloe Vance, daughter, age 16, is an 'Active' member under a linked child profile."
+    },
+    {
+      "id": "F14",
+      "category": "member_status_active",
+      "fact": "Leo Vance, son, age 19, is an 'Active' member under the student exception, with his university address at 456 College Ave, Crestwood, listed."
+    },
+    {
+      "id": "F15",
+      "category": "member_status_inactive",
+      "fact": "Alex Vance, brother of Elias, was removed from the plan on February 20, 2023, due to establishing a separate household."
+    },
+    {
+      "id": "F16",
+      "category": "member_status_inactive",
+      "fact": "David Chen, brother of Maria, had his membership status changed to 'Inactive' on September 5, 2022, after he moved to a new apartment."
+    },
+    {
+      "id": "F17",
+      "category": "member_status_pending",
+      "fact": "An invitation was sent to Isabella Rossi, Elias's cousin, on May 1, 2024, to join the plan."
+    },
+    {
+      "id": "F18",
+      "category": "member_status_pending",
+      "fact": "Isabella Rossi's invitation is currently 'Pending - Awaiting Acceptance' and will expire on May 15, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "member_status_pending",
+      "fact": "A request to add Sophia Vance, Elias's niece, was submitted by Elias on May 3, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "member_status_pending",
+      "fact": "Sophia Vance's request is 'Pending - Policy Review' because she does not cohabitate with the primary account holder."
+    },
+    {
+      "id": "F21",
+      "category": "billing_information",
+      "fact": "The monthly subscription cost for the 'Premium Family' plan is $29.99 USD."
+    },
+    {
+      "id": "F22",
+      "category": "billing_information",
+      "fact": "The next billing date for account VANCE-FAM-8817 is June 1, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "billing_information",
+      "fact": "The payment method on file is a Visa card ending in 4028."
+    },
+    {
+      "id": "F24",
+      "category": "billing_information",
+      "fact": "The last successful payment of $29.99 was processed on May 1, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "support_and_tools",
+      "fact": "The assigned account specialist for this case is Jenna Ortiz."
+    },
+    {
+      "id": "F26",
+      "category": "support_and_tools",
+      "fact": "The account can be managed via the MemberAdmin Portal at https://admin.connectsphere.fic/accounts/VANCE-FAM-8817."
+    },
+    {
+      "id": "F27",
+      "category": "support_and_tools",
+      "fact": "The Tier 2 support lead for complex family plan escalations is Marcus Thorne."
+    },
+    {
+      "id": "F28",
+      "category": "support_and_tools",
+      "fact": "The ongoing review of the Vance family membership is tracked in Jira ticket CS-TKT-95112."
+    },
+    {
+      "id": "F29",
+      "category": "communication_log",
+      "fact": "On April 18, 2024, Elias Vance contacted support via chat to confirm the student exception policy for his son, Leo."
+    },
+    {
+      "id": "F30",
+      "category": "communication_log",
+      "fact": "An internal note was added to the account on May 4, 2024, flagging the request for Sophia Vance as a potential policy violation."
+    },
+    {
+      "id": "F31",
+      "category": "communication_log",
+      "fact": "A discussion about clarifying the 'household' definition for the Vance account occurred in the #specialist-support Slack channel on May 5, 2024."
+    },
+    {
+      "id": "F32",
+      "category": "communication_log",
+      "fact": "On May 6, 2024, an email was sent to elias.vance.8817@emailfic.com explaining why the request for his niece, Sophia, requires manual review."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the account ID and the name of the primary account holder for this case?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Account Overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who are the current active members on the Vance family account?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the account, the immediate next step is to understand who is currently part of it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Account Overview",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the maximum number of active members allowed on this plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After listing the current number of members, the plan's capacity limit is the most relevant piece of contextual information.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Plan Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is Leo Vance's membership status and the address listed for his student exception?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: The list of active members reveals a non-standard member (student exception), prompting a need to verify the details of that exception.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Specific Member Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Who has a pending invitation to join the account, and when does that invitation expire?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Pending and Inactive Members",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the status of the request to add Sophia Vance, and why is it under review?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After asking about one pending member (Isabella), it's natural to inquire about any other pending requests on the account.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Pending and Inactive Members",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Which members were previously removed from the plan and for what reasons?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After reviewing all current and pending members, understanding the history of removed members completes the picture of the account's boundary issues.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Pending and Inactive Members",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N8",
+      "description": "What is the specific household boundary rule for this family plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Learning that Sophia Vance's request is pending due to a cohabitation issue directly triggers the need to review the exact policy wording.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Policy Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What was the last communication sent to the primary account holder regarding Sophia's request?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After understanding the internal status of a complex request, the specialist needs to know what has already been communicated to the customer to avoid repetition.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Communication Log",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Are there any internal notes or discussion logs regarding the policy concern for Sophia Vance?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30",
+        "F31"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After checking the external communication, the specialist would check for internal context to understand the team's current position.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Communication Log",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the next billing date and the monthly cost for this account?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Billing Status",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Account Overview",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Plan Rules",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Specific Member Status",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Pending and Inactive Members",
+      "member_need_ids": [
+        "N5",
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Policy Details",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Communication Log",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Billing Status",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "membership_family_boundary_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

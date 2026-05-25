@@ -1,0 +1,449 @@
+{
+  "scenario_id": "polling_accessibility_exception_log_02",
+  "domain": "election_polling_operations",
+  "description": "Polling staff need to keep track of voter assistance situations and accessibility accommodations throughout the day without losing procedural consistency or mixing up different exception cases. All locations are fictional.",
+  "user_profile": {
+    "persona": "36-year-old deputy polling supervisor overseeing several front-desk interactions",
+    "context": "Most voters move through normally, but the special cases require enough precision that informal memory is not reliable",
+    "communication_style": "Respectful and exact, wants assistance cases logged without losing procedural detail"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel_and_Contacts",
+      "fact": "The Precinct Supervisor for the Maplewood Community Center is Eleanor Vance, reachable at the site phone on extension 401."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel_and_Contacts",
+      "fact": "The designated IT Support Technician is Kenji Tanaka, and his direct cell number for urgent issues is (555) 821-4099."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel_and_Contacts",
+      "fact": "Maria Flores is the assigned Spanish-language bilingual poll worker, stationed at the Greeter Desk (Station 1)."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel_and_Contacts",
+      "fact": "For procedural or legal questions, staff must contact the Redwood County Elections legal hotline at (555) 789-1234."
+    },
+    {
+      "id": "F05",
+      "category": "Locations_and_Stations",
+      "fact": "The polling place is located at Maplewood Community Center, 1250 Oak Street, Northwood, CA 94500."
+    },
+    {
+      "id": "F06",
+      "category": "Locations_and_Stations",
+      "fact": "Standard voter check-in is conducted at Stations 2 and 3 using the ePollster Tab 4 tablets."
+    },
+    {
+      "id": "F07",
+      "category": "Locations_and_Stations",
+      "fact": "The accessible voting machine, an OmniBallot 3000 model, is located at Station 5."
+    },
+    {
+      "id": "F08",
+      "category": "Locations_and_Stations",
+      "fact": "Curbside voting is conducted in two designated parking spots, C1 and C2, located near the west entrance."
+    },
+    {
+      "id": "F09",
+      "category": "Procedures_Voter_Assistance",
+      "fact": "A voter requesting curbside assistance must have Form C-19 completed by two poll workers of different party affiliations."
+    },
+    {
+      "id": "F10",
+      "category": "Procedures_Voter_Assistance",
+      "fact": "For language assistance other than Spanish, poll workers must use the LanguageLine phone service by dialing 1-800-555-LANG and providing account code 774-RW."
+    },
+    {
+      "id": "F11",
+      "category": "Procedures_Voter_Assistance",
+      "fact": "Any voter requiring assistance from another person to mark their ballot must have that person sign the 'Voter Assistance Declaration' in the poll roster."
+    },
+    {
+      "id": "F12",
+      "category": "Procedures_Voter_Assistance",
+      "fact": "A voter whose eligibility cannot be confirmed must be issued a provisional ballot using the pink P-04 envelope."
+    },
+    {
+      "id": "F13",
+      "category": "Technology_and_Systems",
+      "fact": "All voter assistance incidents must be logged in the 'PollWatch Sentinel' system."
+    },
+    {
+      "id": "F14",
+      "category": "Technology_and_Systems",
+      "fact": "The direct login URL for PollWatch Sentinel is https://redwood.pollwatch.gov/login."
+    },
+    {
+      "id": "F15",
+      "category": "Technology_and_Systems",
+      "fact": "The username for the Deputy Supervisor station (Station 4) is 'deputy_mcc' and the Election Day password is 'Maple!2024#'."
+    },
+    {
+      "id": "F16",
+      "category": "Technology_and_Systems",
+      "fact": "The Wi-Fi network for official polling equipment is 'RC_ELECTIONS_SECURE' and the password is 'VoteSafe24!'."
+    },
+    {
+      "id": "F17",
+      "category": "Technology_and_Systems",
+      "fact": "A full data sync for the ePollster tablets must be manually initiated at 12:00 PM and 5:00 PM to ensure roster accuracy."
+    },
+    {
+      "id": "F18",
+      "category": "Accessibility_Accommodations",
+      "fact": "A large-print ballot guide is available upon request; it is stored in the blue supply bin labeled 'ACC-LP' under Station 1."
+    },
+    {
+      "id": "F19",
+      "category": "Accessibility_Accommodations",
+      "fact": "The OmniBallot 3000 at Station 5 is equipped with an audio tactile interface (ATI) and a sip-and-puff device port."
+    },
+    {
+      "id": "F20",
+      "category": "Accessibility_Accommodations",
+      "fact": "A magnifying sheet for paper ballots is available at the Deputy Supervisor's station (Station 4)."
+    },
+    {
+      "id": "F21",
+      "category": "Accessibility_Accommodations",
+      "fact": "All assistance animal incidents, such as a disruptive animal, must be logged in PollWatch Sentinel using incident code 'AA-02'."
+    },
+    {
+      "id": "F22",
+      "category": "Contingency_Plans",
+      "fact": "In case of a power outage, the backup generator provides power to Stations 2, 3, 5, and the main ballot box light for exactly 4 hours."
+    },
+    {
+      "id": "F23",
+      "category": "Contingency_Plans",
+      "fact": "If the PollWatch Sentinel system is offline, all incidents must be recorded manually on the 'Incident Log Form' (Form I-LOG-M) with exact timestamps."
+    },
+    {
+      "id": "F24",
+      "category": "Contingency_Plans",
+      "fact": "If the OmniBallot 3000 machine malfunctions, the designated backup unit is stored in supply closet B, labeled 'Backup VB-02'."
+    },
+    {
+      "id": "F25",
+      "category": "Contingency_Plans",
+      "fact": "The emergency evacuation meeting point for all poll workers is the large oak tree in the adjacent park, 300 feet east of the building exit."
+    },
+    {
+      "id": "F26",
+      "category": "Procedures_General",
+      "fact": "If a voter has spoiled their ballot, they are entitled to a maximum of two replacement ballots, each logged in the roster."
+    },
+    {
+      "id": "F27",
+      "category": "Procedures_General",
+      "fact": "The secure ballot box is located 10 feet from the main exit and is monitored by security Camera 4 on the precinct's CCTV system."
+    },
+    {
+      "id": "F28",
+      "category": "Procedures_General",
+      "fact": "The end-of-day reconciliation must be co-signed by Eleanor Vance and the Deputy Supervisor on Form EOD-7 before sealing any materials."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the login URL, username, and password for the PollWatch Sentinel system at my station?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "System Login",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the procedure if the PollWatch Sentinel system is offline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After a user asks how to log into a critical system, a natural follow-up is to provide the contingency plan for when that system is unavailable.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "System Contingency",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "A voter needs language assistance in a language other than Spanish. What is the procedure and what information do I need?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Language Assistance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Who is our assigned Spanish-language poll worker and where are they located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "INTRA-GROUP: After asking about the general procedure for language assistance, the user will likely want to know about the specific, in-person resource for the most common language.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Language Assistance",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "For curbside assistance, what form must be completed and by how many poll workers of different party affiliations?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Curbside Voting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Where are the designated parking spots for curbside voting located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "INTRA-GROUP: Once the user knows the procedure for curbside voting, they will need to know the physical location to direct staff and voters.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Curbside Voting",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "A voter has requested a large-print ballot guide. Where is it stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Visual Aids",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Where can I find the magnifying sheet for voters who need help reading a paper ballot?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After a user asks about one specific type of visual aid (large-print guide), it is helpful to proactively offer information about other available visual aids like the magnifying sheet.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Magnifier Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where is the OmniBallot 3000 accessible voting machine located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Accessible Machine Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What specific accessibility features are available on the OmniBallot 3000?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "INTRA-GROUP: After locating the accessible voting machine, the user may need to describe its specific capabilities to a voter.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Accessible Machine Location",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "If the OmniBallot 3000 machine malfunctions, where is the designated backup unit stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Knowing the location of the primary accessible machine naturally leads to a concern about what to do if it fails.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Machine Contingency",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Who is the IT Support Technician and what is their direct number for urgent issues?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "INTRA-GROUP: After learning about a hardware failure contingency (backup unit), the user will need the contact information for the person who can fix the primary unit or assist with the backup.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Machine Contingency",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is the correct procedure for a voter whose eligibility cannot be confirmed in the ePollster?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Provisional Ballot Procedure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the phone number for the legal hotline for procedural or legal questions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After handling a legally sensitive situation like a provisional ballot, the user might want to know the contact for official legal guidance for future issues.",
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Legal Contact",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "System Login",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "System Contingency",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Language Assistance",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Curbside Voting",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Visual Aids",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Magnifier Location",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Accessible Machine Location",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Machine Contingency",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Provisional Ballot Procedure",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Legal Contact",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G9"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "polling_accessibility_exception_log_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

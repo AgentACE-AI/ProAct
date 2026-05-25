@@ -1,0 +1,379 @@
+{
+  "scenario_id": "shelter_foster_matching_constraints_03",
+  "domain": "animal_shelter_operations",
+  "description": "A coordinator needs to match animals to foster homes based on medical needs, behavior, household restrictions, transport timing, and existing foster capacity without losing track of special constraints.",
+  "user_profile": {
+    "persona": "34-year-old foster coordinator balancing urgent placements with volunteer limitations",
+    "context": "Potential foster homes exist, but each one has limits that only fit certain animals well",
+    "communication_style": "Constraint-aware and empathetic, wants animal needs and foster limits aligned clearly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "animal_profile",
+      "fact": "A 3-year-old German Shepherd named 'Zeus' (ID: A4581) has severe separation anxiety and cannot be left alone for more than 3 hours."
+    },
+    {
+      "id": "F02",
+      "category": "medical_information",
+      "fact": "Zeus requires 100mg of Trazodone, administered orally twice daily at 8 AM and 7 PM to manage his anxiety."
+    },
+    {
+      "id": "F03",
+      "category": "animal_profile",
+      "fact": "A 7-year-old Siamese cat named 'Luna' (ID: C1234) is diabetic and requires a quiet environment without young children."
+    },
+    {
+      "id": "F04",
+      "category": "medical_information",
+      "fact": "Luna needs 2 units of Lantus insulin administered via subcutaneous injection twice daily, 15 minutes after her meals."
+    },
+    {
+      "id": "F05",
+      "category": "animal_profile",
+      "fact": "A 2-year-old Terrier mix named 'Rocky' (ID: A6789) is leash-reactive towards other dogs and must be the only canine in his foster home."
+    },
+    {
+      "id": "F06",
+      "category": "foster_home_profile",
+      "fact": "The Chen family (Foster ID: FH-012) at 123 Maple Lane has two children under the age of 10 and cannot foster animals with a known bite history."
+    },
+    {
+      "id": "F07",
+      "category": "foster_home_profile",
+      "fact": "John Miller (Foster ID: FH-025) at 456 Oak Ave, Apt 3B, is an experienced medical foster who is approved to administer injections and manage complex medication schedules."
+    },
+    {
+      "id": "F08",
+      "category": "foster_home_profile",
+      "fact": "John Miller's apartment building has a strict 40-pound weight limit for dogs."
+    },
+    {
+      "id": "F09",
+      "category": "foster_home_profile",
+      "fact": "Sarah Davis (Foster ID: FH-031) has two resident adult cats and can only foster felines that have tested negative for FeLV/FIV."
+    },
+    {
+      "id": "F10",
+      "category": "operational_procedure",
+      "fact": "All foster placements must be recorded in the 'ShelterLuv' software platform, accessible at https://pawsitivecare.shelterluv.com."
+    },
+    {
+      "id": "F11",
+      "category": "personnel",
+      "fact": "The foster coordinator, Maya Patel, can be reached at m.patel@pawsitivecare.org or extension 102."
+    },
+    {
+      "id": "F12",
+      "category": "logistics",
+      "fact": "Transport volunteer Tom Jenkins is available for animal pickups and drop-offs on Mondays and Fridays between 10 AM and 4 PM."
+    },
+    {
+      "id": "F13",
+      "category": "logistics",
+      "fact": "Transport requests for Tom Jenkins must be submitted through the #transport-requests Slack channel at least 48 hours in advance."
+    },
+    {
+      "id": "F14",
+      "category": "veterinary_care",
+      "fact": "The primary veterinary partner is Crestwood Animal Hospital, located at 789 Pine Street."
+    },
+    {
+      "id": "F15",
+      "category": "veterinary_care",
+      "fact": "Routine vet appointments for foster animals are scheduled by Maya on Tuesdays and Thursdays only."
+    },
+    {
+      "id": "F16",
+      "category": "operational_procedure",
+      "fact": "A 'Foster Go-Kit' containing 7 days of food, a collar, a leash, and initial medication is provided for every new placement."
+    },
+    {
+      "id": "F17",
+      "category": "capacity_management",
+      "fact": "The shelter's maximum active foster home capacity is currently set at 60 homes."
+    },
+    {
+      "id": "F18",
+      "category": "capacity_management",
+      "fact": "As of November 15, 2023, there are 54 active foster homes, leaving a capacity for 6 new placements."
+    },
+    {
+      "id": "F19",
+      "category": "animal_profile",
+      "fact": "A litter of four 3-week-old kittens (ID: C9901-C9904) requires bottle-feeding with KMR formula every 4 hours, around the clock."
+    },
+    {
+      "id": "F20",
+      "category": "foster_home_profile",
+      "fact": "The Chen family (FH-012) has a fully fenced backyard with a 6-foot wooden fence, making it suitable for high-energy dogs."
+    },
+    {
+      "id": "F21",
+      "category": "veterinary_care",
+      "fact": "The after-hours emergency vet contact is Northwood Emergency Pet Clinic at 555-0199; fosters must call Maya Patel before going."
+    },
+    {
+      "id": "F22",
+      "category": "operational_procedure",
+      "fact": "Weekly foster check-in reports must be submitted by foster parents via a Google Form by Sunday at 8:00 PM."
+    },
+    {
+      "id": "F23",
+      "category": "medical_information",
+      "fact": "Luna's blood glucose levels must be monitored once a week using the shelter-provided AlphaTRAK 2 meter."
+    },
+    {
+      "id": "F24",
+      "category": "animal_profile",
+      "fact": "'Rocky' (ID: A6789) passed his basic obedience evaluation on October 30, 2023, but failed the dog-to-dog interaction component."
+    },
+    {
+      "id": "F25",
+      "category": "personnel",
+      "fact": "Behavioral support for foster homes is provided by our on-staff trainer, David Lee, via scheduled Zoom consultations."
+    },
+    {
+      "id": "F26",
+      "category": "logistics",
+      "fact": "The next foster orientation for newly approved volunteers is on December 2, 2023, at 11:00 AM at the main shelter building."
+    },
+    {
+      "id": "F27",
+      "category": "foster_home_profile",
+      "fact": "Sarah Davis (FH-031) lives in a third-floor apartment with no elevator, which is unsuitable for large dogs or dogs with mobility issues."
+    },
+    {
+      "id": "F28",
+      "category": "operational_procedure",
+      "fact": "The standard quarantine period for any animal showing signs of URI (Upper Respiratory Infection) is 14 days in an isolated room."
+    },
+    {
+      "id": "F29",
+      "category": "animal_profile",
+      "fact": "A 10-year-old Beagle named 'Sadie' (ID: A3344) has advanced arthritis and needs a home with no stairs."
+    },
+    {
+      "id": "F30",
+      "category": "medical_information",
+      "fact": "Sadie (ID: A3344) is prescribed 75mg of Carprofen once daily with food for her arthritis pain."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the medical and environmental needs for the diabetic cat, Luna (C1234)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Luna's Placement Needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the specific requirements for monitoring Luna's blood glucose?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning about Luna's diabetes, the coordinator needs to know the specific monitoring protocol to communicate to a potential foster.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Luna's Placement Needs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the specific medical capabilities of the foster John Miller (FH-025)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Foster Home Profile: John Miller",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the dog weight restriction at John Miller's apartment building?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: While reviewing John Miller's profile for a medical case, it's relevant to check for other key restrictions that might limit his placements.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Foster Home Profile: John Miller",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are the specific behavioral housing restrictions for the Terrier mix, Rocky (A6789)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Rocky's Placement Needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What behavioral support resources are available for foster homes managing challenging dogs?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Identifying an animal with specific behavioral needs like Rocky's leash reactivity naturally leads to the question of what support the shelter can offer the foster parent.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Behavioral Support Resources",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the medical and housing requirements for the Beagle named Sadie (A3344)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Sadie's Placement Needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the physical characteristics of Sarah Davis's (FH-031) home?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After identifying that Sadie needs a home with no stairs, the coordinator would proactively check the profile of a potential foster like Sarah Davis for that specific constraint.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Foster Home Profile: Sarah Davis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the procedure for requesting animal transport via Tom Jenkins?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once a suitable foster home like John Miller's is identified, the next logistical step is to determine how to get the animal there, prompting a need for transport procedures.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Logistics and Reporting Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "On which days and during what hours is Tom Jenkins available for foster animal pickups and drop-offs?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group follow-up: After confirming how to request transport through Tom Jenkins, a direct next question is when he is actually available for pickups and drop-offs.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Transport Logistics",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Luna's Placement Needs",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Foster Home Profile: John Miller",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Rocky's Placement Needs",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Behavioral Support Resources",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Sadie's Placement Needs",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Foster Home Profile: Sarah Davis",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+    "label": "Transport Logistics",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shelter_foster_matching_constraints_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "scenario_id": "library_device_loan_damage_pattern_03",
+  "domain": "public_library_services",
+  "description": "The library suspects recurring problems with loaned devices and wants to see whether damage patterns link to certain models, accessories, checkout lengths, or return conditions.",
+  "user_profile": {
+    "persona": "33-year-old technology services librarian responsible for a device lending collection",
+    "context": "Individual incidents seem manageable, but taken together they may reveal a preventable pattern",
+    "communication_style": "Pattern-seeking and practical, wants incidents compared without jumping to blame"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "device_inventory",
+      "fact": "The library owns 15 'Innovatech Tablet Pro 11' devices, purchased on May 10, 2022."
+    },
+    {
+      "id": "F02",
+      "category": "device_inventory",
+      "fact": "The library owns 10 'ConnectaLink 5G Hotspot' devices, model CL-H5G-21."
+    },
+    {
+      "id": "F03",
+      "category": "device_inventory",
+      "fact": "The library owns 20 'ZenithBook Air 13' laptops, purchased on January 15, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "device_inventory",
+      "fact": "The 'Innovatech Tablet Pro 11' with serial number ITP11-A007 is part of the lending collection."
+    },
+    {
+      "id": "F05",
+      "category": "device_inventory",
+      "fact": "All lendable devices are stored and charged in secure cabinet #3 behind the Technology Services Desk."
+    },
+    {
+      "id": "F06",
+      "category": "personnel",
+      "fact": "The Technology Services Librarian responsible for the device collection is named Alex Chen."
+    },
+    {
+      "id": "F07",
+      "category": "loan_policies",
+      "fact": "The standard loan period for all devices is 21 days."
+    },
+    {
+      "id": "F08",
+      "category": "loan_policies",
+      "fact": "A single 7-day renewal is permitted for devices if there are no active holds."
+    },
+    {
+      "id": "F09",
+      "category": "loan_policies",
+      "fact": "Patrons must sign the 'Device Lending Agreement Form 7B' at each checkout."
+    },
+    {
+      "id": "F10",
+      "category": "damage_incidents",
+      "fact": "On October 26, 2023, 'Innovatech Tablet Pro 11' (SN: ITP11-A007) was returned with a cracked screen."
+    },
+    {
+      "id": "F11",
+      "category": "damage_incidents",
+      "fact": "The damage report for the cracked screen on ITP11-A007 is filed under incident number D2023-10-26-01."
+    },
+    {
+      "id": "F12",
+      "category": "damage_incidents",
+      "fact": "On November 5, 2023, 'ZenithBook Air 13' (SN: ZBA13-C012) was returned with a non-functional 'E' key."
+    },
+    {
+      "id": "F13",
+      "category": "damage_incidents",
+      "fact": "The patron who returned ITP11-A007 (incident D2023-10-26-01) had the device checked out for the full 21-day period."
+    },
+    {
+      "id": "F14",
+      "category": "damage_incidents",
+      "fact": "The patron who returned ZBA13-C012 reported that the device was in a backpack that got wet in the rain."
+    },
+    {
+      "id": "F15",
+      "category": "damage_incidents",
+      "fact": "Three separate 'Innovatech Tablet Pro 11' devices were returned with charging port damage between August 1 and October 31, 2023."
+    },
+    {
+      "id": "F16",
+      "category": "damage_incidents",
+      "fact": "Incident report D2023-09-15-03 notes that 'Innovatech Tablet Pro 11' (SN: ITP11-A011) was returned with its stylus missing."
+    },
+    {
+      "id": "F17",
+      "category": "damage_incidents",
+      "fact": "A 'ConnectaLink 5G Hotspot' (SN: CLH5G-18) was reported lost by a patron on September 1, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "accessories",
+      "fact": "Each 'Innovatech Tablet Pro 11' is loaned with a 'DuraShell Folio Case' and a 'Precision Stylus'."
+    },
+    {
+      "id": "F19",
+      "category": "accessories",
+      "fact": "Each 'ZenithBook Air 13' is loaned with a 'PowerBlock 65W USB-C Charger' and a padded neoprene sleeve."
+    },
+    {
+      "id": "F20",
+      "category": "accessories",
+      "fact": "The 'DuraShell Folio Case' for tablet ITP11-A007 was returned with a broken corner clasp on October 26, 2023."
+    },
+    {
+      "id": "F21",
+      "category": "accessories",
+      "fact": "The library's inventory shows a stock of 5 replacement 'Precision Stylus' units."
+    },
+    {
+      "id": "F22",
+      "category": "reporting_procedures",
+      "fact": "Staff report device damage using the 'Tech Incident' form on the library's intranet, located at http://intranet.mpl.lib/forms/tech-incident."
+    },
+    {
+      "id": "F23",
+      "category": "reporting_procedures",
+      "fact": "Alex Chen reviews all new 'Tech Incident' reports every Monday at 10:00 AM."
+    },
+    {
+      "id": "F24",
+      "category": "reporting_procedures",
+      "fact": "Damaged devices are sent to 'GadgetFix Repair' at 123 Tech Way, Maplewood for assessment and quotes."
+    },
+    {
+      "id": "F25",
+      "category": "financials",
+      "fact": "The library's assessed replacement cost for an 'Innovatech Tablet Pro 11' is $450."
+    },
+    {
+      "id": "F26",
+      "category": "financials",
+      "fact": "The repair quote from GadgetFix Repair for the cracked screen on ITP11-A007 was $125."
+    },
+    {
+      "id": "F27",
+      "category": "financials",
+      "fact": "The daily overdue fine for a lendable device is $5.00, capped at the device's replacement cost."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "How many 'Innovatech Tablet Pro 11' devices were returned with charging port damage between August 1 and October 31, 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Damage Pattern Inquiry",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What specific damage was reported for 'Innovatech Tablet Pro 11' with serial number ITP11-A007 on October 26, 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying a pattern of damage for a specific model, the user would naturally drill down into a concrete recent example of damage for that same model.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Damage Pattern Inquiry",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the incident number for the cracked screen on ITP11-A007?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "This is a direct follow-up to retrieve the reference number for the specific incident being investigated.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Details for ITP11-A007",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "For how long was the device ITP11-A007 checked out before the cracked screen was reported?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "When investigating a damage incident, understanding the duration of the loan is a key factor in determining potential causes or patterns.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Details for ITP11-A007",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What accessories are loaned with each 'Innovatech Tablet Pro 11'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "After learning about damage to the main device, it's logical to inquire about the included accessories to see if they were involved or also damaged.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Details for ITP11-A007",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "What damage was reported to the case for tablet ITP11-A007 when it was returned on October 26, 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning that the tablet comes with a case, the immediate next question is whether that specific case was also damaged in the incident.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Accessory Condition for ITP11-A007",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What was the repair quote for the cracked screen on ITP11-A007?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the specific damage to a device is known, the next logical step in a practical investigation is to determine the financial cost of the repair.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial Impact of ITP11-A007 Damage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the library's assessed replacement cost for an 'Innovatech Tablet Pro 11'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After finding out the repair cost, the user would want to compare it against the full replacement cost to assess the financial severity of the damage.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial Impact of ITP11-A007 Damage",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What was the issue reported for 'Innovatech Tablet Pro 11' (SN: ITP11-A011) in incident report D2023-09-15-03?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Other Innovatech Tablet Incidents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Is a 'Precision Stylus' one of the standard accessories included with each Innovatech Tablet Pro 11 checkout?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After seeing that a specific tablet incident involved a missing stylus, a direct follow-up is whether a Precision Stylus is normally included with each checkout of that model.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Tablet Accessory Standard",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What damage was reported for 'ZenithBook Air 13' (SN: ZBA13-C012) on November 5, 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "ZenithBook Laptop Damage Incident",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What did the patron report as the cause of the damage to the ZenithBook Air 13 (ZBA13-C012)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After identifying damage to a different device model, the user would want to know the reported circumstances to see if it's a different kind of problem.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "ZenithBook Laptop Damage Incident",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is the standard loan period for all devices?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Standard Loan Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Is a renewal permitted for devices and if so, for how long?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After confirming the standard loan period, a natural follow-up question is about the policy for extending that period through renewal.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Device Renewal Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What form must patrons sign at device checkout?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After hearing a patron's explanation for damage, the librarian might want to review the agreement that outlines patron responsibility, which is signed at checkout.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Patron Checkout Agreement",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Damage Pattern Inquiry",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Incident Details for ITP11-A007",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Accessory Condition for ITP11-A007",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Financial Impact of ITP11-A007 Damage",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Other Innovatech Tablet Incidents",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+    "label": "Tablet Accessory Standard",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "ZenithBook Laptop Damage Incident",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Standard Loan Policy",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Device Renewal Policy",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Patron Checkout Agreement",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "library_device_loan_damage_pattern_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

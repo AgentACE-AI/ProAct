@@ -1,0 +1,395 @@
+{
+  "scenario_id": "research_literature_map_01",
+  "domain": "research_management",
+  "description": "A graduate student is entering a new research area and needs a living map of papers, methods, datasets, unresolved questions, and recurring debates instead of a pile of disconnected reading notes.",
+  "user_profile": {
+    "persona": "25-year-old first-year PhD student building research foundations in an unfamiliar subfield",
+    "context": "The reading list is growing quickly, but understanding is not yet accumulating in a usable way",
+    "communication_style": "Curious and systematic, likes seeing how ideas connect"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Student & Project Context",
+      "fact": "The graduate student building the research map is named Elara Vance."
+    },
+    {
+      "id": "F02",
+      "category": "Student & Project Context",
+      "fact": "Elara Vance is a first-year PhD student in the Department of Cognitive Robotics at Aethelburg University."
+    },
+    {
+      "id": "F03",
+      "category": "Student & Project Context",
+      "fact": "Elara's primary research goal for the first year is to establish foundational understanding in the Dynamic Human-AI Collaboration subfield."
+    },
+    {
+      "id": "F04",
+      "category": "Research Subfield",
+      "fact": "The unfamiliar subfield Elara is exploring is 'Dynamic Human-AI Collaboration in Autonomous Systems' (DHACAS)."
+    },
+    {
+      "id": "F05",
+      "category": "Research Subfield",
+      "fact": "The DHACAS subfield focuses on real-time adaptive interactions between humans and AI agents in complex, unpredictable environments."
+    },
+    {
+      "id": "F06",
+      "category": "Research Subfield",
+      "fact": "A core debate in DHACAS concerns the optimal level of AI autonomy in safety-critical applications, specifically between 'full control transfer' and 'human-in-the-loop oversight'."
+    },
+    {
+      "id": "F07",
+      "category": "Literature & Papers",
+      "fact": "One foundational paper Elara is analyzing is 'The Algorithmic Trust Model for Adaptive Teaming' by Dr. Kaelen Thorne, published in 2019 in the Journal of Autonomous Systems."
+    },
+    {
+      "id": "F08",
+      "category": "Literature & Papers",
+      "fact": "Another critical paper is 'Cognitive Load Metrics in Human-AI Joint Decision-Making' by Dr. Linus Corvus, published in 2021, which introduces the 'Corvus-Index'."
+    },
+    {
+      "id": "F09",
+      "category": "Literature & Papers",
+      "fact": "Elara has identified 47 core papers published between 2018 and 2023 that are central to the DHACAS subfield."
+    },
+    {
+      "id": "F10",
+      "category": "Literature & Papers",
+      "fact": "The 'Synergy Framework Manifesto', published in 2018 by the 'Aethelburg Collective', is considered the seminal work that defined the DHACAS subfield."
+    },
+    {
+      "id": "F11",
+      "category": "Methodologies",
+      "fact": "A prominent methodology in DHACAS research is 'Reinforcement Learning with Human Feedback' (RLHF), particularly for training adaptive AI agents."
+    },
+    {
+      "id": "F12",
+      "category": "Methodologies",
+      "fact": "Many studies in DHACAS utilize 'Scenario-Based Simulation' with human participants to evaluate joint decision-making under stress."
+    },
+    {
+      "id": "F13",
+      "category": "Methodologies",
+      "fact": "Eye-tracking and galvanic skin response (GSR) are common physiological data collection methods used to measure human cognitive load in DHACAS experiments."
+    },
+    {
+      "id": "F14",
+      "category": "Datasets",
+      "fact": "The 'Aethelburg Human-AI Interaction Corpus (AHIC-2022)' is a publicly available dataset containing 1,500 hours of annotated human-AI interaction logs."
+    },
+    {
+      "id": "F15",
+      "category": "Datasets",
+      "fact": "The 'Corvus Lab Simulation Outcomes' dataset, version 3.1, contains performance metrics from 500 simulated missions involving human-AI teams."
+    },
+    {
+      "id": "F16",
+      "category": "Datasets",
+      "fact": "The 'Thorne Trust Calibration Dataset' (TTC-2020) provides human trust scores for 12 distinct AI agent behaviors across 300 participants."
+    },
+    {
+      "id": "F17",
+      "category": "Unresolved Questions/Debates",
+      "fact": "One key unresolved question is how to quantify and predict 'human-AI team fluency' beyond task completion rates."
+    },
+    {
+      "id": "F18",
+      "category": "Unresolved Questions/Debates",
+      "fact": "The debate around 'explainable AI (XAI)' in DHACAS centers on whether AI explanations should prioritize transparency, interpretability, or trust-building."
+    },
+    {
+      "id": "F19",
+      "category": "Unresolved Questions/Debates",
+      "fact": "Researchers are still debating the ethical implications of AI agents learning to 'persuade' human operators in critical decision-making scenarios."
+    },
+    {
+      "id": "F20",
+      "category": "Tools & Software",
+      "fact": "Elara uses Zotero for reference management, with a specific collection named 'DHACAS Core Literature' containing 112 entries."
+    },
+    {
+      "id": "F21",
+      "category": "Tools & Software",
+      "fact": "Obsidian is Elara's chosen tool for building the 'living map' of interconnected notes and ideas, utilizing its graph view for visualization."
+    },
+    {
+      "id": "F22",
+      "category": "Tools & Software",
+      "fact": "The primary programming language used for DHACAS simulations and AI development in her department is Python, often with the PyTorch framework."
+    },
+    {
+      "id": "F23",
+      "category": "Mentorship & Collaboration",
+      "fact": "Elara's PhD advisor is Professor Dr. Seraphina Reed, head of the Human-AI Interaction Lab at Aethelburg University."
+    },
+    {
+      "id": "F24",
+      "category": "Mentorship & Collaboration",
+      "fact": "Professor Reed recommended Elara attend the 'DHACAS Annual Symposium' in October 2024 to network with key researchers."
+    },
+    {
+      "id": "F25",
+      "category": "Mentorship & Collaboration",
+      "fact": "Elara is assigned to desk W-07 in the graduate student office of the Cognitive Robotics department, located on the 3rd floor of the Turing Building."
+    },
+    {
+      "id": "F26",
+      "category": "Academic Resources",
+      "fact": "Aethelburg University provides access to the 'Cognitive Science Research Portal' (login via portal.aethelburg.edu/csrp) for literature reviews."
+    },
+    {
+      "id": "F27",
+      "category": "Academic Resources",
+      "fact": "The university library offers weekly workshops on 'Advanced Literature Mapping Techniques' every Tuesday at 10:00 AM in Library Room 210B."
+    },
+    {
+      "id": "F28",
+      "category": "Mentorship & Collaboration",
+      "fact": "Professor Seraphina Reed is known in this subfield for work on trust calibration and human-in-the-loop oversight in safety-critical human-AI systems."
+    },
+    {
+      "id": "F29",
+      "category": "Literature & Papers",
+      "fact": "Named contributors repeatedly appearing in Elara's DHACAS map include Dr. Kaelen Thorne, Dr. Linus Corvus, and the Aethelburg Collective."
+    },
+    {
+      "id": "F30",
+      "category": "Unresolved Questions/Debates",
+      "fact": "Another unresolved question in DHACAS is how quickly human trust should be recalibrated after an AI error without causing either over-reliance or sharp distrust."
+    },
+    {
+      "id": "F31",
+      "category": "Unresolved Questions/Debates",
+      "fact": "Researchers also disagree on whether DHACAS systems should optimize primarily for individual operator adaptation or for team-level coordination in multi-human settings."
+    },
+    {
+      "id": "F32",
+      "category": "Literature & Papers",
+      "fact": "Elara's literature map also repeatedly flags Professor Seraphina Reed and the Corvus Lab as central contributors on trust calibration, human oversight design, and cognitive-load evaluation methods in DHACAS."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the specific subfield Elara Vance is researching for her first year?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Research Foundation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the core focus of the Dynamic Human-AI Collaboration in Autonomous Systems (DHACAS) subfield?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the subfield, the user would naturally want to understand its core focus.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Research Foundation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the names of the seminal work and the collective that defined the DHACAS subfield?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After understanding the subfield's focus, identifying its foundational defining work is a logical next step.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Research Foundation",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What are some prominent methodologies used in DHACAS research?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After understanding the subfield and its foundational papers, the user would likely want to know about common research methods. This transitions from 'what' to 'how'.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Research Methods",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What specific physiological data collection methods are used in DHACAS experiments?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: A more specific question about data collection methods after learning about general methodologies.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Research Methods",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What are some publicly available datasets relevant to DHACAS research?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After discussing methodologies and data collection, the user would likely inquire about existing datasets to apply these methods to.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Datasets",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is a core debate in DHACAS regarding AI autonomy in safety-critical applications?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After covering foundational knowledge, methods, and data, understanding key debates helps in identifying research gaps and contributions.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Unresolved Questions & Debates",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are some other unresolved questions or debates in DHACAS research?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18",
+        "F19",
+        "F30",
+        "F31"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After identifying one core debate, the user would likely want to know about other significant unresolved issues.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Unresolved Questions & Debates",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Which named authors or groups are central to foundational and methodological work in DHACAS?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07",
+        "F08",
+        "F10",
+        "F29",
+        "F32"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After reviewing unresolved debates in DHACAS, a natural next step is to identify the named authors and groups who shaped the field's foundational and methodological work.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Key Contributors",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What key contributions or methods are associated with the central DHACAS authors and groups in Elara's map?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07",
+        "F08",
+        "F10",
+        "F28"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After identifying the central authors and groups in DHACAS, the natural follow-up is to ask what each is known for so the literature map is organized by contribution rather than by names alone.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Contributor Contributions",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Research Foundation",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Research Methods",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Datasets",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Unresolved Questions & Debates",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Key Contributors",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Contributor Contributions",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "research_literature_map_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

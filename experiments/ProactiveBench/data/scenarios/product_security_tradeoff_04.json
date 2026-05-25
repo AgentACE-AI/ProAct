@@ -1,0 +1,362 @@
+{
+  "scenario_id": "product_security_tradeoff_04",
+  "domain": "product_analysis",
+  "description": "A product manager is deciding whether to implement a third-party auth service (fast to market) or build an in-house system (more control/security). They must analyze the long-term cost of technical debt vs. the immediate need for a product launch.",
+  "user_profile": {
+    "persona": "31-year-old PM at a FinTech startup",
+    "context": "Security audit is looming, need to decide on the architecture",
+    "communication_style": "Risk-aware, data-driven"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project_management",
+      "fact": "The internal project to develop a new authentication system is codenamed 'Project Chimera'."
+    },
+    {
+      "id": "F02",
+      "category": "project_management",
+      "fact": "Ava Chen is the Product Manager responsible for the 'FinSecure Wallet' product launch."
+    },
+    {
+      "id": "F03",
+      "category": "project_management",
+      "fact": "The hard deadline for the 'FinSecure Wallet' product launch is October 15, 2024, to capture the Q4 market."
+    },
+    {
+      "id": "F04",
+      "category": "vendor_information",
+      "fact": "The third-party authentication service being evaluated is 'AuthZoid'."
+    },
+    {
+      "id": "F05",
+      "category": "financials",
+      "fact": "AuthZoid's pricing is $0.025 per Monthly Active User (MAU) plus a flat fee of $1,200/month for the enterprise support plan."
+    },
+    {
+      "id": "F06",
+      "category": "financials",
+      "fact": "The projected MAU for 'FinSecure Wallet' is 250,000 by the end of the first year of operation."
+    },
+    {
+      "id": "F07",
+      "category": "financials",
+      "fact": "The estimated one-time cost to build the in-house authentication system is $185,000, covering engineering salaries and initial setup."
+    },
+    {
+      "id": "F08",
+      "category": "financials",
+      "fact": "The estimated annual ongoing cost for maintaining the in-house system is $40,000 for infrastructure and licensing, plus 20% of a senior engineer's salary."
+    },
+    {
+      "id": "F09",
+      "category": "technical_specifications",
+      "fact": "The in-house solution would require a team of 3 Senior Backend Engineers and 1 DevOps Engineer."
+    },
+    {
+      "id": "F10",
+      "category": "technical_specifications",
+      "fact": "The engineering team estimates a 5-month timeline to build, test, and deploy the in-house authentication system."
+    },
+    {
+      "id": "F11",
+      "category": "technical_specifications",
+      "fact": "AuthZoid's technical team confirmed that a standard integration can be completed in 3 weeks."
+    },
+    {
+      "id": "F12",
+      "category": "security_compliance",
+      "fact": "FinSecure must pass a SOC 2 Type II audit by December 1, 2024, to onboard its first enterprise client, 'Globex Corporation'."
+    },
+    {
+      "id": "F13",
+      "category": "security_compliance",
+      "fact": "AuthZoid is fully compliant with SOC 2 Type II, ISO 27001, and GDPR."
+    },
+    {
+      "id": "F14",
+      "category": "security_compliance",
+      "fact": "Building the in-house system would require an external security audit by 'CyberGuard Analytics', costing an additional $25,000."
+    },
+    {
+      "id": "F15",
+      "category": "vendor_information",
+      "fact": "The sales contact at AuthZoid is Ben Carter, and his direct email is b.carter@authzoid.com."
+    },
+    {
+      "id": "F16",
+      "category": "vendor_information",
+      "fact": "AuthZoid's service level agreement (SLA) guarantees 99.95% uptime, but only with the enterprise support plan."
+    },
+    {
+      "id": "F17",
+      "category": "stakeholder_communication",
+      "fact": "In a meeting on June 5, 2024, CTO Maria Rodriguez stated a preference for an in-house system to avoid vendor lock-in."
+    },
+    {
+      "id": "F18",
+      "category": "stakeholder_communication",
+      "fact": "Lead Engineer Leo Valdez documented a concern that migrating away from AuthZoid's proprietary user IDs in the future would be a 6-month project."
+    },
+    {
+      "id": "F19",
+      "category": "project_management",
+      "fact": "The final decision on the build vs. buy strategy must be logged in JIRA ticket FSW-101 by July 1, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "market_analysis",
+      "fact": "FinSecure's primary competitor, 'Koinlytics', launched their platform on May 20, 2024, and acquired 50,000 users in their first month."
+    },
+    {
+      "id": "F21",
+      "category": "market_analysis",
+      "fact": "A 'Finovate Insights' report from May 2024 shows a 15% quarter-over-quarter growth in the digital wallet market."
+    },
+    {
+      "id": "F22",
+      "category": "technical_specifications",
+      "fact": "The proposed in-house solution would be built using Go and PostgreSQL, running on the company's existing Kubernetes cluster in Google Cloud Platform."
+    },
+    {
+      "id": "F23",
+      "category": "vendor_information",
+      "fact": "AuthZoid's data processing centers are located in AWS regions us-east-1 and eu-west-2, which meets FinSecure's data residency requirements."
+    },
+    {
+      "id": "F24",
+      "category": "security_compliance",
+      "fact": "FinSecure's Head of Legal, David Chen, confirmed on June 10, 2024, that AuthZoid's Data Processing Addendum (DPA) is acceptable."
+    },
+    {
+      "id": "F25",
+      "category": "technical_specifications",
+      "fact": "The in-house solution would provide direct database access for internal analytics tools, a feature not available in AuthZoid's standard plan."
+    },
+    {
+      "id": "F26",
+      "category": "stakeholder_communication",
+      "fact": "The CEO, Sarah Jenkins, emphasized in the last all-hands meeting that first-mover advantage in the current market is 'critical'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the product launch and security audit deadlines for the FinSecure Wallet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Timeline Assessment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is AuthZoid's integration timeline versus the in-house build timeline for Project Chimera?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After establishing the project deadlines, the immediate next step is to compare how the timelines of the two options fit within those constraints.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Timeline Assessment",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is AuthZoid's pricing model and the projected first-year user count?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning that the third-party option is significantly faster, the next logical question for a data-driven PM is to evaluate its cost.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Cost Analysis (Buy)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the estimated one-time build cost and the annual maintenance cost components for the in-house system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After assessing the cost of the 'buy' option, the user will immediately want to compare it against the cost of the 'build' option.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Cost Analysis (Build)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What security compliances does AuthZoid already have?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: The looming SOC 2 audit deadline (established in N1) makes the compliance status of a third-party vendor a critical, high-priority concern that can be anticipated early.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Compliance & Security",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the additional cost for the in-house system's security audit?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the user understands the compliance status of the vendor, they will want to know the specific compliance costs associated with the alternative in-house path.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Compliance & Security",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What concern was documented about future migration from AuthZoid?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Strategic Considerations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the CTO's stated preference regarding vendor lock-in?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning about a specific technical risk (migration difficulty), the user would naturally want to know the opinion of the key technical stakeholder (CTO) on that very topic.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Strategic Considerations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How critical is speed to market for leadership, based on the CEO's recent guidance and recent competitor traction?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26",
+        "F20"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After seeing the timeline gap between vendor integration and an in-house build, a natural next question is how much leadership values speed to market in light of recent competitor momentum.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Market Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the final decision deadline and where should it be logged?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Decision Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Timeline Assessment",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Cost Analysis (Buy)",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Cost Analysis (Build)",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Compliance & Security",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Strategic Considerations",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Market Context",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Decision Logistics",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "product_security_tradeoff_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

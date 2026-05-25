@@ -1,0 +1,433 @@
+{
+  "scenario_id": "site_change_order_impact_map_03",
+  "domain": "construction_site_coordination",
+  "description": "A small design change has knock-on effects across materials, labor sequencing, and downstream subcontractors, and the team needs a clear map of what else must shift because of it.",
+  "user_profile": {
+    "persona": "39-year-old construction PM managing a live site with frequent small adjustments",
+    "context": "The change seems modest on paper, but experience suggests it could ripple through several later activities",
+    "communication_style": "Impact-oriented and cross-functional, wants secondary effects captured before they surprise the schedule"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Change_Order_Details",
+      "fact": "Architectural Change Order (ACO-11B) was approved on October 26, 2023, for the Apex Tower project."
+    },
+    {
+      "id": "F02",
+      "category": "Change_Order_Details",
+      "fact": "ACO-11B modifies the 12th floor layout to reroute a 24-inch HVAC duct to accommodate a new server room chase requested by the client, Innovate Corp."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel",
+      "fact": "Alex Chen is the Project Manager for Keystone Construction responsible for implementing ACO-11B; his mobile number is 555-821-4409."
+    },
+    {
+      "id": "F04",
+      "category": "Structural_Impact",
+      "fact": "The new HVAC duct path requires a new 26-inch by 14-inch penetration through non-load-bearing steel beam S-12-4B."
+    },
+    {
+      "id": "F05",
+      "category": "Structural_Impact",
+      "fact": "SteelFrame Erectors is the subcontractor responsible for cutting the new beam penetration; their site foreman is Marco Diaz."
+    },
+    {
+      "id": "F06",
+      "category": "Cost_Impact",
+      "fact": "The change order for SteelFrame Erectors (SCO-SF-05) to perform the beam penetration is priced at $3,850."
+    },
+    {
+      "id": "F07",
+      "category": "Electrical_Impact",
+      "fact": "The rerouted HVAC duct now directly conflicts with the planned path for electrical conduits EC-12-101 through EC-12-104."
+    },
+    {
+      "id": "F08",
+      "category": "Personnel",
+      "fact": "Sarah Jenkins of Voltric Electricals is the project lead managing the electrical rework; her email is s.jenkins@voltric.com."
+    },
+    {
+      "id": "F09",
+      "category": "Electrical_Impact",
+      "fact": "The revised electrical plan (Drawing E-5.12 Rev 2) requires an additional 80 feet of 2-inch EMT conduit and four new junction boxes."
+    },
+    {
+      "id": "F10",
+      "category": "Plumbing_Impact",
+      "fact": "The new duct location reduces clearance for the main plumbing vent stack P-V-3 to 1.5 inches, which is below the 3-inch building code minimum."
+    },
+    {
+      "id": "F11",
+      "category": "Plumbing_Impact",
+      "fact": "HydroFlow Plumbing must offset the vent stack, requiring two additional 45-degree 4-inch PVC fittings (Part #PVC4-45B)."
+    },
+    {
+      "id": "F12",
+      "category": "Material_Logistics",
+      "fact": "The original straight HVAC duct section (Part #HV-D24-S10) is now obsolete for this location and must be returned to the supplier, AeroDuct Fabricators."
+    },
+    {
+      "id": "F13",
+      "category": "Material_Logistics",
+      "fact": "A new custom-fabricated 24-inch, 90-degree HVAC elbow (Part #HV-D24-E90-C) has been ordered with a 7-business-day lead time."
+    },
+    {
+      "id": "F14",
+      "category": "Cost_Impact",
+      "fact": "The new custom HVAC elbow costs $1,200, an increase of $750 over the original straight section."
+    },
+    {
+      "id": "F15",
+      "category": "Cost_Impact",
+      "fact": "The additional materials for the electrical reroute (conduit and J-boxes) cost $415 from City Electric Supply."
+    },
+    {
+      "id": "F16",
+      "category": "Schedule_Impact",
+      "fact": "Drywall framing on the 12th floor, originally scheduled for November 1, 2023, is now on hold until November 10, 2023."
+    },
+    {
+      "id": "F17",
+      "category": "Schedule_Impact",
+      "fact": "The critical path for the 12th-floor interior fit-out now runs through the delivery and installation of the custom HVAC elbow."
+    },
+    {
+      "id": "F18",
+      "category": "Schedule_Impact",
+      "fact": "The work sequence requires SteelFrame Erectors to complete the beam cut before HydroFlow Plumbing can begin offsetting the vent stack."
+    },
+    {
+      "id": "F19",
+      "category": "Schedule_Impact",
+      "fact": "The MEP rough-in inspection for the 12th-floor core with City Inspector Bob Vance (Badge #784) has been moved from October 31 to November 9, 2023."
+    },
+    {
+      "id": "F20",
+      "category": "Coordination_and_Communication",
+      "fact": "A coordination meeting for ACO-11B was held on October 27, 2023, at 10:00 AM in the site trailer."
+    },
+    {
+      "id": "F21",
+      "category": "Coordination_and_Communication",
+      "fact": "All documents, costs, and schedule changes for ACO-11B are being tracked in Procore under Change Event #045."
+    },
+    {
+      "id": "F22",
+      "category": "Coordination_and_Communication",
+      "fact": "The project's BIM model (Apex_Tower_R23.rvt) was updated with the new MEP routes by VDC coordinator Maria Garcia on October 28, 2023."
+    },
+    {
+      "id": "F23",
+      "category": "Coordination_and_Communication",
+      "fact": "The dedicated Slack channel for urgent field coordination on this change is #12th-floor-hvac-rework."
+    },
+    {
+      "id": "F24",
+      "category": "Cost_Impact",
+      "fact": "The total approved direct cost impact of ACO-11B, including all subcontractor change orders and material upcharges, is $7,920."
+    },
+    {
+      "id": "F25",
+      "category": "Cost_Impact",
+      "fact": "The cost of the change order will be drawn from the project's design contingency fund, which has a remaining balance of $152,400."
+    },
+    {
+      "id": "F26",
+      "category": "Personnel",
+      "fact": "Elena Vargas of Skyline Architects is the architect of record who provided the sign-off for the new beam penetration."
+    },
+    {
+      "id": "F27",
+      "category": "Personnel",
+      "fact": "Keystone Construction's on-site superintendent, Frank Miller, is responsible for updating the daily log with all rework activities."
+    },
+    {
+      "id": "F28",
+      "category": "Safety_Compliance",
+      "fact": "Job Hazard Analysis form #JHA-SF-115 was created for the overhead steel cutting, requiring a 20-foot exclusion zone and a dedicated fire watch."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "When was architectural change order ACO-11B approved, and what 12th-floor HVAC reroute does it require?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Change Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the direct structural impact of this change, and which subcontractor is responsible for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After understanding the high-level change, the first logical question is about the immediate physical work required, which is the structural penetration.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Structural Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What subcontract change order and price were issued for the steel beam penetration work?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Structural Impact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is the knock-on effect on the electrical systems, and what new materials are needed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the primary structural change is understood, the PM's next concern is identifying conflicts with other trades, starting with MEP systems like electrical.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Electrical Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Who is my point of contact at Voltric Electricals for this rework?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: Immediately after learning about the electrical impact, the PM needs to know who to coordinate with to resolve it.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Electrical Impact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Does the HVAC reroute cause any issues for the plumbing systems?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After identifying an electrical conflict, a thorough PM will continue checking for other MEP trade conflicts, making plumbing the next logical inquiry.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Plumbing Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the new critical path item for the 12th-floor fit-out and what is its lead time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Schedule and Sequencing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the new start date for the 12th-floor drywall framing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning the overall critical path delay, the PM will want to know the specific impact on major downstream activities like drywall.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Schedule and Sequencing",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the required work sequence between SteelFrame Erectors and HydroFlow Plumbing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Understanding the critical path naturally leads to questions about the specific sequence of operations required for the affected trades.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Schedule and Sequencing",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N10",
+      "description": "What is the total approved direct cost for ACO-11B, and which fund will cover it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Overall Cost and Funding",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Where in Procore and Slack is this change event being tracked?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Administrative Tracking",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Are there any specific safety protocols required for the overhead steel cutting?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Safety Compliance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the new date for the 12th-floor core MEP inspection?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After identifying the new critical-path item and its lead time, a direct schedule follow-up is the revised date for the 12th-floor core MEP inspection.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "City Inspection",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Change Details",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Structural Impact",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Electrical Impact",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Plumbing Impact",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Schedule and Sequencing",
+      "member_need_ids": [
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Overall Cost and Funding",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Administrative Tracking",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Safety Compliance",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G9",
+      "label": "City Inspection",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "site_change_order_impact_map_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

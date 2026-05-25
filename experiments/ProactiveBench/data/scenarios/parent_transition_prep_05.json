@@ -1,0 +1,381 @@
+{
+  "scenario_id": "parent_transition_prep_05",
+  "domain": "parenting_support",
+  "description": "A family wants to prepare for a major transition such as starting middle school by tracking concerns, independence skills, routines, and support needs over several months instead of reacting at the last minute.",
+  "user_profile": {
+    "persona": "39-year-old parent who prefers preparing for transitions gradually",
+    "context": "The child is capable, but the family wants the change to feel supported rather than abrupt",
+    "communication_style": "Forward-looking and calm, likes phased preparation"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "child_profile",
+      "fact": "Leo Miller, born August 15, 2012, is the child transitioning from 5th grade at Oakwood Elementary to 6th grade at Northwood Middle School."
+    },
+    {
+      "id": "F02",
+      "category": "transition_plan",
+      "fact": "The Miller family initiated a formal \"Middle School Transition Plan\" on March 1, 2024, to prepare for the school year starting September 3, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "digital_tools",
+      "fact": "The family uses the 'ThriveTransition' mobile app (account ID: SMiller785) to log concerns, track skill development, and manage transition-related tasks."
+    },
+    {
+      "id": "F04",
+      "category": "independence_skills",
+      "fact": "A target skill for April 2024 is for Leo to independently pack his own school lunch, including a fruit, a vegetable, and a protein, at least three times per week."
+    },
+    {
+      "id": "F05",
+      "category": "support_system",
+      "fact": "The family has a consultation scheduled with family counselor Dr. Anya Sharma on May 10, 2024, at 4:30 PM to discuss strategies for managing social anxiety."
+    },
+    {
+      "id": "F06",
+      "category": "school_logistics",
+      "fact": "Northwood Middle School's new student orientation is scheduled for August 22, 2024, from 10:00 AM to 12:00 PM in the main auditorium."
+    },
+    {
+      "id": "F07",
+      "category": "social_emotional",
+      "fact": "On March 5, 2024, a concern was logged in the ThriveTransition app regarding Leo's anxiety about finding his classes in a much larger school building."
+    },
+    {
+      "id": "F08",
+      "category": "independence_skills",
+      "fact": "By July 1, 2024, Leo's goal is to be responsible for waking himself up for the day at 7:00 AM using his personal alarm clock without any parental reminders."
+    },
+    {
+      "id": "F09",
+      "category": "academic_preparation",
+      "fact": "Leo's summer reading assignment for 6th-grade English is the book 'The Giver' by Lois Lowry, with a one-page report due on the first day of school."
+    },
+    {
+      "id": "F10",
+      "category": "school_logistics",
+      "fact": "The school bus for Leo's route is #17, which picks up at the corner of Maple Avenue and 3rd Street at 7:48 AM."
+    },
+    {
+      "id": "F11",
+      "category": "social_emotional",
+      "fact": "Leo and his friend, Alex Chen, who will also attend Northwood, have planned a weekly bike ride every Saturday at 2:00 PM to maintain their social connection over the summer."
+    },
+    {
+      "id": "F12",
+      "category": "transition_plan",
+      "fact": "The transition plan includes a monthly family check-in meeting; the next one is scheduled for June 5, 2024, at 7:00 PM to review progress on independence skills."
+    },
+    {
+      "id": "F13",
+      "category": "independence_skills",
+      "fact": "Starting April 1, 2024, Leo began managing a weekly allowance of $15.00 to practice budgeting for his own snacks and non-essential school supplies."
+    },
+    {
+      "id": "F14",
+      "category": "digital_tools",
+      "fact": "Parent Sarah Miller created a shared Google Calendar named 'NMS Transition' to track all appointments, deadlines, and school-related events."
+    },
+    {
+      "id": "F15",
+      "category": "support_system",
+      "fact": "Sarah Miller emailed the Northwood Middle School 6th-grade counselor, Mr. David Chen (dchen@northwood.edu), on March 20, 2024, to introduce Leo and their proactive preparation."
+    },
+    {
+      "id": "F16",
+      "category": "academic_preparation",
+      "fact": "To bridge the math curriculum gap, Leo is completing two pages per week from the 'Pre-Algebra Prep' workbook (ISBN: 978-1941252445)."
+    },
+    {
+      "id": "F17",
+      "category": "school_logistics",
+      "fact": "Leo received his preliminary class schedule on July 25, 2024, which shows his homeroom is Room 104 with Ms. Albright."
+    },
+    {
+      "id": "F18",
+      "category": "social_emotional",
+      "fact": "To address campus navigation anxiety, the family will visit the Northwood campus on August 10, 2024, to walk the path from the bus drop-off to Leo's homeroom."
+    },
+    {
+      "id": "F19",
+      "category": "routines",
+      "fact": "A new evening routine, starting August 1, 2024, requires all electronic devices to be turned off by 9:00 PM to ensure adequate sleep."
+    },
+    {
+      "id": "F20",
+      "category": "independence_skills",
+      "fact": "Leo is now responsible for organizing his backpack and homework folder each evening, a routine that was successfully established on May 15, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "extracurriculars",
+      "fact": "Leo plans to sign up for the Northwood Coding Club, which meets on Tuesdays from 3:30 PM to 4:30 PM in the computer lab (Room 212)."
+    },
+    {
+      "id": "F22",
+      "category": "transition_plan",
+      "fact": "Phase 2 of the transition plan, which focuses on 'Social Scenarios & Problem-Solving,' is scheduled to begin on June 1, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "support_system",
+      "fact": "Dr. Anya Sharma's office is located at 452 Wellness Drive, Suite 201, and her direct office phone number is 555-0182."
+    },
+    {
+      "id": "F24",
+      "category": "digital_tools",
+      "fact": "The family's premium subscription to the ThriveTransition app costs $12.99 per month, billed to a Visa card ending in 4321."
+    },
+    {
+      "id": "F25",
+      "category": "routines",
+      "fact": "The family established a designated 'homework zone' at the desk in the den, equipped with necessary supplies, on April 28, 2024, to simulate the new school's expectations."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the first concern I logged in the ThriveTransition app about Leo's move to middle school?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Concerns",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What specific action have we planned to address Leo's anxiety about finding his way around the new school?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After a user reviews a specific logged concern (anxiety about school navigation), a natural follow-up is to ask about the solution or plan to address it.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Concern Mitigation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "When is our consultation with the family counselor, Dr. Anya Sharma?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Professional Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is Dr. Sharma's office address and phone number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Immediately after confirming an appointment's time, the user is likely to need the location and contact details for that appointment.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Professional Support",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the next major independence skill goal we have set for Leo's morning routine?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Independence Skills",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "When was Leo's backpack organization routine successfully established, and what is he responsible for each evening?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: While discussing one independence skill (waking up), the user may want to check on the status of other, related skills (organization).",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Independence Skills",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is Leo's summer reading assignment for his 6th-grade English class?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Academic Preparation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the details for the Coding Club Leo is interested in joining at Northwood?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After reviewing academic requirements like summer reading, a parent's focus often shifts to social and interest-based activities like extracurricular clubs.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Extracurricular Activities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When and where is the new student orientation at Northwood Middle School?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Discussing a personal campus visit (to ease anxiety) naturally leads to questions about the official school-wide event for new students.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key School Events",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is Leo's assigned homeroom number and teacher's name?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Once the orientation date is known, the next critical piece of logistical information for the first day of school is the child's specific homeroom.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "First Day Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the bus number and pickup time and location for Leo's route?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After confirming the child's destination within the school (homeroom), the next logical step is to confirm the transportation details to get them there.",
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "Transportation Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Concerns",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Concern Mitigation",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Professional Support",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Independence Skills",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Academic Preparation",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Extracurricular Activities",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key School Events",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "First Day Details",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Transportation Logistics",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "parent_transition_prep_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

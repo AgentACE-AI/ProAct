@@ -1,0 +1,377 @@
+{
+  "scenario_id": "travel_business_02",
+  "domain": "group_travel",
+  "description": "A team of 5 is traveling to a conference. They need to coordinate shared transport, find a hotel near the venue within budget, and book group dinners at places that take corporate cards.",
+  "user_profile": {
+    "persona": "28-year-old Office Manager",
+    "context": "Conference is in two weeks, finalizing the itinerary",
+    "communication_style": "Efficient, cost-conscious"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "conference_details",
+      "fact": "The team is attending the 'FutureTech Summit 2024'."
+    },
+    {
+      "id": "F02",
+      "category": "conference_details",
+      "fact": "The conference venue is the Aethelgard Convention Center, located at 123 Innovation Drive, Aethelgard City."
+    },
+    {
+      "id": "F03",
+      "category": "conference_details",
+      "fact": "The conference runs from October 28th to October 30th, 2024."
+    },
+    {
+      "id": "F04",
+      "category": "team_information",
+      "fact": "The traveling team from Innovate Solutions Inc. consists of 5 members: Ben Carter, Liam Rodriguez, Sofia Chen, Maya Singh, and Chloe Davis."
+    },
+    {
+      "id": "F05",
+      "category": "team_information",
+      "fact": "Chloe Davis is the Office Manager responsible for coordinating the trip."
+    },
+    {
+      "id": "F06",
+      "category": "travel_logistics",
+      "fact": "Shared airport transport is booked with 'CityLink Shuttle Services' under confirmation number CLS-88431."
+    },
+    {
+      "id": "F07",
+      "category": "travel_logistics",
+      "fact": "The shuttle pickup is scheduled for 2:15 PM on October 27th, 2024, from Aethelgard International Airport (AIA), Terminal B, baggage claim 4."
+    },
+    {
+      "id": "F08",
+      "category": "travel_logistics",
+      "fact": "The total cost for the round-trip airport shuttle for 5 people is $225.00, prepaid on the corporate card."
+    },
+    {
+      "id": "F09",
+      "category": "travel_logistics",
+      "fact": "The contact number for the CityLink Shuttle Services dispatcher is (555) 302-4981."
+    },
+    {
+      "id": "F10",
+      "category": "accommodation",
+      "fact": "The team is staying at The Meridian Plaza Hotel, located at 450 Commerce Avenue, Aethelgard City."
+    },
+    {
+      "id": "F11",
+      "category": "accommodation",
+      "fact": "The hotel booking confirmation number is HMP-9B72C6 for 3 rooms."
+    },
+    {
+      "id": "F12",
+      "category": "accommodation",
+      "fact": "Check-in is on October 27th, 2024, after 3:00 PM and check-out is on October 31st, 2024, before 11:00 AM."
+    },
+    {
+      "id": "F13",
+      "category": "accommodation",
+      "fact": "The booked room rate is $235 per night, which is under the $250 per night budget."
+    },
+    {
+      "id": "F14",
+      "category": "accommodation",
+      "fact": "The Meridian Plaza Hotel is 0.8 miles from the Aethelgard Convention Center, a 15-minute walk."
+    },
+    {
+      "id": "F15",
+      "category": "budget_and_finance",
+      "fact": "The corporate credit card for shared expenses is an Apex Corporate Card ending in 4096, held by team lead Ben Carter."
+    },
+    {
+      "id": "F16",
+      "category": "budget_and_finance",
+      "fact": "The daily per diem for meals and incidentals is $75.00 per person."
+    },
+    {
+      "id": "F17",
+      "category": "budget_and_finance",
+      "fact": "All individual expenses must be submitted via the 'ExpensePro' portal within 7 days of returning from the trip."
+    },
+    {
+      "id": "F18",
+      "category": "budget_and_finance",
+      "fact": "The deadline for submitting the final expense report is November 7th, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "dining",
+      "fact": "A group dinner reservation is booked at 'The Gilded Spoon' for October 28th at 7:30 PM for 5 people."
+    },
+    {
+      "id": "F20",
+      "category": "dining",
+      "fact": "The reservation at 'The Gilded Spoon' is under the name 'Ben Carter / Innovate Solutions'."
+    },
+    {
+      "id": "F21",
+      "category": "dining",
+      "fact": "'The Gilded Spoon' has confirmed they accept the Apex Corporate Card."
+    },
+    {
+      "id": "F22",
+      "category": "dining",
+      "fact": "A second group dinner is booked at 'Coastal Grillhouse' for October 29th at 8:00 PM for 5 people."
+    },
+    {
+      "id": "F23",
+      "category": "dining",
+      "fact": "A note has been added to the 'Coastal Grillhouse' reservation regarding a gluten-free dietary requirement for Sofia Chen."
+    },
+    {
+      "id": "F24",
+      "category": "team_coordination",
+      "fact": "All trip-related communication is centralized in the Slack channel #proj-futuretech-summit24."
+    },
+    {
+      "id": "F25",
+      "category": "team_coordination",
+      "fact": "The finalized trip itinerary is located in a shared Google Doc at the URL: http://docs.google.com/d/1a2b3c-example-url."
+    },
+    {
+      "id": "F26",
+      "category": "travel_logistics",
+      "fact": "The return shuttle to Aethelgard International Airport (AIA) is scheduled for pickup from the hotel lobby at 12:00 PM on October 31st, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "team_information",
+      "fact": "Ben Carter is the designated team lead and primary point of contact during the trip."
+    },
+    {
+      "id": "F28",
+      "category": "conference_details",
+      "fact": "All 5 team members have been registered for the conference; their QR code tickets were sent via email on October 12th, 2024."
+    },
+    {
+      "id": "F29",
+      "category": "accommodation",
+      "fact": "The hotel provides complimentary Wi-Fi; the network is 'MeridianGuest' and the password is 'Plaza2024'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the address of our hotel and how far is it from the conference venue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Accommodation Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the check-in and check-out dates and times for the hotel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the hotel's location, checking the specific booking times is a natural next step for an office manager.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Accommodation Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the details for our airport shuttle pickup when we arrive?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the accommodation location is confirmed, the immediate next logistical question is how to get there from the airport.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Arrival Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the details for the first group dinner reservation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Dining Reservations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the details for our second group dinner, and are there any special notes on the booking?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After confirming the first dinner, it's logical to inquire about the other planned group meals.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Dining Reservations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Which corporate card should be used for shared expenses and who is responsible for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After confirming all major bookings (hotel, transport, dining), an efficient coordinator would shift focus to payment and financial procedures.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial & Expense Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the daily per diem for team members?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Once the primary corporate card is discussed, a follow-up about individual spending allowances (per diem) is a common next question.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial & Expense Policy",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Where can the team find the finalized trip itinerary?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Team Coordination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the deadline for submitting the final expense report?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Post-Trip Administration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What time is our return shuttle to the airport?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming arrival transportation details, a user might also want to confirm the corresponding departure logistics.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Departure Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Accommodation Details",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Arrival Logistics",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Dining Reservations",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Financial & Expense Policy",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Team Coordination",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Post-Trip Administration",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Departure Logistics",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "travel_business_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

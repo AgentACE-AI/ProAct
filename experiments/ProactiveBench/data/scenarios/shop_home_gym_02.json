@@ -1,0 +1,410 @@
+{
+  "scenario_id": "shop_home_gym_02",
+  "domain": "personal_shopping",
+  "description": "A user is setting up a home gym in a small apartment. They need to find multi-functional equipment that fits specific dimensions and weight limits.",
+  "user_profile": {
+    "persona": "26-year-old fitness enthusiast",
+    "context": "Just moved into a studio apartment",
+    "communication_style": "Space-conscious, values quality over quantity"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "user_profile",
+      "fact": "The user's name is Alex Chen, and they are 26 years old."
+    },
+    {
+      "id": "F02",
+      "category": "user_profile",
+      "fact": "Alex Chen lives in a studio apartment at Unit 7B, 45 Larkspur Lane, Riverton, WA 98055."
+    },
+    {
+      "id": "F03",
+      "category": "user_profile",
+      "fact": "Alex's primary fitness goals are strength training and maintaining cardiovascular health."
+    },
+    {
+      "id": "F04",
+      "category": "user_profile",
+      "fact": "The total budget allocated for the home gym project is $3,500."
+    },
+    {
+      "id": "F05",
+      "category": "space_constraints",
+      "fact": "The designated gym area in the apartment measures 8 feet by 10 feet (80 sq ft)."
+    },
+    {
+      "id": "F06",
+      "category": "space_constraints",
+      "fact": "The ceiling height in the designated gym area is 9 feet."
+    },
+    {
+      "id": "F07",
+      "category": "space_constraints",
+      "fact": "The apartment building's lease specifies a floor weight limit of 150 lbs per square foot."
+    },
+    {
+      "id": "F08",
+      "category": "space_constraints",
+      "fact": "The wall selected for mounting equipment is reinforced with 16-inch on-center wood studs."
+    },
+    {
+      "id": "F09",
+      "category": "shopping_service",
+      "fact": "Alex hired a personal shopping consultant named Maya Singh from the service 'UrbanFit Solutions'."
+    },
+    {
+      "id": "F10",
+      "category": "shopping_service",
+      "fact": "The consultation and procurement fee for UrbanFit Solutions is a flat rate of $400."
+    },
+    {
+      "id": "F11",
+      "category": "shopping_service",
+      "fact": "The initial consultation between Alex Chen and Maya Singh took place via video call on October 25, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "shopping_service",
+      "fact": "All communication and product recommendations are managed through the 'ShopSync' collaboration app, project ID 'AC-Gym-7B'."
+    },
+    {
+      "id": "F13",
+      "category": "equipment_requirements",
+      "fact": "Alex requires that any single piece of cardio equipment must have a folded footprint of less than 10 square feet."
+    },
+    {
+      "id": "F14",
+      "category": "equipment_requirements",
+      "fact": "The adjustable dumbbells must have a weight range from 5 lbs to at least 70 lbs per hand."
+    },
+    {
+      "id": "F15",
+      "category": "equipment_requirements",
+      "fact": "A key requirement is an adjustable bench that supports flat, incline, and decline positions with a weight capacity of at least 600 lbs."
+    },
+    {
+      "id": "F16",
+      "category": "equipment_requirements",
+      "fact": "The wall-mounted pulley system must have dual cables and a minimum height of 80 inches to allow for full range of motion on lat pulldowns."
+    },
+    {
+      "id": "F17",
+      "category": "product_selection",
+      "fact": "The selected adjustable dumbbells are the 'KineFlex Pro 75' model from the brand CoreForm."
+    },
+    {
+      "id": "F18",
+      "category": "product_selection",
+      "fact": "The KineFlex Pro 75 dumbbells, when stored in their cradles, measure 18 inches in length by 9 inches in width."
+    },
+    {
+      "id": "F19",
+      "category": "product_selection",
+      "fact": "The chosen adjustable bench is the 'OmniBench X1' from FitSpace Gear, which has a tested capacity of 750 lbs."
+    },
+    {
+      "id": "F20",
+      "category": "product_selection",
+      "fact": "The OmniBench X1 can be stored vertically and has a stored footprint of 24 inches by 22 inches."
+    },
+    {
+      "id": "F21",
+      "category": "product_selection",
+      "fact": "The selected wall-mounted pulley system is the 'VertiPull Tower' from CompactGym Outfitters."
+    },
+    {
+      "id": "F22",
+      "category": "product_selection",
+      "fact": "The VertiPull Tower's dimensions are 84 inches tall, 25 inches wide, and it protrudes 9 inches from the wall."
+    },
+    {
+      "id": "F23",
+      "category": "product_selection",
+      "fact": "The recommended cardio machine is the 'AeroFold Treadmill', which folds flat to a height of 6 inches."
+    },
+    {
+      "id": "F24",
+      "category": "product_selection",
+      "fact": "The AeroFold Treadmill has a maximum user weight capacity of 265 lbs."
+    },
+    {
+      "id": "F25",
+      "category": "purchase_logistics",
+      "fact": "The KineFlex Pro 75 dumbbells were purchased from FitSpace Gear for $699.99 on November 5, 2023."
+    },
+    {
+      "id": "F26",
+      "category": "purchase_logistics",
+      "fact": "The OmniBench X1 and AeroFold Treadmill were bundled from FitSpace Gear for a total of $1,549.00."
+    },
+    {
+      "id": "F27",
+      "category": "purchase_logistics",
+      "fact": "The order number for the FitSpace Gear purchase is FSG-881701."
+    },
+    {
+      "id": "F28",
+      "category": "purchase_logistics",
+      "fact": "The estimated delivery date for the FitSpace Gear order is November 15, 2023."
+    },
+    {
+      "id": "F29",
+      "category": "purchase_logistics",
+      "fact": "The VertiPull Tower was purchased separately from CompactGym Outfitters under order CGO-345B2 for $499.99."
+    },
+    {
+      "id": "F30",
+      "category": "purchase_logistics",
+      "fact": "Total equipment cost before tax and fees is $2,748.98."
+    },
+    {
+      "id": "F31",
+      "category": "setup_installation",
+      "fact": "Maya Singh has scheduled a professional installer from 'GymSet Pro' to mount the VertiPull Tower on November 18, 2023."
+    },
+    {
+      "id": "F32",
+      "category": "setup_installation",
+      "fact": "The quoted cost for the professional installation of the VertiPull Tower is $175, which includes labor and mounting hardware."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the dimensions of the designated gym area and the building's floor weight limit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Constraints",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is my total budget for the project and what is the consultant's fee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Constraints",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What were the specific performance requirements for the adjustable bench and dumbbells?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Equipment Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the minimum height requirement for the wall-mounted pulley system?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "This is a natural follow-up question within the topic of equipment requirements, moving from free weights to the fixed pulley system.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Equipment Requirements",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Which specific models of adjustable dumbbells and bench were selected?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F19"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing the requirements for equipment, the user will naturally want to know which products were chosen to meet those requirements.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Selected Equipment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which wall-mounted pulley system was chosen and what are its dimensions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning about the selected free-weight equipment, the user will likely ask about the other major piece of equipment that was chosen.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Selected Equipment",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What cardio machine was recommended and what is its folded height?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cardio Selection",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the total cost for all the equipment before tax and fees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Once the user has a complete picture of all the selected equipment, the most logical next question is about the total cost.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Cost Summary",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Is the recommended cardio machine already included in the FitSpace Gear purchase, and what are that order number and estimated delivery date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After confirming the recommended cardio machine, a natural next question is whether it is already part of the FitSpace Gear purchase and what the tracking details for that order are.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Logistics & Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When is the professional installation for the VertiPull Tower scheduled and how much will it cost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F32"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After confirming the FitSpace Gear order details, the next logical step is to confirm the installation schedule and cost for the separate specialized equipment.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Logistics & Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Which app and project ID are used to manage the overall project communication and Maya Singh's product recommendations for this home gym project?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After checking the retailer order details, a natural follow-up is where the rest of the project's communication and product recommendations are being tracked.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Project Admin",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Constraints",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Equipment Requirements",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Selected Equipment",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Cardio Selection",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Cost Summary",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Logistics & Setup",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Project Admin",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shop_home_gym_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

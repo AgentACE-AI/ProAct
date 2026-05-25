@@ -1,0 +1,395 @@
+{
+  "scenario_id": "shelter_adoption_application_consistency_04",
+  "domain": "animal_shelter_operations",
+  "description": "Adoption paperwork, interview notes, and animal-specific restrictions are drifting apart across different staff members, and the shelter needs a consistent basis for evaluating fit.",
+  "user_profile": {
+    "persona": "40-year-old adoption manager overseeing several staff reviewers",
+    "context": "The shelter wants fair adoption decisions, but inconsistent notes are making applications harder to compare",
+    "communication_style": "Consistency-driven and careful, wants one aligned view of each application and animal profile"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "Sarah Jenkins is the Adoption Manager at Pawsitive Beginnings Animal Rescue, overseeing a team of four reviewers."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "Liam Chen, an Adoption Reviewer, has been on staff since March 5, 2021."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel",
+      "fact": "Maria Garcia is a part-time Adoption Reviewer who works Wednesdays, Fridays, and Saturdays from 9:00 AM to 5:00 PM."
+    },
+    {
+      "id": "F04",
+      "category": "Software_and_Systems",
+      "fact": "The shelter's official management software is 'ShelterSync', accessible at the URL https://pawsitivebeginnings.sheltersync.com."
+    },
+    {
+      "id": "F05",
+      "category": "Software_and_Systems",
+      "fact": "Sarah Jenkins's user ID for ShelterSync is 'sjenkins-mgr', and her workstation is Desk #1 in the main office."
+    },
+    {
+      "id": "F06",
+      "category": "Software_and_Systems",
+      "fact": "Prior to June 1, 2024, adoption interview notes were stored in a shared Google Drive folder named 'Adoption_Interviews_Archive'."
+    },
+    {
+      "id": "F07",
+      "category": "Policy_and_Compliance",
+      "fact": "A new policy, effective June 1, 2024, mandates all adoption notes be entered directly into the 'Interview Notes' tab in ShelterSync."
+    },
+    {
+      "id": "F08",
+      "category": "Policy_and_Compliance",
+      "fact": "The 'Unified Adoption Profile' (UAP) standard requires a 'Behavioral Fit Score' from 1 to 5 to be assigned to each application."
+    },
+    {
+      "id": "F09",
+      "category": "Policy_and_Compliance",
+      "fact": "Any application with a Behavioral Fit Score below 3 requires a secondary review and signature from Sarah Jenkins."
+    },
+    {
+      "id": "F10",
+      "category": "Policy_and_Compliance",
+      "fact": "A mandatory adoption review meeting is held every Tuesday at 10:00 AM in the main conference room to discuss pending applications."
+    },
+    {
+      "id": "F11",
+      "category": "Adoption_Process",
+      "fact": "The standard adoption application form is document #PB-ADOPT-004-REV3."
+    },
+    {
+      "id": "F12",
+      "category": "Adoption_Process",
+      "fact": "Liam Chen conducted an interview with the Miller family for application APP-9012 on June 16, 2024, at 2:00 PM."
+    },
+    {
+      "id": "F13",
+      "category": "Adoption_Process",
+      "fact": "Maria Garcia performed a home visit for applicant Johnathan Davis (APP-9013) on June 20, 2024, and uploaded the report to ShelterSync the same day."
+    },
+    {
+      "id": "F14",
+      "category": "Animal_Profiles",
+      "fact": "The animal with ID D-4815 is a 3-year-old male Beagle mix named 'Buster'."
+    },
+    {
+      "id": "F15",
+      "category": "Animal_Profiles",
+      "fact": "Buster's profile in ShelterSync has a mandatory restriction tag: 'NO_CATS'."
+    },
+    {
+      "id": "F16",
+      "category": "Animal_Profiles",
+      "fact": "The animal with ID C-1623 is a 5-year-old female Siamese cat named 'Luna'."
+    },
+    {
+      "id": "F17",
+      "category": "Animal_Profiles",
+      "fact": "Luna has a medical restriction requiring a diabetic-specific diet of Purina Pro Plan DM Savory Selects, fed 1/2 can twice daily."
+    },
+    {
+      "id": "F18",
+      "category": "Animal_Profiles",
+      "fact": "Luna's behavioral profile specifies she needs a 'QUIET_HOME_ONLY' with no children under the age of 16."
+    },
+    {
+      "id": "F19",
+      "category": "Animal_Profiles",
+      "fact": "A German Shepherd named Rocky (ID D-4816) requires a home with a physical fence at least 6 feet high."
+    },
+    {
+      "id": "F20",
+      "category": "Applicant_Data",
+      "fact": "The Miller family, application ID APP-9012, applied to adopt Buster on June 15, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "Applicant_Data",
+      "fact": "Liam Chen's original notes for application APP-9012, found in his personal Google Doc, state the Miller family owns two cats."
+    },
+    {
+      "id": "F22",
+      "category": "Applicant_Data",
+      "fact": "Johnathan Davis, application ID APP-9013, applied to adopt Luna on June 18, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "Applicant_Data",
+      "fact": "Maria Garcia's official home visit report for Johnathan Davis confirms he lives alone in a 750 sq ft apartment with no other pets."
+    },
+    {
+      "id": "F24",
+      "category": "Applicant_Data",
+      "fact": "The application fee for all dog and cat adoptions at Pawsitive Beginnings Animal Rescue is $150."
+    },
+    {
+      "id": "F25",
+      "category": "Software_and_Systems",
+      "fact": "The weekly data backup for ShelterSync runs every Sunday at 2:00 AM and is managed by IT contractor 'Maple Creek Tech Solutions'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the new policy regarding where adoption notes must be entered, and what was its effective date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "New Policy Implementation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "According to the 'Unified Adoption Profile' standard, what score range must be assigned to each application?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning about the new note-taking policy, the user would naturally inquire about other related standardization policies like the new scoring system.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "New Policy Implementation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the specific condition that requires my secondary review and signature on an adoption application?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Understanding the new scoring system (N2) directly leads to a question about the manager's specific responsibilities related to that score.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Managerial Review Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which reviewer conducted the interview for the Miller family's application (APP-9012) and on what date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Case Review: Miller Application",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the name of the dog the Millers applied for, and does its profile list a mandatory restriction?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15",
+        "F20"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After identifying a specific application, the next logical step is to check the details of the animal associated with it to assess the potential fit.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Case Review: Miller Application",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What did Liam Chen's personal notes for application APP-9012 state about the Miller family's current pets?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Discovering a 'NO_CATS' restriction for the dog (N5) makes it critical to find out if the applicant has cats, a detail that might be in the non-standard notes.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Note Discrepancy Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who performed the home visit for Johnathan Davis's application (APP-9013) and when was the report uploaded to ShelterSync?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Case Review: Davis Application",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What did Maria Garcia's official home visit report for Johnathan Davis confirm about his home and pet situation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After identifying that a compliant report was filed for the Davis application, the immediate follow-up is to ask for the contents of that report.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Case Review: Davis Application",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the name and ID of the animal Johnathan Davis applied to adopt?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F22"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After confirming the applicant's living situation is suitable (N8), the next step is to identify the specific animal and check its requirements for a match.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Animal Profile Review: Luna",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What are the specific dietary and home environment restrictions for the cat named Luna (C-1623)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Once the animal has been identified (N9), the user needs to know its specific care requirements to confirm the applicant is a good fit.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Animal Profile Review: Luna",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Where were adoption interview notes stored before the new policy took effect on June 1, 2024?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning about the new system for storing notes (N1), the user might be curious about the old system to understand the context of the change.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Historical Process Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "When and where is the mandatory weekly adoption review meeting held?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Meeting Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "New Policy Implementation",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Managerial Review Protocol",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Case Review: Miller Application",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Note Discrepancy Identification",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Case Review: Davis Application",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Animal Profile Review: Luna",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Historical Process Information",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Meeting Logistics",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shelter_adoption_application_consistency_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

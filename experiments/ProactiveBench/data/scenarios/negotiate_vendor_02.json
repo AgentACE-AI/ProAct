@@ -1,0 +1,508 @@
+{
+  "scenario_id": "negotiate_vendor_02",
+  "domain": "negotiation_support",
+  "description": "A company is renewing a software contract. The vendor has increased prices by 20%. The user needs to find leverage (e.g., competitor quotes, usage data) to bring the price down.",
+  "user_profile": {
+    "persona": "34-year-old Procurement Manager",
+    "context": "Contract expires in 30 days",
+    "communication_style": "Tough, analytical, outcome-oriented"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "contract_details",
+      "fact": "The current contract with QuantumLeap Analytics is identified by agreement number IS-QLA-2021-48B."
+    },
+    {
+      "id": "F02",
+      "category": "contract_details",
+      "fact": "The current 3-year contract term began on August 1, 2021."
+    },
+    {
+      "id": "F03",
+      "category": "contract_details",
+      "fact": "The current contract expires on July 31, 2024."
+    },
+    {
+      "id": "F04",
+      "category": "financials",
+      "fact": "The current annual cost for the 'Synapse BI Suite' software is $120,000."
+    },
+    {
+      "id": "F05",
+      "category": "financials",
+      "fact": "The proposed annual cost for renewal is $144,000."
+    },
+    {
+      "id": "F06",
+      "category": "financials",
+      "fact": "The proposed renewal cost represents a 20% price increase over the current contract."
+    },
+    {
+      "id": "F07",
+      "category": "contract_details",
+      "fact": "The contract provides for 150 'Professional Tier' user licenses."
+    },
+    {
+      "id": "F08",
+      "category": "contract_details",
+      "fact": "The contract's auto-renewal clause was disabled on June 5, 2024, by Alex Chen."
+    },
+    {
+      "id": "F09",
+      "category": "vendor_information",
+      "fact": "The software vendor is QuantumLeap Analytics, located at 123 Tech Valley Rd, San Jose, CA 95134."
+    },
+    {
+      "id": "F10",
+      "category": "vendor_information",
+      "fact": "The primary account manager at QuantumLeap Analytics is Sarah Jenkins."
+    },
+    {
+      "id": "F11",
+      "category": "vendor_information",
+      "fact": "Sarah Jenkins' email address is s.jenkins@quantumleap-analytics.com."
+    },
+    {
+      "id": "F12",
+      "category": "vendor_information",
+      "fact": "The direct phone number for Sarah Jenkins is +1-415-555-0182."
+    },
+    {
+      "id": "F13",
+      "category": "usage_metrics",
+      "fact": "In the last 90 days, only 82 of the 150 licensed users have logged into the Synapse BI Suite."
+    },
+    {
+      "id": "F14",
+      "category": "usage_metrics",
+      "fact": "The 'Predictive Forecasting Module,' an add-on accounting for 30% of the license cost, was used by only 5 unique users in the last quarter (Q2 2024)."
+    },
+    {
+      "id": "F15",
+      "category": "usage_metrics",
+      "fact": "The average number of reports generated per active user per month is 4.2."
+    },
+    {
+      "id": "F16",
+      "category": "usage_metrics",
+      "fact": "Innovate Solutions Inc. filed 12 support tickets with QuantumLeap in the last 12 months; 3 were classified as 'High' priority."
+    },
+    {
+      "id": "F17",
+      "category": "vendor_performance",
+      "fact": "The average resolution time for 'High' priority tickets in the last 12 months was 72 hours, exceeding the 48-hour SLA defined in contract section 8.2."
+    },
+    {
+      "id": "F18",
+      "category": "competitor_analysis",
+      "fact": "A formal quote was received from competitor 'DataWeave Pro' on June 15, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "competitor_analysis",
+      "fact": "The DataWeave Pro quote for 150 equivalent licenses is $110,000 annually, with a 3-year price lock guarantee."
+    },
+    {
+      "id": "F20",
+      "category": "competitor_analysis",
+      "fact": "The DataWeave Pro platform includes a native, real-time integration with Salesforce, a feature Synapse BI Suite lacks."
+    },
+    {
+      "id": "F21",
+      "category": "competitor_analysis",
+      "fact": "A budget estimate from competitor 'InsightSphere' for a similar service tier is $98,000 annually, valid until August 30, 2024."
+    },
+    {
+      "id": "F22",
+      "category": "internal_stakeholders",
+      "fact": "The primary user department for Synapse BI Suite is the Marketing Analytics team, led by Maria Garcia."
+    },
+    {
+      "id": "F23",
+      "category": "internal_stakeholders",
+      "fact": "In an email dated June 10, 2024, Maria Garcia stated that the software is 'valuable but not irreplaceable at the proposed new price point'."
+    },
+    {
+      "id": "F24",
+      "category": "internal_stakeholders",
+      "fact": "David Lee, a Senior Data Analyst, is the designated power user and has trained 15 other employees on the platform."
+    },
+    {
+      "id": "F25",
+      "category": "usage_metrics",
+      "fact": "12 licenses assigned to the Finance department have shown zero login activity for over 180 days."
+    },
+    {
+      "id": "F26",
+      "category": "internal_stakeholders",
+      "fact": "The internal project code for a potential migration to a new BI platform is 'Project Phoenix'."
+    },
+    {
+      "id": "F27",
+      "category": "financials",
+      "fact": "The CIO's office has estimated the one-time internal cost to migrate to a new platform at $25,000, covering training and data porting."
+    },
+    {
+      "id": "F28",
+      "category": "financials",
+      "fact": "The budget for this renewal is allocated under General Ledger Code 7420-Software-Subscriptions."
+    },
+    {
+      "id": "F29",
+      "category": "financials",
+      "fact": "The maximum approved budget increase for any single software renewal in the current fiscal year (FY2025) is 7%."
+    },
+    {
+      "id": "F30",
+      "category": "financials",
+      "fact": "The total 3-year cost impact of the 20% increase would be an unbudgeted expense of $72,000."
+    },
+    {
+      "id": "F31",
+      "category": "communication_log",
+      "fact": "The renewal notice with the 20% price increase was received via email from Sarah Jenkins on June 1, 2024, at 10:15 AM PST."
+    },
+    {
+      "id": "F32",
+      "category": "communication_log",
+      "fact": "The last Quarterly Business Review (QBR) with QuantumLeap Analytics was held via Zoom on April 5, 2024."
+    },
+    {
+      "id": "F33",
+      "category": "vendor_performance",
+      "fact": "In the April 5, 2024 QBR, QuantumLeap Analytics product manager, Ken Sato, promised a 'real-time data dashboard' feature for Q2 2024, which has not been delivered."
+    },
+    {
+      "id": "F34",
+      "category": "user_profile",
+      "fact": "The procurement manager leading this negotiation for Innovate Solutions Inc. is Alex Chen."
+    },
+    {
+      "id": "F35",
+      "category": "user_profile",
+      "fact": "Alex Chen's negotiation mandate from the CFO is to secure a renewal price at or below a 5% increase over the current contract value."
+    },
+    {
+      "id": "F36",
+      "category": "contract_details",
+      "fact": "The QuantumLeap Analytics contract being renewed is specifically for the vendor's 'Synapse BI Suite' software package."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current annual cost of our QuantumLeap Analytics contract for Synapse BI Suite, and what is the proposed renewal cost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05",
+        "F36"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Renewal Proposal Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the percentage price increase for the proposed renewal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning the new and old price, the user will want to know the exact percentage increase.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Renewal Proposal Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "When does the current contract expire?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: Understanding the contract costs naturally leads to confirming the deadline for the negotiation.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Renewal Proposal Details",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is my negotiation mandate from the CFO regarding a price increase?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F35"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Internal Negotiation Mandate",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Out of our 150 licenses, how many users have actually logged in over the last 90 days?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "License Usage Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which department has 12 licenses that have shown zero activity for over 180 days?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After seeing general under-utilization, the user will want specific examples of non-usage.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "License Usage Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the annual cost quoted by the competitor DataWeave Pro for an equivalent service?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After establishing the vendor's price increase, the most logical next step is to find out what competitors charge.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Competitor Pricing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the budget estimate from the other competitor, InsightSphere?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After getting one competitor quote, the user would naturally ask for any others available.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Competitor Pricing",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How many users have used the 'Predictive Forecasting Module' in the last quarter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After identifying general license under-utilization, an intelligent assistant can proactively surface data about specific, expensive modules that are also under-utilized.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Specific Module Underutilization",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What was the vendor's average resolution time for high-priority tickets, and did it meet the SLA?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Vendor Performance Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Was the 'real-time data dashboard' feature promised for Q2 2024 ever delivered?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: Following an SLA breach, the user is likely to inquire about other vendor performance failures, such as broken promises.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Vendor Performance Issues",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "Does the competitor DataWeave Pro offer a native Salesforce integration?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After providing a competitor's price, proactively highlighting a key feature advantage that the current vendor lacks is a high-value next step.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Competitor Feature Advantage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the primary internal stakeholder's position on renewing at the proposed new price?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Internal Stakeholder Position",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the estimated one-time internal cost to migrate to a new platform?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: Knowing that the key stakeholder is willing to switch platforms, the immediate follow-up question is about the financial implication of making that switch.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Migration Cost Estimate",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Who is my account manager at QuantumLeap Analytics and what is their contact information?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "CROSS-GROUP: After assembling all key pieces of leverage (cost, usage, competitors, performance, internal readiness), the final action is to get the contact info to begin the negotiation.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Vendor Contact Information",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Renewal Proposal Details",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Internal Negotiation Mandate",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "License Usage Analysis",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Competitor Pricing",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Specific Module Underutilization",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Vendor Performance Issues",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Competitor Feature Advantage",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "Internal Stakeholder Position",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Migration Cost Estimate",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Vendor Contact Information",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G9"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "negotiate_vendor_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

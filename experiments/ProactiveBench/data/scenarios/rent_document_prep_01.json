@@ -1,0 +1,487 @@
+{
+  "scenario_id": "rent_document_prep_01",
+  "domain": "apartment_renting",
+  "description": "A renter is applying to several apartments at once and needs to organize income proof, references, guarantor materials, ID documents, and submission deadlines so they can respond quickly when a listing becomes available. All building names and landlords are fictional.",
+  "user_profile": {
+    "persona": "26-year-old nonprofit employee looking for a first solo apartment",
+    "context": "After missing one apartment because paperwork was not ready, wants to prepare a complete application packet in advance",
+    "communication_style": "Methodical and list-oriented, likes having documents grouped by use"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "personal_information",
+      "fact": "The renter's full legal name is Maya R. Patel."
+    },
+    {
+      "id": "F02",
+      "category": "personal_information",
+      "fact": "Maya Patel's date of birth is June 15, 1998."
+    },
+    {
+      "id": "F03",
+      "category": "personal_information",
+      "fact": "Maya Patel's contact email for applications is m.patel.rent@email.com."
+    },
+    {
+      "id": "F04",
+      "category": "personal_information",
+      "fact": "Maya Patel's contact phone number is 555-123-4567."
+    },
+    {
+      "id": "F05",
+      "category": "identification_documents",
+      "fact": "Maya Patel's Illinois Driver's License number is M123-4567-8901 and it expires on June 15, 2026."
+    },
+    {
+      "id": "F06",
+      "category": "identification_documents",
+      "fact": "A digital scan of Maya Patel's driver's license is saved as 'ID_MayaPatel.jpg'."
+    },
+    {
+      "id": "F07",
+      "category": "identification_documents",
+      "fact": "A digital copy of Maya Patel's Social Security card is saved as 'SSN_Card_MayaPatel.pdf'."
+    },
+    {
+      "id": "F08",
+      "category": "income_verification",
+      "fact": "Maya Patel is employed as a Program Coordinator at the Springfield Community Alliance."
+    },
+    {
+      "id": "F09",
+      "category": "income_verification",
+      "fact": "Maya Patel's gross annual salary is $52,000."
+    },
+    {
+      "id": "F10",
+      "category": "income_verification",
+      "fact": "An employment verification letter, signed by HR Manager Sarah Jenkins, is dated June 3, 2024."
+    },
+    {
+      "id": "F11",
+      "category": "income_verification",
+      "fact": "The most recent pay stub is dated May 31, 2024, and is saved as 'Paystub_2024-05-31.pdf'."
+    },
+    {
+      "id": "F12",
+      "category": "financial_documents",
+      "fact": "Maya Patel's bank statement from Springfield Central Bank for May 2024 shows a closing balance of $8,540."
+    },
+    {
+      "id": "F13",
+      "category": "financial_documents",
+      "fact": "The bank statement from May 2024 is saved as 'BankStatement_2024-05.pdf'."
+    },
+    {
+      "id": "F14",
+      "category": "references",
+      "fact": "The professional reference is Mark Chen, Supervisor, reachable at m.chen@springfieldca.org."
+    },
+    {
+      "id": "F15",
+      "category": "references",
+      "fact": "The previous landlord reference is James Miller, reachable at 555-987-6543."
+    },
+    {
+      "id": "F16",
+      "category": "references",
+      "fact": "A letter of recommendation from Mark Chen, dated June 1, 2024, is saved as 'Reference_MarkChen.pdf'."
+    },
+    {
+      "id": "F17",
+      "category": "guarantor_materials",
+      "fact": "The guarantor is Maya's father, Anil Patel."
+    },
+    {
+      "id": "F18",
+      "category": "guarantor_materials",
+      "fact": "Anil Patel's 2023 federal tax return, showing an income of $145,000, is saved as 'Guarantor_TaxReturn_2023_APatel.pdf'."
+    },
+    {
+      "id": "F19",
+      "category": "guarantor_materials",
+      "fact": "A copy of Anil Patel's driver's license is saved as 'Guarantor_ID_APatel.pdf'."
+    },
+    {
+      "id": "F20",
+      "category": "target_apartments",
+      "fact": "Listing 1 is for Apt 4C at The Willow Creek, 101 River St, managed by Crestview Properties."
+    },
+    {
+      "id": "F21",
+      "category": "target_apartments",
+      "fact": "The monthly rent for Apt 4C at The Willow Creek is $1,250."
+    },
+    {
+      "id": "F22",
+      "category": "target_apartments",
+      "fact": "The security deposit for The Willow Creek is $1,250, equal to one month's rent."
+    },
+    {
+      "id": "F23",
+      "category": "target_apartments",
+      "fact": "Listing 2 is for Unit 205 at The Sterling Lofts, 33 Industrial Ave, managed by Horizon Management Group."
+    },
+    {
+      "id": "F24",
+      "category": "target_apartments",
+      "fact": "The monthly rent for Unit 205 at The Sterling Lofts is $1,300."
+    },
+    {
+      "id": "F25",
+      "category": "target_apartments",
+      "fact": "Listing 3 is for Apt 3B at The Oakside, 88 Forest Dr, managed by Summit Realty."
+    },
+    {
+      "id": "F26",
+      "category": "target_apartments",
+      "fact": "The monthly rent for Apt 3B at The Oakside is $1,175 and it requires a guarantor for incomes under $55,000."
+    },
+    {
+      "id": "F27",
+      "category": "application_deadlines",
+      "fact": "The application deadline for The Willow Creek (Apt 4C) is June 10, 2024, at 5:00 PM CST."
+    },
+    {
+      "id": "F28",
+      "category": "application_deadlines",
+      "fact": "Applications for The Sterling Lofts (Unit 205) are accepted on a rolling, first-come, first-served basis."
+    },
+    {
+      "id": "F29",
+      "category": "application_fees",
+      "fact": "The non-refundable application fee for The Willow Creek is $50."
+    },
+    {
+      "id": "F30",
+      "category": "application_fees",
+      "fact": "The non-refundable application fee for The Sterling Lofts is $75."
+    },
+    {
+      "id": "F31",
+      "category": "application_fees",
+      "fact": "The non-refundable application fee for The Oakside is $40."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my current job title and gross annual salary for the applications?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Income Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What documents do I have to prove my employment and income, and what are their dates?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming the core income details, the user will naturally ask for the corresponding proof documents.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Income Verification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the closing balance on my most recent bank statement and what is the file name?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Financial Documents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are my driver's license details and where is the scanned file?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Identification Documents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Who are my professional and previous landlord references and what is their contact information?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "References",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the file name and date of the recommendation letter from my professional reference Mark Chen?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After identifying the professional reference, the user would naturally check whether the corresponding recommendation letter from that same reference is already saved and dated for the application packet.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "References",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Who is my guarantor and what is their income as shown on their tax return?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Reviewing one's own financial statement (G2) can trigger the need to confirm the financial backing of a guarantor (G5), especially for a first-time renter.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Guarantor Materials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What identification document do I have for my guarantor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After confirming the guarantor's identity and financial status, the next logical step is to locate their required documents.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Guarantor Materials",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What are the details for the apartment at The Willow Creek, including address, rent, and management company?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Target Apartment: Willow Creek",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When is the application due for the apartment at The Willow Creek?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: The application deadline is the most critical piece of information after identifying a target apartment.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Target Apartment: Willow Creek",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "How much is the application fee for The Willow Creek?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After learning the deadline for an application (G6), the immediate next question is about the cost to submit it (G7). This is an auditable proactive target.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Application Fee: Willow Creek",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What are the details for the unit at The Sterling Lofts, including address, rent, and management?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Having gathered all key info for the first apartment (G6, G7), the user would naturally move to the next one on her list (G8).",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Target Apartment: Sterling Lofts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the application submission policy for The Sterling Lofts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "Intra-group: After getting the basic details of an apartment, understanding its specific application process (e.g., rolling basis) is a crucial follow-up.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Target Apartment: Sterling Lofts",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "What is the rent for the apartment at The Oakside, and what is the income threshold for needing a guarantor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After reviewing the second apartment (G8), the user moves to the third (G9), which has a specific income-based rule that needs clarification.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Target Apartment: The Oakside",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What is the application fee for The Oakside?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "CROSS-GROUP: Similar to the other apartments, after getting the core details (G9), the fee (G10) is a logical next question. This is an auditable proactive target.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Application Fee: The Oakside",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Income Verification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Financial Documents",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Identification Documents",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "References",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Guarantor Materials",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Target Apartment: Willow Creek",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Application Fee: Willow Creek",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Target Apartment: Sterling Lofts",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Target Apartment: The Oakside",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Application Fee: The Oakside",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G9"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "rent_document_prep_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "scenario_id": "finance_tax_loss_04",
+  "domain": "financial_planning",
+  "description": "A crypto investor has significant capital gains from one asset but losses in others. They need to execute 'tax-loss harvesting' before the year-end, but face 'wash-sale' rule conflicts. They need a plan to minimize tax liability without violating regulations.",
+  "user_profile": {
+    "persona": "28-year-old tech worker, active trader",
+    "context": "Year-end tax planning (December)",
+    "communication_style": "Fast-paced, likes optimization and 'hacks'"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "investor_profile",
+      "fact": "The investor's name is Alex Chen, and he is a 28-year-old Senior Software Engineer at Innovatech Solutions."
+    },
+    {
+      "id": "F02",
+      "category": "investor_profile",
+      "fact": "Alex Chen's projected annual taxable income for the 2023 tax year is $185,000."
+    },
+    {
+      "id": "F03",
+      "category": "portfolio_holdings",
+      "fact": "Alex Chen sold 500 units of the cryptocurrency Solara (SOLA) on December 15, 2023, realizing a long-term capital gain of $150,000."
+    },
+    {
+      "id": "F04",
+      "category": "portfolio_holdings",
+      "fact": "The cost basis for the 500 SOLA units was $25,000, purchased on January 10, 2023, at $50 per unit."
+    },
+    {
+      "id": "F05",
+      "category": "portfolio_holdings",
+      "fact": "Alex holds 2,000 units of Etherium Classic Fork (ECF), which he purchased on May 5, 2023."
+    },
+    {
+      "id": "F06",
+      "category": "portfolio_holdings",
+      "fact": "The total cost basis for the 2,000 ECF units is $80,000, with an average purchase price of $40 per unit."
+    },
+    {
+      "id": "F07",
+      "category": "portfolio_holdings",
+      "fact": "As of December 16, 2023, the 2,000 ECF units have a market value of $20,000, representing an unrealized short-term loss of $60,000."
+    },
+    {
+      "id": "F08",
+      "category": "portfolio_holdings",
+      "fact": "Alex also holds 10,000 units of QuantumLeap (QTM), which he purchased on October 2, 2023."
+    },
+    {
+      "id": "F09",
+      "category": "portfolio_holdings",
+      "fact": "The total cost basis for the 10,000 QTM units is $30,000, with an average purchase price of $3 per unit."
+    },
+    {
+      "id": "F10",
+      "category": "portfolio_holdings",
+      "fact": "As of December 16, 2023, the 10,000 QTM units have a market value of $5,000, representing an unrealized short-term loss of $25,000."
+    },
+    {
+      "id": "F11",
+      "category": "tax_situation",
+      "fact": "The applicable federal long-term capital gains tax rate for Alex's income bracket is 15%."
+    },
+    {
+      "id": "F12",
+      "category": "tax_situation",
+      "fact": "Without any loss harvesting, Alex's estimated federal tax liability on the SOLA gain is $22,500."
+    },
+    {
+      "id": "F13",
+      "category": "tax_loss_harvesting_plan",
+      "fact": "The plan is to sell all 2,000 ECF units and all 10,000 QTM units on December 28, 2023."
+    },
+    {
+      "id": "F14",
+      "category": "tax_loss_harvesting_plan",
+      "fact": "This sale will realize a combined short-term capital loss of $85,000 ($60,000 from ECF and $25,000 from QTM)."
+    },
+    {
+      "id": "F15",
+      "category": "tax_loss_harvesting_plan",
+      "fact": "The $85,000 in realized losses will be used to offset the $150,000 SOLA gain, reducing the net taxable capital gain to $65,000."
+    },
+    {
+      "id": "F16",
+      "category": "tax_loss_harvesting_plan",
+      "fact": "After executing the plan, the new estimated federal tax liability will be $9,750, resulting in a tax savings of $12,750."
+    },
+    {
+      "id": "F17",
+      "category": "regulatory_constraints",
+      "fact": "The wash-sale rule, as interpreted by IRS Notice 2014-21 for crypto, disallows a loss deduction if a substantially identical asset is purchased within 30 days before or after the sale."
+    },
+    {
+      "id": "F18",
+      "category": "regulatory_constraints",
+      "fact": "To maintain market exposure without triggering the wash-sale rule, Alex plans to buy a non-identical asset, ChainLink Alternative (CLX), with the proceeds from the ECF and QTM sales."
+    },
+    {
+      "id": "F19",
+      "category": "regulatory_constraints",
+      "fact": "Alex cannot repurchase ECF or QTM until at least January 28, 2024, to comply with the 30-day wash-sale window."
+    },
+    {
+      "id": "F20",
+      "category": "tools_and_resources",
+      "fact": "All of Alex's crypto transactions are executed on the Zenith Digital Asset Exchange (ZDAX)."
+    },
+    {
+      "id": "F21",
+      "category": "tools_and_resources",
+      "fact": "Alex's user ID for the Zenith Digital Asset Exchange is 'AChen_88'."
+    },
+    {
+      "id": "F22",
+      "category": "tools_and_resources",
+      "fact": "Alex uses the premium version of the CoinStats app to track his portfolio's real-time value and cost basis."
+    },
+    {
+      "id": "F23",
+      "category": "tools_and_resources",
+      "fact": "He will use the Koinly tax software to generate IRS Form 8949 by importing his ZDAX transaction CSV file."
+    },
+    {
+      "id": "F24",
+      "category": "professional_advice",
+      "fact": "Alex consulted with a tax professional, Chloe Davis, from the firm 'FinOptima Advisory' to create this plan."
+    },
+    {
+      "id": "F25",
+      "category": "professional_advice",
+      "fact": "The consultation with Chloe Davis took place via a 45-minute Zoom call on December 12, 2023."
+    },
+    {
+      "id": "F26",
+      "category": "professional_advice",
+      "fact": "Chloe Davis's professional recommendation was to document the rationale for CLX not being 'substantially identical' to ECF in case of an audit."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was my realized long-term capital gain from selling Solara (SOLA) and on what date did I sell it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Tax Situation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is my estimated federal tax liability on the SOLA gain before any loss harvesting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the large capital gain, the immediate next question is to quantify the tax impact.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Tax Situation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the current unrealized short-term loss on my Etherium Classic Fork (ECF) holdings?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Unrealized Losses",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the current unrealized short-term loss on my QuantumLeap (QTM) holdings?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Unrealized Losses",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the total combined short-term capital loss that will be realized by selling my ECF and QTM units?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After seeing the tax liability from the gain, the user's primary goal is to find the total amount of losses they can use to counteract it.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Plan Execution & Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "After using the harvested losses to offset my gain, what will my new net taxable capital gain be?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Once the total loss to be harvested is established, the next logical step is to see how it reduces the initial gain.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Plan Execution & Impact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is my new estimated federal tax liability and total tax savings after executing the plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "This is the final payoff calculation; after determining the new taxable gain, the user wants to see the bottom-line savings.",
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "Plan Execution & Impact",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N8",
+      "description": "According to this tax-loss plan, until what date should Alex wait before repurchasing ECF or QTM?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After seeing the tax savings from the plan, the next practical question is when Alex can buy back the assets without undermining it.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Wash-Sale Rule Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the planned strategy to maintain market exposure without triggering the wash-sale rule?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Understanding the wash-sale rule directly leads to the question of how to legally work around it while staying invested.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Compliance Strategy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who was the tax professional I consulted for this plan and what was their key recommendation regarding the replacement asset?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Professional Consultation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Which exchange will I use for the transactions and what software will I use for tax reporting?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Tools & Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What app do I use to track my portfolio's real-time value and cost basis?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Tools & Reporting",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Tax Situation",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Unrealized Losses",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Plan Execution & Impact",
+      "member_need_ids": [
+        "N5",
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Wash-Sale Rule Details",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Compliance Strategy",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Professional Consultation",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Tools & Reporting",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "finance_tax_loss_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

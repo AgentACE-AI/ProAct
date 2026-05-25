@@ -1,0 +1,406 @@
+{
+  "scenario_id": "finance_basic_01",
+  "domain": "financial_planning",
+  "description": "A young professional wants to start saving and investing. They need to understand the difference between high-yield savings accounts, index funds, and retirement accounts (e.g., 401k).",
+  "user_profile": {
+    "persona": "23-year-old entry-level employee",
+    "context": "Just received their first paycheck, wants to be responsible",
+    "communication_style": "Eager to learn, prefers simple explanations"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "personal_profile",
+      "fact": "Alex Chen is 23 years old."
+    },
+    {
+      "id": "F02",
+      "category": "personal_profile",
+      "fact": "Alex Chen's annual salary as an entry-level analyst at Innovatech Solutions is $65,000."
+    },
+    {
+      "id": "F03",
+      "category": "personal_profile",
+      "fact": "Alex Chen received their first bi-weekly paycheck of $1,985.50 (net) on July 15, 2024."
+    },
+    {
+      "id": "F04",
+      "category": "employer_details",
+      "fact": "Innovatech Solutions is the employer of Alex Chen."
+    },
+    {
+      "id": "F05",
+      "category": "employer_details",
+      "fact": "The Human Resources contact for benefits at Innovatech Solutions is Maria Garcia, reachable at m.garcia@innovatech-solutions.fict."
+    },
+    {
+      "id": "F06",
+      "category": "high_yield_savings_account",
+      "fact": "The Apex High-Yield Savings account from Apex Digital Bank offers an Annual Percentage Yield (APY) of 4.50%."
+    },
+    {
+      "id": "F07",
+      "category": "high_yield_savings_account",
+      "fact": "The Apex High-Yield Savings account has no monthly maintenance fees."
+    },
+    {
+      "id": "F08",
+      "category": "high_yield_savings_account",
+      "fact": "There is a $0 minimum deposit required to open an Apex High-Yield Savings account."
+    },
+    {
+      "id": "F09",
+      "category": "high_yield_savings_account",
+      "fact": "Interest in the Apex High-Yield Savings account is compounded daily and paid out on the last day of each month."
+    },
+    {
+      "id": "F10",
+      "category": "high_yield_savings_account",
+      "fact": "Apex Digital Bank is an online-only bank, accessible via apexdb.fict."
+    },
+    {
+      "id": "F11",
+      "category": "high_yield_savings_account",
+      "fact": "Withdrawals from the Apex High-Yield Savings account are limited to 6 per monthly statement cycle by federal regulation."
+    },
+    {
+      "id": "F12",
+      "category": "index_fund",
+      "fact": "The Global 500 Index Fund is offered through the brokerage firm Stellar Invest."
+    },
+    {
+      "id": "F13",
+      "category": "index_fund",
+      "fact": "The stock ticker symbol for the Global 500 Index Fund is 'G500'."
+    },
+    {
+      "id": "F14",
+      "category": "index_fund",
+      "fact": "The G500 fund has an expense ratio of 0.04%, which is an annual fee."
+    },
+    {
+      "id": "F15",
+      "category": "index_fund",
+      "fact": "The minimum initial investment for the G500 index fund at Stellar Invest is $1.00."
+    },
+    {
+      "id": "F16",
+      "category": "index_fund",
+      "fact": "The Global 500 Index Fund (G500) is designed to track the performance of the fictional 'Solstice 500' market index."
+    },
+    {
+      "id": "F17",
+      "category": "index_fund",
+      "fact": "Investing in the G500 fund requires opening a Stellar Invest brokerage account, which has no account opening fee."
+    },
+    {
+      "id": "F18",
+      "category": "index_fund",
+      "fact": "Dividends paid by companies in the G500 fund can be automatically reinvested at no cost through Stellar Invest."
+    },
+    {
+      "id": "F19",
+      "category": "retirement_account_401k",
+      "fact": "Innovatech Solutions' 401k plan is administered by a third-party company named Horizon Retirement Services."
+    },
+    {
+      "id": "F20",
+      "category": "retirement_account_401k",
+      "fact": "Innovatech Solutions provides a 100% match on an employee's 401k contributions up to 4% of their pre-tax salary."
+    },
+    {
+      "id": "F21",
+      "category": "retirement_account_401k",
+      "fact": "The employer matching contributions in the Innovatech Solutions 401k plan are subject to a 2-year cliff vesting schedule."
+    },
+    {
+      "id": "F22",
+      "category": "retirement_account_401k",
+      "fact": "For the year 2024, an employee under age 50 can contribute a maximum of $23,000 to their 401k."
+    },
+    {
+      "id": "F23",
+      "category": "retirement_account_401k",
+      "fact": "The default investment option for new enrollees in the Innovatech 401k plan is the 'Horizon Target Date 2065 Fund'."
+    },
+    {
+      "id": "F24",
+      "category": "retirement_account_401k",
+      "fact": "The Innovatech Solutions 401k plan allows for both Traditional (pre-tax) and Roth (post-tax) contributions."
+    },
+    {
+      "id": "F25",
+      "category": "retirement_account_401k",
+      "fact": "The annual administrative fee for the 401k plan, charged by Horizon Retirement Services, is 0.12% of the total account balance."
+    },
+    {
+      "id": "F26",
+      "category": "retirement_account_401k",
+      "fact": "Employees can enroll in the 401k plan at any time through the portal: https://my.horizonretirement.com/innovatech."
+    },
+    {
+      "id": "F27",
+      "category": "retirement_account_401k",
+      "fact": "To log in to the Horizon Retirement Services portal, Alex Chen must use their employee ID, which is 'AC34987'."
+    },
+    {
+      "id": "F28",
+      "category": "retirement_account_401k",
+      "fact": "A 401k is a tax-advantaged retirement account, meaning contributions and/or growth have tax benefits."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my company's 401k match?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "401k_match_policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the APY for the Apex High-Yield Savings account?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "hysa_basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What are the monthly fees and minimum deposit for the Apex High-Yield Savings account?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After learning the interest rate of a savings account, the user will naturally ask about the costs and requirements to open it.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "hysa_basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is the expense ratio for the Global 500 Index Fund?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "index_fund_basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the minimum initial investment for that fund?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After understanding the ongoing cost (expense ratio) of an investment, the immediate next question is about the upfront cost to get started.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "index_fund_basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "How do I enroll in my company's 401k plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning about the valuable company match, the user's immediate action item is to figure out the enrollment process.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "401k_enrollment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the maximum I can contribute to my 401k this year?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "401k_contribution_rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Does my 401k plan allow for both Traditional and Roth contributions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Once the user knows the contribution limit, they will likely want to understand the different types of contributions they can make (pre-tax vs. post-tax).",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "401k_contribution_rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the vesting schedule for the employer matching contributions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After finding out about the employer match, a savvy user would want to know the conditions under which they get to keep that money.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "401k_vesting_policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Are there any withdrawal limits for the Apex High-Yield Savings account?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After understanding how to open and fund a savings account, the user's next concern is about the rules for accessing their money.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "hysa_withdrawal_rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "How do I open an account to invest in the G500 fund and are there any account opening fees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the user confirms the fund's costs are acceptable, the logical next step is to ask about the process and costs of setting up the required brokerage account.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "index_fund_logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Can dividends from the G500 fund be reinvested automatically?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Intra-group: After learning how to open an investment account, a user interested in long-term growth will likely ask about features that automate and enhance returns, like dividend reinvestment.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "index_fund_logistics",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "401k_match_policy",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "hysa_basics",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "index_fund_basics",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "401k_enrollment",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "401k_contribution_rules",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "401k_vesting_policy",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "hysa_withdrawal_rules",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "index_fund_logistics",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "finance_basic_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

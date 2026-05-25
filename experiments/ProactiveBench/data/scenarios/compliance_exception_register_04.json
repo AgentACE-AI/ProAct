@@ -1,0 +1,426 @@
+{
+  "scenario_id": "compliance_exception_register_04",
+  "domain": "compliance_management",
+  "description": "A department has accumulated many informal exceptions to standard policy over time and now needs to organize which are approved, temporary, expired, undocumented, or no longer justified.",
+  "user_profile": {
+    "persona": "43-year-old risk manager cleaning up years of ad hoc operating exceptions",
+    "context": "The exceptions helped the business move faster, but they now exist mostly in memory and email threads",
+    "communication_style": "Systematic and skeptical, wants every exception classified explicitly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel & Roles",
+      "fact": "Sarah Jenkins was hired as Risk Manager on February 5, 2024, to lead the policy exception formalization project for Innovatec Solutions Inc."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel & Roles",
+      "fact": "David Chen, VP of Global Product Development, is the original approver for 17 of the 25 known informal exceptions currently under review."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel & Roles",
+      "fact": "Maria Garcia, Lead Engineer for Project Chimera, is the primary business owner and point of contact for exception E-001."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel & Roles",
+      "fact": "Ben Carter, an IT Security Analyst, is assigned to conduct the technical risk assessment for all exceptions related to policy SEC-POL-021."
+    },
+    {
+      "id": "F05",
+      "category": "Policy Information",
+      "fact": "Policy IS-POL-007, the 'Data Residency Policy,' mandates all customer PII for EU clients be stored exclusively in the Frankfurt AWS region (eu-central-1)."
+    },
+    {
+      "id": "F06",
+      "category": "Policy Information",
+      "fact": "Policy HR-POL-012, 'Contractor Onboarding Protocol,' requires a 7-business-day background check period before any network access is granted."
+    },
+    {
+      "id": "F07",
+      "category": "Policy Information",
+      "fact": "Policy SEC-POL-021, 'Production System Access Control,' prohibits direct developer SSH access to production database servers, requiring all access through a bastion host."
+    },
+    {
+      "id": "F08",
+      "category": "Policy Information",
+      "fact": "Policy FIN-POL-003, 'Expense Reporting,' requires VP-level sign-off for any single expense report item exceeding $500."
+    },
+    {
+      "id": "F09",
+      "category": "Exception Details",
+      "fact": "Exception E-001, for Project Chimera, allows temporary caching of EU customer data in the US East (N. Virginia) region for up to 6 hours to improve API response times."
+    },
+    {
+      "id": "F10",
+      "category": "Exception Details",
+      "fact": "The initial approval for Exception E-001 was granted by David Chen via an email with the subject 'Re: Chimera Performance Issues' on June 1, 2023."
+    },
+    {
+      "id": "F11",
+      "category": "Exception Details",
+      "fact": "Exception E-002 permits the Alpha Team to use the 'rapid-parser v1.2.4' Python library, which is not on the company's approved software list."
+    },
+    {
+      "id": "F12",
+      "category": "Exception Details",
+      "fact": "The justification for E-002 is that the approved library, 'corp-parser v3.1,' has a documented memory leak that slows processing by 40%."
+    },
+    {
+      "id": "F13",
+      "category": "Exception Details",
+      "fact": "Exception E-003, for Project Griffin, allowed the team to bypass standard procurement and purchase three high-performance servers for $15,700."
+    },
+    {
+      "id": "F14",
+      "category": "Exception Details",
+      "fact": "Exception E-003 had a stated expiration date of December 31, 2023, but the servers are still in use without a renewed exception."
+    },
+    {
+      "id": "F15",
+      "category": "Exception Details",
+      "fact": "An undocumented exception, now cataloged as E-004, allows a key contractor, Alex Ray, to access the development environment from Brazil, a restricted country."
+    },
+    {
+      "id": "F16",
+      "category": "Exception Details",
+      "fact": "The verbal approval for E-004 was given by former manager Tom Wexler in a phone call on approximately March 15, 2023."
+    },
+    {
+      "id": "F17",
+      "category": "Exception Details",
+      "fact": "Exception E-005, previously for the Omega Team, permitted use of the 'LegacyChart.js' visualization tool, which was officially deprecated on October 1, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "Exception Details",
+      "fact": "The Omega Team was disbanded on January 30, 2024, rendering exception E-005 as 'No Longer Justified'."
+    },
+    {
+      "id": "F19",
+      "category": "Systems & Tools",
+      "fact": "The central repository for managing and tracking all exceptions is the ClarityGRC platform, accessible at https://innovatec.claritygrc.com."
+    },
+    {
+      "id": "F20",
+      "category": "Systems & Tools",
+      "fact": "All tasks related to the exception cleanup project are tracked in Jira under the project key 'EX-CLEANUP'."
+    },
+    {
+      "id": "F21",
+      "category": "Systems & Tools",
+      "fact": "Official copies of all company policies are maintained in the Confluence space 'Innovatec Policy Library' (space key: IPL)."
+    },
+    {
+      "id": "F22",
+      "category": "Systems & Tools",
+      "fact": "The core team for the cleanup project communicates in the private Slack channel #compliance-review-2024."
+    },
+    {
+      "id": "F23",
+      "category": "Process & Timeline",
+      "fact": "The official kick-off date for the exception formalization project was March 1, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "Process & Timeline",
+      "fact": "The deadline for cataloging all known exceptions from emails and interviews into ClarityGRC is May 31, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "Process & Timeline",
+      "fact": "The exception review committee meets every Tuesday from 10:00 AM to 11:30 AM EST via Zoom link https://innovatec.zoom.us/j/987654321."
+    },
+    {
+      "id": "F26",
+      "category": "Process & Timeline",
+      "fact": "A final report summarizing the status of all exceptions is due to the Chief Risk Officer, Eleanor Vance, on July 15, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "Historical Context",
+      "fact": "The practice of granting informal exceptions began in 2021 during the 'Project Velocity' initiative, aimed at accelerating product-to-market timelines."
+    },
+    {
+      "id": "F28",
+      "category": "Historical Context",
+      "fact": "A service outage on November 22, 2023, was traced back to an unmanaged exception allowing a contractor to run a non-standard database migration script."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "As the new Risk Manager leading this project, what is my name and what was the official kick-off date for the exception formalization project?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Foundations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the first major deadline for this project and which platform should be used for cataloging the exceptions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F24"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After establishing the project's start, the immediate next concern is the first key deliverable: the deadline and the tool for cataloging.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Foundations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "To whom is the final report due and on what date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Following the initial deadline, the user will want to know the final deadline and key stakeholder to understand the full project timeline.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Foundations",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "Provide the details for exception E-003, including its purpose and stated expiration date.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Expired Exception Example",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "For exception E-003, is it still being used after its stated expiration date, and has it been renewed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing the purpose and stated expiration date of E-003, a systematic user would naturally follow up by checking whether it is still in use and whether any renewal exists, which directly determines its current classification.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Exception Justification & Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Why is exception E-005 now considered 'No Longer Justified'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After seeing one type of invalid exception (expired), the user would naturally want to see examples of other invalid classifications, such as 'No Longer Justified'.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Exception Justification & Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Describe the undocumented exception E-004, including the individual involved and the nature of its verbal approval.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "High-Risk Undocumented Exception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Which data residency policy does exception E-001 violate, and what does that policy require?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Policy Violation & Stakeholders",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Who is the business owner for exception E-001, and who gave the initial approval?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F10"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After understanding the technical and policy details of an exception, the user's next step is to identify the key personnel involved for follow-up.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Policy Violation & Stakeholders",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "How was the initial approval for exception E-001 documented?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Once the approver is known, the user will want to see the audit trail, specifically how the approval was recorded.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Policy Violation & Stakeholders",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N11",
+      "description": "What are the meeting details for the exception review committee?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning about the initial cataloging task and deadline (N2), a natural next step is to inquire about the formal review process that will handle these cataloged items.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Governance Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Can you provide an example of a past incident caused by an unmanaged exception?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After reviewing a high-risk undocumented exception (N7), the user would want to find historical precedent for why this cleanup is necessary, strengthening their case.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Historical Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What internal initiative originally normalized the practice of informal exceptions, including unmanaged ones like the incident example?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After seeing a concrete incident caused by an unmanaged exception, a natural follow-up is to ask where this exception culture started so the final report can explain the root organizational cause.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Origin",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Foundations",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Expired Exception Example",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Exception Justification & Status",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "High-Risk Undocumented Exception",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Policy Violation & Stakeholders",
+      "member_need_ids": [
+        "N8",
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Governance Process",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Historical Impact",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "Project Origin",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "compliance_exception_register_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

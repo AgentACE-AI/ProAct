@@ -1,0 +1,380 @@
+{
+  "scenario_id": "compliance_training_gap_01",
+  "domain": "compliance_management",
+  "description": "A compliance lead needs to determine who still lacks mandatory training, which reminders have already gone out, and whether any valid exceptions or extensions are already in place. All company names are fictional.",
+  "user_profile": {
+    "persona": "34-year-old compliance manager responsible for training completion across several departments",
+    "context": "Leadership wants a clean status view, but the current records are split across reminders, spreadsheets, and manager notes",
+    "communication_style": "Status-oriented and exact, wants counts plus exception context"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "training_program",
+      "fact": "The mandatory training for Q4 2024 is titled \"Global Data Privacy & Security Training\" with the internal course code GDPS-2024."
+    },
+    {
+      "id": "F02",
+      "category": "training_program",
+      "fact": "The final deadline for all employees of Acme Innovate to complete the GDPS-2024 training is December 15, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "training_program",
+      "fact": "The training is provided by vendor SecureLearn Inc. and is hosted at the URL https://acmeinnovate.securelearn.com."
+    },
+    {
+      "id": "F04",
+      "category": "policy_details",
+      "fact": "The governing policy, \"Corporate Compliance Training Policy (POL-COMP-003)\", mandates annual completion for all full-time employees."
+    },
+    {
+      "id": "F05",
+      "category": "policy_details",
+      "fact": "As per policy POL-COMP-003, non-completion by the deadline results in restricted access to internal network resources, excluding email and HR systems."
+    },
+    {
+      "id": "F06",
+      "category": "reporting_metrics",
+      "fact": "A total of 850 employees are required to complete the GDPS-2024 training."
+    },
+    {
+      "id": "F07",
+      "category": "reporting_metrics",
+      "fact": "As of December 5, 2024, 782 out of 850 employees have completed the training, yielding a 92% completion rate."
+    },
+    {
+      "id": "F08",
+      "category": "reporting_metrics",
+      "fact": "The Engineering department currently has a 100% training completion rate."
+    },
+    {
+      "id": "F09",
+      "category": "reporting_metrics",
+      "fact": "The Sales department has the lowest completion rate at 82%."
+    },
+    {
+      "id": "F10",
+      "category": "personnel_status",
+      "fact": "Anya Sharma (Employee ID: 789123, Marketing) has not yet started the GDPS-2024 training. She was included in the November 15, 2024 first reminder email to non-compliant employees, her manager was included in the December 1, 2024 automated Slack notification to managers of non-compliant employees, and as of December 5, 2024 there is no approved extension or exception on file for her."
+    },
+    {
+      "id": "F11",
+      "category": "personnel_status",
+      "fact": "Ben Carter (Employee ID: 456789, Engineering) completed his training on November 5, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "personnel_status",
+      "fact": "Marco Diaz (Employee ID: 654321, Sales) is marked as incomplete, with a manager note stating he is on client-site travel until December 14, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "communication_log",
+      "fact": "The initial training announcement email was sent to all employees on October 1, 2024, from compliance@acmeinnovate.com."
+    },
+    {
+      "id": "F14",
+      "category": "communication_log",
+      "fact": "As of December 5, 2024, the only reminder sent directly to non-compliant employees was a first reminder email sent to 112 non-compliant employees on November 15, 2024."
+    },
+    {
+      "id": "F15",
+      "category": "communication_log",
+      "fact": "A final reminder email is scheduled to be sent via the NotifyBot system on December 10, 2024, at 9:00 AM PST."
+    },
+    {
+      "id": "F16",
+      "category": "communication_log",
+      "fact": "An automated Slack notification was sent to managers of all non-compliant employees on December 1, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "communication_log",
+      "fact": "Liam O'Connell, Chief Compliance Officer, is the official signatory on all compliance-related email communications."
+    },
+    {
+      "id": "F18",
+      "category": "exception_management",
+      "fact": "A total of 5 employees have approved extensions or exceptions for the GDPS-2024 training cycle."
+    },
+    {
+      "id": "F19",
+      "category": "exception_management",
+      "fact": "This leaves 63 employees who are currently non-compliant without a formal extension or exception."
+    },
+    {
+      "id": "F20",
+      "category": "exception_management",
+      "fact": "Chloe Davis (Employee ID: 987654, Sales) has an approved training exception (ID: EX-2024-007) due to maternity leave."
+    },
+    {
+      "id": "F21",
+      "category": "exception_management",
+      "fact": "Chloe Davis's approved extension sets her new training deadline to March 31, 2025."
+    },
+    {
+      "id": "F22",
+      "category": "exception_management",
+      "fact": "David Chen (Employee ID: 112233, Finance) was granted a training extension until February 15, 2025, due to extended medical leave."
+    },
+    {
+      "id": "F23",
+      "category": "exception_management",
+      "fact": "All exception and extension requests must be submitted via the HR Helpdesk portal and approved by both the employee's manager and the HR Director, Maria Garcia."
+    },
+    {
+      "id": "F24",
+      "category": "system_data",
+      "fact": "The authoritative list of training completion statuses is maintained in a spreadsheet named `Employee_Training_Tracker_Q4_2024.xlsx`."
+    },
+    {
+      "id": "F25",
+      "category": "system_data",
+      "fact": "The tracker spreadsheet is located on the company SharePoint site \"Compliance Docs\" in the folder \"Training Audits\" and was last updated on December 5, 2024, at 8:00 AM PST."
+    },
+    {
+      "id": "F26",
+      "category": "system_data",
+      "fact": "The data owner responsible for maintaining the accuracy of the tracker spreadsheet is Javier Morales, Compliance Analyst."
+    },
+    {
+      "id": "F27",
+      "category": "system_data",
+      "fact": "Informal manager notes on employee training progress are kept in a private Microsoft OneNote notebook titled \"Compliance Manager Notes,\" which is not considered an official record."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current overall completion rate for the GDPS-2024 training, and what are the raw counts of completed vs. total employees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Overall Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the final deadline for this training?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After getting the current status, the user's immediate next thought is the deadline they are working towards.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Overall Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "How many employees are currently non-compliant and do not have a formal extension or exception?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Non-Compliance Breakdown",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How many employees have approved extensions or exceptions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After finding the number of employees who are non-compliant without excuse, the user will want to know the count of those who are accounted for via exceptions.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Non-Compliance Breakdown",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Which department currently has the lowest training completion rate?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After identifying the total number of non-compliant employees, a manager's next logical step is to isolate where the problem areas are, such as the lowest-performing department.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Problem Area Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What reminders have already been sent to non-compliant employees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Communication History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Is there a final reminder scheduled to be sent before the deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After reviewing past communications, the user will want to know about future scheduled communications to plan their own follow-ups.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Communication History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Can you show me the record for a specific non-compliant employee, Anya Sharma?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the user identifies a problem area (like a low-performing department), they will often want to spot-check a specific individual's record to understand the data format.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Individual Status Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the status of Marco Diaz, who has a manager note about travel?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After checking a straightforward non-compliant case, the user may want to check a more complex case involving informal notes to see how it's represented.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Individual Status Check",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Show me the details for an approved exception, for example, Chloe Davis.",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning the number of employees with exceptions, the user would naturally be curious to see a concrete example of what an approved exception record looks like.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Exception Example",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Where is the official training tracker spreadsheet located and when was it last updated?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Immediately after receiving the top-level status numbers, a detail-oriented manager will often want to know the source of the data and how current it is.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Data Source",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Overall Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Non-Compliance Breakdown",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Problem Area Identification",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Communication History",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Individual Status Check",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Exception Example",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Data Source",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "compliance_training_gap_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

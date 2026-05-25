@@ -1,0 +1,407 @@
+{
+  "scenario_id": "vehicle_shared_use_rules_04",
+  "domain": "vehicle_ownership_management",
+  "description": "Several family members share one car and need a stable system for fuel, charging, child seats, parking permits, service reminders, and who handles what when a warning light appears.",
+  "user_profile": {
+    "persona": "36-year-old household manager coordinating transportation for a busy family",
+    "context": "The car is shared often enough that forgotten small tasks keep becoming urgent problems",
+    "communication_style": "Practical and rule-setting, wants shared expectations written down clearly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "vehicle_details",
+      "fact": "The shared vehicle is a blue 2022 Meridian Voyager EV, license plate 8XJ-4Y2."
+    },
+    {
+      "id": "F02",
+      "category": "vehicle_details",
+      "fact": "The vehicle's Vehicle Identification Number (VIN) is 7M8G2J4K5N0P1R3T2."
+    },
+    {
+      "id": "F03",
+      "category": "vehicle_details",
+      "fact": "The car is insured with Starlight Mutual under policy number VC98-2345-B1, with a $500 deductible for collisions."
+    },
+    {
+      "id": "F04",
+      "category": "scheduling_coordination",
+      "fact": "All trips must be booked on the shared 'Voyager Trips' Google Calendar at least 24 hours in advance."
+    },
+    {
+      "id": "F05",
+      "category": "scheduling_coordination",
+      "fact": "The designated key-drop location in the house is the magnetic bowl on the entryway table."
+    },
+    {
+      "id": "F06",
+      "category": "fueling_charging",
+      "fact": "The vehicle must be returned with at least a 30% battery charge level."
+    },
+    {
+      "id": "F07",
+      "category": "fueling_charging",
+      "fact": "If the vehicle's battery is below 50% upon returning home, the driver is responsible for plugging it into the 'JuiceUp Pro' home charger in garage space #1."
+    },
+    {
+      "id": "F08",
+      "category": "fueling_charging",
+      "fact": "The payment card for public charging stations is the 'ChargePoint' card, kept in the driver-side sun visor flap, PIN 8021."
+    },
+    {
+      "id": "F09",
+      "category": "child_safety",
+      "fact": "Mia's 'Nautilus Safe' car seat is permanently installed in the rear passenger-side seat and must not be moved."
+    },
+    {
+      "id": "F10",
+      "category": "child_safety",
+      "fact": "Leo's 'SkyHigh' booster seat is stored in the trunk and must be used in the rear driver-side seat for any trip with him."
+    },
+    {
+      "id": "F11",
+      "category": "child_safety",
+      "fact": "The child safety locks on the rear doors are always to be engaged when a child under 12 is a passenger."
+    },
+    {
+      "id": "F12",
+      "category": "parking_permits",
+      "fact": "The residential parking permit is for Zone 7B, Permit #A94-2B7, and is affixed to the lower driver-side windshield."
+    },
+    {
+      "id": "F13",
+      "category": "parking_permits",
+      "fact": "The vehicle has a registered EasyPark transponder (#455-008-123) for automated payment at the Northgate Community Center garage."
+    },
+    {
+      "id": "F14",
+      "category": "maintenance_service",
+      "fact": "Alex Chen is responsible for scheduling all routine maintenance appointments with 'Evergreen Auto Service'."
+    },
+    {
+      "id": "F15",
+      "category": "maintenance_service",
+      "fact": "The next scheduled tire rotation is due at 30,000 miles or by August 15, 2024, whichever comes first."
+    },
+    {
+      "id": "F16",
+      "category": "maintenance_service",
+      "fact": "Windshield washer fluid is stored on the top shelf of the garage cabinet and should be refilled by whoever notices it is low."
+    },
+    {
+      "id": "F17",
+      "category": "incident_response",
+      "fact": "If a warning light appears, the driver must immediately message the 'Car Comms' WhatsApp group with a photo of the dashboard."
+    },
+    {
+      "id": "F18",
+      "category": "incident_response",
+      "fact": "For a flat tire, the roadside assistance contact is Starlight Mutual at 1-800-555-0199, using policy number VC98-2345-B1."
+    },
+    {
+      "id": "F19",
+      "category": "incident_response",
+      "fact": "Ben Carter is the designated person to handle any 'Check Engine' light diagnosis by taking the car to Evergreen Auto Service within 48 hours of notification."
+    },
+    {
+      "id": "F20",
+      "category": "interior_cleanliness",
+      "fact": "The car must be cleared of all personal belongings and trash by each driver at the end of their trip."
+    },
+    {
+      "id": "F21",
+      "category": "interior_cleanliness",
+      "fact": "A full interior and exterior cleaning is performed on the first Sunday of every month, with the duty rotating between Alex, Ben, and Chloe."
+    },
+    {
+      "id": "F22",
+      "category": "financials",
+      "fact": "All charging or parking costs incurred must be submitted with a photo of the receipt to the 'Car Expenses' Google Drive folder within 24 hours."
+    },
+    {
+      "id": "F23",
+      "category": "financials",
+      "fact": "Alex Chen processes reimbursements for all shared car expenses via Zelle on the 1st of each month."
+    },
+    {
+      "id": "F24",
+      "category": "vehicle_details",
+      "fact": "The optimal tire pressure for the Meridian Voyager EV is 35 PSI for all four tires, as specified on the driver-side door jamb sticker."
+    },
+    {
+      "id": "F25",
+      "category": "incident_response",
+      "fact": "In case of an accident, the insurance card and vehicle registration are located in the glove compartment in a sealed green envelope."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "How do I book the car for a trip, and where is the key kept?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Trip Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the rules for the car's battery level upon return, and when am I required to plug it in?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Post-Trip Responsibilities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is the rule about cleaning my personal belongings out of the car?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After asking about the primary post-trip tasks (charging), a user would likely want to know about other responsibilities like cleaning.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Post-Trip Responsibilities",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Where is the payment card for public charging stations and what is its PIN?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After discussing the rule for home charging, a user might naturally think about how to handle charging when away from home.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "On-the-Road Payments",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "How do I submit expenses for charging or parking, and who handles the reimbursements?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once a user knows how to pay for an expense, the next logical step is to ask about the process for getting reimbursed.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Expense Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are the specific rules for using Mia's and Leo's car seats?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Child Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Under what condition must the child safety locks on the rear doors be engaged?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After confirming the rules for child seats, a user concerned with child safety would naturally ask about other related features like safety locks.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Child Safety",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the first thing I must do if any warning light appears on the dashboard?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Incident Response - General",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Who do I call for roadside assistance for a flat tire and what policy number do I use?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After asking about the general procedure for a warning light, a user would find it helpful to know the specific protocol for a common, actionable problem like a flat tire.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Incident Response - Flat Tire",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "In case of an accident, where are the insurance and registration documents located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Discussing one specific incident (flat tire) makes it relevant to provide information for another, more serious incident (accident).",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Incident Response - Accident",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is responsible for scheduling routine maintenance appointments?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning about submitting minor trip expenses, it's a logical, proactive step to inform the user about who handles major, scheduled expenses like routine maintenance.",
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "Maintenance Responsibility",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the optimal tire pressure for the vehicle?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G10",
+      "reveal_group_label": "Vehicle Specifications",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Trip Logistics",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Post-Trip Responsibilities",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "On-the-Road Payments",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Expense Reporting",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Child Safety",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Incident Response - General",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Incident Response - Flat Tire",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Incident Response - Accident",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Maintenance Responsibility",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G10",
+      "label": "Vehicle Specifications",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vehicle_shared_use_rules_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

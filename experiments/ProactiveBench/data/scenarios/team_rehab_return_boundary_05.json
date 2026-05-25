@@ -1,0 +1,475 @@
+{
+  "scenario_id": "team_rehab_return_boundary_05",
+  "domain": "sports_team_operations",
+  "description": "A player is returning from injury, and the team must remember which activities are fully cleared, limited, or still off-limits across practices and matches. All team and athlete names are fictional.",
+  "user_profile": {
+    "persona": "36-year-old athletic trainer coordinating return-to-play boundaries with coaches",
+    "context": "The athlete feels ready to do more, but the current clearance boundaries are nuanced and easy to oversimplify",
+    "communication_style": "Boundary-oriented and cautious, wants permissions tied to concrete activity types"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "player_information",
+      "fact": "The player's full name is Kai Tanaka."
+    },
+    {
+      "id": "F02",
+      "category": "player_information",
+      "fact": "Kai Tanaka's jersey number for Northwood FC is 10."
+    },
+    {
+      "id": "F03",
+      "category": "player_information",
+      "fact": "Kai Tanaka's position is attacking midfielder."
+    },
+    {
+      "id": "F04",
+      "category": "player_information",
+      "fact": "Kai Tanaka's unique identifier in the team's medical system is KT-10."
+    },
+    {
+      "id": "F05",
+      "category": "injury_details",
+      "fact": "The specific injury is a complete tear of the right Anterior Cruciate Ligament (ACL)."
+    },
+    {
+      "id": "F06",
+      "category": "injury_details",
+      "fact": "The injury occurred on October 15, 2023, during a match against the Bayview Strikers."
+    },
+    {
+      "id": "F07",
+      "category": "injury_details",
+      "fact": "ACL reconstruction surgery was performed by Dr. Anya Sharma on October 28, 2023."
+    },
+    {
+      "id": "F08",
+      "category": "medical_personnel",
+      "fact": "The lead athletic trainer managing the return-to-play protocol is Dr. Elena Vance."
+    },
+    {
+      "id": "F09",
+      "category": "medical_personnel",
+      "fact": "The external physical therapist coordinating with the team is Ben Carter from Pinnacle Performance Therapy."
+    },
+    {
+      "id": "F10",
+      "category": "protocol_information",
+      "fact": "The current protocol is officially designated 'RTP Protocol KT-10-ACL-Phase4'."
+    },
+    {
+      "id": "F11",
+      "category": "protocol_information",
+      "fact": "This phase of the protocol is active from May 15, 2024, to June 15, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "activity_clearance_practice",
+      "fact": "Kai Tanaka is fully cleared for all non-contact warm-up exercises with the team."
+    },
+    {
+      "id": "F13",
+      "category": "activity_clearance_practice",
+      "fact": "Kai Tanaka is fully cleared for stationary passing and shooting drills without any defensive pressure."
+    },
+    {
+      "id": "F14",
+      "category": "activity_clearance_practice",
+      "fact": "Kai Tanaka is fully cleared for straight-line running drills up to 80% of his maximum sprint speed."
+    },
+    {
+      "id": "F15",
+      "category": "activity_clearance_practice",
+      "fact": "Kai Tanaka is fully cleared for solo weight training focusing on upper body and core."
+    },
+    {
+      "id": "F16",
+      "category": "activity_limitations_practice",
+      "fact": "Participation in small-sided possession drills, such as 5v2 rondos, is limited to a maximum of 15 minutes per practice session."
+    },
+    {
+      "id": "F17",
+      "category": "activity_limitations_practice",
+      "fact": "Agility ladder drills are limited to forward-facing movements only; no lateral shuffles are permitted."
+    },
+    {
+      "id": "F18",
+      "category": "activity_limitations_practice",
+      "fact": "Jumping drills, including box jumps, are limited to a maximum box height of 18 inches."
+    },
+    {
+      "id": "F19",
+      "category": "activity_limitations_practice",
+      "fact": "Lower body weight training is limited to 60% of his pre-injury one-rep max for squats and deadlifts."
+    },
+    {
+      "id": "F20",
+      "category": "activity_limitations_practice",
+      "fact": "Long-distance passing drills over 30 yards are limited to 10 repetitions per session to manage load."
+    },
+    {
+      "id": "F21",
+      "category": "activity_off_limits_practice",
+      "fact": "All activities involving contact with other players during practice are categorized as 'Off-Limits'."
+    },
+    {
+      "id": "F22",
+      "category": "activity_off_limits_practice",
+      "fact": "All drills involving full-speed, multi-directional cutting are categorized as 'Off-Limits'."
+    },
+    {
+      "id": "F23",
+      "category": "activity_off_limits_practice",
+      "fact": "Participation in full-squad 11-vs-11 scrimmages is categorized as 'Off-Limits'."
+    },
+    {
+      "id": "F24",
+      "category": "match_day_status",
+      "fact": "Kai Tanaka is categorized as 'Off-Limits' for all official match play, including friendly matches."
+    },
+    {
+      "id": "F25",
+      "category": "match_day_status",
+      "fact": "Kai Tanaka is not permitted to be listed on the official substitute bench for any matches until the next protocol review."
+    },
+    {
+      "id": "F26",
+      "category": "match_day_status",
+      "fact": "Kai Tanaka is cleared to participate in pre-match warm-ups, but must be excluded from full-squad tactical drills."
+    },
+    {
+      "id": "F27",
+      "category": "monitoring_and_reporting",
+      "fact": "Daily pain levels for the right knee must be reported on a 1-10 scale; any report above a 3 requires immediate activity cessation."
+    },
+    {
+      "id": "F28",
+      "category": "monitoring_and_reporting",
+      "fact": "Dr. Elena Vance must log Kai Tanaka's daily training load and subjective feedback into the 'AthleteMonitoring' software platform."
+    },
+    {
+      "id": "F29",
+      "category": "monitoring_and_reporting",
+      "fact": "Any visible swelling of the right knee must be measured and photographed, with data uploaded to the 'TeamMed' shared drive within 2 hours of observation."
+    },
+    {
+      "id": "F30",
+      "category": "monitoring_and_reporting",
+      "fact": "A bi-weekly progress report must be sent via email to Head Coach Marcus Thorne and Dr. Anya Sharma."
+    },
+    {
+      "id": "F31",
+      "category": "communication_protocol",
+      "fact": "The designated Slack channel for daily coordination of Kai Tanaka's training plan is #kai-tanaka-rtp."
+    },
+    {
+      "id": "F32",
+      "category": "communication_protocol",
+      "fact": "Any deviation from the RTP protocol requires verbal and written approval from Dr. Elena Vance."
+    },
+    {
+      "id": "F33",
+      "category": "communication_protocol",
+      "fact": "Head Coach Marcus Thorne must confirm receipt of all protocol updates via email."
+    },
+    {
+      "id": "F34",
+      "category": "equipment",
+      "fact": "Kai Tanaka is required to wear a 'DonJoy Defiance III' custom knee brace during all on-field activities."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What practice activities are completely off-limits for Kai Tanaka right now?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Off-Limits Activities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is his status for official matches?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning about practice restrictions, the user will naturally want to know the corresponding restrictions for the more intense match day environment.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Off-Limits Activities",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which practice activities have specific limitations or restrictions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Activity Limitations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Are there any limitations on his weight training or long-distance passing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "This is an intra-group follow-up to get a complete picture of all activity limitations after the initial query.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Activity Limitations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the official name of the current protocol and how long is it active?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Activity Limitations",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "What is Kai permitted to do during pre-match warm-ups on game day?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning that the player is off-limits for matches (N2), the trainer's immediate next question for game-day planning would be what the player *can* do during the warm-up period.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Match Day Specifics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Which on-field drills is Kai fully cleared for in practice?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After covering all restrictions and limitations (G2), the user will want to know the set of activities that are completely safe and approved.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Fully Cleared Activities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What about warm-ups and weight training? What is he fully cleared for there?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F15"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "This is an intra-group follow-up to get a complete list of all cleared activities, covering both on-field and gym work.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Fully Cleared Activities",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What daily reporting is required for Kai's knee pain, and who must log his training load and subjective feedback into which system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Monitoring and Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the specific procedure if I observe any swelling in his knee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "This is an intra-group follow-up, moving from routine daily monitoring to the protocol for a specific adverse event (swelling).",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Monitoring and Reporting",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Is Kai required to wear any specific equipment like a brace during on-field activities?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After confirming which on-field activities are cleared (N7), a crucial, safety-oriented follow-up is to check for mandatory protective equipment. This is an auditable proactive target.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Required Equipment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the designated communication channel for daily coordination of his training plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After confirming the daily monitoring and reporting requirements, a direct coordination follow-up is which channel the staff should use for day-to-day discussion of Kai Tanaka's training plan.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Communication Channels",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Who has the authority to approve any deviation from the return-to-play protocol?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Protocol Governance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Who needs to receive the bi-weekly progress reports and confirm receipt of updates?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30",
+        "F33"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning about the daily monitoring tasks (N9), the user would find it useful to know about the less frequent, higher-level reporting requirements and stakeholders.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Protocol Governance",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Off-Limits Activities",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Activity Limitations",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Match Day Specifics",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Fully Cleared Activities",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Monitoring and Reporting",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Required Equipment",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Communication Channels",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G8",
+      "label": "Protocol Governance",
+      "member_need_ids": [
+        "N13",
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "team_rehab_return_boundary_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "scenario_id": "home_seasonal_system_startup_01",
+  "domain": "home_maintenance",
+  "description": "A homeowner is reopening a house after months of low use and needs to restart plumbing, HVAC, safety devices, exterior systems, and utility checks in a safe order. All addresses and service providers are fictional.",
+  "user_profile": {
+    "persona": "52-year-old owner of a seasonal family home",
+    "context": "The house has been mostly idle, and the goal is to avoid turning small restart issues into expensive damage",
+    "communication_style": "Sequential and cautious, wants a restart order rather than a generic maintenance list"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Property_Details",
+      "fact": "The seasonal home is located at 1428 Willow Lane, Crestwood, WA 98052."
+    },
+    {
+      "id": "F02",
+      "category": "Exterior_Checks",
+      "fact": "Before restoring any utilities, perform a visual inspection of the roof and gutters for any visible damage or debris accumulation from the off-season."
+    },
+    {
+      "id": "F03",
+      "category": "Exterior_Checks",
+      "fact": "Check all exterior vents, including the dryer vent and furnace exhaust, for blockages from nests or debris."
+    },
+    {
+      "id": "F04",
+      "category": "Exterior_Checks",
+      "fact": "Confirm that all exterior hose bibs (spigots) are in the 'off' position before turning on the main water supply."
+    },
+    {
+      "id": "F05",
+      "category": "Utilities",
+      "fact": "The electric utility provider is Crestwood Power & Light, and the account number is 78-45512-02."
+    },
+    {
+      "id": "F06",
+      "category": "Utilities",
+      "fact": "The water service is managed by the Pine Ridge Water District, with customer ID 9904-B. Their 24/7 emergency line is 555-0104."
+    },
+    {
+      "id": "F07",
+      "category": "Utilities",
+      "fact": "The 250-gallon propane tank is supplied by Summit Propane Co. (555-0105) and was last filled to 80% capacity on October 10, 2023."
+    },
+    {
+      "id": "F08",
+      "category": "Plumbing_System",
+      "fact": "The main water shutoff valve is a red, quarter-turn ball valve located in the basement crawlspace, 3 feet to the left of the electrical panel."
+    },
+    {
+      "id": "F09",
+      "category": "Plumbing_System",
+      "fact": "To restart the water system, open the main shutoff valve only a quarter of the way to allow pipes to fill slowly and minimize the risk of water hammer damage."
+    },
+    {
+      "id": "F10",
+      "category": "Plumbing_System",
+      "fact": "After partially opening the main valve, open the cold water tap at the highest faucet in the house (upstairs bathroom sink) to bleed air from the system."
+    },
+    {
+      "id": "F11",
+      "category": "Plumbing_System",
+      "fact": "Once water flows steadily, fully open the main shutoff valve and then visually inspect the supply lines for every toilet and sink for slow drips."
+    },
+    {
+      "id": "F12",
+      "category": "Plumbing_System",
+      "fact": "Before powering the water heater, ensure its 50-gallon tank is full by opening a hot water tap until water flows freely."
+    },
+    {
+      "id": "F13",
+      "category": "Plumbing_System",
+      "fact": "Test the basement sump pump (Model: Zoeller M53) by pouring 5 gallons of water into the sump pit to ensure it activates and drains properly."
+    },
+    {
+      "id": "F14",
+      "category": "Appliances",
+      "fact": "The electric water heater is a Rheem Marathon 50-gallon model (MR50245); its power is controlled by the double-pole breaker labeled #14 in the main electrical panel."
+    },
+    {
+      "id": "F15",
+      "category": "HVAC_System",
+      "fact": "The HVAC system's air filter is a 16x25x1 inch MERV 8 filter, which was last replaced on October 1, 2023."
+    },
+    {
+      "id": "F16",
+      "category": "HVAC_System",
+      "fact": "Before activating the HVAC, clear any leaves, branches, or debris from the exterior Trane XR16 condenser unit, ensuring at least 24 inches of clearance on all sides."
+    },
+    {
+      "id": "F17",
+      "category": "HVAC_System",
+      "fact": "The breakers for the HVAC air handler and the exterior condenser are #8 and #10, respectively, in the main panel."
+    },
+    {
+      "id": "F18",
+      "category": "HVAC_System",
+      "fact": "The thermostat is a Google Nest Learning Thermostat (3rd Gen) and should be set to 'System Off' before restoring power via the breakers."
+    },
+    {
+      "id": "F19",
+      "category": "HVAC_System",
+      "fact": "For the initial HVAC test, set the system to 'Cool' and the temperature to 75°F, then wait 10 minutes to confirm cold air is flowing from the vents."
+    },
+    {
+      "id": "F20",
+      "category": "Safety_Devices",
+      "fact": "The house has three smoke detectors (model: First Alert SA320CN) which each require a single 9V battery; the last battery replacement was October 15, 2023."
+    },
+    {
+      "id": "F21",
+      "category": "Safety_Devices",
+      "fact": "A plug-in Kidde Nighthawk carbon monoxide detector (model KN-COPP-3) is located in the hallway outlet nearest to the master bedroom."
+    },
+    {
+      "id": "F22",
+      "category": "Safety_Devices",
+      "fact": "A 5-lb ABC fire extinguisher is mounted inside the kitchen pantry door; its pressure gauge was verified in the green zone on January 5, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "Safety_Devices",
+      "fact": "Press the 'Test' and 'Reset' buttons on all four GFCI outlets: two in the kitchen and one in each bathroom."
+    },
+    {
+      "id": "F24",
+      "category": "Appliances",
+      "fact": "After turning on the water, check the braided steel hose connected to the back of the Kenmore refrigerator (Model 795.7205) for any signs of moisture before pushing it back against the wall."
+    },
+    {
+      "id": "F25",
+      "category": "Appliances",
+      "fact": "Before using the propane-fueled GE stove (Model JGB735SPSS), sniff near the appliance for the rotten-egg smell of mercaptan to check for gas leaks."
+    },
+    {
+      "id": "F26",
+      "category": "Service_Providers",
+      "fact": "The preferred plumbing contractor is Maple Creek Plumbing, and their emergency contact is Bob Vance at 555-0101."
+    },
+    {
+      "id": "F27",
+      "category": "Service_Providers",
+      "fact": "Evergreen HVAC Solutions performs the annual maintenance on the Trane system; the service manager is Sarah Jenkins at 555-0102."
+    },
+    {
+      "id": "F28",
+      "category": "Service_Providers",
+      "fact": "The last annual HVAC service was performed by Evergreen HVAC Solutions on September 5, 2023, for a cost of $225."
+    },
+    {
+      "id": "F29",
+      "category": "Documentation",
+      "fact": "The home maintenance binder, containing all appliance manuals and service records, is located in the top-left drawer of the office desk."
+    },
+    {
+      "id": "F30",
+      "category": "Utilities",
+      "fact": "Internet service is provided by Cascade Broadband. The modem and router (Model: Netgear Nighthawk R7000) are located on the bookshelf in the living room."
+    },
+    {
+      "id": "F31",
+      "category": "Utilities",
+      "fact": "To restart the internet, unplug the black power cord from the Netgear R7000 router for 60 seconds before plugging it back in."
+    },
+    {
+      "id": "F32",
+      "category": "Appliances",
+      "fact": "The septic system's grinder pump is on a dedicated 20-amp circuit, breaker #18, and should not be run heavily for the first 24 hours."
+    },
+    {
+      "id": "F33",
+      "category": "Exterior_Checks",
+      "fact": "The key to the outdoor storage shed, which contains gardening tools and the lawnmower, is on a magnetic hook inside the main electrical panel box."
+    },
+    {
+      "id": "F34",
+      "category": "Plumbing_System",
+      "fact": "After fully opening the main shutoff valve, the restart checklist also calls for checking the refrigerator water line, confirming exterior hose bibs stay off and dry, and watching for any unexpected dripping from hidden supply connections before leaving the water system pressurized."
+    },
+    {
+      "id": "F35",
+      "category": "Safety_Devices",
+      "fact": "For each GFCI outlet, press 'Test' to confirm power cuts off, then press 'Reset' to restore power; if an outlet will not trip or reset correctly, leave it out of service until it can be repaired."
+    },
+    {
+      "id": "F36",
+      "category": "Appliances",
+      "fact": "If a propane leak is suspected near the stove, do not use open flames or electrical switches, shut off the propane supply, ventilate the area, and contact Summit Propane Co.; a gas detector or a soapy-water check on accessible connections can be used as a secondary leak check."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What exterior checks should I perform before turning on any utilities?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Exterior Pre-Checks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Where is the main water shutoff valve and what is the first step to turn it on safely?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Water System Restart",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "After partially opening the main valve, what is the procedure for bleeding air from the pipes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: This is the immediate next step in the water restart sequence after the user learns how to initially open the valve.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Water System Restart",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Once water is flowing from the highest tap, what are the final steps for turning the water fully on and checking for leaks?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F24",
+        "F34"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: This question logically concludes the multi-step process of restarting the water system.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Water System Restart",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N5",
+      "description": "How do I ensure the electric water heater is ready to be powered on, and which breaker controls it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After successfully restoring the main water supply, the user's next logical concern is restarting appliances that depend on it, like the water heater.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Water Heater Activation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the procedure for testing the GFCI outlets?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F35"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Electrical Safety Checks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What preparations are needed for the exterior HVAC condenser unit before starting the system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "HVAC System Startup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Which breakers control the HVAC system and what setting should the thermostat be on before I turn them on?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After preparing the exterior unit, the user will naturally move to the interior controls (thermostat and breakers) to power on the system.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "HVAC System Startup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How do I check for a gas leak near the propane stove before using it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F25",
+        "F36"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Gas Appliance Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How can I test the basement sump pump to make sure it's working?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After the user confirms the main water supply is on and leak-free, it's a good time to proactively suggest testing other water-related systems like the sump pump.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Sump Pump Test",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is the preferred plumbing contractor and what is their emergency contact number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: As the user begins the high-stakes task of restarting the water system, proactively providing the emergency plumber's contact information is a highly relevant and helpful next step.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Emergency Contacts",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Exterior Pre-Checks",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Water System Restart",
+      "member_need_ids": [
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Water Heater Activation",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Electrical Safety Checks",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "HVAC System Startup",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Gas Appliance Safety",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Sump Pump Test",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "Emergency Contacts",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "home_seasonal_system_startup_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

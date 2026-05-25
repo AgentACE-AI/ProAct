@@ -1,0 +1,483 @@
+{
+  "scenario_id": "recycling_transfer_station_handoff_04",
+  "domain": "waste_recycling_operations",
+  "description": "Material arriving from several trucks must keep its stream classification, issue notes, contamination flags, and handling instructions intact during handoff at a transfer site. All facilities are fictional.",
+  "user_profile": {
+    "persona": "39-year-old transfer station lead overseeing a busy inbound handoff process",
+    "context": "The material moves quickly enough that classification and issue notes are at risk of being reduced to memory instead of records",
+    "communication_style": "Chain-aware and operational, wants each incoming load tied to its handling context"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "personnel_and_roles",
+      "fact": "Marco Diaz is the Transfer Station Lead at the Veridian Eco-Transfer Station."
+    },
+    {
+      "id": "F02",
+      "category": "personnel_and_roles",
+      "fact": "Lena Petrova is the primary Scale Operator and works at workstation Scale-01."
+    },
+    {
+      "id": "F03",
+      "category": "personnel_and_roles",
+      "fact": "Kenji Tanaka is the Yard Foreman, responsible for directing trucks from the scale to the correct tipping bays."
+    },
+    {
+      "id": "F04",
+      "category": "personnel_and_roles",
+      "fact": "Dr. Anya Sharma is the Regional Compliance Officer; her email is asharma@veridianeco.com."
+    },
+    {
+      "id": "F05",
+      "category": "facilities_and_locations",
+      "fact": "The Veridian Eco-Transfer Station is located at 1550 Industrial Way, Port Sterling, WA 98301."
+    },
+    {
+      "id": "F06",
+      "category": "facilities_and_locations",
+      "fact": "Tipping Bay 3 is exclusively designated for 'Source-Separated Organics' (SSO) streams."
+    },
+    {
+      "id": "F07",
+      "category": "facilities_and_locations",
+      "fact": "Tipping Bay 5 is the designated quarantine area for any load flagged with a C-1 (Medical Waste) contamination alert."
+    },
+    {
+      "id": "F08",
+      "category": "facilities_and_locations",
+      "fact": "The scale house contains two scales: Inbound Scale 1 for arriving trucks and Outbound Scale 2 for departing trucks."
+    },
+    {
+      "id": "F09",
+      "category": "vehicles_and_equipment",
+      "fact": "Gritstone Hauling operates a fleet primarily composed of Kenworth T880 roll-off trucks."
+    },
+    {
+      "id": "F10",
+      "category": "vehicles_and_equipment",
+      "fact": "Apex Waste Solutions truck AS-204 is equipped with an RFID tag, ID: 7A3B-9C2D-E5F6, for automated check-in."
+    },
+    {
+      "id": "F11",
+      "category": "vehicles_and_equipment",
+      "fact": "The primary loader used for moving Construction & Demolition (C&D) material is a Caterpillar 972M Wheel Loader."
+    },
+    {
+      "id": "F12",
+      "category": "digital_systems_and_software",
+      "fact": "The facility uses 'StreamLine Logistics' software, accessible to staff at https://veridian.streamlinelogistics.net."
+    },
+    {
+      "id": "F13",
+      "category": "digital_systems_and_software",
+      "fact": "Each incoming load is assigned a unique Load ID in StreamLine Logistics, formatted as 'YYYYMMDD-XXXX'."
+    },
+    {
+      "id": "F14",
+      "category": "digital_systems_and_software",
+      "fact": "Contamination flags are entered into the 'Issues' field in StreamLine Logistics using codes: C-1 (Medical), C-2 (Hazardous), or C-3 (Excessive Contaminants)."
+    },
+    {
+      "id": "F15",
+      "category": "digital_systems_and_software",
+      "fact": "All drivers from contracted haulers like Gritstone Hauling must use the 'StreamLine Driver' mobile app to log their load details before arrival."
+    },
+    {
+      "id": "F16",
+      "category": "digital_systems_and_software",
+      "fact": "The StreamLine Logistics system automatically archives all load records, including photos and notes, after 180 days."
+    },
+    {
+      "id": "F17",
+      "category": "operational_procedures",
+      "fact": "A physical load ticket must be printed from the StreamLine system at Scale-01 for every inbound truck and handed to the driver."
+    },
+    {
+      "id": "F18",
+      "category": "operational_procedures",
+      "fact": "The standard procedure for a C-2 (Hazardous) flagged load is to immediately divert it to the Hazardous Material Staging Area near Bay 6."
+    },
+    {
+      "id": "F19",
+      "category": "operational_procedures",
+      "fact": "The handoff from the scale operator to the yard foreman is confirmed when the Load ID is posted in the '#inbound-traffic' Slack channel."
+    },
+    {
+      "id": "F20",
+      "category": "operational_procedures",
+      "fact": "The target weigh-in-to-tip time for a standard Municipal Solid Waste (MSW) load is under 8 minutes."
+    },
+    {
+      "id": "F21",
+      "category": "operational_procedures",
+      "fact": "As of June 1st, 2024, all C&D loads require a photographic record uploaded to their Load ID in StreamLine before tipping is authorized."
+    },
+    {
+      "id": "F22",
+      "category": "operational_procedures",
+      "fact": "Any load with a gross weight exceeding 25 tons requires verbal or digital approval from Marco Diaz before proceeding past the scale."
+    },
+    {
+      "id": "F23",
+      "category": "material_classification_and_handling",
+      "fact": "'Single-Stream Recyclables' (Code: SSR) must have less than 5% contamination by weight to be accepted without a surcharge."
+    },
+    {
+      "id": "F24",
+      "category": "material_classification_and_handling",
+      "fact": "A C-3 flag is automatically applied by the scale operator if visible contamination in an SSR load appears to exceed 15%."
+    },
+    {
+      "id": "F25",
+      "category": "material_classification_and_handling",
+      "fact": "Handling instructions for any C-2 flagged load require all personnel within a 10-meter radius to wear Level C PPE."
+    },
+    {
+      "id": "F26",
+      "category": "material_classification_and_handling",
+      "fact": "Gritstone Hauling has a contract (Contract ID: GH-VET-2024-01) to deliver a minimum of 50 tons of C&D material daily."
+    },
+    {
+      "id": "F27",
+      "category": "material_classification_and_handling",
+      "fact": "On July 26, 2024, Load ID 20240726-0042 from Apex Waste Solutions was classified as MSW but flagged C-2 for containing visible car batteries."
+    },
+    {
+      "id": "F28",
+      "category": "compliance_and_safety",
+      "fact": "The site's EPA Solid Waste Facility Permit number is WA-SWM-93481."
+    },
+    {
+      "id": "F29",
+      "category": "compliance_and_safety",
+      "fact": "All personnel entering the tipping floor must wear a hard hat, steel-toed boots, safety glasses, and a high-visibility Class 2 vest."
+    },
+    {
+      "id": "F30",
+      "category": "compliance_and_safety",
+      "fact": "A spill of more than 5 gallons of hydraulic fluid requires an immediate report to Marco Diaz and logging in the site's environmental incident log (Logbook E-11)."
+    },
+    {
+      "id": "F31",
+      "category": "communication_protocols",
+      "fact": "Urgent issues, such as a fire or a C-1 flag, require an immediate radio call to the shift supervisor on radio Channel 3."
+    },
+    {
+      "id": "F32",
+      "category": "communication_protocols",
+      "fact": "Daily shift handoff reports are posted by the outgoing lead in the '#transfer-station-leads' Slack channel by 5 minutes past the end of their shift."
+    },
+    {
+      "id": "F33",
+      "category": "personnel_and_roles",
+      "fact": "The on-duty shift supervisor's designated mobile phone number is 555-0182."
+    },
+    {
+      "id": "F34",
+      "category": "vehicles_and_equipment",
+      "fact": "Ridgeback Environmental's truck RE-088, a front-load garbage truck, is scheduled for a 10:30 AM arrival every Tuesday with commercial MSW."
+    },
+    {
+      "id": "F35",
+      "category": "operational_procedures",
+      "fact": "Rejected loads must be re-weighed on the outbound scale, and the reason for rejection must be selected from a dropdown menu in StreamLine Logistics before the truck is permitted to leave."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "For the Apex Waste Solutions load that arrived on July 26, 2024, what was its material classification and assigned contamination flag?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Handling (C-2)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the standard operating procedure for a load flagged with C-2 (Hazardous)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying a specific C-2 flagged load, the user's immediate next need is to confirm the correct handling procedure for that flag.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Handling (C-2)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the specific PPE requirements for personnel working near a C-2 flagged load?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Once the general procedure is known, the next logical step is to confirm the specific safety requirements for the crew.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Handling (C-2)",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is Gritstone Hauling's daily minimum C&D tonnage requirement as per their contract?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Contractor Performance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the new procedural requirement for all C&D loads that started on June 1st, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After inquiring about a specific hauler's C&D contract, the user is likely to be concerned with the general handling procedures for that material type, especially recent changes.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "C&D Procedure Update",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the approval procedure for an inbound load with a gross weight exceeding 25 tons?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Overweight Load Procedure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who provides the required approval for an inbound load over 25 tons, and must that approval be verbal or digital?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After learning the approval procedure for loads over 25 tons, a direct follow-up is who gives that approval and what form of approval is acceptable.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Overweight Approval Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How does the scale operator officially confirm the handoff of a load to the yard foreman?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Internal Handoff Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Which Slack channel is used to confirm the handoff of a load from the scale operator to the yard foreman?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After learning how the handoff is officially confirmed, a direct follow-up is which Slack channel is used for that confirmation.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Internal Handoff Process",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What identifier is posted in Slack to confirm that handoff?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After identifying the Slack channel used for the handoff, a direct follow-up is what specific identifier is posted there to confirm the transfer.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Handoff Confirmation Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Where is the designated quarantine area for a load flagged with a C-1 Medical Waste alert?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "High-Risk Contamination (C-1)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the required communication protocol when a C-1 flag is issued?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After identifying the location for a high-priority C-1 incident, the user's next critical need is to know the immediate communication steps to take.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "High-Risk Contamination (C-1)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Before a rejected load can leave, what scale must it be re-weighed on and what must be selected in StreamLine Logistics?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F35"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Rejected Load Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Who is the Regional Compliance Officer and what is their email address?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: A C-1 Medical Waste alert is a major compliance event. After learning the immediate handling procedure, the user might need to know who to contact for official reporting and follow-up.",
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Compliance Escalation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Incident Handling (C-2)",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Contractor Performance",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "C&D Procedure Update",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Overweight Load Procedure",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+    "label": "Overweight Approval Details",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Internal Handoff Process",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+    "label": "Handoff Confirmation Details",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "High-Risk Contamination (C-1)",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Rejected Load Process",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Compliance Escalation",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "recycling_transfer_station_handoff_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "scenario_id": "shop_wedding_conflict_03",
+  "domain": "personal_shopping",
+  "description": "A user is 'bundle shopping' for a wedding guest outfit and a gift. Conflict: The dress must arrive by Friday, but the matching shoes are on backorder. The gift must be shipped directly to the venue, but the registry is showing as 'out of stock'. They need to find alternatives that maintain the aesthetic/budget.",
+  "user_profile": {
+    "persona": "29-year-old professional, busy schedule",
+    "context": "Wedding is this weekend",
+    "communication_style": "Time-pressured, needs immediate alternatives"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "user_profile",
+      "fact": "The client's full name is Clara Vance."
+    },
+    {
+      "id": "F02",
+      "category": "user_profile",
+      "fact": "Clara Vance's account ID with the 'AuraStyle Concierge' service is CV-88432."
+    },
+    {
+      "id": "F03",
+      "category": "user_profile",
+      "fact": "Clara Vance's preferred style aesthetic is 'modern classic with a touch of glamour'."
+    },
+    {
+      "id": "F04",
+      "category": "user_profile",
+      "fact": "Clara's personal shipping address for the outfit is 45 Riverwalk Plaza, Apt 12B, Sterling City, NY 10021."
+    },
+    {
+      "id": "F05",
+      "category": "event_details",
+      "fact": "The wedding is for the couple Liam Chen and Sofia Rossi."
+    },
+    {
+      "id": "F06",
+      "category": "event_details",
+      "fact": "The wedding date is Saturday, October 28th, 2023, at 4:00 PM."
+    },
+    {
+      "id": "F07",
+      "category": "event_details",
+      "fact": "The wedding venue is The Starling Conservatory, 123 Blossom Lane, Meadow Creek, CA 90210."
+    },
+    {
+      "id": "F08",
+      "category": "event_details",
+      "fact": "The dress code for the wedding is 'Black-Tie Optional'."
+    },
+    {
+      "id": "F09",
+      "category": "original_order_outfit",
+      "fact": "The originally selected dress is the 'Seraphina' Silk Gown in Emerald Green from the retailer 'Elysian Threads'."
+    },
+    {
+      "id": "F10",
+      "category": "original_order_outfit",
+      "fact": "The 'Seraphina' Silk Gown is a size 6 and costs $325.00."
+    },
+    {
+      "id": "F11",
+      "category": "original_order_outfit",
+      "fact": "The matching shoes selected were the 'Elysian' Strappy Heels in Metallic Gold, size 8."
+    },
+    {
+      "id": "F12",
+      "category": "original_order_outfit",
+      "fact": "The 'Elysian' Strappy Heels cost $145.00."
+    },
+    {
+      "id": "F13",
+      "category": "original_order_outfit",
+      "fact": "The 'Elysian' Strappy Heels are on backorder with an estimated ship date of November 15th, 2023."
+    },
+    {
+      "id": "F14",
+      "category": "original_order_gift",
+      "fact": "The originally selected gift was the 'Artisan Home \"Audun\" 20-piece Dinnerware Set'."
+    },
+    {
+      "id": "F15",
+      "category": "original_order_gift",
+      "fact": "The 'Artisan Home \"Audun\" Set' from the registry costs $249.99."
+    },
+    {
+      "id": "F16",
+      "category": "original_order_gift",
+      "fact": "The couple's gift registry ID at 'The Gilded Spoon' is LR-2023-45B."
+    },
+    {
+      "id": "F17",
+      "category": "original_order_gift",
+      "fact": "The 'Artisan Home \"Audun\" Set' is currently marked as 'Out of Stock' on the registry, with no units available for purchase or direct shipment to the wedding venue at this time."
+    },
+    {
+      "id": "F18",
+      "category": "logistics_constraints",
+      "fact": "Clara's total budget for the wedding guest outfit (dress and shoes) is $500."
+    },
+    {
+      "id": "F19",
+      "category": "logistics_constraints",
+      "fact": "Clara's budget for the wedding gift is $250."
+    },
+    {
+      "id": "F20",
+      "category": "logistics_constraints",
+      "fact": "The outfit must be delivered to Clara's personal address no later than 5:00 PM on Friday, October 27th, 2023."
+    },
+    {
+      "id": "F21",
+      "category": "logistics_constraints",
+      "fact": "The selected wedding gift must be shipped directly to The Starling Conservatory venue address."
+    },
+    {
+      "id": "F22",
+      "category": "communication_log",
+      "fact": "The stock and shipping conflicts were flagged to Clara by her concierge on October 24th, 2023, at 10:15 AM EST."
+    },
+    {
+      "id": "F23",
+      "category": "alternative_option_outfit",
+      "fact": "Alternative Dress 1: 'Celeste' Satin Midi Dress in Forest Green from 'Moda Luxe' for $290, with guaranteed 1-day shipping."
+    },
+    {
+      "id": "F24",
+      "category": "alternative_option_outfit",
+      "fact": "Alternative Shoes 1: 'Helios' Gold Block Heel from 'Moda Luxe' for $120, which can be bundled with the 'Celeste' dress."
+    },
+    {
+      "id": "F25",
+      "category": "alternative_option_outfit",
+      "fact": "The 'Celeste' dress and 'Helios' heels combination totals $410, which is $90 under the outfit budget."
+    },
+    {
+      "id": "F26",
+      "category": "alternative_option_outfit",
+      "fact": "Alternative Shoes 2: 'Luna' Nude Patent Pump from 'Stature Footwear' for $135, with overnight shipping available for an extra $25."
+    },
+    {
+      "id": "F27",
+      "category": "alternative_option_gift",
+      "fact": "Alternative Gift 1: 'Crystalline Co. \"Prestige\" Crystal Decanter' for $199.99, in stock at 'The Gilded Spoon'."
+    },
+    {
+      "id": "F28",
+      "category": "alternative_option_gift",
+      "fact": "Alternative Gift 2: 'Cuisine Supreme 5.5 Quart Dutch Oven in Oyster' for $230, in stock at 'The Gilded Spoon'."
+    },
+    {
+      "id": "F29",
+      "category": "alternative_option_gift",
+      "fact": "'The Gilded Spoon' offers complimentary gift wrapping and a personalized note for registry items over $100."
+    },
+    {
+      "id": "F30",
+      "category": "communication_log",
+      "fact": "Clara's initial shopping request was submitted via the AuraStyle Concierge app on October 23rd, 2023, at 8:30 PM EST."
+    },
+    {
+      "id": "F31",
+      "category": "communication_log",
+      "fact": "An SMS alert about the inventory conflicts was sent to Clara's phone number, (555) 867-5309, on October 24th, 2023."
+    },
+    {
+      "id": "F32",
+      "category": "original_order_outfit",
+      "fact": "The original order number placed at Elysian Threads for both the dress and shoes was ET-9102-3457."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the specific issue with the 'Elysian' Strappy Heels I selected?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Problem Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "And what is the problem with the 'Artisan Home' dinnerware set I chose for the gift?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F17"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After understanding the first issue flagged in the alert, the user will naturally ask about the second one.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Problem Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "To help me decide on an outfit, what is the absolute latest my outfit can be delivered?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Cross-group: Once the user learns the matching shoes are backordered, the next natural concern is the outfit's hard delivery deadline.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Outfit Constraints",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is my total budget for the dress and shoes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Outfit Constraints",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are the specific dress and shoe pieces in the bundled 'Moda Luxe' alternative outfit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Cross-group: Having established the delivery constraint, the user is now ready to evaluate the proposed outfit alternative.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Outfit Alternative 1 Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the total cost of the 'Celeste' dress and 'Helios' heels combination?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: A direct follow-up to seeing the components of the alternative outfit is to ask for the total price to compare against the budget.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Outfit Alternative 1 Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the other shoe option that would work with my original dress?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Outfit Alternative 2 Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "To what address does the outfit need to be shipped?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Cross-group: After confirming the outfit delivery deadline, a direct logistical follow-up is the exact address the outfit must be shipped to.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Outfit Shipping Confirmation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Now for the gift, what is my budget?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Gift Options & Constraints",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What are the in-stock gift alternatives available from the couple's registry?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: Immediately after confirming the gift budget, the user will want to see the available options that fit within it.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Gift Options & Constraints",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Where does the wedding gift need to be shipped?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Gift Shipping Confirmation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Is complimentary gift wrapping offered for registry items from 'The Gilded Spoon'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Cross-group: Once the user reviews the in-stock registry alternatives, a reasonable follow-up is whether those gift options come with gift-wrapping perks.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Gift Service Perks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "For my records, what was the original order number for the Elysian Threads items?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Reference Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the dress code for the wedding?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Cross-group: After reviewing the main outfit alternative, a natural check is whether it still fits the wedding's dress code.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Reference Information",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Problem Identification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Outfit Constraints",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Outfit Alternative 1 Details",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Outfit Alternative 2 Details",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Outfit Shipping Confirmation",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Gift Options & Constraints",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Gift Shipping Confirmation",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Gift Service Perks",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G9",
+      "label": "Reference Information",
+      "member_need_ids": [
+        "N13",
+        "N14"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shop_wedding_conflict_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

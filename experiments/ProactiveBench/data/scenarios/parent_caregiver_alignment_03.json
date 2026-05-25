@@ -1,0 +1,465 @@
+{
+  "scenario_id": "parent_caregiver_alignment_03",
+  "domain": "parenting_support",
+  "description": "Parents, grandparents, and a babysitter are all caring for the same child but keep applying different rules around snacks, naps, routines, and screen time. The family needs a shared system that reduces repeated misunderstandings.",
+  "user_profile": {
+    "persona": "33-year-old parent coordinating care across several well-meaning adults",
+    "context": "The problem is not lack of help but lack of consistency between caregivers",
+    "communication_style": "Diplomatic and practical, wants a system people will actually follow"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "child_profile",
+      "fact": "The child being cared for is 3-year-old Leo Miller-Chen."
+    },
+    {
+      "id": "F02",
+      "category": "caregiver_roster",
+      "fact": "Maya Miller, aged 33, acts as the primary care coordinator for Leo Miller-Chen."
+    },
+    {
+      "id": "F03",
+      "category": "caregiver_roster",
+      "fact": "Grandma Elara and Grandpa Silas provide childcare every Tuesday and Thursday from 08:30 to 17:00."
+    },
+    {
+      "id": "F04",
+      "category": "caregiver_roster",
+      "fact": "Chloe Vance is the professional babysitter who covers Friday evenings from 18:00 to 22:00."
+    },
+    {
+      "id": "F05",
+      "category": "caregiver_roster",
+      "fact": "David Chen, Leo's father, manages the bedtime routine on weekdays starting at 19:30."
+    },
+    {
+      "id": "F06",
+      "category": "coordination_system",
+      "fact": "The family uses a shared Trello board titled 'Team Leo' to track daily logs and rule changes."
+    },
+    {
+      "id": "F07",
+      "category": "coordination_system",
+      "fact": "A physical 'Caregiver Command Center' binder is located on the kitchen island next to the microwave."
+    },
+    {
+      "id": "F08",
+      "category": "coordination_system",
+      "fact": "All caregivers must log snack consumption in the 'Daily Feed' WhatsApp group immediately after the meal."
+    },
+    {
+      "id": "F09",
+      "category": "health_safety",
+      "fact": "Leo Miller-Chen has a confirmed allergy to walnuts and must never be served nuts of any kind."
+    },
+    {
+      "id": "F10",
+      "category": "health_safety",
+      "fact": "In case of a fever over 101°F, caregivers are authorized to administer 5ml of Children's Tylenol every 6 hours."
+    },
+    {
+      "id": "F11",
+      "category": "health_safety",
+      "fact": "Leo's pediatrician is Dr. Aris Thorne at Pine Valley Pediatrics, reachable at 555-0122."
+    },
+    {
+      "id": "F12",
+      "category": "nutrition_rules",
+      "fact": "Sugar-sweetened beverages are strictly prohibited; Leo is only allowed water or 4oz of diluted apple juice per day."
+    },
+    {
+      "id": "F13",
+      "category": "nutrition_rules",
+      "fact": "The 'One-Bite Rule' requires Leo to try at least one piece of any vegetable served before requesting a different food."
+    },
+    {
+      "id": "F14",
+      "category": "nutrition_rules",
+      "fact": "Afternoon snacks are limited to one serving of 'Oat-Go' crackers or a sliced medium pear at 15:30."
+    },
+    {
+      "id": "F15",
+      "category": "nutrition_rules",
+      "fact": "Dessert is only permitted on Saturday evenings and is limited to one scoop of vanilla yogurt."
+    },
+    {
+      "id": "F16",
+      "category": "sleep_routine",
+      "fact": "Leo's afternoon nap must begin between 13:00 and 13:30 every day."
+    },
+    {
+      "id": "F17",
+      "category": "sleep_routine",
+      "fact": "If Leo has not fallen asleep by 14:15, the nap attempt must be ended to preserve the 20:00 bedtime."
+    },
+    {
+      "id": "F18",
+      "category": "sleep_routine",
+      "fact": "Leo requires a specific blue weighted blanket and a white noise machine set to 'Rainfall' for all sleep sessions."
+    },
+    {
+      "id": "F19",
+      "category": "sleep_routine",
+      "fact": "The maximum duration for an afternoon nap is 90 minutes; Leo must be gently woken up by 15:00."
+    },
+    {
+      "id": "F20",
+      "category": "screen_time",
+      "fact": "Total screen time is limited to 30 minutes per day, strictly between 16:30 and 17:00."
+    },
+    {
+      "id": "F21",
+      "category": "screen_time",
+      "fact": "The only approved media content is 'Number-Bots' on YouTube Kids or 'Bluey' on Disney+."
+    },
+    {
+      "id": "F22",
+      "category": "screen_time",
+      "fact": "Handheld tablets are forbidden; media must only be viewed on the main living room television."
+    },
+    {
+      "id": "F23",
+      "category": "discipline_behavior",
+      "fact": "The 'Red-Yellow-Green' behavioral system is posted on the refrigerator to track Leo's compliance with instructions."
+    },
+    {
+      "id": "F24",
+      "category": "discipline_behavior",
+      "fact": "Caregivers must use the phrase 'I see you are frustrated, but we do not hit' when Leo displays physical aggression."
+    },
+    {
+      "id": "F25",
+      "category": "discipline_behavior",
+      "fact": "Time-outs are strictly 3 minutes long and take place on the 'Thinking Rug' in the hallway."
+    },
+    {
+      "id": "F26",
+      "category": "discipline_behavior",
+      "fact": "Positive reinforcement rewards include one 'Star Sticker' for every meal finished without a tantrum."
+    },
+    {
+      "id": "F27",
+      "category": "communication_protocol",
+      "fact": "A 5-minute 'Handover Sync' must occur between caregivers at every shift change to discuss Leo's mood and intake."
+    },
+    {
+      "id": "F28",
+      "category": "communication_protocol",
+      "fact": "The 'Family Harmony' meeting is held via Zoom every first Sunday of the month at 19:00."
+    },
+    {
+      "id": "F29",
+      "category": "communication_protocol",
+      "fact": "All caregivers must use the 'Check-In' feature on the 'Life360' app when arriving at or leaving the Miller-Chen residence."
+    },
+    {
+      "id": "F30",
+      "category": "emergency_contacts",
+      "fact": "The secondary emergency contact is neighbor Sarah Jenkins at 555-0987, who holds a spare house key."
+    },
+    {
+      "id": "F31",
+      "category": "emergency_contacts",
+      "fact": "The nearest emergency room is at Crestview General Hospital, located 2.4 miles away at 400 Medical Plaza."
+    },
+    {
+      "id": "F32",
+      "category": "physical_environment",
+      "fact": "The Wi-Fi password for the guest network used by caregivers is 'ConsistentCare2024!'."
+    },
+    {
+      "id": "F33",
+      "category": "physical_environment",
+      "fact": "Leo's outdoor play is restricted to the fenced backyard or the 'Oak Street Playground' only."
+    },
+    {
+      "id": "F34",
+      "category": "activity_schedule",
+      "fact": "Every Wednesday at 10:00, Grandma Elara takes Leo to the 'Little Melodies' music class at the Community Center."
+    },
+    {
+      "id": "F35",
+      "category": "activity_schedule",
+      "fact": "Shoes must be removed and placed in the cubby labeled 'L' immediately upon entering the house."
+    },
+    {
+      "id": "F36",
+      "category": "health_safety",
+      "fact": "If Leo's fever stays above 101°F for one hour after Tylenol, caregivers must call Dr. Aris Thorne for guidance; if it reaches 104°F or Leo becomes difficult to wake, they must go directly to Crestview General Hospital."
+    },
+    {
+      "id": "F37",
+      "category": "discipline_behavior",
+      "fact": "A time-out starts only after the caregiver gives a calm warning, guides Leo to the Thinking Rug, and starts the 3-minute timer once he is seated; it ends with restating the rule and prompting a calm reset."
+    },
+    {
+      "id": "F38",
+      "category": "communication_protocol",
+      "fact": "During each Handover Sync, caregivers must review Leo's mood, last meal or snack, nap status, medications, bathroom status, and any rule exceptions, then update the 'Team Leo' Trello board if something changed."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Does Leo have any allergies or major health concerns I need to be aware of?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Critical Health",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "If Leo develops a high fever, what medicine is allowed, who should I call, and when do I escalate to the ER?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F30",
+        "F31",
+        "F36"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Critical Health",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the standing rules for Leo's drinks, vegetables, afternoon snack, and dessert?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13",
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Food Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the specific rule for the afternoon snack, and how do I log his food intake?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After getting the general food rules, asking for specifics about a particular meal (snack) and the related logging procedure is a logical detail-oriented follow-up.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Food Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the schedule for Leo's afternoon nap, including start time and maximum duration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Sleep Routine",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Are there any specific items or settings needed for his nap?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the nap schedule is known, the immediate next question is about the specific environmental setup required to successfully get the child to sleep.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Sleep Routine",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the rules for screen time, including duration and timing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: The nap schedule ends around 15:00, and the next major time-blocked activity in a toddler's day is often pre-dinner screen time. It's a natural 'what's next in the schedule' question.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Screen Time",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the primary method for handling it if Leo hits or shows physical aggression?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Discipline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the full procedure for a time-out, from starting it to ending it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25",
+        "F37"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: After learning the first-line response to aggression, asking for the details of the next-step disciplinary action (time-out) is a direct follow-up.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Discipline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the protocol for caregiver handovers at a shift change, and what topics have to be covered?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27",
+        "F38"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning about one communication task (logging food), a user coordinating care would likely want to know about other required communication protocols, like the critical handover sync.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Communication Protocols",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is Leo's backup emergency contact who can access the house if needed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After reviewing the fever-response plan, a practical follow-up is to identify the backup emergency contact who can help quickly and has a spare key.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Backup Emergency Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the guest Wi-Fi password?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Environment Info",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Critical Health",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Food Rules",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Sleep Routine",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Screen Time",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Discipline",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Communication Protocols",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Backup Emergency Support",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Environment Info",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "parent_caregiver_alignment_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

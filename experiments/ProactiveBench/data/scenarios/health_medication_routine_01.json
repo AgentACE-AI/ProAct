@@ -1,0 +1,376 @@
+{
+  "scenario_id": "health_medication_routine_01",
+  "domain": "health_management",
+  "description": "A patient has just started a new medication regimen after a recent diagnosis. They need to keep track of dosage timing, food interactions, missed-dose rules, side-effect notes, and symptom patterns during the first two weeks. All clinic names and providers are fictional.",
+  "user_profile": {
+    "persona": "47-year-old office administrator, recently diagnosed with a chronic condition",
+    "context": "Left the appointment with instructions but now feels uncertain once trying to follow them at home",
+    "communication_style": "Careful and concrete, wants daily instructions rather than general advice"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "diagnosis",
+      "fact": "Patient Alex Chen was diagnosed with Stage 1 Essential Hypertension."
+    },
+    {
+      "id": "F02",
+      "category": "diagnosis",
+      "fact": "The diagnosis was made on October 14, 2023, by Dr. Evelyn Reed at the Maple Creek Community Clinic."
+    },
+    {
+      "id": "F03",
+      "category": "medication",
+      "fact": "The prescribed medication is Vasocardia, supplied as 10mg oral tablets."
+    },
+    {
+      "id": "F04",
+      "category": "medication",
+      "fact": "The medication regimen for Vasocardia started on Monday, October 16, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "medication",
+      "fact": "Take exactly one 10mg tablet of Vasocardia every morning between 7:00 AM and 8:00 AM."
+    },
+    {
+      "id": "F06",
+      "category": "medication",
+      "fact": "Vasocardia must be taken with a meal, preferably breakfast, to reduce potential nausea."
+    },
+    {
+      "id": "F07",
+      "category": "medication",
+      "fact": "Avoid consuming grapefruit or grapefruit juice, as it can interfere with Vasocardia's effectiveness."
+    },
+    {
+      "id": "F08",
+      "category": "medication",
+      "fact": "If a dose is missed by less than 8 hours, take it immediately with a small snack."
+    },
+    {
+      "id": "F09",
+      "category": "medication",
+      "fact": "If a dose is missed by more than 8 hours, skip the missed dose and resume the normal schedule the next morning; do not double the dose."
+    },
+    {
+      "id": "F10",
+      "category": "medication",
+      "fact": "The 30-day prescription for Vasocardia (Rx #783309-1) was filled at Wellspring Pharmacy."
+    },
+    {
+      "id": "F11",
+      "category": "monitoring",
+      "fact": "Use the provided A&D UA-651BLE digital blood pressure monitor to take daily readings."
+    },
+    {
+      "id": "F12",
+      "category": "monitoring",
+      "fact": "Measure and log blood pressure once daily in the morning, before taking Vasocardia."
+    },
+    {
+      "id": "F13",
+      "category": "monitoring",
+      "fact": "The target blood pressure reading for Alex Chen is below 130/80 mmHg."
+    },
+    {
+      "id": "F14",
+      "category": "monitoring",
+      "fact": "Record daily blood pressure, medication time, and any symptoms in the green 'Health Tracker' notebook provided by the clinic."
+    },
+    {
+      "id": "F15",
+      "category": "monitoring",
+      "fact": "A common, expected side effect is mild dizziness for the first 3-5 days; note its occurrence in the log."
+    },
+    {
+      "id": "F16",
+      "category": "monitoring",
+      "fact": "A less common side effect to monitor for is a persistent, dry cough."
+    },
+    {
+      "id": "F17",
+      "category": "monitoring",
+      "fact": "A follow-up appointment with Dr. Evelyn Reed is scheduled for Monday, October 30, 2023, at 10:30 AM."
+    },
+    {
+      "id": "F18",
+      "category": "lifestyle",
+      "fact": "Dietary guidelines require limiting daily sodium intake to a maximum of 2,000 milligrams."
+    },
+    {
+      "id": "F19",
+      "category": "lifestyle",
+      "fact": "To reduce sodium, avoid processed deli meats, canned soups, and frozen dinners for the initial two-week period."
+    },
+    {
+      "id": "F20",
+      "category": "lifestyle",
+      "fact": "Engage in 30 minutes of moderate-intensity exercise, such as brisk walking, at least 5 days per week."
+    },
+    {
+      "id": "F21",
+      "category": "lifestyle",
+      "fact": "Limit alcoholic beverage consumption to no more than one standard drink per day."
+    },
+    {
+      "id": "F22",
+      "category": "support",
+      "fact": "For non-urgent questions about medication side effects, call the Maple Creek Clinic nurse line at 555-0182 during business hours (9 AM - 5 PM, M-F)."
+    },
+    {
+      "id": "F23",
+      "category": "support",
+      "fact": "The clinic's patient portal for viewing test results is accessible at myhealth.maplecreekclinic.fict."
+    },
+    {
+      "id": "F24",
+      "category": "emergency",
+      "fact": "If you experience severe chest pain, shortness of breath, or facial swelling, call 911 immediately."
+    },
+    {
+      "id": "F25",
+      "category": "emergency",
+      "fact": "The after-hours urgent contact number for the physician on-call is 555-0199; state that you are a patient of Dr. Reed."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the exact name and dosage of my new medication, and at what time should I take it each day?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Medication Instructions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Do I need to take my Vasocardia with food?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: A common follow-up question after learning the timing of a medication is how to take it relative to meals.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Medication Instructions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "At what time of day am I supposed to measure and log my blood pressure?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Daily Monitoring",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the target blood pressure reading Dr. Reed wants me to be under?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After confirming when to measure blood pressure, the user will naturally want to know what a 'good' reading is.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Daily Monitoring",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are the rules for what to do if I miss a dose of my medication?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After understanding the correct daily medication routine, a careful user's next concern is often about handling exceptions, like a missed dose.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Missed Dose Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Are there any specific foods or drinks I should avoid while on Vasocardia?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: The instruction to take medication with food (N2) naturally leads to the question of whether any specific foods should be avoided.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Dietary Restrictions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the common, expected side effect I might experience in the first few days?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Side Effect Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Is there a less common side effect I should also monitor for?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning about common side effects, the user may want to know about other potential issues to be aware of.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Side Effect Information",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Who can I call if I have non-urgent questions about medication side effects?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Discussing side effects (N7, N8) directly prompts the need for a point of contact to discuss those side effects if they occur.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Support Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What specific symptoms would be considered an emergency that requires calling 911?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Establishing the contact for non-urgent issues logically leads to clarifying what constitutes a true emergency that requires immediate action.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Emergency Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "When is my scheduled follow-up appointment with my doctor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Follow-up Appointment",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Medication Instructions",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Daily Monitoring",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Missed Dose Protocol",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Dietary Restrictions",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Side Effect Information",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Support Contacts",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Emergency Protocol",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Follow-up Appointment",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "health_medication_routine_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "scenario_id": "makerspace_reservation_dependency_03",
+  "domain": "makerspace_operations",
+  "description": "A member project depends on several reservations in sequence, and staff need to know what preparation, machine availability, or prior output must exist before the next booked step is actually usable. All projects and spaces are fictional.",
+  "user_profile": {
+    "persona": "36-year-old project support coordinator helping members move multi-step builds through shared equipment",
+    "context": "Reservations exist on the calendar, but the work chain between them is not yet clear enough to prevent wasted slots",
+    "communication_style": "Dependency-aware and project-focused, wants each reservation linked to its prerequisite state"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project",
+      "fact": "The project ID for the 'Automated Greenhouse Controller' is PROJ-C-1138."
+    },
+    {
+      "id": "F02",
+      "category": "project",
+      "fact": "The current status of Project PROJ-C-1138 is 'In Progress' as of October 25, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "project",
+      "fact": "The final deliverable for PROJ-C-1138 is a functional prototype for the 'Makers' Faire 2025' showcase."
+    },
+    {
+      "id": "F04",
+      "category": "member",
+      "fact": "The lead member for Project PROJ-C-1138 is Ava Chen, member ID AC-9012."
+    },
+    {
+      "id": "F05",
+      "category": "member",
+      "fact": "Ava Chen's contact email registered with the makerspace is ava.chen@makers-email.net."
+    },
+    {
+      "id": "F06",
+      "category": "staff",
+      "fact": "The designated project support coordinator is Leo Valdez."
+    },
+    {
+      "id": "F07",
+      "category": "staff",
+      "fact": "Leo Valdez's handle on the internal Slack workspace is @leov."
+    },
+    {
+      "id": "F08",
+      "category": "staff",
+      "fact": "The primary Slack channel for discussing project dependencies and support requests is #proj-support-queue."
+    },
+    {
+      "id": "F09",
+      "category": "reservation",
+      "fact": "Reservation RES-7701 for PROJ-C-1138 is booked on the 'UltiForge F3' 3D printer for October 26, 2024, from 9:00 AM to 5:00 PM."
+    },
+    {
+      "id": "F10",
+      "category": "reservation",
+      "fact": "Reservation RES-7702 for PROJ-C-1138 is booked on the 'GlowBeam 100W' laser cutter for October 28, 2024, from 10:00 AM to 12:00 PM."
+    },
+    {
+      "id": "F11",
+      "category": "reservation",
+      "fact": "Reservation RES-7703 for PROJ-C-1138 is booked at Electronics Workbench EWB-03 for October 28, 2024, from 1:00 PM to 4:00 PM."
+    },
+    {
+      "id": "F12",
+      "category": "machine",
+      "fact": "The 'UltiForge F3' 3D printer, ID 3DP-04-A, is located in the Digital Fabrication Zone, Bay 2."
+    },
+    {
+      "id": "F13",
+      "category": "machine",
+      "fact": "The 'GlowBeam 100W' laser cutter, ID LC-02-B, requires a mandatory fume extraction check before each use, logged in the machine's digital logbook."
+    },
+    {
+      "id": "F14",
+      "category": "machine",
+      "fact": "Electronics Workbench EWB-03 is equipped with a Hakko FX-888D soldering station and a Rigol DS1054Z oscilloscope."
+    },
+    {
+      "id": "F15",
+      "category": "machine",
+      "fact": "The firmware on laser cutter LC-02-B was last updated to version 3.1.5 on October 15, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "machine",
+      "fact": "The 'UltiForge F3' 3D printer is currently out of service for nozzle replacement and is expected to be available by 8:00 AM on October 26, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "dependency",
+      "fact": "Reservation RES-7702 (laser cutting) is directly dependent on the successful completion of RES-7701 (3D printing)."
+    },
+    {
+      "id": "F18",
+      "category": "dependency",
+      "fact": "The prerequisite for starting RES-7702 is the set of 12 3D-printed enclosure parts produced during RES-7701."
+    },
+    {
+      "id": "F19",
+      "category": "dependency",
+      "fact": "The PETG parts printed during RES-7701 must cure for a minimum of 24 hours before they can be handled for the laser-engraving step in RES-7702."
+    },
+    {
+      "id": "F20",
+      "category": "dependency",
+      "fact": "Reservation RES-7703 (electronics assembly) is directly dependent on the successful completion of RES-7702 (laser cutting)."
+    },
+    {
+      "id": "F21",
+      "category": "dependency",
+      "fact": "The prerequisite for starting RES-7703 is the laser-engraved acrylic front panel from RES-7702, which serves as the main chassis."
+    },
+    {
+      "id": "F22",
+      "category": "dependency",
+      "fact": "Leo Valdez must visually inspect and sign off on the quality of the 3D prints from RES-7701 before Ava Chen can proceed to RES-7702."
+    },
+    {
+      "id": "F23",
+      "category": "dependency",
+      "fact": "The sign-off for the dependency between RES-7701 and RES-7702 is tracked in the project's Trello card, ID T-451."
+    },
+    {
+      "id": "F24",
+      "category": "material",
+      "fact": "For RES-7701, Ava Chen must provide her own spool of black ASA filament for its required UV resistance."
+    },
+    {
+      "id": "F25",
+      "category": "material",
+      "fact": "For RES-7702, a 24\"x12\" sheet of 3mm clear cast acrylic is required."
+    },
+    {
+      "id": "F26",
+      "category": "material",
+      "fact": "The makerspace provides the required 3mm clear cast acrylic for RES-7702 from inventory location INV-ACR-3MM-C."
+    },
+    {
+      "id": "F27",
+      "category": "material",
+      "fact": "For RES-7703, the bill of materials includes one Arduino Uno R3, two DHT22 sensors, and one 16x2 LCD screen, to be sourced from the electronics parts bin E-BIN-087."
+    },
+    {
+      "id": "F28",
+      "category": "system",
+      "fact": "All machine reservations are managed through the 'Fabman' booking system, accessible at https://makerspace.fabman.io."
+    },
+    {
+      "id": "F29",
+      "category": "system",
+      "fact": "Project files for PROJ-C-1138, including STL and DXF files, are stored in the shared Git repository at git.makerspace.local/projects/PROJ-C-1138."
+    },
+    {
+      "id": "F30",
+      "category": "communication",
+      "fact": "Daily project stand-up meetings with Leo Valdez are held at 9:15 AM via the Google Meet link meet.google.com/xyz-abc-def to discuss blockers."
+    },
+    {
+      "id": "F31",
+      "category": "communication",
+      "fact": "An automated notification is sent to the #proj-support-queue Slack channel when a reservation marked with dependencies is completed."
+    },
+    {
+      "id": "F32",
+      "category": "member",
+      "fact": "Ava Chen has completed the mandatory 'Laser Safety Level 2' certification on September 5, 2024, which is required to use the 'GlowBeam 100W'."
+    },
+    {
+      "id": "F33",
+      "category": "reservation",
+      "fact": "The total estimated cost for machine time and materials from inventory for PROJ-C-1138 is $78.50, billed to member account AC-9012."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the upcoming reservations for the 'Automated Greenhouse Controller' project (PROJ-C-1138)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F09",
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Reservation Overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the specific output from the 3D printing reservation (RES-7701) that is required for the laser cutting reservation (RES-7702)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After listing the reservations, the user needs to understand the direct dependency and prerequisite output connecting the first two steps.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Dependency Chain",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Is there a required curing time for the 3D printed parts from RES-7701 before they can be used in RES-7702?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: Knowing the prerequisite parts leads to asking about any process constraints or conditions, like curing time, that affect the timeline.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Dependency Chain",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Is there a staff sign-off required between the 3D printing and laser cutting steps, and where is that action tracked?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After understanding the technical dependencies (parts and curing), the user's next concern is any required human-in-the-loop process or approval step.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Dependency Chain",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N5",
+      "description": "What is the prerequisite for the electronics assembly reservation (RES-7703)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Having fully clarified the first link in the project chain (RES-7701 to RES-7702), the user naturally moves to the next link (RES-7702 to RES-7703).",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Dependency and Files",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the current operational status of the 'UltiForge F3' 3D printer booked for the first reservation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After seeing the list of reservations, the most immediate risk is the availability of the machine for the very first step. This is a critical check for the project coordinator.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Machine Readiness",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What material is required for the 3D printing reservation (RES-7701) and who is responsible for providing it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Once machine availability is confirmed, the next logical check for that reservation is ensuring the correct materials are ready.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Material Sourcing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What material is needed for the laser cutting reservation (RES-7702) and is it provided by the makerspace?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After clarifying materials for the first step, the user continues down the list to check material requirements for the second step.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Material Sourcing",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Has the lead member, Ava Chen, completed the required safety certification for the 'GlowBeam 100W' laser cutter?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying the laser cutting step as a key dependency, a support coordinator would proactively verify that the member is actually qualified to use the required equipment.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Member Qualification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What are the designated Slack channels and meetings for project support and discussing blockers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Staff Communication Channels",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "For the electronics assembly reservation (RES-7703), which components must be sourced from the electronics parts bin, and from which bin?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After learning the prerequisite for RES-7703, a direct follow-up is which electronics components still need to be sourced and from where.",
+      "turn_order": 11,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Dependency and Components",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Reservation Overview",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "First Dependency Chain",
+      "member_need_ids": [
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Second Dependency and Components",
+      "member_need_ids": [
+        "N5",
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Machine Readiness",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Material Sourcing",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Member Qualification",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Staff Communication Channels",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "makerspace_reservation_dependency_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

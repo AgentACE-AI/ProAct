@@ -1,0 +1,464 @@
+{
+  "scenario_id": "disaster_contact_tree_03",
+  "domain": "disaster_preparedness",
+  "description": "Extended family members need a fallback contact tree with primary, secondary, and out-of-area check-in rules in case normal communication patterns break down during a disruption.",
+  "user_profile": {
+    "persona": "35-year-old sibling coordinating emergency planning for relatives in several cities",
+    "context": "The family keeps saying they will \"just text each other,\" but no one has agreed on a real fallback structure",
+    "communication_style": "Coordination-focused and explicit, wants roles and routes documented clearly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "Maya Chen, residing in Seattle, WA, is the designated Primary Plan Coordinator."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "Robert Chen, residing in Boston, MA, serves as the single Out-of-Area Check-In Point."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel",
+      "fact": "Leo Chen, residing in Denver, CO, is Maya Chen's brother and primary contact link to their parents."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel",
+      "fact": "David and Susan Chen, residing in Phoenix, AZ, are the parents of Maya and Leo."
+    },
+    {
+      "id": "F05",
+      "category": "Personnel",
+      "fact": "Grace Lin, residing in Chicago, IL, is the aunt and primary contact for the Lin branch of the family."
+    },
+    {
+      "id": "F06",
+      "category": "Personnel",
+      "fact": "Ben Lin, residing in Austin, TX, is Grace Lin's son."
+    },
+    {
+      "id": "F07",
+      "category": "Roles_and_Responsibilities",
+      "fact": "The Primary Plan Coordinator, Maya Chen, is responsible for updating the plan document annually on July 1st."
+    },
+    {
+      "id": "F08",
+      "category": "Roles_and_Responsibilities",
+      "fact": "Each family household is responsible for maintaining a printed copy of the communication plan, version 2.1 or later."
+    },
+    {
+      "id": "F09",
+      "category": "Roles_and_Responsibilities",
+      "fact": "After establishing their own safety, each member's first responsibility is to contact their assigned person in the call tree."
+    },
+    {
+      "id": "F10",
+      "category": "Roles_and_Responsibilities",
+      "fact": "All family members must attempt to contact the Out-of-Area Check-In Point within 4 hours of a plan activation event."
+    },
+    {
+      "id": "F11",
+      "category": "Activation_Triggers",
+      "fact": "The plan is automatically activated if any family member is under a government-issued evacuation order."
+    },
+    {
+      "id": "F12",
+      "category": "Activation_Triggers",
+      "fact": "The plan is also activated if a regional communication outage (cellular and internet) persists for more than 2 hours."
+    },
+    {
+      "id": "F13",
+      "category": "Documentation",
+      "fact": "The master plan document is a Google Doc titled 'Chen-Lin Family Emergency Comms Plan v2.1'."
+    },
+    {
+      "id": "F14",
+      "category": "Documentation",
+      "fact": "The shareable link for the master plan document is http://docs.google.com/document/d/fictional-chen-lin-plan-12345."
+    },
+    {
+      "id": "F15",
+      "category": "Communication_Protocols",
+      "fact": "Level 1 Communication is the 'Chen-Lin Clan Comms' group chat on the Signal app."
+    },
+    {
+      "id": "F16",
+      "category": "Communication_Protocols",
+      "fact": "If no response via Level 1 is received within 30 minutes, proceed to Level 2 Communication."
+    },
+    {
+      "id": "F17",
+      "category": "Communication_Protocols",
+      "fact": "Level 2 Communication consists of direct cellular voice calls following the defined call tree."
+    },
+    {
+      "id": "F18",
+      "category": "Communication_Protocols",
+      "fact": "Level 3 Communication, used if cellular networks are down, is calling landline numbers at the top of each hour (e.g., 2:00 PM, 3:00 PM)."
+    },
+    {
+      "id": "F19",
+      "category": "Communication_Protocols",
+      "fact": "All voicemails must follow the 'SALuTE' format: Status (e.g., 'Safe'), Activity ('Sheltering in place'), Location, Time, and ETA for next update."
+    },
+    {
+      "id": "F20",
+      "category": "Contact_Tree_Rules",
+      "fact": "Maya Chen's (Seattle) first call is to Leo Chen (Denver)."
+    },
+    {
+      "id": "F21",
+      "category": "Contact_Tree_Rules",
+      "fact": "Leo Chen's (Denver) first call is to David and Susan Chen (Phoenix)."
+    },
+    {
+      "id": "F22",
+      "category": "Contact_Tree_Rules",
+      "fact": "Maya Chen's (Seattle) second call is to Grace Lin (Chicago)."
+    },
+    {
+      "id": "F23",
+      "category": "Contact_Tree_Rules",
+      "fact": "Grace Lin's (Chicago) first call is to her son, Ben Lin (Austin)."
+    },
+    {
+      "id": "F24",
+      "category": "Contact_Information",
+      "fact": "The landline number for the Out-of-Area Check-In Point, Robert Chen, is 617-555-0182."
+    },
+    {
+      "id": "F25",
+      "category": "Contact_Information",
+      "fact": "The cellular number for Maya Chen is 206-555-0110."
+    },
+    {
+      "id": "F26",
+      "category": "Contact_Information",
+      "fact": "The landline number for David and Susan Chen in Phoenix is 602-555-0134."
+    },
+    {
+      "id": "F27",
+      "category": "Contact_Information",
+      "fact": "The primary email for plan-related questions is chen.lin.plan.coord@fictionalemail.com, monitored by Maya Chen."
+    },
+    {
+      "id": "F28",
+      "category": "Meeting_Points",
+      "fact": "The designated emergency meeting point for the Phoenix family members is the fountain in front of the Burton Barr Central Library."
+    },
+    {
+      "id": "F29",
+      "category": "Meeting_Points",
+      "fact": "The secondary emergency meeting point for the Seattle family member (Maya) is the Fremont Troll sculpture."
+    },
+    {
+      "id": "F30",
+      "category": "Contingencies",
+      "fact": "If a primary contact in the tree is unreachable for 2 hours, call the next person on your list and then report the non-contact to the Out-of-Area Check-In Point."
+    },
+    {
+      "id": "F31",
+      "category": "Contingencies",
+      "fact": "The designated password to verify identity with an unknown intermediary is 'Cactus Sunset 1998'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Where can I find the master copy of the family communication plan and what is its shareable link?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Plan Fundamentals & Key Roles",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who is the Primary Plan Coordinator and when are they responsible for updating the plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F07"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After locating the plan document, the user's next logical step is to understand who is responsible for maintaining it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Plan Fundamentals & Key Roles",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Who is the designated Out-of-Area Check-In Point for the family?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "After clarifying the coordinator role, identifying the other key role (the central check-in point) is a natural follow-up.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Plan Fundamentals & Key Roles",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What specific events automatically activate the communication plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Plan Activation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Once the plan is activated and my safety is established, what is my first responsibility?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Understanding what triggers the plan naturally leads to the question of what action to take immediately upon activation.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Initial Actions & Responsibilities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Within what timeframe must everyone contact the Out-of-Area Check-In Point?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning the first responsibility is to make contact, clarifying the specific deadline for the most important contact is a direct follow-up.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Initial Actions & Responsibilities",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the Level 1 communication method, and when should we escalate to Level 2?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After being told their first responsibility is to make contact, the user will immediately need to know the specific methods for doing so.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Communication Protocols",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the Level 2 and Level 3 communication methods?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "This is a direct continuation of the previous question, asking for the next steps in the communication escalation ladder.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Communication Protocols",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What specific format must be used for all voicemails?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After learning that voice calls are part of the protocol, a user coordinating the plan would want to know about specific rules for leaving messages, like the required SALuTE format. This is an auditable proactive target.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Voicemail Format",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "As Maya Chen in Seattle, who is my first call and who is my second call in the contact tree?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Specific Call Tree Routes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is Leo Chen's first call, and who is Grace Lin's first call?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F23"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "As the coordinator, after confirming her own direct responsibilities in the call tree, Maya would want to verify the next links in the chain that she initiates.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Specific Call Tree Routes",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What is the landline number for the Out-of-Area Check-In Point, Robert Chen?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02",
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After identifying who the out-of-area contact is, requesting their specific contact information, especially the landline for emergencies, is a highly probable next step. This is an auditable proactive target.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Contact Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the procedure if a primary contact in the tree is unreachable for 2 hours?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After reviewing the primary call tree sequence, the coordinator's next logical thought is to ask about the contingency plan for when that sequence fails.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Contact Failure Contingency",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the password used to verify identity with an unknown intermediary?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Security Protocol",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Plan Fundamentals & Key Roles",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Plan Activation",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Initial Actions & Responsibilities",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Communication Protocols",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Voicemail Format",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Specific Call Tree Routes",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Contact Information",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Contact Failure Contingency",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G9",
+      "label": "Security Protocol",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "disaster_contact_tree_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

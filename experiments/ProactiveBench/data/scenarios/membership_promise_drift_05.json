@@ -1,0 +1,398 @@
+{
+  "scenario_id": "membership_promise_drift_05",
+  "domain": "subscription_membership_administration",
+  "description": "Marketing, sales, and support materials have started describing membership perks differently, creating confusion about what was actually promised to different cohorts. All programs and campaigns are fictional.",
+  "user_profile": {
+    "persona": "40-year-old membership program manager trying to reconcile customer-facing promise drift",
+    "context": "No single team intended to mislead members, but wording changes over time have created a real gap between materials",
+    "communication_style": "Editorial and accountability-focused, wants promises compared by cohort and source"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Membership Tiers",
+      "fact": "The 'Gold Glow' membership tier for Aura Circle has a standard annual price of $299."
+    },
+    {
+      "id": "F02",
+      "category": "Membership Tiers",
+      "fact": "The 'Platinum Radiance' membership officially includes a 'Glow Concierge' service, defined internally as a 24-hour response time for non-urgent travel and event booking."
+    },
+    {
+      "id": "F03",
+      "category": "Membership Tiers",
+      "fact": "The entry-level 'Silver Spark' tier was introduced on February 15, 2023, with a launch price of $99 per year."
+    },
+    {
+      "id": "F04",
+      "category": "Marketing Campaigns",
+      "fact": "The 'Summer Sparkle '23' digital ad campaign, which ran from June 1 to August 31, 2023, promised Gold Glow members 'quarterly bonus reward points'."
+    },
+    {
+      "id": "F05",
+      "category": "Marketing Campaigns",
+      "fact": "The 'New Year Glow '24' email campaign, sent on January 2, 2024, described the Gold Glow benefit as 'monthly bonus reward points'."
+    },
+    {
+      "id": "F06",
+      "category": "Marketing Campaigns",
+      "fact": "The 'Holiday Radiance '23' campaign landing page URL was auracircle.com/holiday-radiance, and it was active from November 15 to December 31, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "Marketing Campaigns",
+      "fact": "An email sent to prospective Platinum Radiance members on December 5, 2023, had the subject line 'Your Exclusive Pass to Everything' and promised an 'AuraAccess Pass with unlimited guest privileges'."
+    },
+    {
+      "id": "F08",
+      "category": "Perk Definitions",
+      "fact": "The official internal 'Perk Definition Guide v3.1' states the 'AuraAccess Pass' for Platinum members allows the primary member plus two guests per visit to partner lounges."
+    },
+    {
+      "id": "F09",
+      "category": "Sales Materials",
+      "fact": "Sales Script v2.1, used by the sales team starting October 1, 2023, instructs agents to describe the Glow Concierge as an 'instant, personal assistant for all your needs'."
+    },
+    {
+      "id": "F10",
+      "category": "Sales Materials",
+      "fact": "The previous Sales Script v1.8, retired on September 30, 2023, accurately described the Glow Concierge with its 24-hour response time SLA."
+    },
+    {
+      "id": "F11",
+      "category": "Sales Materials",
+      "fact": "A one-pager PDF titled 'Aura_Platinum_OnePager_Oct23.pdf', created by the marketing team, claims members receive a 'complimentary annual luxury gift box valued at over $500'."
+    },
+    {
+      "id": "F12",
+      "category": "Perk Definitions",
+      "fact": "The 'annual luxury gift box' perk is officially provisioned as a choice of one item from a pre-selected catalog with an average item cost of $150."
+    },
+    {
+      "id": "F13",
+      "category": "Support Incidents",
+      "fact": "Support ticket #AC-88172, filed on January 15, 2024, by member Eleanor Vance, references the 'unlimited guest privileges' promise from the December 5th email."
+    },
+    {
+      "id": "F14",
+      "category": "Support Incidents",
+      "fact": "In January 2024, the customer support team logged 112 tickets with the tag 'PerkConfusion', an increase from 18 tickets with the same tag in the previous quarter."
+    },
+    {
+      "id": "F15",
+      "category": "Support Incidents",
+      "fact": "An analysis by support lead David Schmidt found that 65% of the 'PerkConfusion' tickets in January 2024 were from members who joined during the 'New Year Glow '24' campaign."
+    },
+    {
+      "id": "F16",
+      "category": "Program Management",
+      "fact": "Lena Rivera, Membership Program Manager, is leading the 'Project Promise-Align' initiative to reconcile all customer-facing perk descriptions."
+    },
+    {
+      "id": "F17",
+      "category": "Program Management",
+      "fact": "The deadline for Lena Rivera's initial findings report for 'Project Promise-Align' to be delivered to leadership is February 28, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "Internal Communications",
+      "fact": "The official 'Perk Definition Guide' stored on the company's Confluence space (ID: PDG-AURA) was last updated on April 10, 2023."
+    },
+    {
+      "id": "F19",
+      "category": "Internal Communications",
+      "fact": "On September 28, 2023, Marketing Lead Marcus Thorne approved the new copy for Sales Script v2.1 via an email with the subject 'RE: Final Approval for Q4 Sales Scripts'."
+    },
+    {
+      "id": "F20",
+      "category": "Internal Communications",
+      "fact": "A discussion in the '#marketing-sales-sync' Slack channel on September 15, 2023, shows a decision to use 'more impactful language' for Q4 materials, leading to the changes."
+    },
+    {
+      "id": "F21",
+      "category": "Internal Communications",
+      "fact": "JIRA ticket MKTG-431, for updating the website's membership page, was closed on October 5, 2023, without a documented check against the official Confluence guide."
+    },
+    {
+      "id": "F22",
+      "category": "Sales Materials",
+      "fact": "Between October 1, 2023, and December 31, 2023, the sales team, led by Priya Chen, onboarded 430 new Platinum Radiance members using the v2.1 script."
+    },
+    {
+      "id": "F23",
+      "category": "Support Incidents",
+      "fact": "Support lead David Schmidt created Zendesk macro '#perk_clarification_gold_24' on January 10, 2024, to handle the influx of questions about monthly vs. quarterly points."
+    },
+    {
+      "id": "F24",
+      "category": "Support Incidents",
+      "fact": "A quote from ticket #AC-89012 reads, 'The sales agent explicitly told me I would have an instant concierge. A 24-hour wait is not instant and not what I paid for.'"
+    },
+    {
+      "id": "F25",
+      "category": "Membership Tiers",
+      "fact": "A cohort analysis shows members who joined in Q4 2023 have a 30% higher rate of contacting support within their first 30 days compared to members who joined in Q2 2023."
+    },
+    {
+      "id": "F26",
+      "category": "Program Management",
+      "fact": "The primary data sources for Lena Rivera's audit are HubSpot campaign records, Salesforce sales call logs, Confluence documentation, and Zendesk ticket data."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What were the two different promises made about Gold Glow bonus points in the 'Summer Sparkle '23' and 'New Year Glow '24' campaigns?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Gold Tier Discrepancy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the official definition of the 'Glow Concierge' service versus how Sales Script v2.1 described it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Platinum Tier Discrepancies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What guest-privilege wording appears in the December 5th Platinum email, and what guest allowance is listed in the internal Perk Definition Guide v3.1?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group follow-up: After identifying one discrepancy for the Platinum tier, the user is likely to investigate other known issues for the same tier.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Platinum Tier Discrepancies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What was the increase in 'PerkConfusion' support tickets in January 2024 compared to the previous quarter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying a specific promise discrepancy, a natural next step is to quantify the customer impact by looking at support ticket trends.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Overall Impact Metrics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What percentage of the January 'PerkConfusion' tickets were from members who joined during the 'New Year Glow '24' campaign?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group follow-up: After learning about the overall increase in confusion tickets, the user will want to attribute that increase to a specific cause or cohort.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Overall Impact Metrics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "How many new Platinum Radiance members were onboarded using Sales Script v2.1 and during what period?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After discovering the misleading sales script, the user's immediate need is to understand the size of the affected cohort.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Affected Cohort Size",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+  "description": "Who filed ticket #AC-88172, when was it filed, and what 'AuraAccess Pass' promise did it reference?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After comparing the promise vs. reality for guest passes, seeing a direct customer complaint provides qualitative evidence of the impact.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Specific Customer Complaints",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the customer's quote from ticket #AC-89012 about the 'instant concierge' promise?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group follow-up: After reviewing one piece of customer evidence, the user is likely to ask for other examples to build their case, especially for other known discrepancies.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Specific Customer Complaints",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+  "description": "What decision was recorded in the '#marketing-sales-sync' Slack discussion about the language for Q4 materials?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Root Cause Investigation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who from marketing approved the new Sales Script v2.1 and when was it approved?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group follow-up: After understanding the initial decision to change language, the next step is to find the specific point of approval and accountability for the script.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Root Cause Investigation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What was the claimed value of the 'annual luxury gift box' in the October '23 one-pager versus its official provisioned cost?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After seeing the quantifiable impact of known discrepancies, the user may want to proactively uncover other potential issues to get ahead of future complaints.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Additional Discrepancy (Gift Box)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+  "description": "Was JIRA ticket MKTG-431 closed with a documented check against the official Confluence guide?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After identifying who approved a change, a logical next step in a process audit is to check for related implementation failures, like a missed check against official documentation.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Process Failure Example",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Gold Tier Discrepancy",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Platinum Tier Discrepancies",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Overall Impact Metrics",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Affected Cohort Size",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Specific Customer Complaints",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Root Cause Investigation",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Additional Discrepancy (Gift Box)",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G8",
+      "label": "Process Failure Example",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "membership_promise_drift_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "scenario_id": "makerspace_material_rule_memory_02",
+  "domain": "makerspace_operations",
+  "description": "Different tools allow different materials, thicknesses, coatings, and preparation steps, and staff keep having to restate the same exceptions when members bring in unsuitable materials. All spaces are fictional.",
+  "user_profile": {
+    "persona": "30-year-old fabrication staff member fielding repeated material-compatibility questions",
+    "context": "Most members remember the basic rules, but the important exceptions are being rediscovered over and over",
+    "communication_style": "Rule-focused and practical, prefers compatibility rules tied to specific tool-material combinations"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "laser_cutter_rules",
+      "fact": "The SpectraLase 9000 can cut PlexiGlow Cast Acrylic up to a maximum thickness of 12mm."
+    },
+    {
+      "id": "F02",
+      "category": "laser_cutter_rules",
+      "fact": "Polyvinyl Chloride (PVC) is strictly forbidden on the SpectraLase 9000 due to the release of toxic chlorine gas when cut."
+    },
+    {
+      "id": "F03",
+      "category": "laser_cutter_rules",
+      "fact": "The cutting bed size of the SpectraLase 9000 is 900mm x 600mm."
+    },
+    {
+      "id": "F04",
+      "category": "laser_cutter_rules",
+      "fact": "Wood materials for the SpectraLase 9000 must be uncoated and free of resin-based glues, with the exception of approved Baltic Birch Plywood."
+    },
+    {
+      "id": "F05",
+      "category": "laser_cutter_rules",
+      "fact": "Reflective materials, including mirrored acrylic and polished metals, cannot be processed on the SpectraLase 9000."
+    },
+    {
+      "id": "F06",
+      "category": "laser_cutter_rules",
+      "fact": "Anodized aluminum can be engraved on the SpectraLase 9000, but it cannot be cut."
+    },
+    {
+      "id": "F07",
+      "category": "3d_printer_rules",
+      "fact": "The OmniForm 3X exclusively uses the makerspace-provided 1.75mm EcoPLA Filament."
+    },
+    {
+      "id": "F08",
+      "category": "3d_printer_rules",
+      "fact": "Members are not permitted to bring their own filament for use in the OmniForm 3X."
+    },
+    {
+      "id": "F09",
+      "category": "3d_printer_rules",
+      "fact": "The maximum build volume for the OmniForm 3X is 250mm x 210mm x 210mm."
+    },
+    {
+      "id": "F10",
+      "category": "3d_printer_rules",
+      "fact": "ABS, PETG, and Nylon filaments are not compatible with the OmniForm 3X due to workshop ventilation limitations."
+    },
+    {
+      "id": "F11",
+      "category": "3d_printer_rules",
+      "fact": "All 3D print jobs for the OmniForm 3X must be sliced using the 'Forge Standard' profile in the MakerNet Portal."
+    },
+    {
+      "id": "F12",
+      "category": "cnc_mill_rules",
+      "fact": "The Raptor CNC Mill can process 6061-T6 Aluminum up to a thickness of 50mm."
+    },
+    {
+      "id": "F13",
+      "category": "cnc_mill_rules",
+      "fact": "All personal materials for the Raptor CNC Mill must be inspected and approved by Tool Manager, Maria Rodriguez, before use."
+    },
+    {
+      "id": "F14",
+      "category": "cnc_mill_rules",
+      "fact": "Ferrous metals, such as steel or iron, are prohibited on the Raptor CNC Mill to prevent excessive wear on the spindle."
+    },
+    {
+      "id": "F15",
+      "category": "cnc_mill_rules",
+      "fact": "The standard end mill provided for general use on the Raptor CNC Mill is a 1/4 inch, 2-flute carbide bit."
+    },
+    {
+      "id": "F16",
+      "category": "waterjet_cutter_rules",
+      "fact": "The AquaCut 55 can cut materials, including hardened steel and granite, up to 100mm thick."
+    },
+    {
+      "id": "F17",
+      "category": "waterjet_cutter_rules",
+      "fact": "Tempered glass is forbidden on the AquaCut 55 as it will shatter into small, hazardous fragments under pressure."
+    },
+    {
+      "id": "F18",
+      "category": "waterjet_cutter_rules",
+      "fact": "The abrasive used in the AquaCut 55 is 80-grit garnet, which is supplied by the makerspace at the workstation."
+    },
+    {
+      "id": "F19",
+      "category": "waterjet_cutter_rules",
+      "fact": "Laminated materials like carbon fiber composites are prohibited on the AquaCut 55 due to the risk of delamination."
+    },
+    {
+      "id": "F20",
+      "category": "general_material_policies",
+      "fact": "All non-standard materials require a Material Safety Data Sheet (MSDS) to be submitted for review via the MakerNet Portal at least 48 hours before the scheduled work time."
+    },
+    {
+      "id": "F21",
+      "category": "general_material_policies",
+      "fact": "A material quarantine shelf for unapproved items is located next to Workstation B-7."
+    },
+    {
+      "id": "F22",
+      "category": "general_material_policies",
+      "fact": "Forge & Fiber Collective sells pre-approved 300mm x 600mm sheets of 3mm Baltic Birch Plywood for $8 per sheet."
+    },
+    {
+      "id": "F23",
+      "category": "general_material_policies",
+      "fact": "Scrap materials must be sorted into the designated bins labeled 'Wood,' 'Acrylic,' or 'Metal' located by the exit."
+    },
+    {
+      "id": "F24",
+      "category": "safety_procedures",
+      "fact": "Safety glasses are mandatory at all times in the main workshop area, which is demarcated by a solid yellow line on the floor."
+    },
+    {
+      "id": "F25",
+      "category": "safety_procedures",
+      "fact": "In case of a tool malfunction, press the nearest red emergency stop button and immediately contact Safety Officer Alex Chen at extension 555."
+    },
+    {
+      "id": "F26",
+      "category": "safety_procedures",
+      "fact": "The Class ABC fire extinguisher for electrical and combustible fires is located to the right of the main workshop entrance door."
+    },
+    {
+      "id": "F27",
+      "category": "safety_procedures",
+      "fact": "Users must complete the 'CNC-101 Safety Certification' course before operating the Raptor CNC Mill."
+    },
+    {
+      "id": "F28",
+      "category": "material_sourcing",
+      "fact": "Approved PlexiGlow Cast Acrylic can be purchased from 'Anvilton Plastics' at 240 Industrial Drive."
+    },
+    {
+      "id": "F29",
+      "category": "material_sourcing",
+      "fact": "Members receive a 10% discount at 'MetalWorks Depot' on all 6061-T6 Aluminum stock by showing their Forge & Fiber membership card."
+    },
+    {
+      "id": "F30",
+      "category": "staff_contacts",
+      "fact": "Maria Rodriguez, the Tool Manager, is available for material consultations on Tuesdays and Thursdays from 2:00 PM to 5:00 PM at her desk."
+    },
+    {
+      "id": "F31",
+      "category": "staff_contacts",
+      "fact": "Safety Officer Alex Chen's office is located at A-01, and he can be reached for non-emergencies by emailing achen@forgeandfiber.mock."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "A member brought PlexiGlow Cast Acrylic. What's the maximum cutting thickness for it on the SpectraLase 9000?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Laser Cutter - Common Questions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "The same member wants to know if they can use mirrored acrylic. What's the rule on reflective materials for the laser cutter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After asking about one type of acrylic, the user may ask about another variant, especially a tricky one like mirrored acrylic.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Laser Cutter - Common Questions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "A different member has some plywood. What are the specific restrictions on wood materials for the laser cutter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Laser Cutter - Common Questions",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is the cutting bed size of the SpectraLase 9000 for laying out an approved PlexiGlow Cast Acrylic sheet?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming the thickness limit for an allowed acrylic, a natural follow-up is whether the sheet will fit within the laser cutter's work area.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Material Sourcing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the rule regarding Polyvinyl Chloride (PVC) on the SpectraLase 9000?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Laser Cutter - Prohibited Materials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Can members bring in their own filament for the OmniForm 3X, and what filament does it officially use?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "3D Printing Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Which common filament types like ABS or PETG are not compatible with the OmniForm 3X?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Once a user knows they can't use their own filament, they will likely ask about the compatibility of other common types they might be familiar with.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "3D Printing Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the rule on using ferrous metals like steel on the Raptor CNC Mill?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "CNC Mill Rules & Approval",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Before approved personal metal stock can be used on the Raptor CNC Mill, who must inspect and approve it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After learning about a prohibited material for the CNC, the user will naturally want to know the process for approved materials.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "CNC Mill Rules & Approval",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Who handles approval of personal materials for the Raptor CNC Mill, and when are consultation hours available?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F30"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: The approval process mentioned in the previous turn directly implies a person is responsible, leading to a question about who that is and when to find them.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Staff Consultation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "On the SpectraLase 9000, what is the rule on reflective materials such as mirrored acrylic?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "INTRA-GROUP: After discussing the PVC prohibition on the SpectraLase 9000, a direct follow-up is what other material restrictions also apply on that same laser cutter.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Additional Laser Cutter Restrictions",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Laser Cutter - Common Questions",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Material Sourcing",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Laser Cutter - Prohibited Materials",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "3D Printing Rules",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "CNC Mill Rules & Approval",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Staff Consultation",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Waterjet Cutter Exceptions",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "makerspace_material_rule_memory_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

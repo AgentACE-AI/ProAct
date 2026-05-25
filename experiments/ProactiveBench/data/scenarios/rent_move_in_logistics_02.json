@@ -1,0 +1,376 @@
+{
+  "scenario_id": "rent_move_in_logistics_02",
+  "domain": "apartment_renting",
+  "description": "A tenant has already signed a lease and now needs to coordinate utility setup, renter's insurance, key pickup, elevator booking, internet installation, and address changes before move-in day.",
+  "user_profile": {
+    "persona": "30-year-old software engineer moving across town after a sudden lease signing",
+    "context": "Excitement about getting the apartment has turned into a pile of overlooked setup tasks",
+    "communication_style": "Efficient and deadline-aware, wants a sequenced checklist"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Lease & Building",
+      "fact": "Alex Chen signed a 12-month lease for Unit 12B at The Veridian Towers, 456 Skyline Drive, Metropolis, ZP 98765, on June 10, 2024."
+    },
+    {
+      "id": "F02",
+      "category": "Lease & Building",
+      "fact": "The official move-in date for Unit 12B is July 1, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "Lease & Building",
+      "fact": "The building manager is Sarah Jenkins, reachable at s.jenkins@veridian.com or (555) 123-4567 for building-related emergencies."
+    },
+    {
+      "id": "F04",
+      "category": "Lease & Building",
+      "fact": "All non-emergency requests must be submitted through the Veridian Resident Hub at https://veridian.residentportal.com."
+    },
+    {
+      "id": "F05",
+      "category": "Services & Financials",
+      "fact": "The first month's rent of $2,800 and a security deposit of $2,800 were paid on June 10, 2024, via wire transfer with confirmation #WT45982B."
+    },
+    {
+      "id": "F06",
+      "category": "Services & Financials",
+      "fact": "Monthly rent of $2,800 is due on the 1st of each month via the Veridian Resident Hub; ACH bank transfers are free, while credit card payments incur a 2.5% processing fee."
+    },
+    {
+      "id": "F07",
+      "category": "Services & Financials",
+      "fact": "A late fee of $150 is automatically applied if the full rent payment is not received by 11:59 PM on the 3rd day of the month."
+    },
+    {
+      "id": "F08",
+      "category": "Renter's Insurance",
+      "fact": "The lease requires proof of renter's insurance with a minimum of $100,000 in liability coverage to be submitted to management by June 28, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "Renter's Insurance",
+      "fact": "Alex Chen purchased a renter's insurance policy, #HG-456789, from HavenGuard Insurance with a monthly premium of $18.50."
+    },
+    {
+      "id": "F10",
+      "category": "Renter's Insurance",
+      "fact": "The HavenGuard insurance policy provides $100,000 in liability coverage and $25,000 in personal property coverage, meeting the lease requirements."
+    },
+    {
+      "id": "F11",
+      "category": "Renter's Insurance",
+      "fact": "The proof of insurance certificate (declarations page) was uploaded to the Veridian Resident Hub document center on June 16, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "Utilities",
+      "fact": "To set up electricity, Alex Chen must call Metropolis Power & Light at (555) 888-9900 and provide leasing confirmation code LSE-78910 for the service address."
+    },
+    {
+      "id": "F13",
+      "category": "Utilities",
+      "fact": "The new Metropolis Power & Light account number is 880-12345-67, with service scheduled to start on July 1, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "Utilities",
+      "fact": "A one-time $50.00 activation fee for the electricity account will be included on the first bill, which is estimated to be issued on August 2nd, 2024."
+    },
+    {
+      "id": "F15",
+      "category": "Utilities",
+      "fact": "Water, sewer, and trash services are managed by the building and billed as a flat monthly fee of $65.00 through the resident portal; no separate setup is required."
+    },
+    {
+      "id": "F16",
+      "category": "Services & Financials",
+      "fact": "The exclusive internet service provider for The Veridian Towers is QuantumFiber."
+    },
+    {
+      "id": "F17",
+      "category": "Services & Financials",
+      "fact": "An internet installation appointment with QuantumFiber is scheduled for July 2, 2024, between 8:00 AM and 10:00 AM."
+    },
+    {
+      "id": "F18",
+      "category": "Services & Financials",
+      "fact": "The selected QuantumFiber plan is 'Gigabit Pro' for $79.99 per month, with the first payment due on July 15, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "Move-in Logistics",
+      "fact": "The service elevator is booked for the move-in on July 1, 2024, for the time slot of 12:00 PM to 4:00 PM."
+    },
+    {
+      "id": "F20",
+      "category": "Move-in Logistics",
+      "fact": "A refundable elevator usage deposit of $250 must be paid via certified check to 'Veridian Management LLC' upon key pickup."
+    },
+    {
+      "id": "F21",
+      "category": "Move-in Logistics",
+      "fact": "Keys for Unit 12B must be picked up from the front concierge desk on July 1, 2024, between 9:00 AM and 5:00 PM by showing a government-issued photo ID."
+    },
+    {
+      "id": "F22",
+      "category": "Move-in Logistics",
+      "fact": "Alex Chen filed a permanent change of address request with USPS on June 15, 2024, with a mail forwarding start date of July 1, 2024; the confirmation code is COA-987654321."
+    },
+    {
+      "id": "F23",
+      "category": "Move-in Logistics",
+      "fact": "The moving company, 'Swift Movers Inc.', is scheduled to arrive at the old address at 9:00 AM on July 1, 2024 (Job #SM-3045)."
+    },
+    {
+      "id": "F24",
+      "category": "Lease & Building",
+      "fact": "Unit 12B comes with one assigned parking space, #P2-78, in the underground garage; the access fob will be provided with the apartment keys."
+    },
+    {
+      "id": "F25",
+      "category": "Move-in Logistics",
+      "fact": "The building requires all moving boxes to be broken down and placed in the designated recycling room on the P1 level within 48 hours of move-in."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the building's renter's insurance requirements and what is the deadline to submit proof?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Renter's Insurance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Where was the proof of insurance certificate uploaded?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up: After learning about the insurance requirement, the user wants to confirm its completion.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Renter's Insurance",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "How do I set up my electricity account with Metropolis Power & Light?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Utility Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Is there an activation fee for my new electricity account?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group follow-up: After learning how to set up an account, the user is likely to ask about associated one-time costs.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Utility Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "How are water, sewer, and trash services handled by the building?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After discussing the setup for one utility (electricity), the user will naturally wonder about the process for other essential utilities like water and trash.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Building-Managed Utilities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Who is the internet provider for the building and what is my scheduled installation time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Internet Installation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is my scheduled time for the service elevator and what are the key pickup hours on move-in day?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Move-in Day Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Is there a deposit required for using the elevator and how do I pay it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group follow-up: Mentioning the elevator booking directly leads to questions about any associated fees or deposits.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Move-in Day Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the confirmation code for my USPS change of address request?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming that proof of insurance was uploaded and administrative setup tasks are being checked off, a deadline-aware renter would naturally verify whether the address-change task was also completed and note the USPS confirmation code.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Address Change",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is my assigned parking space number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Since the parking fob is provided with the apartment keys, a question about the corresponding parking space location is a logical next step after discussing key pickup.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Parking Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the building's rule for disposing of moving boxes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Post-Move Cleanup",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Renter's Insurance",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Utility Setup",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Building-Managed Utilities",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Internet Installation",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Move-in Day Logistics",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Address Change",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Parking Information",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G8",
+      "label": "Post-Move Cleanup",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "rent_move_in_logistics_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

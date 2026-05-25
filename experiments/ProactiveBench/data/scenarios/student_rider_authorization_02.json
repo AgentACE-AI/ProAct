@@ -1,0 +1,437 @@
+{
+  "scenario_id": "student_rider_authorization_02",
+  "domain": "school_transportation_operations",
+  "description": "Transportation staff need a reliable record of which students may ride which route, who may pick them up, what emergency contacts are current, and which temporary authorization exceptions apply today. All schools and families are fictional.",
+  "user_profile": {
+    "persona": "37-year-old student transportation coordinator responsible for rider eligibility and release rules",
+    "context": "The route list is known, but authority around who may ride and who may receive a student keeps shifting through updates",
+    "communication_style": "Boundary- and safety-focused, wants rider permissions tied to named students and effective dates"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Student_Rider_Info",
+      "fact": "Liam Smith, Student ID S-48291, attends Northwood Elementary School."
+    },
+    {
+      "id": "F02",
+      "category": "Student_Rider_Info",
+      "fact": "Ava Garcia, Student ID S-51102, attends Northwood Elementary School."
+    },
+    {
+      "id": "F03",
+      "category": "Student_Rider_Info",
+      "fact": "Noah Chen, Student ID S-49553, attends Maple Creek Middle School."
+    },
+    {
+      "id": "F04",
+      "category": "Student_Rider_Info",
+      "fact": "Liam Smith (S-48291) has a mild peanut allergy noted in his profile; no EpiPen is required on the bus."
+    },
+    {
+      "id": "F05",
+      "category": "Route_Assignments",
+      "fact": "Liam Smith (S-48291) is assigned to Route 12B ('Bear Route') for both morning and afternoon transport."
+    },
+    {
+      "id": "F06",
+      "category": "Route_Assignments",
+      "fact": "Ava Garcia (S-51102) is assigned to Route 12B ('Bear Route') for both morning and afternoon transport."
+    },
+    {
+      "id": "F07",
+      "category": "Route_Assignments",
+      "fact": "Noah Chen (S-49553) is assigned to Route 7A ('Eagle Route') for both morning and afternoon transport."
+    },
+    {
+      "id": "F08",
+      "category": "Route_Assignments",
+      "fact": "The designated bus stop for Liam Smith and Ava Garcia is at the corner of Juniper Ave & 3rd Street."
+    },
+    {
+      "id": "F09",
+      "category": "Staff_Information",
+      "fact": "The driver assigned to Route 12B is Brenda Miles, badge number D-781."
+    },
+    {
+      "id": "F10",
+      "category": "Authorized_Pickups",
+      "fact": "David Smith is a permanently authorized pickup person for his son, Liam Smith (S-48291)."
+    },
+    {
+      "id": "F11",
+      "category": "Authorized_Pickups",
+      "fact": "Jane Miller is a permanently authorized pickup person for her grandson, Liam Smith (S-48291), and must present photo ID upon pickup."
+    },
+    {
+      "id": "F12",
+      "category": "Authorized_Pickups",
+      "fact": "Maria Garcia is the primary authorized pickup person for her daughter, Ava Garcia (S-51102)."
+    },
+    {
+      "id": "F13",
+      "category": "Authorized_Pickups",
+      "fact": "Carlos Garcia is a permanently authorized pickup person for his daughter, Ava Garcia (S-51102)."
+    },
+    {
+      "id": "F14",
+      "category": "Authorized_Pickups",
+      "fact": "Wei Chen is the primary authorized pickup person for his son, Noah Chen (S-49553)."
+    },
+    {
+      "id": "F15",
+      "category": "Emergency_Contacts",
+      "fact": "The primary emergency contact for Liam Smith (S-48291) is David Smith at 555-0101."
+    },
+    {
+      "id": "F16",
+      "category": "Emergency_Contacts",
+      "fact": "The secondary emergency contact for Liam Smith (S-48291) is Jane Miller at 555-0102."
+    },
+    {
+      "id": "F17",
+      "category": "Emergency_Contacts",
+      "fact": "The primary emergency contact for Ava Garcia (S-51102) is Maria Garcia at 555-0120."
+    },
+    {
+      "id": "F18",
+      "category": "Emergency_Contacts",
+      "fact": "The sole emergency contact listed for Noah Chen (S-49553) is Wei Chen at 555-0135."
+    },
+    {
+      "id": "F19",
+      "category": "Temporary_Exceptions",
+      "fact": "For October 21, 2024 only, Sofia Rossi is authorized to pick up Ava Garcia (S-51102) from the Juniper Ave & 3rd Street stop."
+    },
+    {
+      "id": "F20",
+      "category": "Temporary_Exceptions",
+      "fact": "The required authorization code for Sofia Rossi's pickup on October 21, 2024 is 'APPLE24'."
+    },
+    {
+      "id": "F21",
+      "category": "Temporary_Exceptions",
+      "fact": "An exception is active for Noah Chen (S-49553) on Fridays, granting him permission to walk home from his bus stop alone until December 20, 2024."
+    },
+    {
+      "id": "F22",
+      "category": "Temporary_Exceptions",
+      "fact": "A note has been logged indicating Liam Smith (S-48291) will be absent from the afternoon bus on October 22, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "System_and_Tools",
+      "fact": "The primary transportation management software is called 'RiderSafe Pro'."
+    },
+    {
+      "id": "F24",
+      "category": "System_and_Tools",
+      "fact": "The login URL for the RiderSafe Pro portal is https://ridersafe.northwoodschools.org."
+    },
+    {
+      "id": "F25",
+      "category": "System_and_Tools",
+      "fact": "The Transportation Coordinator's username for RiderSafe Pro is 'achen'."
+    },
+    {
+      "id": "F26",
+      "category": "Operational_Procedures",
+      "fact": "Final daily route manifests must be printed from RiderSafe Pro at 1:30 PM each school day."
+    },
+    {
+      "id": "F27",
+      "category": "System_and_Tools",
+      "fact": "All official driver communication is conducted via the 'BusComm' app on district-issued tablets."
+    },
+    {
+      "id": "F28",
+      "category": "Operational_Procedures",
+      "fact": "All temporary transportation changes must be submitted by a guardian through the Parent Portal before 10:00 AM for same-day effect."
+    },
+    {
+      "id": "F29",
+      "category": "Operational_Procedures",
+      "fact": "A driver must visually confirm a valid authorization code in RiderSafe Pro before releasing a student to a person on the temporary exception list."
+    },
+    {
+      "id": "F30",
+      "category": "Operational_Procedures",
+      "fact": "A 'No Rider Left' check must be performed and logged in the BusComm app by the driver at the end of each completed route."
+    },
+    {
+      "id": "F31",
+      "category": "Operational_Procedures",
+      "fact": "In case of a bus breakdown, the first point of contact is Transportation Dispatch at phone extension 4500."
+    },
+    {
+      "id": "F32",
+      "category": "Operational_Procedures",
+      "fact": "A student is eligible for district transportation if their primary residence is located more than 1.5 miles from their assigned school."
+    },
+    {
+      "id": "F33",
+      "category": "Staff_Information",
+      "fact": "The Student Transportation Coordinator is Alex Chen, who can be reached at office phone extension 4502."
+    },
+    {
+      "id": "F34",
+      "category": "Route_Assignments",
+      "fact": "Route 7A ('Eagle Route') services students from Maple Creek Middle School exclusively."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Which students are assigned to ride Route 12B, the 'Bear Route'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Route 12B Roster",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the designated bus stop for Liam Smith and Ava Garcia on Route 12B?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying the students on a route, the coordinator's next logical step is to confirm their designated stop location.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Route 12B Stop Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Who is permanently authorized to pick up Liam Smith?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Liam Smith Pickup & Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the emergency contact details for Liam Smith?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After reviewing pickup authorizations, a safety-focused coordinator would verify the emergency contacts for the same student.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Liam Smith Pickup & Safety",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Are there any medical notes, such as allergies, for Liam Smith?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: Completing a full safety check on a student includes reviewing any health information on file after checking contacts.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Liam Smith Pickup & Safety",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "Is there a temporary pickup authorization for Ava Garcia today, October 21, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming the bus stop for Ava Garcia, the user needs to know if any special pickup exceptions apply at that stop today.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Ava Garcia Daily Exception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the required authorization code for Sofia Rossi's pickup of Ava Garcia?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: Immediately after confirming a temporary pickup person, the coordinator must know the security code for that pickup.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Ava Garcia Daily Exception",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Is Liam Smith scheduled to be absent from the afternoon bus on October 22, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After completing a full profile review for a student (pickups, contacts, medical), checking for any upcoming attendance exceptions is a logical next step.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Liam Smith Attendance Exception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the active transportation exception regarding Noah Chen on Fridays?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Noah Chen Standing Exception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Outside Noah Chen's Friday walk-home exception, who is his primary authorized pickup person?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Noah Chen Standing Exception",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "By what time must the final daily route manifests be printed from RiderSafe Pro?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Operational Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the standard procedure for a driver to release a student to someone on a temporary exception list?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After retrieving a specific authorization code, the coordinator may want a reminder of the official protocol for using that code.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Driver Release Protocol",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Route 12B Roster",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Route 12B Stop Information",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Liam Smith Pickup & Safety",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Ava Garcia Daily Exception",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Liam Smith Attendance Exception",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Noah Chen Standing Exception",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Operational Procedures",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Driver Release Protocol",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "student_rider_authorization_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

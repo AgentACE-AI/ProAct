@@ -1,0 +1,428 @@
+{
+  "scenario_id": "disaster_special_needs_continuity_04",
+  "domain": "disaster_preparedness",
+  "description": "A household must plan around refrigerated medication, mobility devices, or power-dependent medical equipment during an extended disruption without assuming that help will arrive immediately.",
+  "user_profile": {
+    "persona": "48-year-old caregiver responsible for a medically vulnerable family member",
+    "context": "General emergency advice feels too generic because this household has specific continuity requirements that cannot be improvised",
+    "communication_style": "Serious and scenario-driven, wants practical contingencies rather than abstract reassurance"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Medication_Management",
+      "fact": "Arthur Jenkins' primary insulin is 'Glucostable', which must be stored between 36°F and 46°F (2°C and 8°C)."
+    },
+    {
+      "id": "F02",
+      "category": "Medication_Management",
+      "fact": "A 90-day supply of Glucostable insulin is kept in the main refrigerator, with the prescription managed by Well-Life Pharmacy under Rx number 774-091B."
+    },
+    {
+      "id": "F03",
+      "category": "Medication_Management",
+      "fact": "For a power outage under 8 hours, two 'CryoPak' freezer packs are used inside a 12-quart insulated cooler to maintain insulin temperature."
+    },
+    {
+      "id": "F04",
+      "category": "Medication_Management",
+      "fact": "A 'MediCooler-12V' portable thermoelectric cooler is available, which can be plugged into a car's 12V outlet or the backup battery pack."
+    },
+    {
+      "id": "F05",
+      "category": "Medication_Management",
+      "fact": "Arthur's daily dosage schedule is 22 units of Glucostable at 8:00 AM and 18 units at 8:00 PM."
+    },
+    {
+      "id": "F06",
+      "category": "Power_Contingency",
+      "fact": "The primary medical equipment requiring power is Arthur's 'OxyFlow 5' oxygen concentrator, which draws 350 watts during operation."
+    },
+    {
+      "id": "F07",
+      "category": "Power_Contingency",
+      "fact": "A 'PowerGuard 5500' gasoline-powered generator is stored in the garage, with a rated output of 5500 watts."
+    },
+    {
+      "id": "F08",
+      "category": "Power_Contingency",
+      "fact": "There are four 5-gallon gasoline cans, treated with 'Sta-Fuel' stabilizer, stored in the outdoor shed for the generator; this provides approximately 48 hours of continuous runtime."
+    },
+    {
+      "id": "F09",
+      "category": "Power_Contingency",
+      "fact": "An 'EcoVolt 1500' portable power station with a 1500Wh capacity is kept fully charged to power the oxygen concentrator for up to 4 hours."
+    },
+    {
+      "id": "F10",
+      "category": "Power_Contingency",
+      "fact": "The generator requires a 30-amp, L14-30P twist-lock extension cord to connect to the house's transfer switch, located in the basement."
+    },
+    {
+      "id": "F11",
+      "category": "Power_Contingency",
+      "fact": "The last generator maintenance and test run was completed on July 15, 2024, by Sarah Jenkins."
+    },
+    {
+      "id": "F12",
+      "category": "Mobility_Plan",
+      "fact": "Arthur Jenkins uses a 'Pathfinder XLT' power wheelchair, model number PF-XLT-342B."
+    },
+    {
+      "id": "F13",
+      "category": "Mobility_Plan",
+      "fact": "The wheelchair is powered by two 12-volt, 55-Amp-Hour sealed lead-acid batteries, providing a maximum range of 15 miles on a full charge."
+    },
+    {
+      "id": "F14",
+      "category": "Mobility_Plan",
+      "fact": "A spare, fully charged set of wheelchair batteries is stored on a trickle charger in the garage."
+    },
+    {
+      "id": "F15",
+      "category": "Mobility_Plan",
+      "fact": "A lightweight, manual 'Fold-n-Go' transport wheelchair is stored in the hall closet for emergency evacuation if power fails."
+    },
+    {
+      "id": "F16",
+      "category": "Mobility_Plan",
+      "fact": "The home's front exit has a permanent aluminum ramp with a 1:12 slope ratio, suitable for both power and manual wheelchairs."
+    },
+    {
+      "id": "F17",
+      "category": "Emergency_Contacts",
+      "fact": "Arthur's primary care physician is Dr. Robert Aimes, whose office number is 555-0123; the after-hours emergency service is 555-0125."
+    },
+    {
+      "id": "F18",
+      "category": "Emergency_Contacts",
+      "fact": "The medical equipment supplier, 'Reliant Home Medical', has a 24/7 support line for the oxygen concentrator: 1-800-555-0199."
+    },
+    {
+      "id": "F19",
+      "category": "Emergency_Contacts",
+      "fact": "Out-of-state emergency contact is Sarah's brother, David Jenkins, in Portland, Oregon, at 503-555-0145."
+    },
+    {
+      "id": "F20",
+      "category": "Emergency_Contacts",
+      "fact": "The local fire department's non-emergency line for the 'Vulnerable Resident Registry' is 555-0112; Arthur is registered under confirmation number VRR-4815."
+    },
+    {
+      "id": "F21",
+      "category": "Evacuation_GoBag",
+      "fact": "The primary 'Go-Bag' is a red rolling duffel bag located in the master bedroom closet."
+    },
+    {
+      "id": "F22",
+      "category": "Evacuation_GoBag",
+      "fact": "The Go-Bag contains a 7-day supply of all non-refrigerated medications, including Metformin and Lisinopril for Arthur."
+    },
+    {
+      "id": "F23",
+      "category": "Evacuation_GoBag",
+      "fact": "A waterproof folder in the Go-Bag's front pocket contains copies of IDs, insurance cards, and a list of all medications and dosages."
+    },
+    {
+      "id": "F24",
+      "category": "Evacuation_Plan",
+      "fact": "The designated accessible emergency shelter is the Redwood Community Center, located at 4500 Oak Street, which has confirmed generator power capabilities."
+    },
+    {
+      "id": "F25",
+      "category": "Evacuation_Plan",
+      "fact": "The primary evacuation vehicle is a 2022 'Odyssey' minivan, which is equipped with a 'Bruno' brand wheelchair lift."
+    },
+    {
+      "id": "F26",
+      "category": "Evacuation_GoBag",
+      "fact": "The Go-Bag contains $500 in small bills ($20s, $10s, $5s, and $1s) in a sealed envelope."
+    },
+    {
+      "id": "F27",
+      "category": "Communication_Plan",
+      "fact": "A 'Midland WR120' NOAA weather radio is kept in the kitchen with fresh batteries installed on the first of every month."
+    },
+    {
+      "id": "F28",
+      "category": "Communication_Plan",
+      "fact": "If cellular service is down, text messages should be sent to the out-of-state contact, David Jenkins, as they have a higher chance of delivery than voice calls."
+    },
+    {
+      "id": "F29",
+      "category": "Communication_Plan",
+      "fact": "The pre-arranged neighborhood meeting point in case of evacuation is the large oak tree at the entrance of Maple Creek Park."
+    },
+    {
+      "id": "F30",
+      "category": "Documentation",
+      "fact": "Digital copies of all important documents are stored on an encrypted USB drive (brand 'IronKey', model D300S) in the Go-Bag."
+    },
+    {
+      "id": "F31",
+      "category": "Documentation",
+      "fact": "Arthur Jenkins has a durable power of attorney for healthcare, which designates Sarah Jenkins as his agent; the original is in a safe deposit box at First National Bank, Box #412."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the power consumption of Arthur's oxygen concentrator?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Power Contingency - Generator",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the rated output of the backup generator and how long can it run on the stored fuel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning the power requirement of the medical device, the user will naturally want to know the capacity and runtime of the primary backup power source.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Power Contingency - Generator",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the capacity of the portable power station for the oxygen concentrator, and how long can it power the device?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After establishing the plan for the main generator, the user will likely consider the immediate, short-term power solution needed before the generator is running.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Power Contingency - Battery",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the required storage temperatures for Glucostable insulin?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Medication Management - Cooling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the plan for keeping insulin cool during a power outage of less than 8 hours?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: Once the temperature requirement for the medication is established, the user's next logical question is about the immediate, short-term plan to maintain that temperature.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Medication Management - Cooling",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the backup mobility option if the power wheelchair fails or cannot be charged?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Mobility and Evacuation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Where is the designated accessible emergency shelter located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: Thinking about the scenario where the primary power wheelchair fails and a manual one is needed naturally leads to questions about evacuation and where to go.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Mobility and Evacuation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What documents and cash are stored in the Go-Bag?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Go-Bag Contents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the 24/7 support line for the oxygen concentrator?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After discussing the battery backup for the oxygen concentrator, the user might worry about equipment failure and want the technical support contact information.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Emergency Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the vehicle-based option for keeping insulin refrigerated during an evacuation?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Learning about the evacuation shelter prompts the need to travel, making the mobile, long-term refrigeration solution for medication a relevant next concern.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Medication Management - Mobile",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "If cellular voice service is unreliable during an outage, what method should we try first to reach our out-of-state relative David Jenkins?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: The topic of evacuating to a shelter naturally brings up concerns about communication failure and how to execute the family communication plan.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Communication Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Where is the original durable power of attorney for healthcare document located?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After confirming that copies of documents are in the Go-Bag, a detail-oriented user might want to confirm the location of the critical original document.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Legal Documentation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Power Contingency - Generator",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Power Contingency - Battery",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Medication Management - Cooling",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Mobility and Evacuation",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Go-Bag Contents",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Emergency Contacts",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Medication Management - Mobile",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "Communication Plan",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G9",
+      "label": "Legal Documentation",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "disaster_special_needs_continuity_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

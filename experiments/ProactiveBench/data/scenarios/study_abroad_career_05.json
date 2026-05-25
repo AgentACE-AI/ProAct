@@ -1,0 +1,458 @@
+{
+  "scenario_id": "study_abroad_career_05",
+  "domain": "study_abroad",
+  "description": "A student is planning a 4-year path from a Bachelor's in Singapore to a PhD in the US. They need to track research projects, faculty relationships, and publication goals over several years to ensure they are competitive for top-tier graduate schools.",
+  "user_profile": {
+    "persona": "19-year-old freshman, highly strategic planner",
+    "context": "Starting their first year, wants to build a portfolio that 'future-proofs' their PhD application",
+    "communication_style": "Visionary, likes to connect current actions to 5-year goals"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "academics",
+      "fact": "Alex Tan is a first-year undergraduate student pursuing a Bachelor of Science in Computational Neuroscience at Meridian University of Singapore (MUS)."
+    },
+    {
+      "id": "F02",
+      "category": "academics",
+      "fact": "To be eligible for the NeuroAI Lab, Alex must complete CS2109: Introduction to AI with a grade of A- or better by the end of Year 1, Semester 2."
+    },
+    {
+      "id": "F03",
+      "category": "academics",
+      "fact": "Alex's target cumulative GPA to remain competitive for top-5 US PhD programs is 4.8 out of 5.0."
+    },
+    {
+      "id": "F04",
+      "category": "academics",
+      "fact": "Alex has planned to take BN3301: Advanced Neural Data Analysis in Year 3, Semester 1, taught by Dr. Kenji Tanaka."
+    },
+    {
+      "id": "F05",
+      "category": "academics",
+      "fact": "Alex Tan's assigned freshman academic advisor is Dr. Priya Sharma, whose office is located at MUS Science Tower 2, Room 04-112."
+    },
+    {
+      "id": "F06",
+      "category": "research",
+      "fact": "In his second semester, Alex plans to join Project 'CerebroSim,' which focuses on simulating cortical column activity using Python and the Brian 2 simulator."
+    },
+    {
+      "id": "F07",
+      "category": "research",
+      "fact": "Project 'CerebroSim' is supervised by Dr. Lena Petrova in the NeuroAI Lab at MUS."
+    },
+    {
+      "id": "F08",
+      "category": "research",
+      "fact": "Alex's primary goal for his first six months on Project 'CerebroSim' is to complete a literature review of 50 key papers on neural simulation, managed in a shared Zotero library."
+    },
+    {
+      "id": "F09",
+      "category": "research",
+      "fact": "For his third year, Alex is targeting a position on Project 'CogniPath' with Dr. Kenji Tanaka, which investigates reinforcement learning models of human decision-making."
+    },
+    {
+      "id": "F10",
+      "category": "research",
+      "fact": "The Git repository for Project 'CerebroSim' is hosted on the lab's private GitLab server at git.neuroai.mus.edu.sg/cerebrosim."
+    },
+    {
+      "id": "F11",
+      "category": "research",
+      "fact": "The NeuroAI Lab is located in the MUS Institute for Neurotechnology, Wing B, Level 3, with Alex's assigned workstation being B3-S12."
+    },
+    {
+      "id": "F12",
+      "category": "networking",
+      "fact": "Alex plans to email Dr. Evelyn Reed at Stanford University in August 2026 to inquire about potential research opportunities and a campus visit."
+    },
+    {
+      "id": "F13",
+      "category": "networking",
+      "fact": "The NeuroAI Lab holds its weekly progress meetings every Friday from 3:00 PM to 4:30 PM SGT in meeting room IN-03-MR5."
+    },
+    {
+      "id": "F14",
+      "category": "networking",
+      "fact": "Alex aims to attend the CogSci 2025 conference in Sydney, Australia to present a poster on his initial findings from Project 'CerebroSim'."
+    },
+    {
+      "id": "F15",
+      "category": "networking",
+      "fact": "In his first meeting with Dr. Petrova, Alex will ask, 'What are the key unsolved challenges in simulating synaptic plasticity that this lab aims to address in the next 3 years?'"
+    },
+    {
+      "id": "F16",
+      "category": "publications",
+      "fact": "The target venue for Alex's first co-authored paper from Project 'CerebroSim' is the main track of the NeurIPS 2026 conference."
+    },
+    {
+      "id": "F17",
+      "category": "publications",
+      "fact": "The internal deadline to submit a full draft of the NeurIPS 2026 paper to Dr. Petrova for review is March 15, 2026."
+    },
+    {
+      "id": "F18",
+      "category": "publications",
+      "fact": "Alex's aspirational goal for his final year project is a first-author publication in the 'Journal of Computational Neuroscience'."
+    },
+    {
+      "id": "F19",
+      "category": "application_planning",
+      "fact": "Alex has scheduled to take the GRE General Test on June 30, 2026, to ensure scores are available well before application deadlines."
+    },
+    {
+      "id": "F20",
+      "category": "application_planning",
+      "fact": "Alex's list of potential recommenders for his PhD applications includes Dr. Lena Petrova, Dr. Kenji Tanaka, and his future Final Year Project supervisor."
+    },
+    {
+      "id": "F21",
+      "category": "application_planning",
+      "fact": "The application deadline for the Carnegie Mellon University (CMU) Neuroscience PhD program is December 1, 2026, at 11:59 PM EST."
+    },
+    {
+      "id": "F22",
+      "category": "application_planning",
+      "fact": "Alex tracks all PhD application components, deadlines, and faculty contacts on a Notion page located at the private URL notion.so/alextan/phd-app-tracker-2027."
+    },
+    {
+      "id": "F23",
+      "category": "application_planning",
+      "fact": "Stanford University's Computer Science department requires a minimum TOEFL iBT score of 100 for PhD applicants."
+    },
+    {
+      "id": "F24",
+      "category": "finance",
+      "fact": "Alex plans to apply for the A*STAR National Science Scholarship (NSS) in his second year, which funds PhD studies abroad for Singaporean citizens."
+    },
+    {
+      "id": "F25",
+      "category": "finance",
+      "fact": "The estimated application fee for the PhD program at Stanford University is $125 USD, which Alex has budgeted for in his application plan."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who is my freshman academic advisor and where is their office?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Advising & First Steps",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the eligibility requirements for the NeuroAI Lab, especially the course and grade threshold I need to hit by the end of Year 1?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the academic advisor, a strategic student may next ask about the concrete eligibility milestone for a research path they are considering, such as the NeuroAI Lab.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Advising & First Steps",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "If I pursue the NeuroAI path, which early research project is currently on my plan and who would supervise it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After clarifying the eligibility milestone for the NeuroAI path, a strategic student could naturally look ahead to the first planned project and supervisor in that area.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Research Project - CerebroSim",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "If I join the NeuroAI Lab, where would I be based and what workstation is currently assigned to me?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G11",
+      "reveal_group_label": "Lab Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is my primary goal for the first six months on Project 'CerebroSim'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After identifying the project, understanding the initial task and deliverables is a primary concern for a planner.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Research Project - CerebroSim",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "Is there an existing codebase for Project 'CerebroSim', and where is it hosted?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After identifying the early NeuroAI project and supervisor, a technically minded student may next ask whether an existing codebase already exists and where it is hosted.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Project Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "When and where are the weekly progress meetings for the NeuroAI Lab?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Lab Meetings",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What third-year project am I targeting and who is the professor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Long-Term Research Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Which course taught by Dr. Kenji Tanaka do I plan to take, and when?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: After identifying a target professor for a future project, a strategic planner would want to know about courses they can take with that professor to build rapport.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Long-Term Research Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the target conference for my first paper from 'CerebroSim' and what is the internal draft deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After understanding the initial work on Project CerebroSim, the user's long-term planning would shift to the ultimate output: the publication venue and its associated deadlines.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Publication Goals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is my aspirational goal for a first-author publication for my final year project?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Publication Goals",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "When have I scheduled my GRE General Test?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Application Timeline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What application deadline do I have on file for the CMU Neuroscience PhD program?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Application Details - CMU",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What TOEFL minimum and application fee have I noted for Stanford's CS PhD application?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Application Details - Stanford",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What scholarship do I plan to apply for in my second year to fund my PhD?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Financial Planning",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Advising & First Steps",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "First Research Project - CerebroSim",
+      "member_need_ids": [
+        "N3",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Project Logistics",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Lab Meetings",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Long-Term Research Plan",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Publication Goals",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Application Timeline",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Application Details - CMU",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Application Details - Stanford",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Financial Planning",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G11",
+      "label": "Lab Logistics",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "study_abroad_career_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "scenario_id": "health_lifestyle_adherence_04",
+  "domain": "health_management",
+  "description": "A patient keeps abandoning diet and exercise plans because frequent work travel disrupts routines. They need a realistic fallback system for inconsistent weeks rather than an idealized health schedule.",
+  "user_profile": {
+    "persona": "35-year-old regional sales manager who spends half the month on the road",
+    "context": "Frustrated that every attempt at 'starting fresh' collapses during travel weeks",
+    "communication_style": "Blunt and practical, dislikes unrealistic wellness language"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "personal_profile",
+      "fact": "The patient, Alex Miller (DOB: 1989-05-12), is a 35-year-old Regional Sales Manager for the fictional company 'Apex Industrial Solutions'."
+    },
+    {
+      "id": "F02",
+      "category": "personal_profile",
+      "fact": "Alex's work schedule requires an average of 15 travel days per month, typically driving to client sites within a 300-mile radius."
+    },
+    {
+      "id": "F03",
+      "category": "health_goal",
+      "fact": "The primary objective is to maintain a stable weight between 190-195 lbs by establishing a consistent health baseline, rather than pursuing aggressive weight loss."
+    },
+    {
+      "id": "F04",
+      "category": "health_goal",
+      "fact": "A secondary clinical goal is to lower fasting blood glucose from a pre-diabetic level of 105 mg/dL to a target of less than 100 mg/dL within 6 months."
+    },
+    {
+      "id": "F05",
+      "category": "support_system",
+      "fact": "Alex's primary care physician is Dr. Evelyn Reed at the Crestwood Medical Group, reachable via the 'MyChart' portal using patient ID AM51289."
+    },
+    {
+      "id": "F06",
+      "category": "support_system",
+      "fact": "Alex has a standing bi-weekly 30-minute virtual check-in with nutritionist Mark Chen, scheduled for every other Tuesday at 8:00 AM EST."
+    },
+    {
+      "id": "F07",
+      "category": "monitoring",
+      "fact": "Alex is required to log body weight every Monday morning before breakfast using a 'Renpho Health' app-connected smart scale."
+    },
+    {
+      "id": "F08",
+      "category": "monitoring",
+      "fact": "A follow-up Hemoglobin A1c blood test is scheduled for October 15, 2024, at the Quest Diagnostics lab on 123 Main Street, Anytown."
+    },
+    {
+      "id": "F09",
+      "category": "psychological_strategy",
+      "fact": "The plan's core principle is 'Consistency over Intensity,' allowing for lower-effort fallback routines during travel weeks without guilt."
+    },
+    {
+      "id": "F10",
+      "category": "psychological_strategy",
+      "fact": "A missed workout or imperfect meal is not considered a failure; the plan is designed to be resumed the following day without compensatory 'make-up' behaviors."
+    },
+    {
+      "id": "F11",
+      "category": "diet_home",
+      "fact": "The at-home daily caloric target is approximately 2,200 kcal with a macronutrient split of 40% carbohydrates, 30% protein, and 30% fat."
+    },
+    {
+      "id": "F12",
+      "category": "diet_home",
+      "fact": "The at-home meal prep routine involves cooking three days' worth of lunches (e.g., 6oz grilled chicken, 1 cup quinoa, 1.5 cups roasted broccoli) every Sunday evening."
+    },
+    {
+      "id": "F13",
+      "category": "diet_travel",
+      "fact": "The travel day caloric target is set to maintenance at approximately 2,400 kcal to reduce decision fatigue and prevent a restrictive mindset on the road."
+    },
+    {
+      "id": "F14",
+      "category": "diet_travel",
+      "fact": "The 'Travel Food Rule of 3' is: 1) drink one 1-liter bottle of water before the first meal, 2) one meal per day must be a grocery store pre-made salad kit, 3) consume no more than two restaurant meals per day."
+    },
+    {
+      "id": "F15",
+      "category": "diet_travel",
+      "fact": "A pre-approved list of 'safe' fast-food options includes the Chick-fil-A 'Grilled Chicken Cool Wrap' (350 kcal) and the Subway 'Steak & Cheese Protein Bowl' (410 kcal)."
+    },
+    {
+      "id": "F16",
+      "category": "diet_travel",
+      "fact": "Before each trip, Alex must pack a 'travel snack kit' containing three Quest protein bars, two 1-ounce packs of almonds, and two apples."
+    },
+    {
+      "id": "F17",
+      "category": "exercise_home",
+      "fact": "The at-home exercise plan is strength training at a 'Planet Fitness' gym on Monday, Wednesday, and Friday for 45 minutes, following the 'StrongLifts 5x5' program."
+    },
+    {
+      "id": "F18",
+      "category": "exercise_home",
+      "fact": "On Saturdays, the at-home plan includes 30 minutes of moderate-intensity cardio, such as running at a 5.5 mph pace on a treadmill."
+    },
+    {
+      "id": "F19",
+      "category": "exercise_travel",
+      "fact": "The fallback travel exercise routine is a 15-minute, in-room bodyweight circuit: 3 sets of 15 bodyweight squats, 10 push-ups, and a 30-second plank."
+    },
+    {
+      "id": "F20",
+      "category": "exercise_travel",
+      "fact": "The minimum travel exercise goal is to complete the 15-minute fallback routine three times per full travel week, preferably on non-consecutive days."
+    },
+    {
+      "id": "F21",
+      "category": "exercise_travel",
+      "fact": "If a hotel has a gym, the preferred travel workout is 20 minutes on a treadmill set to a 10% incline and a speed of 3.5 mph."
+    },
+    {
+      "id": "F22",
+      "category": "monitoring",
+      "fact": "Alex uses the 'Strava' mobile app to log all workouts, both at home and during travel, and shares the activity feed with nutritionist Mark Chen."
+    },
+    {
+      "id": "F23",
+      "category": "emergency_plan",
+      "fact": "If Alex experiences symptoms of hypoglycemia (e.g., shakiness, dizziness) post-workout, the protocol is to immediately consume one packet of 'Clif Bloks' energy chews (24g carbs)."
+    },
+    {
+      "id": "F24",
+      "category": "support_system",
+      "fact": "Alex's partner, Sarah Jenkins, has agreed to be the 'accountability partner' for ensuring the travel snack kit is restocked before each departure."
+    },
+    {
+      "id": "F25",
+      "category": "lifestyle",
+      "fact": "To improve sleep quality during travel, Alex is instructed to pack an eye mask and earplugs and set the hotel room thermostat to 68°F (20°C)."
+    },
+    {
+        "id": "F26",
+        "category": "exercise_travel",
+        "fact": "During travel weeks, the fallback exercise plan is to replace gym-based strength sessions with a 15-minute in-room bodyweight routine consisting of 3 sets of 15 squats, 10 push-ups, and a 30-second plank."
+    },
+    {
+        "id": "F27",
+        "category": "exercise_travel",
+        "fact": "During inconsistent travel weeks, the minimum exercise target is to complete the fallback in-room routine three times per week on non-consecutive days, instead of following the full at-home Monday/Wednesday/Friday plus Saturday schedule."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What's the absolute minimum exercise I have to do on travel weeks, and how often?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Travel Exercise",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What's the preferred workout if my hotel has a gym?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning the fallback bodyweight routine, asking about a better option when equipment is available is a natural follow-up.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Travel Exercise",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the rules for eating when I'm on the road?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Travel Diet Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the specific pre-approved fast-food meals I can get?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After hearing the general rule about limiting restaurant meals, asking for the specific 'safe' options is a logical next question.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Travel Diet Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What items are required for my 'travel snack kit'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After discussing the rules for eating out while traveling, a user would naturally need to know about the food they should be preparing and bringing themselves.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Travel Preparation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is my at-home workout schedule, including the strength days and the cardio day?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18",
+        "F26",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Home Exercise Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What app do I use to log my travel workouts, and who can see them?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning the minimum travel exercise routine, a practical next question is where to log those travel workouts and who can view the record.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Activity Logging",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the core principle of this plan, and what happens if I miss a day?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Plan Philosophy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What are my specific target numbers for weight and fasting blood glucose?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning the minimum fallback travel routine, a practical next question is what concrete health targets this routine is meant to help maintain during inconsistent weeks.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Health Goals & Monitoring",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When and where is my follow-up Hemoglobin A1c blood test scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: Immediately after learning about the blood glucose goal, asking for the details of the test that measures it is a direct and logical follow-up.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Health Goals & Monitoring",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Travel Exercise",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Travel Diet Rules",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Travel Preparation",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Home Exercise Plan",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Activity Logging",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Plan Philosophy",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Health Goals & Monitoring",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "health_lifestyle_adherence_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

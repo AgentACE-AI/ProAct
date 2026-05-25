@@ -1,0 +1,397 @@
+{
+  "scenario_id": "vessel_predeparture_integrity_01",
+  "domain": "maritime_vessel_operations",
+  "description": "A vessel team needs to confirm that pre-departure checks, sealed compartments, navigation updates, crew readiness items, and required documents are all actually complete before sailing. All vessel names and ports are fictional.",
+  "user_profile": {
+    "persona": "45-year-old deck officer responsible for departure readiness",
+    "context": "The departure window is fixed, but the team cannot afford to discover a missing readiness item only after leaving berth",
+    "communication_style": "Checklist-driven and safety-focused, wants completion status tied to specific pre-departure categories"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "vessel_particulars",
+      "fact": "The vessel designated for departure is the MV 'Stellar Voyager', IMO Number 9876543."
+    },
+    {
+      "id": "F02",
+      "category": "voyage_details",
+      "fact": "Voyage SV-2310-AC is scheduled to depart from Berth 7, Port of Aethel, on October 26, 2023, at 18:00 UTC."
+    },
+    {
+      "id": "F03",
+      "category": "pre_departure_checks_propulsion",
+      "fact": "The main engine was tested ahead and astern at 14:15 UTC by Chief Engineer Kenji Tanaka, and the test was logged as successful."
+    },
+    {
+      "id": "F04",
+      "category": "pre_departure_checks_navigation",
+      "fact": "The primary ECDIS has been updated with the latest electronic navigation charts (ENCs) for the route to Port of Callisto, update confirmed at 11:30 UTC."
+    },
+    {
+      "id": "F05",
+      "category": "crew_readiness",
+      "fact": "The crew manifest for Voyage SV-2310-AC has been finalized with 22 crew members and submitted to port authorities via the 'SeaGate' portal."
+    },
+    {
+      "id": "F06",
+      "category": "required_documents",
+      "fact": "The Port Clearance Certificate for MV 'Stellar Voyager' was received from the Aethel Port Authority at 16:05 UTC and is stored in the ship's office safe."
+    },
+    {
+      "id": "F07",
+      "category": "sealed_compartments",
+      "fact": "All 12 watertight doors on Deck 3 were tested for remote and local operation; the check was completed and logged as 'Pass' at 15:00 UTC."
+    },
+    {
+      "id": "F08",
+      "category": "pre_departure_checks_safety",
+      "fact": "The emergency fire pump was tested and achieved a water pressure of 7.2 bar within 45 seconds, meeting the SOLAS requirement."
+    },
+    {
+      "id": "F09",
+      "category": "pre_departure_checks_navigation",
+      "fact": "The gyrocompass error was calculated to be 0.2 degrees East by celestial observation and verified against the primary GPS heading."
+    },
+    {
+      "id": "F10",
+      "category": "crew_readiness",
+      "fact": "A pre-departure safety briefing was conducted by Chief Officer Alex Chen for all on-duty personnel at 17:00 UTC on the bridge."
+    },
+    {
+      "id": "F11",
+      "category": "sealed_compartments",
+      "fact": "The forepeak ballast tank soundings confirm it is empty, with a reading of 0.0 meters, as per the departure ballast plan."
+    },
+    {
+      "id": "F12",
+      "category": "required_documents",
+      "fact": "The Certificate of Registry for the MV 'Stellar Voyager' is valid until December 31, 2025, and is physically located in the Captain's document folio."
+    },
+    {
+      "id": "F13",
+      "category": "pre_departure_checks_propulsion",
+      "fact": "The bow thruster was tested to port and starboard at 14:30 UTC, with results logged as satisfactory by the duty officer."
+    },
+    {
+      "id": "F14",
+      "category": "communication_systems",
+      "fact": "The daily GMDSS self-test for VHF/MF/HF DSC was completed at 09:00 UTC with a 'Pass' result recorded in the GMDSS logbook."
+    },
+    {
+      "id": "F15",
+      "category": "pre_departure_checks_navigation",
+      "fact": "The passage plan from Aethel to Callisto was reviewed and signed by Captain Eva Rostova at 10:00 UTC on October 26, 2023."
+    },
+    {
+      "id": "F16",
+      "category": "crew_readiness",
+      "fact": "A review of the work/rest hour records confirms all 8 members of the departing bridge and engine room teams meet the 10-hour minimum rest period in the last 24 hours."
+    },
+    {
+      "id": "F17",
+      "category": "pre_departure_checks_safety",
+      "fact": "The port-side lifeboat engine was started and run for 3 minutes at 13:00 UTC; all indicators were normal."
+    },
+    {
+      "id": "F18",
+      "category": "sealed_compartments",
+      "fact": "Visual inspection of the rubber seals on all five cargo hold hatches was completed, with no cracks or deterioration noted in the log."
+    },
+    {
+      "id": "F19",
+      "category": "pre_departure_checks_navigation",
+      "fact": "Both the X-Band and S-Band radar systems were tested and found to be fully operational, with performance monitor checks logged."
+    },
+    {
+      "id": "F20",
+      "category": "required_documents",
+      "fact": "The ship's International Ship Security Certificate (ISSC) is current and expires on June 15, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "pre_departure_checks_safety",
+      "fact": "The emergency generator auto-started successfully within 15 seconds after simulating a main power failure."
+    },
+    {
+      "id": "F22",
+      "category": "pre_departure_checks_propulsion",
+      "fact": "The fuel oil tanks for the main engine were sounded, confirming 1,250 cubic meters of VLSFO, sufficient for the planned voyage plus a 25% reserve."
+    },
+    {
+      "id": "F23",
+      "category": "crew_readiness",
+      "fact": "The medical certificate for Able Seaman David Lorca is confirmed valid through November 30, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "voyage_details",
+      "fact": "The pilot is scheduled to board the MV 'Stellar Voyager' at 17:45 UTC at the Aethel pilot station."
+    },
+    {
+      "id": "F25",
+      "category": "pre_departure_checks_safety",
+      "fact": "The vessel's steering gear was tested from the main bridge, bridge wings, and emergency steering room; changeover between systems was completed in under 30 seconds."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the scheduled departure time and pilot boarding time for the MV 'Stellar Voyager' from Port of Aethel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Departure Schedule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Confirm the status of main engine and bow thruster pre-departure tests.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Propulsion Readiness",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is the confirmed fuel oil quantity on board?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After confirming the propulsion machinery is tested, verifying sufficient fuel is the immediate next logical check.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Propulsion Readiness",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Has the passage plan been signed off and have the electronic navigation charts been updated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Navigation Systems Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the latest gyrocompass error calculation and radar system test results?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: Follows up the general navigation readiness (plan, charts) with specific equipment checks (gyro, radar).",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Navigation Systems Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the status of the watertight door and cargo hatch seal checks?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F18"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming propulsion systems are ready (G2), a safety-focused officer would shift to ensuring the vessel's structural integrity (G4).",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Compartment and Seal Integrity",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Confirm the test results for the emergency generator and emergency fire pump.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F08"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Checking passive safety systems like seals (G4) naturally leads to checking active emergency systems like generators and pumps (G5).",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Emergency Systems Checks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the result of the steering gear test?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: The steering gear is another critical emergency/safety system, making it a direct follow-up to the generator and fire pump checks.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Emergency Systems Checks",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Are all bridge and engine room team members compliant with rest hours, and has the pre-departure safety briefing been completed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Crew Readiness",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Has the Port Clearance Certificate been received from the port authority?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After confirming the crew is ready (G6), the next logical step is to verify the official administrative permission to depart (G7), which is the Port Clearance.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Required Documentation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What are the expiry dates for the ship's Certificate of Registry and International Ship Security Certificate (ISSC)?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12",
+        "F20"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: After confirming the most critical departure document, checking the validity of other key statutory certificates is a natural follow-up.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Required Documentation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What was the result of the daily GMDSS self-test?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After confirming navigation equipment status (G3), a check on the related communication systems (G8) is a logical next step for a thorough officer.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Communication Systems",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Departure Schedule",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Propulsion Readiness",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Navigation Systems Status",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Compartment and Seal Integrity",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Emergency Systems Checks",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Crew Readiness",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Required Documentation",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Communication Systems",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vessel_predeparture_integrity_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "scenario_id": "cyber_postmortem_followthrough_05",
+  "domain": "cybersecurity_incident_response",
+  "description": "After an incident has ended, the team struggles to remember which action items were fixed, deferred, reassigned, or never clearly owned, making postmortem follow-through unreliable.",
+  "user_profile": {
+    "persona": "40-year-old engineering operations lead helping security close the loop after incidents",
+    "context": "The incident response itself was strong, but the improvement work afterward is drifting",
+    "communication_style": "Ownership-focused and operational, wants commitments turned into trackable status"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Incident Details",
+      "fact": "The cybersecurity incident, identified as VEGA-2024-03-15, was declared on March 15, 2024, at 11:22 PM UTC."
+    },
+    {
+      "id": "F02",
+      "category": "Incident Details",
+      "fact": "The root cause of incident VEGA-2024-03-15 was a publicly exposed S3 bucket named 'stellaris-prod-customer-uploads'."
+    },
+    {
+      "id": "F03",
+      "category": "Incident Details",
+      "fact": "Maria Flores, Security Lead, served as the Incident Commander for VEGA-2024-03-15."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel & Ownership",
+      "fact": "Alex Chen is the Engineering Operations Lead responsible for tracking post-incident action item closure."
+    },
+    {
+      "id": "F05",
+      "category": "Personnel & Ownership",
+      "fact": "Ben Carter, a Senior SRE, is the primary owner for infrastructure-related action items from the incident."
+    },
+    {
+      "id": "F06",
+      "category": "Personnel & Ownership",
+      "fact": "Priya Sharma, a Data Engineer, was assigned action items related to data access policies."
+    },
+    {
+      "id": "F07",
+      "category": "Tooling & Documentation",
+      "fact": "All action items for incident VEGA-2024-03-15 are tracked in the Jira project 'SEC-OPS'."
+    },
+    {
+      "id": "F08",
+      "category": "Tooling & Documentation",
+      "fact": "The official postmortem document for VEGA-2024-03-15 is located in Confluence at page ID 987123."
+    },
+    {
+      "id": "F09",
+      "category": "Tooling & Documentation",
+      "fact": "Ongoing discussion for the incident follow-up occurs in the private Slack channel '#inc-vega-followup'."
+    },
+    {
+      "id": "F10",
+      "category": "Process & Governance",
+      "fact": "The postmortem meeting for VEGA-2024-03-15 was held on March 18, 2024, at 2:00 PM PST."
+    },
+    {
+      "id": "F11",
+      "category": "Process & Governance",
+      "fact": "A bi-weekly action item review meeting is scheduled on Mondays at 10:00 AM PST, chaired by Alex Chen."
+    },
+    {
+      "id": "F12",
+      "category": "Action Item Status",
+      "fact": "Jira ticket SEC-OPS-1138, 'Rotate all production AWS IAM user keys', was assigned to Ben Carter and is marked as 'DONE'."
+    },
+    {
+      "id": "F13",
+      "category": "Action Item Status",
+      "fact": "Jira ticket SEC-OPS-1139, 'Implement bucket-level public access blocks across all AWS accounts', is assigned to Ben Carter and has a status of 'IN PROGRESS'."
+    },
+    {
+      "id": "F14",
+      "category": "Action Item Status",
+      "fact": "Jira ticket SEC-OPS-1140, 'Scan all S3 buckets for PII using the Macie service', was completed on March 25, 2024."
+    },
+    {
+      "id": "F15",
+      "category": "Action Item Status",
+      "fact": "Jira ticket SEC-OPS-1141, 'Implement mandatory MFA for the 'Redshift-Admins' user group', is assigned to Priya Sharma and is currently 'BLOCKED'."
+    },
+    {
+      "id": "F16",
+      "category": "Action Item Status",
+      "fact": "The blocker for SEC-OPS-1141 is a dependency on a license upgrade for the identity provider, tracked in ticket FIN-452."
+    },
+    {
+      "id": "F17",
+      "category": "Action Item Status",
+      "fact": "Jira ticket SEC-OPS-1142, 'Refactor deployment pipeline to use IAM roles instead of static keys', has been 'DEFERRED' to Q3 2024 due to planned architectural changes."
+    },
+    {
+      "id": "F18",
+      "category": "Action Item Status",
+      "fact": "The decision to defer SEC-OPS-1142 was made by Sarah Jenkins, Director of Engineering, on March 22, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "Action Item Status",
+      "fact": "Jira ticket SEC-OPS-1143, 'Update on-call runbook for S3 bucket exposure', was initially unassigned."
+    },
+    {
+      "id": "F20",
+      "category": "Action Item Status",
+      "fact": "On March 26, 2024, Alex Chen reassigned ticket SEC-OPS-1143 from 'UNASSIGNED' to Maria Flores."
+    },
+    {
+      "id": "F21",
+      "category": "Personnel & Ownership",
+      "fact": "Sarah Jenkins must provide final approval for any action item with an estimated cost exceeding $5,000."
+    },
+    {
+      "id": "F22",
+      "category": "Tooling & Documentation",
+      "fact": "The PagerDuty service 'Production-S3-Alerts' (ID: P5X3F9A) was created as a corrective action from this incident."
+    },
+    {
+      "id": "F23",
+      "category": "Process & Governance",
+      "fact": "The company policy, 'CS-POL-004', requires all 'High' severity action items to be closed within 14 business days."
+    },
+    {
+      "id": "F24",
+      "category": "Action Item Status",
+      "fact": "SEC-OPS-1139 is classified as a 'High' severity action item with a due date of April 5, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "Process & Governance",
+      "fact": "The next executive review of open security action items is scheduled for April 15, 2024, at 9:00 AM PST."
+    },
+    {
+      "id": "F26",
+      "category": "Action Item Status",
+      "fact": "As of the current follow-through review, the only action item from incident VEGA-2024-03-15 with a status of 'IN PROGRESS' is SEC-OPS-1139, 'Implement bucket-level public access blocks across all AWS accounts'; no other incident action items are marked 'IN PROGRESS'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the identifier for the recent S3 bucket incident and where are its action items tracked?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Context & Tracking",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which action items from that incident are already completed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After establishing the incident context and tracking location, an operations lead's first priority is to understand what work is already finished.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Completed Items",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Which action items from incident VEGA-2024-03-15 are still in progress?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: The natural follow-up to reviewing completed work is to review the active work.",
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "In-Progress Items",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "For the in-progress item SEC-OPS-1139, who is the owner, what is its severity, and what is the due date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F13",
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After identifying an in-progress ticket, the user needs to know the key details of ownership and timeline to assess its status.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "In-Progress Items",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Are there any action items that are currently blocked?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing active work, the next logical step for an operations lead is to identify any impediments or blocked tasks.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Blocked Items",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Who owns the blocked ticket and what is the specific dependency?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Identifying a blocker immediately prompts the need to understand the details of the block and the owner responsible for resolving it.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Blocked Items",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What about deferred items? Has anything been pushed to a later quarter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After blocked items, deferred items represent the next category of work that is not currently progressing, which is a key concern for an ops lead.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Deferred & Unassigned Items",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Who made the decision to defer ticket SEC-OPS-1142?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: For accountability, knowing who made the decision to defer work is a critical piece of information.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Deferred & Unassigned Items",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "I recall one ticket was unassigned. What was it and who owns it now?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: Continuing the theme of ownership and accountability, clarifying the status of previously unowned work is a logical next step.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Deferred & Unassigned Items",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N10",
+      "description": "What is the company policy for closing high-severity action items?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning the due date for a high-severity ticket, the user will want to know the governing policy to ensure compliance. This is an auditable proactive target.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Governing Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who was the incident commander for VEGA-2024-03-15?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the incident identifier and tracking location are established, a reasonable next clarification is who led the incident overall, especially before reviewing ownership and follow-through details.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Personnel",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the schedule for the bi-weekly action item review meeting that I chair?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing the ownership, severity, and due date of the main in-progress action item, an operations lead would naturally ask about the standing review meeting cadence used to track these open items.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Meeting Cadence",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "When is the next executive review of open security items?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "Intra-group: After learning about their own review meeting, the user would want to know about the higher-level executive review they need to prepare for.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Meeting Cadence",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "Where can I find the official postmortem document for this incident?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After identifying the Incident Commander, a natural follow-up is to ask for the official documentation they produced. This is an auditable proactive target.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Documentation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Incident Context & Tracking",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Completed Items",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "In-Progress Items",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Blocked Items",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Deferred & Unassigned Items",
+      "member_need_ids": [
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Governing Policy",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Personnel",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Meeting Cadence",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G9",
+      "label": "Documentation",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "cyber_postmortem_followthrough_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

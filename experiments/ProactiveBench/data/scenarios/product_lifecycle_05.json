@@ -1,0 +1,458 @@
+{
+  "scenario_id": "product_lifecycle_05",
+  "domain": "product_analysis",
+  "description": "A portfolio manager is tracking the performance of 5 different product lines over 5 years. They need to proactively identify which products are entering the 'Decline' phase and suggest pivot strategies or sunsetting based on long-term usage data and market shifts.",
+  "user_profile": {
+    "persona": "50-year-old VP of Product",
+    "context": "Annual strategic review of the entire product portfolio",
+    "communication_style": "Strategic, looks at the 'big picture' and historical trends"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "product_portfolio",
+      "fact": "Innovatech Solutions Inc. manages five core product lines: ConnectSphere, DataWeave, SecureVault, FlowBuilder, and PixelPerfect."
+    },
+    {
+      "id": "F02",
+      "category": "product_portfolio",
+      "fact": "ConnectSphere, a communication platform, is the oldest product in the portfolio, launched on July 15, 2018."
+    },
+    {
+      "id": "F03",
+      "category": "product_portfolio",
+      "fact": "FlowBuilder, a workflow automation tool, is the newest product, launched on February 1, 2022."
+    },
+    {
+      "id": "F04",
+      "category": "product_portfolio",
+      "fact": "SecureVault is a cybersecurity suite targeted at financial services companies with 500-5000 employees."
+    },
+    {
+      "id": "F05",
+      "category": "product_portfolio",
+      "fact": "The PixelPerfect design suite was acquired from 'Designlytics Corp.' for $12 million in Q2 2019."
+    },
+    {
+      "id": "F06",
+      "category": "performance_metrics",
+      "fact": "ConnectSphere's Monthly Active Users (MAU) peaked at 450,000 in Q2 2020 and have since declined to 95,000 as of Q4 2023."
+    },
+    {
+      "id": "F07",
+      "category": "performance_metrics",
+      "fact": "DataWeave's annual customer churn rate increased from 4% in 2022 to 9.5% in 2023."
+    },
+    {
+      "id": "F08",
+      "category": "performance_metrics",
+      "fact": "SecureVault's Customer Lifetime Value (CLV) has consistently grown, reaching $85,000 in FY 2023, up from $72,000 in FY 2022."
+    },
+    {
+      "id": "F09",
+      "category": "performance_metrics",
+      "fact": "PixelPerfect's Net Promoter Score (NPS) dropped from 55 in January 2022 to 32 in December 2023."
+    },
+    {
+      "id": "F10",
+      "category": "performance_metrics",
+      "fact": "FlowBuilder has the lowest Customer Acquisition Cost (CAC) in the portfolio at $118 per customer for Q4 2023."
+    },
+    {
+      "id": "F11",
+      "category": "performance_metrics",
+      "fact": "ConnectSphere's annual revenue for FY 2023 was $2.5M, a 38% decrease from its $4.0M revenue in FY 2022."
+    },
+    {
+      "id": "F12",
+      "category": "performance_metrics",
+      "fact": "The average number of API calls per month for DataWeave customers has decreased by 25% over the last four quarters."
+    },
+    {
+      "id": "F13",
+      "category": "performance_metrics",
+      "fact": "SecureVault successfully acquired 3 new enterprise clients in Q4 2023, with a total contract value of $1.1M."
+    },
+    {
+      "id": "F14",
+      "category": "market_context",
+      "fact": "A major competitor, 'Synapse Analytics,' launched a rival product to DataWeave in Q1 2023, capturing an estimated 5% market share within 9 months."
+    },
+    {
+      "id": "F15",
+      "category": "market_context",
+      "fact": "The global market for team communication tools, ConnectSphere's primary market, became saturated with three major new entrants in 2022."
+    },
+    {
+      "id": "F16",
+      "category": "market_context",
+      "fact": "A Forrester Wave report from October 2023 on design tools highlighted AI-assisted features as a key differentiator, a capability PixelPerfect currently lacks."
+    },
+    {
+      "id": "F17",
+      "category": "market_context",
+      "fact": "The market for enterprise cybersecurity solutions is projected by Gartner to grow at a Compound Annual Growth Rate (CAGR) of 14% from 2024 to 2028."
+    },
+    {
+      "id": "F18",
+      "category": "stakeholder_info",
+      "fact": "Eleanor Vance holds the title of VP of Product and is responsible for the overall portfolio strategy."
+    },
+    {
+      "id": "F19",
+      "category": "stakeholder_info",
+      "fact": "Marcus Thorne is the Senior Portfolio Manager who prepares the Quarterly Product Performance Review (QPPR) deck."
+    },
+    {
+      "id": "F20",
+      "category": "stakeholder_info",
+      "fact": "The product manager for ConnectSphere, David Chen, resigned on November 10, 2023; the position is currently open."
+    },
+    {
+      "id": "F21",
+      "category": "reporting_tools",
+      "fact": "The live 'Innovatech Portfolio Dashboard' is hosted on a Tableau Server at the URL `https://bi.innovatech.internal/dashboards/portfolio-overview`."
+    },
+    {
+      "id": "F22",
+      "category": "reporting_tools",
+      "fact": "Raw usage data for all products is stored in a Snowflake data warehouse, schema `PRODUCT_ANALYTICS_PROD`."
+    },
+    {
+      "id": "F23",
+      "category": "reporting_tools",
+      "fact": "The annual strategic review presentation is stored on the shared drive at `//share/Exec/Strategy/FY2024_Annual_Review_v3.pptx`."
+    },
+    {
+      "id": "F24",
+      "category": "strategic_initiatives",
+      "fact": "A proposal to sunset the ConnectSphere product line by Q3 2024 was formally submitted by Marcus Thorne on December 5, 2023."
+    },
+    {
+      "id": "F25",
+      "category": "strategic_initiatives",
+      "fact": "Project 'Phoenix' was initiated in November 2023 to explore integrating DataWeave's analytics engine into the FlowBuilder product."
+    },
+    {
+      "id": "F26",
+      "category": "strategic_initiatives",
+      "fact": "The R&D budget allocated to PixelPerfect for FY 2024 has been reduced by 30% to $700,000."
+    },
+    {
+      "id": "F28",
+      "category": "performance_metrics",
+      "fact": "ConnectSphere's annual revenue fell by $1.5M from FY 2022 to FY 2023, dropping from $4.0M to $2.5M."
+    },
+    {
+      "id": "F29",
+      "category": "performance_metrics",
+      "fact": "PixelPerfect's Net Promoter Score declined by 23 points between January 2022 and December 2023, moving from 55 to 32."
+    },
+    {
+      "id": "F30",
+      "category": "strategic_initiatives",
+      "fact": "Project 'Phoenix' was launched in November 2023 as the strategic initiative for DataWeave, focused on integrating DataWeave's analytics engine into FlowBuilder."
+    },
+    {
+      "id": "F31",
+      "category": "performance_metrics",
+      "fact": "SecureVault's Customer Lifetime Value increased by $13,000 from FY 2022 to FY 2023, rising from $72,000 to $85,000."
+    },
+    {
+      "id": "F32",
+      "category": "strategic_initiatives",
+      "fact": "PixelPerfect's FY 2024 R&D budget is $700,000 after a 30% cut from the prior $1,000,000 allocation."
+    },
+    {
+      "id": "F27",
+      "category": "product_portfolio",
+      "fact": "The current annual maintenance and support cost for the ConnectSphere infrastructure is $480,000."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Let's start with the big picture on underperforming assets. What were ConnectSphere's annual revenues in FY 2022 and FY 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "ConnectSphere Performance Decline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Show me the user engagement trend for ConnectSphere. What was its peak Monthly Active User count and what is it as of Q4 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After seeing a significant revenue drop for ConnectSphere, the user will naturally want to investigate the underlying usage metrics.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "ConnectSphere Performance Decline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was DataWeave's annual customer churn rate in 2022 versus 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "DataWeave Performance Decline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Is usage intensity also down for DataWeave? By how much has the average number of API calls per customer decreased over the last year?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Following up on increased customer churn for DataWeave, the user will likely probe deeper into the engagement levels of the remaining customers.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "DataWeave Performance Decline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Now, let's look at PixelPerfect. What were its Net Promoter Score values in January 2022 and December 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "PixelPerfect Performance Decline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "To get a baseline, what was SecureVault's Customer Lifetime Value in FY 2022 and FY 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "SecureVault Performance Growth",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What was SecureVault's new enterprise contract value in Q4 2023?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "SecureVault Performance Growth",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Given ConnectSphere's declining performance, what is its current annual maintenance and support cost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After establishing ConnectSphere's steep decline in revenue and usage, a strategic leader's next question is about the associated costs to assess its overall financial drain.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "ConnectSphere Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "With those numbers in mind, has a formal proposal been made to sunset the ConnectSphere product line?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the high cost associated with the underperforming ConnectSphere, they will want to know what strategic actions are on the table, such as sunsetting.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "ConnectSphere Strategic Proposal",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What strategic initiative involving DataWeave is currently underway, and what is it focused on?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F30"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing DataWeave's negative churn and usage metrics, the user will naturally ask about the plan or project in place to mitigate these problems.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "DataWeave Strategic Response",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What did the latest Forrester Wave identify as a key differentiator in design tools, and does PixelPerfect have it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "PixelPerfect Market Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is PixelPerfect's FY2024 R&D budget after the reduction?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26",
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "PixelPerfect Budgetary Action",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Regarding the ConnectSphere sunset proposal, what is the current product manager staffing status for that product line?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning about a formal proposal to sunset ConnectSphere, the user might ask about the product's leadership to gauge the feasibility and internal momentum behind the proposal.",
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "ConnectSphere Staffing Detail",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "ConnectSphere Performance Decline",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "DataWeave Performance Decline",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "PixelPerfect Performance Decline",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "SecureVault Performance Growth",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "ConnectSphere Financials",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "ConnectSphere Strategic Proposal",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "DataWeave Strategic Response",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "PixelPerfect Market Context",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "PixelPerfect Budgetary Action",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "ConnectSphere Staffing Detail",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "product_lifecycle_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

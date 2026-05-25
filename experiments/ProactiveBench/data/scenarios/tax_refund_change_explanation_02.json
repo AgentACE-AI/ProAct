@@ -1,0 +1,474 @@
+{
+  "scenario_id": "tax_refund_change_explanation_02",
+  "domain": "tax_filing_support",
+  "description": "A filer notices that this year's expected refund or amount due looks very different from last year's and wants to understand which changes in income, withholding, deductions, or timing most likely explain the difference.",
+  "user_profile": {
+    "persona": "41-year-old salaried employee who usually expects taxes to be stable year over year",
+    "context": "The preliminary numbers look surprising enough that the filer does not trust them yet",
+    "communication_style": "Comparison-focused and skeptical, prefers explanations anchored in concrete year-over-year changes"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "User_Profile",
+      "fact": "The primary filer is Alex Chen, a 41-year-old software engineer."
+    },
+    {
+      "id": "F02",
+      "category": "User_Profile",
+      "fact": "Alex Chen's filing status for both 2022 and 2023 is Married Filing Jointly with his spouse, Maria Garcia."
+    },
+    {
+      "id": "F03",
+      "category": "User_Profile",
+      "fact": "Alex Chen's primary employer is Innovate Dynamics Inc., located at 123 Tech Parkway, Silicon Valley, CA 94043."
+    },
+    {
+      "id": "F04",
+      "category": "Tax_Year_2022_Summary",
+      "fact": "For tax year 2022, Alex and Maria's Adjusted Gross Income (AGI) was $185,000."
+    },
+    {
+      "id": "F05",
+      "category": "Tax_Year_2022_Summary",
+      "fact": "Their total federal income tax withheld in 2022 was $26,500."
+    },
+    {
+      "id": "F06",
+      "category": "Tax_Year_2022_Summary",
+      "fact": "In 2022, they claimed itemized deductions totaling $28,700."
+    },
+    {
+      "id": "F07",
+      "category": "Tax_Year_2022_Summary",
+      "fact": "Their total federal tax liability for 2022 was $24,850."
+    },
+    {
+      "id": "F08",
+      "category": "Tax_Year_2022_Summary",
+      "fact": "For tax year 2022, Alex and Maria received a federal tax refund of $1,650."
+    },
+    {
+      "id": "F09",
+      "category": "Tax_Year_2023_Summary",
+      "fact": "The preliminary Adjusted Gross Income (AGI) calculated for tax year 2023 is $215,500."
+    },
+    {
+      "id": "F10",
+      "category": "Tax_Year_2023_Summary",
+      "fact": "The preliminary total federal income tax withheld for 2023 is $27,100."
+    },
+    {
+      "id": "F11",
+      "category": "Tax_Year_2023_Summary",
+      "fact": "For 2023, they are taking the standard deduction for married couples, which is $27,700."
+    },
+    {
+      "id": "F12",
+      "category": "Tax_Year_2023_Summary",
+      "fact": "The preliminary total federal tax liability for 2023 is calculated to be $31,400."
+    },
+    {
+      "id": "F13",
+      "category": "Tax_Year_2023_Summary",
+      "fact": "The preliminary tax calculation for 2023 shows a federal amount due of $4,300."
+    },
+    {
+      "id": "F14",
+      "category": "Income_Changes_2023",
+      "fact": "Alex Chen's salary from Innovate Dynamics Inc. increased from $130,000 in 2022 to $138,000 in 2023."
+    },
+    {
+      "id": "F15",
+      "category": "Income_Changes_2023",
+      "fact": "Alex Chen received a one-time performance bonus of $10,000 in March 2023, from which 22% ($2,200) was withheld for federal taxes."
+    },
+    {
+      "id": "F16",
+      "category": "Income_Changes_2023",
+      "fact": "On September 15, 2023, Alex sold 100 shares of 'Global Tech Corp' stock, resulting in a long-term capital gain of $5,000."
+    },
+    {
+      "id": "F17",
+      "category": "Income_Changes_2023",
+      "fact": "Maria Garcia began a new job as a curriculum director at BrightHorizons Learning Center in 2023, with a salary of $62,500."
+    },
+    {
+      "id": "F18",
+      "category": "Withholding_Changes_2023",
+      "fact": "Alex Chen's Form W-4 on file at Innovate Dynamics Inc. has not been updated since February 10, 2021."
+    },
+    {
+      "id": "F19",
+      "category": "Withholding_Changes_2023",
+      "fact": "The total federal withholding from Alex's paychecks in 2023 was $18,500, which is 11.9% of his gross pay of $148,000 (salary + bonus)."
+    },
+    {
+      "id": "F20",
+      "category": "Withholding_Changes_2023",
+      "fact": "Maria Garcia's W-4 at her new job was filled out as 'Married Filing Jointly' with no adjustments, resulting in a lower withholding rate."
+    },
+    {
+      "id": "F21",
+      "category": "Deduction_Changes_2023",
+      "fact": "In 2022, they paid $14,000 in state income and property taxes, but were limited to the $10,000 SALT deduction cap."
+    },
+    {
+      "id": "F22",
+      "category": "Deduction_Changes_2023",
+      "fact": "In 2023, their total state and local taxes paid were $15,200, which is again limited to the $10,000 SALT deduction cap."
+    },
+    {
+      "id": "F23",
+      "category": "Deduction_Changes_2023",
+      "fact": "Their mortgage interest deduction decreased from $11,500 in 2022 to $10,800 in 2023."
+    },
+    {
+      "id": "F24",
+      "category": "Deduction_Changes_2023",
+      "fact": "In 2022, they had deductible medical expenses of $7,200 after meeting the AGI threshold."
+    },
+    {
+      "id": "F25",
+      "category": "Deduction_Changes_2023",
+      "fact": "In 2023, their total medical expenses were only $3,500, which did not exceed the 7.5% of AGI threshold ($16,162.50), making them non-deductible."
+    },
+    {
+      "id": "F26",
+      "category": "Credit_Changes_2023",
+      "fact": "Their oldest child, Leo Chen, turned 17 on May 1, 2023, making him ineligible for the $2,000 Child Tax Credit."
+    },
+    {
+      "id": "F27",
+      "category": "Credit_Changes_2023",
+      "fact": "Their younger child, Sofia Chen, is 14 and still qualifies for the $2,000 Child Tax Credit."
+    },
+    {
+      "id": "F28",
+      "category": "Credit_Changes_2023",
+      "fact": "They did not purchase an electric vehicle or make any energy-efficient home improvements in 2023."
+    },
+    {
+      "id": "F29",
+      "category": "Software_Interaction",
+      "fact": "Alex is using the 'TaxWise Pro' desktop software, version 2023.4.1."
+    },
+    {
+      "id": "F30",
+      "category": "Software_Interaction",
+      "fact": "The 'TaxWise Pro' software displayed a high-priority alert (ID: YOY-DELTA-01) stating: 'Your tax outcome has changed by more than $5,000 compared to last year. Review major changes.'"
+    },
+    {
+      "id": "F31",
+      "category": "Analysis",
+      "fact": "Year over year, Alex and Maria's federal tax result swung by $5,950, changing from a $1,650 refund for 2022 to a preliminary $4,300 amount due for 2023."
+    },
+    {
+      "id": "F32",
+      "category": "Analysis",
+      "fact": "The largest year-over-year drivers identified in the return are higher income, withholding that did not keep pace, a shift from $28,700 of itemized deductions in 2022 to the $27,700 standard deduction in 2023, and the loss of one $2,000 Child Tax Credit."
+    },
+    {
+      "id": "F33",
+      "category": "Software_Interaction",
+      "fact": "TaxWise Pro's year-over-year review ties the alert to these specific changes: Alex's raise and $10,000 bonus, Maria's new $62,500 salary, a $5,000 long-term capital gain, only a modest increase in total withholding, no deductible 2023 medical expenses, and Leo aging out of the Child Tax Credit."
+    },
+    {
+      "id": "F34",
+      "category": "Analysis",
+      "fact": "Another key reason for the change is that total federal tax liability rose from $24,850 in 2022 to $31,400 in 2023, while total withholding rose only from $26,500 to $27,100."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was my federal tax result in 2022, what is the current preliminary federal tax result for 2023, and how large is the year-over-year swing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F13",
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Outcome Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What were my total federal tax liabilities for 2022 and 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F12"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After seeing the final outcome (refund/due), the user will want to see the underlying tax liability that led to it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Outcome Comparison",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was my Adjusted Gross Income (AGI) for 2022 versus 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After understanding the high-level liability difference, the most significant contributing factor to investigate is the top-line income (AGI).",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Income Deep Dive",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What were the specific changes to my salary and bonus in 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After seeing the large increase in AGI, the user will want to break it down into its primary components, starting with their own employment income.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Income Deep Dive",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What was Maria's salary in 2023 from her new job?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After reviewing Alex's 2023 salary and bonus changes, the next direct step in the income comparison is to account for Maria's 2023 salary from her new job.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Income Deep Dive",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "Did I have any long-term capital gains from selling stock in 2023?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once the main sources of employment income are understood, the system can proactively surface other, less common income types that contributed to the AGI change.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Other Income Sources",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What was my total federal tax withheld in 2022 versus 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F10"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After seeing that income increased significantly, the user's next logical concern is whether their tax withholding kept pace with the higher income.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Withholding Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "When was the last time my W-4 form was updated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Seeing that withholding did not increase proportionally to income, the user will question the underlying reason, which is often an outdated W-4.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "W-4 Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What was my deduction method and amount for 2022 versus 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F11"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After income and liability, the third major pillar of the tax calculation is deductions. The user will want to compare these year-over-year.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Deduction Changes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What happened to my medical expense deduction in 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After seeing the switch from itemized to standard deductions, the user will want to know which specific itemized deductions were lost, with medical expenses being a significant one.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Deduction Changes",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What was the change in my mortgage interest deduction between the two years?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Similar to medical expenses, this is another key itemized deduction the user would want to check after seeing the switch to the standard deduction.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Deduction Changes",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N12",
+      "description": "Did my oldest child become ineligible for the Child Tax Credit in 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Tax credits directly reduce tax liability, so after seeing the liability increase, the user will investigate if any major credits were lost.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Credit Changes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Which of my children still qualifies for the Child Tax Credit?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "A direct follow-up to confirm the status of the remaining children after learning one became ineligible.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Credit Changes",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "What exact high-priority year-over-year change alert did the tax software display?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30",
+        "F32",
+        "F33",
+        "F34"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Software Interaction",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Outcome Comparison",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Income Deep Dive",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Other Income Sources",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Withholding Analysis",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "W-4 Status",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Deduction Changes",
+      "member_need_ids": [
+        "N9",
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Credit Changes",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Software Interaction",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "tax_refund_change_explanation_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

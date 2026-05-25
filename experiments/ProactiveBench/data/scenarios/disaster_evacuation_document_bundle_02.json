@@ -1,0 +1,411 @@
+{
+  "scenario_id": "disaster_evacuation_document_bundle_02",
+  "domain": "disaster_preparedness",
+  "description": "A family needs to assemble the exact documents, medication lists, keys, backup contacts, and essential records that must leave with them during an evacuation rather than be remembered in the moment.",
+  "user_profile": {
+    "persona": "44-year-old family organizer who handles most household paperwork",
+    "context": "Everyone agrees the documents matter, but they are currently split across drawers, devices, and folders",
+    "communication_style": "Organized and risk-aware, wants a portable packet with no critical omissions"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "personal_identification",
+      "fact": "Sarah Miller's passport number is M87654321, expiring on June 12, 2028."
+    },
+    {
+      "id": "F02",
+      "category": "personal_identification",
+      "fact": "David Miller's driver's license number is D54321098 (State of Northwood), expiring on August 30, 2026."
+    },
+    {
+      "id": "F03",
+      "category": "personal_identification",
+      "fact": "Emily Miller's original birth certificate is file number 123-2012-45678 from Oak Creek County."
+    },
+    {
+      "id": "F04",
+      "category": "personal_identification",
+      "fact": "Leo Miller's Social Security card number ends in 9876."
+    },
+    {
+      "id": "F05",
+      "category": "medical_information",
+      "fact": "Leo Miller is prescribed an Albuterol inhaler (ProAir HFA), 90 mcg, with a dosage of 2 puffs every 4-6 hours for asthma symptoms."
+    },
+    {
+      "id": "F06",
+      "category": "medical_information",
+      "fact": "Emily Miller has a severe allergy to peanuts and requires an EpiPen (0.3 mg epinephrine) to be carried at all times."
+    },
+    {
+      "id": "F07",
+      "category": "medical_information",
+      "fact": "The Miller family's health insurance is through Veridian Health, policy number VHMIL7890, group number 45A-C."
+    },
+    {
+      "id": "F08",
+      "category": "medical_information",
+      "fact": "David Miller's blood type is O positive (O+)."
+    },
+    {
+      "id": "F09",
+      "category": "medical_information",
+      "fact": "The family's primary care physician is Dr. Aris Thorne at the Pine Ridge Medical Clinic, phone number 555-234-5678."
+    },
+    {
+      "id": "F10",
+      "category": "financial_records",
+      "fact": "The main family checking account at Summit First Bank is number 778899001."
+    },
+    {
+      "id": "F11",
+      "category": "financial_records",
+      "fact": "The emergency Visa credit card, number ending in 4012, is issued by Apex Credit Union; their 24/7 loss prevention line is 1-800-555-APEX."
+    },
+    {
+      "id": "F12",
+      "category": "financial_records",
+      "fact": "The evacuation kit contains $500 in small bills ($20s and $10s) in a sealed waterproof envelope."
+    },
+    {
+      "id": "F13",
+      "category": "financial_records",
+      "fact": "David Miller's 401(k) retirement account is with Horizon Financial Services, account number HFSMILLER-01."
+    },
+    {
+      "id": "F14",
+      "category": "property_documents",
+      "fact": "The Miller's home address is 123 Maple Lane, Silverwood, NW 98765."
+    },
+    {
+      "id": "F15",
+      "category": "property_documents",
+      "fact": "The homeowner's insurance policy with Citadel Assurance is number H-987654321-02. The agent is Jane Doe at 555-876-5432."
+    },
+    {
+      "id": "F16",
+      "category": "property_documents",
+      "fact": "The 2022 Honda Odyssey's Vehicle Identification Number (VIN) is 1HGRL5H89NA000123."
+    },
+    {
+      "id": "F17",
+      "category": "property_documents",
+      "fact": "The auto insurance policy for both family cars is with Citadel Assurance, policy number A-123456789-05."
+    },
+    {
+      "id": "F18",
+      "category": "property_documents",
+      "fact": "The original deed to the house is stored in safe deposit box #42 at the Summit First Bank branch on 45th Main Street."
+    },
+    {
+      "id": "F19",
+      "category": "access_and_security",
+      "fact": "A spare key to the house at 123 Maple Lane is taped inside a small mint tin within the evacuation bag's side pocket."
+    },
+    {
+      "id": "F20",
+      "category": "access_and_security",
+      "fact": "The combination to the small fireproof safe in the home office is 24-Right, 12-Left, 36-Right."
+    },
+    {
+      "id": "F21",
+      "category": "emergency_contacts",
+      "fact": "The designated out-of-state emergency contact is Sarah's sister, Carol Vance, in Denver, CO, at phone number 303-555-0101."
+    },
+    {
+      "id": "F22",
+      "category": "emergency_contacts",
+      "fact": "The next-door neighbor, Tom Chen, has agreed to be a local check-in contact; his cell is 555-901-2345."
+    },
+    {
+      "id": "F23",
+      "category": "emergency_contacts",
+      "fact": "In case of emergency, David's manager at Innovate Solutions is Maria Garcia, reachable at 555-789-0000 ext. 102."
+    },
+    {
+      "id": "F24",
+      "category": "pet_information",
+      "fact": "The family dog, Buddy, is a 6-year-old Golden Retriever microchipped with HomeAgain ID #985112009876543."
+    },
+    {
+      "id": "F25",
+      "category": "pet_information",
+      "fact": "Buddy's veterinarian is Dr. Evans at Crestview Animal Hospital, phone number 555-456-7890."
+    },
+    {
+      "id": "F26",
+      "category": "pet_information",
+      "fact": "Buddy's last rabies vaccination was administered on March 5, 2023, and is valid for 3 years."
+    },
+    {
+      "id": "F27",
+      "category": "digital_backups",
+      "fact": "A full backup of family photos and documents is on a 256GB Kingston DataTraveler encrypted USB drive, which is kept in the evacuation kit."
+    },
+    {
+      "id": "F28",
+      "category": "digital_backups",
+      "fact": "The password for the encrypted USB drive is `MapleBuddy2016!`."
+    },
+    {
+      "id": "F29",
+      "category": "digital_backups",
+      "fact": "Cloud backups of critical documents are stored on SyncGrid; the login username is `miller.family.docs@email.com`."
+    },
+    {
+      "id": "F30",
+      "category": "access_and_security",
+      "fact": "The family's password manager is 1Password; the master password hint is \"First pet's name + wedding anniversary year\"."
+    },
+    {
+      "id": "F31",
+      "category": "medical_information",
+      "fact": "All four Miller family members' COVID-19 vaccination cards are laminated and stored in the primary document folder."
+    },
+    {
+      "id": "F32",
+      "category": "property_documents",
+      "fact": "The property tax parcel number for 123 Maple Lane is SW-04-18-303-010."
+    },
+    {
+      "id": "F33",
+      "category": "personal_identification",
+      "fact": "A copy of the Miller's marriage certificate, number 789-2008-MC from Oak Creek County, is in the evacuation kit."
+    },
+    {
+      "id": "F34",
+      "category": "financial_records",
+      "fact": "The most recent will and testament documents, drafted on July 19, 2022, are with the law firm Sterling & Finch, LLP."
+    },
+    {
+      "id": "F35",
+      "category": "pet_information",
+      "fact": "A 3-day supply of Buddy's prescription food, Hill's Prescription Diet k/d, is packed in a waterproof bag."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Which identification document numbers do I already have for Sarah's passport, David's driver's license, and Emily's birth certificate?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Personal Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the specific prescription details for the kids' critical medications, the Albuterol inhaler and the EpiPen?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Medical Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is our health insurance policy number and who is our primary care physician?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After confirming critical prescriptions, gathering general health insurance and contact information is a natural next step.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Medical Information",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is our dog Buddy's microchip ID and his veterinarian's phone number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After finalizing human medical information, a pet-owning family would naturally consider the pet's essential medical and identification details.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Pet Care",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "I need the policy numbers for our homeowner's and auto insurance.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Insurance & Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What's the main bank account number and the emergency credit card's loss prevention line?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After documenting insurance policies for major assets, the user would likely move to securing financial access.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Insurance & Financials",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Who are our designated out-of-state and local emergency contacts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once information about property and assets (insurance) is gathered, the next logical thought is who to contact in an emergency situation.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Emergency Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Where is the spare house key stored so our local emergency contact can get into the house if needed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22",
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After confirming the local emergency contact, a practical follow-up is to check how that person could access the house if the family is away.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Physical Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the login for our cloud document storage?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Digital Backups",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the password for the encrypted USB drive in the kit?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After confirming the cloud backup login, the user would likely want to confirm access details for their physical digital backup as well.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Digital Backups",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Personal Identification",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Medical Information",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Pet Care",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Insurance & Financials",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Emergency Contacts",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Physical Access",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Digital Backups",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "disaster_evacuation_document_bundle_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "scenario_id": "case_cross_agency_referral_status_03",
+  "domain": "nonprofit_case_management",
+  "description": "One client has referrals open at multiple agencies, and the caseworker needs to remember what was sent, accepted, declined, waitlisted, or still pending across organizations.",
+  "user_profile": {
+    "persona": "39-year-old social services coordinator responsible for multi-agency follow-up",
+    "context": "The referrals were made over time, and the client no longer remembers which agency said what",
+    "communication_style": "Status-focused and patient, wants a cross-agency view that can be updated over time"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Client_Information",
+      "fact": "The client's full name is John Appleseed, with an assigned Client ID of JA-84321."
+    },
+    {
+      "id": "F02",
+      "category": "Client_Information",
+      "fact": "John Appleseed's date of birth is May 15, 1985."
+    },
+    {
+      "id": "F03",
+      "category": "Caseworker_Information",
+      "fact": "The assigned Social Services Coordinator is Maria Flores from the agency Hope Forward Community Services."
+    },
+    {
+      "id": "F04",
+      "category": "System_And_Tools",
+      "fact": "Maria Flores uses the 'ConnectWell Suite' case management software to track client referrals."
+    },
+    {
+      "id": "F05",
+      "category": "System_And_Tools",
+      "fact": "The login URL for the ConnectWell Suite is https://hfcs.connectwell.com, and Maria's username is mflores."
+    },
+    {
+      "id": "F06",
+      "category": "Referral_Housing",
+      "fact": "A referral for John Appleseed was sent to the New Beginnings Housing Alliance for their 'Supportive Housing Program' on October 15, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "Referral_Housing",
+      "fact": "The status of the New Beginnings Housing Alliance referral was updated to 'Waitlisted' on December 1, 2023."
+    },
+    {
+      "id": "F08",
+      "category": "Referral_Housing",
+      "fact": "John Appleseed's current position on the New Beginnings housing waitlist is #42."
+    },
+    {
+      "id": "F09",
+      "category": "Agency_Contacts",
+      "fact": "The primary contact at New Beginnings Housing Alliance for this referral is David Chen, Intake Coordinator, at d.chen@newbeginnings.org."
+    },
+    {
+      "id": "F10",
+      "category": "Referral_Employment",
+      "fact": "A referral was sent to the Evergreen Skills Center for the 'Culinary Arts Training' program on November 1, 2023."
+    },
+    {
+      "id": "F11",
+      "category": "Referral_Employment",
+      "fact": "The referral to Evergreen Skills Center was marked 'Accepted' on November 20, 2023, via an email from their admissions office."
+    },
+    {
+      "id": "F12",
+      "category": "Referral_Employment",
+      "fact": "John Appleseed's start date for the Culinary Arts Training program is February 5, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "Referral_Employment",
+      "fact": "A mandatory orientation for the Evergreen Skills Center program is scheduled for January 29, 2024, at 10:00 AM in Room 3B."
+    },
+    {
+      "id": "F14",
+      "category": "Agency_Contacts",
+      "fact": "The program administrator for the Culinary Arts Training at Evergreen is Sarah Jenkins, reachable at s.jenkins@evergreenskills.org."
+    },
+    {
+      "id": "F15",
+      "category": "Referral_Mental_Health",
+      "fact": "A referral was made for John Appleseed to receive 'Individual Therapy' at Clear Path Counseling on October 20, 2023."
+    },
+    {
+      "id": "F16",
+      "category": "Referral_Mental_Health",
+      "fact": "The referral status for Clear Path Counseling is 'Declined (Client Choice)' as of October 28, 2023."
+    },
+    {
+      "id": "F17",
+      "category": "Referral_Mental_Health",
+      "fact": "The case note for the Clear Path Counseling decline states: 'Client felt overwhelmed and not ready to begin therapy at this time.'"
+    },
+    {
+      "id": "F18",
+      "category": "Agency_Contacts",
+      "fact": "The contact person who processed the Clear Path Counseling referral was Dr. Emily Vance."
+    },
+    {
+      "id": "F19",
+      "category": "Referral_Food_Assistance",
+      "fact": "A referral for the 'Weekly Food Box' program at The Community Pantry was submitted on September 5, 2023."
+    },
+    {
+      "id": "F20",
+      "category": "Referral_Food_Assistance",
+      "fact": "The referral status for The Community Pantry is 'Active', and the client's first pickup was on September 12, 2023."
+    },
+    {
+      "id": "F21",
+      "category": "Referral_Food_Assistance",
+      "fact": "John Appleseed's scheduled pickup time at The Community Pantry is every Tuesday between 1:00 PM and 3:00 PM."
+    },
+    {
+      "id": "F22",
+      "category": "Agency_Contacts",
+      "fact": "The volunteer coordinator at The Community Pantry is Mike O'Malley."
+    },
+    {
+      "id": "F23",
+      "category": "Referral_Housing",
+      "fact": "A secondary housing referral for an 'Emergency Shelter Bed' was sent to the Shelter First Initiative on January 10, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "Referral_Housing",
+      "fact": "The current status of the Shelter First Initiative referral is 'Pending Review' as of January 12, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "Agency_Contacts",
+      "fact": "Maria Flores has a follow-up call scheduled with Lisa Rodriguez at Shelter First Initiative for January 25, 2024, at 2:00 PM to check the status."
+    },
+    {
+      "id": "F26",
+      "category": "System_And_Tools",
+      "fact": "The cross-agency view is generated using the 'Referral Matrix Report' (Report ID: RPT-07B) within the ConnectWell Suite."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Which client and client ID does this referral summary cover?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Client Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the status of the supportive housing referral sent to New Beginnings Housing Alliance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Housing Referral Status (Waitlisted)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is John's current position on the New Beginnings waitlist?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "After learning the client is on a waitlist, the next logical question is about their position on that list.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Housing Referral Status (Waitlisted)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Who is the contact person at New Beginnings for the housing referral?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After understanding the waitlist details, knowing who to contact for follow-up is a practical next step for the caseworker.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Housing Agency Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the outcome of the Culinary Arts Training referral to Evergreen Skills Center?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Employment Program Details (Accepted)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the Culinary Arts Training start date, and when is the mandatory Evergreen Skills Center orientation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Once a referral is confirmed as 'Accepted', the immediate follow-up questions concern logistics like start dates and orientation.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Employment Program Details (Accepted)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the current status of the emergency shelter referral to Shelter First Initiative?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Emergency Shelter Follow-up (Pending)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "When is my scheduled follow-up call regarding the Shelter First referral?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "A 'Pending Review' status naturally prompts the caseworker to check on their planned follow-up actions to move the referral forward.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Emergency Shelter Follow-up (Pending)",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What was the reason the individual therapy referral to Clear Path Counseling was declined?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Declined Referral Reason",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the weekly pickup schedule for the food box from The Community Pantry?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Active Service Schedule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is the program administrator for the Culinary Arts Training at Evergreen Skills Center?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After learning the specific dates for the program, a caseworker might want the contact person in case the client has questions or issues arise.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Employment Agency Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the name of the report in ConnectWell Suite that provides this cross-agency referral view?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After successfully pulling up the client's summary, the caseworker may want to know how to perform this action themselves in the future.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "System Usage Information",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Client Identification",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Housing Referral Status (Waitlisted)",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Housing Agency Contact",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Employment Program Details (Accepted)",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Emergency Shelter Follow-up (Pending)",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Declined Referral Reason",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Active Service Schedule",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Employment Agency Contact",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G9",
+      "label": "System Usage Information",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "case_cross_agency_referral_status_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

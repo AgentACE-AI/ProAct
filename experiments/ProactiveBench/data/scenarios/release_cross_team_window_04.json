@@ -1,0 +1,476 @@
+{
+  "scenario_id": "release_cross_team_window_04",
+  "domain": "software_release_management",
+  "description": "A release depends on several teams with different maintenance windows, validation steps, and operational constraints, and one missed dependency could invalidate the rollout order.",
+  "user_profile": {
+    "persona": "39-year-old platform program manager coordinating a distributed launch",
+    "context": "Everyone is ready in isolation, but the combined order of operations is fragile",
+    "communication_style": "Dependency-aware and sequencing-focused, wants the rollout path crystal clear"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project_overview",
+      "fact": "The software release is officially designated as Project Aether-Nexus version 4.2."
+    },
+    {
+      "id": "F02",
+      "category": "personnel",
+      "fact": "Elias Thorne is the 39-year-old Platform Program Manager responsible for the end-to-end sequencing of the Aether-Nexus v4.2 rollout."
+    },
+    {
+      "id": "F03",
+      "category": "personnel",
+      "fact": "Silas Vane serves as the Technical Lead for Team Obsidian, which manages the Data-Core infrastructure."
+    },
+    {
+      "id": "F04",
+      "category": "personnel",
+      "fact": "Maya Sterling is the Lead Security Auditor from Team Quartz responsible for the final pre-launch vulnerability sign-off."
+    },
+    {
+      "id": "F05",
+      "category": "personnel",
+      "fact": "Julian Kross is the Senior Engineer for Team Amber, overseeing the Frontend-Sync and CDN cache invalidation."
+    },
+    {
+      "id": "F06",
+      "category": "personnel",
+      "fact": "Sarah Jenkins is the designated On-Call Site Reliability Engineer (SRE) for the duration of the 8-hour rollout window."
+    },
+    {
+      "id": "F07",
+      "category": "schedule",
+      "fact": "The release execution phase is scheduled to begin on October 14, 2024, at 22:00 UTC."
+    },
+    {
+      "id": "F08",
+      "category": "schedule",
+      "fact": "Team Obsidian has a designated maintenance window for database schema migrations from 22:15 UTC to 23:45 UTC on October 14."
+    },
+    {
+      "id": "F09",
+      "category": "schedule",
+      "fact": "Team Cobalt's infrastructure update window for the API Gateway is scheduled from 00:00 UTC to 02:00 UTC on October 15."
+    },
+    {
+      "id": "F10",
+      "category": "dependencies",
+      "fact": "The 'DB-Schema-6-Delta' migration must reach 'Status: Completed' before the deployment of 'API-Gateway-Alpha' can commence."
+    },
+    {
+      "id": "F11",
+      "category": "dependencies",
+      "fact": "The public load balancer cannot be pointed to the new cluster until Team Quartz issues a 'Pass' on the Sec-Scan-99 audit report."
+    },
+    {
+      "id": "F12",
+      "category": "dependencies",
+      "fact": "Team Amber must perform a manual purge of the Edge-CDN-Global cache exactly 15 minutes after the API Gateway v4.2 goes live."
+    },
+    {
+      "id": "F13",
+      "category": "validation",
+      "fact": "The automated health check endpoint for the new release is configured at https://api-v42.nexus-internal.net/health/ready."
+    },
+    {
+      "id": "F14",
+      "category": "validation",
+      "fact": "The release is considered successful only if the Grafana dashboard 'Nexus-v42-Performance' shows a p99 latency below 150ms for 10 consecutive minutes."
+    },
+    {
+      "id": "F15",
+      "category": "infrastructure",
+      "fact": "The deployment targets the 'West-9-Alpha' Kubernetes cluster, which consists of 48 physical nodes running version 1.28."
+    },
+    {
+      "id": "F16",
+      "category": "infrastructure",
+      "fact": "The primary database cluster, DB-Nexus-Primary, utilizes 4 write-nodes and 8 read-replicas across three availability zones."
+    },
+    {
+      "id": "F17",
+      "category": "infrastructure",
+      "fact": "All application traffic must pass through the Shield-Wall-v4 hardware firewall before reaching the Kubernetes ingress controller."
+    },
+    {
+      "id": "F18",
+      "category": "communication",
+      "fact": "All real-time release coordination and status updates are logged in the Slack channel #ops-aether-v42-warroom."
+    },
+    {
+      "id": "F19",
+      "category": "communication",
+      "fact": "The emergency incident bridge for the release is hosted on Zoom with Meeting ID 882-991-0045 and passcode 9902."
+    },
+    {
+      "id": "F20",
+      "category": "technical_details",
+      "fact": "The release utilizes the Docker image tag 'nexus-core:4.2.0-build-8821' stored in the private Nexus-Registry."
+    },
+    {
+      "id": "F21",
+      "category": "technical_details",
+      "fact": "The Nexus-Config-Server must be updated with the 'v4.2-final' configuration flag at exactly 02:15 UTC to enable new feature flags."
+    },
+    {
+      "id": "F22",
+      "category": "operational_constraints",
+      "fact": "A mandatory rollback is triggered if the system detects more than 500 '5xx' error codes within any 60-second window post-launch."
+    },
+    {
+      "id": "F23",
+      "category": "operational_constraints",
+      "fact": "The total estimated downtime for the legacy v4.1 API during the DNS switchover is 45 seconds."
+    },
+    {
+      "id": "F24",
+      "category": "operational_constraints",
+      "fact": "Engineers requiring production access must be members of the 'access-prod-nexus-v42' LDAP group to execute commands."
+    },
+    {
+      "id": "F25",
+      "category": "documentation",
+      "fact": "The official step-by-step deployment manifest is maintained in the Git repository at git://internal-git.nexus.net/deployments/aether-v42.git."
+    },
+    {
+      "id": "F26",
+      "category": "documentation",
+      "fact": "The 'Nexus-Emergency-Manual', located on the internal Confluence site, contains the rollback procedure on page 42."
+    },
+    {
+      "id": "F27",
+      "category": "personnel",
+      "fact": "For Project Aether-Nexus v4.2, Silas Vane is the named technical lead responsible for Team Obsidian's Data-Core infrastructure work, and Julian Kross is the named technical lead responsible for Team Amber's Frontend-Sync and CDN cache invalidation tasks."
+    },
+    {
+      "id": "F28",
+      "category": "dependencies",
+      "fact": "The rollout sequencing requirement between 'DB-Schema-6-Delta' and 'API-Gateway-Alpha' is: the DB-Schema-6-Delta migration must finish within Team Obsidian's 22:15-23:45 UTC maintenance window and reach 'Status: Completed' before Team Cobalt may begin the API-Gateway-Alpha deployment in its 00:00-02:00 UTC window; if the migration is not completed first, the API-Gateway-Alpha deployment cannot start."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the official name of this release project and who is the Program Manager in charge of sequencing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "project_identity",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "When is the execution phase scheduled to start and what is the specific maintenance window for the database schema migrations?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Once the project and manager are identified, the immediate next concern for a sequencing-focused manager is the start time and the first major technical window.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "initial_schedule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Which specific technical leads are responsible for Team Obsidian's infrastructure work and Team Amber's frontend/CDN tasks?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F05",
+        "F27"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "After establishing the schedule for the DB migration (Obsidian) and the start time, the manager needs to know the specific leads responsible for the primary technical components involved.",
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "team_leads",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the specific sequencing dependencies and operational constraints between the DB-Schema-6-Delta migration and the API-Gateway-Alpha deployment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09",
+        "F10",
+        "F28"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Knowing the DB migration window (G2) naturally leads to asking about the specific dependencies that rely on that migration's completion.",
+      "turn_order": 4,
+      "reveal_group": "G4",
+      "reveal_group_label": "critical_dependencies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the requirement regarding the Team Quartz security audit before the public load balancer can be updated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group satellite: The user is investigating the sequence of gates; the security audit is a parallel critical gate to the technical deployments.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "critical_dependencies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Who is the Lead Security Auditor from Team Quartz and who is the SRE on-call for the rollout?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04",
+        "F06"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Mentioning the Team Quartz audit requirement (G4) makes the identity of the specific auditor and the supporting SRE relevant for coordination.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "support_personnel",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the URL for the automated health check and what are the performance criteria for the Grafana dashboard to consider the release successful?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "validation_criteria",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the details of the 'West-9-Alpha' Kubernetes cluster and the primary database cluster configuration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After clarifying the sequencing dependency between the database migration and the API Gateway rollout, a dependency-aware program manager would naturally ask for the infrastructure context those steps depend on, namely the target Kubernetes cluster and the primary database cluster configuration.",
+      "turn_order": 8,
+      "reveal_group": "G7",
+      "reveal_group_label": "infrastructure_specs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What firewall must application traffic pass through before reaching the ingress controller?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group satellite: Once the cluster is discussed, the network path/firewall leading to that cluster is a standard follow-up.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "infrastructure_specs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What are the Slack channel name and the Zoom meeting details for real-time coordination?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "comms_channels",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the specific Docker image tag for the release and when must the Nexus-Config-Server be updated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: This is an auditable proactive target. After the user asks about the schedule (G2), the specific technical execution time for the config server and the image tag are highly predictable sequencing details.",
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "deployment_artifacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the threshold of 5xx errors that triggers a mandatory rollback and what is the estimated downtime during DNS switchover?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: This is an auditable proactive target. After discussing success criteria (G6), the failure/rollback criteria and downtime constraints are the logical inverse information needs.",
+      "turn_order": 12,
+      "reveal_group": "G10",
+      "reveal_group_label": "operational_constraints",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Which LDAP group is required for production access and where is the deployment manifest stored?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: This is an auditable proactive target. Once the user establishes communication channels for the warroom (G8), they will inevitably need to know how to access the systems and the manifest to perform the work discussed in those channels.",
+      "turn_order": 13,
+      "reveal_group": "G11",
+      "reveal_group_label": "access_and_docs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Where is the emergency manual located and on what page can the rollback procedure be found?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: This is an auditable proactive target. After learning the rollback triggers (G10), the user will naturally need the location of the manual and the specific page for the procedure.",
+      "turn_order": 14,
+      "reveal_group": "G12",
+      "reveal_group_label": "emergency_procedures",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "project_identity",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "initial_schedule",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "team_leads",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "critical_dependencies",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "support_personnel",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "validation_criteria",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "infrastructure_specs",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "comms_channels",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "deployment_artifacts",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G10",
+      "label": "operational_constraints",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G11",
+      "label": "access_and_docs",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G12",
+      "label": "emergency_procedures",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G10"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "release_cross_team_window_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

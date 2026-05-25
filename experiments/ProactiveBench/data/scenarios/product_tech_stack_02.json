@@ -1,0 +1,418 @@
+{
+  "scenario_id": "product_tech_stack_02",
+  "domain": "product_analysis",
+  "description": "A CTO is selecting a cloud provider for a new SaaS product. They need to analyze cost-efficiency, regional availability, and specific AI/ML service offerings.",
+  "user_profile": {
+    "persona": "38-year-old CTO",
+    "context": "Pre-launch phase, making foundational tech decisions",
+    "communication_style": "Highly technical and performance-oriented"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "internal_requirements",
+      "fact": "The 'CogniStream' SaaS product requires GPU-accelerated instances for its core video transcoding module."
+    },
+    {
+      "id": "F02",
+      "category": "internal_requirements",
+      "fact": "The projected peak data egress for 'CogniStream' is 15 TB per month for the first year of operation."
+    },
+    {
+      "id": "F03",
+      "category": "internal_requirements",
+      "fact": "The 'CogniStream' platform must maintain GDPR compliance for its planned launch in the European Union market."
+    },
+    {
+      "id": "F04",
+      "category": "internal_requirements",
+      "fact": "The primary relational database for 'CogniStream' must be a managed service supporting PostgreSQL version 15 or higher."
+    },
+    {
+      "id": "F05",
+      "category": "decision_process",
+      "fact": "The internal project for cloud provider selection at Vortex Innovations Inc. is codenamed 'Project Stratus'."
+    },
+    {
+      "id": "F06",
+      "category": "decision_process",
+      "fact": "Dr. Aris Thorne, CTO, is the final decision-maker for Project Stratus."
+    },
+    {
+      "id": "F07",
+      "category": "decision_process",
+      "fact": "The final comparative analysis report for all three cloud providers is due on November 8, 2024."
+    },
+    {
+      "id": "F08",
+      "category": "provider_cost_analysis",
+      "fact": "AetherGrid offers a 3-year reserved instance discount of 42% on its 'AG-Compute-G4' instances."
+    },
+    {
+      "id": "F09",
+      "category": "provider_cost_analysis",
+      "fact": "Data egress from AetherGrid's 'us-east-1' region is priced at $0.09 per GB for the first 10 TB/month."
+    },
+    {
+      "id": "F10",
+      "category": "provider_performance",
+      "fact": "The AetherGrid 'AG-Compute-G4' instance type provides 8 vCPUs and 32 GB of RAM."
+    },
+    {
+      "id": "F11",
+      "category": "provider_ai_ml_services",
+      "fact": "AetherGrid's AI service, 'Synapse Vision,' costs $1.50 per 1,000 image recognition API calls."
+    },
+    {
+      "id": "F12",
+      "category": "provider_regional_availability",
+      "fact": "AetherGrid currently operates data centers in three regions: 'us-east-1', 'eu-west-2', and 'ap-southeast-1'."
+    },
+    {
+      "id": "F13",
+      "category": "provider_cost_analysis",
+      "fact": "QuantumLeap Cloud's 'QL-GPU-P4' instance, equipped with a single NVIDIA A100 equivalent, costs $0.75 per hour on-demand."
+    },
+    {
+      "id": "F14",
+      "category": "provider_cost_analysis",
+      "fact": "QuantumLeap Cloud offers a 1-year committed use discount of 25% on compute resources, billed monthly."
+    },
+    {
+      "id": "F15",
+      "category": "provider_performance",
+      "fact": "QuantumLeap Cloud's measured cross-region network latency between 'us-central1' and 'europe-west4' averages 78ms."
+    },
+    {
+      "id": "F16",
+      "category": "provider_performance",
+      "fact": "The 'QL-Sphere-DB' managed PostgreSQL service from QuantumLeap Cloud guarantees a 99.99% uptime SLA."
+    },
+    {
+      "id": "F17",
+      "category": "provider_ai_ml_services",
+      "fact": "QuantumLeap's 'NexusML' platform allows custom model training using pre-configured Docker containers with TensorFlow and PyTorch."
+    },
+    {
+      "id": "F18",
+      "category": "provider_ai_ml_services",
+      "fact": "Training a model on QuantumLeap's 'NexusML' with a 'p4.large' configuration costs $2.20 per hour."
+    },
+    {
+      "id": "F19",
+      "category": "provider_regional_availability",
+      "fact": "QuantumLeap Cloud does not currently operate any data centers on the African continent."
+    },
+    {
+      "id": "F20",
+      "category": "provider_regional_availability",
+      "fact": "QuantumLeap's 'europe-west4' region, located in the Netherlands, is fully GDPR and ISO 27018 compliant."
+    },
+    {
+      "id": "F21",
+      "category": "provider_cost_analysis",
+      "fact": "Stellaris Services provides 500 GB of free object storage per month with their 'Stellaris-Vault' service."
+    },
+    {
+      "id": "F22",
+      "category": "provider_cost_analysis",
+      "fact": "Data egress from Stellaris Services is a flat rate of $0.05 per GB globally, after the first 1 TB per month."
+    },
+    {
+      "id": "F23",
+      "category": "provider_performance",
+      "fact": "Stellaris's 'SS-Compute-M6' instance offers 16 vCPUs and 64 GB of RAM, optimized for memory-intensive applications."
+    },
+    {
+      "id": "F24",
+      "category": "provider_performance",
+      "fact": "The NVMe SSD storage attached to 'SS-Compute-M6' instances provides up to 125,000 sustained IOPS."
+    },
+    {
+      "id": "F25",
+      "category": "provider_ai_ml_services",
+      "fact": "Stellaris Services' 'Cognition Suite' offers a neural text-to-speech service supporting 25 languages and 5 voice styles."
+    },
+    {
+      "id": "F26",
+      "category": "provider_ai_ml_services",
+      "fact": "The 'Cognition Suite' text-to-speech service is priced at $4.00 per 1 million characters processed."
+    },
+    {
+      "id": "F27",
+      "category": "provider_regional_availability",
+      "fact": "Stellaris Services operates a data center in 'sa-east-1' (São Paulo) to serve the South American market."
+    },
+    {
+      "id": "F28",
+      "category": "provider_regional_availability",
+      "fact": "Stellaris Services is certified for SOC 2 Type II compliance across all 12 of its global regions."
+    },
+    {
+      "id": "F29",
+      "category": "decision_process",
+      "fact": "A technical proof-of-concept with QuantumLeap Cloud is scheduled for October 22-25, 2024, focusing on ML model performance."
+    },
+    {
+      "id": "F30",
+      "category": "internal_requirements",
+      "fact": "The 'CogniStream' user authentication module must integrate with a managed identity service that natively supports the OAuth 2.0 protocol."
+    },
+    {
+      "id": "F31",
+      "category": "provider_ai_ml_services",
+      "fact": "AetherGrid's 'Synapse' platform includes a managed data labeling service at a cost of $0.08 per labeled image with bounding boxes."
+    },
+    {
+      "id": "F32",
+      "category": "provider_cost_analysis",
+      "fact": "QuantumLeap Cloud's 'Enterprise Tier' support plan costs $12,000 per month and provides a 15-minute response time for critical issues."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Does the CogniStream video transcoding module require GPU acceleration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Internal Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the projected peak monthly data egress for the first year of operation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After defining the primary compute requirement (GPU), the next logical technical requirement to establish is data transfer volume.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Internal Requirements",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What specific compliance standard must the platform maintain for its planned launch in the European Union?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Internal Requirements",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is the on-demand hourly cost of the QuantumLeap GPU instance currently being evaluated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "GPU Cost Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the committed use discount for compute resources on QuantumLeap Cloud?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "GPU Cost Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the data egress pricing from AetherGrid's 'us-east-1' region for the first 10 TB per month?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Having defined the internal data egress projection, the user will need to find out the specific egress costs from a provider to begin cost modeling.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Data Egress Cost Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the global data egress rate for Stellaris Services after the first 1 TB per month?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After checking the egress cost for one provider, the user will naturally want to compare it with another provider's pricing model.",
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "Data Egress Cost Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Is QuantumLeap's 'europe-west4' region GDPR compliant?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After identifying the internal need for GDPR compliance, the user's next logical action is to verify if a potential provider meets this critical requirement in a relevant region.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Compliance Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Does QuantumLeap's 'NexusML' platform support custom model training with TensorFlow and PyTorch via pre-configured Docker containers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "AI/ML Service Evaluation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the per-call price of AetherGrid's 'Synapse Vision' image recognition API?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "AI/ML Service Evaluation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the cost and response time for QuantumLeap Cloud's 'Enterprise Tier' support plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After looking at the cost of the shortlisted QuantumLeap GPU instance, a natural next question is what enterprise support would cost and how quickly critical issues would be handled.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Support Plan Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Who is the final decision-maker for Project Stratus and when is the final analysis report due?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Project Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Internal Requirements",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "GPU Cost Analysis",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Data Egress Cost Analysis",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Compliance Check",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "AI/ML Service Evaluation",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Support Plan Details",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Project Logistics",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "product_tech_stack_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "scenario_id": "site_subcontractor_handoff_04",
+  "domain": "construction_site_coordination",
+  "description": "One trade finishes and another begins, and the interface conditions, unfinished items, protection requirements, and assumptions must be captured clearly so work is not restarted or damaged.",
+  "user_profile": {
+    "persona": "41-year-old field coordinator specializing in trade-to-trade handoffs",
+    "context": "Past problems came less from bad work than from incomplete handoff information between crews",
+    "communication_style": "Interface-focused and practical, wants responsibility boundaries recorded explicitly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Project_Details",
+      "fact": "The project is named the 'Skyview Towers, North Tower' project."
+    },
+    {
+      "id": "F02",
+      "category": "Project_Details",
+      "fact": "The project site address is 123 Builder's Lane, Metro City, MC 45678."
+    },
+    {
+      "id": "F03",
+      "category": "Project_Details",
+      "fact": "The specific area for this handoff is Level 12, Zone B, covering suites 1210 through 1218."
+    },
+    {
+      "id": "F04",
+      "category": "Handoff_Parties",
+      "fact": "The outgoing trade contractor is Apex Drywall Inc."
+    },
+    {
+      "id": "F05",
+      "category": "Handoff_Parties",
+      "fact": "The incoming trade contractor is Stellar Electrical Solutions."
+    },
+    {
+      "id": "F06",
+      "category": "Handoff_Parties",
+      "fact": "The Apex Drywall foreman responsible for the sign-off is Carlos Ramirez, contactable at 555-0101."
+    },
+    {
+      "id": "F07",
+      "category": "Handoff_Parties",
+      "fact": "The Stellar Electrical lead electrician accepting the handoff is Jane Chen, contactable at 555-0102."
+    },
+    {
+      "id": "F08",
+      "category": "Handoff_Logistics",
+      "fact": "The formal handoff inspection and sign-off is scheduled for October 26, 2023."
+    },
+    {
+      "id": "F09",
+      "category": "Handoff_Logistics",
+      "fact": "The start time for the handoff inspection meeting is 9:00 AM local time."
+    },
+    {
+      "id": "F10",
+      "category": "Handoff_Logistics",
+      "fact": "The designated meeting point for the handoff is the Level 12 site office trailer, Room A."
+    },
+    {
+      "id": "F11",
+      "category": "Handoff_Logistics",
+      "fact": "The general contractor's field coordinator overseeing the handoff is Marco Vega."
+    },
+    {
+      "id": "F12",
+      "category": "Scope_Completion_Drywall",
+      "fact": "All Type X fire-rated drywall (5/8 inch) has been installed on demising walls per drawing S-5.2, Rev 4."
+    },
+    {
+      "id": "F13",
+      "category": "Scope_Completion_Drywall",
+      "fact": "Level 4 finish has been applied to all walls in suites 1210-1218, except for designated utility closets."
+    },
+    {
+      "id": "F14",
+      "category": "Scope_Completion_Drywall",
+      "fact": "All ceiling grid backer boards are installed and secured."
+    },
+    {
+      "id": "F15",
+      "category": "Scope_Completion_Drywall",
+      "fact": "Sound insulation batts (Model R-19) have been installed in all interior partition walls prior to closing."
+    },
+    {
+      "id": "F16",
+      "category": "Scope_Completion_Drywall",
+      "fact": "A moisture-resistant 'green board' has been installed in all designated bathroom and kitchenette areas."
+    },
+    {
+      "id": "F17",
+      "category": "Scope_Pending_Drywall",
+      "fact": "A 2-foot by 4-foot section of drywall is intentionally left open behind the main electrical panel location in room 1210's utility closet."
+    },
+    {
+      "id": "F18",
+      "category": "Scope_Pending_Drywall",
+      "fact": "Final sanding and touch-up of wall surfaces will occur after electrical rough-in is complete; this is designated as Punch List item P-12B-001."
+    },
+    {
+      "id": "F19",
+      "category": "Scope_Pending_Drywall",
+      "fact": "The ceiling access panel in the corridor C-12B has not been installed and is stored in Room 1211."
+    },
+    {
+      "id": "F20",
+      "category": "Scope_Pending_Drywall",
+      "fact": "Apex Drywall is scheduled to return on November 15, 2023, for final patching and close-out."
+    },
+    {
+      "id": "F21",
+      "category": "Interface_Conditions",
+      "fact": "The floor slab in Zone B is broom-swept clean as of October 25, 2023, 4:00 PM."
+    },
+    {
+      "id": "F22",
+      "category": "Interface_Conditions",
+      "fact": "Temporary power is available via two 120V quad boxes located at columns C4 and F4."
+    },
+    {
+      "id": "F23",
+      "category": "Interface_Conditions",
+      "fact": "All window openings are sealed with 6-mil plastic sheeting."
+    },
+    {
+      "id": "F24",
+      "category": "Interface_Conditions",
+      "fact": "Ambient temperature in the work area is maintained at 65°F by temporary heating units."
+    },
+    {
+      "id": "F25",
+      "category": "Interface_Conditions",
+      "fact": "All outlet and switch box locations have been marked on the floor with blue spray paint by Apex Drywall."
+    },
+    {
+      "id": "F26",
+      "category": "Protection_Requirements",
+      "fact": "Stellar Electrical must use plastic floor runners (Model FR-36) in all finished corridors."
+    },
+    {
+      "id": "F27",
+      "category": "Protection_Requirements",
+      "fact": "Newly installed metal corner beads must be protected from damage; replacement cost is $45 per 8-foot section."
+    },
+    {
+      "id": "F28",
+      "category": "Protection_Requirements",
+      "fact": "No tools or materials are to be leaned against finished drywall surfaces."
+    },
+    {
+      "id": "F29",
+      "category": "Protection_Requirements",
+      "fact": "Any damage to finished surfaces must be reported to Marco Vega via the ProCore platform within 2 hours."
+    },
+    {
+      "id": "F30",
+      "category": "Assumptions_and_Risks",
+      "fact": "It is assumed that Stellar Electrical will not require any wall penetrations larger than 6 inches in diameter."
+    },
+    {
+      "id": "F31",
+      "category": "Assumptions_and_Risks",
+      "fact": "Stellar Electrical assumes responsibility for verifying all box locations against electrical drawings E-3.1 and E-3.2 before installation."
+    },
+    {
+      "id": "F32",
+      "category": "Assumptions_and_Risks",
+      "fact": "The risk of dust contamination for sensitive electrical components is considered low, as major sanding is complete."
+    },
+    {
+      "id": "F33",
+      "category": "Documentation_and_Communication",
+      "fact": "The official handoff is documented on Form 'Trade Handoff Checklist T-12', which must be signed by both parties."
+    },
+    {
+      "id": "F34",
+      "category": "Documentation_and_Communication",
+      "fact": "All photos documenting the area's condition at handoff are uploaded to the ProCore project folder '2023-10-26_L12B_Drywall-Elec_Handoff'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the project name and the specific area for this handoff?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Handoff Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who are the primary contacts for the outgoing drywall contractor and the incoming electrical contractor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Handoff Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the date, time, and location for the handoff inspection meeting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After identifying the key personnel, the user will naturally want to know the logistical details of when and where to meet them.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Handoff Logistics",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "Which drywall installation, finish, and insulation tasks are complete in the handoff area?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Scope of Work - Completed",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Are there any specific drywall items that are intentionally left unfinished?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding what work is complete, the immediate and most critical follow-up for a field coordinator is to clarify what work is explicitly NOT complete to avoid confusion.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Scope of Work - Pending",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "When is the drywall contractor scheduled to return to complete their pending work?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Once the user knows there are pending items, they will want to know the schedule for their completion.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Scope of Work - Pending",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the current site conditions regarding cleanliness, temporary power, and ambient temperature?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22",
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Site Conditions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What protection rules must the incoming electrical crew follow to avoid damaging the finished drywall and corner beads?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning about the current state of the site, the coordinator's focus shifts to maintaining that state and preventing damage, making protection requirements the next logical topic.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Protection Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the required procedure for reporting any damage to the finished surfaces?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: Discussing rules for preventing damage naturally leads to the question of what to do if damage occurs despite the precautions.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Protection Requirements",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What form records the official handoff, and where are the handoff condition photos uploaded?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F33",
+        "F34"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After clarifying the critical details of what is finished and what is pending, the coordinator, who values explicit records, will want to know how this information is being formally captured.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Documentation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Handoff Logistics",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Scope of Work - Completed",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Scope of Work - Pending",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Site Conditions",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Protection Requirements",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Documentation",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "site_subcontractor_handoff_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

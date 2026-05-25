@@ -1,0 +1,425 @@
+{
+  "scenario_id": "recycling_contamination_pattern_01",
+  "domain": "waste_recycling_operations",
+  "description": "A site supervisor wants to identify whether contamination incidents are concentrated in specific streams, buildings, collection days, or customer types rather than treating every incident as isolated. All facility and customer names are fictional.",
+  "user_profile": {
+    "persona": "37-year-old recycling operations supervisor trying to reduce repeated contamination events",
+    "context": "The team has many incident notes, but no clear picture yet of whether a preventable pattern exists",
+    "communication_style": "Pattern-oriented and practical, prefers grouped evidence over general impressions"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Incident Details",
+      "fact": "A contamination incident (ID #7821) was logged on October 23, 2023, for a batch from Oak Ridge Apartments containing 15 lbs of plastic bags in the Mixed Paper stream."
+    },
+    {
+      "id": "F02",
+      "category": "Incident Details",
+      "fact": "On October 25, 2023, the Commingled Containers stream from Maplewood Tower (Incident #7855) was rejected due to excessive food waste contamination, estimated at 25% of the bin's weight."
+    },
+    {
+      "id": "F03",
+      "category": "Collection Schedule",
+      "fact": "GreenHaul Solutions collects recycling from Maplewood Tower every Monday and Thursday at approximately 9:00 AM."
+    },
+    {
+      "id": "F04",
+      "category": "Collection Schedule",
+      "fact": "Residential collection for the Oak Ridge Apartments complex occurs every Wednesday between 7:00 AM and 10:00 AM."
+    },
+    {
+      "id": "F05",
+      "category": "Customer Information",
+      "fact": "Maplewood Tower is classified as a 'Commercial-Office' customer type with customer ID C-101."
+    },
+    {
+      "id": "F06",
+      "category": "Customer Information",
+      "fact": "Oak Ridge Apartments is a 'Residential-MultiFamily' customer (ID R-205) with 250 units."
+    },
+    {
+      "id": "F07",
+      "category": "Operational Procedures",
+      "fact": "All contamination incidents are logged by the on-duty sorter lead into the 'WasteWatch Pro' system using a handheld scanner, model Zebra TC52."
+    },
+    {
+      "id": "F08",
+      "category": "Data & Reporting",
+      "fact": "The WasteWatch Pro dashboard is accessible at the URL https://evergreenmrf.wastewatch.pro/login."
+    },
+    {
+      "id": "F09",
+      "category": "Incident Details",
+      "fact": "Incident #7890 on October 27, 2023, from Pinecrest Mall's Cardboard stream, involved 50 lbs of non-recyclable Styrofoam packaging."
+    },
+    {
+      "id": "F10",
+      "category": "Collection Schedule",
+      "fact": "Pinecrest Mall, a 'Commercial-Retail' customer, has daily cardboard collections at 11:00 PM."
+    },
+    {
+      "id": "F11",
+      "category": "Operational Procedures",
+      "fact": "A contamination level exceeding 10% by visual estimate for a specific stream triggers an automatic notification email to the supervisor, Alex Chen."
+    },
+    {
+      "id": "F12",
+      "category": "Personnel",
+      "fact": "The primary contact for GreenHaul Solutions is Maria Garcia, Route Manager, reachable at m.garcia@greenhaul.com."
+    },
+    {
+      "id": "F13",
+      "category": "Facility Information",
+      "fact": "The Evergreen Material Recovery Facility is located at 1550 Industrial Way, Riverbend City, and operates 24 hours a day, Monday through Friday."
+    },
+    {
+      "id": "F14",
+      "category": "Data & Reporting",
+      "fact": "Alex Chen's username for the WasteWatch Pro system is 'achen_supervisor'."
+    },
+    {
+      "id": "F15",
+      "category": "Incident Details",
+      "fact": "Three separate incidents involving lithium-ion batteries were found in the Commingled Containers stream from Oak Ridge Apartments during October 2023."
+    },
+    {
+      "id": "F16",
+      "category": "Customer Information",
+      "fact": "The property manager for Oak Ridge Apartments is David Miller, and his contact number is 555-0182."
+    },
+    {
+      "id": "F17",
+      "category": "Operational Procedures",
+      "fact": "When a load is rejected, a 'Contamination Fee' of $150 is automatically applied to the customer's next invoice via the billing system."
+    },
+    {
+      "id": "F18",
+      "category": "Incident Details",
+      "fact": "The Monday collection from Maplewood Tower has been flagged for liquid and food waste contamination 4 times in the last 2 months."
+    },
+    {
+      "id": "F19",
+      "category": "Data & Reporting",
+      "fact": "Weekly contamination summary reports are automatically generated every Friday at 5:00 PM and emailed as a PDF to ops-supervisors@evergreenmrf.com."
+    },
+    {
+      "id": "F20",
+      "category": "Facility Information",
+      "fact": "The facility's primary sorting line, 'Line A,' processes all residential commingled materials."
+    },
+    {
+      "id": "F21",
+      "category": "Facility Information",
+      "fact": "'Line B' is dedicated to processing commercial mixed paper and cardboard streams."
+    },
+    {
+      "id": "F22",
+      "category": "Personnel",
+      "fact": "The lead sorter for the day shift, responsible for logging most incidents, is named Carlos Ramirez."
+    },
+    {
+      "id": "F23",
+      "category": "Incident Details",
+      "fact": "On October 20, 2023, a load from 'Westgate Industrial Park' (Customer ID IND-04) contaminated the Organics stream with 5 gallons of hydraulic fluid."
+    },
+    {
+      "id": "F24",
+      "category": "Customer Information",
+      "fact": "Westgate Industrial Park is an 'Industrial' customer type, with collections on Tuesdays."
+    },
+    {
+      "id": "F25",
+      "category": "Operational Procedures",
+      "fact": "Photos are required for all logged contamination incidents and are uploaded directly to the incident record in WasteWatch Pro."
+    },
+    {
+      "id": "F26",
+      "category": "Data & Reporting",
+      "fact": "The incident data from WasteWatch Pro can be exported as a CSV file for analysis in Microsoft Excel via the 'Export Data' button on the main dashboard."
+    },
+    {
+      "id": "F27",
+      "category": "Incident Details",
+      "fact": "The Commingled Containers stream from Oak Ridge Apartments on Wednesdays has the highest recurring contamination rate, averaging 18% over the past quarter."
+    },
+    {
+      "id": "F28",
+      "category": "Collection Schedule",
+      "fact": "The collection truck designated for the Wednesday residential route serving Oak Ridge Apartments is Truck #GH-12."
+    },
+    {
+      "id": "F29",
+      "category": "Personnel",
+      "fact": "The GreenHaul driver assigned to Truck #GH-12 is Sam Jones, who has reported bin overflow issues at Oak Ridge Apartments twice in the last month."
+    },
+    {
+      "id": "F30",
+      "category": "Customer Information",
+      "fact": "Pinecrest Mall's facility manager, Sarah Jenkins, requested new recycling signage on September 15, 2023, which was delivered on September 22, 2023."
+    },
+    {
+      "id": "F31",
+      "category": "Operational Procedures",
+      "fact": "Contaminated material that is rejected is re-routed to the landfill tipping floor, incurring a diversion cost of $85 per ton for the facility."
+    },
+    {
+      "id": "F32",
+      "category": "Data & Reporting",
+      "fact": "A custom report named 'Top 10 Contaminators - Monthly' is saved in Alex Chen's WasteWatch Pro dashboard and updates automatically on the 1st of each month."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What custom report shows me the top monthly contaminators?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Pattern Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "For Oak Ridge Apartments, what is their average contamination rate on Wednesdays?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After seeing the list of top contaminators, the user will want to drill down into the specifics of the worst offender mentioned in the report.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Investigate Top Offender",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What specific type of contamination has been repeatedly found in the Commingled Containers from Oak Ridge Apartments?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After learning the high contamination rate, the user wants to know the specific materials causing the problem.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Investigate Top Offender",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Who is the driver for the Oak Ridge Apartments route and have they reported any on-site issues?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F29"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After identifying a specific contamination problem, the user wants to know if the collection crew has observed any related issues like overflowing bins.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Investigate Top Offender",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N5",
+      "description": "What were the details of the recent contamination incident involving Maplewood Tower?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Investigate Second Offender",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "How many times has the Monday collection from Maplewood Tower been flagged for contamination recently?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After reviewing a specific incident, the user wants to know if it's a one-off event or a recurring pattern.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Investigate Second Offender",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Which customer-stream shows the highest recurring contamination rate, and what is that average?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming Maplewood Tower's repeated contamination problem, a direct analytical follow-up is which customer-stream shows the highest recurring contamination rate overall.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cross-Customer Pattern",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the facility's cost per ton for contaminated material that has to be rerouted to the landfill?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After understanding the fee charged to customers, the user naturally wonders about the internal cost to the facility.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Financial Impact (Facility)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "How can I export the raw incident data to perform my own analysis?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Understanding the significant financial costs motivates the supervisor to conduct a more comprehensive data analysis to find other costly patterns.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Data Access and Tools",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What file format is used for the WasteWatch Pro incident export, and which analysis tool can I open it in?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After learning how to export the raw incident data, a direct follow-up is what file format the export uses and what analysis tool it is intended for.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Data Access and Tools",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Who is the lead sorter on the day shift responsible for logging most incidents?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Personnel Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Who is the property manager for Oak Ridge Apartments and what is their contact number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After identifying a specific, recurring problem and learning that the driver has also noted issues, the logical next step is to find the right person to contact at the customer's location to address the problem.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Customer Contact Information",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Pattern Identification",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Investigate Top Offender",
+      "member_need_ids": [
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Investigate Second Offender",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+    "label": "Cross-Customer Pattern",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Financial Impact (Facility)",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Data Access and Tools",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Personnel Information",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Customer Contact Information",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "recycling_contamination_pattern_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

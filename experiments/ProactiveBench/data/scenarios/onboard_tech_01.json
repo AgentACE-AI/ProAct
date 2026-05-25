@@ -1,0 +1,385 @@
+{
+  "scenario_id": "onboard_tech_01",
+  "domain": "employee_onboarding",
+  "description": "A new employee joins a mid-size tech company (~200 people) as a backend engineer. It is their first day, and they need to learn about office facilities, IT setup, team structure, company policies, and daily logistics. All company names and addresses are fictional.",
+  "user_profile": {
+    "persona": "25-year-old fresh CS master's graduate, first full-time job",
+    "context": "First day at the company, knows nothing about the workplace, slightly nervous",
+    "communication_style": "Direct and concise, prefers specific info over vague advice"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "office",
+      "fact": "Your assigned desk is #3B-17, located in the 'Phoenix' wing on the 3rd floor."
+    },
+    {
+      "id": "F02",
+      "category": "office",
+      "fact": "The main kitchen is on the 2nd floor and provides free coffee, tea, and snacks, restocked every Monday and Wednesday."
+    },
+    {
+      "id": "F03",
+      "category": "office",
+      "fact": "Quiet focus rooms, 'Edison' and 'Tesla', are located on the 4th floor and can be booked via the Outlook calendar."
+    },
+    {
+      "id": "F04",
+      "category": "office",
+      "fact": "The company gym is on the ground floor and is accessible 24/7 using your employee badge."
+    },
+    {
+      "id": "F05",
+      "category": "logistics",
+      "fact": "The office address is 123 Tech Avenue, Silicon Hills, CA 94000."
+    },
+    {
+      "id": "F06",
+      "category": "IT",
+      "fact": "Your company laptop is a 14-inch MacBook Pro with the asset tag 'INNO-MBP-8812'."
+    },
+    {
+      "id": "F07",
+      "category": "IT",
+      "fact": "Access the company's single sign-on (SSO) portal at https://login.innovatech.io using your email 'achen@innovatech.io'."
+    },
+    {
+      "id": "F08",
+      "category": "IT",
+      "fact": "To set up your development environment, follow the guide 'Backend Dev Env Setup v2.1' on the company wiki at https://wiki.innovatech.io/docs/dev-setup."
+    },
+    {
+      "id": "F09",
+      "category": "IT",
+      "fact": "For IT support, submit a ticket at https://helpdesk.innovatech.io or visit the IT office in room 2A-05 between 9 AM and 5 PM PST."
+    },
+    {
+      "id": "F10",
+      "category": "IT",
+      "fact": "The company-wide Wi-Fi network is named 'Innovatech-Secure', and the password is provided in your onboarding email from IT."
+    },
+    {
+      "id": "F11",
+      "category": "IT",
+      "fact": "Your primary communication tool is Slack; you have been auto-added to the #backend-eng and #announcements channels."
+    },
+    {
+      "id": "F12",
+      "category": "team",
+      "fact": "Your direct manager is Jane Doe, Head of Engineering, and her desk is #4A-01."
+    },
+    {
+      "id": "F13",
+      "category": "team",
+      "fact": "Your designated onboarding buddy is Emily Carter, a Senior Backend Engineer, who sits at desk #3B-15."
+    },
+    {
+      "id": "F14",
+      "category": "team",
+      "fact": "The Backend Engineering team's daily stand-up meeting is at 9:30 AM PST in conference room 'Apollo' on the 3rd floor."
+    },
+    {
+      "id": "F15",
+      "category": "team",
+      "fact": "The team's project management board is on Jira, accessible at https://jira.innovatech.net/projects/CORE."
+    },
+    {
+      "id": "F16",
+      "category": "team",
+      "fact": "The team's source code is hosted on a private GitLab instance at https://git.innovatech.io."
+    },
+    {
+      "id": "F17",
+      "category": "team",
+      "fact": "A bi-weekly backend team sprint planning meeting occurs every other Tuesday at 11:00 AM PST."
+    },
+    {
+      "id": "F18",
+      "category": "HR",
+      "fact": "Your official start date is Monday, June 10, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "HR",
+      "fact": "You must complete your I-9 verification with HR Generalist Sarah Lee in room 1C-10 by the end of your third day."
+    },
+    {
+      "id": "F20",
+      "category": "HR",
+      "fact": "The deadline to enroll in health insurance benefits via the Zenefits portal is July 10, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "HR",
+      "fact": "Payday is on the 15th and the last business day of each month, processed via direct deposit."
+    },
+    {
+      "id": "F22",
+      "category": "HR",
+      "fact": "The company's paid time off (PTO) policy provides 15 vacation days per year, accrued at a rate of 1.25 days per month."
+    },
+    {
+      "id": "F23",
+      "category": "culture",
+      "fact": "The company holds an all-hands meeting on the first Friday of every month at 3:00 PM PST in the 2nd-floor cafeteria."
+    },
+    {
+      "id": "F24",
+      "category": "culture",
+      "fact": "The engineering department has a 'Demo Day' on the last Thursday of each quarter to showcase new projects."
+    },
+    {
+      "id": "F25",
+      "category": "culture",
+      "fact": "The standard dress code is business casual, with 'Casual Fridays' where jeans and t-shirts are acceptable."
+    },
+    {
+      "id": "F26",
+      "category": "logistics",
+      "fact": "Employee parking is available in the underground garage for a monthly fee of $50, deducted from your paycheck."
+    },
+    {
+      "id": "F27",
+      "category": "office",
+      "fact": "The nearest fire extinguisher to your desk #3B-17 is located next to the 'Apollo' conference room door."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Where is my assigned desk located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "desk_and_buddy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who is my onboarding buddy and where do they sit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After finding their own desk, the user's immediate next step is to locate their designated point-of-contact, their buddy.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "desk_and_buddy",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are my company laptop details and how do I access the single sign-on portal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "it_setup_basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the company Wi-Fi network name and where do I find the password?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Once the user has their laptop and login info, the immediate next step is to connect to the internet.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "it_setup_basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Where is the guide for setting up my backend development environment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After completing basic IT setup like logging in and connecting to Wi-Fi, the next logical task for a new engineer is to configure their specific development tools.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "dev_environment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Who is my direct manager and where is their desk?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "team_structure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "When and where does the backend team have its daily stand-up meeting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After learning who their manager is, the user's next concern is understanding the team's core routines, like the daily stand-up.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "team_structure",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the process and deadline for my I-9 verification?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "hr_formalities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where can I find the kitchen and what is provided there?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once a new employee has located their desk and settled in, a common next thought is about basic amenities like getting coffee or a snack.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "office_amenities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the company's dress code?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "company_culture",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "When does the company hold its all-hands meetings?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning about their immediate team's daily meeting, the user might become curious about larger, company-wide meetings and events.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "company_events",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "desk_and_buddy",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "it_setup_basics",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "dev_environment",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "team_structure",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "hr_formalities",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "office_amenities",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "company_culture",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "company_events",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "onboard_tech_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

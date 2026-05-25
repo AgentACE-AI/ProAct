@@ -1,0 +1,491 @@
+{
+  "scenario_id": "legal_obligation_tracking_05",
+  "domain": "legal_documentation",
+  "description": "A business signed an agreement months ago and now needs to remember recurring obligations, notice periods, renewal triggers, and reporting commitments before any deadlines are missed.",
+  "user_profile": {
+    "persona": "41-year-old business owner who handled the deal personally and now needs a maintainable reminder system",
+    "context": "The contract is no longer new enough to stay top of mind, but its obligations are starting to matter",
+    "communication_style": "Practical and ownership-focused, prefers obligations translated into operational reminders"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "agreement_basics",
+      "fact": "The agreement is titled 'Master Services Agreement for AI-Powered Analytics Platform'."
+    },
+    {
+      "id": "F02",
+      "category": "agreement_basics",
+      "fact": "The parties to the agreement are Apex Digital Growth LLC and Innovate Solutions Inc."
+    },
+    {
+      "id": "F03",
+      "category": "agreement_basics",
+      "fact": "The unique agreement identifier is MSA-2023-481-IS."
+    },
+    {
+      "id": "F04",
+      "category": "agreement_basics",
+      "fact": "The agreement's effective date is June 1, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "agreement_basics",
+      "fact": "The initial term of the agreement is 24 months, ending May 31, 2025."
+    },
+    {
+      "id": "F06",
+      "category": "financial_obligations",
+      "fact": "Apex Digital Growth LLC is obligated to pay a monthly recurring fee of $4,500.00."
+    },
+    {
+      "id": "F07",
+      "category": "financial_obligations",
+      "fact": "Monthly payments are due on the 1st of each month for the upcoming month's service."
+    },
+    {
+      "id": "F08",
+      "category": "financial_obligations",
+      "fact": "All payments must be made via ACH transfer to Innovate Solutions Inc.'s account at Meridian Trust Bank, account number ending in 5678."
+    },
+    {
+      "id": "F09",
+      "category": "financial_obligations",
+      "fact": "A late payment penalty of 1.5% per month is applied to any outstanding balance after a 5-day grace period."
+    },
+    {
+      "id": "F10",
+      "category": "financial_obligations",
+      "fact": "Invoices from Innovate Solutions are sent electronically to billing@apexdigital.io."
+    },
+    {
+      "id": "F11",
+      "category": "financial_obligations",
+      "fact": "A one-time implementation and setup fee of $2,000 was paid on June 15, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "performance_obligations",
+      "fact": "Apex Digital Growth must upload anonymized customer interaction data to the platform every Monday by 9:00 AM Pacific Time."
+    },
+    {
+      "id": "F13",
+      "category": "performance_obligations",
+      "fact": "The required data format for uploads is JSON, conforming to the 'InnovateSchema_v2.1' specification."
+    },
+    {
+      "id": "F14",
+      "category": "performance_obligations",
+      "fact": "Apex Digital Growth is committed to a minimum of 50,000 API calls per month to the analytics platform."
+    },
+    {
+      "id": "F15",
+      "category": "system_access",
+      "fact": "The primary login URL for the Innovate Solutions analytics platform is https://analytics.innovatesolutions.io/login."
+    },
+    {
+      "id": "F16",
+      "category": "reporting_commitments",
+      "fact": "A Quarterly Business Review (QBR) meeting is required to be held within 15 days of the end of each calendar quarter."
+    },
+    {
+      "id": "F17",
+      "category": "reporting_commitments",
+      "fact": "Apex must submit a written performance summary report to Innovate Solutions at least 7 days prior to each QBR."
+    },
+    {
+      "id": "F18",
+      "category": "reporting_commitments",
+      "fact": "The performance summary report must be sent to Priya Sharma, the Account Manager at Innovate Solutions."
+    },
+    {
+      "id": "F19",
+      "category": "reporting_commitments",
+      "fact": "Innovate Solutions is required to provide Apex with a monthly platform usage and analytics insight report by the 5th business day of the following month."
+    },
+    {
+      "id": "F20",
+      "category": "reporting_commitments",
+      "fact": "The next QBR is scheduled for April 10, 2024, at 2:00 PM Pacific Time via video conference."
+    },
+    {
+      "id": "F21",
+      "category": "renewal_termination",
+      "fact": "The agreement will automatically renew for successive 12-month terms unless a notice of non-renewal is provided."
+    },
+    {
+      "id": "F22",
+      "category": "renewal_termination",
+      "fact": "The notice period for non-renewal is 90 days prior to the end of the current term."
+    },
+    {
+      "id": "F23",
+      "category": "renewal_termination",
+      "fact": "The last day for Apex Digital Growth to submit a non-renewal notice for the initial term is March 2, 2025."
+    },
+    {
+      "id": "F24",
+      "category": "renewal_termination",
+      "fact": "Termination for convenience by Apex Digital Growth requires a 60-day written notice."
+    },
+    {
+      "id": "F25",
+      "category": "renewal_termination",
+      "fact": "Terminating for convenience during the initial 24-month term incurs an early termination fee equal to 50% of the remaining contract value."
+    },
+    {
+      "id": "F26",
+      "category": "communication_notices",
+      "fact": "All official legal notices must be sent via certified mail, return receipt requested."
+    },
+    {
+      "id": "F27",
+      "category": "communication_notices",
+      "fact": "The address for sending legal notices to Innovate Solutions Inc. is 123 Tech Parkway, Suite 400, Wilmington, DE 19801."
+    },
+    {
+      "id": "F28",
+      "category": "communication_notices",
+      "fact": "Legal notices for Innovate Solutions must be addressed to 'Attn: General Counsel'."
+    },
+    {
+      "id": "F29",
+      "category": "communication_notices",
+      "fact": "The address for sending legal notices to Apex Digital Growth LLC is 456 Market Street, San Francisco, CA 94105, Attn: Alex Chen."
+    },
+    {
+      "id": "F30",
+      "category": "key_personnel",
+      "fact": "The primary business contact and signatory for Apex Digital Growth is Alex Chen, Owner."
+    },
+    {
+      "id": "F31",
+      "category": "key_personnel",
+      "fact": "The designated Account Manager at Innovate Solutions is Priya Sharma, who can be reached at p.sharma@innovatesolutions.io."
+    },
+    {
+      "id": "F32",
+      "category": "key_personnel",
+      "fact": "For technical support, Apex should contact support@innovatesolutions.io or call the priority support line at 1-800-555-0199."
+    },
+    {
+      "id": "F33",
+      "category": "system_access",
+      "fact": "The administrator username for Apex Digital Growth on the platform is 'achen@apexdigital.io'."
+    },
+    {
+      "id": "F34",
+      "category": "system_access",
+      "fact": "The API key required for data submission is stored in the company's 1Password vault under the entry 'InnovateSolutionsAPI'."
+    },
+    {
+      "id": "F35",
+      "category": "governance",
+      "fact": "The agreement is governed by and construed in accordance with the laws of the State of Delaware."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my recurring monthly payment obligation and when is it due each month?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Monthly Payments",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the required payment method and what is the penalty for a late payment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Once the user knows what and when to pay, the next logical questions are how to pay and the consequences of being late.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Monthly Payments",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are my weekly data upload obligations, including the specific day, time, and required data format?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Weekly Performance Tasks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Where is the API key for data submission stored?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After learning about the technical requirement to upload data, the user needs the specific credential to perform the task.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Weekly Performance Tasks",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are my reporting duties before each Quarterly Business Review and how far in advance must I submit the report?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After discussing frequent operational tasks (weekly data uploads), it's natural to proactively surface less frequent but important obligations like quarterly reporting.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Quarterly Reporting Duties",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Who is the specific recipient for my quarterly performance summary report?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Once the user understands the reporting deliverable and deadline, the next question is who to send it to.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Quarterly Reporting Duties",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the date and time for the next scheduled Quarterly Business Review?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Discussing the requirements for the QBR naturally leads to asking when the next specific meeting is scheduled. This is an auditable proactive target.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Next QBR Date",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "When does the initial contract term end, and what is the exact deadline to provide a notice of non-renewal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Contract Renewal",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What happens if I don't provide a non-renewal notice? Does the agreement renew automatically?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After learning the deadline for non-renewal, the user will want to know the default outcome if that deadline is missed.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Contract Renewal",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the required notice period and financial penalty if I want to terminate the contract for convenience during the initial term?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: While thinking about the end-of-term renewal process, the user may also consider other exit strategies, making the early termination clause a relevant next topic. This is an auditable proactive target.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Early Termination Clause",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is my primary account manager at Innovate Solutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Personnel",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the required method and mailing address for sending official legal notices to Innovate Solutions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After identifying the day-to-day business contact, it's helpful to proactively provide the distinct, more formal channel for legal communications. This is an auditable proactive target.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Official Legal Notices",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What monthly report is Innovate Solutions obligated to provide to my company?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Vendor Obligations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the unique identifier for this agreement?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Agreement Reference",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Monthly Payments",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Weekly Performance Tasks",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Quarterly Reporting Duties",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Next QBR Date",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Contract Renewal",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Early Termination Clause",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Personnel",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Official Legal Notices",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Vendor Obligations",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Agreement Reference",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "legal_obligation_tracking_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "scenario_id": "vessel_port_document_bundle_05",
+  "domain": "maritime_vessel_operations",
+  "description": "Before arrival, the crew must prepare a coherent document bundle for port entry, inspection readiness, declarations, and likely follow-up questions from authorities. All ports and vessel names are fictional.",
+  "user_profile": {
+    "persona": "38-year-old shipboard administrator responsible for arrival paperwork under tight timing",
+    "context": "The documents exist, but they are spread across different preparation streams and must be made inspection-ready before arrival",
+    "communication_style": "Administrative and orderly, wants the bundle assembled by purpose rather than source"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "vessel_and_voyage_details",
+      "fact": "The vessel's name is the MV 'Stellar Compass'."
+    },
+    {
+      "id": "F02",
+      "category": "vessel_and_voyage_details",
+      "fact": "The IMO Number for the MV 'Stellar Compass' is 9876543."
+    },
+    {
+      "id": "F03",
+      "category": "vessel_and_voyage_details",
+      "fact": "The current voyage number is SC-2024-07A."
+    },
+    {
+      "id": "F04",
+      "category": "vessel_and_voyage_details",
+      "fact": "The last port of call was the Port of Aethel."
+    },
+    {
+      "id": "F05",
+      "category": "vessel_and_voyage_details",
+      "fact": "The Estimated Time of Arrival (ETA) at Port of Meridian is July 28, 2024, at 06:00 local time."
+    },
+    {
+      "id": "F06",
+      "category": "port_of_arrival_information",
+      "fact": "The destination port is the Port of Meridian."
+    },
+    {
+      "id": "F07",
+      "category": "port_of_arrival_information",
+      "fact": "The governing body for the port is the Meridian Harbor Authority (MHA)."
+    },
+    {
+      "id": "F08",
+      "category": "port_of_arrival_information",
+      "fact": "The assigned berth for the MV 'Stellar Compass' is Terminal 7, Berth 4."
+    },
+    {
+      "id": "F09",
+      "category": "port_of_arrival_information",
+      "fact": "The appointed port agent is Meridian Maritime Services."
+    },
+    {
+      "id": "F10",
+      "category": "personnel_and_contacts",
+      "fact": "The MHA Port Operations Officer for this arrival is Mr. Jian Li."
+    },
+    {
+      "id": "F11",
+      "category": "personnel_and_contacts",
+      "fact": "The shipboard administrator responsible for paperwork is Elena Petrova."
+    },
+    {
+      "id": "F12",
+      "category": "personnel_and_contacts",
+      "fact": "The Master of the MV 'Stellar Compass' is Captain Aarav Sharma."
+    },
+    {
+      "id": "F13",
+      "category": "personnel_and_contacts",
+      "fact": "The Chief Officer, Sofia Rossi, is responsible for verifying the Cargo Declaration."
+    },
+    {
+      "id": "F14",
+      "category": "personnel_and_contacts",
+      "fact": "The primary email contact for the agent, Meridian Maritime Services, is ops@meridianmaritime.com."
+    },
+    {
+      "id": "F15",
+      "category": "personnel_and_contacts",
+      "fact": "The direct phone line for the agent's operations desk is +1-555-234-5678."
+    },
+    {
+      "id": "F16",
+      "category": "digital_systems_and_tools",
+      "fact": "The ship's official document management system is 'SeaDocs Pro' version 4.2."
+    },
+    {
+      "id": "F17",
+      "category": "digital_systems_and_tools",
+      "fact": "The login URL for SeaDocs Pro is https://seadocs.horizonshipping.co/login."
+    },
+    {
+      "id": "F18",
+      "category": "digital_systems_and_tools",
+      "fact": "All official declarations must be submitted electronically via the Meridian Harbor Authority's 'SafeHarbor' portal."
+    },
+    {
+      "id": "F19",
+      "category": "digital_systems_and_tools",
+      "fact": "The URL for the SafeHarbor portal is https://safeharbor.portofmeridian.gov."
+    },
+    {
+      "id": "F20",
+      "category": "digital_systems_and_tools",
+      "fact": "The ship's crew uses the Slack channel #SC-2024-07A-Meridian for real-time coordination with the port agent."
+    },
+    {
+      "id": "F21",
+      "category": "document_requirements",
+      "fact": "The arrival bundle must include the IMO General Declaration (FAL Form 1)."
+    },
+    {
+      "id": "F22",
+      "category": "document_requirements",
+      "fact": "The Crew List (FAL Form 5) must list all 22 crew members currently on board."
+    },
+    {
+      "id": "F23",
+      "category": "document_requirements",
+      "fact": "The Cargo Declaration (FAL Form 2) must detail the 15,450 metric tons of bulk grain on board."
+    },
+    {
+      "id": "F24",
+      "category": "document_requirements",
+      "fact": "The Ship's Stores Declaration (FAL Form 3) is a required component of the document bundle."
+    },
+    {
+      "id": "F25",
+      "category": "document_requirements",
+      "fact": "The Crew's Effects Declaration (FAL Form 4) is required for all non-domiciled crew."
+    },
+    {
+      "id": "F26",
+      "category": "document_requirements",
+      "fact": "A completed Maritime Declaration of Health must be submitted, signed by the Master within 24 hours of submission."
+    },
+    {
+      "id": "F27",
+      "category": "document_requirements",
+      "fact": "The Ballast Water Reporting Form must indicate a mid-ocean exchange was performed on July 22, 2024."
+    },
+    {
+      "id": "F28",
+      "category": "document_requirements",
+      "fact": "A valid copy of the International Ship Security Certificate (ISSC), expiring on December 31, 2025, must be included."
+    },
+    {
+      "id": "F29",
+      "category": "inspection_readiness",
+      "fact": "The Port of Meridian requires 3 printed copies of the Crew List for the on-arrival inspection."
+    },
+    {
+      "id": "F30",
+      "category": "submission_procedures",
+      "fact": "The deadline for submitting the full document bundle to the SafeHarbor portal is July 27, 2024, at 06:00 local time."
+    },
+    {
+      "id": "F31",
+      "category": "submission_procedures",
+      "fact": "The final submission must be a single, collated PDF file, not exceeding 25 MB in size."
+    },
+    {
+      "id": "F32",
+      "category": "submission_procedures",
+      "fact": "The required PDF filename format is 'IMO9876543_VoyageSC-2024-07A_ArrivalDocs.pdf'."
+    },
+    {
+      "id": "F33",
+      "category": "inspection_readiness",
+      "fact": "The Master's office (Cabin A-01) must have the physical document bundle printed and ready for inspection upon the pilot's boarding."
+    },
+    {
+      "id": "F34",
+      "category": "inspection_readiness",
+      "fact": "All crew passports and seaman's books must be collected and arranged in the order they appear on the Crew List (FAL Form 5) by 04:00 on the day of arrival."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the vessel name, IMO number, and current voyage ID for this arrival?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Voyage & Destination Info",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is our destination port, ETA, and assigned berth?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F05",
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming vessel identity, the next logical step is to confirm arrival details.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Voyage & Destination Info",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which standard IMO FAL forms are required for the arrival bundle?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22",
+        "F23",
+        "F24",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Required Documents List",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Besides the FAL forms, which specific additional documents must be included: the Maritime Declaration of Health, the Ballast Water Reporting Form, and the ISSC?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After listing the standard forms, the user will want to know about any other required documents.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Required Documents List",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the submission deadline and where do I submit the documents electronically?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30",
+        "F18"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the user has a complete list of required documents, the next logical question is how and when to submit them.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Submission Procedure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the required file format and naming convention for the electronic submission?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F32"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning where and when to submit, the user will need to know the specific technical requirements for the submission file.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Submission Procedure",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Where must the physical document bundle be kept, and when must it be printed and ready for the on-arrival inspection?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After handling the electronic submission, the user's focus will shift to preparing for the physical, in-person inspection.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Physical Inspection Prep",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the specific instructions for preparing crew passports and seaman's books for inspection?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: The physical inspection of documents naturally leads to questions about preparing associated physical items like passports.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Crew Passport Prep",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "How many printed copies of the Crew List are needed for the inspection?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning about the need for a physical bundle, the user might have a specific question about printing quantities for a key document.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Specific Print Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the name of our appointed port agent and what is their primary email contact?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Agent Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the agent's direct phone number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "After getting the agent's name and email, asking for a phone number is a common follow-up.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Agent Contact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "Which Slack channel is designated for coordinating this port call with the agent?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After getting the agent's formal contact details, the user may want to know about informal/real-time communication channels.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Real-time Coordination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Who is the Master of the vessel and who is responsible for verifying the Cargo Declaration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Internal Roles",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Which shipboard document management system holds the source documents?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "System Information",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Voyage & Destination Info",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Required Documents List",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Submission Procedure",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Physical Inspection Prep",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Crew Passport Prep",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Specific Print Requirements",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Agent Contact",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Real-time Coordination",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Internal Roles",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "System Information",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vessel_port_document_bundle_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

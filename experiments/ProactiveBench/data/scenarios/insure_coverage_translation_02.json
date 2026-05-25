@@ -1,0 +1,443 @@
+{
+  "scenario_id": "insure_coverage_translation_02",
+  "domain": "insurance_navigation",
+  "description": "A user understands that their policy contains coverage rules and exclusions, but they need help interpreting what those terms actually mean for three specific real-life situations they worry about.",
+  "user_profile": {
+    "persona": "31-year-old freelance photographer buying more serious coverage for the first time",
+    "context": "The policy wording feels abstract until connected to actual situations involving work equipment and travel",
+    "communication_style": "Concrete and example-driven, learns best through scenario-based explanation"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "User_Profile",
+      "fact": "The policyholder is Liam Chen, a 31-year-old freelance photographer."
+    },
+    {
+      "id": "F02",
+      "category": "Policy_Details",
+      "fact": "Liam Chen holds the 'ProLens Secure Plan' with Aegis Mutual Insurance."
+    },
+    {
+      "id": "F03",
+      "category": "Policy_Details",
+      "fact": "The policy number is PLS-884-391-C2, with an effective date of March 1, 2024."
+    },
+    {
+      "id": "F04",
+      "category": "Policy_Details",
+      "fact": "The annual premium for the ProLens Secure Plan is $1,250."
+    },
+    {
+      "id": "F05",
+      "category": "Equipment_Coverage",
+      "fact": "The policy includes 'Specialized Equipment Coverage' with a total limit of $20,000."
+    },
+    {
+      "id": "F06",
+      "category": "Equipment_Coverage",
+      "fact": "Liam's Sony Alpha 1 camera body (Serial: SN-A1-98765) is a scheduled item on the policy with a replacement value of $6,500."
+    },
+    {
+      "id": "F07",
+      "category": "Equipment_Coverage",
+      "fact": "A $500 deductible applies to each claim for accidental damage to photography equipment."
+    },
+    {
+      "id": "F08",
+      "category": "Equipment_Coverage",
+      "fact": "The policy covers accidental damage, such as dropping a G Master 70-200mm lens on a rock during a shoot, but excludes cosmetic wear and tear."
+    },
+    {
+      "id": "F09",
+      "category": "Equipment_Coverage",
+      "fact": "Damage to drones, like Liam's DJI Mavic 3 Pro, is only covered if it occurs within 500 feet of the operator and not over water."
+    },
+    {
+      "id": "F10",
+      "category": "Travel_Coverage",
+      "fact": "The policy includes 'Business Trip Interruption' coverage, which reimburses up to $5,000 in non-refundable, pre-paid travel costs."
+    },
+    {
+      "id": "F11",
+      "category": "Travel_Coverage",
+      "fact": "A covered reason for trip interruption is the cancellation of transportation due to a natural disaster, such as a wildfire near a photoshoot location."
+    },
+    {
+      "id": "F12",
+      "category": "Travel_Coverage",
+      "fact": "Liam's non-refundable $485 ticket for Skyward Air flight SW451 would be eligible for reimbursement if the flight is canceled due to a wildfire."
+    },
+    {
+      "id": "F13",
+      "category": "Travel_Coverage",
+      "fact": "The 'Business Trip Interruption' coverage does not reimburse for lost potential income from the canceled photoshoot."
+    },
+    {
+      "id": "F14",
+      "category": "Liability_Coverage",
+      "fact": "The policy provides 'General Liability Coverage' with a limit of $1,000,000 per occurrence."
+    },
+    {
+      "id": "F15",
+      "category": "Liability_Coverage",
+      "fact": "The liability coverage applies if a third party, such as a model or client, is injured as a direct result of Liam's professional operations."
+    },
+    {
+      "id": "F16",
+      "category": "Liability_Coverage",
+      "fact": "If a model named Alex Rivera tripped over a tripod leg and sprained an ankle, the policy's liability coverage would handle the claim."
+    },
+    {
+      "id": "F17",
+      "category": "Liability_Coverage",
+      "fact": "The policy includes a 'Medical Payments' sub-limit of $10,000 to cover immediate medical expenses for an injured third party, regardless of fault."
+    },
+    {
+      "id": "F18",
+      "category": "Liability_Coverage",
+      "fact": "There is a $0 deductible for claims filed under the General Liability portion of the policy."
+    },
+    {
+      "id": "F19",
+      "category": "Claim_Process",
+      "fact": "Liam must report any incident that could lead to a liability claim to Aegis Mutual Insurance within 72 hours of its occurrence."
+    },
+    {
+      "id": "F20",
+      "category": "Claim_Process",
+      "fact": "To file a claim, Liam must use the Aegis Mutual online portal located at https://my.aegismutual.net/claims."
+    },
+    {
+      "id": "F21",
+      "category": "Claim_Process",
+      "fact": "For an equipment damage claim, Liam needs to provide the item's serial number and a repair estimate from a certified technician."
+    },
+    {
+      "id": "F22",
+      "category": "Claim_Process",
+      "fact": "For a trip interruption claim, Liam must submit the flight cancellation email from the airline and proof of pre-payment."
+    },
+    {
+      "id": "F23",
+      "category": "Claim_Process",
+      "fact": "The average processing time for a fully documented equipment claim is 7-10 business days."
+    },
+    {
+      "id": "F24",
+      "category": "Policy_Details",
+      "fact": "Liam's dedicated insurance agent is Sarah Jenkins, reachable at s.jenkins@aegismutual.net or 800-555-0182 ext. 445."
+    },
+    {
+      "id": "F25",
+      "category": "Policy_Details",
+      "fact": "The policy territory for all coverages is the United States and Canada; international shoots require a separate rider."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "If I accidentally drop my G Master 70-200mm lens on a rock during a shoot, is that type of damage covered by my policy?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Equipment Damage Scenario",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the deductible that applies to each claim for accidental damage to my photography equipment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming that accidental damage is covered, the user's immediate next question will be about the out-of-pocket cost (deductible) for such a claim.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Equipment Damage Scenario",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where do I go to file an insurance claim?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the financial implication (deductible) of a claim, the next logical step is to ask about the practical action of how and where to start the claims process.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Claim Filing Portal",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What two pieces of information does the policy explicitly say I need to provide for an equipment damage claim?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the location of the claims portal, the user will need to know what documentation to prepare before they begin the filing process.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Equipment Claim Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the average processing time for a fully documented equipment claim?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After understanding what documentation is required for a claim, the user will likely want to know how long they should expect to wait for a resolution.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Equipment Claim Process",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What are the specific coverage rules for damage to my DJI Mavic 3 Pro drone?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Specific Equipment Exclusions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "If a wildfire near my photoshoot location causes my flight to be canceled, what does my 'Business Trip Interruption' coverage reimburse?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Trip Interruption Scenario",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "In that wildfire scenario, would my non-refundable $485 ticket for Skyward Air flight SW451 be eligible for reimbursement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After understanding the general rule for trip interruption, the user wants to apply it to their specific, concrete situation (the flight ticket).",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Trip Interruption Scenario",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Does the trip interruption coverage also reimburse me for the potential income I lose from the canceled photoshoot?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After confirming coverage for direct costs, the user will want to clarify if the policy also covers indirect financial losses like lost income.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Trip Interruption Scenario",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N10",
+      "description": "For a trip interruption claim, which two documents does the policy explicitly say I must submit?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Once the user confirms a specific expense (the flight ticket) is covered, a natural proactive suggestion is to provide the documentation requirements for that specific type of claim.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Trip Interruption Claim Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "If a model named Alex Rivera tripped over a tripod leg and sprained an ankle during one of my shoots, what does my liability coverage handle?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Liability Scenario",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the deductible for claims filed under the General Liability portion of the policy?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning about the deductible for one type of claim (equipment), the user is likely to wonder about the deductibles for other major claim types, such as liability.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Liability Scenario",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is the coverage limit for General Liability per occurrence?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After understanding that a liability event is covered, the user may want to know the maximum amount the policy would pay for such an event.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Liability Scenario",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N14",
+      "description": "How quickly must I report an incident that could lead to a liability claim?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Discussing a liability scenario should proactively trigger information about the time-sensitive reporting requirements associated with it, as this is a critical and often overlooked policy condition.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Liability Claim Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What is the policy territory for my coverages?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Policy Administration",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Equipment Damage Scenario",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Claim Filing Portal",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Equipment Claim Process",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Specific Equipment Exclusions",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Trip Interruption Scenario",
+      "member_need_ids": [
+        "N7",
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Trip Interruption Claim Process",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Liability Scenario",
+      "member_need_ids": [
+        "N11",
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Liability Claim Reporting",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Policy Administration",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "insure_coverage_translation_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

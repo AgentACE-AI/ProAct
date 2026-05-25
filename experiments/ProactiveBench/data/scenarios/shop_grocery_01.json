@@ -1,0 +1,426 @@
+{
+  "scenario_id": "shop_grocery_01",
+  "domain": "personal_shopping",
+  "description": "A user needs to plan a weekly grocery shop for a family of 4, focusing on healthy ingredients and staying under a fictional budget ($150).",
+  "user_profile": {
+    "persona": "33-year-old health-conscious parent",
+    "context": "Weekly routine, looking for sales",
+    "communication_style": "Pragmatic, lists-oriented"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "user_profile",
+      "fact": "The primary grocery shopper for the family is Jenna Miller, age 33."
+    },
+    {
+      "id": "F02",
+      "category": "family_profile",
+      "fact": "The Miller family consists of 4 members: Jenna, her husband Mark, and two children, Leo (age 8) and Mia (age 5)."
+    },
+    {
+      "id": "F03",
+      "category": "budget_and_finance",
+      "fact": "The strict weekly grocery budget for the Miller family is $150.00."
+    },
+    {
+      "id": "F04",
+      "category": "shopping_schedule",
+      "fact": "Jenna Miller performs the main weekly grocery shopping trip every Saturday between 9:00 AM and 11:00 AM."
+    },
+    {
+      "id": "F05",
+      "category": "shopping_tools",
+      "fact": "Jenna uses the mobile app 'ListifyPro' to manage her grocery lists; her username is 'jmiller89'."
+    },
+    {
+      "id": "F06",
+      "category": "store_information",
+      "fact": "The primary grocery store is 'FreshFare Market', located at 452 Orchard Drive, Meadowbrook."
+    },
+    {
+      "id": "F07",
+      "category": "store_information",
+      "fact": "For bulk items like oats and rice, Jenna shops once a month at 'BulkBuy Warehouse' on 910 Commerce Way."
+    },
+    {
+      "id": "F08",
+      "category": "loyalty_program",
+      "fact": "Jenna Miller's 'FreshFare Rewards' loyalty card number is 987-654-3210, which provides a 5% discount on produce."
+    },
+    {
+      "id": "F09",
+      "category": "dietary_restrictions",
+      "fact": "The son, Leo Miller, has a diagnosed mild allergy to peanuts."
+    },
+    {
+      "id": "F10",
+      "category": "nutritional_goals",
+      "fact": "A key nutritional goal for the week is to ensure each family member consumes at least 4 servings of vegetables per day."
+    },
+    {
+      "id": "F11",
+      "category": "meal_plan",
+      "fact": "This week's meal plan includes 'Baked Salmon with Roasted Asparagus' for Wednesday's dinner."
+    },
+    {
+      "id": "F12",
+      "category": "meal_plan",
+      "fact": "Monday's planned dinner is 'Lentil Soup' to start the week with a plant-based meal."
+    },
+    {
+      "id": "F13",
+      "category": "shopping_list_item",
+      "fact": "The shopping list for this week includes 2 lbs of organic, free-range chicken breast from FreshFare Market."
+    },
+    {
+      "id": "F14",
+      "category": "shopping_list_item_price",
+      "fact": "FreshFare Market currently has a sale on organic Gala apples for $1.29 per pound; the list requires 4 lbs."
+    },
+    {
+      "id": "F15",
+      "category": "shopping_list_item",
+      "fact": "Due to Leo's allergy, the shopping list specifies 'SunBloom' brand sunflower seed butter instead of peanut butter."
+    },
+    {
+      "id": "F16",
+      "category": "family_preferences",
+      "fact": "Mia's favorite healthy snack is 'Stonyfield Farms' brand organic strawberry yogurt tubes."
+    },
+    {
+      "id": "F17",
+      "category": "budget_tracking",
+      "fact": "Jenna allocates $95.00 of the budget for FreshFare Market and reserves $55.00 for the monthly BulkBuy Warehouse trip."
+    },
+    {
+      "id": "F18",
+      "category": "food_preparation",
+      "fact": "Jenna meal preps lunches for herself and Mark every Sunday afternoon, typically making a large batch of quinoa salad."
+    },
+    {
+      "id": "F19",
+      "category": "shopping_list_item_price",
+      "fact": "A 32oz container of 'Fage' brand 2% Greek yogurt is on the list, priced at $5.29."
+    },
+    {
+      "id": "F20",
+      "category": "shopping_list_item",
+      "fact": "The list includes one half-gallon of 'AlmondBreeze' unsweetened vanilla almond milk for smoothies and cereal."
+    },
+    {
+      "id": "F21",
+      "category": "nutritional_goals",
+      "fact": "The family aims to limit added sugar intake to less than 25 grams per person per day."
+    },
+    {
+      "id": "F22",
+      "category": "shopping_tools",
+      "fact": "Jenna receives the weekly digital flyer from FreshFare Market via email at jenna.m.89@email.com every Tuesday."
+    },
+    {
+      "id": "F23",
+      "category": "meal_plan",
+      "fact": "The children's school lunch plan for Tuesday is whole wheat pasta with turkey meatballs and a side of steamed broccoli."
+    },
+    {
+      "id": "F24",
+      "category": "shopping_list_item_price",
+      "fact": "One bunch of organic kale is on the list, costing $2.99 at FreshFare Market."
+    },
+    {
+      "id": "F25",
+      "category": "family_preferences",
+      "fact": "Mark prefers 'Dave's Killer Bread' 21 Whole Grains and Seeds variety for his sandwiches."
+    },
+    {
+      "id": "F26",
+      "category": "shopping_schedule",
+      "fact": "A quick mid-week trip for milk or fresh fruit is sometimes made on Wednesdays after 5:00 PM."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my total weekly grocery budget and for how many people am I shopping?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Budget and Family Overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the location and time for my main weekly grocery shopping trip?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Shopping Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is my loyalty card number for FreshFare Market and what discount does it give me?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After identifying the primary grocery store, the user is likely to be interested in any associated loyalty programs or discounts available at that specific store.",
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Loyalty Program",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What meals are planned for Monday and Wednesday dinner?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G4",
+      "reveal_group_label": "Meal Plan Specifics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "How much organic, free-range chicken breast is on my shopping list?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After reviewing the meal plan, a natural next step is to ask about the specific quantities of key ingredients required for those meals.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Meal Plan Specifics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Is there a family member with a food allergy, and what is it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing the week's planned meals, a natural follow-up is to confirm whether any family food allergies or dietary restrictions need to be accounted for when shopping for those meals.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Dietary Restrictions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What specific brand of peanut butter substitute is on the list?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Immediately after learning about the peanut allergy, the user's primary concern will be identifying the specific safe alternative they need to purchase.",
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Allergy-Safe Item",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is Mia's preferred healthy snack according to the list?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G7",
+      "reveal_group_label": "Family Preferences",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Which variety of bread does Mark prefer?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Family Preferences",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Is there a sale on apples at FreshFare, and what is the price?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Sales and Pricing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the price of the Fage 2% Greek yogurt on my list?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: After inquiring about a sale on one item, the user is likely to continue checking prices for other specific items on their list to stay within budget.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Sales and Pricing",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What is the family's daily nutritional goal for vegetable consumption?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing the week's planned meals, the user may naturally ask about the broader nutritional target those meals are meant to support, especially the family's vegetable-consumption goal.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Nutritional Goals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Are any other smaller grocery trips planned during the week?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After establishing the main weekly shopping schedule, a logical follow-up question is whether any supplementary, mid-week trips are also part of the routine.",
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Supplementary Shopping",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Budget and Family Overview",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Shopping Logistics",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Loyalty Program",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Meal Plan Specifics",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Dietary Restrictions",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Allergy-Safe Item",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Family Preferences",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Sales and Pricing",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Nutritional Goals",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G10",
+      "label": "Supplementary Shopping",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shop_grocery_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

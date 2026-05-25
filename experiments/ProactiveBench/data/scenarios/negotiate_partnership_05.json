@@ -1,0 +1,511 @@
+{
+  "scenario_id": "negotiate_partnership_05",
+  "domain": "negotiation_support",
+  "description": "A company is negotiating a 10-year strategic alliance with a global distributor. They need to track hundreds of clauses over time, including exclusivity, price adjustment formulas based on future indexes, and long-term exit conditions.",
+  "user_profile": {
+    "persona": "55-year-old Head of Strategy",
+    "context": "Negotiating a deal that defines the company's next decade",
+    "communication_style": "Extremely detailed, patient, focuses on 'what-if' scenarios"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Alliance Details",
+      "fact": "The proposed strategic alliance between Innovate Corp and GlobalReach Logistics is for a 10-year term, commencing on January 1, 2025."
+    },
+    {
+      "id": "F02",
+      "category": "Alliance Details",
+      "fact": "The internal codename for the negotiation initiative at Innovate Corp is 'Project Horizon'."
+    },
+    {
+      "id": "F03",
+      "category": "Negotiation Team",
+      "fact": "Arthur Vance, Head of Strategy at Innovate Corp, is the lead negotiator. His office extension is 5542."
+    },
+    {
+      "id": "F04",
+      "category": "Negotiation Team",
+      "fact": "Elena Rodriguez from the law firm Lex Veritas Partners is Innovate Corp's external legal counsel for Project Horizon. Her contact email is e.rodriguez@lexveritas.com."
+    },
+    {
+      "id": "F05",
+      "category": "Negotiation Team",
+      "fact": "The lead negotiator for GlobalReach Logistics is Marcus Thorne, their Vice President of Global Partnerships."
+    },
+    {
+      "id": "F06",
+      "category": "Key Clauses",
+      "fact": "Clause 4.2 grants GlobalReach Logistics exclusive distribution rights for the 'QuantumLeap' product line within the EMEA (Europe, Middle East, and Africa) region."
+    },
+    {
+      "id": "F07",
+      "category": "Key Clauses",
+      "fact": "Clause 7.1 outlines the price adjustment formula, which is pegged to the Global Tech Materials Index (GTMI) with a 0.8 correlation factor."
+    },
+    {
+      "id": "F08",
+      "category": "Key Clauses",
+      "fact": "Clause 15.3 specifies termination-for-convenience conditions, allowing an exit with a 24-month notice period after an initial 5-year lock-in period."
+    },
+    {
+      "id": "F09",
+      "category": "Key Clauses",
+      "fact": "A penalty of 1.5% of the previous year's regional revenue is stipulated in Clause 9.4 if GlobalReach Logistics fails to meet the minimum annual sales volume of 500,000 units."
+    },
+    {
+      "id": "F10",
+      "category": "Financial Terms",
+      "fact": "The initial transfer price for a QuantumLeap Model X unit is set at $1,250 USD for the first 12 months of the agreement."
+    },
+    {
+      "id": "F11",
+      "category": "Financial Terms",
+      "fact": "Price adjustments based on the GTMI (Clause 7.1) will be calculated quarterly, effective on the first business day of January, April, July, and October."
+    },
+    {
+      "id": "F12",
+      "category": "Financial Terms",
+      "fact": "Standard payment terms for all invoices under this agreement are Net 60 days, as detailed in Appendix B, Section 2."
+    },
+    {
+      "id": "F13",
+      "category": "Risk & Contingency",
+      "fact": "Innovate Corp has modeled a worst-case scenario (Model C-4) where the GTMI increases by 15% year-over-year, impacting gross margins by an estimated 8.2%."
+    },
+    {
+      "id": "F14",
+      "category": "Operational Details",
+      "fact": "The primary data exchange for sales and inventory reporting will occur via a secure SFTP server at sftp://connect.innovatecorp.biz:2200."
+    },
+    {
+      "id": "F15",
+      "category": "Operational Details",
+      "fact": "GlobalReach Logistics is contractually required to maintain a minimum of 30 days' worth of 'QuantumLeap' product inventory at their Rotterdam distribution hub."
+    },
+    {
+      "id": "F16",
+      "category": "Tools & Systems",
+      "fact": "All draft versions of the agreement are version-controlled in the ClauseVault system, accessible at https://innovatecorp.clausevault.com."
+    },
+    {
+      "id": "F17",
+      "category": "Tools & Systems",
+      "fact": "Arthur Vance's username for the ClauseVault system is 'avance'."
+    },
+    {
+      "id": "F18",
+      "category": "Tools & Systems",
+      "fact": "The shared network drive for Project Horizon is mapped to `\\\\IC-SERVER-01\\Strategy\\Project_Horizon`."
+    },
+    {
+      "id": "F19",
+      "category": "Tools & Systems",
+      "fact": "The financial model for price adjustments is an Excel workbook named `PH_GTMI_Model_v4.2.xlsx`, located in the 'Financials' subfolder on the shared drive."
+    },
+    {
+      "id": "F20",
+      "category": "Timeline & Milestones",
+      "fact": "The next negotiation session with GlobalReach Logistics is scheduled for October 26, 2024, at 10:00 AM CET via Webex meeting ID 952-118-473."
+    },
+    {
+      "id": "F21",
+      "category": "Timeline & Milestones",
+      "fact": "The target date for signing the final agreement is December 15, 2024."
+    },
+    {
+      "id": "F22",
+      "category": "Timeline & Milestones",
+      "fact": "A key milestone is the mutual approval of the intellectual property protection terms (Clause 11) by November 5, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "Risk & Contingency",
+      "fact": "Scenario Model D-2 explores the legal and financial impact of a data breach at GlobalReach Logistics' primary data center in Frankfurt."
+    },
+    {
+      "id": "F24",
+      "category": "Risk & Contingency",
+      "fact": "If a force majeure event, as defined in Clause 18, lasts for more than 90 consecutive days, either party can initiate termination proceedings with a 30-day notice."
+    },
+    {
+      "id": "F25",
+      "category": "Risk & Contingency",
+      "fact": "The pre-vetted alternative distributor identified in the contingency plan is 'Apex Worldwide Shipping,' based in Singapore."
+    },
+    {
+      "id": "F26",
+      "category": "Key Clauses",
+      "fact": "Clause 6.5 details the co-marketing fund, to which Innovate Corp contributes 2% and GlobalReach Logistics contributes 1% of net sales in the region."
+    },
+    {
+      "id": "F27",
+      "category": "Negotiation Team",
+      "fact": "The internal weekly sync meeting for the Innovate Corp team is held every Monday at 9:00 AM EST in conference room 'Odyssey'."
+    },
+    {
+      "id": "F28",
+      "category": "Tools & Systems",
+      "fact": "All official email communications related to the negotiation are archived in the Microsoft Teams channel named 'Project Horizon - Core Team'."
+    },
+    {
+      "id": "F29",
+      "category": "Alliance Details",
+      "fact": "The agreement, per Clause 22.1, will be governed by the laws of the State of Delaware, USA, without regard to its conflict of law provisions."
+    },
+    {
+      "id": "F30",
+      "category": "Financial Terms",
+      "fact": "An early payment discount of 0.5% is offered if invoices are paid within 15 days of receipt, a term defined as Net 15."
+    },
+    {
+      "id": "F31",
+      "category": "Operational Details",
+      "fact": "Quarterly Business Reviews (QBRs) are mandated in Clause 19.2 and must be attended by at least one VP-level executive from both companies."
+    },
+    {
+      "id": "F32",
+      "category": "Key Clauses",
+      "fact": "Clause 12.4 prohibits GlobalReach Logistics from distributing any product that directly competes with the 'QuantumLeap' series for the duration of the agreement plus a 12-month tail period."
+    },
+    {
+      "id": "F33",
+      "category": "Key Clauses",
+      "fact": "Clause 7.1 defines the quarterly price adjustment by applying 80% of the percentage change in the Global Tech Materials Index (GTMI) to the then-current unit transfer price."
+    },
+    {
+      "id": "F34",
+      "category": "Key Clauses",
+      "fact": "Clause 9.2 requires GlobalReach Logistics to submit monthly sales-volume reports, and compliance with the annual 500,000-unit commitment is formally reviewed in the quarterly business reviews required by Clause 19.2."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the duration of the proposed strategic alliance with GlobalReach Logistics?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Alliance Terms",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the specific exclusivity rights being granted to GlobalReach Logistics for the QuantumLeap product line?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Exclusivity Clause",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What does Clause 7.1 say the price adjustment formula is?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F33"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Price Adjustment Mechanism",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How frequently will the price adjustments be calculated, and what is the initial transfer price for a QuantumLeap Model X unit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F10"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After learning about the price adjustment formula, the user will naturally want to know the frequency and baseline price it applies to.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Price Adjustment Mechanism",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the estimated impact on our gross margins in the modeled worst-case scenario for the GTMI?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: A detail-oriented strategist, after understanding the price index mechanism, would immediately focus on the 'what-if' financial risks associated with it.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Financial Risk Modeling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the penalty if GlobalReach fails to meet the minimum annual sales volume?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Volume Compliance Clauses",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What mechanism is in place to monitor GlobalReach's compliance with the minimum annual sales volume requirement?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31",
+        "F34"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After identifying the penalty for missing the annual volume target, the natural follow-up is how that obligation is actually monitored and enforced over time.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Volume Compliance Clauses",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What are the conditions for termination-for-convenience, including the lock-in and notice periods?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Exit Conditions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Under what conditions related to a force majeure event can either party initiate termination?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After discussing the standard exit clause, the user's 'what-if' mindset would lead them to consider non-standard or exceptional termination scenarios.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Exceptional Termination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is the pre-vetted alternative distributor identified in our contingency plan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Discussing termination naturally leads to questions about the contingency plan and what happens after a potential exit.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Contingency Planning",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Where is the Excel workbook for the price adjustment financial model located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "Supporting Documents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "When is the next scheduled negotiation session with GlobalReach Logistics?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G10",
+      "reveal_group_label": "Timeline & Milestones",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is our target date for signing the final agreement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "Intra-group: After asking about the next immediate meeting, the user would naturally want to know the ultimate deadline for the negotiation.",
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Timeline & Milestones",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "Who is our external legal counsel for Project Horizon?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G11",
+      "reveal_group_label": "Team Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Which system is used for version control of the draft agreements?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G12",
+      "reveal_group_label": "Tools & Systems",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Alliance Terms",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Exclusivity Clause",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Price Adjustment Mechanism",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Financial Risk Modeling",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Volume Compliance Clauses",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Exit Conditions",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Exceptional Termination",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Contingency Planning",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G9",
+      "label": "Supporting Documents",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Timeline & Milestones",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G11",
+      "label": "Team Contacts",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G12",
+      "label": "Tools & Systems",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "negotiate_partnership_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

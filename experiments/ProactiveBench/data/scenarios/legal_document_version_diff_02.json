@@ -1,0 +1,459 @@
+{
+  "scenario_id": "legal_document_version_diff_02",
+  "domain": "legal_documentation",
+  "description": "A small business has two revised drafts of the same agreement and needs help tracking what changed between versions without rereading every page from scratch.",
+  "user_profile": {
+    "persona": "38-year-old operations manager responsible for coordinating vendor paperwork",
+    "context": "The other party says the changes are minor, but the latest draft feels meaningfully different",
+    "communication_style": "Comparison-driven and efficient, wants changes surfaced clearly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "document_details",
+      "fact": "The document under review is the Master Services Agreement (MSA) between Innovate Solutions Inc. and Apex Logistics LLC."
+    },
+    {
+      "id": "F02",
+      "category": "document_details",
+      "fact": "The agreement is identified by the document ID 'MSA-IS-AL-2024-003'."
+    },
+    {
+      "id": "F03",
+      "category": "document_details",
+      "fact": "The governing law for the agreement is specified as the State of Delaware."
+    },
+    {
+      "id": "F04",
+      "category": "version_control",
+      "fact": "The initial revised draft received from Apex Logistics LLC was labeled 'Draft v1.1' and dated May 28, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "version_control",
+      "fact": "The most recent draft received is labeled 'Draft v1.2' and was sent via email on June 10, 2024."
+    },
+    {
+      "id": "F06",
+      "category": "version_control",
+      "fact": "Draft v1.1 has a word count of 8,452 words across 15 pages."
+    },
+    {
+      "id": "F07",
+      "category": "version_control",
+      "fact": "Draft v1.2 has a word count of 8,615 words across 16 pages, indicating an addition of 163 words."
+    },
+    {
+      "id": "F08",
+      "category": "personnel_involved",
+      "fact": "Sarah Jenkins is the Operations Manager at Innovate Solutions Inc. responsible for reviewing and coordinating this agreement."
+    },
+    {
+      "id": "F09",
+      "category": "personnel_involved",
+      "fact": "The primary contact at Apex Logistics LLC is Maria Rodriguez, their Senior Account Manager."
+    },
+    {
+      "id": "F10",
+      "category": "personnel_involved",
+      "fact": "Innovate Solutions Inc.'s internal legal counsel, David Chen, must provide final approval before signing."
+    },
+    {
+      "id": "F11",
+      "category": "personnel_involved",
+      "fact": "Maria Rodriguez's direct phone number is 555-0182 and her email is m.rodriguez@apexlogistics.fict."
+    },
+    {
+      "id": "F12",
+      "category": "key_changes_summary",
+      "fact": "The comparison tool 'ClauseCompare' identified a total of 21 substantive changes between Draft v1.1 and Draft v1.2."
+    },
+    {
+      "id": "F13",
+      "category": "key_changes_summary",
+      "fact": "Major areas of change include Payment Terms (Clause 4), Limitation of Liability (Clause 7), and Termination for Convenience (Clause 11)."
+    },
+    {
+      "id": "F14",
+      "category": "key_changes_summary",
+      "fact": "A new sub-clause, 8.5 'Data Processing and Security Audits', was added in Draft v1.2."
+    },
+    {
+      "id": "F15",
+      "category": "specific_clause_changes",
+      "fact": "In Draft v1.2, Clause 4.1 'Payment Terms' was changed from 'Net 30 days' to 'Net 15 days'."
+    },
+    {
+      "id": "F16",
+      "category": "specific_clause_changes",
+      "fact": "Clause 4.3 'Late Payment Fee' was increased from 1.5% per month in v1.1 to 2.0% per month in v1.2."
+    },
+    {
+      "id": "F17",
+      "category": "specific_clause_changes",
+      "fact": "The liability cap in Clause 7.2 was lowered from '$1,000,000 per incident' in v1.1 to '$500,000 per incident' in v1.2."
+    },
+    {
+      "id": "F18",
+      "category": "specific_clause_changes",
+      "fact": "Clause 11.2 'Termination for Convenience' notice period for Innovate Solutions Inc. was extended from 30 days in v1.1 to 90 days in v1.2."
+    },
+    {
+      "id": "F19",
+      "category": "specific_clause_changes",
+      "fact": "A clause allowing Apex Logistics LLC to subcontract services without prior written consent was added as Clause 5.4 in v1.2; this clause was absent in v1.1."
+    },
+    {
+      "id": "F20",
+      "category": "specific_clause_changes",
+      "fact": "The 'Confidentiality' definition in Clause 6.1 was expanded in v1.2 to include 'all performance metrics and operational data'."
+    },
+    {
+      "id": "F21",
+      "category": "specific_clause_changes",
+      "fact": "In Draft v1.1, Clause 9.1 specified quarterly business reviews; Draft v1.2 changed this to semi-annual reviews."
+    },
+    {
+      "id": "F22",
+      "category": "specific_clause_changes",
+      "fact": "The insurance requirement for Apex Logistics LLC in Exhibit A was reduced from a $5M general liability policy to a $2M policy."
+    },
+    {
+      "id": "F23",
+      "category": "specific_clause_changes",
+      "fact": "A force majeure clause (Clause 12) in v1.2 was updated to include 'regional network outages' as a valid event, which was not present in v1.1."
+    },
+    {
+      "id": "F24",
+      "category": "specific_clause_changes",
+      "fact": "The dispute resolution process in Clause 14.1 was changed from 'binding arbitration in Chicago, IL' to 'mediation in Wilmington, DE'."
+    },
+    {
+      "id": "F25",
+      "category": "process_and_tools",
+      "fact": "The document comparison was generated using ClauseCompare software, version 3.5.1."
+    },
+    {
+      "id": "F26",
+      "category": "process_and_tools",
+      "fact": "The official redlined document from ClauseCompare is stored in the shared drive at '//files/Legal/VendorAgreements/Apex/MSA-2024-003_v1.2_redline.pdf'."
+    },
+    {
+      "id": "F27",
+      "category": "process_and_tools",
+      "fact": "The final approved agreement will be executed electronically via DocuSign."
+    },
+    {
+      "id": "F28",
+      "category": "process_and_tools",
+      "fact": "A meeting to discuss the changes with David Chen is scheduled for June 14, 2024, at 11:00 AM EST."
+    },
+    {
+      "id": "F29",
+      "category": "communication_log",
+      "fact": "On June 10, 2024, at 9:15 AM, Maria Rodriguez's email stated, 'Attached is the latest version with just a few minor administrative updates for your review.'"
+    },
+    {
+      "id": "F30",
+      "category": "communication_log",
+      "fact": "Sarah Jenkins sent a follow-up email on June 12, 2024, requesting a call to discuss the 'substantive changes' identified in payment terms and liability."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What agreement is under review, and which two draft versions are being compared?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "document_overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How many total substantive changes were identified between Draft v1.1 and Draft v1.2?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up: after identifying the versions, the immediate next question is the total volume of changes.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "document_overview",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the major areas of change identified in the document?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group follow-up: after knowing the total number of changes, the user naturally wants a high-level summary of the major affected areas.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "document_overview",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What specific changes were made to the payment terms and late payment fees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "financial_and_liability_changes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "How was the limitation of liability cap changed in the new draft?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group follow-up: after reviewing financial terms, liability caps are the next critical financial risk to check.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "financial_and_liability_changes",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What changes were made to the termination for convenience notice period?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After reviewing financial and liability changes, operational risks like termination are the next logical area of concern.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "operational_and_termination_updates",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Were there any new clauses added regarding data processing or subcontracting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F19"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group follow-up: after checking termination, the user will want to know about other major operational additions like subcontracting and data processing.",
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "operational_and_termination_updates",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "How was the definition of confidentiality expanded in the new draft?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "risk_and_compliance_details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What updates were made to the business review frequency and insurance requirements?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G4",
+      "reveal_group_label": "risk_and_compliance_details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "How was the dispute resolution process updated in the new version?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Following operational updates, dispute resolution is the final major legal risk topic to cover.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "dispute_resolution",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Where is the official redlined document stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once the major areas of change are summarized, the user will naturally want to access the official redline document to see them in context.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "process_and_redline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Which comparison tool generated the official redlined document for these drafts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After locating the official redlined comparison file, the immediate follow-up is which comparison tool produced that redline.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "redline_review_prep",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What did the other party state in their email regarding the updates in the latest version?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "external_communication_claims",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Which major areas were actually identified as substantive changes despite the other party calling the updates minor?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13",
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After seeing the other party describe the updates as minor, the direct follow-up is to contrast that claim with the substantive change summary.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "mismatch_follow_up",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "document_overview",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "financial_and_liability_changes",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "operational_and_termination_updates",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "risk_and_compliance_details",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "dispute_resolution",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "process_and_redline",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "redline_review_prep",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "external_communication_claims",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "mismatch_follow_up",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "legal_document_version_diff_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

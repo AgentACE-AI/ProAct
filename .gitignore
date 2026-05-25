@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+venv/
+.venv/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Runtime outputs
+outputs/
+results/
+logs/
+data/users/
+experiments/ProactiveBench/runtime/
+experiments/ProactiveBench/results/
+experiments/MemBench/results/
+
+# Caches and local tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.codexpotter/
+.trellis/
+.claude/
+
+# OS and editor files
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/

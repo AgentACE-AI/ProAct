@@ -1,0 +1,396 @@
+{
+  "scenario_id": "home_appliance_symptom_diary_02",
+  "domain": "home_maintenance",
+  "description": "A homeowner wants to capture the exact failure pattern of an appliance before scheduling a technician, including when it fails, what sounds or signals appear, and whether the issue depends on load, time, or temperature.",
+  "user_profile": {
+    "persona": "34-year-old resident who prefers to observe a problem carefully before paying for service",
+    "context": "The appliance does not fail consistently enough to describe clearly from memory alone",
+    "communication_style": "Detail-oriented and observant, values symptom logging more than immediate replacement"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Appliance_Information",
+      "fact": "The appliance is a CryoCold Model 7 refrigerator/freezer combo unit."
+    },
+    {
+      "id": "F02",
+      "category": "Appliance_Information",
+      "fact": "The serial number of the CryoCold Model 7 is CC7-89B345K-01."
+    },
+    {
+      "id": "F03",
+      "category": "Appliance_Information",
+      "fact": "The appliance was purchased on June 15, 2021, from 'Appliance Universe'."
+    },
+    {
+      "id": "F04",
+      "category": "Appliance_Information",
+      "fact": "The manufacturer's 2-year warranty for the CryoCold Model 7 expired on June 15, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "Owner_Details",
+      "fact": "The homeowner's name is Alex Chen."
+    },
+    {
+      "id": "F06",
+      "category": "Owner_Details",
+      "fact": "The appliance is located at the residence of 452 Maple Drive, Silver Creek, WA 98001."
+    },
+    {
+      "id": "F07",
+      "category": "Failure_Observation",
+      "fact": "The first failure was observed on October 10, 2023, at approximately 7:00 PM."
+    },
+    {
+      "id": "F08",
+      "category": "Failure_Observation",
+      "fact": "The primary symptom is that the refrigerator compartment stops cooling, while the freezer compartment remains fully functional."
+    },
+    {
+      "id": "F09",
+      "category": "Failure_Observation",
+      "fact": "During a failure on October 15, 2023, the internal refrigerator temperature reached 50°F (10°C)."
+    },
+    {
+      "id": "F10",
+      "category": "Appliance_Information",
+      "fact": "The normal operating temperature set for the refrigerator is 37°F (2.8°C)."
+    },
+    {
+      "id": "F11",
+      "category": "Failure_Observation",
+      "fact": "A low, continuous buzzing sound was heard from the back of the unit during the failure on October 10."
+    },
+    {
+      "id": "F12",
+      "category": "Failure_Observation",
+      "fact": "On October 15, a distinct clicking sound occurred every 5 minutes, lasting for approximately 2 seconds each time."
+    },
+    {
+      "id": "F13",
+      "category": "Failure_Observation",
+      "fact": "The digital control panel flashes the error code 'CF' when the cooling issue is active."
+    },
+    {
+      "id": "F14",
+      "category": "Failure_Observation",
+      "fact": "The failures typically last for a duration of 4 to 6 hours before normal cooling resumes on its own."
+    },
+    {
+      "id": "F15",
+      "category": "Failure_Observation",
+      "fact": "Failures have been occurring with a frequency of once every 2 to 3 days since the initial event."
+    },
+    {
+      "id": "F16",
+      "category": "Failure_Observation",
+      "fact": "The issue most commonly begins between 3:00 PM and 8:00 PM."
+    },
+    {
+      "id": "F17",
+      "category": "Environmental_Conditions",
+      "fact": "The ambient temperature in the kitchen is consistently maintained at 70°F (21°C)."
+    },
+    {
+      "id": "F18",
+      "category": "Environmental_Conditions",
+      "fact": "The failure has occurred on days when the refrigerator is both lightly and heavily loaded with food items."
+    },
+    {
+      "id": "F19",
+      "category": "Environmental_Conditions",
+      "fact": "The refrigerator is located away from direct sunlight and has 3 inches of clearance on all sides for ventilation."
+    },
+    {
+      "id": "F20",
+      "category": "Troubleshooting_Actions",
+      "fact": "Alex Chen started a detailed failure log on October 11, 2023, using the 'SymptomLogger' mobile app."
+    },
+    {
+      "id": "F21",
+      "category": "Troubleshooting_Actions",
+      "fact": "On October 14, 2023, Alex cleaned the condenser coils, which were moderately dusty."
+    },
+    {
+      "id": "F22",
+      "category": "Troubleshooting_Actions",
+      "fact": "The cleaning of the condenser coils on October 14 did not prevent a subsequent failure on October 15."
+    },
+    {
+      "id": "F23",
+      "category": "Troubleshooting_Actions",
+      "fact": "A full power cycle (unplugging for 10 minutes) was performed on October 16 at 9:00 PM, which restored normal function for 12 hours."
+    },
+    {
+      "id": "F24",
+      "category": "Troubleshooting_Actions",
+      "fact": "Alex visually inspected the refrigerator door seals on October 17 and confirmed they are clean and create a firm seal."
+    },
+    {
+      "id": "F25",
+      "category": "Service_Provider_Info",
+      "fact": "Alex identified 'Apex Appliance Repair' as a potential service provider based on online reviews."
+    },
+    {
+      "id": "F26",
+      "category": "Service_Provider_Info",
+      "fact": "The contact phone number for Apex Appliance Repair is (555) 234-5678."
+    },
+    {
+      "id": "F27",
+      "category": "Service_Provider_Info",
+      "fact": "Apex Appliance Repair quoted a standard diagnostic visit fee of $125, which is applied to the total repair cost."
+    },
+    {
+      "id": "F28",
+      "category": "Failure_Observation",
+      "fact": "Alex's failure log shows a repeating pattern: the refrigerator compartment stops cooling while the freezer stays cold, the control panel flashes 'CF', buzzing or periodic clicking is heard, and the problem usually appears between 3:00 PM and 8:00 PM every 2 to 3 days."
+    },
+    {
+      "id": "F29",
+      "category": "Troubleshooting_Actions",
+      "fact": "After the condenser coils were cleaned on October 14, the same failure pattern returned on October 15, including the CF error, clicking sounds, and the refrigerator compartment warming to 50°F."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What overall failure pattern have I observed with the refrigerator?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "When was the failure first observed and how frequently does it occur?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F15"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After describing the main symptom, the user would naturally provide details on its timing and frequency.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Definition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What specific sounds are associated with the failure?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Symptom Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What error code is displayed and what is the typical duration of a failure?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After describing audible symptoms, inquiring about visible symptoms like error codes and other temporal details like duration is a logical next step.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Symptom Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What was the internal refrigerator temperature during a failure, compared to its normal setting?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After establishing the primary problem is a cooling failure, a detail-oriented user would likely want to quantify the failure by providing the exact temperature reached.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Symptom Details",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "After I cleaned the condenser coils, did the refrigerator still show the same failure pattern?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22",
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Troubleshooting History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What was the effect of power cycling the unit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After describing one troubleshooting action, it's common to list other actions taken.",
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "Troubleshooting History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Which service provider has been identified and what is their diagnostic fee?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Service Provider Selection",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What are the model and serial number of the refrigerator?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After identifying the service provider and diagnostic fee, the next practical step is to gather the refrigerator's model and serial number for the service call.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Appliance Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "On what date did the manufacturer's warranty expire?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Once the specific appliance has been identified by its model number, checking its warranty status is a very common and practical next step before incurring service costs.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Warranty Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Have the failures been dependent on the food load in the refrigerator?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Environmental Factors",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Problem Definition",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Symptom Details",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Troubleshooting History",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Service Provider Selection",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Appliance Identification",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Warranty Status",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Environmental Factors",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "home_appliance_symptom_diary_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

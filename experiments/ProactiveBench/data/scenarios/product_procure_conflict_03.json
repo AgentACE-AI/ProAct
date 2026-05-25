@@ -1,0 +1,424 @@
+{
+  "scenario_id": "product_procure_conflict_03",
+  "domain": "product_analysis",
+  "description": "A procurement lead is choosing an Enterprise Resource Planning (ERP) system. Conflict: The Finance team wants Cost-Efficiency, but the Sales team wants a specific UX that is only available in the most expensive option. They need to find a middle ground or a tiered rollout strategy.",
+  "user_profile": {
+    "persona": "45-year-old Operations Director",
+    "context": "Finalizing the vendor shortlist, internal stakeholders are fighting",
+    "communication_style": "Balanced and objective"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project_details",
+      "fact": "The internal name for the ERP system procurement initiative at Stellar Innovations Inc. is 'Project Fusion'."
+    },
+    {
+      "id": "F02",
+      "category": "project_details",
+      "fact": "The lead for Project Fusion is Ben Carter, the Procurement Lead."
+    },
+    {
+      "id": "F03",
+      "category": "project_details",
+      "fact": "The executive sponsor for Project Fusion is Anya Sharma, the Operations Director."
+    },
+    {
+      "id": "F04",
+      "category": "project_details",
+      "fact": "The deadline for the final vendor selection is November 30, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "stakeholders",
+      "fact": "David Chen, Head of Finance, is the primary advocate for the most cost-efficient ERP solution."
+    },
+    {
+      "id": "F06",
+      "category": "stakeholders",
+      "fact": "Maria Garcia, Head of Sales, is the primary advocate for the ERP solution with the best User Experience (UX) for her team."
+    },
+    {
+      "id": "F07",
+      "category": "stakeholders",
+      "fact": "Kenji Tanaka, the IT Lead, is responsible for assessing the technical feasibility and integration costs of each option."
+    },
+    {
+      "id": "F08",
+      "category": "vendor_option_premium",
+      "fact": "The premium ERP option is the 'OmniCore Suite' from vendor Synapse Dynamics."
+    },
+    {
+      "id": "F09",
+      "category": "vendor_option_premium",
+      "fact": "OmniCore Suite's annual license fee is quoted at $450,000 for 500 enterprise users."
+    },
+    {
+      "id": "F10",
+      "category": "vendor_option_premium",
+      "fact": "The specific feature requested by the Sales team in OmniCore Suite is the 'Dynamic Lead Dashboard'."
+    },
+    {
+      "id": "F11",
+      "category": "vendor_option_premium",
+      "fact": "The one-time implementation cost for OmniCore Suite is estimated at $120,000."
+    },
+    {
+      "id": "F12",
+      "category": "vendor_option_budget",
+      "fact": "The budget-friendly ERP option is 'CoreLogic ERP' from vendor Integra Solutions."
+    },
+    {
+      "id": "F13",
+      "category": "vendor_option_budget",
+      "fact": "CoreLogic ERP's annual license fee is quoted at $180,000 for 500 enterprise users."
+    },
+    {
+      "id": "F14",
+      "category": "vendor_option_budget",
+      "fact": "CoreLogic ERP does not have a native customizable sales dashboard but offers a standard API for integration with the existing CRM."
+    },
+    {
+      "id": "F15",
+      "category": "vendor_option_budget",
+      "fact": "The one-time implementation cost for CoreLogic ERP is estimated at $55,000."
+    },
+    {
+      "id": "F16",
+      "category": "vendor_option_midrange",
+      "fact": "A middle-ground option, 'ConnectSphere ERP' from vendor Apex Digital, has been identified."
+    },
+    {
+      "id": "F17",
+      "category": "vendor_option_midrange",
+      "fact": "ConnectSphere ERP's base annual license fee is $290,000 for 500 users."
+    },
+    {
+      "id": "F18",
+      "category": "vendor_option_midrange",
+      "fact": "ConnectSphere ERP offers an 'Advanced Sales Module' with enhanced UX for an additional $50,000 per year."
+    },
+    {
+      "id": "F19",
+      "category": "vendor_option_midrange",
+      "fact": "The one-time implementation cost for ConnectSphere ERP (base package) is estimated at $80,000."
+    },
+    {
+      "id": "F20",
+      "category": "financials",
+      "fact": "The total approved budget for Project Fusion in Year 1 (license + implementation) is $400,000."
+    },
+    {
+      "id": "F21",
+      "category": "financials",
+      "fact": "The projected 5-year Total Cost of Ownership (TCO) for OmniCore Suite is $2.5 million."
+    },
+    {
+      "id": "F22",
+      "category": "financials",
+      "fact": "The projected 5-year TCO for CoreLogic ERP is $1.1 million, as calculated by the Finance department."
+    },
+    {
+      "id": "F23",
+      "category": "financials",
+      "fact": "The projected 5-year TCO for ConnectSphere ERP with the Advanced Sales Module is $1.83 million."
+    },
+    {
+      "id": "F24",
+      "category": "meetings",
+      "fact": "The most recent stakeholder alignment meeting occurred on October 25, 2024, in Conference Room 3B."
+    },
+    {
+      "id": "F25",
+      "category": "meetings",
+      "fact": "During the October 25 meeting, Maria Garcia stated that forgoing the requested UX features would decrease new lead conversion rates by a projected 8%."
+    },
+    {
+      "id": "F26",
+      "category": "meetings",
+      "fact": "During the October 25 meeting, David Chen warned that exceeding the Year 1 budget by more than 10% would require deferring the planned Q1 2025 warehouse automation upgrade."
+    },
+    {
+      "id": "F27",
+      "category": "meetings",
+      "fact": "The final decision-making meeting for Project Fusion is scheduled for November 15, 2024, at 10:00 AM PST via the company's secure video conference link."
+    },
+    {
+      "id": "F28",
+      "category": "solution_proposals",
+      "fact": "Anya Sharma proposed a tiered rollout strategy for ConnectSphere ERP as a potential compromise."
+    },
+    {
+      "id": "F29",
+      "category": "solution_proposals",
+      "fact": "The proposed tiered rollout involves implementing the base ConnectSphere ERP for Finance and Operations in Q1 2025."
+    },
+    {
+      "id": "F30",
+      "category": "solution_proposals",
+      "fact": "Under the tiered plan, the 'Advanced Sales Module' for ConnectSphere ERP would be purchased and rolled out in Q3 2025, contingent on H1 performance."
+    },
+    {
+      "id": "F31",
+      "category": "technical_assessment",
+      "fact": "Kenji Tanaka's assessment noted that CoreLogic ERP's API integration with the current CRM ('SalesForce') would require 120 hours of developer time from the IT department."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who are the primary stakeholders advocating for the cost-efficient and the user experience-focused ERP solutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Stakeholder Conflict",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which ERP option is the Sales team advocating for, and which UX feature is driving that preference?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying the competing stakeholders, the next natural step is to look at the specific ERP option and UX capability driving Sales' preference.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Premium Vendor Option",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What are the annual license and one-time implementation costs for the OmniCore Suite?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F11"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: Once the premium product and its key feature are identified, the next logical question is about its cost.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Premium Vendor Option",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is the name of the budget-friendly ERP option, and what is its annual license fee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the high cost of the premium option, the user will want to understand the details of the budget alternative championed by Finance.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Budget Vendor Option",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Has a middle-ground option been identified, and what is its base annual license fee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Mid-Range Vendor Option",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Does the ConnectSphere ERP offer an advanced module for the Sales team, and what is its additional annual cost?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After learning about a mid-range option, the user needs to know if it can satisfy the specific stakeholder (Sales) requirement that started the conflict.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Mid-Range Vendor Option",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the total approved budget for Project Fusion in Year 1?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Financial Constraints",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What happens if Year 1 spend is forecast to exceed the approved budget by more than 10%?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After reviewing the approved budget, a direct next question is what consequence or escalation is triggered if spend goes materially over it.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Financial Constraints",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What does the proposed tiered rollout strategy for ConnectSphere ERP involve in phase one?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After reviewing the optional advanced Sales module and its cost, a natural next question is what a phased compromise rollout would include in phase one.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Proposed Compromise",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Under the proposed tiered plan, when would the Advanced Sales Module be rolled out and what is that rollout contingent on?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Proposed Compromise",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What was the IT Lead's assessment of the developer time required to integrate the CoreLogic ERP with the current CRM?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Technical Assessment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "When is the final Project Fusion decision meeting scheduled, and how will it be held?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After reviewing the proposed phased compromise, a practical follow-up is to confirm when the final decision forum is scheduled and how it will be conducted.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Logistics",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Stakeholder Conflict",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Premium Vendor Option",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Budget Vendor Option",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Mid-Range Vendor Option",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Financial Constraints",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Proposed Compromise",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Technical Assessment",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Project Logistics",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "product_procure_conflict_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

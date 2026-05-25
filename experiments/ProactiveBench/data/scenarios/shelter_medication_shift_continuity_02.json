@@ -1,0 +1,459 @@
+{
+  "scenario_id": "shelter_medication_shift_continuity_02",
+  "domain": "animal_shelter_operations",
+  "description": "Multiple shifts must keep medication timing, feeding notes, stool observations, and behavior changes consistent for animals under treatment without dropping critical context at shift change.",
+  "user_profile": {
+    "persona": "36-year-old veterinary technician coordinating care across rotating staff",
+    "context": "The medical plan is manageable, but continuity suffers when small observations fail to pass cleanly between shifts",
+    "communication_style": "Clinical and continuity-focused, values small observational details when they change care decisions"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Animal_Profile",
+      "fact": "Baxter is a 4-year-old male neutered Beagle mix, animal ID A4512, weighing 28 lbs (12.7 kg)."
+    },
+    {
+      "id": "F02",
+      "category": "Animal_Profile",
+      "fact": "Baxter is housed in the Medical Recovery wing, Kennel M-03, due to a recent diagnosis of pancreatitis."
+    },
+    {
+      "id": "F03",
+      "category": "Animal_Profile",
+      "fact": "Luna is a 2-year-old female spayed Domestic Shorthair, animal ID C8901, weighing 9 lbs (4.1 kg)."
+    },
+    {
+      "id": "F04",
+      "category": "Animal_Profile",
+      "fact": "Luna is housed in Medical Isolation, Kennel I-05, for treatment of an Upper Respiratory Infection (URI)."
+    },
+    {
+      "id": "F05",
+      "category": "Medication_Protocol",
+      "fact": "Baxter receives 20mg of Famotidine orally every 12 hours; doses are scheduled for 08:00 and 20:00."
+    },
+    {
+      "id": "F06",
+      "category": "Medication_Protocol",
+      "fact": "Baxter is prescribed 75mg of Gabapentin orally every 8 hours for pain management, with doses at 06:00, 14:00, and 22:00."
+    },
+    {
+      "id": "F07",
+      "category": "Medication_Protocol",
+      "fact": "Luna receives 20mg of Doxycycline liquid suspension (5mg/ml concentration) orally once daily at 09:00."
+    },
+    {
+      "id": "F08",
+      "category": "Medication_Protocol",
+      "fact": "All medications administered must be initialed on the paper kennel card and digitally logged in ShelterCare Pro within 5 minutes."
+    },
+    {
+      "id": "F09",
+      "category": "Feeding_Schedule",
+      "fact": "Baxter is on a strict diet of 1/2 cup of Hill's Prescription Diet i/d Low Fat kibble, fed twice daily at 08:30 and 20:30."
+    },
+    {
+      "id": "F10",
+      "category": "Feeding_Schedule",
+      "fact": "Baxter's water intake is monitored; his bowl is refilled to the 500ml line at the start of each shift (07:00, 15:00, 23:00)."
+    },
+    {
+      "id": "F11",
+      "category": "Feeding_Schedule",
+      "fact": "Luna is offered 1/4 can of Royal Canin Recovery wet food mixed with 15ml of warm water three times daily at 07:30, 15:30, and 23:30 to encourage eating."
+    },
+    {
+      "id": "F12",
+      "category": "Feeding_Schedule",
+      "fact": "The percentage of food consumed by Luna at each meal must be estimated and logged (e.g., 'ate 50%')."
+    },
+    {
+      "id": "F13",
+      "category": "Observation_Logging",
+      "fact": "All stool from Baxter must be scored using the on-wall Bristol Stool Chart (1-7 scale) and the score logged in his digital file under 'GI Observation'."
+    },
+    {
+      "id": "F14",
+      "category": "Observation_Logging",
+      "fact": "Any instance of vomiting from Baxter, including volume and consistency, must be immediately reported to the on-call veterinarian, Dr. Evan Reed."
+    },
+    {
+      "id": "F15",
+      "category": "Observation_Logging",
+      "fact": "Luna's respiratory rate must be counted over 60 seconds while she is resting; this must be done and logged once per shift."
+    },
+    {
+      "id": "F16",
+      "category": "Observation_Logging",
+      "fact": "The type of Luna's nasal discharge (clear, yellow, green) and presence of sneezing must be noted in the 'URI Progress' section of her log at least twice per shift."
+    },
+    {
+      "id": "F17",
+      "category": "Behavioral_Notes",
+      "fact": "Baxter has shown food guarding behavior; staff must place his food bowl down and step away from the kennel door immediately after."
+    },
+    {
+      "id": "F18",
+      "category": "Behavioral_Notes",
+      "fact": "A 'low-stress handling' flag is active for Luna; she responds best to slow movements and minimal direct eye contact."
+    },
+    {
+      "id": "F19",
+      "category": "Behavioral_Notes",
+      "fact": "On October 25th at 21:15, Baxter exhibited lethargy and refused his evening walk, a change from his previously energetic behavior."
+    },
+    {
+      "id": "F20",
+      "category": "Shift_Handover_Procedure",
+      "fact": "Shift change occurs daily at 07:00, 15:00, and 23:00."
+    },
+    {
+      "id": "F21",
+      "category": "Shift_Handover_Procedure",
+      "fact": "A mandatory 15-minute verbal and digital handover between the outgoing and incoming vet tech must occur at the central medical workstation (Desk M1)."
+    },
+    {
+      "id": "F22",
+      "category": "Shift_Handover_Procedure",
+      "fact": "The outgoing technician must update the 'Shift Summary' field in ShelterCare Pro for all animals in the Medical wing before clocking out."
+    },
+    {
+      "id": "F23",
+      "category": "Staff_Information",
+      "fact": "Anya Sharma is the Lead Veterinary Technician and is responsible for overseeing medical treatment plans."
+    },
+    {
+      "id": "F24",
+      "category": "Staff_Information",
+      "fact": "Dr. Evan Reed is the primary veterinarian on call for medical emergencies; his pager number is 555-010-9876."
+    },
+    {
+      "id": "F25",
+      "category": "Staff_Information",
+      "fact": "Carlos Diaz is the overnight veterinary technician, working the 23:00 to 07:00 shift."
+    },
+    {
+      "id": "F26",
+      "category": "System_Access",
+      "fact": "The ShelterCare Pro system is accessed via the URL: https://pawsanctuary.sheltercarepro.com/login."
+    },
+    {
+      "id": "F27",
+      "category": "System_Access",
+      "fact": "All vet techs use a shared login for the medical workstation PC: username 'medtech' with password 'Care4Paws2023!'."
+    },
+    {
+      "id": "F28",
+      "category": "System_Access",
+      "fact": "Urgent, non-emergency updates for the next shift are posted in the '#med-team-handoff' Slack channel."
+    },
+    {
+      "id": "F29",
+      "category": "Facility_Information",
+      "fact": "The secure medication lockbox is located in the primary treatment room, cabinet C. The access code is 10-26-08."
+    },
+    {
+      "id": "F30",
+      "category": "Facility_Information",
+      "fact": "The isolation ward (I-wing) requires full PPE (gown, gloves, shoe covers) before entry; the PPE station is located just outside the main door."
+    },
+    {
+      "id": "F31",
+      "category": "Emergency_Protocol",
+      "fact": "In case of a Code Blue (animal medical emergency), press the red button located next to the phone at the central medical station."
+    },
+    {
+      "id": "F32",
+      "category": "Emergency_Protocol",
+      "fact": "The emergency veterinary hospital is Northwood Animal Hospital, located at 123 Veterinary Lane, phone 555-012-3456."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What significant behavioral change was noted for Baxter on the evening of October 25th?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Baxter's Status Change",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Given his lethargy, what are Baxter's current medication protocols and scheduled times?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning about a significant negative behavioral change like lethargy, a vet tech's immediate next step is to review the current medication plan, especially pain management.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Baxter's Treatment Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is Baxter's prescribed diet and feeding schedule?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After reviewing medications, the other key component of a pancreatitis treatment plan is the feeding protocol.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Baxter's Treatment Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is the specific procedure for observing and logging Baxter's stool?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing the inputs (meds and food), the user's focus shifts to monitoring the outputs, and for a pancreatitis case, GI observation is paramount.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Baxter's Observation Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Who must be contacted, and what details are required, if Baxter vomits?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F24"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discussing a specific GI observation (stool) makes it highly relevant to proactively provide the escalation protocol for a more severe GI symptom (vomiting).",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Emergency Contact for Baxter",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Are there any specific behavioral instructions for staff when feeding Baxter?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the feeding schedule, a natural follow-up is to ask about the specific procedure or any safety warnings related to performing that feeding.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Baxter Handling Note",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is Luna's animal ID, diagnosis, and current location?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Luna's Profile & Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is Luna's daily medication, including dose and time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After identifying a patient and their diagnosis, the immediate next step in a clinical workflow is to review their medication protocol.",
+      "turn_order": 8,
+      "reveal_group": "G7",
+      "reveal_group_label": "Luna's Treatment Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "How is Luna's food prepared, and what specific information about her consumption needs to be logged?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: Similar to Baxter's workflow, after reviewing medication, the next part of the treatment plan to check is feeding.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Luna's Treatment Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "How often must Luna's resting respiratory rate be logged each shift, and what URI symptoms must be noted in her log?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After reviewing Luna's full treatment plan (meds/food), the user needs to know what specific vitals and symptoms to monitor for her URI.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Luna's Observation Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Is there a low-stress handling flag active for Luna?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: While preparing to take observations (like respiratory rate), knowing the recommended handling approach is a direct and helpful follow-up.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Luna's Observation Protocol",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What two actions are explicitly required when logging an administered medication?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "General Logging Procedure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What two handover actions are explicitly required at shift change before the outgoing tech clocks out?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Shift Handover Protocol",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Baxter's Status Change",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Baxter's Treatment Plan",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Baxter's Observation Protocol",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Emergency Contact for Baxter",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Baxter Handling Note",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Luna's Profile & Location",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Luna's Treatment Plan",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Luna's Observation Protocol",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "General Logging Procedure",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Shift Handover Protocol",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shelter_medication_shift_continuity_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "artifact": "proact-public-release",
+  "paper": "ProAct",
+  "publication": {
+    "arxiv": "pending",
+    "repository": "https://github.com/AgentACE-AI/ProAct"
+  },
+  "anonymous": false,
+  "scenario_count": 200,
+  "included": {
+    "core_runtime_packages": [
+      "agents",
+      "core",
+      "memory",
+      "server",
+      "services",
+      "tools"
+    ],
+    "proacteval": [
+      "experiments/ProactiveBench/eval/*.py",
+      "experiments/ProactiveBench/generation/*.py",
+      "experiments/ProactiveBench/generation/config.yaml",
+      "experiments/ProactiveBench/data/scenarios/*.json",
+      "experiments/ProactiveBench/data/scenario_groups.json"
+    ],
+    "membench": [
+      "experiments/MemBench/benchmark/"
+    ],
+    "tests": [
+      "tests/test_proactive_agent_adapter.py",
+      "tests/test_proactivebench_judge_labeled_anticipation.py",
+      "tests/test_proactivebench_generation_module_imports.py",
+      "tests/test_membench_release_imports.py",
+      "tests/test_public_release_contents.py",
+      "tests/test_anonymity_scan.py"
+    ]
+  },
+  "excluded": [
+    ".env",
+    ".trellis/",
+    ".codexpotter/",
+    "CLAUDE.md",
+    "runtime/",
+    "results/detailed_results.json",
+    "__pycache__/",
+    ".pytest_cache/",
+    "raw traces",
+    "upstream MemBench datasets",
+    "model checkpoints"
+  ],
+  "external_costs": {
+    "proacteval": "Requires OpenAI API credentials for simulator, assistant, and judge calls.",
+    "membench": "Requires local Qwen setup and external upstream MemBench data/model access."
+  }
+}

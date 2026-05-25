@@ -1,0 +1,389 @@
+{
+  "scenario_id": "recycling_customer_instruction_drift_05",
+  "domain": "waste_recycling_operations",
+  "description": "Customer-specific handling instructions have changed over time, and the current operating guidance is no longer consistent across dispatcher notes, route sheets, and field memory. All customer names are fictional.",
+  "user_profile": {
+    "persona": "41-year-old customer operations manager trying to stop repeated instruction drift",
+    "context": "No single catastrophic error has happened, but the same customer exceptions keep being relearned instead of retained accurately",
+    "communication_style": "Consistency-minded and operational, wants one current source of truth for customer-specific rules"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Customer_Account_Details",
+      "fact": "Apex Industries' customer account number is APX-88401."
+    },
+    {
+      "id": "F02",
+      "category": "Customer_Account_Details",
+      "fact": "Veridian Plaza's service address is 1550 N. Commerce Drive, Westgate, IL 60185."
+    },
+    {
+      "id": "F03",
+      "category": "Customer_Account_Details",
+      "fact": "Gourmet Grocers' primary on-site contact is Sarah Jenkins, the store manager."
+    },
+    {
+      "id": "F04",
+      "category": "Customer_Account_Details",
+      "fact": "Starlight Theaters has a service contract for twice-weekly cardboard recycling pickup, scheduled for Tuesdays and Fridays."
+    },
+    {
+      "id": "F05",
+      "category": "Special_Handling_Instructions",
+      "fact": "The loading dock gate code for Veridian Plaza is *7335#, valid from 6:00 AM to 6:00 PM, Monday through Saturday."
+    },
+    {
+      "id": "F06",
+      "category": "Special_Handling_Instructions",
+      "fact": "Apex Industries requires all organic waste bins to be pressure washed on-site during the last Friday pickup of each month."
+    },
+    {
+      "id": "F07",
+      "category": "Special_Handling_Instructions",
+      "fact": "Gourmet Grocers requires a signature from the on-duty manager, logged in the RouteOptix app, for all compost pickups."
+    },
+    {
+      "id": "F08",
+      "category": "Special_Handling_Instructions",
+      "fact": "All glass recycling bins from Starlight Theaters must be collected before 8:00 AM to avoid interference with their morning food deliveries."
+    },
+    {
+      "id": "F09",
+      "category": "Special_Handling_Instructions",
+      "fact": "Apex Industries' used solvent drums (UN 1993) must be handled exclusively by a HazMat-certified driver; Kenji Tanaka is currently the only one assigned."
+    },
+    {
+      "id": "F10",
+      "category": "Special_Handling_Instructions",
+      "fact": "Veridian Plaza's recycling compactor, model Marathon RJ-250SC, must be locked out using key #VP-02 before any service or swap."
+    },
+    {
+      "id": "F11",
+      "category": "Special_Handling_Instructions",
+      "fact": "Do not collect the blue bin with serial number B-45921 from Gourmet Grocers; it is for their internal bottle deposit returns only."
+    },
+    {
+      "id": "F12",
+      "category": "Special_Handling_Instructions",
+      "fact": "For Starlight Theaters, any overflow cardboard must be flattened and stacked neatly against the west wall of the service alley, not left loose."
+    },
+    {
+      "id": "F13",
+      "category": "Operational_Procedures",
+      "fact": "The single source of truth for all current customer instructions is the 'Customer Notes' section of the Ops Portal."
+    },
+    {
+      "id": "F14",
+      "category": "Operational_Procedures",
+      "fact": "All customer instruction changes must be submitted via the 'Instruction Update Form' on the Ops Portal and approved by Brenda Chen."
+    },
+    {
+      "id": "F15",
+      "category": "Operational_Procedures",
+      "fact": "A daily pre-shift briefing is held at 5:30 AM at the main depot to review any instruction changes from the previous 24 hours."
+    },
+    {
+      "id": "F16",
+      "category": "Operational_Procedures",
+      "fact": "Any service deviation must be reported by the driver within 15 minutes via the 'Service Alert' function in the RouteOptix mobile app."
+    },
+    {
+      "id": "F17",
+      "category": "Operational_Procedures",
+      "fact": "The last system-wide audit of all customer handling instructions was completed on October 15, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "Service_History",
+      "fact": "On November 28, 2023, a driver attempted to use the old gate code for Veridian Plaza, causing a 45-minute service delay."
+    },
+    {
+      "id": "F19",
+      "category": "Service_History",
+      "fact": "A $75 service credit was issued to Starlight Theaters on December 5, 2023, because a pickup was missed due to a route sheet error."
+    },
+    {
+      "id": "F20",
+      "category": "Service_History",
+      "fact": "The instruction for Apex Industries' pressure washing was officially added to their service agreement on August 1, 2023, under work order #WO-9154."
+    },
+    {
+      "id": "F21",
+      "category": "System_Information",
+      "fact": "The login URL for the Ops Portal is https://ops.ecocyclesolutions.internal/login."
+    },
+    {
+      "id": "F22",
+      "category": "System_Information",
+      "fact": "The shared network drive for historical, paper-based route sheets is located at \\\\ecocycle-fs01\\archives\\routesheets."
+    },
+    {
+      "id": "F23",
+      "category": "System_Information",
+      "fact": "The current, mandatory version of the RouteOptix mobile app for all drivers is v3.4.2."
+    },
+    {
+      "id": "F24",
+      "category": "System_Information",
+      "fact": "All instruction updates are logged with timestamps in a Git repository named 'customer_instructions_log' on the internal GitLab server."
+    },
+    {
+      "id": "F25",
+      "category": "Personnel_Contacts",
+      "fact": "Brenda Chen is the Customer Operations Manager and her office is room 201B at the main depot."
+    },
+    {
+      "id": "F26",
+      "category": "Personnel_Contacts",
+      "fact": "The primary dispatcher for industrial accounts, including Apex Industries, is Dave Miller at extension 215."
+    },
+    {
+      "id": "F27",
+      "category": "Personnel_Contacts",
+      "fact": "Field Supervisor Maria Garcia's mobile number for urgent on-site issues is 555-821-9904."
+    },
+    {
+      "id": "F28",
+      "category": "Personnel_Contacts",
+      "fact": "Driver Kenji Tanaka's employee ID is E-782, and his HazMat certification expires on June 30, 2025."
+    },
+    {
+      "id": "F29",
+      "category": "Equipment_Specifications",
+      "fact": "Truck #17, a Mack LR Electric with license plate 8T4-3B9, is assigned to the downtown route covering Gourmet Grocers and Starlight Theaters."
+    },
+    {
+      "id": "F30",
+      "category": "Equipment_Specifications",
+      "fact": "The 8-yard front-load dumpster at Veridian Plaza has a serial number of FLD-09288."
+    },
+    {
+      "id": "F31",
+      "category": "Equipment_Specifications",
+      "fact": "The compost bins provided to Gourmet Grocers are 64-gallon Toter brand bins, colored green."
+    },
+    {
+      "id": "F32",
+      "category": "Equipment_Specifications",
+      "fact": "The handheld scanner model used for logging service completions is the Zebra TC57."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the single source of truth for all current customer instructions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Process and Governance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the official procedure for submitting and approving changes to customer instructions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After establishing the source of truth, the user's next logical concern is how to properly maintain and govern it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Process and Governance",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Can you describe the service failure that occurred at Veridian Plaza on November 28, 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Veridian Plaza Case Study",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the current, correct gate access instructions for Veridian Plaza?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After learning about a past failure related to an old gate code, the user will immediately want to confirm the current, correct code to prevent a recurrence.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Veridian Plaza Case Study",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the special handling requirement for Apex Industries' used solvent drums?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Apex Industries HazMat",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Who is the designated HazMat-certified driver for Apex Industries, and what is their employee ID?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F28"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning that a specific certification is required for a customer, the next operational question is who on the team is qualified to perform the task.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Personnel Assignment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the specific instructions regarding the compost pickup signature and the blue bin at Gourmet Grocers?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Gourmet Grocers Instructions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the required procedure for a driver to report a service deviation?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Reviewing a past service failure (like the Veridian Plaza delay) naturally leads to questions about the correct procedure for reporting such issues when they happen.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Field Reporting Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where on the network can I find the archive of old, paper-based route sheets?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "System and Audit Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How are updates to customer instructions logged for tracking purposes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning about the formal process for changing instructions, an operations manager focused on consistency would want to know how those changes are logged and audited.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "System and Audit Information",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Process and Governance",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Veridian Plaza Case Study",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Apex Industries HazMat",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Personnel Assignment",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Gourmet Grocers Instructions",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Field Reporting Protocol",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "System and Audit Information",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "recycling_customer_instruction_drift_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

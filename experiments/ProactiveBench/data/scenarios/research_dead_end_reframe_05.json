@@ -1,0 +1,489 @@
+{
+  "scenario_id": "research_dead_end_reframe_05",
+  "domain": "research_management",
+  "description": "A student has realized the original hypothesis is no longer working and now needs to reinterpret past work so it can still support a publishable direction rather than being treated as wasted effort.",
+  "user_profile": {
+    "persona": "30-year-old doctoral candidate near the midpoint of the program",
+    "context": "The project is not a total failure, but the old framing no longer fits the accumulated evidence",
+    "communication_style": "Reflective and intellectually honest, wants to salvage value without forcing false certainty"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "The doctoral candidate is Elara Vance, age 30, a student at Northwood University."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "Elara Vance's primary dissertation advisor is Professor Julian Croft of the Computational Biology department."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel",
+      "fact": "The Croft Lab manager, responsible for server resources, is Dr. Kenji Tanaka, reachable at ktanaka@northwood.edu."
+    },
+    {
+      "id": "F04",
+      "category": "Project_Details",
+      "fact": "The official project title is 'Predictive Modeling of Prion Protein Conformations'."
+    },
+    {
+      "id": "F05",
+      "category": "Project_Details",
+      "fact": "The project is funded by National Science Foundation grant #CB-89301-A2."
+    },
+    {
+      "id": "F06",
+      "category": "Project_Details",
+      "fact": "The original research hypothesis stated: 'The ChronoFold algorithm can predict the final tertiary structure of SHa-PrP prions with an accuracy exceeding 90%.'"
+    },
+    {
+      "id": "F07",
+      "category": "Timeline",
+      "fact": "Elara Vance began her Ph.D. program on August 15, 2021, and is in her third year."
+    },
+    {
+      "id": "F08",
+      "category": "Timeline",
+      "fact": "On October 26, 2023, Elara Vance concluded that the ChronoFold algorithm's predictive accuracy for final structures was consistently below 65%."
+    },
+    {
+      "id": "F09",
+      "category": "Timeline",
+      "fact": "Elara's next dissertation committee meeting is scheduled for January 22, 2024, at 10:00 AM via Zoom."
+    },
+    {
+      "id": "F10",
+      "category": "Data_Management",
+      "fact": "A key negative result, simulation `run_id_74B`, completed on October 24, 2023, showed a root-mean-square deviation (RMSD) of 8.2 Å from the known crystal structure."
+    },
+    {
+      "id": "F11",
+      "category": "Data_Management",
+      "fact": "The project's raw simulation data, totaling 3.5 TB, is stored on the lab's NAS server at the path `//nfs-croftlab/projects/prionfold/raw_data`."
+    },
+    {
+      "id": "F12",
+      "category": "Data_Management",
+      "fact": "All analysis scripts are version-controlled in a private Git repository located at `git@git.northwood.edu:evance/chrono-fold.git`."
+    },
+    {
+      "id": "F13",
+      "category": "Research_Pivot",
+      "fact": "The key insight for the pivot is that ChronoFold's intermediate energy calculations consistently flagged amino acid residues 129, 178, and 200 as unstable, which are known mutation hotspots."
+    },
+    {
+      "id": "F14",
+      "category": "Research_Pivot",
+      "fact": "The new working hypothesis is: 'The ChronoFold algorithm's energy function can identify regions of conformational instability in prion protein sequences, correlating with known pathogenic variants.'"
+    },
+    {
+      "id": "F15",
+      "category": "Research_Pivot",
+      "fact": "The decision to pivot the research direction is documented in Elara's digital lab notebook (OneNote) in an entry dated October 27, 2023, titled 'Pivot Point: Reframing ChronoFold's Utility'."
+    },
+    {
+      "id": "F16",
+      "category": "Meeting_Records",
+      "fact": "Elara Vance met with Professor Croft on November 1, 2023, from 2:00 PM to 3:30 PM in his office (BioSciences Building, Room 412) to discuss the project pivot."
+    },
+    {
+      "id": "F17",
+      "category": "Meeting_Records",
+      "fact": "During the November 1 meeting, Professor Croft advised reframing the work as a 'methodological contribution for identifying pathogenic risk' to enhance its publishability."
+    },
+    {
+      "id": "F18",
+      "category": "Publication_Strategy",
+      "fact": "The original target for publication was the 'Journal of Molecular Biology', which has an impact factor of 6.1."
+    },
+    {
+      "id": "F19",
+      "category": "Publication_Strategy",
+      "fact": "The new recommended target journal is 'Bioinformatics', which has a focus on novel computational methods."
+    },
+    {
+      "id": "F20",
+      "category": "Resources",
+      "fact": "Elara's primary workstation is a Dell Precision tower designated `COMPBIO-WS-14`, located in the graduate student office in room 305 of the BioSciences building."
+    },
+    {
+      "id": "F21",
+      "category": "Resources",
+      "fact": "The core ChronoFold algorithm was developed using Python 3.9.7 and the TensorFlow 2.8.0 library."
+    },
+    {
+      "id": "F22",
+      "category": "Committee_Details",
+      "fact": "A member of Elara's dissertation committee is Dr. Anya Sharma from the Department of Statistics, an expert in Bayesian inference."
+    },
+    {
+      "id": "F23",
+      "category": "Committee_Details",
+      "fact": "Another committee member is Dr. Ben Carter from the Department of Neurology, who provides clinical expertise on neurodegenerative diseases."
+    },
+    {
+      "id": "F24",
+      "category": "Action_Items",
+      "fact": "A primary task is to re-run analysis on all 1,254 simulation outputs using the `parse_energy_logs.py` script to extract per-residue instability scores."
+    },
+    {
+      "id": "F25",
+      "category": "Action_Items",
+      "fact": "Elara must prepare a 15-minute presentation on her revised research direction for the departmental 'Works-in-Progress' seminar on December 8, 2023."
+    },
+    {
+      "id": "F26",
+      "category": "Collaboration",
+      "fact": "On November 15, 2023, a formal collaboration was initiated with Dr. Carter's lab to validate instability predictions against their unpublished wet-lab data on synthetic prion fragments."
+    },
+    {
+      "id": "F27",
+      "category": "Collaboration",
+      "fact": "The shared data from Dr. Carter's lab is located in a secure directory at `//nfs-medcenter/carterlab/shared/elara_vance_collab`."
+    },
+    {
+      "id": "F28",
+      "category": "Research_Pivot",
+      "fact": "Those unstable hotspot residues suggested that ChronoFold may be more useful for identifying localized pathogenic-risk regions than for predicting a full final prion structure."
+    },
+    {
+      "id": "F29",
+      "category": "Committee_Details",
+      "fact": "For the January 22, 2024 dissertation committee meeting, Elara plans to prepare a one-page pivot summary and a short slide deck covering the failed final-structure results, the hotspot-instability figures, and the revised hypothesis."
+    },
+    {
+      "id": "F30",
+      "category": "Action_Items",
+      "fact": "Before any downstream validation, Elara's main computational step is to run `parse_energy_logs.py` across all 1,254 simulations to produce residue-level instability tables for the new analysis."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was my original research hypothesis that is no longer working?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Original Hypothesis & Failure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the specific result that showed the original hypothesis failed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After recalling the failed hypothesis, the user will want to recall the specific evidence of that failure.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Original Hypothesis & Failure",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What result-based insight showed how I could pivot the project to a new research direction?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Research Pivot Rationale",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Based on the new insight, what is my new working hypothesis?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After stating the insight, the next logical step is to formulate the new hypothesis based on it.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Research Pivot Rationale",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Where did I document my decision to pivot the project?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After defining the new hypothesis, the user may want to find their own notes about the decision.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Research Pivot Rationale",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "What was Professor Croft's key advice on how to frame my pivoted work for publication?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After solidifying the new hypothesis, the user's next concern is validating it with their advisor and recalling their strategic feedback.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Advisor Feedback",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the new target journal my advisor recommended?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Following the advisor's advice on framing, the user would naturally want to know the publication venue that fits that frame. This is an auditable proactive target.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Publication Strategy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the main computational task I need to run to support the new instability-focused analysis?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Core Technical Work",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where can I find the raw data and version-controlled scripts for my project?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: After identifying the task, the user immediately needs to know the location of the data and code to perform it.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Core Technical Work",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Who am I collaborating with for experimental validation and where is their data?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Collaboration Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What are the date and format for my upcoming Works-in-Progress seminar presentation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Upcoming Presentation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "When is my next dissertation committee meeting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Thinking about the near-term presentation deadline naturally prompts concern about the next major project milestone. This is an auditable proactive target.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Committee Meeting Date",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What materials should I prepare for the January 22 dissertation committee meeting?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09",
+        "F29"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: Once the committee meeting date is confirmed, the practical next question is what materials need to be prepared for that meeting.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Committee Preparation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the official title and funding source of my project?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Project Administration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Who should I contact if I have trouble accessing the lab NAS server that stores the raw project data?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F11"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After locating the raw data on the NAS server, a direct follow-up is who to contact if access to that server fails.",
+      "turn_order": 15,
+      "reveal_group": "G11",
+      "reveal_group_label": "Technical Support Contact",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Original Hypothesis & Failure",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Research Pivot Rationale",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Advisor Feedback",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Publication Strategy",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Core Technical Work",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Collaboration Details",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Upcoming Presentation",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Committee Meeting Date",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Committee Preparation",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Project Administration",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G11",
+      "label": "Technical Support Contact",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "research_dead_end_reframe_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

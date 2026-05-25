@@ -1,0 +1,454 @@
+{
+  "scenario_id": "project_scope_03",
+  "domain": "project_kickoff",
+  "description": "A PM starts a project where the client wants a 'Fixed Price' but the internal engineering team uses 'Agile' with no fixed scope. The PM must resolve the conflict between contractual obligations and dev methodology.",
+  "user_profile": {
+    "persona": "33-year-old Project Manager",
+    "context": "Project kickoff meeting in two days, tension between Sales and Engineering",
+    "communication_style": "Diplomatic, focuses on risk mitigation"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project",
+      "fact": "The official name for the project is 'Project Phoenix'."
+    },
+    {
+      "id": "F02",
+      "category": "contract",
+      "fact": "The contract for Project Phoenix is a 'Fixed Price' agreement with a total value of $450,000 USD."
+    },
+    {
+      "id": "F03",
+      "category": "team",
+      "fact": "The assigned Project Manager from Nexus Digital Forge is Anya Sharma."
+    },
+    {
+      "id": "F04",
+      "category": "client",
+      "fact": "The client company for Project Phoenix is InnovateSphere Solutions."
+    },
+    {
+      "id": "F05",
+      "category": "process",
+      "fact": "The internal engineering team at Nexus Digital Forge utilizes the Scrum methodology with two-week sprint cycles."
+    },
+    {
+      "id": "F06",
+      "category": "timeline",
+      "fact": "The contractual deadline for the final delivery of Project Phoenix is March 31, 2024."
+    },
+    {
+      "id": "F07",
+      "category": "meetings",
+      "fact": "The project kickoff meeting is scheduled for October 26, 2023, at 10:00 AM PST in conference room 'Odyssey'."
+    },
+    {
+      "id": "F08",
+      "category": "team",
+      "fact": "The Engineering Lead for Project Phoenix is Dr. Lena Petrova."
+    },
+    {
+      "id": "F09",
+      "category": "client",
+      "fact": "The primary stakeholder and point of contact at InnovateSphere Solutions is David Chen, Director of Product."
+    },
+    {
+      "id": "F10",
+      "category": "sales",
+      "fact": "The sales contract was finalized and signed by Mark O'Connell on October 18, 2023."
+    },
+    {
+      "id": "F11",
+      "category": "tooling",
+      "fact": "All project tasks, user stories, and sprints are tracked in Jira under the project key 'PHX'."
+    },
+    {
+      "id": "F12",
+      "category": "tooling",
+      "fact": "The primary communication channel for the project team is the Slack channel named '#proj-phoenix'."
+    },
+    {
+      "id": "F13",
+      "category": "docs",
+      "fact": "The governing document is the Statement of Work, version 'SOW-Phoenix-v1.2', which specifies 15 core features."
+    },
+    {
+      "id": "F14",
+      "category": "risk",
+      "fact": "Anya Sharma has logged Risk ID R-01: 'Scope creep due to misalignment between the Fixed Price SOW and Agile execution'."
+    },
+    {
+      "id": "F15",
+      "category": "codebase",
+      "fact": "The Git repository for the 'Aura Analytics Dashboard' is hosted at https://git.nexusforge.io/phoenix/aura-analytics."
+    },
+    {
+      "id": "F16",
+      "category": "docs",
+      "fact": "The project's Risk Register is maintained on the Confluence page titled 'Phoenix Risk Register'."
+    },
+    {
+      "id": "F17",
+      "category": "team",
+      "fact": "On October 23, 2023, Dr. Lena Petrova sent an email to Anya Sharma expressing concern that the SOW's feature list is too rigid for an Agile process."
+    },
+    {
+      "id": "F18",
+      "category": "process",
+      "fact": "Anya Sharma has proposed a hybrid 'Agile Fixed-Price' model with a strict change request process for any features not listed in SOW-Phoenix-v1.2."
+    },
+    {
+      "id": "F19",
+      "category": "product",
+      "fact": "The final deliverable is a web application named the 'Aura Analytics Dashboard'."
+    },
+    {
+      "id": "F20",
+      "category": "contract",
+      "fact": "The payment schedule is 30% upfront ($135,000), 40% at User Acceptance Testing ($180,000), and 30% upon final delivery ($135,000)."
+    },
+    {
+      "id": "F21",
+      "category": "meetings",
+      "fact": "The primary agenda item for the kickoff, proposed by Anya, is 'Aligning on Scope Management and Change Control Process'."
+    },
+    {
+      "id": "F22",
+      "category": "team",
+      "fact": "The engineering team assigned to the project is codenamed 'The Phoenix Team' and consists of 4 developers and 1 QA engineer."
+    },
+    {
+      "id": "F23",
+      "category": "infra",
+      "fact": "The staging environment for client review is located at the URL https://staging.aura.nexusforge.io and requires VPN access."
+    },
+    {
+      "id": "F24",
+      "category": "tooling",
+      "fact": "All official project documentation, including meeting minutes and decision logs, will be stored in the Confluence space 'Project Phoenix'."
+    },
+    {
+      "id": "F25",
+      "category": "product",
+      "fact": "The Aura Analytics Dashboard must integrate with InnovateSphere's existing 'Catalyst CRM' via a documented REST API."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the contract type and total value for Project Phoenix?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Contract Fundamentals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the payment schedule for this project?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After understanding the total contract value, the user will likely want to know the payment breakdown and milestones.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Contract Fundamentals",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the core conflict between the Statement of Work and the engineering team's development process?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Core Conflict Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which engineering lead raised email concerns about the SOW, and what specific concern did they raise?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once the core process conflict is established, a natural next step is to identify which engineering lead raised the concern and what specific objection they documented.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Core Conflict Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Who from the sales team finalized and signed the contract?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Core Conflict Details",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "What is the official risk I've logged regarding the SOW and Agile misalignment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding the engineering lead's concerns, the PM's next logical step is to recall how this has been formally documented as a risk.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Formal Risk Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Where is the project's Risk Register maintained?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After recalling the specific risk ID, the user may want to know the location of the complete risk register for broader context. This is an auditable proactive target.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Risk Documentation Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the hybrid model I've proposed to manage the fixed-price agile conflict?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Identifying a major risk immediately prompts the need to review the proposed mitigation strategy.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Proposed Solution",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When and where is the project kickoff meeting scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Kickoff Meeting Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the primary agenda item I proposed for the kickoff to address the project's core conflict?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After reviewing the proposed solution, the user will want to know how it's being presented in the upcoming kickoff meeting.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Kickoff Meeting Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Who is the primary client stakeholder at InnovateSphere Solutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Client Stakeholder",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the Jira project key and primary Slack channel for the project team?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Tooling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Where will official project documentation, like meeting minutes, be stored?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "After asking about tooling for tasks and communication, the user is likely to ask about the repository for long-form documentation.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Tooling",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "What is the name of the final deliverable and what external system must it integrate with?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Technical Deliverable",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Do we already have a staging environment for client review, and if so what is the URL and access method?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "CROSS-GROUP: After identifying the final deliverable and its required external integration, a practical follow-up is to confirm whether a staging environment for client review already exists and how it is accessed.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Staging Environment",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Contract Fundamentals",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Core Conflict Details",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Formal Risk Identification",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Risk Documentation Location",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Proposed Solution",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Kickoff Meeting Logistics",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Client Stakeholder",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Project Tooling",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Technical Deliverable",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Staging Environment",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G9"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "project_scope_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

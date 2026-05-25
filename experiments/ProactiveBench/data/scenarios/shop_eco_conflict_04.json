@@ -1,0 +1,431 @@
+{
+  "scenario_id": "shop_eco_conflict_04",
+  "domain": "personal_shopping",
+  "description": "A user wants to renovate their kitchen with 'Zero Waste' products. Conflict: The most eco-friendly materials are 3x the price and have a 6-month lead time, but the user needs the kitchen functional in 2 months for an event. They must reconcile 'sustainability goals' with 'timeline reality'.",
+  "user_profile": {
+    "persona": "40-year-old environmental activist",
+    "context": "Renovation starts next month",
+    "communication_style": "Value-driven but needs a reality check"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Client_Profile",
+      "fact": "The client's name is Anya Sharma, a 40-year-old environmental activist."
+    },
+    {
+      "id": "F02",
+      "category": "Client_Profile",
+      "fact": "Anya Sharma is the founder of the non-profit organization 'Planet Protectors Alliance'."
+    },
+    {
+      "id": "F03",
+      "category": "Project_Goal",
+      "fact": "The primary goal is to renovate the kitchen at 123 Evergreen Lane, Boulder, CO, using 'Zero Waste' principles and products."
+    },
+    {
+      "id": "F04",
+      "category": "Timeline_Constraints",
+      "fact": "The renovation project is scheduled to begin on November 1, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "Timeline_Constraints",
+      "fact": "The kitchen must be fully functional no later than December 31, 2023."
+    },
+    {
+      "id": "F06",
+      "category": "Timeline_Constraints",
+      "fact": "Anya Sharma is hosting a major fundraising event for 'Planet Protectors Alliance' at her home on January 15, 2024."
+    },
+    {
+      "id": "F07",
+      "category": "Budget_Details",
+      "fact": "Anya Sharma's initial stated budget for the entire kitchen renovation is $25,000."
+    },
+    {
+      "id": "F08",
+      "category": "Ideal_Materials_Cost",
+      "fact": "The total cost for the most eco-friendly materials ('Reclaimed Oceanwood' and 'MycoForm') is quoted at $75,500, excluding labor."
+    },
+    {
+      "id": "F09",
+      "category": "Alternative_Materials_Cost",
+      "fact": "A proposed budget using alternative, faster-to-source materials is $32,000, excluding labor."
+    },
+    {
+      "id": "F10",
+      "category": "Ideal_Materials_Specification",
+      "fact": "Anya's first choice for countertops is 'Reclaimed Oceanwood' from the supplier 'Tidal Timber Co.'"
+    },
+    {
+      "id": "F11",
+      "category": "Ideal_Materials_Lead_Time",
+      "fact": "The confirmed lead time for 'Reclaimed Oceanwood' countertops is 6 months from the date of order."
+    },
+    {
+      "id": "F12",
+      "category": "Ideal_Materials_Specification",
+      "fact": "Anya's first choice for cabinets is 'MycoForm', a custom-grown mycelium composite from 'FungiFuture Designs'."
+    },
+    {
+      "id": "F13",
+      "category": "Ideal_Materials_Lead_Time",
+      "fact": "The fabrication and delivery time for 'MycoForm' cabinets is 24 weeks."
+    },
+    {
+      "id": "F14",
+      "category": "Alternative_Materials_Specification",
+      "fact": "The proposed alternative countertop material is 'EcoQuartz-Lite' from 'StoneCycle Inc.', made of 85% recycled glass."
+    },
+    {
+      "id": "F15",
+      "category": "Alternative_Materials_Lead_Time",
+      "fact": "'EcoQuartz-Lite' countertops can be delivered and installed within 3 weeks of placing the order."
+    },
+    {
+      "id": "F16",
+      "category": "Alternative_Materials_Specification",
+      "fact": "The proposed alternative cabinet material is 'RenewWood' from 'Urban Timbercraft', made from 95% post-consumer recycled wood fibers."
+    },
+    {
+      "id": "F17",
+      "category": "Alternative_Materials_Lead_Time",
+      "fact": "'RenewWood' cabinets have a 5-week lead time for delivery and installation."
+    },
+    {
+      "id": "F18",
+      "category": "Vendor_Information",
+      "fact": "The sustainability consultant managing the project is Alex Chen of 'GreenBuild Solutions'."
+    },
+    {
+      "id": "F19",
+      "category": "Vendor_Information",
+      "fact": "Alex Chen's direct contact email is achen@greenbuildsolutions.com."
+    },
+    {
+      "id": "F20",
+      "category": "Vendor_Information",
+      "fact": "The general contractor hired for the renovation is Maria Flores from 'EcoConstruct Renovations', license #CO-GC-98765."
+    },
+    {
+      "id": "F21",
+      "category": "Communication_Plan",
+      "fact": "All project documentation and change orders are tracked via the contractor's portal: https://app.buildertrend.net/login/EcoConstruct."
+    },
+    {
+      "id": "F22",
+      "category": "Communication_Plan",
+      "fact": "A mandatory weekly progress meeting is scheduled with Anya, Alex, and Maria every Friday at 10:00 AM MST via Zoom."
+    },
+    {
+      "id": "F23",
+      "category": "Decision_Point",
+      "fact": "Anya must provide a final decision on material selection by October 20, 2023, to maintain the project schedule."
+    },
+    {
+      "id": "F24",
+      "category": "Project_Conflict",
+      "fact": "Anya's desire for the 'Reclaimed Oceanwood' is partly due to its unique story, which she planned to feature during her fundraiser."
+    },
+    {
+      "id": "F25",
+      "category": "Project_Conflict",
+      "fact": "Proceeding with the ideal materials would delay the project completion until at least May 2024, missing the event by 4 months."
+    },
+    {
+      "id": "F26",
+      "category": "Ideal_Materials_Cost",
+      "fact": "The cost for 'Reclaimed Oceanwood' is $350 per square foot, whereas the 'EcoQuartz-Lite' is $95 per square foot."
+    },
+    {
+      "id": "F27",
+      "category": "Vendor_Information",
+      "fact": "The sales contact for FungiFuture Designs regarding the MycoForm cabinets is Dr. Elara Vance at orders@fungifuture.bio."
+    },
+    {
+      "id": "F28",
+      "category": "Project_Conflict",
+      "fact": "Anya's first-choice material package is the combination of 'Reclaimed Oceanwood' countertops and 'MycoForm' cabinets, even though this package cannot meet the required December 31, 2023 functionality deadline."
+    },
+    {
+      "id": "F29",
+      "category": "Alternative_Materials_Specification",
+      "fact": "The consultant's proposed timeline-compatible replacement package uses 'EcoQuartz-Lite' countertops and 'RenewWood' cabinets for the renovation."
+    },
+    {
+      "id": "F30",
+      "category": "Project_Conflict",
+      "fact": "The alternative materials 'EcoQuartz-Lite' and 'RenewWood' are backup options considered only because Anya's original first-choice package cannot satisfy the required project timeline."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Which materials are explicitly identified as my original first-choice options for the kitchen countertops and cabinets, before considering backup alternatives?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F12",
+        "F28",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Ideal Material Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the total cost for the 'Reclaimed Oceanwood' and 'MycoForm' materials, excluding labor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the ideal materials, the user will naturally want to know their cost.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Ideal Material Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the lead times for my first-choice materials, 'Reclaimed Oceanwood' and 'MycoForm'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the user specifies their ideal materials, the most critical next piece of information is the lead time, which introduces the core project conflict.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Timeline Conflict",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the absolute latest date the kitchen must be functional, and when is the fundraising event I'm hosting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Project Deadline Confirmation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the proposed alternative materials for the countertops and cabinets?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F16",
+        "F29"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the long lead times for the ideal materials, the immediate logical need is to find out what the viable alternatives are.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Alternative Material Options",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are the lead times for the alternative 'EcoQuartz-Lite' and 'RenewWood' materials?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After being introduced to the alternative materials, the user needs to confirm their lead times to ensure they solve the timeline problem.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Alternative Material Options",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the cost per square foot for 'Reclaimed Oceanwood' versus 'EcoQuartz-Lite' countertops?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning about the alternative countertop, a user focused on value would appreciate a direct cost comparison to understand the financial trade-off. This is a good proactive detail to offer.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Specific Cost Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was my initial stated budget for the renovation, and what is the cost for the alternative materials proposal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F09"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the viable alternative options and their timelines, the next step is to evaluate them against the project's budget.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Budget Reality Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "By what date must I make a final decision on the material selection to keep the project on schedule?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After reviewing all the conflicting factors (ideals, timeline, budget, alternatives), the most critical piece of information is the deadline for making a decision.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Decision Deadline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is the general contractor for this renovation, what is their license number, and where are project documentation and change orders tracked?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Team and Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "When are the weekly progress meetings with Anya, Alex, and Maria scheduled?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: After confirming the contractor and the system used to track project documentation, a natural follow-up is to ask when the recurring coordination meetings are scheduled.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Team and Communication",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "Who is the sales contact at FungiFuture Designs for the MycoForm cabinets if I want to discuss that cabinet option directly?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the long lead time for the preferred MycoForm cabinets, a natural follow-up is to ask for the direct sales contact in case the user wants to discuss availability, timing, or future ordering with the vendor.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Ideal Vendor Contact",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Ideal Material Identification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Timeline Conflict",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Project Deadline Confirmation",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Alternative Material Options",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Specific Cost Comparison",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Budget Reality Check",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Decision Deadline",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Project Team and Communication",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Ideal Vendor Contact",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shop_eco_conflict_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

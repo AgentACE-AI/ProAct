@@ -1,0 +1,389 @@
+{
+  "scenario_id": "recycling_bin_asset_status_03",
+  "domain": "waste_recycling_operations",
+  "description": "A service team needs to know which bins are damaged, missing labels, temporarily removed, replaced, or assigned to the wrong customer so asset status stops drifting from reality. All service accounts are fictional.",
+  "user_profile": {
+    "persona": "34-year-old field coordinator responsible for container service records",
+    "context": "Asset notes exist, but they have not stayed synchronized with what crews are actually seeing in the field",
+    "communication_style": "Status-heavy and concrete, wants each container tied to one current operational state"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Container Status",
+      "fact": "Recycling container EC-R-4590, located at Summit Ridge Apartments, was reported as 'Damaged' on 2023-11-03 due to a cracked lid."
+    },
+    {
+      "id": "F02",
+      "category": "Container Status",
+      "fact": "General waste container EC-G-1121 at 450 Oak Lane is flagged as 'Missing Label' in the AssetTrack Pro system as of 2023-11-05."
+    },
+    {
+      "id": "F03",
+      "category": "Container Status",
+      "fact": "Organics container EC-O-3301 was 'Temporarily Removed' from the Pine Street Farmer's Market on 2023-10-28 for a city event and is due back on 2023-11-12."
+    },
+    {
+      "id": "F04",
+      "category": "Container Status",
+      "fact": "Recycling container EC-R-7834 was 'Replaced' at the Maplewood Eatery on 2023-10-30; the old, damaged unit was decommissioned."
+    },
+    {
+      "id": "F05",
+      "category": "Container Status",
+      "fact": "General waste container EC-G-5822 is currently 'Misassigned'; it is physically located at 789 Birchwood Ave but is assigned to 791 Birchwood Ave in the system."
+    },
+    {
+      "id": "F06",
+      "category": "Container Status",
+      "fact": "Container EC-R-2045 at the Cypress Medical Clinic has its right-side wheel broken, logged under service ticket T-9811."
+    },
+    {
+      "id": "F07",
+      "category": "Container Status",
+      "fact": "As of the last service on 2023-11-06, container EC-G-8150 at the public library is fully 'Operational'."
+    },
+    {
+      "id": "F08",
+      "category": "Container Status",
+      "fact": "Container EC-O-6755, assigned to the 'Grove Cafe', was reported as 'Missing' on 2023-11-01 and has not been located."
+    },
+    {
+      "id": "F09",
+      "category": "Container Status",
+      "fact": "The service address for container EC-R-4591 is 1200 Summit Ridge Dr, Apartment Complex B, rear loading dock."
+    },
+    {
+      "id": "F10",
+      "category": "Container Status",
+      "fact": "The lock on secure document container EC-S-0042 at City Hall is jammed; a maintenance request was filed on 2023-11-04."
+    },
+    {
+      "id": "F11",
+      "category": "Customer Account",
+      "fact": "The 'Maplewood Eatery' account (CID: CUST-045) is assigned two containers: one general waste (EC-G-1122) and one recycling (EC-R-7834)."
+    },
+    {
+      "id": "F12",
+      "category": "Customer Account",
+      "fact": "'Summit Ridge Apartments' (CID: CUST-089) has a contract for twelve 96-gallon recycling containers and eight 96-gallon general waste containers."
+    },
+    {
+      "id": "F13",
+      "category": "Customer Account",
+      "fact": "Account CUST-102, 'Oak Lane Retail', has an open service request (T-9755) for graffiti removal that is 14 days old."
+    },
+    {
+      "id": "F14",
+      "category": "Customer Account",
+      "fact": "The primary service contact for 'Cypress Medical Clinic' (CID: CUST-015) is Facilities Manager, David Chen, at 555-018-2345."
+    },
+    {
+      "id": "F15",
+      "category": "Customer Account",
+      "fact": "A new service account, 'Riverbend Tech Park' (CID: CUST-211), was created on 2023-11-02 and is awaiting initial container deployment."
+    },
+    {
+      "id": "F16",
+      "category": "Service Tickets",
+      "fact": "Service ticket T-9811 was created on 2023-11-02 by crew member Maria Flores to report the broken wheels on container EC-R-2045."
+    },
+    {
+      "id": "F17",
+      "category": "Service Tickets",
+      "fact": "Ticket T-9820 for replacing the missing RFID label on container EC-G-1121 is assigned to the 'Labeling Team' with a due date of 2023-11-10."
+    },
+    {
+      "id": "F18",
+      "category": "Service Tickets",
+      "fact": "Ticket T-9799, for replacing the damaged container at Maplewood Eatery, was closed on 2023-10-30 by supervisor Kenji Tanaka."
+    },
+    {
+      "id": "F19",
+      "category": "Service Tickets",
+      "fact": "The status of ticket T-9811 (broken wheels) is 'On Hold - Awaiting Parts', specifically waiting for an axle replacement kit."
+    },
+    {
+      "id": "F20",
+      "category": "Service Tickets",
+      "fact": "The last note added to ticket T-9820 at 9:15 AM on 2023-11-06 by Sarah Jenkins reads: 'Confirmed location with customer, crew can access M-F 8am-4pm'."
+    },
+    {
+      "id": "F21",
+      "category": "Asset Information",
+      "fact": "The standard general waste container (EC-G series) has a capacity of 96 gallons and is manufactured by 'DuraBin Inc'."
+    },
+    {
+      "id": "F22",
+      "category": "Asset Information",
+      "fact": "Organics containers (EC-O series) are 32-gallon capacity and are colored green for easy identification by collection crews."
+    },
+    {
+      "id": "F23",
+      "category": "Asset Information",
+      "fact": "Recycling container EC-R-7834 was placed into service on 2023-10-30 and has an expected service life of 10 years."
+    },
+    {
+      "id": "F24",
+      "category": "Asset Information",
+      "fact": "All containers are equipped with a passive RFID tag (model: Omni-ID Fit 400) for asset tracking during collection."
+    },
+    {
+      "id": "F25",
+      "category": "Asset Information",
+      "fact": "The total count of active containers managed by the West Metro district is 4,281 as of 2023-11-01."
+    },
+    {
+      "id": "F26",
+      "category": "Personnel",
+      "fact": "Sarah Jenkins is the Field Coordinator responsible for maintaining the accuracy of the AssetTrack Pro database for the West Metro district."
+    },
+    {
+      "id": "F27",
+      "category": "Personnel",
+      "fact": "Crew member Maria Flores operates collection truck #17 on Route WM-04, which covers the downtown commercial sector."
+    },
+    {
+      "id": "F28",
+      "category": "Personnel",
+      "fact": "All container repair and replacement tickets must be approved by Maintenance Supervisor Kenji Tanaka before parts are ordered."
+    },
+    {
+      "id": "F29",
+      "category": "Personnel",
+      "fact": "The on-call number for after-hours service emergencies is 555-012-7000, monitored by the shift lead."
+    },
+    {
+      "id": "F30",
+      "category": "System & Process",
+      "fact": "The login URL for the asset management system is https://ecocycle.assettrackpro.com/login."
+    },
+    {
+      "id": "F31",
+      "category": "System & Process",
+      "fact": "Any service ticket with the priority 'Critical', such as a leaking container, must be acknowledged by a supervisor within 60 minutes."
+    },
+    {
+      "id": "F32",
+      "category": "System & Process",
+      "fact": "All collection crews are required to sync their handheld scanners with the AssetTrack Pro system by 5:00 PM at the end of each shift."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the issue with container EC-R-2045 at the Cypress Medical Clinic and is there a service ticket for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Specific Container Inquiry",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the current status of service ticket T-9811 for the broken wheel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning a ticket exists for a specific container issue, the user's immediate next step is to check the status of that ticket.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Specific Container Inquiry",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which container is flagged as 'Missing Label' and what is the associated service ticket?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Labeling and Tracking Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the latest note on ticket T-9820, and when was it added?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once a ticket is identified, the user will likely want to see the latest operational details or communications logged against it.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Labeling and Tracking Issues",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Which container is misassigned and what are the specific location details of the error?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Location and Assignment Errors",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which container was temporarily removed, from where, and when is it scheduled to be returned?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Discussing a location discrepancy (misassignment) could prompt the coordinator to check on other assets with non-standard locations, such as temporary removals.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Temporary Removals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Which container was reported as 'Missing' and which customer is it assigned to?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Missing Assets",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Which container was recently replaced and at what customer location?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Identifying a severe issue like a missing container might trigger a check on other recent, major asset lifecycle events like replacements.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Asset Lifecycle Events",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When was the service ticket for the Maplewood Eatery replacement closed and by whom?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After learning about a completed replacement, the user would naturally want to confirm that the associated service ticket has been formally closed in the system.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Asset Lifecycle Events",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "When was the replacement recycling container at Maplewood Eatery placed into service?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04",
+        "F23"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After confirming when the Maplewood Eatery replacement ticket was closed, a direct follow-up is whether the replacement container was officially placed into service at that location.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Replacement Documentation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Specific Container Inquiry",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Labeling and Tracking Issues",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Location and Assignment Errors",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Temporary Removals",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Missing Assets",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Asset Lifecycle Events",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+    "label": "Replacement Documentation",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "recycling_bin_asset_status_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

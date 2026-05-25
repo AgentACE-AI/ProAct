@@ -1,0 +1,488 @@
+{
+  "scenario_id": "negotiate_salary_01",
+  "domain": "negotiation_support",
+  "description": "A job candidate has received an offer and wants to negotiate for a higher base salary or more equity. They need to gather market data and draft a persuasive response.",
+  "user_profile": {
+    "persona": "27-year-old software engineer",
+    "context": "Offer received yesterday, slightly below expectations",
+    "communication_style": "Polite but prepared"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Candidate Profile",
+      "fact": "The candidate, Alex Chen, is a 27-year-old software engineer based in San Francisco, CA."
+    },
+    {
+      "id": "F02",
+      "category": "Candidate Profile",
+      "fact": "Alex Chen's current role is Software Engineer II at DataWeave Analytics."
+    },
+    {
+      "id": "F03",
+      "category": "Candidate Profile",
+      "fact": "Alex Chen's current base salary at DataWeave Analytics is $135,000 per year."
+    },
+    {
+      "id": "F04",
+      "category": "Candidate Profile",
+      "fact": "Alex Chen has 5 years of total professional experience in software engineering."
+    },
+    {
+      "id": "F05",
+      "category": "Candidate Profile",
+      "fact": "Alex Chen's key technical skills are Python, Go, Kubernetes, and AWS."
+    },
+    {
+      "id": "F06",
+      "category": "Company Information",
+      "fact": "The prospective employer is Innovatech Solutions Inc., an AI logistics company."
+    },
+    {
+      "id": "F07",
+      "category": "Company Information",
+      "fact": "Innovatech Solutions Inc. is located at 350 Mission Street, San Francisco, CA 94105."
+    },
+    {
+      "id": "F08",
+      "category": "Company Information",
+      "fact": "The hiring manager for the position is Dr. Evelyn Reed, Director of Engineering."
+    },
+    {
+      "id": "F09",
+      "category": "Company Information",
+      "fact": "The recruiter managing the hiring process is Ben Carter."
+    },
+    {
+      "id": "F10",
+      "category": "Company Information",
+      "fact": "Innovatech Solutions Inc. raised a $80 million Series C round on March 1, 2024, at a $1.2 billion valuation."
+    },
+    {
+      "id": "F11",
+      "category": "Offer Details",
+      "fact": "The position offered to Alex Chen is Senior Software Engineer."
+    },
+    {
+      "id": "F12",
+      "category": "Offer Details",
+      "fact": "The offered base salary is $165,000 per year."
+    },
+    {
+      "id": "F13",
+      "category": "Offer Details",
+      "fact": "The offer includes a one-time sign-on bonus of $15,000."
+    },
+    {
+      "id": "F14",
+      "category": "Offer Details",
+      "fact": "The equity grant offered is 10,000 stock options."
+    },
+    {
+      "id": "F15",
+      "category": "Offer Details",
+      "fact": "The strike price for the offered stock options is $12.50 per share."
+    },
+    {
+      "id": "F16",
+      "category": "Offer Details",
+      "fact": "The equity vesting schedule is 4 years with a 1-year cliff, followed by monthly vesting."
+    },
+    {
+      "id": "F17",
+      "category": "Offer Details",
+      "fact": "The annual target performance bonus is up to 15% of the base salary."
+    },
+    {
+      "id": "F18",
+      "category": "Offer Details",
+      "fact": "The job offer was officially extended to Alex Chen on October 28, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "Offer Details",
+      "fact": "The deadline to accept the offer is November 4, 2024, at 5:00 PM PST."
+    },
+    {
+      "id": "F20",
+      "category": "Offer Details",
+      "fact": "The offered health plan is a Blue Shield PPO Gold, with the company covering 90% of the employee's premium."
+    },
+    {
+      "id": "F21",
+      "category": "Market Data",
+      "fact": "According to Levels.fyi, the 50th percentile base salary for a Senior Software Engineer in a Series C SF startup is $175,000."
+    },
+    {
+      "id": "F22",
+      "category": "Market Data",
+      "fact": "According to Levels.fyi, the 75th percentile base salary for a Senior Software Engineer in a Series C SF startup is $190,000."
+    },
+    {
+      "id": "F23",
+      "category": "Market Data",
+      "fact": "The average equity value for a comparable role is approximately $200,000 over four years."
+    },
+    {
+      "id": "F24",
+      "category": "Market Data",
+      "fact": "Alex Chen received a competing verbal offer from QuantumLeap AI for a base salary of $172,000."
+    },
+    {
+      "id": "F25",
+      "category": "Negotiation Goal",
+      "fact": "Alex Chen's target base salary for the counter-offer is $180,000."
+    },
+    {
+      "id": "F26",
+      "category": "Negotiation Goal",
+      "fact": "Alex Chen's target equity grant for the counter-offer is 15,000 stock options."
+    },
+    {
+      "id": "F27",
+      "category": "Communication Log",
+      "fact": "Alex Chen's final interview with Dr. Evelyn Reed was on October 22, 2024."
+    },
+    {
+      "id": "F28",
+      "category": "Communication Log",
+      "fact": "The offer was delivered verbally by Ben Carter during a phone call at 2:00 PM PST on October 28, 2024."
+    },
+    {
+      "id": "F29",
+      "category": "Communication Log",
+      "fact": "The official written offer letter was received via email at 2:45 PM PST on October 28, 2024."
+    },
+    {
+      "id": "F30",
+      "category": "Negotiation Strategy",
+      "fact": "Alex plans to send a counter-offer email on October 30, 2024, to allow time for discussion before the deadline."
+    },
+    {
+      "id": "F31",
+      "category": "Negotiation Strategy",
+      "fact": "A key point in the negotiation will be Alex's direct experience with distributed systems, which is critical for Innovatech's 'Project Atlas'."
+    },
+    {
+      "id": "F32",
+      "category": "Negotiation Strategy",
+      "fact": "Alex will anchor the salary discussion using the market data range of $175,000 to $190,000."
+    },
+    {
+      "id": "F33",
+      "category": "Negotiation Strategy",
+      "fact": "The negotiation communication will begin by expressing strong enthusiasm for the team and Innovatech's mission."
+    },
+    {
+      "id": "F34",
+      "category": "Personal Context",
+      "fact": "Alex Chen's current monthly rent is $3,200 for an apartment in San Francisco."
+    },
+    {
+      "id": "F35",
+      "category": "Personal Context",
+      "fact": "Alex Chen has a remaining student loan balance of $28,500."
+    },
+    {
+      "id": "F36",
+      "category": "Market Data",
+      "fact": "A compensation benchmark packet for comparable Senior Software Engineer roles at Series C startups in San Francisco places typical equity grants in a range of roughly 12,000 to 16,000 stock options."
+    },
+    {
+      "id": "F37",
+      "category": "Negotiation Strategy",
+      "fact": "Alex's draft opening line for the counter-offer email is: 'I'm very excited about the opportunity to join Innovatech and the work your team is doing, and I'd love to discuss whether we can bring the package a bit closer to market.'"
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the offered base salary and sign-on bonus for the Senior Software Engineer position at Innovatech Solutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Offer Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the details of the equity grant, including number of options, strike price, and vesting schedule?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After understanding the cash compensation, the user will naturally want to know about the equity component.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Offer Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "When is the deadline to accept the offer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the offer's components, the most critical logistical detail is the timeline for a decision.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Offer Deadline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the 50th and 75th percentile base salary for a comparable role in San Francisco?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After seeing the offered salary, the user's immediate next step is to benchmark it against market data.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Market Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the average equity value for a similar role over four years?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Similar to salary, after reviewing the equity grant, the user will want to compare its value to the market average.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Market Comparison",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the typical equity grant range for a comparable Senior Software Engineer role at a Series C startup in San Francisco?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F36"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After looking at salary percentiles, the next natural benchmark question is the typical equity range for a comparable role.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Market Comparison",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N7",
+      "description": "What is my target base salary for the counter-offer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After comparing the offer to market data, the user will formulate their specific salary goal for the negotiation.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Counter-Offer Goals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What equity grant target am I using for the counter-offer, and what benchmark range supports it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F36"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Once the user sees the benchmark equity range for comparable roles, the next logical step is to set the specific equity target for the counter-offer.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Counter-Offer Goals",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "When do I plan to send the counter-offer email?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Communication Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the key strength I will highlight in my negotiation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: When planning the communication timeline, the user will also think about the core message and justification for their counter-offer.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Communication Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What salary range will I use to anchor the negotiation discussion?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Once a target salary is established, a logical next thought is how to frame that request, specifically what anchor range to use based on market data.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Negotiation Anchor",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What positive opening line will I use to start the negotiation email?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F33",
+        "F37"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: While planning the communication, the user will consider not just the substance but also the tone and opening remarks.",
+      "turn_order": 12,
+      "reveal_group": "G5",
+      "reveal_group_label": "Communication Plan",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N13",
+      "description": "Who are the hiring manager and recruiter I should be communicating with?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is my current base salary and total years of professional experience?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Personal Profile",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Offer Details",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Offer Deadline",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Market Comparison",
+      "member_need_ids": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Counter-Offer Goals",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Communication Plan",
+      "member_need_ids": [
+        "N9",
+        "N10",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Negotiation Anchor",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Contacts",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Personal Profile",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "negotiate_salary_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

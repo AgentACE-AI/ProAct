@@ -1,0 +1,386 @@
+{
+  "scenario_id": "study_abroad_app_01",
+  "domain": "study_abroad",
+  "description": "A senior undergraduate is preparing to apply for a CS master's program in the US. They need to learn about application procedures, document preparation, timelines, costs, and standardized tests. All school and program names are fictional.",
+  "user_profile": {
+    "persona": "22-year-old senior CS student, GPA 3.5",
+    "context": "Just decided to pursue a master's abroad, 6 months until deadline",
+    "communication_style": "Prefers step-by-step lists, tends to get anxious"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "application",
+      "fact": "The application deadline for the MS in Computer Science program at the University of Northern Westhaven (UNW) for Fall 2025 admission is December 15, 2024, at 11:59 PM PST."
+    },
+    {
+      "id": "F02",
+      "category": "application",
+      "fact": "The application deadline for the MS in Computer Science program at Pacific Coast Institute of Technology (PCIT) is January 5, 2025."
+    },
+    {
+      "id": "F03",
+      "category": "application",
+      "fact": "All applications to UNW, PCIT, and Midwest State University (MSU) must be submitted through the GradApply Central portal at https://apply.gradapplycentral.org."
+    },
+    {
+      "id": "F04",
+      "category": "application",
+      "fact": "The non-refundable application fee for PCIT is $95, payable by credit card via the GradApply Central portal."
+    },
+    {
+      "id": "F05",
+      "category": "application",
+      "fact": "For questions about the UNW application, contact the graduate admissions coordinator, Maria Garcia, at m.garcia@unw.edu."
+    },
+    {
+      "id": "F06",
+      "category": "application",
+      "fact": "The MS in CS program at UNW requires exactly three letters of recommendation."
+    },
+    {
+      "id": "F07",
+      "category": "application",
+      "fact": "Recommenders must submit their letters directly through a unique link sent to them from the GradApply Central portal after the applicant enters their contact information."
+    },
+    {
+      "id": "F08",
+      "category": "documents",
+      "fact": "The Statement of Purpose for the University of Northern Westhaven should be a maximum of 1000 words, double-spaced, using a 12-point Times New Roman font."
+    },
+    {
+      "id": "F09",
+      "category": "documents",
+      "fact": "All applicants with degrees from outside the US must submit a course-by-course credential evaluation from Global Credential Evaluators (GCE)."
+    },
+    {
+      "id": "F10",
+      "category": "documents",
+      "fact": "Official transcripts must be sent directly from your undergraduate institution to the graduate admissions office of each university; electronic submission to grad.transcripts@pcit.edu is preferred by PCIT."
+    },
+    {
+      "id": "F11",
+      "category": "documents",
+      "fact": "The resume submitted to PCIT should be a single page and highlight at least two significant software development projects, including links to their Git repositories."
+    },
+    {
+      "id": "F12",
+      "category": "documents",
+      "fact": "The 'Supplemental Document' required by Midwest State University is a 500-word essay on 'Your most challenging technical project and what you learned from it.'"
+    },
+    {
+      "id": "F13",
+      "category": "documents",
+      "fact": "To order a GCE evaluation, create an account at www.gce-eval.com, pay the $205 fee for the 'Course-by-Course with GPA' package, and follow their instructions for sending transcripts."
+    },
+    {
+      "id": "F14",
+      "category": "finance",
+      "fact": "The estimated annual tuition and fees for the MS in CS program at the University of Northern Westhaven for the 2025-2026 academic year is $48,500."
+    },
+    {
+      "id": "F15",
+      "category": "finance",
+      "fact": "The estimated annual living cost for a graduate student in Westhaven, including housing, food, and transport, is $22,000."
+    },
+    {
+      "id": "F16",
+      "category": "finance",
+      "fact": "The 'Future Innovators in Tech' Scholarship offered by PCIT provides a one-time award of $10,000; the application essay is due by November 30, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "finance",
+      "fact": "To receive the I-20 form required for a student visa, applicants must show proof of funds totaling at least $70,500 for UNW, which covers one year of tuition and living expenses."
+    },
+    {
+      "id": "F18",
+      "category": "finance",
+      "fact": "A proof of funds document must be an official bank statement from Global Citizen Bank or a similar institution, dated within the last 3 months."
+    },
+    {
+      "id": "F19",
+      "category": "finance",
+      "fact": "Admitted students to PCIT must pay a non-refundable enrollment deposit of $500 by April 15, 2025, to secure their spot."
+    },
+    {
+      "id": "F20",
+      "category": "finance",
+      "fact": "The standard 9-month Teaching Assistantship at Midwest State University includes a full tuition waiver and a monthly stipend of $2,200."
+    },
+    {
+      "id": "F21",
+      "category": "tests",
+      "fact": "The University of Northern Westhaven requires a minimum TOEFL iBT score of 100, with no less than 22 on each sub-section."
+    },
+    {
+      "id": "F22",
+      "category": "tests",
+      "fact": "Pacific Coast Institute of Technology recommends a GRE Quantitative Reasoning score of 165 or higher for competitive applicants."
+    },
+    {
+      "id": "F23",
+      "category": "tests",
+      "fact": "The fee to send an official GRE score report to one university is $35, payable on the ETS website."
+    },
+    {
+      "id": "F24",
+      "category": "tests",
+      "fact": "The registration fee for the TOEFL iBT test is $245."
+    },
+    {
+      "id": "F25",
+      "category": "tests",
+      "fact": "GRE and TOEFL tests must be registered for on the official ETS website at www.ets.org."
+    },
+    {
+      "id": "F26",
+      "category": "tests",
+      "fact": "Official GRE scores are valid for 5 years from the test date."
+    },
+    {
+      "id": "F27",
+      "category": "tests",
+      "fact": "Midwest State University will waive the GRE requirement for international applicants whose undergraduate institution has a global ranking in the top 100 on the QS World University Rankings."
+    },
+    {
+      "id": "F28",
+      "category": "timeline",
+      "fact": "To ensure scores are received by the December 15th deadline, the final GRE attempt should be no later than November 20, 2024."
+    },
+    {
+      "id": "F29",
+      "category": "timeline",
+      "fact": "It is recommended to contact potential recommenders and provide them with your resume and statement of purpose by October 15, 2024."
+    },
+    {
+      "id": "F30",
+      "category": "timeline",
+      "fact": "Decision notifications for Fall admission at PCIT are typically sent out between March 1st and March 31st."
+    },
+    {
+      "id": "F31",
+      "category": "timeline",
+      "fact": "After accepting an offer and submitting proof of funds, the I-20 form from the University of Northern Westhaven takes approximately 3-4 weeks to be processed and mailed."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the application deadlines for the MS in CS programs at the University of Northern Westhaven and Pacific Coast Institute of Technology?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Application Deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is UNW's minimum TOEFL score and PCIT's recommended GRE Quant score?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Standardized Test Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "To meet the December 15th deadline, what is the latest date I should attempt the GRE?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning the final application deadline, a user needs to understand the timeline for prerequisite components like standardized tests to ensure scores arrive on time.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Standardized Test Requirements",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What are the formatting requirements for the Statement of Purpose for the University of Northern Westhaven?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Document Specifications",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "How many letters of recommendation does UNW require and how do my recommenders submit them?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After asking about one required document (Statement of Purpose), the user is likely to ask about other key documents like Letters of Recommendation.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Document Specifications",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the estimated annual tuition and living cost for the MS in CS program at UNW?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Program Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the total amount of funds I need to show for UNW to issue an I-20 form?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After understanding the total cost of attendance, the next logical step for an international student is to ask about the proof of funds required for the student visa process.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Proof of Funds for Visa",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What scholarship deadline do I have on file for PCIT's 'Future Innovators in Tech' award?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After reviewing the main application deadlines for programs on the shortlist, the user may next want to note any earlier scholarship deadline tied to one of those schools.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Scholarship Opportunities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Which online portal is used to submit applications to UNW, PCIT, and MSU?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Submission Portal and Fees",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How much is the application fee for PCIT and how is it paid?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After identifying the application portal, the user will likely want to know about associated costs like the application fee before starting.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Submission Portal and Fees",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Application Deadlines",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Standardized Test Requirements",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Document Specifications",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Program Costs",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Proof of Funds for Visa",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Scholarship Opportunities",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Submission Portal and Fees",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "study_abroad_app_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

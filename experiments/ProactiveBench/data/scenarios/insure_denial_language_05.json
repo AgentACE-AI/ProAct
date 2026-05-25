@@ -1,0 +1,493 @@
+{
+  "scenario_id": "insure_denial_language_05",
+  "domain": "insurance_navigation",
+  "description": "A user has received a denial letter full of coded policy language and needs to interpret the stated reason, the likely unstated issue, and the most sensible next action for appeal or correction.",
+  "user_profile": {
+    "persona": "34-year-old small business employee used to reading contracts but not insurance jargon",
+    "context": "The denial notice sounds official but still does not make clear what actually went wrong",
+    "communication_style": "Precise and skeptical, wants the language unpacked without oversimplification"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Patient_Information",
+      "fact": "The patient's name is Alex Chen, born May 21, 1990."
+    },
+    {
+      "id": "F02",
+      "category": "Patient_Information",
+      "fact": "Alex Chen is employed as a Senior UX Designer at Artisan Digital Solutions."
+    },
+    {
+      "id": "F03",
+      "category": "Employer_and_Policy",
+      "fact": "Alex Chen is insured through his employer's group plan with Veridian Health Assurance."
+    },
+    {
+      "id": "F04",
+      "category": "Employer_and_Policy",
+      "fact": "The insurance plan is named 'Veridian Gold PPO 500'."
+    },
+    {
+      "id": "F05",
+      "category": "Employer_and_Policy",
+      "fact": "Alex Chen's Member ID is VHA347891201, and the Group Number is ADS-WA-580."
+    },
+    {
+      "id": "F06",
+      "category": "Employer_and_Policy",
+      "fact": "The HR contact for benefits at Artisan Digital Solutions is Sarah Jenkins, reachable at s.jenkins@artisandigital.fict."
+    },
+    {
+      "id": "F07",
+      "category": "Medical_Event",
+      "fact": "On February 12, 2024, Alex Chen sustained an injury to his left knee while playing recreational soccer."
+    },
+    {
+      "id": "F08",
+      "category": "Medical_Event",
+      "fact": "An MRI performed on February 19, 2024, at Cascade Imaging confirmed a complex tear of the medial meniscus in the left knee."
+    },
+    {
+      "id": "F09",
+      "category": "Provider_Information",
+      "fact": "The treating physician is Dr. Evelyn Reed, an Orthopedic Surgeon at Pinnacle Orthopedics Group."
+    },
+    {
+      "id": "F10",
+      "category": "Provider_Information",
+      "fact": "Pinnacle Orthopedics Group, located at 4525 Summit View Drive, Bellevue, WA 98004, is an in-network provider for Alex's plan."
+    },
+    {
+      "id": "F11",
+      "category": "Medical_Event",
+      "fact": "Dr. Reed recommended an arthroscopic partial meniscectomy for the left knee."
+    },
+    {
+      "id": "F12",
+      "category": "Claim_Submission",
+      "fact": "Dr. Reed's office submitted a pre-authorization request for the surgery on March 5, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "Claim_Submission",
+      "fact": "The pre-authorization request carried the reference number PA-2024-891102."
+    },
+    {
+      "id": "F14",
+      "category": "Claim_Submission",
+      "fact": "The submitted ICD-10 diagnosis code was S83.242A (Complex tear of medial meniscus, current injury, left knee, initial encounter)."
+    },
+    {
+      "id": "F15",
+      "category": "Claim_Submission",
+      "fact": "The submitted CPT procedure code was 29881 (Arthroscopy, knee, surgical; with meniscectomy)."
+    },
+    {
+      "id": "F16",
+      "category": "Claim_Submission",
+      "fact": "The total estimated cost for the procedure, including facility and surgeon fees, was $14,500."
+    },
+    {
+      "id": "F17",
+      "category": "Denial_Notice",
+      "fact": "Alex Chen received a denial notification letter from Veridian Health Assurance dated March 18, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "Denial_Notice",
+      "fact": "The denial letter's unique document identifier is DN-754-C2-20240318."
+    },
+    {
+      "id": "F19",
+      "category": "Denial_Notice",
+      "fact": "The claim number associated with the denial is 240305-AEC-9872."
+    },
+    {
+      "id": "F20",
+      "category": "Denial_Notice",
+      "fact": "The explicit reason stated for the denial is: 'Procedure does not meet criteria for medical necessity as outlined in Clinical Policy Bulletin CPB-0231.'"
+    },
+    {
+      "id": "F21",
+      "category": "Policy_Language",
+      "fact": "Veridian's Clinical Policy Bulletin CPB-0231 requires a documented trial of at least 6 weeks of conservative therapy before approving arthroscopic knee surgery for a meniscal tear."
+    },
+    {
+      "id": "F22",
+      "category": "Policy_Language",
+      "fact": "CPB-0231 defines 'conservative therapy' as a combination of structured physical therapy (minimum 2 sessions/week), a course of NSAIDs, and documented activity modification."
+    },
+    {
+      "id": "F23",
+      "category": "Policy_Language",
+      "fact": "The documentation submitted by Dr. Reed's office mentioned a prescription for naproxen and verbal advice to 'rest and ice', but did not include a structured physical therapy plan or specific activity modifications."
+    },
+    {
+      "id": "F24",
+      "category": "Analysis",
+      "fact": "The likely unstated issue is that the submitted clinical notes failed to adequately document the duration and components of conservative therapy, making it impossible for the reviewer to verify compliance with CPB-0231."
+    },
+    {
+      "id": "F25",
+      "category": "Analysis",
+      "fact": "The term 'not medically necessary' is being used by the insurer as a code for 'policy requirements for proving necessity not met'."
+    },
+    {
+      "id": "F26",
+      "category": "Patient_History",
+      "fact": "Alex Chen did, in fact, attend four physical therapy sessions at 'Peak Performance PT' between February 20 and March 4, 2024, but these records were not included in the initial submission."
+    },
+    {
+      "id": "F27",
+      "category": "Patient_History",
+      "fact": "Alex also kept a personal log of pain levels and activity modifications from February 13 to March 5, 2024."
+    },
+    {
+      "id": "F28",
+      "category": "Appeal_Process",
+      "fact": "The deadline to file a first-level internal appeal is 180 calendar days from the date on the denial letter, making the deadline September 14, 2024."
+    },
+    {
+      "id": "F29",
+      "category": "Appeal_Process",
+      "fact": "Appeals must be submitted in writing to: Veridian Health Assurance, Internal Appeals Dept, P.O. Box 7800, Phoenix, AZ 85062."
+    },
+    {
+      "id": "F30",
+      "category": "Appeal_Process",
+      "fact": "The member portal for document upload and status tracking is located at https://my.veridianhealth.fict/portal."
+    },
+    {
+      "id": "F31",
+      "category": "Appeal_Process",
+      "fact": "The dedicated phone number for appeal guidance is the Member Advocate line at 1-888-555-1098, and Alex's case manager is Brian Miller, ext. 734."
+    },
+    {
+      "id": "F32",
+      "category": "Next_Action",
+      "fact": "The most sensible immediate next action is for Alex to contact Dr. Reed's office administrator, Maria Flores, to request a 'Letter of Medical Necessity' for the appeal."
+    },
+    {
+      "id": "F33",
+      "category": "Next_Action",
+      "fact": "This new letter should explicitly reference the 6-week conservative management period and include the physical therapy notes from Peak Performance PT."
+    },
+    {
+      "id": "F34",
+      "category": "Next_Action",
+      "fact": "Alex should also write a personal statement for the appeal, referencing his pain log and the impact of the injury on his daily activities, to supplement the clinical documentation."
+    },
+    {
+      "id": "F35",
+      "category": "Analysis",
+      "fact": "Taken together, the denial letter and CPB-0231 indicate that Veridian denied the request because the submission did not document a full 6-week conservative therapy course that satisfied the bulletin's criteria."
+    },
+    {
+      "id": "F36",
+      "category": "Analysis",
+      "fact": "Compared with CPB-0231, the original submission documented only naproxen and general advice to rest and ice, but did not document the required structured physical therapy plan or specific activity modification details."
+    },
+    {
+      "id": "F37",
+      "category": "Analysis",
+      "fact": "Alex's four Peak Performance PT session records and his personal pain-and-activity log are the strongest missing records for showing he attempted conservative therapy before surgery, even though the PT course still appears shorter than the full 6-week requirement."
+    },
+    {
+      "id": "F38",
+      "category": "Next_Action",
+      "fact": "To address the denial directly, the new Letter of Medical Necessity should tie the MRI-confirmed meniscus tear to Alex's persistent symptoms and explicitly document the conservative management timeline, including NSAID use, physical therapy dates and frequency, and activity modification efforts."
+    },
+    {
+      "id": "F39",
+      "category": "Analysis",
+      "fact": "In this denial, the phrase 'does not meet criteria for medical necessity as outlined in Clinical Policy Bulletin CPB-0231' means Veridian was looking for documented proof of a 6-week conservative therapy course that included structured physical therapy, NSAID treatment, and activity modification."
+    },
+    {
+      "id": "F40",
+      "category": "Analysis",
+      "fact": "The original submission documented only the NSAID component and general rest-and-ice advice, so it did not show all three conservative-therapy elements required by CPB-0231."
+    },
+    {
+      "id": "F41",
+      "category": "Analysis",
+      "fact": "For the appeal, Alex's four physical therapy records from Peak Performance PT and his personal pain-and-activity log are the most directly relevant records because they address the missing conservative-therapy documentation identified in the denial."
+    },
+    {
+      "id": "F42",
+      "category": "Next_Action",
+      "fact": "A strong Letter of Medical Necessity for this appeal should explicitly document six things: the MRI-confirmed meniscus tear, persistent symptoms, the conservative-management timeline, NSAID treatment, physical therapy dates/frequency, and activity modification efforts, while attaching the PT notes."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What exact denial reason did the letter state, and what medical-necessity requirement was Veridian saying had not been documented?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F39"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Understanding the Denial Reason",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the specific requirements of Clinical Policy Bulletin CPB-0231 for approving this surgery?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the denial is based on a specific policy bulletin, the user will want to know what that policy says.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Understanding the Denial Reason",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which parts of conservative therapy were documented in the original submission, and which required components were missing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F40"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Once the user understands the policy requirements, they will want to know how their submitted documentation compared to those requirements.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Understanding the Denial Reason",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is the subtext behind the term 'not medically necessary' in this context?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Interpreting the 'Real' Reason",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which existing records are the most relevant ones to include if I want to show I attempted conservative therapy before surgery?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27",
+        "F41"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding the denial was due to a lack of documentation, the user's next logical step is to identify what documentation they actually have.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Identifying Available Evidence",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the deadline to submit an appeal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F28"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the user confirms they have evidence for an appeal, the most critical logistical question is the submission deadline.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Appeal Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the mailing address and web portal for submitting appeal documents?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After learning the appeal deadline, the user will want to know the specific methods for submission.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Appeal Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Is there a specific person or phone number I can contact for guidance on my appeal?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: While reviewing submission logistics, the user may want to know who they can call if they have questions about the process.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Appeal Support Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the first step I should take with my doctor's office to start the appeal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Knowing the deadline (N6) creates urgency, leading the user to ask for the most immediate, concrete action they should take.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Formulating the Appeal",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What should the new Letter of Medical Necessity explicitly document to address the denial?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F33",
+        "F42"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After learning they need to request a letter from the doctor, the user will want to know what content that letter must contain to be effective.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Formulating the Appeal",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What personal documentation should I prepare to supplement the clinical notes in my appeal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "After clarifying what the doctor needs to provide, the user will want to know what their own contribution to the appeal package should be.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Formulating the Appeal",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N12",
+      "description": "Can you confirm the specific claim number and denial letter ID for my records?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Verifying Case Identifiers",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What are the specific CPT and ICD-10 codes that were submitted for this procedure?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After getting contact information (N8), a precise user might anticipate needing to reference specific claim codes during the call and would ask for them.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Verifying Case Identifiers",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Understanding the Denial Reason",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Interpreting the 'Real' Reason",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Identifying Available Evidence",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Appeal Logistics",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Appeal Support Contacts",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Formulating the Appeal",
+      "member_need_ids": [
+        "N9",
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Verifying Case Identifiers",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "insure_denial_language_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

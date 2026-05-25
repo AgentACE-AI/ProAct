@@ -1,0 +1,446 @@
+{
+  "scenario_id": "parent_school_week_01",
+  "domain": "parenting_support",
+  "description": "A parent needs to keep track of one child's school week, including pickup plans, supply reminders, activity days, permission slips, meal exceptions, and a few changing after-school arrangements.",
+  "user_profile": {
+    "persona": "36-year-old parent juggling work and elementary school logistics",
+    "context": "The week is full of small exceptions, and forgetting just one of them creates a scramble",
+    "communication_style": "Pragmatic and schedule-oriented, wants one compact weekly view"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "child_profile",
+      "fact": "The child's name is Leo Miller."
+    },
+    {
+      "id": "F02",
+      "category": "school_details",
+      "fact": "Leo Miller attends Maplewood Elementary School."
+    },
+    {
+      "id": "F03",
+      "category": "school_details",
+      "fact": "Leo Miller is in Grade 2, in classroom 104."
+    },
+    {
+      "id": "F04",
+      "category": "school_contacts",
+      "fact": "Leo's homeroom teacher is Ms. Anya Sharma."
+    },
+    {
+      "id": "F05",
+      "category": "school_contacts",
+      "fact": "Ms. Sharma's email address is a.sharma@maplewood.edu."
+    },
+    {
+      "id": "F06",
+      "category": "school_contacts",
+      "fact": "The school nurse, Carol Davis, can be reached at extension 102."
+    },
+    {
+      "id": "F07",
+      "category": "health_and_meals",
+      "fact": "Leo Miller has a severe allergy to peanuts."
+    },
+    {
+      "id": "F08",
+      "category": "health_and_meals",
+      "fact": "An EpiPen for Leo is located in the nurse's office in a clearly labeled red pouch."
+    },
+    {
+      "id": "F09",
+      "category": "health_and_meals",
+      "fact": "Friday, October 18th is Pizza Day, costing $5.00, which has already been paid online."
+    },
+    {
+      "id": "F10",
+      "category": "supplies_and_forms",
+      "fact": "A signed permission slip for the Green Meadow Farm field trip is due on Friday, October 18th."
+    },
+    {
+      "id": "F11",
+      "category": "supplies_and_forms",
+      "fact": "Leo needs to bring a box of 24 'Crayola' brand crayons for a class art project by Thursday, October 17th."
+    },
+    {
+      "id": "F12",
+      "category": "supplies_and_forms",
+      "fact": "Leo must bring an old, oversized t-shirt to use as an art smock on Wednesday, October 16th."
+    },
+    {
+      "id": "F13",
+      "category": "daily_schedule",
+      "fact": "Monday, October 14th, is a standard school day from 8:30 AM to 3:00 PM."
+    },
+    {
+      "id": "F14",
+      "category": "daily_schedule",
+      "fact": "Tuesday, October 15th, is Gym day, and Leo needs to wear sneakers."
+    },
+    {
+      "id": "F15",
+      "category": "daily_schedule",
+      "fact": "Wednesday, October 16th, is Art class with Mrs. Gable."
+    },
+    {
+      "id": "F16",
+      "category": "daily_schedule",
+      "fact": "Thursday, October 17th, is Library day, and Leo's two books are due for return."
+    },
+    {
+      "id": "F17",
+      "category": "daily_schedule",
+      "fact": "Friday, October 18th, is an early dismissal day, with school ending at 1:00 PM."
+    },
+    {
+      "id": "F18",
+      "category": "pickup_arrangements",
+      "fact": "On Monday, October 14th, Leo will be picked up at 3:00 PM by his mother, Sarah Miller."
+    },
+    {
+      "id": "F19",
+      "category": "pickup_arrangements",
+      "fact": "On Tuesday, October 15th, Leo will be picked up at 4:15 PM from the soccer field by his grandfather, David Chen."
+    },
+    {
+      "id": "F20",
+      "category": "pickup_arrangements",
+      "fact": "On Wednesday, October 16th, Leo will be picked up by his friend Sam's father, Tom Davis, for a playdate."
+    },
+    {
+      "id": "F21",
+      "category": "pickup_arrangements",
+      "fact": "On Thursday, October 17th, Leo will be picked up at 3:00 PM by his grandfather, David Chen."
+    },
+    {
+      "id": "F22",
+      "category": "pickup_arrangements",
+      "fact": "On Friday, October 18th, Leo will be picked up at 1:00 PM by his mother, Sarah Miller."
+    },
+    {
+      "id": "F23",
+      "category": "after_school_activities",
+      "fact": "Leo has after-school soccer club on Tuesday from 3:15 PM to 4:15 PM."
+    },
+    {
+      "id": "F24",
+      "category": "after_school_activities",
+      "fact": "Leo's soccer coach is named Coach Morales."
+    },
+    {
+      "id": "F25",
+      "category": "after_school_activities",
+      "fact": "Leo has a playdate at Sam Davis's house on Wednesday, October 16th, from 3:15 PM until 5:30 PM."
+    },
+    {
+      "id": "F26",
+      "category": "after_school_activities",
+      "fact": "Sam Davis's address for the playdate is 452 Oak Street, Pleasantville."
+    },
+    {
+      "id": "F27",
+      "category": "notes",
+      "fact": "The school has a 'nut-free table' in the cafeteria, which Leo is assigned to for lunch."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Confirm Leo's school, grade, and classroom details.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "school_basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Identify Leo's homeroom teacher and her email address.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: Once school and classroom are confirmed, identifying the teacher is the next logical step.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "school_basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "State the standard school hours for Monday and the early dismissal time for Friday.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "weekly_hours",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Identify who is picking Leo up on Monday and Friday.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F22"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Knowing the dismissal times naturally leads to confirming the pickup person for those specific times.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "standard_pickups",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "List the specific items Leo needs to bring for Art class on Wednesday and Art project by Thursday.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "art_supplies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Confirm the art teacher's name and the day art class occurs.",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After discussing art supplies, confirming the class schedule and teacher is a relevant follow-up.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "art_supplies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Check the specific requirements for Gym day on Tuesday.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After checking supply requirements for one special subject (Art), a pragmatic parent will check requirements for other special subjects like Gym.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "gym_requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Details for Tuesday's after-school soccer, including the coach and pickup time/person.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F23",
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Gym day requirements (sneakers) often overlap with soccer club needs; checking one leads to the other. (Auditable Proactive Target)",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "soccer_logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Confirm the pickup arrangement and location for Wednesday's playdate.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F25",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "playdate_logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Check the library book return status for Thursday.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "library_day",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Confirm the field trip form deadline and the Friday meal plan status.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After finishing mid-week logistics, the user moves to end-of-week deadlines and special events.",
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "friday_deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Verify Leo's allergy details and the location of his EpiPen.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Mentioning Pizza Day (food) triggers a need to verify safety protocols and allergy management.",
+      "turn_order": 12,
+      "reveal_group": "G10",
+      "reveal_group_label": "health_safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Identify the school nurse and her contact extension.",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "Intra-group: Once the EpiPen location in the nurse's office is confirmed, the parent wants the nurse's contact info. (Auditable Proactive Target)",
+      "turn_order": 13,
+      "reveal_group": "G11",
+      "reveal_group_label": "nurse_contact",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "school_basics",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "weekly_hours",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "standard_pickups",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "art_supplies",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "gym_requirements",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "soccer_logistics",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "playdate_logistics",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "library_day",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "friday_deadlines",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "health_safety",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G9"
+    },
+    {
+      "group_id": "G11",
+      "label": "nurse_contact",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G10"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "parent_school_week_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

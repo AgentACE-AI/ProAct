@@ -1,0 +1,484 @@
+{
+  "scenario_id": "ensemble_instrument_setup_memory_03",
+  "domain": "music_ensemble_management",
+  "description": "A stage manager must remember special chair layouts, percussion changes, stand-sharing, and instrument swaps for different pieces in the same program so setup transitions do not rely on improvisation. All ensemble names are fictional.",
+  "user_profile": {
+    "persona": "38-year-old stage manager coordinating a program with several quick setup shifts",
+    "context": "The performance order is fixed, but each piece changes the physical setup enough to create transition risk",
+    "communication_style": "Spatial and practical, wants setup states tied to the exact piece order"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "program_details",
+      "fact": "The Aethelgard Symphony Orchestra's concert is scheduled for October 26, 2024, at Crimson Hall."
+    },
+    {
+      "id": "F02",
+      "category": "personnel",
+      "fact": "The conductor for the performance is Maestro Elias Vance."
+    },
+    {
+      "id": "F03",
+      "category": "program_order",
+      "fact": "The first piece on the program is 'Overture to the Glass City' by Alistair Finch."
+    },
+    {
+      "id": "F04",
+      "category": "chair_layout",
+      "fact": "The setup for 'Overture to the Glass City' requires 66 musician chairs arranged in standard orchestral formation."
+    },
+    {
+      "id": "F05",
+      "category": "percussion_setup",
+      "fact": "For the Overture, the percussion section needs one set of timpani, one 36-inch bass drum, and one crash cymbal stand."
+    },
+    {
+      "id": "F06",
+      "category": "program_order",
+      "fact": "The second piece is 'Symphony No. 3, The Mariner' by Elara Vex."
+    },
+    {
+      "id": "F07",
+      "category": "chair_layout",
+      "fact": "For 'Symphony No. 3', 12 additional chairs must be placed for the expanded brass section, bringing the total to 78."
+    },
+    {
+      "id": "F08",
+      "category": "instrument_logistics",
+      "fact": "An offstage brass choir of 6 players is required stage left for 'Symphony No. 3'; their music stands must be pre-set."
+    },
+    {
+      "id": "F09",
+      "category": "program_order",
+      "fact": "The third piece is the 'Concerto for Marimba and Strings' by Jian Li."
+    },
+    {
+      "id": "F10",
+      "category": "chair_layout",
+      "fact": "During the transition to the Marimba Concerto, all 44 wind, brass, and percussion chairs must be removed from the stage."
+    },
+    {
+      "id": "F11",
+      "category": "percussion_setup",
+      "fact": "A 5.0-octave Marimba One 'Izzy' model must be rolled to position DS-C (Downstage Center) for the Concerto."
+    },
+    {
+      "id": "F12",
+      "category": "personnel",
+      "fact": "The marimba soloist for the Concerto is Kaito Tanaka."
+    },
+    {
+      "id": "F13",
+      "category": "program_order",
+      "fact": "The final piece of the concert is 'The Phoenix Ascendant' by Kaelen Rourke."
+    },
+    {
+      "id": "F14",
+      "category": "chair_layout",
+      "fact": "The transition to 'The Phoenix Ascendant' requires resetting the full 78-person orchestra chair layout within 5 minutes."
+    },
+    {
+      "id": "F15",
+      "category": "instrument_logistics",
+      "fact": "'The Phoenix Ascendant' requires two Lyon & Healy Style 23 harps, to be positioned behind the second violins."
+    },
+    {
+      "id": "F16",
+      "category": "instrument_logistics",
+      "fact": "The principal violist, Anya Sharma, switches from her standard viola to a viola d'amore for 'The Phoenix Ascendant'."
+    },
+    {
+      "id": "F17",
+      "category": "instrument_logistics",
+      "fact": "Anya Sharma's viola d'amore is stored in a locked case in instrument locker #117; the key is held by the stage manager, Lena Petrova."
+    },
+    {
+      "id": "F18",
+      "category": "stand_assignments",
+      "fact": "For the entire program, the 2nd and 3rd clarinetists, Mark Olsen and Freya Holm, share music stand #22."
+    },
+    {
+      "id": "F19",
+      "category": "instrument_logistics",
+      "fact": "The principal cellist, David Rostova, requires a 16-inch-high, black wooden podium for his chair for all pieces."
+    },
+    {
+      "id": "F20",
+      "category": "percussion_setup",
+      "fact": "The percussion setup for 'The Phoenix Ascendant' requires a glockenspiel, xylophone, vibraphone, and a large tam-tam in addition to the standard instruments."
+    },
+    {
+      "id": "F21",
+      "category": "percussion_setup",
+      "fact": "The large tam-tam and its stand must be pre-set upstage center and moved into playing position during the final transition."
+    },
+    {
+      "id": "F22",
+      "category": "program_details",
+      "fact": "Stage manager Lena Petrova's master stage plot is a PDF file named 'ASO_Oct26_Plot_v4.pdf' on her company-issued tablet."
+    },
+    {
+      "id": "F23",
+      "category": "personnel",
+      "fact": "The stage crew chief for Crimson Hall is named Ben Carter, and he is the point of contact for any lighting or rigging adjustments."
+    },
+    {
+      "id": "F24",
+      "category": "venue_details",
+      "fact": "The acoustic shell at Crimson Hall must be set to 'Configuration C' for the entire performance, which has a depth of 38 feet."
+    },
+    {
+      "id": "F25",
+      "category": "stand_assignments",
+      "fact": "For 'Symphony No. 3' only, the 4th horn player has a separate, single-page part that must be placed on a wire stand to the left of their main stand."
+    },
+    {
+      "id": "F26",
+      "category": "venue_details",
+      "fact": "The stage left crossover space has a clearance of exactly 48 inches, which is a tight fit for the marimba."
+    },
+    {
+      "id": "F27",
+      "category": "program_details",
+      "fact": "The maximum allotted time for the stage transition between 'Symphony No. 3' and the 'Marimba Concerto' is 4 minutes."
+    },
+    {
+      "id": "F28",
+      "category": "instrument_logistics",
+      "fact": "The 2nd oboist, Clara Bellini, doubles on English horn for 'The Phoenix Ascendant' and requires a K&M dual peg stand at her seat."
+    },
+    {
+      "id": "F29",
+      "category": "chair_layout",
+      "fact": "All musician chairs are black Wenger Nota Standard models, except for the 6 double bassists who use adjustable Wenger Nota stools."
+    },
+    {
+      "id": "F30",
+      "category": "stand_assignments",
+      "fact": "The two percussionists covering the mallet instruments for 'The Phoenix Ascendant', Sam Jones and Maria Flores, require four padded music stands for their parts."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the stage setup requirements for the 'Concerto for Marimba and Strings'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "concerto_setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the time limit for the transition to the Marimba Concerto and are there any physical clearance issues for moving the instrument?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning a large marimba needs to be moved, the user will naturally ask about the path and time constraints for that move.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "concerto_setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "For the transition to 'The Phoenix Ascendant', how many players must the stage be reset for, and how much time is allotted?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After addressing the most complex stage change (the concerto), the user's next priority would be the other major, time-pressured transition for the finale.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "finale_setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the special instrument requirements for 'The Phoenix Ascendant'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16",
+        "F28"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After getting the high-level setup for the finale, the user needs to know the specific, non-standard instruments that need to be moved or prepared.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "finale_setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Where is Anya Sharma's viola d'amore stored and who has the key?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: The previous turn mentioned an instrument swap to a viola d'amore; the immediate, critical follow-up is to confirm its location and accessibility.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "instrument_security",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What percussion instruments are needed for 'The Phoenix Ascendant' and are there any pre-set instructions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After covering the string and wind instrument specials for the finale, the user will logically turn to the percussion section's specific needs.",
+      "turn_order": 6,
+      "reveal_group": "G2",
+      "reveal_group_label": "finale_setup",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N7",
+      "description": "What are the setup changes for 'Symphony No. 3, The Mariner'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Having planned the two most difficult transitions (Concerto and Finale), the user would then address the remaining, less complex setup changes in the program.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "symphony_setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the initial stage setup for the first piece, 'Overture to the Glass City'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04",
+        "F05"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After planning all the mid-concert transitions, the user will want to confirm the starting configuration of the stage from which all changes originate.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "opening_setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Are there any stand-sharing assignments for the entire program?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "general_stand_assignments",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Within the 'Symphony No. 3' brass setup, what special stand requirement does the 4th horn player have?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After reviewing the general setup changes for 'Symphony No. 3', a direct brass-layout follow-up is the 4th horn player's special stand requirement within that setup.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "general_stand_assignments",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Does the principal cellist require any special chair or podium setup?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "player_specific_needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the required setting for the acoustic shell at Crimson Hall?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "venue_configuration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What stage depth does Crimson Hall's required acoustic shell setting use?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "After confirming that the acoustic shell must be set to Configuration C, a direct follow-up is the specific stage depth that configuration uses.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "acoustic_shell_details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the filename of my master stage plot PDF?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "document_reference",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What are the music stand requirements for the mallet percussionists in 'The Phoenix Ascendant'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After learning about the specific mallet instruments needed for the finale, the user would then need to know about the associated equipment, such as music stands.",
+      "turn_order": 15,
+      "reveal_group": "G2",
+      "reveal_group_label": "finale_setup",
+      "reveal_priority": 4
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "concerto_setup",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "finale_setup",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N6",
+        "N15"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "instrument_security",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "symphony_setup",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "opening_setup",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "general_stand_assignments",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "player_specific_needs",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "venue_configuration",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+    "label": "acoustic_shell_details",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "document_reference",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "ensemble_instrument_setup_memory_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

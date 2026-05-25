@@ -1,0 +1,439 @@
+{
+  "scenario_id": "site_punch_list_reopenings_05",
+  "domain": "construction_site_coordination",
+  "description": "Near completion, supposedly fixed punch-list items keep reappearing, and the team needs to track what was closed, reopened, deferred, or never truly addressed.",
+  "user_profile": {
+    "persona": "44-year-old closeout manager trying to prevent completion drift",
+    "context": "The project is late enough that repeated reopenings are starting to consume disproportionate attention",
+    "communication_style": "Closure-minded and evidence-based, wants a durable record of punch-list status changes"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project_details",
+      "fact": "The project is named 'Apex Tower'."
+    },
+    {
+      "id": "F02",
+      "category": "project_details",
+      "fact": "The official project identifier is 'APX-2023-01'."
+    },
+    {
+      "id": "F03",
+      "category": "project_details",
+      "fact": "The construction site is located at 123 Zenith Avenue, Meridian City, MC 45678."
+    },
+    {
+      "id": "F04",
+      "category": "personnel",
+      "fact": "Elena Vance is the Closeout Manager for the general contractor, Stonework Construction Group."
+    },
+    {
+      "id": "F05",
+      "category": "personnel",
+      "fact": "Marcus Thorne is the Site Superintendent responsible for trade coordination."
+    },
+    {
+      "id": "F06",
+      "category": "personnel",
+      "fact": "David Chen is the foreman for the electrical subcontractor, VoltWorks Electric."
+    },
+    {
+      "id": "F07",
+      "category": "personnel",
+      "fact": "Brenda Russo is the foreman for the plumbing subcontractor, AquaFlow Plumbing."
+    },
+    {
+      "id": "F08",
+      "category": "personnel",
+      "fact": "James Caldwell is the client representative from Orion Commercial Properties."
+    },
+    {
+      "id": "F09",
+      "category": "punch_list_items",
+      "fact": "Punch list item PL-078, for a flickering lobby chandelier, was marked 'Closed' on May 15, 2024, and reopened by Elena Vance on May 22, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "punch_list_items",
+      "fact": "Item PL-112, a non-functional GFCI outlet on the 3rd floor, was changed to 'Deferred' on May 10, 2024, due to backordered parts."
+    },
+    {
+      "id": "F11",
+      "category": "punch_list_items",
+      "fact": "Item PL-045, a misaligned door frame in Suite 502, has been reopened three times, most recently on May 16, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "punch_list_items",
+      "fact": "A water stain issue, item PL-201, was reopened on May 20, 2024, after a new stain appeared, indicating a persistent leak from an AquaFlow Plumbing pipe."
+    },
+    {
+      "id": "F13",
+      "category": "punch_list_items",
+      "fact": "Item PL-155, a grinding noise from HVAC unit #4, was reopened by Elena Vance on May 19, 2024, with an attached audio file as evidence."
+    },
+    {
+      "id": "F14",
+      "category": "tracking_system",
+      "fact": "The official punch list tracking software is ProCore, accessible at the URL https://app.procore.com/login."
+    },
+    {
+      "id": "F15",
+      "category": "tracking_system",
+      "fact": "Elena Vance's username for ProCore is 'evance_stonework'."
+    },
+    {
+      "id": "F16",
+      "category": "tracking_system",
+      "fact": "A new status, 'Pending Verification', was added to the ProCore workflow on May 20, 2024, to prevent premature closures."
+    },
+    {
+      "id": "F17",
+      "category": "tracking_system",
+      "fact": "The ProCore report ID for the weekly 'Reopened Items Summary' is 'RPT-PUNCH-REOPEN-003'."
+    },
+    {
+      "id": "F18",
+      "category": "process_and_policy",
+      "fact": "As a policy, any status change in ProCore requires an attached photo or video as evidence of completion or recurrence."
+    },
+    {
+      "id": "F19",
+      "category": "process_and_policy",
+      "fact": "Any punch list item that is reopened more than twice is automatically escalated to the Site Superintendent, Marcus Thorne."
+    },
+    {
+      "id": "F20",
+      "category": "process_and_policy",
+      "fact": "Subcontractors are required to submit a 'Root Cause Analysis' form (Form PCA-02) for any item that is reopened for a second time."
+    },
+    {
+      "id": "F21",
+      "category": "process_and_policy",
+      "fact": "Closing a punch list item requires digital sign-off from both the subcontractor's foreman and a Stonework Construction Group representative."
+    },
+    {
+      "id": "F22",
+      "category": "communication_and_meetings",
+      "fact": "A mandatory daily punch-list stand-up meeting is held at 7:30 AM in site trailer #1."
+    },
+    {
+      "id": "F23",
+      "category": "communication_and_meetings",
+      "fact": "The official policy states that all communication regarding reopened items must be logged in the ProCore item's comment thread, not via email or text."
+    },
+    {
+      "id": "F24",
+      "category": "communication_and_meetings",
+      "fact": "Elena Vance distributes a 'Weekly Punch List Reopening Analysis' email every Friday at 4:00 PM to project stakeholders."
+    },
+    {
+      "id": "F25",
+      "category": "communication_and_meetings",
+      "fact": "The last weekly analysis report was sent out on Friday, May 24, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "timeline_and_deadlines",
+      "fact": "The original contractual date for substantial completion was April 30, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "timeline_and_deadlines",
+      "fact": "The revised target for 100% punch list completion and project closeout is June 15, 2024."
+    },
+    {
+      "id": "F28",
+      "category": "timeline_and_deadlines",
+      "fact": "The penalty clause for project delay, as per contract section 8.2, is $5,000 per calendar day."
+    },
+    {
+      "id": "F29",
+      "category": "timeline_and_deadlines",
+      "fact": "The final client walk-through with James Caldwell is scheduled for June 10, 2024, at 9:00 AM."
+    },
+    {
+      "id": "F30",
+      "category": "process_and_policy",
+      "fact": "The project's official definition of a 'Closed' punch list item is: 'Work completed, inspected by Stonework, and verified as meeting contract specifications.'"
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Which punch list item has been reopened the most times, and what was the date of its most recent reopening?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Problem Assessment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the report ID for the weekly summary of all reopened items?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the single worst offender, the user will want a tool to see the scope of the entire problem.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Problem Assessment",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the escalation policy for items that are reopened more than twice, and who is notified?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F05"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Learning about a specific item that has been reopened three times (N1) directly prompts a need to understand the formal process for handling such repeat failures.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Process and Escalation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What documentation are subcontractors required to submit for an item that is reopened for a second time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After learning about the escalation policy, the user will want to know about the documentation requirements that are part of that process.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Process and Escalation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "On what date was item PL-078 marked closed, and on what date was it reopened by Elena Vance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Specific Item Investigation (Electrical)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the status of the water stain issue, PL-201, and which subcontractor foreman is responsible for the trade?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Specific Item Investigation (Plumbing)",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the official policy regarding evidence for any punch list status change?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After reviewing the history of a specific reopened item (N5), the user will want to verify the overarching policy for providing evidence to ensure it's being followed.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Evidence Policy and Examples",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Can you show me an example of a punch list item that was reopened with evidence attached?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After learning the policy about requiring evidence, seeing a concrete example of that policy being applied correctly provides valuable context.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Evidence Policy and Examples",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the revised target date for 100% punch list completion?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Project Deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What was the original contractual date for substantial completion before the punch list closeout target was revised?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning the revised target date for punch list completion, a direct schedule follow-up is the original contractual completion date that it replaced.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Schedule Baseline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "When is the final client walk-through scheduled, and who is the client representative attending it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Key Milestone",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Where should all communication regarding reopened items be officially logged?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After identifying a contentious item involving a specific subcontractor (N6), the user will want to confirm the correct communication channel to address it and maintain an official record.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Communication Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Besides the ProCore comment thread, who sends the weekly punch list reopening analysis email and when is it sent?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "Intra-group follow-up: After confirming the official place to log reopened-item communication, a direct follow-up is which recurring formal update also keeps stakeholders informed about those reopenings.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Communication Protocol",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Problem Assessment",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Process and Escalation",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Specific Item Investigation (Electrical)",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Specific Item Investigation (Plumbing)",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Evidence Policy and Examples",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Project Deadlines",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+  {
+    "group_id": "G7",
+    "label": "Schedule Baseline",
+    "member_need_ids": [
+      "N10"
+    ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Key Milestone",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G9",
+      "label": "Communication Protocol",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "site_punch_list_reopenings_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

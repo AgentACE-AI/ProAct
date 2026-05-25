@@ -1,0 +1,384 @@
+{
+  "scenario_id": "localization_rollback_diff_05",
+  "domain": "translation_localization_workflow",
+  "description": "A bad translation went live and was only partially corrected. The team now needs to reconstruct what changed, what still contains the old wording, and which assets were rolled back versus manually patched. All products are fictional.",
+  "user_profile": {
+    "persona": "34-year-old quality lead responsible for post-release language corrections",
+    "context": "The immediate fix reduced the user-facing problem, but no one can yet say with confidence where the bad wording still survives",
+    "communication_style": "Forensic and detail-heavy, wants before-and-after differences made explicit"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Incident Timeline",
+      "fact": "The faulty German translation was deployed to production in build #8451 on October 26, 2023, at 14:00 UTC."
+    },
+    {
+      "id": "F02",
+      "category": "Incident Timeline",
+      "fact": "The first user report of the issue was logged via customer support ticket #7811-A4 on October 26, 2023, at 14:15 UTC."
+    },
+    {
+      "id": "F03",
+      "category": "Incident Timeline",
+      "fact": "Jira ticket LOC-1138 was created by Localization Manager Leo Valdez to track the incident on October 26, 2023, at 14:25 UTC."
+    },
+    {
+      "id": "F04",
+      "category": "Incident Timeline",
+      "fact": "A hotfix patch for the Zenith Wallet iOS app was deployed to the App Store with build #8452 on October 26, 2023, at 16:30 UTC."
+    },
+    {
+      "id": "F05",
+      "category": "Translation Details",
+      "fact": "The English source string key is 'wallet.balance.label' with the text 'Current Balance'."
+    },
+    {
+      "id": "F06",
+      "category": "Translation Details",
+      "fact": "The correct German translation for 'wallet.balance.label' is 'Guthaben'."
+    },
+    {
+      "id": "F07",
+      "category": "Translation Details",
+      "fact": "The incorrect German translation published was 'Gleichgewicht'."
+    },
+    {
+      "id": "F08",
+      "category": "Translation Details",
+      "fact": "The incorrect translation originated from the LingoSphere TMS project ID 'ZW-Mobile-Q4-2023'."
+    },
+    {
+      "id": "F09",
+      "category": "Translation Details",
+      "fact": "The incorrect translation was approved by an automated quality check rule, Rule-ID: GLOSSARY-CHECK-07b, which had a misconfigured termbase."
+    },
+    {
+      "id": "F10",
+      "category": "Affected Assets",
+      "fact": "The Zenith Wallet iOS app, version 3.5.1, was affected by the incorrect translation."
+    },
+    {
+      "id": "F11",
+      "category": "Affected Assets",
+      "fact": "The Zenith Wallet Android app, version 3.5.0, still contains the incorrect translation."
+    },
+    {
+      "id": "F12",
+      "category": "Affected Assets",
+      "fact": "The NovaPay Gateway web portal, using the de-DE.json file from CDN version v2.1.4, still contains the incorrect translation."
+    },
+    {
+      "id": "F13",
+      "category": "Affected Assets",
+      "fact": "The specific iOS file containing the error was `Localizable.strings` for the `de-DE` locale."
+    },
+    {
+      "id": "F14",
+      "category": "Affected Assets",
+      "fact": "The specific Android file that still contains the error is `res/values-de/strings.xml`."
+    },
+    {
+      "id": "F15",
+      "category": "Remediation Actions",
+      "fact": "The fix for the iOS app was a manual patch, not a full rollback of the release."
+    },
+    {
+      "id": "F16",
+      "category": "Remediation Actions",
+      "fact": "The manual patch for iOS involved directly editing the `Localizable.strings` file in Git commit `e4f5g6h`."
+    },
+    {
+      "id": "F17",
+      "category": "Remediation Actions",
+      "fact": "The faulty translation was reverted in the LingoSphere TMS at 17:00 UTC on October 26, 2023, to prevent use in future exports."
+    },
+    {
+      "id": "F18",
+      "category": "Remediation Actions",
+      "fact": "No rollback or patch was performed for the Android app; the fix is scheduled for the next release, v3.5.1, on November 2, 2023."
+    },
+    {
+      "id": "F19",
+      "category": "Remediation Actions",
+      "fact": "The CDN cache for the NovaPay Gateway web portal has not been purged; the old `de-DE.json` file is still being served."
+    },
+    {
+      "id": "F20",
+      "category": "System & Tool Data",
+      "fact": "The bad translation was introduced into the `main` branch via Git commit `a1b2c3d`."
+    },
+    {
+      "id": "F21",
+      "category": "System & Tool Data",
+      "fact": "The original deployment containing the bad translation was part of Pull Request #2048 in the `mobile-app-ios` repository."
+    },
+    {
+      "id": "F22",
+      "category": "System & Tool Data",
+      "fact": "The Jenkins build job that deployed the faulty translation is named `ios-release-pipeline`."
+    },
+    {
+      "id": "F23",
+      "category": "System & Tool Data",
+      "fact": "The LingoSphere TMS can be accessed by authorized personnel at https://zenith.lingosphere.com."
+    },
+    {
+      "id": "F24",
+      "category": "System & Tool Data",
+      "fact": "The Jira ticket LOC-1138 is assigned to Anya Sharma, the Quality Lead, for post-mortem analysis."
+    },
+    {
+      "id": "F25",
+      "category": "Personnel & Communication",
+      "fact": "Leo Valdez, the Localization Manager, is the designated incident commander for LOC-1138."
+    },
+    {
+      "id": "F26",
+      "category": "Personnel & Communication",
+      "fact": "Chen Wei, Lead Mobile Engineer, executed the manual patch for the iOS application and can be reached at workstation 4B-11."
+    },
+    {
+      "id": "F27",
+      "category": "Personnel & Communication",
+      "fact": "Sofia Rossi, the backend engineer responsible for the NovaPay Gateway, was not included in the initial incident response."
+    },
+    {
+      "id": "F28",
+      "category": "Personnel & Communication",
+      "fact": "All real-time communication regarding the incident is archived in the Slack channel `#l10n-incidents`."
+    },
+    {
+      "id": "F29",
+      "category": "Personnel & Communication",
+      "fact": "A post-mortem meeting is scheduled for October 30, 2023, at 15:00 UTC via Google Meet link meet.google.com/xyz-abc-def."
+    },
+    {
+      "id": "F30",
+      "category": "Impact Assessment",
+      "fact": "As of October 27, 2023, the incorrect term 'Gleichgewicht' is still live on the Zenith Wallet Android app and the NovaPay Gateway web portal for all German-speaking users."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the incorrect German translation for the source string 'Current Balance', and what should the correct translation have been?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Translation Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which product assets and versions were affected by the incorrect translation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Affected Assets & Files",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What are the specific file names that contained the error for the iOS and Android apps?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After identifying the affected apps, the user needs the exact file paths for a forensic investigation.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Affected Assets & Files",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "How was the Zenith Wallet iOS app fixed, and which Git commit contains the patch?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the user knows which assets were affected, a natural next step is to investigate the remediation actions for a specific asset.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "iOS Remediation Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which assets still have the incorrect translation 'Gleichgewicht' live in production?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning how one asset was fixed, the user's immediate priority is to confirm the status of the remaining assets to understand current exposure.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Current Exposure & Fix Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the current fix status for the Android app, and is the old CDN file still being served for the NovaPay web portal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Knowing which assets are still broken leads directly to asking about the plan to fix them.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Current Exposure & Fix Plan",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What was the root cause of the incorrect translation being approved?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Root Cause Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Which LingoSphere TMS project did the incorrect translation originate from?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning the cause was a misconfigured rule, the user would want to know the specific project where it happened to investigate further.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Root Cause Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Who was the engineer that executed the manual patch for the iOS application?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning about the manual patch, the user may want to identify the person responsible to ask for technical details. This is an auditable proactive target.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Key Personnel",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Which Git commit first introduced the bad translation into the main branch?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After identifying the root cause in the TMS, the user would want to trace how that bad data entered the codebase. This is an auditable proactive target.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Codebase History",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Translation Details",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Affected Assets & Files",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "iOS Remediation Details",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Current Exposure & Fix Plan",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Root Cause Analysis",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Key Personnel",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Codebase History",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "localization_rollback_diff_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

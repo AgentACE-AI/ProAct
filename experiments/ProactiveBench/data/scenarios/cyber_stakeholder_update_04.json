@@ -1,0 +1,401 @@
+{
+  "scenario_id": "cyber_stakeholder_update_04",
+  "domain": "cybersecurity_incident_response",
+  "description": "During an active incident, the technical team, legal team, and leadership each need different updates, and the facts are evolving quickly enough that message consistency is becoming difficult.",
+  "user_profile": {
+    "persona": "42-year-old security program manager acting as a communication bridge during incidents",
+    "context": "Everyone wants updates now, but each audience needs a different framing and level of certainty",
+    "communication_style": "Structured and audience-aware, careful about confidence and wording"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "incident_identification",
+      "fact": "The incident, designated SI-2024-045, was first detected on October 26, 2024, at 02:15 UTC."
+    },
+    {
+      "id": "F02",
+      "category": "incident_identification",
+      "fact": "The initial alert was an AWS GuardDuty finding for 'Anomalous API Usage' originating from IP address 198.51.100.72."
+    },
+    {
+      "id": "F03",
+      "category": "timeline",
+      "fact": "The incident was formally declared and escalated to the Cyber Security Incident Response Team (CSIRT) on October 26, 2024, at 03:00 UTC."
+    },
+    {
+      "id": "F04",
+      "category": "timeline",
+      "fact": "Forensic analysis indicates the threat actor, preliminarily identified as 'Cobalt Mirage', gained initial access on October 24, 2024, at approximately 19:40 UTC."
+    },
+    {
+      "id": "F05",
+      "category": "technical_details",
+      "fact": "The initial access vector was the exploitation of vulnerability CVE-2024-3094 in a public-facing Jenkins server at host ci.stellarinnovations.net."
+    },
+    {
+      "id": "F06",
+      "category": "indicators_of_compromise",
+      "fact": "A malicious payload with SHA256 hash a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2 was deployed on the Jenkins server."
+    },
+    {
+      "id": "F07",
+      "category": "indicators_of_compromise",
+      "fact": "The threat actor established a command-and-control (C2) channel to the domain net-updater.org over TCP port 443."
+    },
+    {
+      "id": "F08",
+      "category": "technical_details",
+      "fact": "Lateral movement was observed from the Jenkins server to the 'Orion Customer Data Platform' database server db-orion-prod-01.us-east-1.internal."
+    },
+    {
+      "id": "F09",
+      "category": "technical_details",
+      "fact": "The threat actor authenticated to the database server using stolen credentials for the service account 'svc-jenkins-deploy'."
+    },
+    {
+      "id": "F10",
+      "category": "impact_assessment",
+      "fact": "Data exfiltration was confirmed from the AWS S3 bucket 'stellar-orion-customer-backups' to the external IP address 203.0.113.55."
+    },
+    {
+      "id": "F11",
+      "category": "impact_assessment",
+      "fact": "The 'Orion Customer Data Platform' contains Personally Identifiable Information (PII) for approximately 1.2 million customers of Stellar Innovations Inc."
+    },
+    {
+      "id": "F12",
+      "category": "impact_assessment",
+      "fact": "The types of exfiltrated data confirmed to be exposed are customer full names, email addresses, and SHA-256 hashed phone numbers."
+    },
+    {
+      "id": "F13",
+      "category": "impact_assessment",
+      "fact": "Financial data, such as credit card numbers, is stored in a separate, unaffected PCI-compliant environment and is not considered at risk from this incident."
+    },
+    {
+      "id": "F14",
+      "category": "impact_assessment",
+      "fact": "The estimated volume of exfiltrated data is 75 GB, compressed into a single archive file named 'customer_data_full.tar.gz'."
+    },
+    {
+      "id": "F15",
+      "category": "impact_assessment",
+      "fact": "As of 10:00 UTC on October 26, 2024, there is no evidence that production services for customers have been disrupted or rendered unavailable."
+    },
+    {
+      "id": "F16",
+      "category": "containment_actions",
+      "fact": "The compromised Jenkins server ci.stellarinnovations.net was isolated from the network on October 26, 2024, at 04:30 UTC."
+    },
+    {
+      "id": "F17",
+      "category": "containment_actions",
+      "fact": "The compromised service account 'svc-jenkins-deploy' had its credentials rotated and permissions revoked at 05:00 UTC on October 26, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "containment_actions",
+      "fact": "An egress firewall rule was deployed at 05:15 UTC to block all outbound traffic to the C2 domain 'net-updater.org' and IP 203.0.113.55."
+    },
+    {
+      "id": "F19",
+      "category": "forensics",
+      "fact": "A full memory and disk image of the affected database server db-orion-prod-01 was captured for forensic analysis at 06:15 UTC."
+    },
+    {
+      "id": "F20",
+      "category": "personnel_and_roles",
+      "fact": "The designated Incident Commander is Priya Sharma, Lead Incident Responder, reachable at priya.sharma@stellarinnovations.net."
+    },
+    {
+      "id": "F21",
+      "category": "communications_plan",
+      "fact": "The dedicated Slack channel for internal incident response coordination is #incident-si-2024-045."
+    },
+    {
+      "id": "F22",
+      "category": "communications_plan",
+      "fact": "The technical team provides written status updates every 60 minutes on the hour in the designated Slack channel."
+    },
+    {
+      "id": "F23",
+      "category": "communications_plan",
+      "fact": "A leadership briefing is scheduled via video conference with CEO Dr. Evelyn Reed for 14:00 UTC on October 26, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "personnel_and_roles",
+      "fact": "Security Program Manager Alex Chen is the sole designated communication liaison for the Legal and Leadership teams."
+    },
+    {
+      "id": "F25",
+      "category": "documentation",
+      "fact": "The official incident response log is maintained in the Confluence space 'CSIRT' under the page titled 'SI-2024-045 - Cobalt Mirage Incident'."
+    },
+    {
+      "id": "F26",
+      "category": "legal_and_compliance",
+      "fact": "General Counsel David Miller was formally briefed on the incident at 07:00 UTC on October 26, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "legal_and_compliance",
+      "fact": "Stellar Innovations Inc. is subject to GDPR, and initial analysis confirms the exfiltrated data includes PII of at least 250,000 EU citizens."
+    },
+    {
+      "id": "F28",
+      "category": "legal_and_compliance",
+      "fact": "The legal team has calculated the 72-hour GDPR notification deadline as October 29, 2024, at 02:15 UTC."
+    },
+    {
+      "id": "F29",
+      "category": "external_engagement",
+      "fact": "The external forensics firm 'CyberTrace Solutions' has been engaged under retainer; their point of contact is Mark Jennings."
+    },
+    {
+      "id": "F30",
+      "category": "external_engagement",
+      "fact": "A preliminary, non-public notification was made to the FBI's CyWatch division via liaison agent Sarah Jenkins at 08:00 UTC on October 26, 2024."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the official incident designator, and what are the key timestamps for initial detection and formal declaration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Triage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the specific technical alert that first triggered the investigation?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning when the incident was declared, the user would naturally want to know the specific technical event that started the process.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Triage",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was the initial access vector and when is the earliest evidence of threat actor activity?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Attack Vector Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What indicators of compromise, such as malicious file hashes or C2 domains, have been identified?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once the initial access vector is understood, the next logical technical question is about the specific tools and infrastructure the attacker used.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Attack Vector Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What specific types of PII were exposed, and what is the total number of customers affected?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Impact Assessment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Was any financial data exposed or have any production services been disrupted?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After confirming PII was exposed, it's critical to clarify the scope by confirming what was *not* affected, such as financial data or service availability.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Impact Assessment",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What immediate containment actions have been taken regarding the compromised server and user account?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After understanding the full scope of the impact, the most pressing question for leadership and legal is what actions have been taken to stop the bleeding.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Containment Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Given that EU citizen data was exposed, what is our calculated 72-hour GDPR notification deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Learning that customer PII was exfiltrated (N5) immediately triggers a need to understand regulatory obligations, making the GDPR deadline a highly predictable and critical follow-up.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Legal & Compliance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Who is the designated Incident Commander for this event?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning about the containment actions taken, the user will need to know who is leading the response effort to direct further questions or receive direction.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Coordination & Roles",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the dedicated communication channel for the internal response team and when is the next leadership briefing scheduled?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21",
+        "F23"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Knowing who the Incident Commander is leads to questions about the communication structure they have established for the team and for leadership.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Coordination & Roles",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Have we engaged any external forensics firms or notified law enforcement?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After understanding the internal containment actions, a common follow-up question is whether external expert resources or authorities have been brought in.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "External Engagement",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Triage",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Attack Vector Details",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Impact Assessment",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Containment Status",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Legal & Compliance",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Coordination & Roles",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "External Engagement",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "cyber_stakeholder_update_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

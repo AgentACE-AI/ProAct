@@ -1,0 +1,485 @@
+{
+  "scenario_id": "travel_budget_clash_04",
+  "domain": "group_travel",
+  "description": "A bachelor party for 8 people. Conflict: Half the group wants a 'luxury' experience (high budget), while the other half are students/entry-level (low budget). The user needs to find a destination and itinerary that offers 'splurge' options alongside 'budget' essentials.",
+  "user_profile": {
+    "persona": "27-year-old Best Man",
+    "context": "Group chat is arguing about costs",
+    "communication_style": "Mediator, trying to be fair and transparent"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Group_Profile",
+      "fact": "The bachelor party is for groom-to-be Alex Miller."
+    },
+    {
+      "id": "F02",
+      "category": "Group_Profile",
+      "fact": "The group consists of 8 attendees in total."
+    },
+    {
+      "id": "F03",
+      "category": "Group_Profile",
+      "fact": "The best man and trip planner is Sam Jones, age 27."
+    },
+    {
+      "id": "F04",
+      "category": "Group_Profile",
+      "fact": "The 'Luxury' faction, preferring high-end options, includes attendees Leo, Mark, Chris, and David."
+    },
+    {
+      "id": "F05",
+      "category": "Group_Profile",
+      "fact": "The 'Budget' faction, preferring low-cost options, includes attendees Sam, Ben, Tom, and Josh."
+    },
+    {
+      "id": "F06",
+      "category": "Budget_Management",
+      "fact": "The per-person budget target for the 'Budget' faction is $700."
+    },
+    {
+      "id": "F07",
+      "category": "Budget_Management",
+      "fact": "The per-person budget target for the 'Luxury' faction is $2,000."
+    },
+    {
+      "id": "F08",
+      "category": "Budget_Management",
+      "fact": "All shared expenses are being tracked using the PayShare app under the group name 'Alex's Porto Cayo Trip'."
+    },
+    {
+      "id": "F09",
+      "category": "Budget_Management",
+      "fact": "Sam Jones collected a $250 deposit from each of the 8 attendees on June 10, 2024, to secure the accommodation."
+    },
+    {
+      "id": "F10",
+      "category": "Planning_Details",
+      "fact": "The official group chat for planning is on Signal, titled 'Alex's Last Stand'."
+    },
+    {
+      "id": "F11",
+      "category": "Planning_Details",
+      "fact": "A PollPal poll on June 5, 2024, resulted in a 5-3 vote for 'Porto Cayo' over 'Veridia City' as the destination."
+    },
+    {
+      "id": "F12",
+      "category": "Planning_Details",
+      "fact": "The master itinerary and budget is in a Google Sheet named 'Alex's Bachelor Bash Planner'."
+    },
+    {
+      "id": "F13",
+      "category": "Planning_Details",
+      "fact": "The proposed travel dates for the trip are Thursday, August 15, 2024, to Sunday, August 18, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "Travel_Logistics",
+      "fact": "The group will depart from Northwood City Airport (NWC)."
+    },
+    {
+      "id": "F15",
+      "category": "Travel_Logistics",
+      "fact": "The destination airport is Porto Cayo International (PCI)."
+    },
+    {
+      "id": "F16",
+      "category": "Travel_Logistics",
+      "fact": "The recommended budget flight is on 'AeroVista Air', flight AV451, costing $285 round-trip for a basic economy seat."
+    },
+    {
+      "id": "F17",
+      "category": "Travel_Logistics",
+      "fact": "The 'Luxury' faction members have booked 'AeroVista Plus' seats on flight AV451 for $450, which includes priority boarding and one checked bag."
+    },
+    {
+      "id": "F18",
+      "category": "Accommodation",
+      "fact": "The group booked the 'Villa Solana', a 5-bedroom villa with a private pool in Porto Cayo."
+    },
+    {
+      "id": "F19",
+      "category": "Accommodation",
+      "fact": "The total cost for Villa Solana for 3 nights (Aug 15-18) is $2,000, which equates to $250 per person."
+    },
+    {
+      "id": "F20",
+      "category": "Accommodation",
+      "fact": "Villa Solana is located at 125 Mariposa Lane, Porto Cayo, and the booking reference is #VS-884G1."
+    },
+    {
+      "id": "F21",
+      "category": "Itinerary_Shared",
+      "fact": "The entire group has agreed to a 4-hour hike on the Mount Sol Trail on Friday, August 16th, which has no entry fee."
+    },
+    {
+      "id": "F22",
+      "category": "Itinerary_Shared",
+      "fact": "A group dinner is planned for the first night (Aug 15th) at 'El Faro Taqueria', with an estimated cost of $30 per person."
+    },
+    {
+      "id": "F23",
+      "category": "Itinerary_Splurge",
+      "fact": "The 'Luxury' faction has booked a 4-hour private yacht trip with 'Cayo Charters' for Saturday, August 17th, at a cost of $400 per person for the four of them."
+    },
+    {
+      "id": "F24",
+      "category": "Itinerary_Splurge",
+      "fact": "A dinner reservation for four has been made at 'The Gilded Cut' steakhouse on Saturday, August 17th, at 9:00 PM, with an estimated cost of $250 per person."
+    },
+    {
+      "id": "F25",
+      "category": "Itinerary_Splurge",
+      "fact": "The 'Luxury' faction purchased VIP table service at 'Club Nebula' for Friday night for $1,200 total ($300 per person)."
+    },
+    {
+      "id": "F26",
+      "category": "Itinerary_Budget",
+      "fact": "The 'Budget' faction plans to visit the public beach, Playa Dorada, on Saturday, August 17th, which is free to access."
+    },
+    {
+      "id": "F27",
+      "category": "Itinerary_Budget",
+      "fact": "The 'Budget' faction has booked a brewery tour and tasting at 'Porto Cayo Brewing Co.' for Friday afternoon for $25 per person."
+    },
+    {
+      "id": "F28",
+      "category": "Itinerary_Budget",
+      "fact": "While others are at the steakhouse, the 'Budget' faction will go on the 'Cayo Bites' street food tour for $45 per person on Saturday evening."
+    },
+    {
+      "id": "F29",
+      "category": "Conflict_Resolution",
+      "fact": "The initial proposal for a single group dinner at 'The Gilded Cut' was rejected due to the $250 per person cost, leading to the split dinner plan."
+    },
+    {
+      "id": "F30",
+      "category": "Conflict_Resolution",
+      "fact": "Sam Jones created two separate optional activity tracks ('Splurge' and 'Saver') in the planning spreadsheet to provide transparency on costs."
+    },
+    {
+      "id": "F31",
+      "category": "Communication",
+      "fact": "On June 12, 2024, Sam posted a summary in the group chat confirming the locked-in shared costs (flight base, villa) totaled $535 per person."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the confirmed shared costs per person for the flight and villa?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How much was the deposit I collected from each person and on what date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming the total shared costs, asking about the deposit already paid against that total is a logical financial clarification.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Financials",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the exact dates for the trip and what was the final destination we voted on?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Travel Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the details for the recommended budget flight from Northwood City?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Once the dates and destination are confirmed, the next logical question is about the specific travel arrangements.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Travel Logistics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What villa did we book in Porto Cayo, and what is its booking reference?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Accommodation Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What was the total cost for the villa and how much is that per person?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: Following up on the accommodation details with its cost is a direct and common sequence.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Accommodation Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the free activity that the entire group has agreed to do together?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Shared Itinerary",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Where is the group dinner on the first night, and what is the estimated cost per person?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming the travel dates, asking about the plan for the first night is a very common and logical next step in itinerary planning.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Shared Itinerary",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What are the details of the private yacht trip the 'Luxury' faction booked?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Luxury Faction Plans",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What are the 'Luxury' group's dinner and clubbing plans?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After asking about one luxury activity, it is natural to ask about the group's other splurge plans in the same track.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Luxury Faction Plans",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What are the three planned activities for the 'Budget' faction?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: As a mediator, after reviewing the expensive plans for one faction, the user's immediate next concern would be to confirm the parallel, lower-cost plans for the other faction.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Budget Faction Plans",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the name of the Google Sheet where the master itinerary and budget are located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Planning Tools",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What app are we using to track expenses and what is the group name in the app?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the core shared costs are confirmed, it's a highly relevant and proactive step to inform the user about the tool being used to manage those expenses.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Expense Tracking",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Can you list the members of the 'Luxury' and 'Budget' factions?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Group Roster",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What was the flight upgrade the luxury members booked and how much did it cost them?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After the user inquires about the standard budget flight, it is a helpful and predictable clarification to provide details on the upgraded option that other members chose.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Flight Upgrade Details",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Financials",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Travel Logistics",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Accommodation Details",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Shared Itinerary",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Luxury Faction Plans",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Budget Faction Plans",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Planning Tools",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Expense Tracking",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "Group Roster",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Flight Upgrade Details",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G2"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "travel_budget_clash_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

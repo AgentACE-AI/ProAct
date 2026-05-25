@@ -1,0 +1,411 @@
+{
+  "scenario_id": "case_eligibility_document_gap_02",
+  "domain": "nonprofit_case_management",
+  "description": "A support application is stalled because the client has provided some but not all required documents, and the caseworker needs a clear picture of what is still missing, expired, or inconsistent.",
+  "user_profile": {
+    "persona": "35-year-old benefits navigator managing several active applications at once",
+    "context": "The case is close to moving forward, but small documentation gaps keep causing avoidable delays",
+    "communication_style": "Checklist-driven and precise, wants missing items distinguished from incomplete ones"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Case Details",
+      "fact": "The case ID for the stalled application is HA-88201."
+    },
+    {
+      "id": "F02",
+      "category": "Case Details",
+      "fact": "The application is for the 'Rapid Rehousing Assistance Program' offered by the Hopewell Community Alliance."
+    },
+    {
+      "id": "F03",
+      "category": "Client Information",
+      "fact": "The client's full legal name is Javier Reyes."
+    },
+    {
+      "id": "F04",
+      "category": "Client Information",
+      "fact": "Javier Reyes's primary contact phone number is 555-821-4409."
+    },
+    {
+      "id": "F05",
+      "category": "Client Information",
+      "fact": "Javier Reyes has two dependents listed on the application: Maria Reyes (age 6) and Carlos Reyes (age 9)."
+    },
+    {
+      "id": "F06",
+      "category": "Caseworker Information",
+      "fact": "The assigned benefits navigator is Brianna Cole."
+    },
+    {
+      "id": "F07",
+      "category": "Caseworker Information",
+      "fact": "Brianna Cole's employee ID is BC-451 and her direct extension is 72."
+    },
+    {
+      "id": "F08",
+      "category": "Application Status",
+      "fact": "The initial application for case HA-88201 was submitted on October 15, 2023."
+    },
+    {
+      "id": "F09",
+      "category": "Application Status",
+      "fact": "The current status of case HA-88201 in the system is 'Stalled - Awaiting Documents'."
+    },
+    {
+      "id": "F10",
+      "category": "Document Requirements",
+      "fact": "A total of 7 documents are required for the Rapid Rehousing Assistance Program application."
+    },
+    {
+      "id": "F11",
+      "category": "Document Status: Verified",
+      "fact": "A valid state-issued Photo ID for Javier Reyes was received and verified on October 16, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "Document Status: Verified",
+      "fact": "A copy of Javier Reyes's Social Security Card was received and verified on October 16, 2023."
+    },
+    {
+      "id": "F13",
+      "category": "Document Status: Verified",
+      "fact": "The birth certificate for the dependent Maria Reyes was received and verified on October 20, 2023."
+    },
+    {
+      "id": "F14",
+      "category": "Document Status: Verified",
+      "fact": "The eviction notice from 'Crestview Properties', dated September 28, 2023, was received and verified."
+    },
+    {
+      "id": "F15",
+      "category": "Document Status: Expired",
+      "fact": "One submitted pay stub from 'Global Logistics Inc.' dated September 1, 2023, is marked as 'Expired'."
+    },
+    {
+      "id": "F16",
+      "category": "Document Status: Inconsistent",
+      "fact": "A submitted bank statement from 'First National Bank' shows the account holder name as 'Javier Rey', which is flagged as 'Inconsistent'."
+    },
+    {
+      "id": "F17",
+      "category": "Document Status: Missing",
+      "fact": "The second required proof of income (pay stub) is marked as 'Missing'."
+    },
+    {
+      "id": "F18",
+      "category": "Document Status: Missing",
+      "fact": "The 'Landlord Reference Letter' from the client's previous landlord is marked as 'Missing'."
+    },
+    {
+      "id": "F19",
+      "category": "Document Status: Missing",
+      "fact": "The birth certificate for the dependent Carlos Reyes is marked as 'Missing'."
+    },
+    {
+      "id": "F20",
+      "category": "System & Tools",
+      "fact": "The case management software is named 'AuraServe Case Portal'."
+    },
+    {
+      "id": "F21",
+      "category": "System & Tools",
+      "fact": "The login URL for AuraServe is https://auraserve.communitysupport.org/login."
+    },
+    {
+      "id": "F22",
+      "category": "System & Tools",
+      "fact": "In AuraServe, the document checklist for case HA-88201 is located under the 'Docs' tab, sub-section 'Verification'."
+    },
+    {
+      "id": "F23",
+      "category": "System & Tools",
+      "fact": "The system automatically flags documents as 'Expired' if they are more than 60 days old at the time of review."
+    },
+    {
+      "id": "F24",
+      "category": "Communication Log",
+      "fact": "Brianna Cole left a voicemail for Javier Reyes on November 28, 2023, at 10:15 AM regarding the missing and inconsistent documents."
+    },
+    {
+      "id": "F25",
+      "category": "Communication Log",
+      "fact": "An automated email reminder was sent from AuraServe to the client's registered email, j.reyes.client@emailprovider.net, on December 5, 2023."
+    },
+    {
+      "id": "F26",
+      "category": "Communication Log",
+      "fact": "The last successful two-way communication with Javier Reyes was a phone call on October 20, 2023."
+    },
+    {
+      "id": "F27",
+      "category": "Procedural Rules",
+      "fact": "To resolve an inconsistent name, the client must submit a signed 'Name Affidavit' (Form 11-B)."
+    },
+    {
+      "id": "F28",
+      "category": "Procedural Rules",
+      "fact": "The policy requires two distinct pay stubs from within the last 60 days to verify income."
+    },
+    {
+      "id": "F29",
+      "category": "Procedural Rules",
+      "fact": "If all required documents are not received within 90 days of the initial application date, the case is automatically closed."
+    },
+    {
+      "id": "F30",
+      "category": "Procedural Rules",
+      "fact": "The 90-day deadline for case HA-88201 to be completed or closed is January 13, 2024."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the case ID and current system status of this stalled application?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Case Status & Problem Summary",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Give me a checklist of all document issues, including missing, expired, and inconsistent items.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning a case is stalled, the user's immediate need is to understand the specific reasons for the stall, which are the document issues.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Case Status & Problem Summary",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the policy for income verification regarding pay stubs?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After seeing that a pay stub is expired and another is missing, the user needs to know the specific policy to guide the client correctly.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Issue Resolution",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How does the client resolve the inconsistent name on their bank statement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the user sees the 'Inconsistent' flag on a document, their next step is to find the specific procedure for resolving that type of issue.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Issue Resolution",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the final deadline for this application before it is automatically closed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Understanding the full scope of document problems immediately raises the question of urgency and the time available to fix them.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Case Urgency",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the client's full name and primary phone number for this case?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Client Contact & History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "When was the last successful two-way communication with Javier Reyes about the stalled document issues?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After reviewing the missing and inconsistent documents, a direct follow-up is when the client last successfully engaged in a two-way conversation about resolving those issues.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Client Contact & History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Show me the log of recent outreach attempts.",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24",
+        "F25"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Following up on the last successful contact, the user wants a complete picture of all recent attempts, both successful and unsuccessful.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Client Contact & History",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "Which dependent's birth certificate is still missing from the application?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19",
+        "F05"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After reviewing the checklist of document issues, a direct follow-up is identifying which dependent corresponds to the missing birth certificate item.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Dependent Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Which program is this application for?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "System & Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "In the case portal, where is the document verification section located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "System & Context",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "Why was the pay stub from Global Logistics Inc. flagged as expired?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F23"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After seeing the summary of document issues, the user will drill down into the specific reason for a flag like 'Expired' to understand the system's logic.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "System & Context",
+      "reveal_priority": 3
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Case Status & Problem Summary",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Issue Resolution",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Case Urgency",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Client Contact & History",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Dependent Details",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "System & Context",
+      "member_need_ids": [
+        "N10",
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "case_eligibility_document_gap_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

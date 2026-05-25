@@ -1,0 +1,485 @@
+{
+  "scenario_id": "insure_claim_timeline_01",
+  "domain": "insurance_navigation",
+  "description": "A user has already submitted a home insurance claim and now needs to track adjuster requests, missing evidence, follow-up calls, and decision deadlines without losing the sequence of what has already happened. All insurer names are fictional.",
+  "user_profile": {
+    "persona": "44-year-old homeowner dealing with a first significant property claim",
+    "context": "The claim has moved beyond submission, but the process now feels scattered across emails and calls",
+    "communication_style": "Orderly and persistent, wants a clean timeline more than generic advice"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Claim Details",
+      "fact": "The homeowner's insurance claim number is CLM-H789-2024-05."
+    },
+    {
+      "id": "F02",
+      "category": "Claim Details",
+      "fact": "The date of the property loss was May 15, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "Claim Details",
+      "fact": "The official cause of loss is documented as 'sudden and accidental water damage from a burst supply line'."
+    },
+    {
+      "id": "F04",
+      "category": "Claim Details",
+      "fact": "The insured property address is 456 Willow Creek Lane, Crestwood, VA 22015."
+    },
+    {
+      "id": "F05",
+      "category": "Policy Information",
+      "fact": "The active homeowner's insurance policy number is HOWN-987654321."
+    },
+    {
+      "id": "F06",
+      "category": "Policy Information",
+      "fact": "The insurance provider is Aegis Mutual Insurance."
+    },
+    {
+      "id": "F07",
+      "category": "Policy Information",
+      "fact": "The policy's dwelling coverage (Coverage A) limit is $450,000."
+    },
+    {
+      "id": "F08",
+      "category": "Policy Information",
+      "fact": "The policy has a specific water damage deductible of $2,500 per incident."
+    },
+    {
+      "id": "F09",
+      "category": "Insurer & Adjuster Contacts",
+      "fact": "The assigned field adjuster for the claim is Robert Chen."
+    },
+    {
+      "id": "F10",
+      "category": "Insurer & Adjuster Contacts",
+      "fact": "Robert Chen's direct phone number is (555) 821-4098."
+    },
+    {
+      "id": "F11",
+      "category": "Insurer & Adjuster Contacts",
+      "fact": "Robert Chen's email address is r.chen@aegismutual-claims.com."
+    },
+    {
+      "id": "F12",
+      "category": "Insurer & Adjuster Contacts",
+      "fact": "The internal desk adjuster handling the claim review is Susan Mills, reachable at extension 5112."
+    },
+    {
+      "id": "F13",
+      "category": "Timeline & Events",
+      "fact": "The initial claim was filed via the Aegis Mutual online portal on May 16, 2024, at 9:30 AM."
+    },
+    {
+      "id": "F14",
+      "category": "Timeline & Events",
+      "fact": "Robert Chen conducted the on-site property inspection on May 20, 2024."
+    },
+    {
+      "id": "F15",
+      "category": "Timeline & Events",
+      "fact": "An advance payment for Additional Living Expenses (ALE) of $5,000 was issued on May 21, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "Timeline & Events",
+      "fact": "The contractor's final estimate was submitted to Aegis Mutual on May 28, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "Evidence & Documentation",
+      "fact": "On May 29, 2024, Susan Mills formally requested proof of purchase for all claimed electronics valued over $500."
+    },
+    {
+      "id": "F18",
+      "category": "Evidence & Documentation",
+      "fact": "The plumbing report from 'Crestwood Pipes & Drains' was uploaded to the portal under document ID DOC-PLMB-3341."
+    },
+    {
+      "id": "F19",
+      "category": "Evidence & Documentation",
+      "fact": "As of June 1, 2024, the evidence item 'Receipt for 65-inch television' is marked as 'Missing' in the claim portal."
+    },
+    {
+      "id": "F20",
+      "category": "Evidence & Documentation",
+      "fact": "A total of 52 photographs of the initial damage were uploaded on May 16, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "Evidence & Documentation",
+      "fact": "The estimate from 'Keystone Restoration,' for $41,500, was uploaded as PDF file KR-EST-1109.pdf."
+    },
+    {
+      "id": "F22",
+      "category": "Communication Log",
+      "fact": "A phone call was made to Robert Chen on May 24, 2024, at 2:15 PM to discuss the difference between his estimate and the contractor's."
+    },
+    {
+      "id": "F23",
+      "category": "Communication Log",
+      "fact": "An email was received from Susan Mills on May 29, 2024, at 11:03 AM with the subject 'Request for Information - Claim CLM-H789-2024-05'."
+    },
+    {
+      "id": "F24",
+      "category": "Communication Log",
+      "fact": "A follow-up call with Susan Mills is scheduled in the calendar for June 5, 2024, at 3:00 PM EST."
+    },
+    {
+      "id": "F25",
+      "category": "Deadlines & Next Steps",
+      "fact": "The deadline to submit all requested receipts and documentation is June 10, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "Deadlines & Next Steps",
+      "fact": "Per state law, Aegis Mutual must provide a written decision on the claim by June 21, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "Deadlines & Next Steps",
+      "fact": "The next action item is to locate and upload the purchase receipt for the 'Samsung QN65' television."
+    },
+    {
+      "id": "F28",
+      "category": "Deadlines & Next Steps",
+      "fact": "The claim status can be tracked 24/7 at the URL https://claims.aegismutual.com/track/CLM-H789-2024-05."
+    },
+    {
+      "id": "F29",
+      "category": "Financials",
+      "fact": "The initial damage estimate from adjuster Robert Chen was for $32,000."
+    },
+    {
+      "id": "F30",
+      "category": "Financials",
+      "fact": "The submitted contractor estimate from Keystone Restoration totals $41,500."
+    },
+    {
+      "id": "F31",
+      "category": "Financials",
+      "fact": "The 'Loss of Use' coverage provides up to $2,000 per month for temporary housing."
+    },
+    {
+      "id": "F32",
+      "category": "Financials",
+      "fact": "The homeowner's personal property inventory list totals $11,200, while the adjuster's initial valuation is $7,500."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my immediate next action for my home insurance claim?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Immediate To-Do List",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which specific document is currently marked as missing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the next action is to upload a missing document, the user will ask for the specific document name.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Immediate To-Do List",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the deadline for submitting all requested documentation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Knowing what is missing and why leads directly to asking about the deadline for submission.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Immediate To-Do List",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "Who is the internal desk adjuster handling the review that I should send this to?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After understanding the what and when of their task, the user's next logical question is who is responsible for receiving it.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Desk Adjuster Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What was the subject of the last email I received from Susan Mills regarding this?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Once the desk adjuster's name is confirmed, the user will want to recall the context of their last communication with her.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Desk Adjuster Contact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "When is my next scheduled follow-up call with Susan Mills?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Discussing past communication with a specific contact naturally leads to asking about the next scheduled interaction.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Upcoming Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "According to state law, by what date must the insurer provide a written decision on the claim?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the next tactical call, the user's focus shifts to the final, strategic deadline for the entire claim process.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Final Decision Deadline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the damage estimate from the adjuster versus the one from my contractor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Financial Discrepancies",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What was the valuation difference for my personal property between my list and the adjuster's?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After asking about the main structural estimate difference, the user would likely inquire about other financial discrepancies, such as personal property.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Financial Discrepancies",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "When did I speak with Robert Chen about the discrepancy between his estimate and my contractor's estimate?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After comparing the adjuster's estimate with the contractor's estimate, a natural next step is to recall when the discrepancy was specifically discussed with the field adjuster.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Estimate Discrepancy Follow-up",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who was the field adjuster that provided the initial estimate, and what is their phone number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After seeing the discrepancy in estimates, the user will want to identify the person who created the insurer's initial estimate.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Field Adjuster Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "On what date did Robert Chen conduct the on-site property inspection?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After identifying the field adjuster, the user will want to place his actions on the timeline by asking for the inspection date.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Field Adjuster Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "For my records, what is the official claim number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Claim Reference",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Can you confirm the document ID for the plumbing report that was uploaded?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Document Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What is my policy's specific deductible for this water damage incident?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Policy Financials",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Immediate To-Do List",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Desk Adjuster Contact",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Upcoming Communication",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Final Decision Deadline",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Financial Discrepancies",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Estimate Discrepancy Follow-up",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Field Adjuster Details",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G8",
+      "label": "Claim Reference",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Document Verification",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Policy Financials",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "insure_claim_timeline_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

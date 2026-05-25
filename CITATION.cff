@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use ProAct or ProActEval, please cite the associated paper."
+title: "ProAct"
+authors:
+  - name: "AgentACE-AI"
+type: software
+repository-code: "https://github.com/AgentACE-AI/ProAct"
+url: "https://github.com/AgentACE-AI/ProAct"
+license: MIT
+date-released: 2026-05-25
+abstract: "Public reproducibility release for ProAct and the ProActEval benchmark subset."
+notes: "Update this citation with the arXiv identifier and final author metadata after the paper is posted."

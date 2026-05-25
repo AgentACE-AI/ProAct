@@ -1,0 +1,399 @@
+{
+  "scenario_id": "shop_inventory_05",
+  "domain": "personal_shopping",
+  "description": "A user wants a system to manage their 'Smart Home' inventory over 10 years. They need to track purchase dates, warranty expirations, and expected replacement cycles for all major appliances (Fridge, HVAC, Solar Panels), and proactively receive 'maintenance' vs 'buy new' advice based on age.",
+  "user_profile": {
+    "persona": "50-year-old homeowner, tech-savvy",
+    "context": "Wants to automate household asset management",
+    "communication_style": "Calculated, prefers automated reminders and long-term ROI analysis"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "user_profile",
+      "fact": "The homeowner's name is Alex Kepler."
+    },
+    {
+      "id": "F02",
+      "category": "user_profile",
+      "fact": "Alex Kepler's primary residence is located at 123 Automation Lane, Innovate City, IO 54321."
+    },
+    {
+      "id": "F03",
+      "category": "system_account",
+      "fact": "Alex Kepler uses the 'Homestead Asset Manager' application to track home appliances."
+    },
+    {
+      "id": "F04",
+      "category": "system_account",
+      "fact": "Alex Kepler's username for the Homestead Asset Manager is 'akepler'."
+    },
+    {
+      "id": "F05",
+      "category": "system_account",
+      "fact": "The login portal for the Homestead Asset Manager is https://app.homestead-asset-mgr.io."
+    },
+    {
+      "id": "F06",
+      "category": "system_account",
+      "fact": "Alex Kepler's account was created on January 15, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "appliance_fridge",
+      "fact": "The primary refrigerator is a CryoGenix G-4000 Smart Fridge, serial number CGX-G4-987654321."
+    },
+    {
+      "id": "F08",
+      "category": "appliance_fridge",
+      "fact": "The CryoGenix G-4000 was purchased on February 1, 2023 for $3,200."
+    },
+    {
+      "id": "F09",
+      "category": "appliance_fridge",
+      "fact": "The expected replacement cycle for the CryoGenix G-4000 is 12 years from the date of purchase."
+    },
+    {
+      "id": "F10",
+      "category": "warranty_information",
+      "fact": "The CryoGenix G-4000 has a 5-year manufacturer's warranty, which expires on February 1, 2028."
+    },
+    {
+      "id": "F11",
+      "category": "maintenance_schedule",
+      "fact": "The CryoGenix G-4000's water filter (Model CGF-2) must be replaced every 6 months."
+    },
+    {
+      "id": "F12",
+      "category": "appliance_hvac",
+      "fact": "The home's HVAC system is an AtmoSphere ClimatePro X, serial number ACX-23-ABC123DEF."
+    },
+    {
+      "id": "F13",
+      "category": "appliance_hvac",
+      "fact": "The AtmoSphere ClimatePro X was installed on March 10, 2023, at a cost of $12,500."
+    },
+    {
+      "id": "F14",
+      "category": "appliance_hvac",
+      "fact": "The expected replacement cycle for the AtmoSphere ClimatePro X is 15 years from the installation date."
+    },
+    {
+      "id": "F15",
+      "category": "warranty_information",
+      "fact": "The AtmoSphere ClimatePro X has a 10-year parts and labor warranty, expiring on March 10, 2033."
+    },
+    {
+      "id": "F16",
+      "category": "maintenance_schedule",
+      "fact": "The AtmoSphere ClimatePro X is scheduled for annual professional servicing every year on March 15th."
+    },
+    {
+      "id": "F17",
+      "category": "appliance_solar_panels",
+      "fact": "The solar panel system consists of 24 SolaraPrime SP-500 panels."
+    },
+    {
+      "id": "F18",
+      "category": "appliance_solar_panels",
+      "fact": "The SolaraPrime SP-500 system was installed and activated on April 20, 2023."
+    },
+    {
+      "id": "F19",
+      "category": "appliance_solar_panels",
+      "fact": "The total cost for the SolaraPrime SP-500 system, after a $6,000 federal rebate, was $22,000."
+    },
+    {
+      "id": "F20",
+      "category": "appliance_solar_panels",
+      "fact": "The total energy capacity of the SolaraPrime SP-500 installation is 9.6 kW."
+    },
+    {
+      "id": "F21",
+      "category": "warranty_information",
+      "fact": "The SolaraPrime SP-500 panels have a 25-year performance warranty, guaranteeing at least 85% output until April 20, 2048."
+    },
+    {
+      "id": "F22",
+      "category": "maintenance_schedule",
+      "fact": "The SolaraPrime SP-500 panels require professional cleaning and inspection every 2 years, with the next service due on April 20, 2025."
+    },
+    {
+      "id": "F23",
+      "category": "service_providers",
+      "fact": "All major appliances were purchased and installed by 'Quantum Home Solutions'."
+    },
+    {
+      "id": "F24",
+      "category": "service_providers",
+      "fact": "The primary contact at Quantum Home Solutions is Maria Garcia at 555-0199."
+    },
+    {
+      "id": "F25",
+      "category": "service_providers",
+      "fact": "The preferred maintenance provider for out-of-warranty repairs is 'Everlast Appliance Repair'."
+    },
+    {
+      "id": "F26",
+      "category": "system_notifications",
+      "fact": "Alex Kepler receives monthly asset summary emails from 'reports@homestead-asset-mgr.io'."
+    },
+    {
+      "id": "F27",
+      "category": "system_notifications",
+      "fact": "Push notifications for urgent alerts are sent to Alex's 'Pixel 12 Pro' mobile device."
+    },
+    {
+      "id": "F28",
+      "category": "system_notifications",
+      "fact": "Alex has configured the system to send maintenance reminders 7 days in advance."
+    },
+    {
+      "id": "F29",
+      "category": "system_functionality",
+      "fact": "The Homestead Asset Manager integrates with Alex Kepler's Google Calendar to automatically add maintenance events."
+    },
+    {
+      "id": "F30",
+      "category": "system_functionality",
+      "fact": "The system's 'Maintain vs. Buy' analysis for the fridge will be triggered on its 10th anniversary, February 1, 2033."
+    },
+    {
+      "id": "F31",
+      "category": "financial_data",
+      "fact": "The system calculates the 10-year projected Return on Investment (ROI) for the solar panels to be 18%."
+    },
+    {
+      "id": "F32",
+      "category": "financial_data",
+      "fact": "The annual service contract for the HVAC system with Everlast Appliance Repair costs $250."
+    },
+    {
+      "id": "F33",
+      "category": "financial_data",
+      "fact": "Alex Kepler has logged a repair cost of $150 for the HVAC system on June 5, 2024, for a capacitor replacement."
+    },
+    {
+      "id": "F34",
+      "category": "user_profile",
+      "fact": "Alex Kepler's secondary contact method is the phone number 555-0125."
+    },
+    {
+      "id": "F35",
+      "category": "system_functionality",
+      "fact": "The system uses the 'Innovate City Energy Grid' API to fetch real-time electricity prices for ROI calculations."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the serial number of my CryoGenix G-4000 Smart Fridge and what was its purchase date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Fridge Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "When does the manufacturer's warranty on my fridge expire, and what is its expected replacement cycle?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up: After confirming the purchase date of an appliance, the user is very likely to inquire about its warranty and lifespan.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Fridge Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the replacement schedule for my CryoGenix fridge's water filter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group follow-up: After reviewing the major lifecycle dates (warranty, replacement), the next logical step is to check recurring maintenance tasks.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Fridge Details",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is the installation date and serial number for my AtmoSphere ClimatePro X HVAC system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "HVAC Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the warranty period on my HVAC system and when is the next annual professional servicing scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group follow-up: Similar to the fridge, after identifying the HVAC unit, the user's next concern is its warranty and maintenance schedule.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "HVAC Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "How much did I pay for the HVAC capacitor replacement on June 5, 2024?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the projected 10-year Return on Investment for my solar panel system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "Financials",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "How far in advance does the system send maintenance reminders?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After asking about a specific maintenance task (fridge filter), the user is likely to be curious about the system's general notification settings for all such tasks.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "System Notifications",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "On what date will the system trigger its 'Maintain vs. Buy' analysis for my refrigerator?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After reviewing the fridge's warranty and replacement cycle, the tech-savvy user would be interested in the system's proactive, long-term analytical features for that specific appliance.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Future Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is my preferred provider for out-of-warranty appliance repairs?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After checking a specific past repair cost, the user might want to recall the contact information for the provider they use for such repairs, especially for future issues.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Service Contacts",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Fridge Details",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "HVAC Details",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Financials",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "System Notifications",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Future Analysis",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Service Contacts",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shop_inventory_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

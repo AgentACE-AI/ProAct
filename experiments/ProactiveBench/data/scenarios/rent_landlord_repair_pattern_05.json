@@ -1,0 +1,432 @@
+{
+  "scenario_id": "rent_landlord_repair_pattern_05",
+  "domain": "apartment_renting",
+  "description": "A renter has noticed that small maintenance issues keep recurring in different rooms over the course of a year and wants to determine whether there is a broader property problem before deciding on lease renewal.",
+  "user_profile": {
+    "persona": "36-year-old policy researcher who keeps records of every repair request",
+    "context": "Renewal notice is approaching, and the pattern now feels more meaningful than any single incident",
+    "communication_style": "Pattern-oriented and skeptical, likes seeing issues connected over time"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "tenant_information",
+      "fact": "The tenant's name is Lena Petrova, a 36-year-old policy researcher."
+    },
+    {
+      "id": "F02",
+      "category": "property_details",
+      "fact": "Lena Petrova resides in Unit 4B at 'The Willows', located at 123 Aspen Drive, Northwood, CA 94501."
+    },
+    {
+      "id": "F03",
+      "category": "property_management",
+      "fact": "The property is managed by Evergreen Property Group, and the designated property manager is David Chen."
+    },
+    {
+      "id": "F04",
+      "category": "lease_information",
+      "fact": "Lena's current 12-month lease began on August 1, 2023, and is set to expire on July 31, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "lease_information",
+      "fact": "The current monthly rent for Unit 4B is $2,850."
+    },
+    {
+      "id": "F06",
+      "category": "maintenance_request",
+      "fact": "On September 15, 2023, Lena reported a kitchen sink leak via the Evergreen Property Group online portal, creating ticket #M-2309-112."
+    },
+    {
+      "id": "F07",
+      "category": "maintenance_request",
+      "fact": "The kitchen sink leak from September 2023 was resolved on September 17, 2023, when a maintenance plumber tightened a loose pipe fitting under the sink."
+    },
+    {
+      "id": "F08",
+      "category": "maintenance_request",
+      "fact": "On November 5, 2023, Lena reported a constantly running toilet in her bathroom by sending an email to maintenance@evergreenpg.com."
+    },
+    {
+      "id": "F09",
+      "category": "maintenance_request",
+      "fact": "The running toilet issue was fixed on November 6, 2023, by replacing the toilet's internal flapper valve."
+    },
+    {
+      "id": "F10",
+      "category": "building_observations",
+      "fact": "A notice was posted in the building lobby on December 1, 2023, informing residents of a 4-hour water shut-off for 'emergency plumbing repairs on the main line'."
+    },
+    {
+      "id": "F11",
+      "category": "maintenance_request",
+      "fact": "On January 22, 2024, Lena made a phone call to David Chen to report a new, circular water stain approximately 6 inches in diameter on her bedroom ceiling."
+    },
+    {
+      "id": "F12",
+      "category": "maintenance_request",
+      "fact": "Maintenance personnel addressed the ceiling stain on January 25, 2024, by applying a single coat of paint; they claimed the source was a resolved leak from unit 5B."
+    },
+    {
+      "id": "F13",
+      "category": "building_observations",
+      "fact": "Lena recorded seeing a commercial van for 'Rapid Dry Water Restoration' in the building's designated contractor parking spot on February 8, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "maintenance_request",
+      "fact": "On March 10, 2024, Lena submitted ticket #M-2403-198 via the online portal because her dishwasher was failing to drain completely."
+    },
+    {
+      "id": "F15",
+      "category": "maintenance_request",
+      "fact": "The dishwasher drainage issue was resolved on March 12, 2024, after maintenance cleared a food clog from the drain hose."
+    },
+    {
+      "id": "F16",
+      "category": "building_observations",
+      "fact": "From April 2 to April 4, 2024, a 'Caution: Wet Floor' sign was continuously displayed near the washing machines in the first-floor communal laundry room."
+    },
+    {
+      "id": "F17",
+      "category": "building_observations",
+      "fact": "Lena did not see any posted explanation for the wet laundry room floor beyond the continuously displayed 'Caution: Wet Floor' sign from April 2 to April 4, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "maintenance_request",
+      "fact": "Lena submitted online portal ticket #M-2404-255 on April 18, 2024, to report a persistent gurgling sound from her shower drain."
+    },
+    {
+      "id": "F19",
+      "category": "maintenance_request",
+      "fact": "The shower drain ticket was marked as 'resolved' on April 19, 2024, after maintenance poured a chemical drain cleaner down the drain."
+    },
+    {
+      "id": "F20",
+      "category": "tenant_notes",
+      "fact": "Despite the 'resolved' status, Lena noted in her personal log that she still hears the shower drain gurgling intermittently as of May 15, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "building_observations",
+      "fact": "On April 25, 2024, while in the elevator, Lena overheard her neighbor from unit 3B, Mark, complaining to another resident about low water pressure."
+    },
+    {
+      "id": "F22",
+      "category": "lease_information",
+      "fact": "Lena received her official lease renewal offer via email from Evergreen Property Group on May 1, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "lease_information",
+      "fact": "The renewal offer proposes a new monthly rent of $2,975, which is a $125 increase over her current rent."
+    },
+    {
+      "id": "F24",
+      "category": "lease_information",
+      "fact": "The deadline for Lena to accept or decline the lease renewal offer is May 31, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "maintenance_request",
+      "fact": "On May 12, 2024, Lena sent an email with a time-stamped photo to David Chen, reporting that the kitchen sink was leaking again from the exact same pipe fitting as in September."
+    },
+    {
+      "id": "F26",
+      "category": "maintenance_request",
+      "fact": "On May 14, 2024, a plumber resolved the recurring kitchen sink leak by replacing the entire plastic P-trap assembly under the sink."
+    },
+    {
+      "id": "F27",
+      "category": "property_management",
+      "fact": "The online maintenance portal for Evergreen Property Group is located at the URL https://portal.evergreenpg.com."
+    },
+    {
+      "id": "F28",
+      "category": "property_management",
+      "fact": "The after-hours emergency maintenance contact number for The Willows is (555) 867-5309."
+    },
+    {
+      "id": "F29",
+      "category": "building_observations",
+      "fact": "A thread titled 'Musty smell in hallways?' was started on March 5, 2024, by a resident of unit 6A on the building's 'WeLiveHere' community app forum."
+    },
+    {
+      "id": "F30",
+      "category": "tenant_notes",
+      "fact": "Lena keeps a detailed spreadsheet of all maintenance requests, including dates, ticket numbers, and a description of the resolution, saved as 'Apartment_Log_2023-2024.xlsx'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What were the submission dates and ticket numbers for my maintenance requests regarding the kitchen sink leak, running toilet, and dishwasher drainage?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F08",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Maintenance History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What were the stated resolutions for the first kitchen sink leak in September and the dishwasher issue in March?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F15"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After listing the problems, the user will want to see how they were initially resolved to build a baseline.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Maintenance History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was the date and resolution for the second, recurring kitchen sink leak in May?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Cross-group: Having reviewed the first sink fix, the user's primary concern is the pattern of recurrence, making this the most logical next question.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Recurring & Unresolved Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the official status of the shower drain gurgling I reported in April, and what is my personal note about it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Cross-group: After recalling the major ceiling leak, the user would likely think of other unresolved or persistent water-related issues, like the gurgling drain.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Recurring & Unresolved Issues",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "When did I report the water stain on my bedroom ceiling and what was the official explanation for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Major Incidents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What was the date and reason for the emergency plumbing repair notice posted in the lobby?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Cross-group: A user investigating a significant personal water issue (ceiling leak) would want to know if there were any building-wide plumbing events that might provide context.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Building-Wide Evidence",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "On what date did I see the 'Rapid Dry Water Restoration' van in the contractor parking?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After learning about an official emergency repair, recalling the presence of a water restoration company provides strong corroborating evidence of a larger problem.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Building-Wide Evidence",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What did I observe about the communal laundry room floor in early April, and was any cause posted?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Continuing the search for building-wide water issues, the user would recall other related observations like the persistent wet floor in a common area.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Building-Wide Evidence",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "What complaint did I overhear from my neighbor Mark from unit 3B in the elevator?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After recalling the building's emergency plumbing repair notice, the user would naturally look for corroborating reports from other residents, including Mark's complaint about low water pressure.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Community Corroboration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What was the topic of the thread started on the 'WeLiveHere' community app forum in March?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After recalling a verbal complaint from one neighbor, the user would logically check for other community-sourced complaints, such as those on a building forum.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Community Corroboration",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "When does my current lease expire?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Lease Renewal Decision",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the new monthly rent and decision deadline proposed in my lease renewal offer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Intra-group: Once the lease expiration is confirmed, the most critical information is the terms of the new offer and the deadline to make a decision.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Lease Renewal Decision",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Who is my designated property manager and what is the URL for the online maintenance portal?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F27"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After reviewing the renewal terms and deadline, a practical next question is who to contact or where to submit future maintenance-related communication before making the lease decision.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Property Management Contacts",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Maintenance History",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Recurring & Unresolved Issues",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Major Incidents",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Building-Wide Evidence",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Community Corroboration",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Lease Renewal Decision",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Property Management Contacts",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "rent_landlord_repair_pattern_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

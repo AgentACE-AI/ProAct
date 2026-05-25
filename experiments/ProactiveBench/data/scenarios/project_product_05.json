@@ -1,0 +1,446 @@
+{
+  "scenario_id": "project_product_05",
+  "domain": "project_kickoff",
+  "description": "An AI researcher is starting a 3-year R&D project. They need to manage the evolution from initial 'Blue Sky' research to a commercial product, tracking changes in tech feasibility, market trends, and patent filings over the years.",
+  "user_profile": {
+    "persona": "45-year-old Chief Scientist",
+    "context": "Kickoff of a long-term strategic initiative",
+    "communication_style": "Abstract but methodical, looks for patterns over time"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "project_management",
+      "fact": "Project Aetherium is a 3-year research and development initiative starting on October 1, 2023, and concluding on September 30, 2026."
+    },
+    {
+      "id": "F02",
+      "category": "project_management",
+      "fact": "The total approved budget for Project Aetherium is $7.2 million, allocated as $1.8M for Year 1, $2.4M for Year 2, and $3.0M for Year 3."
+    },
+    {
+      "id": "F03",
+      "category": "project_management",
+      "fact": "The project is structured into three phases: Phase 1 (Blue Sky Research, Y1), Phase 2 (Prototype Development, Y2), and Phase 3 (Commercialization Path, Y3)."
+    },
+    {
+      "id": "F04",
+      "category": "project_management",
+      "fact": "The project's official internal tracking code is 'PRJ-AET-2023'."
+    },
+    {
+      "id": "F05",
+      "category": "team",
+      "fact": "Dr. Aris Thorne serves as the Chief Scientist and Principal Investigator for Project Aetherium."
+    },
+    {
+      "id": "F06",
+      "category": "team",
+      "fact": "Lena Petrova is the designated Project Manager, and her contact email is l.petrova@innovatec-dynamics.fict."
+    },
+    {
+      "id": "F07",
+      "category": "team",
+      "fact": "The core research team for Year 1 consists of 4 full-time research engineers and 2 data scientists."
+    },
+    {
+      "id": "F08",
+      "category": "project_management",
+      "fact": "Quarterly steering committee reviews are scheduled for the second Tuesday of January, April, July, and October, starting January 9, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "research",
+      "fact": "The core technology being investigated is a novel architecture named 'Generative Temporal Networks' (GTN)."
+    },
+    {
+      "id": "F10",
+      "category": "research",
+      "fact": "The initial technical feasibility of GTN was assessed at 4.5 out of 10 on the internal 'Tech Readiness Level' (TRL) scale as of October 1, 2023."
+    },
+    {
+      "id": "F11",
+      "category": "research",
+      "fact": "A key performance indicator for Phase 1 is achieving a predictive accuracy of over 85% on the 'SynthMark-22' benchmark dataset."
+    },
+    {
+      "id": "F12",
+      "category": "research",
+      "fact": "Market trend analysis reports will be updated semi-annually by the Strategic Insights group, with the first report due on March 15, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "legal",
+      "fact": "All intellectual property matters are handled by the external law firm 'Vance & Sterling LLP'."
+    },
+    {
+      "id": "F14",
+      "category": "legal",
+      "fact": "The primary legal contact for patent filings is Julian Vance, reachable at jvance@vance-sterling.fict."
+    },
+    {
+      "id": "F15",
+      "category": "legal",
+      "fact": "The first provisional patent application for the core GTN algorithm is scheduled for submission by March 31, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "legal",
+      "fact": "The main GTN patent matter is tracked internally in the company's IP docketing system under reference ID 'ID-IP-2023-004'."
+    },
+    {
+      "id": "F17",
+      "category": "infrastructure",
+      "fact": "For Phase 1 model training, the designated primary GPU compute cluster is 'Prometheus', located in Datacenter West, Rack 14."
+    },
+    {
+      "id": "F18",
+      "category": "infrastructure",
+      "fact": "Access to the 'Prometheus' cluster is via SSH at the IP address 10.21.14.5, using company LDAP credentials."
+    },
+    {
+      "id": "F19",
+      "category": "infrastructure",
+      "fact": "For Phase 1 dataset storage, the project's raw and processed datasets are designated to be stored in an S3-compatible object store at the endpoint 'storage.innovatec-dynamics.fict' under the bucket 'aetherium-data'."
+    },
+    {
+      "id": "F20",
+      "category": "infrastructure",
+      "fact": "The project utilizes a PostgreSQL database named 'aetherium_exp_db' for tracking experiment metadata, hosted at db-pg1.innovatec-dynamics.fict."
+    },
+    {
+      "id": "F21",
+      "category": "tooling",
+      "fact": "The project's main codebase is written in Python 3.11 and utilizes the PyTorch 2.1 framework."
+    },
+    {
+      "id": "F22",
+      "category": "tooling",
+      "fact": "Source code is managed in a private Git repository located at git.innovatec-dynamics.fict/research/project-aetherium."
+    },
+    {
+      "id": "F23",
+      "category": "tooling",
+      "fact": "The team's primary communication channel is a Slack workspace named 'innovatec-research', in the public channel #proj-aetherium."
+    },
+    {
+      "id": "F24",
+      "category": "tooling",
+      "fact": "Project tasks and milestones are tracked on a Jira board accessible at jira.innovatec-dynamics.fict/projects/AET."
+    },
+    {
+      "id": "F25",
+      "category": "documentation",
+      "fact": "The project's official documentation, including research logs and meeting notes, is maintained in Confluence under the space 'Aetherium Project (AET)'."
+    },
+    {
+      "id": "F26",
+      "category": "documentation",
+      "fact": "The 'Tech Feasibility & Market Trend Tracker' is a living document located at Confluence page ID #8675309."
+    },
+    {
+      "id": "F27",
+      "category": "tooling",
+      "fact": "Continuous Integration is handled by a Jenkins server at ci.innovatec-dynamics.fict, using the 'Aetherium-Build' pipeline."
+    },
+    {
+      "id": "F28",
+      "category": "team",
+      "fact": "The team holds a weekly research sync meeting every Wednesday at 10:00 AM Pacific Time via the Zoom link innovatec.zoom.us/j/1234567890."
+    },
+    {
+      "id": "F29",
+      "category": "research",
+      "fact": "The initial target market for the commercialized product is predictive analytics for supply chain logistics."
+    },
+    {
+      "id": "F30",
+      "category": "documentation",
+      "fact": "All peer-reviewed papers and pre-prints resulting from the project must be archived in the shared Zotero library named 'Aetherium Publications'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the official duration, phases, and internal tracking code for Project Aetherium?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Fundamentals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the total budget and how is it allocated across the three years?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the project's phases and duration, understanding the financial scope is a natural next question.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Fundamentals",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Who are the Principal Investigator, Project Manager, and what is the core team composition for Year 1?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Key Personnel",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the core technology being investigated, its initial Technical Readiness Level, and the key performance indicator for Phase 1?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Research Goals",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "How will progress be formally reviewed? Specifically, when are the quarterly steering committee reviews scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning the project's duration, phased plan, and budget allocation, the user will naturally want to know the governance and review cadence used to track progress.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Progress Tracking",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Where is the living document that tracks tech feasibility and market trends located?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning about formal reviews, the user may want to know where the underlying tracking data and documentation is kept.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Progress Tracking",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Who handles our intellectual property matters and what is the deadline for the first provisional patent application?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discussing the novel core technology (GTN) directly prompts questions about how to protect the resulting intellectual property.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Intellectual Property",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How is the main GTN patent matter tracked internally, and what is its reference ID?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After learning who handles IP matters and the first filing deadline, a natural administrative follow-up is to ask how the main patent matter is tracked internally and what reference ID should be used in communications.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Intellectual Property",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What compute and data infrastructure has already been designated for Phase 1?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding the core technology, initial TRL, and Phase 1 KPI, the user will naturally ask what compute and data infrastructure has already been designated to execute that work.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Core Infrastructure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Where are the project's source code repository and task tracking board located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F24"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Once the user knows about the physical/virtual infrastructure, the next logical step is to ask about the software development and project management tools.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Tooling & Collaboration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What are the team's primary communication channel and official documentation space?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23",
+        "F25"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "After establishing the locations for code and tasks, the user would want to know where the related discussions and documentation live.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Tooling & Collaboration",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "When and where does the weekly research sync meeting take place?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After identifying the team's communication channel and documentation space, a natural follow-up is to ask about the recurring research sync that ties day-to-day coordination together.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Team Coordination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the initial target market for the eventual commercial product?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Commercial Target",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Fundamentals",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Key Personnel",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Research Goals",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Progress Tracking",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Intellectual Property",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Core Infrastructure",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Tooling & Collaboration",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Team Coordination",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Commercial Target",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "project_product_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

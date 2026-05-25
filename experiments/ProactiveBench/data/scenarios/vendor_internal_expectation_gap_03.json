@@ -1,0 +1,469 @@
+{
+  "scenario_id": "vendor_internal_expectation_gap_03",
+  "domain": "vendor_management",
+  "description": "Different internal teams believe a vendor is responsible for different tasks, and those assumptions have drifted far enough apart to create repeated frustration. Someone needs to rebuild a shared understanding of the actual scope.",
+  "user_profile": {
+    "persona": "42-year-old business operations lead mediating between technical and non-technical stakeholders",
+    "context": "The vendor relationship is not broken, but internal expectations about it clearly are",
+    "communication_style": "Clarifying and diplomatic, wants ambiguity removed from the working model"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Contractual Details",
+      "fact": "The Master Services Agreement (MSA) between Aperture Dynamics and Innovatech Solutions is document #MSA-2022-045, signed on January 15, 2022."
+    },
+    {
+      "id": "F02",
+      "category": "Contractual Details",
+      "fact": "The current Statement of Work is SOW #78B-2023, covering managed services for the 'QuantumLeap CRM' platform."
+    },
+    {
+      "id": "F03",
+      "category": "Contractual Details",
+      "fact": "SOW #78B-2023 is effective from July 1, 2023, to June 30, 2025."
+    },
+    {
+      "id": "F04",
+      "category": "Contractual Details",
+      "fact": "The monthly recurring cost for services under SOW #78B-2023 is $12,500 USD."
+    },
+    {
+      "id": "F05",
+      "category": "Contractual Details",
+      "fact": "Work requested outside the SOW is billed at a fixed rate of $225 per hour, requiring a separate work order."
+    },
+    {
+      "id": "F06",
+      "category": "Vendor Information",
+      "fact": "The vendor's legal name is Innovatech Solutions, LLC."
+    },
+    {
+      "id": "F07",
+      "category": "Vendor Information",
+      "fact": "The primary account manager at Innovatech Solutions is David Chen, reachable at david.chen@innovatech.solutions."
+    },
+    {
+      "id": "F08",
+      "category": "Vendor Information",
+      "fact": "The designated technical lead for the Aperture Dynamics account at Innovatech is Priya Singh (priya.singh@innovatech.solutions)."
+    },
+    {
+      "id": "F09",
+      "category": "Client Information",
+      "fact": "The internal business relationship owner at Aperture Dynamics is Maria Garcia, Director of Sales Operations."
+    },
+    {
+      "id": "F10",
+      "category": "Client Information",
+      "fact": "The internal technical liaison at Aperture Dynamics is Ben Carter, Senior DevOps Engineer."
+    },
+    {
+      "id": "F11",
+      "category": "Scope of Work (SOW)",
+      "fact": "Innovatech is responsible for application-level monitoring and maintenance of the QuantumLeap CRM software."
+    },
+    {
+      "id": "F12",
+      "category": "Scope of Work (SOW)",
+      "fact": "The SOW explicitly excludes management of the underlying AWS EC2 instances, VPC, and security groups."
+    },
+    {
+      "id": "F13",
+      "category": "Scope of Work (SOW)",
+      "fact": "Innovatech performs full daily backups of the QuantumLeap CRM PostgreSQL database, with a 30-day retention period."
+    },
+    {
+      "id": "F14",
+      "category": "Scope of Work (SOW)",
+      "fact": "Creating new custom sales reports or marketing dashboards within QuantumLeap CRM is an out-of-scope activity."
+    },
+    {
+      "id": "F15",
+      "category": "Scope of Work (SOW)",
+      "fact": "Innovatech is responsible for applying all official QuantumLeap CRM security patches within 5 business days of release."
+    },
+    {
+      "id": "F16",
+      "category": "Scope of Work (SOW)",
+      "fact": "Adding, modifying, or deactivating user accounts in QuantumLeap CRM is an in-scope task, fulfilled via Jira ticket."
+    },
+    {
+      "id": "F17",
+      "category": "Scope of Work (SOW)",
+      "fact": "The SOW does not cover developing or troubleshooting custom API integrations between QuantumLeap CRM and other Aperture Dynamics systems."
+    },
+    {
+      "id": "F18",
+      "category": "Service Level Agreements (SLAs)",
+      "fact": "The SLA for a P1 'Critical' issue (e.g., full application outage) guarantees a 15-minute first response time."
+    },
+    {
+      "id": "F19",
+      "category": "Service Level Agreements (SLAs)",
+      "fact": "The SLA for a P2 'High' issue (e.g., major feature failure) guarantees a 2-hour first response time during business hours (8 AM - 6 PM PST)."
+    },
+    {
+      "id": "F20",
+      "category": "Service Level Agreements (SLAs)",
+      "fact": "The guaranteed application uptime for QuantumLeap CRM is 99.9% per calendar month, excluding scheduled maintenance."
+    },
+    {
+      "id": "F21",
+      "category": "Service Level Agreements (SLAs)",
+      "fact": "Scheduled maintenance windows are on the third Sunday of each month from 2:00 AM to 4:00 AM PST."
+    },
+    {
+      "id": "F22",
+      "category": "Communication Protocols",
+      "fact": "A bi-weekly operational sync meeting is scheduled every other Wednesday at 10:00 AM PST via Google Meet."
+    },
+    {
+      "id": "F23",
+      "category": "Communication Protocols",
+      "fact": "The shared Slack channel for non-urgent communication with the Innovatech team is #vendor-innovatech-support."
+    },
+    {
+      "id": "F24",
+      "category": "Communication Protocols",
+      "fact": "Innovatech Solutions is required to deliver a Quarterly Business Review (QBR) presentation within the first 10 business days of each new quarter."
+    },
+    {
+      "id": "F25",
+      "category": "System Access & Tools",
+      "fact": "All formal support requests must be submitted through the Jira Service Management portal at https://aperture.atlassian.net/servicedesk/customer/portal/3."
+    },
+    {
+      "id": "F26",
+      "category": "System Access & Tools",
+      "fact": "Innovatech's engineers have restricted SSH access to production servers via the bastion host at `bastion.prod.aperturedynamics.com` using pre-approved SSH keys."
+    },
+    {
+      "id": "F27",
+      "category": "System Access & Tools",
+      "fact": "The vendor does not have administrative access to Aperture Dynamics' AWS account."
+    },
+    {
+      "id": "F28",
+      "category": "System Access & Tools",
+      "fact": "The production URL for the QuantumLeap CRM instance is https://crm.aperturedynamics.com."
+    },
+    {
+      "id": "F29",
+      "category": "Billing & Invoicing",
+      "fact": "Invoices from Innovatech Solutions are submitted monthly to the ap@aperturedynamics.com email alias."
+    },
+    {
+      "id": "F30",
+      "category": "Billing & Invoicing",
+      "fact": "Payment terms are NET 30 from the date the invoice is received."
+    },
+    {
+      "id": "F31",
+      "category": "Billing & Invoicing",
+      "fact": "All invoices must reference the active Purchase Order number, which is currently PO-2024-8812."
+    },
+    {
+      "id": "F32",
+      "category": "Recent Incidents",
+      "fact": "On May 15, 2024, the Marketing team requested a new lead ingestion endpoint be configured, which was classified as out-of-scope per SOW #78B-2023 (Ticket: VENDSUPPORT-1138)."
+    },
+    {
+      "id": "F33",
+      "category": "Recent Incidents",
+      "fact": "On April 28, 2024, the Sales team's request for a 'Q2 Pipeline Velocity' dashboard was denied as out-of-scope work; a separate work order for $3,000 was proposed by Innovatech (Ticket: VENDSUPPORT-1092)."
+    },
+    {
+      "id": "F34",
+      "category": "Recent Incidents",
+      "fact": "The last P1 incident occurred on March 5, 2024, due to a database connection pool exhaustion, and was resolved by Innovatech in 45 minutes, meeting the 1-hour resolution SLA."
+    },
+    {
+      "id": "F35",
+      "category": "Escalation Path",
+      "fact": "For urgent P1 issues outside of business hours, the escalation point is the Innovatech emergency hotline at +1-800-555-0199, citing account ID AD-90210."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the document numbers for the master agreement and the current Statement of Work with Innovatech Solutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Contract Foundation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the effective date range for the current SOW?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the SOW document, asking about its term is a direct and logical follow-up.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Contract Foundation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are some key services that are explicitly excluded from the SOW, such as infrastructure management or custom development?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F14",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Scope Boundaries - Out of Scope",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Can you provide a recent example of an out-of-scope request from the Sales team and its outcome?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After learning what is generally out-of-scope, asking for a concrete, recent example helps solidify the user's understanding.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Scope Boundaries - Out of Scope",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are the primary in-scope responsibilities for Innovatech regarding the CRM application and its security?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Scope Boundaries - In Scope",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Is managing user accounts for the CRM an included service?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After understanding the high-level responsibilities, clarifying a common, specific administrative task like user management is a natural detail to seek.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Scope Boundaries - In Scope",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the hourly rate for work that falls outside the SOW?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing an example of an out-of-scope request, the immediate next question is how to procure and pay for such work.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Handling Out-of-Scope Work",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the official channels for submitting formal support requests and for non-urgent communication?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Communication Protocols",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Is there a regularly scheduled sync meeting with the vendor?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After establishing the primary communication channels (Jira, Slack), asking about standing meetings is a logical follow-up.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Communication Protocols",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Who are the primary account manager and technical lead at Innovatech?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After clarifying Innovatech's primary in-scope responsibilities for the CRM application and security, a natural next step is to identify the vendor-side owners responsible for those services, so internal teams know who should be contacted for account management versus technical matters.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Key Personnel",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the guaranteed application uptime and the response time for a critical P1 issue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Service Levels & Uptime",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the after-hours escalation process for a P1 incident?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F35"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: After learning the SLA for a critical P1 issue, the immediate follow-up concern for an operations lead is how to handle such an issue outside of standard business hours.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Emergency Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Who are the designated internal business and technical liaisons for this relationship at our company?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After identifying the key contacts at the vendor, it's natural for the user to want to confirm the corresponding internal stakeholders to ensure alignment.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Internal Stakeholders",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Contract Foundation",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Scope Boundaries - Out of Scope",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Scope Boundaries - In Scope",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Handling Out-of-Scope Work",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Communication Protocols",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Key Personnel",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Service Levels & Uptime",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Emergency Procedures",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Internal Stakeholders",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vendor_internal_expectation_gap_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

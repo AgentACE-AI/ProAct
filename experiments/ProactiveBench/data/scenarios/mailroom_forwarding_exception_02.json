@@ -1,0 +1,406 @@
+{
+  "scenario_id": "mailroom_forwarding_exception_02",
+  "domain": "postal_mailroom_operations",
+  "description": "Some recipients have temporary forwarding, split offices, remote schedules, or special delivery instructions that are easy to misremember and keep causing misrouted mail. All organizations and people are fictional.",
+  "user_profile": {
+    "persona": "34-year-old internal distribution coordinator responsible for nonstandard delivery rules",
+    "context": "The normal routing works fine, but exception handling is generating repeated avoidable mistakes",
+    "communication_style": "Exception-oriented and practical, wants recipient-specific rules kept current and easy to scan"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "recipient_profile",
+      "fact": "Dr. Aris Thorne is a Senior Researcher in the Quantum Dynamics Lab, located in Building C, workstation C3-21."
+    },
+    {
+      "id": "F02",
+      "category": "recipient_profile",
+      "fact": "Lena Petrova is the Head of Global Partnerships, and her employee ID is 'LPetrova78'."
+    },
+    {
+      "id": "F03",
+      "category": "recipient_profile",
+      "fact": "The 'Project Nightingale' team is a temporary working group; their mail stop code is 'PN-TEMP'."
+    },
+    {
+      "id": "F04",
+      "category": "temporary_forwarding",
+      "fact": "From May 1, 2024, to August 31, 2024, all mail for Dr. Aris Thorne must be forwarded to the Zenith Labs Annex at 1850 Innovation Drive."
+    },
+    {
+      "id": "F05",
+      "category": "temporary_forwarding",
+      "fact": "Jia Li, a new contractor, has all mail held in central mailroom bin #112 until her badge access is approved, expected by June 15, 2024."
+    },
+    {
+      "id": "F06",
+      "category": "temporary_forwarding",
+      "fact": "All mail for the 'Summer Internship Program' must be delivered to the Galileo Conference Center, Room G-7, from June 1, 2024, to August 15, 2024."
+    },
+    {
+      "id": "F07",
+      "category": "split_office_location",
+      "fact": "Lena Petrova works at the main campus (400 Solstice Avenue) on Mondays and Tuesdays."
+    },
+    {
+      "id": "F08",
+      "category": "split_office_location",
+      "fact": "Lena Petrova works at the downtown office (1200 Commerce Plaza, Suite 900) on Thursdays and Fridays."
+    },
+    {
+      "id": "F09",
+      "category": "split_office_location",
+      "fact": "To determine Lena Petrova's location on Wednesdays, check her public calendar on Outlook before the 9:00 AM mail run."
+    },
+    {
+      "id": "F10",
+      "category": "split_office_location",
+      "fact": "Mail addressed generically to the 'Legal Department' without a specific recipient name must be delivered to Kenji Tanaka at the 400 Solstice Avenue campus, Building B, Floor 4."
+    },
+    {
+      "id": "F11",
+      "category": "remote_work_schedule",
+      "fact": "Marco Diaz (Engineering, Desk 4B-113) works remotely on Mondays and Fridays; his mail should be held and delivered on Tuesday mornings."
+    },
+    {
+      "id": "F12",
+      "category": "remote_work_schedule",
+      "fact": "The entire Marketing department (Building D, Floor 2) works remotely on Fridays, so all Friday mail for them goes into departmental bin 'D-MKTG' for Monday delivery."
+    },
+    {
+      "id": "F13",
+      "category": "remote_work_schedule",
+      "fact": "Dr. Evelyn Reed (R&D) is a fully remote employee; all her physical mail must be scanned and emailed to ereed@fictionalcorp.net by 4:00 PM daily."
+    },
+    {
+      "id": "F14",
+      "category": "special_delivery_instruction",
+      "fact": "All packages for the 'Quantum Dynamics Lab' require a signature from either Dr. Aris Thorne or his lab manager, Ben Carter."
+    },
+    {
+      "id": "F15",
+      "category": "special_delivery_instruction",
+      "fact": "Mail marked 'CONFIDENTIAL - BOARD OF DIRECTORS' must be hand-delivered directly to the CEO's executive assistant, Maria Flores, at workstation A-101."
+    },
+    {
+      "id": "F16",
+      "category": "special_delivery_instruction",
+      "fact": "All subscription magazines for the employee lounge should be delivered to the reception desk in Building A, not to a departmental mail stop."
+    },
+    {
+      "id": "F17",
+      "category": "special_delivery_instruction",
+      "fact": "Paychecks distributed internally are to be placed in a locked bin (Bin #L-01) for HR pickup at 11:00 AM on the last business Thursday of the month."
+    },
+    {
+      "id": "F18",
+      "category": "special_delivery_instruction",
+      "fact": "Any mail from the 'Federal Patent Office' must be time-stamped upon arrival and delivered to Kenji Tanaka in Legal within 1 hour."
+    },
+    {
+      "id": "F19",
+      "category": "internal_process_and_tools",
+      "fact": "The master list of delivery exceptions is a SharePoint list named 'Mailroom Special Handling'."
+    },
+    {
+      "id": "F20",
+      "category": "internal_process_and_tools",
+      "fact": "The URL for the 'Mailroom Special Handling' list is https://fictionalcorp.sharepoint.com/sites/mailroom/specialhandling."
+    },
+    {
+      "id": "F21",
+      "category": "internal_process_and_tools",
+      "fact": "A daily 'Exception Briefing' report is printed from the SharePoint list at 7:30 AM and posted on the main sorting station whiteboard."
+    },
+    {
+      "id": "F22",
+      "category": "internal_process_and_tools",
+      "fact": "Misrouted mail must be logged in the 'Misdelivery Log' Google Sheet before it is rerouted to the correct recipient."
+    },
+    {
+      "id": "F23",
+      "category": "internal_process_and_tools",
+      "fact": "The barcode scanner for logging secure packages is a Zebra DS2208, serial number ZB4-99812."
+    },
+    {
+      "id": "F24",
+      "category": "contact_information",
+      "fact": "The Office Manager, Sarah Chen, is responsible for updating the SharePoint list and can be reached at extension 5250."
+    },
+    {
+      "id": "F25",
+      "category": "contact_information",
+      "fact": "For questions about forwarding for R&D personnel, contact lab manager Ben Carter at extension 4511."
+    },
+    {
+      "id": "F26",
+      "category": "contact_information",
+      "fact": "To verify an employee's current office location, use the internal directory tool 'PeopleFinder' at http://intranet/find."
+    },
+    {
+      "id": "F27",
+      "category": "contact_information",
+      "fact": "The direct line for the mailroom supervisor, David Rodriguez, is 555-0199, extension 4500."
+    },
+    {
+      "id": "F28",
+      "category": "contact_information",
+      "fact": "Urgent delivery issues after 5:00 PM should be reported to Campus Security at extension 2222."
+    },
+    {
+      "id": "F29",
+      "category": "location_details",
+      "fact": "The mail drop-off slot for the Engineering department is located next to conference room 4B-100 in Building B."
+    },
+    {
+      "id": "F30",
+      "category": "location_details",
+      "fact": "The central mailroom is located in Building A, Room G-05, and is open from 7:00 AM to 5:30 PM."
+    },
+    {
+      "id": "F31",
+      "category": "special_delivery_instruction",
+      "fact": "Mail for the 'CFO Office' should be delivered to Sam Jones at workstation A-105, not the CEO's assistant."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the temporary forwarding address and effective date range for Dr. Aris Thorne?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Dr. Thorne Forwarding",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are Lena Petrova's work locations on Mondays, Tuesdays, Thursdays, and Fridays?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Lena Petrova's Schedule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "How do I determine Lena Petrova's work location on Wednesdays?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: This is a direct follow-up to the previous question about Lena Petrova's schedule.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Lena Petrova's Schedule",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What is the special delivery instruction for mail marked 'CONFIDENTIAL - BOARD OF DIRECTORS'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "High-Stakes Mail",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+  "description": "What is another high-priority mail category with a time-sensitive delivery rule, and what is that rule?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N4",
+  "prediction_reason": "Intra-group: After asking about one type of high-priority mail, the user may naturally ask for another time-sensitive exception category and its handling rule.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "High-Stakes Mail",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the mail handling procedure for Marco Diaz, who works remotely on certain days?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Remote Work Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the process for handling mail for the entire Marketing department on Fridays when they work remotely?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After handling a rule for an individual remote worker, it's natural to ask about rules for a remote department.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Remote Work Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+  "description": "If a package is still sent to the Quantum Dynamics Lab during Dr. Aris Thorne's forwarding period, whose signature can be used to accept it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N1",
+  "prediction_reason": "CROSS-GROUP: After checking Dr. Thorne's forwarding setup, a direct follow-up is how a package sent to his lab can still be accepted there.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Lab Signature Rule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where is the master list of mailroom exceptions stored and who is responsible for updating it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19",
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After dealing with a multi-part, complex rule like Lena Petrova's, the user may want to know where the official documentation for all such rules is kept and who maintains it.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "System & Maintenance",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How should I handle physical mail for Dr. Evelyn Reed, who is a fully remote employee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After discussing rules for partially remote employees and departments, the next logical exception to consider is the handling for a fully remote employee.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Fully Remote Handling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is the contact person for questions about forwarding for R&D personnel?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After learning about a special handling rule for an R&D lab, the user might want to know who the general contact is for that division's mail issues.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "R&D Contact Info",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Dr. Thorne Forwarding",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Lena Petrova's Schedule",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "High-Stakes Mail",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Remote Work Rules",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Lab Signature Rule",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "System & Maintenance",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Fully Remote Handling",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G8",
+      "label": "R&D Contact Info",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "mailroom_forwarding_exception_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

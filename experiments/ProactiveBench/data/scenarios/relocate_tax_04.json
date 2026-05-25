@@ -1,0 +1,415 @@
+{
+  "scenario_id": "relocate_tax_04",
+  "domain": "relocation",
+  "description": "A digital nomad is moving from the US to Portugal. They face a conflict between US 'taxation by citizenship' and Portugal's NHR tax scheme requirements. They need to plan their physical presence days to avoid double taxation.",
+  "user_profile": {
+    "persona": "40-year-old consultant, earns high income",
+    "context": "Planning the move to optimize tax and lifestyle",
+    "communication_style": "Precise, legalistic, hates administrative errors"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "personal_info",
+      "fact": "The client's full legal name is Alexander 'Alex' Vance, a citizen of the United States of America, born on May 14, 1984."
+    },
+    {
+      "id": "F02",
+      "category": "tax_advisory",
+      "fact": "Alex Vance retained 'Global Nomad Tax Solutions' on November 10, 2023, under client ID AV-2023-PTUS."
+    },
+    {
+      "id": "F03",
+      "category": "tax_advisory",
+      "fact": "The lead tax advisor assigned to Alex Vance's case is Sofia Mendes, whose direct contact is sofia.mendes@gntax.com."
+    },
+    {
+      "id": "F04",
+      "category": "us_tax_law",
+      "fact": "To qualify for the US Foreign Earned Income Exclusion (FEIE) in 2024, Alex Vance must be physically present in a foreign country for at least 330 full days during a consecutive 12-month period."
+    },
+    {
+      "id": "F05",
+      "category": "portuguese_tax_law",
+      "fact": "To establish tax residency in Portugal for 2024, Alex Vance must remain in the country for more than 183 days, consecutively or non-consecutively, within a 12-month period beginning or ending in that year."
+    },
+    {
+      "id": "F06",
+      "category": "portuguese_tax_law",
+      "fact": "Under Portugal's Non-Habitual Resident (NHR) scheme, Alex Vance's qualifying foreign-sourced income is exempt from Portuguese tax, and Portuguese-sourced income from high-value-added activities is taxed at a flat rate of 20%."
+    },
+    {
+      "id": "F07",
+      "category": "admin_documents",
+      "fact": "Alex Vance obtained his Portuguese Tax Identification Number (NIF), 298 456 712, on January 5, 2024, through his fiscal representative, 'Lisbon Fiscal Services'."
+    },
+    {
+      "id": "F08",
+      "category": "travel_log",
+      "fact": "Alex Vance's first entry into Portugal in 2024 was on January 15, 2024, via flight TP214 from Newark (EWR) to Lisbon (LIS)."
+    },
+    {
+      "id": "F09",
+      "category": "residency",
+      "fact": "Alex Vance must register for NHR status with the Portuguese Tax and Customs Authority (Autoridade Tributária e Aduaneira) via the Portal das Finanças by March 31, 2025."
+    },
+    {
+      "id": "F10",
+      "category": "travel_log",
+      "fact": "For the period January 15, 2024, to December 31, 2024, Alex Vance has planned a maximum of 35 days outside of Portugal to comply with the 183-day rule."
+    },
+    {
+      "id": "F11",
+      "category": "us_tax_law",
+      "fact": "Alex Vance must not spend more than 35 days in the US during 2024 to avoid triggering the Substantial Presence Test, which would make him a US tax resident."
+    },
+    {
+      "id": "F12",
+      "category": "housing",
+      "fact": "Alex Vance signed a 24-month lease for an apartment at Rua dos Anjos, 1170-015, Lisbon, 3rd Floor, with a monthly rent of €2,100, starting February 1, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "financial",
+      "fact": "Alex Vance opened a personal bank account with 'Banco Atlântico' on January 18, 2024, with account number PT50 0099 0001 1234 5678 9012 3."
+    },
+    {
+      "id": "F14",
+      "category": "professional_services",
+      "fact": "Alex Vance's primary US client is 'QuantumLeap Advisory LLC', which pays him a retainer of $25,000 USD per month."
+    },
+    {
+      "id": "F15",
+      "category": "corporate_structure",
+      "fact": "On February 5, 2024, Alex Vance established a Portuguese sole proprietorship ('Unipessoal Lda.') named 'Vance Consultoria Unipessoal Lda.' with company registration number 517 987 654."
+    },
+    {
+      "id": "F16",
+      "category": "financial",
+      "fact": "All income from 'QuantumLeap Advisory LLC' is invoiced by and paid directly to 'Vance Consultoria Unipessoal Lda.'s' business account at Banco Atlântico."
+    },
+    {
+      "id": "F17",
+      "category": "tax_advisory",
+      "fact": "A scheduled quarterly tax planning call between Alex Vance and Sofia Mendes is set for April 10, 2024, at 15:00 Lisbon time via Zoom link https://gntax.zoom.us/j/89101112."
+    },
+    {
+      "id": "F18",
+      "category": "tools",
+      "fact": "Alex Vance uses the 'Nomad Tracker Pro' mobile app (version 3.1) to log his physical presence days, with automated alerts for approaching the 35-day US limit and 183-day Portugal requirement."
+    },
+    {
+      "id": "F19",
+      "category": "admin_documents",
+      "fact": "Alex Vance applied for his Certificate of Registration for EU Citizen (CRUE) at the Lisbon City Council office on February 20, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "us_tax_law",
+      "fact": "For his 2024 US tax return (Form 1040), Alex Vance will file Form 2555 to claim the Foreign Earned Income Exclusion."
+    },
+    {
+      "id": "F21",
+      "category": "portuguese_tax_law",
+      "fact": "The income earned through 'Vance Consultoria Unipessoal Lda.' is considered Portuguese-sourced and will be taxed at the NHR flat rate of 20% after business deductions."
+    },
+    {
+      "id": "F22",
+      "category": "financial",
+      "fact": "Alex Vance maintains a US bank account at 'Keystone National Bank' (Acct: ...7890) solely for paying US-based expenses and receiving US-sourced passive income, totaling less than $5,000 annually."
+    },
+    {
+      "id": "F23",
+      "category": "travel_log",
+      "fact": "Alex Vance has a planned business trip to New York from June 3, 2024, to June 10, 2024, which will count as 8 days of US presence."
+    },
+    {
+      "id": "F24",
+      "category": "utilities",
+      "fact": "The electricity contract for his Lisbon apartment is with 'EnergiaLuz SA' under contract number EL-8845-2024, providing proof of address."
+    },
+    {
+      "id": "F25",
+      "category": "social_security",
+      "fact": "Alex Vance registered with the Portuguese Social Security (Segurança Social) on March 1, 2024, and was assigned NISS number 1 8765 4321 098."
+    },
+    {
+      "id": "F26",
+      "category": "social_security",
+      "fact": "As a self-employed individual ('trabalhador independente'), Alex Vance's monthly social security contribution is calculated as 21.4% of his declared income, with a 12-month initial exemption."
+    },
+    {
+      "id": "F27",
+      "category": "tax_advisory",
+      "fact": "The total fee for 'Global Nomad Tax Solutions' for the 2024 tax year is a fixed rate of €7,500, payable in two installments."
+    },
+    {
+      "id": "F28",
+      "category": "portuguese_tax_law",
+      "fact": "The deadline for filing the 2024 Portuguese IRS (Modelo 3) tax return is June 30, 2025."
+    },
+    {
+      "id": "F29",
+      "category": "us_tax_law",
+      "fact": "The deadline for filing the 2024 US tax return for an expatriate like Alex Vance is automatically extended to June 15, 2025, with a further extension available to October 15, 2025."
+    },
+    {
+      "id": "F30",
+      "category": "health_services",
+      "fact": "Alex Vance registered for the Portuguese National Health Service (SNS) and received his user number (número de utente) 210987654 on March 5, 2024."
+    },
+    {
+      "id": "F31",
+      "category": "housing",
+      "fact": "The rental contract for Rua dos Anjos, 1170-015, is registered with the tax authority under contract number 2024/FIN-LOC-19842, a requirement for proving residency."
+    },
+    {
+      "id": "F32",
+      "category": "financial",
+      "fact": "Alex Vance is required to file a Report of Foreign Bank and Financial Accounts (FBAR) with FinCEN by April 15, 2025, as his aggregate foreign account balances exceed $10,000."
+    },
+    {
+      "id": "F33",
+      "category": "corporate_structure",
+      "fact": "The registered address for 'Vance Consultoria Unipessoal Lda.' is Alex Vance's residential address: Rua dos Anjos, 1170-015, Lisbon."
+    },
+    {
+      "id": "F34",
+      "category": "communication",
+      "fact": "An email from Sofia Mendes dated March 15, 2024, confirmed that Alex's NHR application (Process #PTAX-24-98712) was successfully submitted online."
+    },
+    {
+      "id": "F35",
+      "category": "tax_advisory",
+      "fact": "The tax strategy document (Ref: 'AV-Strategy-2024-v3') specifies that any day spent partly in the US counts as a full day for the Substantial Presence Test calculation."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What presence thresholds am I using for 2024 to support Portugal tax residency and avoid a US tax-residency issue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Day-Counting Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "To qualify for the US Foreign Earned Income Exclusion in 2024, what is the minimum number of full days I must be present in a foreign country?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After clarifying the primary residency and presence rules, the user would naturally want to confirm the specific rule for the FEIE, which is a key part of their US tax strategy.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Day-Counting Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the tax benefits of Portugal's NHR scheme and what is the deadline to register for it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "NHR Scheme Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is my NHR application process number and submission confirmation status?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After reviewing the NHR benefits and deadline, the user may reasonably want to verify the identifying details and submission confirmation for their own application.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "NHR Application Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which entity invoices my main US client, and how is that income treated for Portuguese tax purposes under NHR?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Income & Corporate Structure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are the 2024 tax return filing deadlines for Portugal and for me as a US expat?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F29"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Discussing how income is structured and taxed naturally leads to the question of when the corresponding tax returns must be filed.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Tax Filing Deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What system am I currently using to track my physical presence days, and which thresholds is it set to alert me about?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After clarifying the key day-counting rules, a detail-oriented user would naturally want to confirm the system they use to track those thresholds.",
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Travel & Day Tracking",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How many days will my planned business trip to New York from June 3 to June 10, 2024, count towards my US presence total?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After confirming the tool used for tracking days, the user would apply that context to a specific, known travel plan to see its impact.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Travel & Day Tracking",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the address of my leased apartment in Lisbon and what is the official registration number for that rental contract with the tax authority?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F31"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Local Residency Proof",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is my lead tax advisor and when is my next scheduled quarterly tax planning call?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Advisor Contact",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Day-Counting Rules",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "NHR Scheme Details",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "NHR Application Status",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Income & Corporate Structure",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Tax Filing Deadlines",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Travel & Day Tracking",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Local Residency Proof",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Advisor Contact",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "relocate_tax_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

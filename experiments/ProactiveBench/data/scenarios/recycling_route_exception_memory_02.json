@@ -1,0 +1,502 @@
+{
+  "scenario_id": "recycling_route_exception_memory_02",
+  "domain": "waste_recycling_operations",
+  "description": "A collection route has many small exceptions such as blocked access points, special pickups, recurring skip instructions, and unusual container locations that crews keep forgetting. All routes and customer names are fictional.",
+  "user_profile": {
+    "persona": "42-year-old route supervisor managing a route with many nonstandard stops",
+    "context": "The core route is stable, but the small exceptions are frequent enough to cause repeated service problems when forgotten",
+    "communication_style": "Exception-focused and concise, wants route quirks documented in a reusable operational format"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Route_Identification",
+      "fact": "The official designation for this route is BR-07 (Blue Ridge 07)."
+    },
+    {
+      "id": "F02",
+      "category": "Route_Identification",
+      "fact": "The primary assigned driver for route BR-07 is Jenna Carter."
+    },
+    {
+      "id": "F03",
+      "category": "Route_Identification",
+      "fact": "The standard departure time for route BR-07 from the Apex Waste Solutions yard is 05:00 AM."
+    },
+    {
+      "id": "F04",
+      "category": "Access_Issues",
+      "fact": "The security gate code for Evergreen Gardens at 1500 Blossom Lane is #4815."
+    },
+    {
+      "id": "F05",
+      "category": "Access_Issues",
+      "fact": "The rear gate at Pinnacle Manufacturing, 1 Industrial Way, is only open for service between 7:00 AM and 9:00 AM."
+    },
+    {
+      "id": "F06",
+      "category": "Access_Issues",
+      "fact": "The service alley behind Starlight Cafe on 210 Main Street is consistently blocked by brewery delivery trucks on Tuesdays before 8:00 AM."
+    },
+    {
+      "id": "F07",
+      "category": "Access_Issues",
+      "fact": "Oakwood Senior Living at 300 Tranquility Path requires key fob #A992 to open the service entrance gate."
+    },
+    {
+      "id": "F08",
+      "category": "Access_Issues",
+      "fact": "The alley for The Gilded Spoon Restaurant is one-way eastbound; vehicle must enter from Elm Street."
+    },
+    {
+      "id": "F09",
+      "category": "Access_Issues",
+      "fact": "The residential stop at 1120 Maple Avenue has a low-hanging communication cable over the driveway, requiring a spotter for clearance."
+    },
+    {
+      "id": "F10",
+      "category": "Container_Placement",
+      "fact": "Starlight Cafe's cardboard recycling bin is located behind the adjacent bakery, 'Sweet Dreams Patisserie'."
+    },
+    {
+      "id": "F11",
+      "category": "Container_Placement",
+      "fact": "The 30-yard scrap metal open-top container for Pinnacle Manufacturing is located on the north side of Building C."
+    },
+    {
+      "id": "F12",
+      "category": "Container_Placement",
+      "fact": "The main trash dumpster for Westside Medical Clinic is secured behind a locked wooden fence; the key is attached to gate fob #A992."
+    },
+    {
+      "id": "F13",
+      "category": "Container_Placement",
+      "fact": "The Gilded Spoon's general waste dumpster is shared with 'Elm Street Books' and is often moved to the opposite side of the alley."
+    },
+    {
+      "id": "F14",
+      "category": "Container_Placement",
+      "fact": "The residential recycling cart for 1120 Maple Avenue is kept inside the garage; the homeowner leaves the garage door open on service days."
+    },
+    {
+      "id": "F15",
+      "category": "Special_Pickup_Instructions",
+      "fact": "Westside Medical Clinic requires a special collection of two red 32-gallon biohazard bins every Friday."
+    },
+    {
+      "id": "F16",
+      "category": "Special_Pickup_Instructions",
+      "fact": "Pinnacle Manufacturing's cardboard must be baled before pickup; this stop requires rear-loader truck #21B."
+    },
+    {
+      "id": "F17",
+      "category": "Special_Pickup_Instructions",
+      "fact": "Evergreen Gardens receives green waste collection on the 1st and 3rd Monday of each month only."
+    },
+    {
+      "id": "F18",
+      "category": "Special_Pickup_Instructions",
+      "fact": "The 50-gallon used cooking oil drum at Starlight Cafe must be visually checked for its fill level each week, even if not scheduled for emptying."
+    },
+    {
+      "id": "F19",
+      "category": "Special_Pickup_Instructions",
+      "fact": "The Gilded Spoon's glass recycling bin is located just inside the kitchen's back door and requires the driver to enter the building to retrieve it."
+    },
+    {
+      "id": "F20",
+      "category": "Special_Pickup_Instructions",
+      "fact": "Oakwood Senior Living has three separate dumpster locations on its property that must all be serviced each visit."
+    },
+    {
+      "id": "F21",
+      "category": "Special_Pickup_Instructions",
+      "fact": "A scheduled bulk item pickup (one sofa) is noted for 945 Pine Street on June 15th, 2024."
+    },
+    {
+      "id": "F22",
+      "category": "Skip_Instructions",
+      "fact": "Skip all service for 'Vacation Homes Inc' at 400 Lakeview Drive between November 1st and April 15th annually due to seasonal closure."
+    },
+    {
+      "id": "F23",
+      "category": "Skip_Instructions",
+      "fact": "If the grease trap at Starlight Cafe is observed to be overflowing, do not service the dumpster and report immediately via the RouteOptix app with a photo."
+    },
+    {
+      "id": "F24",
+      "category": "Skip_Instructions",
+      "fact": "The roll-off container at 818 Cedar Lane is on a 'call-in only' basis; do not service unless it appears on the daily manifest."
+    },
+    {
+      "id": "F25",
+      "category": "Skip_Instructions",
+      "fact": "If the main gate at Pinnacle Manufacturing is still locked after 09:00 AM, skip the stop and log 'Late Access' code 5A in RouteOptix."
+    },
+    {
+      "id": "F26",
+      "category": "Customer_Communication",
+      "fact": "For gate issues at Evergreen Gardens, contact the property manager, Sarah Chen, at 555-0182."
+    },
+    {
+      "id": "F27",
+      "category": "Customer_Communication",
+      "fact": "The shipping manager at Pinnacle Manufacturing, Dave Holt, must be called at 555-0199 to confirm scrap metal pickups 24 hours in advance."
+    },
+    {
+      "id": "F28",
+      "category": "Customer_Communication",
+      "fact": "All service exceptions must be logged in the RouteOptix tablet software using the correct exception code before leaving the customer's location."
+    },
+    {
+      "id": "F29",
+      "category": "Customer_Communication",
+      "fact": "The direct cell number for route supervisor Marco Diaz for urgent escalations is 555-0100."
+    },
+    {
+      "id": "F30",
+      "category": "Customer_Communication",
+      "fact": "Urgent, non-emergency route issues and updates should be posted in the company's Slack channel #br-07-ops."
+    },
+    {
+      "id": "F31",
+      "category": "Vehicle_Equipment",
+      "fact": "Route BR-07 is assigned truck #14C, a front-loading vehicle with a 40 cubic yard capacity."
+    },
+    {
+      "id": "F32",
+      "category": "Vehicle_Equipment",
+      "fact": "On Fridays, the route requires a vehicle swap to rear-loader truck #21B to service the biohazard bins at Westside Medical Clinic."
+    },
+    {
+      "id": "F33",
+      "category": "Safety_Alerts",
+      "fact": "The service alley behind The Gilded Spoon has poor lighting; vehicle-mounted floodlights must be used for any service before 6:30 AM."
+    },
+    {
+      "id": "F34",
+      "category": "Safety_Alerts",
+      "fact": "Be aware of high pedestrian traffic from residents at Oakwood Senior Living, especially between 7:30 AM and 8:30 AM."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the official designation for this route and who is the primary driver?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Route Basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the standard vehicle assigned to route BR-07 and what is its scheduled departure time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F03"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the route, the next logical step is to confirm its standard operational details like vehicle and start time.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Route Basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the service time restrictions and the associated skip policy for Pinnacle Manufacturing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Pinnacle Manufacturing Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "For Pinnacle Manufacturing, where is the scrap metal container and what is the special handling requirement for their cardboard?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F16"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once access times for a major industrial client are established, the user will want to know the specific service requirements at that location.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Pinnacle Manufacturing Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Are there any stops that require a vehicle swap, like Westside Medical Clinic on Fridays?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F32"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After establishing the standard vehicle for the route, the supervisor's next concern would be any exceptions that require a different truck.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Vehicle Exceptions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the known access problem on Tuesdays for the Starlight Cafe?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Starlight Cafe Quirks",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Where is the cardboard recycling bin for Starlight Cafe actually located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "After learning about an access issue for a customer, the user would want to clarify other potential points of confusion, like non-standard container placement.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Starlight Cafe Quirks",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What are the specific instructions for the cooking oil drum and grease trap at Starlight Cafe?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discussing a special material handling requirement (baling cardboard at Pinnacle) would prompt the supervisor to ask about other special handling instructions on the route.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Starlight Cafe Quirks",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "What is the required entry direction for The Gilded Spoon's alley and the procedure for their glass recycling?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F19"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Discussing a recurring alley blockage at one downtown cafe (Starlight) makes it highly likely the supervisor will inquire about access rules for another nearby cafe with a tricky alley.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Gilded Spoon Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Is there a safety protocol for early morning service at The Gilded Spoon?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After confirming the complex access procedure for The Gilded Spoon, the supervisor would naturally follow up on any associated safety requirements for that specific stop.",
+      "turn_order": 10,
+      "reveal_group": "G5a",
+      "reveal_group_label": "Gilded Spoon Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the gate code for Evergreen Gardens and who is the property manager to contact for issues?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Gated Community Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is required to open the gate at Oakwood Senior Living and what is the main safety concern there?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F34"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After discussing access for one gated property, the supervisor will likely review the procedures for other secured locations on the route.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Gated Community Access",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "How many separate dumpster locations must be serviced during each visit to Oakwood Senior Living?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: Once access and safety for Oakwood Senior Living are understood, the immediate next operational question is about the scope of work required at the site.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Oakwood Service Scope",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the specific hazard and required procedure for the residential stop at 1120 Maple Avenue?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After reviewing the service scope and safety considerations for Oakwood Senior Living, a direct follow-up is another residential stop with a specific site hazard that requires a defined procedure.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Residential Hazards",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What is the annual seasonal skip instruction for Vacation Homes Inc?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Standing Skip Instructions",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Route Basics",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Pinnacle Manufacturing Details",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Vehicle Exceptions",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Starlight Cafe Quirks",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Gilded Spoon Access",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G5a",
+      "label": "Gilded Spoon Safety",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G6",
+      "label": "Gated Community Access",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Oakwood Service Scope",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Residential Hazards",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G5a"
+    },
+    {
+      "group_id": "G9",
+      "label": "Standing Skip Instructions",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "recycling_route_exception_memory_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

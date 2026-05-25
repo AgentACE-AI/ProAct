@@ -1,0 +1,402 @@
+{
+  "scenario_id": "team_equipment_assignment_02",
+  "domain": "sports_team_operations",
+  "description": "A team manager must keep track of which athletes are using which specialized gear, what was recently adjusted, and which items still need fitting, repair, or return before the next competition. All team names are fictional.",
+  "user_profile": {
+    "persona": "33-year-old equipment manager supporting a multi-athlete training program",
+    "context": "Several last-minute equipment swaps created confusion about who is currently assigned what",
+    "communication_style": "Orderly and inventory-minded, prefers athlete-to-gear mappings over broad summaries"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Athlete Gear Assignment",
+      "fact": "Athlete Lena Koval is currently assigned the Kinetic-Core Helmet with serial number KC-881-A."
+    },
+    {
+      "id": "F02",
+      "category": "Athlete Gear Assignment",
+      "fact": "Marcus Thorne is assigned the Aero-Flex Cleats, model AFX-9, size 11, serial number AF-450-L."
+    },
+    {
+      "id": "F03",
+      "category": "Athlete Gear Assignment",
+      "fact": "Anya Sharma is using the Hydro-V Goggles, serial number HVG-211-C, fitted with a polarized lens."
+    },
+    {
+      "id": "F04",
+      "category": "Athlete Gear Assignment",
+      "fact": "Kenji Tanaka has been issued the Impact-Guard Shin Pads, size Medium, serial number IG-734-M."
+    },
+    {
+      "id": "F05",
+      "category": "Athlete Gear Assignment",
+      "fact": "Javier Rios is assigned the Aero-Flex Cleats, model AFX-9, size 10.5, serial number AF-452-R."
+    },
+    {
+      "id": "F06",
+      "category": "Equipment Status",
+      "fact": "The Kinetic-Core Helmet with serial number KC-903-B is in the repair locker (Locker #7) due to a cracked visor."
+    },
+    {
+      "id": "F07",
+      "category": "Equipment Status",
+      "fact": "Anya Sharma's backup Hydro-V Goggles (Serial: HVG-212-D) are marked with the status 'Fitting Pending'."
+    },
+    {
+      "id": "F08",
+      "category": "Equipment Status",
+      "fact": "The Impact-Guard Shin Pads (Serial: IG-735-N) are flagged for 'Return to Manufacturer' due to a defective strap discovered on 2024-10-24."
+    },
+    {
+      "id": "F09",
+      "category": "Equipment Status",
+      "fact": "Four pairs of new Aero-Flex Cleats, model AFX-10, arrived on 2024-10-26 and are awaiting inventory tagging in Bin C-4."
+    },
+    {
+      "id": "F10",
+      "category": "Equipment Status",
+      "fact": "The primary gear tracking system is the 'GearTrack Pro' software, accessible at https://summitstriders.geartrackpro.com."
+    },
+    {
+      "id": "F11",
+      "category": "Recent Adjustments",
+      "fact": "On 2024-10-25, the internal padding in Lena Koval's helmet (KC-881-A) was increased by 2mm on the left temporal side."
+    },
+    {
+      "id": "F12",
+      "category": "Recent Adjustments",
+      "fact": "The lacing system on Marcus Thorne's cleats (AF-450-L) was replaced with a high-tension variant by technician Jia Li on 2024-10-26."
+    },
+    {
+      "id": "F13",
+      "category": "Recent Adjustments",
+      "fact": "The nose bridge on Anya Sharma's primary goggles (HVG-211-C) was swapped for the narrow-fit model on 2024-10-25."
+    },
+    {
+      "id": "F14",
+      "category": "Recent Adjustments",
+      "fact": "Kenji Tanaka's shin pads (IG-734-M) had their elastic straps shortened by 3cm for a tighter fit on 2024-10-24."
+    },
+    {
+      "id": "F15",
+      "category": "Recent Adjustments",
+      "fact": "Javier Rios reported a pressure point on his right cleat (AF-452-R) on 2024-10-26; an adjustment is scheduled but not yet completed."
+    },
+    {
+      "id": "F16",
+      "category": "Return/Repair Logistics",
+      "fact": "The repair request for helmet KC-903-B was submitted to 'Apex Gear Co.' under ticket number #R-58921."
+    },
+    {
+      "id": "F17",
+      "category": "Return/Repair Logistics",
+      "fact": "The defective shin pads (IG-735-N) must be shipped back to the manufacturer using Return Merchandise Authorization (RMA) number 884-G-2024."
+    },
+    {
+      "id": "F18",
+      "category": "Return/Repair Logistics",
+      "fact": "The courier for equipment repairs, 'RapidLogistics', picks up items every Friday at 2:00 PM from the south loading dock."
+    },
+    {
+      "id": "F19",
+      "category": "Return/Repair Logistics",
+      "fact": "The contact person for warranty claims at Apex Gear Co. is David Chen, reachable at d.chen@apexgear.co."
+    },
+    {
+      "id": "F20",
+      "category": "Return/Repair Logistics",
+      "fact": "All equipment sent for repair must have a completed Form 7B (Equipment Outgoing Log) attached to the exterior of the packaging."
+    },
+    {
+      "id": "F21",
+      "category": "Upcoming Deadlines",
+      "fact": "The final equipment check and lockdown for the Alpine Invitational is on 2024-10-28 at 5:00 PM."
+    },
+    {
+      "id": "F22",
+      "category": "Upcoming Deadlines",
+      "fact": "Anya Sharma's pending goggle fitting (for HVG-212-D) is scheduled for 2024-10-27 at 11:00 AM with equipment manager Alex Ray."
+    },
+    {
+      "id": "F23",
+      "category": "Upcoming Deadlines",
+      "fact": "The deadline to submit any new equipment requests for the next quarter is November 15, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "Upcoming Deadlines",
+      "fact": "A mandatory equipment inspection for all competing athletes is scheduled for 2024-10-27 from 9:00 AM to 12:00 PM."
+    },
+    {
+      "id": "F25",
+      "category": "Upcoming Deadlines",
+      "fact": "The return shipment for the defective shin pads (IG-735-N) must be sent out by 2024-10-28 to meet the warranty claim window."
+    },
+    {
+      "id": "F26",
+      "category": "Inventory Details",
+      "fact": "The Summit Striders team has a total of 8 Kinetic-Core Helmets in its active inventory."
+    },
+    {
+      "id": "F27",
+      "category": "Inventory Details",
+      "fact": "There are 3 pairs of size 11 Aero-Flex Cleats (model AFX-9) in unassigned stock."
+    },
+    {
+      "id": "F28",
+      "category": "Inventory Details",
+      "fact": "Replacement visors for the Kinetic-Core Helmets are stored in the equipment room at inventory location B-2-5."
+    },
+    {
+      "id": "F29",
+      "category": "Inventory Details",
+      "fact": "The equipment room's climate control system is set to maintain a constant temperature of 18°C to preserve material integrity."
+    },
+    {
+      "id": "F30",
+      "category": "Inventory Details",
+      "fact": "The last full inventory audit was completed on September 30, 2024, by Alex Ray and resulted in a 99.2% accuracy rating."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is Lena Koval's currently assigned helmet and what was the most recent adjustment made to it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Specific Athlete Gear Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the recent adjustment made to Marcus Thorne's cleats and who performed it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Specific Athlete Gear Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Which piece of equipment for Anya Sharma is marked as 'Fitting Pending'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Actionable Items: Fittings",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "When is Anya Sharma's pending goggle fitting scheduled and who is it with?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Discovering an item needs fitting logically leads to asking about the appointment details for that fitting.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Fitting Schedule Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which helmet is in the repair locker and what is its associated repair ticket number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Actionable Items: Repairs & Returns",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which item is flagged for return to the manufacturer and what is its RMA number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: While reviewing items out for repair, it's natural to also inquire about items that need to be returned.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Actionable Items: Repairs & Returns",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the pickup schedule and location for the equipment repair courier?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying an item for repair, the manager needs to know the logistics for sending it out.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Repair Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the shipping deadline for the defective shin pads to meet the warranty claim?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Identifying an item for return naturally leads to a question about the deadline for that return.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Return Deadline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the date and time for the final equipment check and lockdown for the Alpine Invitational?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Competition Deadlines",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When is the mandatory equipment inspection for all competing athletes scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: Discussing the final equipment lockdown deadline makes the related mandatory inspection schedule a relevant and immediate follow-up.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Competition Deadlines",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "How many new Aero-Flex Cleats, model AFX-10, have arrived and where are they being stored?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "New Inventory Status",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Specific Athlete Gear Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Actionable Items: Fittings",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Fitting Schedule Details",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Actionable Items: Repairs & Returns",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Repair Logistics",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Return Deadline",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Competition Deadlines",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "New Inventory Status",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "team_equipment_assignment_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

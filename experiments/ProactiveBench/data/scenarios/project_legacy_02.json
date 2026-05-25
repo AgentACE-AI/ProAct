@@ -1,0 +1,375 @@
+{
+  "scenario_id": "project_legacy_02",
+  "domain": "project_kickoff",
+  "description": "A senior engineer takes over a legacy project near its delivery deadline with no documentation.",
+  "user_profile": {
+    "persona": "30-year-old senior engineer",
+    "context": "Assigned to rescue an undocumented urgent project",
+    "communication_style": "Thorough investigator"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "team",
+      "fact": "Alex Chen's official start date on Project Starlight was October 23, 2023."
+    },
+    {
+      "id": "F02",
+      "category": "team",
+      "fact": "The Project Manager for Project Starlight is Maria Garcia, reachable at m.garcia@innovatech.com."
+    },
+    {
+      "id": "F03",
+      "category": "team",
+      "fact": "The previous lead developer, Sam Jones, resigned from Innovatech Solutions on October 20, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "team",
+      "fact": "The primary DevOps contact for deployment issues is Kenji Tanaka, available in the #devops-support Slack channel."
+    },
+    {
+      "id": "F05",
+      "category": "team",
+      "fact": "Priya Sharma is the QA Lead; her test plans for Project Starlight are located in a Google Doc titled \"STAR-QA-Plan-v0.1\", which is currently empty."
+    },
+    {
+      "id": "F06",
+      "category": "process",
+      "fact": "The delivery deadline for Project Starlight version 2.0 is November 15, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "process",
+      "fact": "The daily stand-up meeting for Project Starlight is scheduled for 9:15 AM EST via Google Meet link `meet.google.com/xyz-abcd-efg`."
+    },
+    {
+      "id": "F08",
+      "category": "process",
+      "fact": "All project-related tasks are tracked in Jira under the project key \"STAR\"."
+    },
+    {
+      "id": "F09",
+      "category": "process",
+      "fact": "The last approved pull request, PR #78, was merged on October 19, 2023, with no description."
+    },
+    {
+      "id": "F10",
+      "category": "process",
+      "fact": "There is no formal code review process currently enforced for the `main` branch."
+    },
+    {
+      "id": "F11",
+      "category": "codebase",
+      "fact": "The Git repository for Project Starlight is located at `git@git.innovatech-internal.com:legacy/starlight.git`."
+    },
+    {
+      "id": "F12",
+      "category": "codebase",
+      "fact": "The primary backend service is written in Python 3.8."
+    },
+    {
+      "id": "F13",
+      "category": "codebase",
+      "fact": "The frontend application is built using React version 17.0.2."
+    },
+    {
+      "id": "F14",
+      "category": "codebase",
+      "fact": "The main backend dependency file, `requirements.txt`, lists 112 packages, 45 of which are pinned to specific versions."
+    },
+    {
+      "id": "F15",
+      "category": "codebase",
+      "fact": "The application's test coverage, as reported by the last CI build, is 11%."
+    },
+    {
+      "id": "F16",
+      "category": "codebase",
+      "fact": "The API key for the \"GeoLocate\" third-party service is hardcoded in the file `src/utils/api_helpers.py` on line 42."
+    },
+    {
+      "id": "F17",
+      "category": "codebase",
+      "fact": "The `main` branch is currently 34 commits ahead of the `staging` branch."
+    },
+    {
+      "id": "F18",
+      "category": "infra",
+      "fact": "The staging environment server is accessible via SSH at `192.168.1.101`."
+    },
+    {
+      "id": "F19",
+      "category": "infra",
+      "fact": "The production database is a PostgreSQL 12.4 instance named `starlight_prod_db`."
+    },
+    {
+      "id": "F20",
+      "category": "infra",
+      "fact": "The staging database password is set to 'password123'."
+    },
+    {
+      "id": "F21",
+      "category": "infra",
+      "fact": "The application is deployed using Docker, with the `Dockerfile` located in the repository root."
+    },
+    {
+      "id": "F22",
+      "category": "infra",
+      "fact": "The production server's root volume has 92% disk space utilization as of October 23, 2023."
+    },
+    {
+      "id": "F23",
+      "category": "tooling",
+      "fact": "The project's CI/CD pipeline is managed by a Jenkins server at `http://jenkins.innovatech-internal.com:8080/job/Starlight-Deploy`."
+    },
+    {
+      "id": "F24",
+      "category": "tooling",
+      "fact": "The Jenkins build job named \"Starlight-Deploy\" has failed for the last 7 consecutive runs."
+    },
+    {
+      "id": "F25",
+      "category": "tooling",
+      "fact": "The primary build script is a shell script named `build_and_deploy.sh`."
+    },
+    {
+      "id": "F26",
+      "category": "docs",
+      "fact": "The Confluence space designated for Project Starlight, URL `https://wiki.innovatech-internal.com/display/STAR`, contains only the default \"Welcome\" page."
+    },
+    {
+      "id": "F27",
+      "category": "docs",
+      "fact": "There are no API documentation files (e.g., Swagger, OpenAPI) found in the codebase."
+    },
+    {
+      "id": "F28",
+      "category": "team",
+      "fact": "Alex Chen's assigned workstation is desk number 4B-17 on the 4th floor."
+    },
+    {
+      "id": "F29",
+      "category": "process",
+      "fact": "The project's last client-facing demo was on September 1, 2023, and received a \"requires major improvements\" rating."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who is the Project Manager for Project Starlight and what is the final delivery deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Basics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Where are project tasks tracked and what time is the daily stand-up meeting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F07"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the project manager and deadline, the user will naturally ask about the day-to-day process for tracking work and team synchronization.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Basics",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where is the Git repository for the project located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Codebase Access & Stack",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What programming language is the backend service written in and what framework is the frontend built with?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once the user has the location of the code repository, the immediate next step is to understand the core technologies it uses.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Codebase Access & Stack",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Where is the project's CI/CD pipeline managed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After identifying the tech stack (G2), a senior engineer's next logical concern is understanding how that code is built and deployed, leading to questions about the CI/CD system (G3).",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "CI/CD System",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the current status of the 'Starlight-Deploy' Jenkins job?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning where the CI/CD pipeline is managed (G3), the user will immediately want to know if it's currently working, prompting a question about the build job's status (G4).",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Deployment Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the application's current test coverage?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Code Quality",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Is there an enforced code review process for the main branch?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After inquiring about one aspect of code quality (test coverage), it's natural to ask about another related aspect like the code review process.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Code Quality",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How do I access the staging environment server for debugging the deployment issue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After seeing that the deployment job is failing repeatedly, a natural next step is to access the staging environment to investigate the issue.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Environment Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the current root-volume disk utilization on the production server?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After seeing repeated deployment failures, a reasonable follow-up is to check whether there are obvious infrastructure health risks elsewhere in the environment, such as high disk utilization.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Production Health",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Basics",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Codebase Access & Stack",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "CI/CD System",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Deployment Status",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Code Quality",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Environment Access",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Production Health",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "project_legacy_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

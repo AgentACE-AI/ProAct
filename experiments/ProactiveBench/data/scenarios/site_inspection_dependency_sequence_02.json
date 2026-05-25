@@ -1,0 +1,450 @@
+{
+  "scenario_id": "site_inspection_dependency_sequence_02",
+  "domain": "construction_site_coordination",
+  "description": "A coordinator must remember which installations, photos, sign-offs, and documents must be completed before specific inspections can legally proceed on site.",
+  "user_profile": {
+    "persona": "37-year-old project engineer managing inspection readiness",
+    "context": "The required sequence is easy to scramble once multiple teams are working in parallel",
+    "communication_style": "Sequence-focused and compliance-aware, wants dependency order made explicit"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "inspections",
+      "fact": "The 'Rough-in Electrical Inspection' for Level 14 of the Apex Tower project is scheduled for October 28, 2024."
+    },
+    {
+      "id": "F02",
+      "category": "inspections",
+      "fact": "The internal tracking code for the Level 14 Rough-in Electrical Inspection is 'ELEC-R14-01'."
+    },
+    {
+      "id": "F03",
+      "category": "prerequisites",
+      "fact": "All low-voltage conduit on Level 14 must be secured every 3 feet with approved J-hooks before the ELEC-R14-01 inspection can be called."
+    },
+    {
+      "id": "F04",
+      "category": "prerequisites",
+      "fact": "A photographic log of all in-wall junction boxes on Level 14 must be uploaded to the BuildRight Pro system under folder 'ELEC-R14-01 Photos'."
+    },
+    {
+      "id": "F05",
+      "category": "documentation",
+      "fact": "The 'Form 12B - Electrical Conduit Layout' for Level 14 requires a physical signature from Marcus Thorne, the Site Superintendent."
+    },
+    {
+      "id": "F06",
+      "category": "personnel",
+      "fact": "Site Superintendent Marcus Thorne's office is in Site Trailer A, and his direct line is 555-0182."
+    },
+    {
+      "id": "F07",
+      "category": "personnel",
+      "fact": "Jenna Rios is the Project Engineer responsible for compiling the complete inspection readiness package for ELEC-R14-01."
+    },
+    {
+      "id": "F08",
+      "category": "systems_and_tools",
+      "fact": "The official document management system for the Apex Tower project is BuildRight Pro, accessible at https://keystone.buildrightpro.com."
+    },
+    {
+      "id": "F09",
+      "category": "documentation",
+      "fact": "The sign-off from Volt Electric's foreman, Sam Chen, must be captured on the 'Subcontractor Completion Form SF-04' within BuildRight Pro."
+    },
+    {
+      "id": "F10",
+      "category": "inspections",
+      "fact": "The 'Slab-on-Grade Concrete Pour Inspection' for the East Wing foundation is coded 'CONC-SG-E-01'."
+    },
+    {
+      "id": "F11",
+      "category": "prerequisites",
+      "fact": "For inspection CONC-SG-E-01, all under-slab plumbing sleeves must be installed and successfully pressure-tested to 60 PSI for 15 minutes."
+    },
+    {
+      "id": "F12",
+      "category": "documentation",
+      "fact": "Pressure test results for under-slab plumbing must be documented on 'AquaFlow Plumbing Form PT-11' and uploaded to BuildRight Pro."
+    },
+    {
+      "id": "F13",
+      "category": "prerequisites",
+      "fact": "Rebar placement for the East Wing slab must be photographed with a 12-inch ruler for scale every 10 square meters."
+    },
+    {
+      "id": "F14",
+      "category": "personnel",
+      "fact": "The designated city inspector for all electrical inspections on the Apex Tower project is Frank Miller."
+    },
+    {
+      "id": "F15",
+      "category": "compliance",
+      "fact": "All photographic evidence submitted for inspections must be geo-tagged and timestamped using the 'SiteCam' mobile application, version 2.5."
+    },
+    {
+      "id": "F16",
+      "category": "systems_and_tools",
+      "fact": "Daily coordination updates from all trades are posted by 7:00 AM in the '#apex-tower-daily' channel on Slack."
+    },
+    {
+      "id": "F17",
+      "category": "locations",
+      "fact": "The staging area for the CONC-SG-E-01 concrete pour is located at the site's south gate, Zone S-4."
+    },
+    {
+      "id": "F18",
+      "category": "inspections",
+      "fact": "The 'Fire-stopping Penetration Inspection' for the Level 12 service core is coded 'FIRE-P12-01'."
+    },
+    {
+      "id": "F19",
+      "category": "prerequisites",
+      "fact": "Before inspection FIRE-P12-01, all penetrations through fire-rated walls must be sealed with Hilti FS-ONE MAX sealant."
+    },
+    {
+      "id": "F20",
+      "category": "documentation",
+      "fact": "A 'Penetration Log' detailing the location, size, and sealant used for each opening on Level 12 must be submitted 48 hours prior to inspection FIRE-P12-01."
+    },
+    {
+      "id": "F21",
+      "category": "compliance",
+      "fact": "The 'Penetration Log' must cross-reference UL system number 'W-L-3135' for all 4-inch sleeved PVC pipe penetrations."
+    },
+    {
+      "id": "F22",
+      "category": "personnel",
+      "fact": "The on-site lead for AquaFlow Plumbing is Maria Garcia, and her mobile number is 555-0199."
+    },
+    {
+      "id": "F23",
+      "category": "documentation",
+      "fact": "Material Safety Data Sheets (MSDS) for the Hilti FS-ONE MAX sealant must be included in the FIRE-P12-01 documentation package under Tab 4."
+    },
+    {
+      "id": "F24",
+      "category": "systems_and_tools",
+      "fact": "The master inspection schedule is maintained as a Gantt chart in ProCore Project Management Suite, under project ID 'APEX-TWR-2023'."
+    },
+    {
+      "id": "F25",
+      "category": "prerequisites",
+      "fact": "For the ELEC-R14-01 inspection, a continuity test must be performed on all installed ground wires, with results logged on Form EC-08."
+    },
+    {
+      "id": "F26",
+      "category": "locations",
+      "fact": "The primary document review station for visiting inspectors is located at Workstation #4 in Site Trailer B."
+    },
+    {
+      "id": "F27",
+      "category": "compliance",
+      "fact": "Any deviation from the approved electrical plans requires a 'Request for Information' (RFI) form to be submitted and approved before work is concealed."
+    },
+    {
+      "id": "F28",
+      "category": "personnel",
+      "fact": "Sam Chen, the Volt Electric foreman, is responsible for submitting the final 'As-Built' electrical drawings for Level 14 within 5 days of passing inspection."
+    },
+    {
+      "id": "F29",
+      "category": "prerequisites",
+      "fact": "The final step before requesting inspection ELEC-R14-01 is for Jenna Rios to complete the 'Internal Readiness Checklist IR-ELEC-01' in BuildRight Pro."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the scheduled date for the 'Rough-in Electrical Inspection' on Level 14 of the Apex Tower project?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Inspection Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the internal tracking code for the Level 14 Rough-in Electrical Inspection?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up: After getting the inspection's name and date, asking for its system identifier is a common next step for tracking.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Inspection Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Before ELEC-R14-01 can be called, what conduit installation rule and ground-wire continuity test must be completed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the inspection is identified, the most critical user need is to understand the required physical work on site.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Physical Prerequisites",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What photographic evidence is required for the ELEC-R14-01 inspection?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After understanding the physical work, the user's next logical concern is the documentation of that work, starting with photos.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Photographic Evidence",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Which mobile app must be used for inspection photos, and what two metadata requirements must each photo include?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group follow-up: Knowing that photos are required, a compliance-aware user will immediately want to know the specific rules for taking them.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Photographic Evidence",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Which form captures the site superintendent sign-off, and which form captures the Volt Electric foreman sign-off for ELEC-R14-01?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F09"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After covering photo documentation, the user will proceed to the next type of documentation: formal sign-off forms.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Formal Documentation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who needs to sign Form 12B, and what is their contact information and location?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group follow-up: The user was just told about Form 12B and will need to know who is responsible for signing it and how to find them.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Formal Documentation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "After the sign-offs are gathered, where in BuildRight Pro do I upload the photo log for the in-wall junction boxes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F08"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After clarifying the final sign-off contact, a direct next step is where the required photo log must be uploaded in the official document system.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "System and Submission",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the final step I must complete myself before requesting inspection ELEC-R14-01?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After learning about all the prerequisite tasks and submissions, the user will want to know the final trigger action they are responsible for.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Final Readiness Step",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Once ELEC-R14-01 is ready to request, which city inspector is assigned to the project's electrical inspections?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "External Stakeholders",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "If work must deviate from the approved electrical plans, what form has to be submitted and approved before the work is concealed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Compliance and Post-Inspection",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "After the inspection passes, who is responsible for submitting the As-Built electrical drawings and what is the deadline?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After confirming the final readiness step before requesting ELEC-R14-01, a direct follow-up is what post-pass documentation will still need to be submitted and by whom.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Compliance and Post-Inspection",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "In which system can I find the master inspection schedule for the entire Apex Tower project?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "General Project Tools",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Besides the master inspection schedule, where are the daily coordination updates from all trades posted each morning?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "General Project Tools",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Inspection Details",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Physical Prerequisites",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Photographic Evidence",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Formal Documentation",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "System and Submission",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Final Readiness Step",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "External Stakeholders",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Compliance and Post-Inspection",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "General Project Tools",
+      "member_need_ids": [
+        "N13",
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "site_inspection_dependency_sequence_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

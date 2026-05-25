@@ -1,0 +1,435 @@
+{
+  "scenario_id": "rent_shared_house_rules_04",
+  "domain": "apartment_renting",
+  "description": "Three roommates with different work schedules keep renegotiating quiet hours, cleaning duties, overnight guests, and shared expenses. They need a stable household system that everyone can actually remember and follow.",
+  "user_profile": {
+    "persona": "28-year-old designer acting as the unofficial house coordinator",
+    "context": "Small annoyances are accumulating because old agreements were verbal and inconsistently remembered",
+    "communication_style": "Collaborative but tired of repeating the same conversations"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Residents & Contact",
+      "fact": "The residents of apartment 4B at 123 Maple Lane are Liam Chen, Maya Singh, and Chloe Davis."
+    },
+    {
+      "id": "F02",
+      "category": "Residents & Contact",
+      "fact": "Liam Chen's mobile number for house-related emergencies is 555-0101."
+    },
+    {
+      "id": "F03",
+      "category": "Residents & Contact",
+      "fact": "Maya Singh works a night shift as a nurse from 10:00 PM to 6:00 AM, Wednesday through Sunday."
+    },
+    {
+      "id": "F04",
+      "category": "Residents & Contact",
+      "fact": "Chloe Davis works an early morning shift as a baker from 4:00 AM to 12:00 PM, Tuesday through Saturday."
+    },
+    {
+      "id": "F05",
+      "category": "Lease & Rent",
+      "fact": "The total monthly rent for apartment 4B is $3,300, payable to 'Evergreen Properties'."
+    },
+    {
+      "id": "F06",
+      "category": "Lease & Rent",
+      "fact": "Rent is due on the 1st of each month via the Evergreen Properties online portal."
+    },
+    {
+      "id": "F07",
+      "category": "Lease & Rent",
+      "fact": "Liam Chen's share of the rent is $1,200 for the master bedroom with an en-suite bathroom."
+    },
+    {
+      "id": "F08",
+      "category": "Lease & Rent",
+      "fact": "Maya Singh's and Chloe Davis's share of the rent is $1,050 each for their respective standard bedrooms."
+    },
+    {
+      "id": "F09",
+      "category": "Shared Expenses",
+      "fact": "The 'Harmony Creek Power' electricity bill is under Chloe Davis's name and is split equally three ways."
+    },
+    {
+      "id": "F10",
+      "category": "Shared Expenses",
+      "fact": "The 'ConnectFast Fiber' internet bill is $75 per month and is under Liam Chen's name."
+    },
+    {
+      "id": "F11",
+      "category": "Shared Expenses",
+      "fact": "Maya and Chloe each Venmo Liam $25 for their share of the internet bill by the 5th of each month."
+    },
+    {
+      "id": "F12",
+      "category": "Shared Expenses",
+      "fact": "A shared fund for household supplies (e.g., paper towels, dish soap) is maintained via a $20 contribution from each roommate on the 1st of the month to a jar in the kitchen."
+    },
+    {
+      "id": "F13",
+      "category": "Shared Expenses",
+      "fact": "Any single shared supply purchase exceeding $30 requires group approval in the 'Apt-Expenses' Slack channel."
+    },
+    {
+      "id": "F14",
+      "category": "Quiet Hours",
+      "fact": "General quiet hours for the apartment are from 10:00 PM to 8:00 AM on weeknights (Sunday-Thursday)."
+    },
+    {
+      "id": "F15",
+      "category": "Quiet Hours",
+      "fact": "Weekend quiet hours (Friday-Saturday) are from 12:00 AM (midnight) to 9:00 AM."
+    },
+    {
+      "id": "F16",
+      "category": "Quiet Hours",
+      "fact": "Special 'Daytime Quiet Hours' are in effect from 9:00 AM to 4:00 PM on weekdays to accommodate Maya Singh's sleep schedule."
+    },
+    {
+      "id": "F17",
+      "category": "Quiet Hours",
+      "fact": "Use of loud appliances like the vacuum cleaner or blender is restricted to between 9:00 AM and 9:00 PM daily."
+    },
+    {
+      "id": "F18",
+      "category": "Cleaning Schedule",
+      "fact": "The kitchen cleaning duty rotates weekly every Sunday at 6:00 PM, with the schedule posted on the refrigerator."
+    },
+    {
+      "id": "F19",
+      "category": "Cleaning Schedule",
+      "fact": "The person on kitchen duty is responsible for wiping all counters, cleaning the stovetop, and mopping the floor."
+    },
+    {
+      "id": "F20",
+      "category": "Cleaning Schedule",
+      "fact": "The shared bathroom is deep-cleaned every Saturday; Chloe and Maya alternate weeks."
+    },
+    {
+      "id": "F21",
+      "category": "Cleaning Schedule",
+      "fact": "Trash and recycling must be taken to the building's disposal area when the bins are more than 75% full."
+    },
+    {
+      "id": "F22",
+      "category": "Guest Policy",
+      "fact": "A 24-hour notice must be given in the '#guests' Slack channel for any overnight guests."
+    },
+    {
+      "id": "F23",
+      "category": "Guest Policy",
+      "fact": "An individual roommate may not have an overnight guest for more than three consecutive nights."
+    },
+    {
+      "id": "F24",
+      "category": "Guest Policy",
+      "fact": "The total number of nights any single guest can stay in the apartment per calendar month is seven."
+    },
+    {
+      "id": "F25",
+      "category": "Guest Policy",
+      "fact": "No more than one roommate may host an overnight guest on the same night without unanimous agreement from all three roommates."
+    },
+    {
+      "id": "F26",
+      "category": "Guest Policy",
+      "fact": "A maximum of four total guests (including roommates' guests) are allowed in the apartment at any one time, unless for a pre-approved event."
+    },
+    {
+      "id": "F27",
+      "category": "Shared Spaces",
+      "fact": "Dishes must be washed or placed in the dishwasher immediately after use; the dishwasher should be run when full."
+    },
+    {
+      "id": "F28",
+      "category": "Shared Spaces",
+      "fact": "The living room television volume must be kept below level 25 during Daytime Quiet Hours (9 AM - 4 PM weekdays)."
+    },
+    {
+      "id": "F29",
+      "category": "Shared Spaces",
+      "fact": "Personal items left in common areas (living room, kitchen) for more than 48 hours will be moved to the 'Lost & Found' basket."
+    },
+    {
+      "id": "F30",
+      "category": "Shared Spaces",
+      "fact": "The thermostat is to be set no lower than 72°F in the summer and no higher than 68°F in the winter."
+    },
+    {
+      "id": "F31",
+      "category": "Communication & Agreement",
+      "fact": "All official household rules are documented in a shared Google Doc titled 'Apt 4B Household Accord'."
+    },
+    {
+      "id": "F32",
+      "category": "Communication & Agreement",
+      "fact": "The 'Apt 4B Household Accord' was last updated on July 15, 2024, by Liam Chen."
+    },
+    {
+      "id": "F33",
+      "category": "Communication & Agreement",
+      "fact": "A mandatory 'State of the Apartment' meeting is scheduled for the first Sunday of each month at 7:00 PM."
+    },
+    {
+      "id": "F34",
+      "category": "Communication & Agreement",
+      "fact": "Any proposed changes to the agreement require a 2/3 majority vote during the monthly meeting to be adopted."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the total monthly rent for the apartment and what is the payment deadline and method?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Financial Obligations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How is the total rent split between Liam, Maya, and Chloe?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After confirming the total rent amount, the immediate next question is about the individual breakdown.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Financial Obligations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "How are the electricity and internet bills managed and split among the roommates?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Once rent is settled, the user's focus naturally shifts to other recurring shared expenses like utilities.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Financial Obligations",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What are the general quiet hours for weeknights and weekends?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Schedules & Quiet Hours",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Are there any special quiet hours during the day to accommodate Maya's night shift schedule?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After learning the general rules, the user needs to know about exceptions, especially given the scenario's mention of conflicting work schedules.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Schedules & Quiet Hours",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Are there specific times when we should avoid using loud appliances like the vacuum?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Discussing quiet hours for people naturally leads to a question about quiet hours for noisy household equipment to avoid disturbances.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Appliance Usage Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the schedule and scope of duties for cleaning the kitchen?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cleaning Responsibilities",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How is the cleaning for the shared bathroom handled?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After clarifying the kitchen cleaning rules, it's logical to inquire about the cleaning plan for other shared spaces like the bathroom.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Cleaning Responsibilities",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the rule for washing dishes after use?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After discussing the weekly deep cleaning schedule, the user would likely want to clarify the daily rule for a high-frequency task like washing dishes.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Daily Tidiness Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the required notice for having an overnight guest, and is there a limit on how many consecutive nights they can stay?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Guest Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the maximum number of total guests allowed in the apartment at any given time?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After discussing cleaning, the user might consider situations that create more mess, like parties, leading to a question about the maximum number of people allowed.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Guest Policy",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "Where is the official household agreement documented and what is the process for proposing changes to it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F34"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After discussing a complex and often contentious topic like the guest policy, the house coordinator would want to know how to formalize this and all other rules to prevent future arguments.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Formal Agreement Process",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Financial Obligations",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Schedules & Quiet Hours",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Appliance Usage Rules",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Cleaning Responsibilities",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Daily Tidiness Rules",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Guest Policy",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Formal Agreement Process",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "rent_shared_house_rules_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "scenario_id": "shelter_exposure_trace_05",
+  "domain": "animal_shelter_operations",
+  "description": "A shelter needs to reconstruct possible exposure chains after a contagious illness is identified in one section, including room moves, shared handling, quarantine timing, and staff contact patterns.",
+  "user_profile": {
+    "persona": "38-year-old shelter operations lead handling a potential outbreak response",
+    "context": "The illness was identified quickly, but tracing contact pathways is hard because movement and staffing records are spread across systems",
+    "communication_style": "Containment-oriented and timeline-focused, wants exposure chains traced with care rather than assumptions"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Illness_Identification",
+      "fact": "The contagious illness was identified as Feline Calicivirus (FCV) by Dr. Elena Vance on October 26, 2023."
+    },
+    {
+      "id": "F02",
+      "category": "Illness_Identification",
+      "fact": "The formal diagnosis for animal A4512 (Jasper) was logged into the ShelterPro Manager system at 11:15 AM on October 26, 2023."
+    },
+    {
+      "id": "F03",
+      "category": "Illness_Identification",
+      "fact": "Initial symptoms reported for Jasper (A4512) on October 25, 2023, were sneezing and mild ocular discharge."
+    },
+    {
+      "id": "F04",
+      "category": "Animal_Information",
+      "fact": "The index case is a 2-year-old male domestic shorthair cat named Jasper, with animal ID A4512."
+    },
+    {
+      "id": "F05",
+      "category": "Animal_Information",
+      "fact": "Jasper (A4512) was admitted to the Paws & Whiskers Sanctuary as a stray on October 15, 2023."
+    },
+    {
+      "id": "F06",
+      "category": "Animal_Information",
+      "fact": "A cat named Luna, ID A4520, was housed in Cat Condo B-12, which is directly adjacent to Jasper's former condo (B-11)."
+    },
+    {
+      "id": "F07",
+      "category": "Animal_Information",
+      "fact": "A cat named Milo, ID A4509, was in Intake Kennel C-04 on October 15, 2023, directly across the aisle from Jasper's initial kennel."
+    },
+    {
+      "id": "F08",
+      "category": "Animal_Movement_Log",
+      "fact": "On October 15, 2023, at 4:00 PM, Jasper (A4512) was placed in Intake Kennel C-03 upon arrival."
+    },
+    {
+      "id": "F09",
+      "category": "Animal_Movement_Log",
+      "fact": "On October 18, 2023, at 2:30 PM, Jasper (A4512) was moved from Intake Kennel C-03 to Adoption Wing B, Cat Condo B-11."
+    },
+    {
+      "id": "F10",
+      "category": "Animal_Movement_Log",
+      "fact": "On October 26, 2023, at 11:45 AM, Jasper (A4512) was moved from Cat Condo B-11 to the Isolation Ward, Room ISO-2."
+    },
+    {
+      "id": "F11",
+      "category": "Animal_Movement_Log",
+      "fact": "The move of Jasper (A4512) on October 18 was performed by Animal Care Technician Liam Chen."
+    },
+    {
+      "id": "F12",
+      "category": "Staff_Information",
+      "fact": "Liam Chen is an Animal Care Technician, employee ID 7845."
+    },
+    {
+      "id": "F13",
+      "category": "Staff_Information",
+      "fact": "Maria Garcia is an Adoption Counselor, employee ID 7860."
+    },
+    {
+      "id": "F14",
+      "category": "Staff_Information",
+      "fact": "Dr. Elena Vance is the Lead Veterinarian, employee ID 7821."
+    },
+    {
+      "id": "F15",
+      "category": "Staff_Contact_Log",
+      "fact": "Liam Chen was the primary handler for all animals in Adoption Wing B during the 8:00 AM - 4:00 PM shift from October 22 to October 25, 2023."
+    },
+    {
+      "id": "F16",
+      "category": "Staff_Contact_Log",
+      "fact": "Maria Garcia handled Jasper (A4512) during an adoption meet-and-greet in Visitation Room 2 on October 24, 2023, from 1:00 PM to 1:15 PM."
+    },
+    {
+      "id": "F17",
+      "category": "Staff_Contact_Log",
+      "fact": "Dr. Elena Vance performed the physical examination of Jasper (A4512) in Exam Room 3 on October 26, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "Staff_Contact_Log",
+      "fact": "Liam Chen and Maria Garcia shared a lunch break in the staff breakroom at 12:30 PM on October 24, 2023."
+    },
+    {
+      "id": "F19",
+      "category": "Quarantine_Protocols",
+      "fact": "The standard quarantine protocol for FCV exposure is a strict 14-day observation period in the current enclosure."
+    },
+    {
+      "id": "F20",
+      "category": "Quarantine_Protocols",
+      "fact": "As of October 26, 2023, 4:00 PM, all 15 cats in Adoption Wing B have been placed under quarantine."
+    },
+    {
+      "id": "F21",
+      "category": "Quarantine_Protocols",
+      "fact": "The designated cleaning agent for FCV disinfection is Rescue™ (Accelerated Hydrogen Peroxide) at a 1:16 dilution with a 10-minute contact time."
+    },
+    {
+      "id": "F22",
+      "category": "Quarantine_Protocols",
+      "fact": "Staff entering quarantined zones must wear a dedicated gown, gloves, and shoe covers, which are to be disposed of in a biohazard bin before exiting."
+    },
+    {
+      "id": "F23",
+      "category": "Veterinary_Records",
+      "fact": "Jasper (A4512) is being treated with subcutaneous fluids (100ml Lactated Ringer's solution) twice daily."
+    },
+    {
+      "id": "F24",
+      "category": "Veterinary_Records",
+      "fact": "A broad-spectrum antibiotic, Clavamox (62.5 mg), is being administered orally to Jasper (A4512) every 12 hours to prevent secondary bacterial infections."
+    },
+    {
+      "id": "F25",
+      "category": "Veterinary_Records",
+      "fact": "Jasper's recorded temperature on October 26 at 11:00 AM was 103.8°F (39.9°C)."
+    },
+    {
+      "id": "F26",
+      "category": "Veterinary_Records",
+      "fact": "Luna's (A4520) record shows she received her most recent FVRCP vaccination on September 5, 2023."
+    },
+    {
+      "id": "F27",
+      "category": "Facility_Information",
+      "fact": "Adoption Wing B and the Intake Wing share the same HVAC air handling unit, AHU-2, which does not have HEPA filtration."
+    },
+    {
+      "id": "F28",
+      "category": "Facility_Information",
+      "fact": "The laundry from all wings is co-mingled and washed in the main laundry facility using a high-temperature (160°F) sanitation cycle with bleach."
+    },
+    {
+      "id": "F29",
+      "category": "Facility_Information",
+      "fact": "Food and water bowls for Adoption Wing B are washed in the central kitchen's industrial dishwasher, which has a final rinse temperature of 180°F (82°C)."
+    },
+    {
+      "id": "F30",
+      "category": "Facility_Information",
+      "fact": "Security camera footage for Adoption Wing B is stored on the 'SecureView' server at IP address 192.168.1.50 and is retained for 30 days."
+    },
+    {
+      "id": "F31",
+      "category": "Data_Systems",
+      "fact": "Animal movement records are logged in the ShelterPro Manager system, accessible at the URL https://paws.shelterpromanager.local/records."
+    },
+    {
+      "id": "F32",
+      "category": "Data_Systems",
+      "fact": "The staff work schedule is managed in 'WhenToWork', but zone assignments are written daily on a physical whiteboard in the staff office."
+    },
+    {
+      "id": "F33",
+      "category": "Data_Systems",
+      "fact": "The initial alert about Jasper's symptoms was posted by Liam Chen in the Slack channel #ops-alerts at 8:05 AM on October 26, 2023."
+    },
+    {
+      "id": "F34",
+      "category": "Data_Systems",
+      "fact": "Veterinary notes are stored in a separate module within ShelterPro Manager accessible only to users with 'Veterinary' role permissions."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the diagnosed illness, who is the index case animal, and when was the diagnosis officially logged?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F04",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Case Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the complete movement history of the index case, Jasper (A4512), from his arrival until his move to isolation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying the index case, the immediate next step in contact tracing is to establish a timeline of their locations within the facility.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Animal Movement Timeline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Which staff members are recorded as having directly handled Jasper (A4512)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the user establishes the animal's movement timeline, identifying the staff involved in those movements and examinations is the logical next step for tracing human contact vectors.",
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Staff Contact Tracing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Who was the primary animal care handler for all animals in Adoption Wing B during the days leading up to Jasper's diagnosis?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After identifying specific handling events, the user will want to know about routine, high-frequency contact, such as the primary daily caregiver in the affected wing.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Staff Contact Tracing",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Which cat is explicitly identified as directly across from Jasper in Intake, and which cat is explicitly identified as directly adjacent to Jasper in Adoption Wing B?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Knowing Jasper's locations from the movement timeline directly prompts the question of which other animals were physically near him at those locations.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Direct Animal Exposure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What specific quarantine action was taken for Adoption Wing B and what was the effective date and time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Quarantine Status & Protocols",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the shelter's standard quarantine protocol for FCV exposure in terms of duration?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After learning that a quarantine has been implemented, the user will want to confirm that the action taken aligns with the standard operating procedure.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Quarantine Status & Protocols",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Do the Intake and Adoption wings share an HVAC system, and does it have HEPA filtration?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying at-risk animals in two separate wings (Intake and Adoption), the user will investigate potential environmental links, like shared air systems, that could explain cross-contamination.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Facility Contamination Vectors",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "In which systems are the animal movement records and the veterinary notes stored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F34"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Data System Locations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Where are the daily staff zone assignments recorded, and where is the broader staff work schedule managed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After learning where the digital records are stored, the user will inquire about known data gaps, such as the non-digitized staff assignment records, to get a complete operational picture.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Data System Locations",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Case Identification",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Animal Movement Timeline",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Staff Contact Tracing",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Direct Animal Exposure",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Quarantine Status & Protocols",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Facility Contamination Vectors",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Data System Locations",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "shelter_exposure_trace_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

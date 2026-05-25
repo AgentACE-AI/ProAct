@@ -1,0 +1,407 @@
+{
+  "scenario_id": "makerspace_damage_and_downtime_trace_04",
+  "domain": "makerspace_operations",
+  "description": "A machine has had several minor issues, and staff want to know whether they form a meaningful damage or misuse pattern, including who used it, what materials were involved, and what happened after resets or small repairs. All spaces are fictional.",
+  "user_profile": {
+    "persona": "41-year-old technical manager investigating repeated small machine problems",
+    "context": "Each incident looked manageable alone, but together they now suggest a pattern that should be understood before it causes a larger failure",
+    "communication_style": "Diagnostic and evidence-driven, wants issue history reconstructed without jumping ahead to blame"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "machine_details",
+      "fact": "The machine in question is a VeloCut 3D Laser Cutter, model VC-3D-2022, with asset tag SFL-LC-003."
+    },
+    {
+      "id": "F02",
+      "category": "machine_details",
+      "fact": "The VeloCut 3D Laser Cutter (SFL-LC-003) is located in Workshop B at workstation 7."
+    },
+    {
+      "id": "F03",
+      "category": "machine_details",
+      "fact": "The last scheduled preventative maintenance for SFL-LC-003 was performed by technician Ben Carter on September 15, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "machine_details",
+      "fact": "Operation of SFL-LC-003 requires completion of the 'LC101-Intro to Laser Cutting' safety and operations module in the MakerBooker system."
+    },
+    {
+      "id": "F05",
+      "category": "incident_report",
+      "fact": "On October 5, 2023, at 14:30, ForgeTrack ticket #8812 was created for SFL-LC-003 reporting 'Error 07: Lens Alignment Fault'."
+    },
+    {
+      "id": "F06",
+      "category": "user_activity",
+      "fact": "The user logged into SFL-LC-003 immediately prior to ticket #8812 was Alex Chen (user ID: achen88)."
+    },
+    {
+      "id": "F07",
+      "category": "material_usage",
+      "fact": "Alex Chen's booking notes for October 5, 2023, indicate the use of 3mm AcryLite Cast Acrylic Sheet (SKU: AL-C3-CL)."
+    },
+    {
+      "id": "F08",
+      "category": "maintenance_log",
+      "fact": "In response to ticket #8812, technician Ben Carter cleaned the focusing lens and reset the machine's home position at 15:15 on October 5, 2023."
+    },
+    {
+      "id": "F09",
+      "category": "incident_report",
+      "fact": "On October 12, 2023, at 11:05, ForgeTrack ticket #8845 was created for SFL-LC-003 reporting 'Error 12: Exhaust Fan Speed Low'."
+    },
+    {
+      "id": "F10",
+      "category": "user_activity",
+      "fact": "The user logged into SFL-LC-003 at the time of ticket #8845 was Samantha Riley (user ID: sriley21)."
+    },
+    {
+      "id": "F11",
+      "category": "maintenance_log",
+      "fact": "In response to ticket #8845, workshop supervisor Maria Flores performed a full system reboot, which cleared the error code on October 12, 2023."
+    },
+    {
+      "id": "F12",
+      "category": "incident_report",
+      "fact": "On October 18, 2023, at 19:40, Alex Chen (achen88) reported a recurrence of 'Error 07: Lens Alignment Fault' via the #workshop-b-issues Slack channel."
+    },
+    {
+      "id": "F13",
+      "category": "material_usage",
+      "fact": "During the October 18, 2023 incident, Alex Chen was using 6mm PlyWood Pro Birch Plywood (SKU: PWP-B6)."
+    },
+    {
+      "id": "F14",
+      "category": "maintenance_log",
+      "fact": "On October 19, 2023, Ben Carter ran the full 45-minute diagnostic and recalibration cycle for the gantry and lens assembly on SFL-LC-003."
+    },
+    {
+      "id": "F15",
+      "category": "incident_report",
+      "fact": "On October 25, 2023, at 16:22, ForgeTrack ticket #8891 was created by user David Miller (dmiller45) reporting 'faint smell of smoke and incomplete cuts'."
+    },
+    {
+      "id": "F16",
+      "category": "material_usage",
+      "fact": "David Miller's booking for October 25, 2023, specified the use of 1.5mm FlexiForm Delrin Sheet (SKU: FF-D15-BK)."
+    },
+    {
+      "id": "F17",
+      "category": "maintenance_log",
+      "fact": "Investigating ticket #8891, Ben Carter found the primary exhaust filter was 85% clogged and replaced it with a new unit (Part #VC-F44-B) on October 25, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "incident_report",
+      "fact": "On November 2, 2023, at 09:15, Samantha Riley reported via Slack that machine SFL-LC-003 would not power on, with the main control panel remaining dark."
+    },
+    {
+      "id": "F19",
+      "category": "maintenance_log",
+      "fact": "Following the November 2, 2023 report, machine SFL-LC-003 was officially tagged 'Out of Service' by Maria Flores pending diagnostic by a senior technician."
+    },
+    {
+      "id": "F20",
+      "category": "user_profile",
+      "fact": "User Alex Chen (achen88) completed the 'LC101' training on July 11, 2023, and has logged 15.2 hours on SFL-LC-003 since."
+    },
+    {
+      "id": "F21",
+      "category": "user_profile",
+      "fact": "User Samantha Riley (sriley21) is a jewelry maker who has logged over 80 hours on the lab's Trotec laser engraver but only 4.5 hours on the VeloCut SFL-LC-003."
+    },
+    {
+      "id": "F22",
+      "category": "user_profile",
+      "fact": "User David Miller (dmiller45) completed his 'LC101' training on October 24, 2023, the day before his reported incident."
+    },
+    {
+      "id": "F23",
+      "category": "user_activity",
+      "fact": "The MakerBooker logs show that on October 18, 2023, Alex Chen's 3-hour session started 5 minutes after a 4-hour session by another user ended."
+    },
+    {
+      "id": "F24",
+      "category": "staff_communication",
+      "fact": "On October 19, 2023, Ben Carter added a note to the maintenance log: 'Second lens alignment fault in 2 weeks. Suspect gantry vibration beyond spec. Recommend monitoring.'"
+    },
+    {
+      "id": "F25",
+      "category": "staff_communication",
+      "fact": "On October 26, 2023, Maria Flores sent an email to Ben Carter asking, 'Is it possible the clogged filter from yesterday caused overheating and damaged a controller board?'"
+    },
+    {
+      "id": "F26",
+      "category": "staff_communication",
+      "fact": "On November 2, 2023, Ben Carter sent an email to the Technical Manager, Priya Sharma, with the subject 'Investigation Required: Pattern of Failures on VeloCut SFL-LC-003'."
+    },
+    {
+      "id": "F27",
+      "category": "safety_protocol",
+      "fact": "The VeloCut VC-3D-2022 manufacturer's guide specifies that power settings for 6mm plywood should not exceed 75% to avoid excessive resin residue buildup."
+    },
+    {
+      "id": "F28",
+      "category": "material_usage",
+      "fact": "The material safety data sheet for FlexiForm Delrin (SKU: FF-D15-BK) warns that improper ventilation during cutting can produce formaldehyde gas."
+    },
+    {
+      "id": "F29",
+      "category": "safety_protocol",
+      "fact": "SparkForge Labs policy requires users to clean the machine's cutting bed and check for debris around the lens housing after every session."
+    },
+    {
+      "id": "F30",
+      "category": "maintenance_log",
+      "fact": "The diagnostic check on November 3, 2023 revealed a failed 24V power supply unit (PSU), model FSP200-24V-5A."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the specific machine in question and what prompted this investigation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Investigation Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What were the five reported incident timestamps and issue descriptions for this machine between October 5 and November 2?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F09",
+        "F12",
+        "F15",
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After establishing that an investigation is needed for a specific machine, the most logical next step is to request the full history of incidents that prompted it.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Timeline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "For the Oct 5, Oct 12, Oct 18, Oct 25, and Nov 2 incidents, which user was logged in or explicitly named in each report?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F10",
+        "F12",
+        "F15",
+        "F18"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "INTRA-GROUP: Once the user has a timeline of incidents, asking for the operators involved in each event is a direct and immediate follow-up question.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Timeline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Focusing on the first incident on Oct 5, what was the specific error, who was the user, and what was the immediate resolution?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "First Incident Deep Dive",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "For the Oct 18 recurrence of 'Lens Alignment Fault', what material was Alex Chen using, and what assessment did Ben Carter record on Oct 19?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13",
+        "F24"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing the initial 'Lens Alignment Fault', the user's next logical step is to investigate its recurrence to identify a pattern.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Recurring Fault Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the manufacturer's recommended power setting for the 6mm plywood that was used during the second lens fault incident?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Knowing a specific material (plywood) was involved in a recurring fault, a diagnostic-minded user would want to check if the usage complied with manufacturer guidelines.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Usage Protocol Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Moving to the Oct 25 incident, what were the reported symptoms, what material was in use, and what was the root cause found by the technician?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Ventilation Incident",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "For the Oct 25 incident, what replacement part did Ben Carter install after finding the exhaust filter problem?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After reviewing the Oct 25 incident symptoms, material, and root cause, a direct follow-up is what part Ben Carter replaced to resolve the ventilation issue.",
+      "turn_order": 8,
+      "reveal_group": "G7",
+      "reveal_group_label": "Ventilation Repair Detail",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What symptom was reported on Nov 2 when the machine was taken out of service, and what failed component was identified on Nov 3?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G8",
+      "reveal_group_label": "Final Diagnosis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "In her Oct 26 email, what possible overheating-related concern did Maria Flores raise about the machine?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning the final cause of failure (PSU), a manager would want to know if any preceding issues, like potential overheating from a clogged filter, were considered as possible contributors by the staff.",
+      "turn_order": 10,
+      "reveal_group": "G9",
+      "reveal_group_label": "Staff Communication",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Investigation Context",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Incident Timeline",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "First Incident Deep Dive",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Recurring Fault Analysis",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Usage Protocol Check",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Ventilation Incident",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Ventilation Repair Detail",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Final Diagnosis",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Staff Communication",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "makerspace_damage_and_downtime_trace_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

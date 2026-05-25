@@ -1,0 +1,421 @@
+{
+  "scenario_id": "vendor_transition_04",
+  "domain": "vendor_management",
+  "description": "A company has decided to replace a vendor and now needs to track contract notice periods, data migration steps, parallel operations, documentation transfer, and the exact point at which the old service can be shut down.",
+  "user_profile": {
+    "persona": "39-year-old systems manager overseeing a staged vendor exit",
+    "context": "The decision to switch is made; the hard part is carrying it out without dropping operational continuity",
+    "communication_style": "Sequencing-focused and risk-aware, wants a clear transition timeline"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "contract_management",
+      "fact": "The contract termination notice for Legacy Data Corp was formally submitted by Innovatech's legal counsel, Maria Garcia, on May 15, 2024."
+    },
+    {
+      "id": "F02",
+      "category": "contract_management",
+      "fact": "The contract with Legacy Data Corp (contract ID #LDC-8821) requires a 90-day notice period, making the official termination date August 13, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "contract_management",
+      "fact": "The new contract with Quantum Analytics Inc. (contract ID #QAI-5503) officially commenced on June 1, 2024, with an initial term of 36 months."
+    },
+    {
+      "id": "F04",
+      "category": "contract_management",
+      "fact": "The final invoice from Legacy Data Corp, for the amount of $22,500, is due on September 1, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "timeline_milestones",
+      "fact": "Project Nova, the vendor transition initiative, was officially kicked off on May 20, 2024, and is managed by systems manager Alex Chen."
+    },
+    {
+      "id": "F06",
+      "category": "timeline_milestones",
+      "fact": "The target completion date for the full migration of historical customer data to the Quantum Insight Platform is July 31, 2024."
+    },
+    {
+      "id": "F07",
+      "category": "timeline_milestones",
+      "fact": "The parallel operations phase, running both Legacy Data Hub and Quantum Insight Platform, will begin on July 1, 2024."
+    },
+    {
+      "id": "F08",
+      "category": "timeline_milestones",
+      "fact": "The official go-live date for the Quantum Insight Platform as the primary system of record is August 5, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "decommissioning",
+      "fact": "The Legacy Data Hub service is scheduled for final shutdown on August 20, 2024, at 11:00 PM UTC."
+    },
+    {
+      "id": "F10",
+      "category": "data_migration",
+      "fact": "Ben Carter is the Lead Data Engineer responsible for overseeing the data migration script execution for Project Nova."
+    },
+    {
+      "id": "F11",
+      "category": "data_migration",
+      "fact": "A total of 7.2 terabytes of customer interaction data needs to be migrated from Legacy Data Hub's PostgreSQL database."
+    },
+    {
+      "id": "F12",
+      "category": "data_migration",
+      "fact": "The data migration is being performed using a custom Python script that leverages the AWS Data Migration Service (DMS)."
+    },
+    {
+      "id": "F13",
+      "category": "data_migration",
+      "fact": "Data integrity will be validated by comparing MD5 checksums on 15% of the migrated records, specifically focusing on records from the last 24 months."
+    },
+    {
+      "id": "F14",
+      "category": "data_migration",
+      "fact": "Legacy Data Corp must provide the final data export in a series of GZIP-compressed CSV files, delivered via SFTP to sftp.innovatech.com."
+    },
+    {
+      "id": "F15",
+      "category": "parallel_operations",
+      "fact": "The parallel operations phase is scheduled to last for 35 days, from July 1, 2024, to August 5, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "parallel_operations",
+      "fact": "During parallel operations, the primary success metric is a less than 0.5% discrepancy in daily generated 'Active User' reports between the two platforms."
+    },
+    {
+      "id": "F17",
+      "category": "parallel_operations",
+      "fact": "The marketing team will use the Quantum Insight Platform for all new campaign analytics starting July 15, 2024, while continuing to use Legacy Data Hub for historical reporting."
+    },
+    {
+      "id": "F18",
+      "category": "decommissioning",
+      "fact": "A final, read-only snapshot of the Legacy Data Hub database will be archived in Innovatech Solutions' AWS S3 Glacier Deep Archive bucket `innovatech-vendor-archive-2024` on August 19, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "decommissioning",
+      "fact": "All API keys and user credentials for the Legacy Data Hub platform will be revoked by Alex Chen on August 20, 2024, at 11:30 PM UTC."
+    },
+    {
+      "id": "F20",
+      "category": "decommissioning",
+      "fact": "Legacy Data Corp is contractually obligated to provide a 'Certificate of Data Destruction' within 30 days of contract termination, by September 12, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "stakeholder_communication",
+      "fact": "All official project updates for Project Nova are posted in the Slack channel `#proj-nova-transition`."
+    },
+    {
+      "id": "F22",
+      "category": "stakeholder_communication",
+      "fact": "A weekly transition status meeting is held every Tuesday at 10:00 AM PST via Google Meet link `meet.google.com/xyz-abcd-efg`."
+    },
+    {
+      "id": "F23",
+      "category": "stakeholder_communication",
+      "fact": "The primary onboarding contact at Quantum Analytics Inc. is Sarah Jenkins, reachable at s.jenkins@quantumanalytics.io."
+    },
+    {
+      "id": "F24",
+      "category": "technical_details",
+      "fact": "The login URL for the new Quantum Insight Platform is https://innovatech.quantumanalytics.io."
+    },
+    {
+      "id": "F25",
+      "category": "technical_details",
+      "fact": "The login URL for the old Legacy Data Hub, for use during the parallel run, is https://innovatech.legacydatacorp.com."
+    },
+    {
+      "id": "F26",
+      "category": "technical_details",
+      "fact": "The internal analytics dashboard must be updated to point from the old API endpoint `api.legacydatacorp.com/v2/reports` to the new endpoint `api.quantumanalytics.io/v1/data`."
+    },
+    {
+      "id": "F27",
+      "category": "documentation",
+      "fact": "All user guides and technical documentation from Legacy Data Corp have been transferred to the Confluence space 'LDC Archive' (key: LDCA)."
+    },
+    {
+      "id": "F28",
+      "category": "documentation",
+      "fact": "Training materials and documentation for the Quantum Insight Platform are located in the Confluence space 'Quantum Platform' (key: QP)."
+    },
+    {
+      "id": "F29",
+      "category": "risk_management",
+      "fact": "A key identified risk (Risk ID #RN-004) is potential data corruption during the final delta migration scheduled for July 30, 2024."
+    },
+    {
+      "id": "F30",
+      "category": "risk_management",
+      "fact": "The mitigation for risk #RN-004 is to perform a full database backup 1 hour prior to the delta migration and have a rollback script prepared by Ben Carter."
+    },
+    {
+      "id": "F31",
+      "category": "timeline_milestones",
+      "fact": "In addition to the data migration target date and go-live date, the major transition milestones are: the 90-day contract notice period ending with official termination on August 13, 2024; the parallel operations phase running from July 1, 2024, to August 5, 2024; and the transfer of old and new platform documentation into the Confluence spaces 'LDC Archive' and 'Quantum Platform' for transition reference."
+    },
+    {
+      "id": "F32",
+      "category": "data_migration",
+      "fact": "For the remaining 85% of migrated records not covered by the MD5 checksum sample, validation will be performed through automated row-count reconciliation, schema-field completeness checks, and comparison of key aggregate business totals between Legacy Data Hub and the Quantum Insight Platform after each migration batch."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the key contract dates for the vendor transition, specifically the old contract's termination date and the new one's start date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Timeline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the major project milestones for the transition, including data migration completion, parallel operations, go-live, and documentation transfer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07",
+        "F08",
+        "F27",
+        "F28",
+        "F31"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After establishing the contractual boundaries, the user will naturally want to see the key project dates within that timeframe.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Timeline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "When does the parallel operations phase start and how long is it scheduled to last?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F15"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: The project milestones (N2) mention a go-live date, which implies a period of testing and transition. The user's next logical question is about the specifics of that parallel run phase.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Parallel Operations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Who is the lead engineer for the data migration, and what technology is being used to perform it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Data Migration",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "How will the integrity of the migrated data be validated across both the sampled records and the remaining migrated data?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13",
+        "F32"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After identifying the person and technology responsible for the migration, a systems manager's next concern is quality control and how success will be measured.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Data Migration",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the key risk identified for the data migration, and what is the mitigation plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Discussing data validation (N5) naturally leads a risk-aware manager to inquire about formally identified risks and the contingency plans in place for the migration.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Risk Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "When is the final shutdown of the old Legacy Data Hub service, and at what point will user credentials be revoked?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F19"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the go-live date for the new system is known (N2), the immediate follow-up for a systems manager is to determine the exact point of no return: the shutdown of the old system.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Decommissioning",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is Legacy Data Corp's contractual obligation regarding a certificate of data destruction?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After confirming the shutdown and credential revocation plan, the final step in the decommissioning process is ensuring the vendor provides proof of data deletion as per the contract.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Decommissioning",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the amount and due date for the final invoice from Legacy Data Corp?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Financials",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is my primary onboarding contact at the new vendor, Quantum Analytics?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming the new contract start date (N1), a proactive next step is to identify the key person at the new company to coordinate with for a smooth start.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "New Vendor Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Where can I find the user guides and technical documentation for both the old and new platforms?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Documentation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Timeline",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Parallel Operations",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Data Migration",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Risk Management",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Decommissioning",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Financials",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "New Vendor Contact",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Documentation",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vendor_transition_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

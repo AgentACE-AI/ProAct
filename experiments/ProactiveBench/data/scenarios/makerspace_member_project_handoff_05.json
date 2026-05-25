@@ -1,0 +1,473 @@
+{
+  "scenario_id": "makerspace_member_project_handoff_05",
+  "domain": "makerspace_operations",
+  "description": "A member leaves a partially completed project in shared storage, and staff must know what instructions, materials, hazards, and ownership notes are attached to it before anyone else moves or touches it. All projects and spaces are fictional.",
+  "user_profile": {
+    "persona": "38-year-old floor supervisor managing a crowded shared project area",
+    "context": "Unlabeled or partially labeled projects are beginning to create safety and ownership confusion in the shared space",
+    "communication_style": "Boundary-conscious and practical, wants stored projects tied to clear status and handling notes"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Project Identification",
+      "fact": "All projects in shared storage must have a 'MakerTrack' QR code tag, model TT-45, affixed to the primary container."
+    },
+    {
+      "id": "F02",
+      "category": "Project Identification",
+      "fact": "Project 'Astro-Gnomon' is assigned Project ID PJ-7781."
+    },
+    {
+      "id": "F03",
+      "category": "Project Identification",
+      "fact": "Project 'Synth-Shell' is assigned Project ID PJ-8102."
+    },
+    {
+      "id": "F04",
+      "category": "Member Information",
+      "fact": "Alina Vance, member ID M-1138, is the owner of project PJ-7781."
+    },
+    {
+      "id": "F05",
+      "category": "Member Information",
+      "fact": "Kenji Tanaka, member ID M-2049, is the owner of project PJ-8102."
+    },
+    {
+      "id": "F06",
+      "category": "Member Information",
+      "fact": "Alina Vance's contact email is alina.vance@email.fake and her emergency contact number is 555-0101."
+    },
+    {
+      "id": "F07",
+      "category": "Storage Location",
+      "fact": "Project PJ-7781 is currently located in Shared Storage Bay C-04 on the second shelf."
+    },
+    {
+      "id": "F08",
+      "category": "Storage Location",
+      "fact": "Project PJ-8102 is located in the Electronics Work-in-Progress cabinet, locker E-12."
+    },
+    {
+      "id": "F09",
+      "category": "Storage Policy",
+      "fact": "Projects left without a valid, scannable QR tag for more than 24 hours are moved to the 'Quarantine Shelf' in Zone D."
+    },
+    {
+      "id": "F10",
+      "category": "Storage Policy",
+      "fact": "A project is considered 'inactive' if its QR tag has not been scanned by the owner for 7 consecutive days."
+    },
+    {
+      "id": "F11",
+      "category": "Storage Policy",
+      "fact": "Inactive projects are red-tagged by floor staff and a notification is sent via the MakerTrack system."
+    },
+    {
+      "id": "F12",
+      "category": "Storage Policy",
+      "fact": "Red-tagged projects are disposed of after 14 days if the owner does not update the project status."
+    },
+    {
+      "id": "F13",
+      "category": "Project Details",
+      "fact": "Project PJ-7781, 'Astro-Gnomon', is a kinetic sculpture made of aluminum and brass components."
+    },
+    {
+      "id": "F14",
+      "category": "Project Details",
+      "fact": "The current status of PJ-7781 is 'Awaiting custom gear fabrication'; last updated on October 26, 2023."
+    },
+    {
+      "id": "F15",
+      "category": "Project Details",
+      "fact": "Project PJ-8102, 'Synth-Shell', is a custom-molded case for a modular synthesizer."
+    },
+    {
+      "id": "F16",
+      "category": "Project Details",
+      "fact": "The next step for PJ-8102 is 'sanding and priming the resin cast'."
+    },
+    {
+      "id": "F17",
+      "category": "Required Materials & Tools",
+      "fact": "To continue work on PJ-7781, the owner needs access to the Tormach 1100M CNC mill."
+    },
+    {
+      "id": "F18",
+      "category": "Required Materials & Tools",
+      "fact": "Project PJ-8102 requires 220-grit sandpaper and aerosol-based plastic primer, which is stored in the Flammables Cabinet #2."
+    },
+    {
+      "id": "F19",
+      "category": "Hazard Information",
+      "fact": "Project PJ-7781 has a handling note: 'Caution: contains unfinished, sharp aluminum edges. Wear cut-resistant Level 3 gloves when moving'."
+    },
+    {
+      "id": "F20",
+      "category": "Hazard Information",
+      "fact": "Project PJ-8102 involves 'Epoxy Resin X-45', which requires nitrile gloves and mandatory use of Ventilation Hood #3 during mixing."
+    },
+    {
+      "id": "F21",
+      "category": "Hazard Information",
+      "fact": "The Safety Data Sheet (SDS) for 'Epoxy Resin X-45' is located in a binder labeled 'Resins and Adhesives' next to the chemical storage."
+    },
+    {
+      "id": "F22",
+      "category": "Staff & Roles",
+      "fact": "Maya Corrigan is the Floor Supervisor responsible for Zones A, B, and C."
+    },
+    {
+      "id": "F23",
+      "category": "Staff & Roles",
+      "fact": "Leo Martinez is the designated Safety Officer; his extension is 445."
+    },
+    {
+      "id": "F24",
+      "category": "Staff Procedures",
+      "fact": "When an untagged project is found, staff must fill out 'Incident Form 11-B' and upload a photo to the '#storage-audits' Slack channel."
+    },
+    {
+      "id": "F25",
+      "category": "Staff Procedures",
+      "fact": "The floor supervisor must perform a full audit of storage bays C and D every Friday at 4:00 PM."
+    },
+    {
+      "id": "F26",
+      "category": "Staff Procedures",
+      "fact": "Any spills or evidence of chemical leaks must be immediately reported to Leo Martinez before cleanup is attempted."
+    },
+    {
+      "id": "F27",
+      "category": "Digital Systems",
+      "fact": "The MakerTrack project management system is accessible at the URL: https://makerspace.internal/makertrack."
+    },
+    {
+      "id": "F28",
+      "category": "Digital Systems",
+      "fact": "Staff log into MakerTrack using their 'SparkWorks ID' credentials."
+    },
+    {
+      "id": "F29",
+      "category": "Digital Systems",
+      "fact": "The 'MakerTrack Mobile' app for staff is available on the internal network for Android devices, version 2.1.4."
+    },
+    {
+      "id": "F30",
+      "category": "Digital Systems",
+      "fact": "Automated email notifications for red-tagged projects are sent from the address 'noreply@makertrack.sparkworks.dev'."
+    },
+    {
+      "id": "F31",
+      "category": "Facility Information",
+      "fact": "The makerspace is named 'SparkWorks Community Forge'."
+    },
+    {
+      "id": "F32",
+      "category": "Facility Information",
+      "fact": "The shared project storage area is located in the northwest corner of the main workshop floor."
+    },
+    {
+      "id": "F33",
+      "category": "Facility Information",
+      "fact": "The first aid station nearest to the shared storage is located next to the main exit, Station B."
+    },
+    {
+      "id": "F34",
+      "category": "Member Communication",
+      "fact": "A notice about the 14-day disposal policy for red-tagged items was sent to all members via the monthly newsletter on October 1, 2023."
+    },
+    {
+      "id": "F35",
+      "category": "Member Communication",
+      "fact": "A physical copy of the complete storage policy, document #POL-STOR-003, is posted on the bulletin board at the entrance to the storage area."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "I've found a project container with a QR code. What is the project's ID and name?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who is the owner of project PJ-7781?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying a project, the next logical step for a supervisor dealing with ownership confusion is to determine who owns it.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Ownership & Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What are the contact details for the owner, Alina Vance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: Once the owner's name is known, asking for their contact information is a direct follow-up to facilitate communication.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Ownership & Contact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Are there any specific handling instructions or hazards for project PJ-7781?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying a project, the supervisor's primary concern is safety, making a query about handling hazards a highly probable next step.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Handling Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "If staff find evidence of a chemical leak or spill while handling PJ-7781, who must be notified before cleanup is attempted?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F26"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing a project's hazards and handling notes, a direct follow-up is who must be contacted if staff discover evidence of a chemical leak or spill on that project.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Emergency Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Where in the shared storage is project PJ-7781 located and what is its current status?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Project Status & Location",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What defines an 'inactive' project and what is the initial staff action for one?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Seeing a project's last update date might prompt the supervisor to inquire about the policy for projects that have not been updated in a while.",
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Inactive Project Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the final disposal policy for projects that have been red-tagged?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After learning that inactive projects get red-tagged, the user would naturally want to know the ultimate consequence of a project remaining in that state.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Inactive Project Policy",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What machine access dependency is still blocking progress on PJ-7781?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After checking PJ-7781's current status, a direct follow-up is which remaining machine dependency is still blocking further work.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "System Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When a project is found without a QR tag, what incident form must staff complete and which Slack channel gets the uploaded photo?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Untagged Item Procedure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "For PJ-8102's epoxy resin work, what materials are required and what protective gear or ventilation rule applies?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "Specific Chemical Hazard",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Where can I find the Safety Data Sheet for 'Epoxy Resin X-45'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Intra-group: After being informed about a specific chemical hazard, the user may want to know where to find the detailed official safety documentation for it.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Specific Chemical Hazard",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Which storage bays are included in the floor supervisor's weekly audit, and when is that audit scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Supervisor Duties",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Identification",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Ownership & Contact",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Handling Safety",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Emergency Reporting",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Project Status & Location",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Inactive Project Policy",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "System Access",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G8",
+      "label": "Untagged Item Procedure",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Specific Chemical Hazard",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Supervisor Duties",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "makerspace_member_project_handoff_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

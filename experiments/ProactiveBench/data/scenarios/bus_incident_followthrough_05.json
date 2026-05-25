@@ -1,0 +1,424 @@
+{
+  "scenario_id": "bus_incident_followthrough_05",
+  "domain": "school_transportation_operations",
+  "description": "After a transportation incident, the team needs to track who was notified, what facts were confirmed, which documents were filed, and what follow-up actions remain open. All schools and routes are fictional.",
+  "user_profile": {
+    "persona": "40-year-old transportation operations manager responsible for incident closure",
+    "context": "The immediate response happened, but closure work often becomes diffuse once the urgent moment passes",
+    "communication_style": "Closure-focused and factual, wants notifications, facts, and open actions kept distinct"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Incident_Details",
+      "fact": "The incident, identified as INC-20240515-083, occurred on May 15, 2024, at 07:41 AM local time."
+    },
+    {
+      "id": "F02",
+      "category": "Incident_Details",
+      "fact": "The incident involved Bus Route 12, which serves Northwood Elementary School."
+    },
+    {
+      "id": "F03",
+      "category": "Incident_Details",
+      "fact": "The incident location was the northeast corner of the intersection of Maple Avenue and 4th Street."
+    },
+    {
+      "id": "F04",
+      "category": "Incident_Details",
+      "fact": "The incident was a minor, single-vehicle collision where the bus struck a stationary street sign."
+    },
+    {
+      "id": "F05",
+      "category": "Vehicle_Information",
+      "fact": "The vehicle involved was Bus #308, a 2022 Blue Bird Vision model, license plate S-BUS 8192."
+    },
+    {
+      "id": "F06",
+      "category": "Vehicle_Information",
+      "fact": "Bus #308's last preventative maintenance was completed on April 28, 2024, logged under work order M-6734."
+    },
+    {
+      "id": "F07",
+      "category": "Vehicle_Information",
+      "fact": "The GPS transponder ID for Bus #308 is BB-7719-A4, which confirmed the vehicle's location at the time of the incident."
+    },
+    {
+      "id": "F08",
+      "category": "Personnel_Involved",
+      "fact": "The driver of Bus #308 was Arthur Finch, employee ID 88421."
+    },
+    {
+      "id": "F09",
+      "category": "Personnel_Involved",
+      "fact": "Arthur Finch's last mandatory safety training certification was completed on February 10, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "Personnel_Involved",
+      "fact": "The on-site supervisor who responded to the scene was Maria Garcia, Lead Dispatcher."
+    },
+    {
+      "id": "F11",
+      "category": "Notifications_Log",
+      "fact": "Superintendent Helen Chao was notified by a direct phone call from Maria Garcia at 07:55 AM on May 15, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "Notifications_Log",
+      "fact": "David Chen, Principal of Northwood Elementary, was notified via email and a follow-up phone call at 07:58 AM on May 15, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "Notifications_Log",
+      "fact": "The 'ParentNotify' SMS alert system for all families on Route 12 was activated at 08:15 AM on May 15, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "Notifications_Log",
+      "fact": "Officer Kenji Tanaka of the Maplewood Police Department (Badge #728) was notified and arrived on scene at 08:05 AM."
+    },
+    {
+      "id": "F15",
+      "category": "Notifications_Log",
+      "fact": "Brenda Miles, the district's agent at Apex Insurance, received an initial email notification at 09:30 AM on May 15, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "Notifications_Log",
+      "fact": "A summary of the incident was posted to the internal #transport-incidents Slack channel by Maria Garcia at 08:10 AM."
+    },
+    {
+      "id": "F17",
+      "category": "Confirmed_Facts",
+      "fact": "A confirmed total of 22 students were on board Bus #308 at the time of the incident."
+    },
+    {
+      "id": "F18",
+      "category": "Confirmed_Facts",
+      "fact": "The on-site paramedic confirmed zero injuries among all 22 students and the driver."
+    },
+    {
+      "id": "F19",
+      "category": "Confirmed_Facts",
+      "fact": "A backup bus, #215, arrived at the scene at 08:22 AM to transport all students safely to school."
+    },
+    {
+      "id": "F20",
+      "category": "Confirmed_Facts",
+      "fact": "A preliminary mechanic's report confirmed the cause was a sudden hydraulic fluid leak in the primary brake line."
+    },
+    {
+      "id": "F21",
+      "category": "Documentation_Filing",
+      "fact": "Driver Arthur Finch's written statement was filed and uploaded to the incident management system under file ID DR-20240515-88421.pdf on May 15, 2024."
+    },
+    {
+      "id": "F22",
+      "category": "Documentation_Filing",
+      "fact": "The Maplewood Police Department report number is MWPD-24-008174, filed on May 15, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "Documentation_Filing",
+      "fact": "The post-incident vehicle inspection report is stored in the shared drive at `//fileserver/transport/inspections/2024/INC-20240515-083_Bus308.pdf`."
+    },
+    {
+      "id": "F24",
+      "category": "Documentation_Filing",
+      "fact": "The official insurance claim form, Claim #APX-59382, was submitted via the Apex Insurance online portal on May 16, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "Follow_Up_Actions",
+      "fact": "OPEN: A post-incident review meeting with driver Arthur Finch is scheduled for May 22, 2024, at 10:00 AM in the main office."
+    },
+    {
+      "id": "F26",
+      "category": "Follow_Up_Actions",
+      "fact": "OPEN: The State Department of Education Form 3B, 'School Bus Incident Report,' is due by May 30, 2024, and is currently in draft status, assigned to Maria Garcia."
+    },
+    {
+      "id": "F27",
+      "category": "Follow_Up_Actions",
+      "fact": "OPEN: The repair of Bus #308 is pending a final brake system certification from the lead mechanic; the part is on order with an ETA of May 24, 2024."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What happened in incident INC-20240515-083, when and where?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Overview",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which bus route, vehicle, and driver were involved?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F05",
+        "F08"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After getting the basic incident summary, the user needs to know the specific assets and personnel involved.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident Overview",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are all the open follow-up actions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Open Actions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which district staff and external agencies (police, insurance) were notified?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F14",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Notification Log",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Was the parent notification system used?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After reviewing official notifications, confirming the parent communication is a critical and distinct follow-up.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Notification Log",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Where can I find the driver's written statement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After seeing the open action to meet with the driver (F25), the manager will want to review the driver's filed statement beforehand.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Filed Documents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the police report number for this incident?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After confirming that police were notified (F14), the next logical step for a closure-focused manager is to obtain the official report number for the file.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Filed Documents",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the insurance claim number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After getting one official report number (police), asking for the other key external number (insurance) is a natural continuation.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Filed Documents",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "What was the confirmed mechanical cause?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After identifying the specific vehicle involved, the most pressing question for an operations manager is understanding the root cause of the failure.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Mechanical Cause & History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What was the date of the vehicle's last preventative maintenance?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: Learning of a mechanical failure immediately prompts a question about the vehicle's maintenance history to check for related issues.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Mechanical Cause & History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the date of the driver's last safety training certification?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After identifying the driver, a standard due diligence step is to verify their training and certification status. This is a valuable proactive check.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Personnel File",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Confirm the number of students on board and that there were no injuries.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Student Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "Where is the post-incident vehicle inspection report located?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning the confirmed mechanical cause, the user will predictably want to see the detailed inspection report that contains the evidence.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Vehicle Inspection Report",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Incident Overview",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Open Actions",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Notification Log",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Filed Documents",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Mechanical Cause & History",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Personnel File",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Student Status",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Vehicle Inspection Report",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "bus_incident_followthrough_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

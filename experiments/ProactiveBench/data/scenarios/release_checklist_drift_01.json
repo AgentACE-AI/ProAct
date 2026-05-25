@@ -1,0 +1,379 @@
+{
+  "scenario_id": "release_checklist_drift_01",
+  "domain": "software_release_management",
+  "description": "A release manager notices that different teams are using slightly different pre-release checklists and wants to understand which differences are harmless local variation and which create real launch risk.",
+  "user_profile": {
+    "persona": "33-year-old release coordinator overseeing several product teams",
+    "context": "Releases still happen, but the underlying process has clearly drifted over time",
+    "communication_style": "Process-oriented and comparative, wants meaningful differences surfaced"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel_Roles",
+      "fact": "Anya Petrova is the Release Coordinator for the Platform division at StellarForge Inc., overseeing three product teams."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel_Roles",
+      "fact": "Ben Carter is the Development Lead for Team Phoenix, which is responsible for the 'Nova Platform'."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel_Roles",
+      "fact": "Chloe Davis is the QA Lead for Team Griffin, responsible for testing the 'Orion Suite'."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel_Roles",
+      "fact": "David Chen is the SRE Lead for Team Chimera, which manages the reliability of the 'Lyra App'."
+    },
+    {
+      "id": "F05",
+      "category": "Checklist_Metadata",
+      "fact": "Team Phoenix's pre-release checklist is a Confluence page located at https://stellarforge.atlassian.net/wiki/spaces/PHX/pages/18874369."
+    },
+    {
+      "id": "F06",
+      "category": "Checklist_Metadata",
+      "fact": "Team Griffin's pre-release checklist is a Google Sheet named 'Orion Pre-Flight v2.3' stored in a shared drive."
+    },
+    {
+      "id": "F07",
+      "category": "Checklist_Metadata",
+      "fact": "Team Chimera's pre-release checklist is a mandatory sub-task template within their Jira release ticket workflow, project key 'LYRA'."
+    },
+    {
+      "id": "F08",
+      "category": "Checklist_Metadata",
+      "fact": "The last modification to Team Phoenix's Confluence checklist was on October 5, 2023, by a former employee."
+    },
+    {
+      "id": "F09",
+      "category": "Checklist_Metadata",
+      "fact": "The 'Orion Pre-Flight v2.3' Google Sheet was last updated by Chloe Davis on January 15, 2024, to add a new security scan step."
+    },
+    {
+      "id": "F10",
+      "category": "Checklist_Item_Specifics",
+      "fact": "Team Phoenix's checklist includes a mandatory item: 'Confirm all dependencies are updated to latest minor version in pom.xml'."
+    },
+    {
+      "id": "F11",
+      "category": "Checklist_Item_Specifics",
+      "fact": "Team Griffin's checklist does not require updating minor dependency versions, only versions with a CVE score of 7.0 or higher."
+    },
+    {
+      "id": "F12",
+      "category": "Checklist_Item_Specifics",
+      "fact": "Team Chimera's Jira checklist template includes a sub-task: 'Run `trivy` container scan and attach report with no CRITICAL vulnerabilities'."
+    },
+    {
+      "id": "F13",
+      "category": "Checklist_Item_Specifics",
+      "fact": "Team Phoenix's checklist requires 'Manual QA sign-off from at least 2 testers,' while Team Griffin's requires sign-off from only the QA Lead."
+    },
+    {
+      "id": "F14",
+      "category": "Checklist_Item_Specifics",
+      "fact": "Team Griffin's checklist includes a step: 'Verify rollback plan has been dry-run in staging environment within the last 7 days'."
+    },
+    {
+      "id": "F15",
+      "category": "Checklist_Item_Specifics",
+      "fact": "Team Phoenix's checklist only requires that a rollback plan 'is documented and linked in the release ticket'."
+    },
+    {
+      "id": "F16",
+      "category": "Checklist_Item_Specifics",
+      "fact": "The Lyra App checklist (Team Chimera) has a mandatory item to 'Notify #marketing-updates Slack channel 24 hours before release'."
+    },
+    {
+      "id": "F17",
+      "category": "Team_Practices",
+      "fact": "Team Phoenix conducts their pre-release checklist review meeting every Tuesday at 3:00 PM PST via Google Meet."
+    },
+    {
+      "id": "F18",
+      "category": "Team_Practices",
+      "fact": "Team Griffin does not hold a synchronous meeting; checklist items are checked off asynchronously in their Google Sheet."
+    },
+    {
+      "id": "F19",
+      "category": "Team_Practices",
+      "fact": "Compliance with Team Chimera's Jira checklist is automatically enforced; the release ticket cannot be moved to 'Ready for Deploy' until all sub-tasks are closed."
+    },
+    {
+      "id": "F20",
+      "category": "Team_Practices",
+      "fact": "Anya Petrova's analysis shows that Team Phoenix's checklist completion rate is 95%, while Team Griffin's is 82% over the last quarter."
+    },
+    {
+      "id": "F21",
+      "category": "Incident_History",
+      "fact": "On December 12, 2023, the Orion Suite release (v3.4.1) was rolled back due to a critical performance regression linked to an untested database migration script."
+    },
+    {
+      "id": "F22",
+      "category": "Incident_History",
+      "fact": "The post-mortem for incident INC-2023-451 recommended adding a mandatory dry-run of migration scripts to all checklists, but only Team Griffin has implemented it."
+    },
+    {
+      "id": "F23",
+      "category": "Incident_History",
+      "fact": "On November 20, 2023, the Nova Platform release (v5.8.0) caused a 15-minute outage because of a misconfigured feature flag, `ENABLE_NEW_DASHBOARD`."
+    },
+    {
+      "id": "F24",
+      "category": "Incident_History",
+      "fact": "Team Chimera, which uses the automated Jira checklist, has had zero release-related rollbacks in the past 6 months."
+    },
+    {
+      "id": "F25",
+      "category": "Tooling_Configuration",
+      "fact": "StellarForge Inc.'s official CI/CD tool is Jenkins, hosted at jenkins.stellarforge.internal."
+    },
+    {
+      "id": "F26",
+      "category": "Tooling_Configuration",
+      "fact": "Team Chimera uses a custom Jenkins pipeline that integrates with the Jira API to block promotion if their checklist sub-tasks are not complete."
+    },
+    {
+      "id": "F27",
+      "category": "Tooling_Configuration",
+      "fact": "Team Phoenix's release pipeline sends a notification to the #phoenix-releases Slack channel upon successful deployment to production."
+    },
+    {
+      "id": "F28",
+      "category": "Tooling_Configuration",
+      "fact": "The staging environment, staging.stellarforge.io, has its database refreshed from a sanitized production snapshot on the 1st of every month at 2:00 AM UTC."
+    },
+    {
+      "id": "F29",
+      "category": "Comparative_Risk_Analysis",
+      "fact": "Comparative launch-risk analysis for the three teams: Team Phoenix's requirement to update all dependencies to the latest minor version reduces version drift but, by itself, does not enforce a dedicated security scan step; Team Griffin's CVE-based dependency rule is narrower, but its process adds a recently introduced security-oriented control and a stricter rollback dry-run practice; Team Chimera's checklist requires an explicit `trivy` security scan with no CRITICAL vulnerabilities and is automatically enforced in Jira/Jenkins, making Chimera's release path the most explicitly security-gated of the three. The main launch risk difference is that Phoenix and Griffin rely more on manual checklist discipline, while Chimera has automated enforcement and a direct vulnerability gate."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Where are the pre-release checklists for Team Phoenix, Team Griffin, and Team Chimera located, and what format are they in?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Checklist Discovery",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the cause of the December 12, 2023 Orion Suite release rollback?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Following the Orion Suite rollback, what was the post-mortem's recommendation and which team has implemented it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "After learning the cause of a past incident, the immediate next question is about the corrective actions recommended and their implementation status.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Incident Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "How do Team Griffin's and Team Phoenix's requirements for rollback plans differ?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Learning that a rollback was caused by an untested script and that the fix was to add a dry-run (N3) naturally leads to investigating which other teams have this specific process gap in their rollback plan validation.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Content Comparison - Rollback",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is Team Chimera's release rollback history for the past 6 months, and what is their checklist enforcement mechanism?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19",
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Best Practices - Chimera",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "How does Team Chimera's Jenkins pipeline integrate with Jira to enforce their checklist?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning that Team Chimera has a perfect record due to automated enforcement (N5), the user will want to understand the specific technical implementation of that enforcement.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Best Practices - Chimera",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "How do the dependency update and security scan requirements differ between Team Phoenix, Team Griffin, and Team Chimera, and what do those differences imply for launch risk?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F12",
+        "F29"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After learning that Team Chimera has a perfect release record with an automated checklist (N5), the user will want to compare specific items from their successful process (like security scanning) against the other teams' manual processes.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Content Comparison - Security",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the differences in QA sign-off requirements between Team Phoenix and Team Griffin?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After comparing one aspect of the checklists (dependencies), the user will likely continue comparing other key process steps like QA sign-off.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Content Comparison - Security",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What are the checklist completion rates for Team Phoenix and Team Griffin over the last quarter?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the user has identified the different checklists (N1), a quantitative measure of how well those checklists are actually being followed is a logical next step in assessing process health.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Process Adherence Metrics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What specific pre-release communication step is included in Team Chimera's checklist?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying Team Chimera as a model of success (N5), the user may be interested in other unique, positive process steps they've implemented, such as proactive stakeholder communication.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Process Details - Communication",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Checklist Discovery",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Incident Analysis",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Content Comparison - Rollback",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Best Practices - Chimera",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Content Comparison - Security",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Process Adherence Metrics",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Process Details - Communication",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "release_checklist_drift_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

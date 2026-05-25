@@ -1,0 +1,399 @@
+{
+  "scenario_id": "vessel_maintenance_log_pattern_03",
+  "domain": "maritime_vessel_operations",
+  "description": "A chief engineer suspects that a recurring equipment anomaly is real, but needs to compare log entries across several voyages to determine whether the same pattern has been appearing under similar conditions. All vessel and equipment names are fictional.",
+  "user_profile": {
+    "persona": "48-year-old chief engineer with deep memory of the vessel but fragmented written logs",
+    "context": "The anomaly is subtle enough that each occurrence was previously dismissed in isolation",
+    "communication_style": "Forensic and skeptical, wants patterns proven from recorded details rather than intuition"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Vessel_Information",
+      "fact": "The vessel in question is the MV 'Stellar Horizon', with IMO number 9876543."
+    },
+    {
+      "id": "F02",
+      "category": "Vessel_Information",
+      "fact": "The MV 'Stellar Horizon' is a Panamax bulk carrier operated by Orion Maritime Logistics."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel_Information",
+      "fact": "The Chief Engineer investigating the anomaly is Alistair Finch."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel_Information",
+      "fact": "Alistair Finch's employee ID with Orion Maritime Logistics is 77401."
+    },
+    {
+      "id": "F05",
+      "category": "Equipment_Details",
+      "fact": "The equipment experiencing anomalies is the primary Heavy Fuel Oil (HFO) Purifier, a 'Maritech Purifier Pro' model 8000."
+    },
+    {
+      "id": "F06",
+      "category": "Equipment_Details",
+      "fact": "The serial number of the HFO Purifier is MTPP-8K-915B2."
+    },
+    {
+      "id": "F07",
+      "category": "Equipment_Details",
+      "fact": "The normal operating back-pressure for the Maritech Purifier Pro 8000 is 2.5 bar."
+    },
+    {
+      "id": "F08",
+      "category": "Data_Systems",
+      "fact": "All engine room logs are stored in a centralized database system named 'SeaLogix', version 4.2."
+    },
+    {
+      "id": "F09",
+      "category": "Data_Systems",
+      "fact": "Alistair Finch accesses the SeaLogix system via the URL https://orion.sealogix.net using the username 'finch.a'."
+    },
+    {
+      "id": "F10",
+      "category": "Voyage_Data",
+      "fact": "The first voyage under review is V-SH-2208, from Singapore to Port Hedland, Australia, dated August 10-22, 2022."
+    },
+    {
+      "id": "F11",
+      "category": "Anomaly_Log_Entries",
+      "fact": "On August 18, 2022, at 15:30 UTC (Voyage V-SH-2208), the HFO purifier back-pressure dropped to 2.1 bar for 11 minutes."
+    },
+    {
+      "id": "F12",
+      "category": "Operational_Context",
+      "fact": "During the August 18, 2022 incident, the main engine load was at 88% and the sea water temperature was 30°C."
+    },
+    {
+      "id": "F13",
+      "category": "Anomaly_Log_Entries",
+      "fact": "The log entry for the August 18, 2022 event (ID: 98A55) was annotated by the Second Engineer as 'Transient pressure dip, self-resolved'."
+    },
+    {
+      "id": "F14",
+      "category": "Voyage_Data",
+      "fact": "The second voyage under review is V-SH-2301, from Colombo, Sri Lanka to Fujairah, UAE, dated January 5-14, 2023."
+    },
+    {
+      "id": "F15",
+      "category": "Anomaly_Log_Entries",
+      "fact": "On January 11, 2023, at 04:15 UTC (Voyage V-SH-2301), the HFO purifier back-pressure dropped to 2.0 bar for 14 minutes."
+    },
+    {
+      "id": "F16",
+      "category": "Operational_Context",
+      "fact": "During the January 11, 2023 incident, the vessel was navigating the Arabian Sea with an ambient humidity of 89%."
+    },
+    {
+      "id": "F17",
+      "category": "Voyage_Data",
+      "fact": "The third voyage under review is V-SH-2305, from Santos, Brazil to Rotterdam, Netherlands, dated May 2-18, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "Anomaly_Log_Entries",
+      "fact": "On May 8, 2023, at 22:40 UTC (Voyage V-SH-2305), the HFO purifier back-pressure dropped to 2.1 bar for 9 minutes."
+    },
+    {
+      "id": "F19",
+      "category": "Operational_Context",
+      "fact": "During the May 8, 2023 incident, the main engine was operating at 91% MCR (Maximum Continuous Rating) while crossing the equator."
+    },
+    {
+      "id": "F20",
+      "category": "Equipment_Maintenance",
+      "fact": "The purifier's discharge pressure sensor (Model: Sensorex PT-100) was last calibrated on December 15, 2022."
+    },
+    {
+      "id": "F21",
+      "category": "Equipment_Maintenance",
+      "fact": "A full service of the purifier bowl assembly was completed on December 16, 2022, at the Dubai Drydocks."
+    },
+    {
+      "id": "F22",
+      "category": "Data_Systems",
+      "fact": "The SeaLogix system allows data export to CSV format for trend analysis in Microsoft Excel."
+    },
+    {
+      "id": "F23",
+      "category": "Personnel_Information",
+      "fact": "The Second Engineer on duty during the incident of January 11, 2023 was Jian Li."
+    },
+    {
+      "id": "F24",
+      "category": "Company_Policy",
+      "fact": "Orion Maritime Logistics policy OML-ENG-113A requires a 'Root Cause Analysis Report' for any equipment anomaly recurring more than twice in a 12-month period."
+    },
+    {
+      "id": "F25",
+      "category": "Operational_Context",
+      "fact": "The HFO being used during all three incidents was VLSFO (Very Low Sulphur Fuel Oil) sourced from bunkering operations in Singapore."
+    },
+    {
+      "id": "F26",
+      "category": "Data_Systems",
+      "fact": "The specific query Alistair Finch uses to find the anomalies is: `SELECT * FROM eng_log WHERE equipment_sn = 'MTPP-8K-915B2' AND parameter = 'back_pressure' AND value < 2.2`."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the model and serial number of the HFO Purifier showing anomalies?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Investigation Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which database system stores the engine room logs for the MV 'Stellar Horizon'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Investigation Setup",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Find the log entry for the first HFO purifier anomaly on voyage V-SH-2208, including the date, time, pressure reading, and duration.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying the specific piece of equipment, the user's first logical step is to find the initial instance of the anomaly they are investigating.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Anomaly Case",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was the main engine load and sea water temperature during the August 18, 2022 incident?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After confirming the details of an anomaly, the user will want to understand the surrounding operational context to look for causes.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "First Anomaly Case",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Provide the date, time, pressure reading, and duration for the purifier anomaly on voyage V-SH-2301.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Following the forensic analysis of the first incident, the user will proceed chronologically to the next suspected occurrence to establish a pattern.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Anomaly Case",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What were the details of the third pressure drop on voyage V-SH-2305, including date, time, pressure, and duration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17",
+        "F18"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After reviewing the second incident, the user continues their chronological investigation to find the third and final data point to confirm the recurring pattern.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Third Anomaly Case",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "When was the purifier's discharge pressure sensor last calibrated?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Maintenance History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "When was the last full service of the purifier bowl assembly completed?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After checking the sensor calibration, a thorough engineer would also check the major mechanical service history to rule out other maintenance-related causes.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Maintenance History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What was the common fuel source used during all three incidents?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Common Factor Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "According to company policy, what action is required for an equipment anomaly that recurs more than twice in a 12-month period?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: Once the user has established a recurring pattern and identified a potential common factor (fuel), they will need to know the official procedure for reporting their findings.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Reporting Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "How can I export the log data for my own trend analysis?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After learning that a 'Root Cause Analysis Report' is required, the user will need the raw data to perform the analysis and include in the report.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Data Export",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Who was the Second Engineer on duty during the January 11, 2023 incident?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: While reviewing a specific incident log, the user may want to know who was on watch to ask for their direct recollection of the event.",
+      "turn_order": 12,
+      "reveal_group": "G3",
+      "reveal_group_label": "Second Anomaly Case",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Investigation Setup",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "First Anomaly Case",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Second Anomaly Case",
+      "member_need_ids": [
+        "N5",
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Third Anomaly Case",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Maintenance History",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Common Factor Analysis",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Reporting Requirements",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Data Export",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vessel_maintenance_log_pattern_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "scenario_id": "health_test_results_02",
+  "domain": "health_management",
+  "description": "A patient has received lab reports from three recent appointments and wants help identifying which numbers changed meaningfully, which stayed stable, and what follow-up questions to ask next time. All lab names and providers are fictional.",
+  "user_profile": {
+    "persona": "39-year-old consultant who likes to understand the numbers behind decisions",
+    "context": "Collected the reports in a folder but has not been able to make sense of the trend across visits",
+    "communication_style": "Analytical and comparison-focused, prefers patterns over reassurance"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "monitoring",
+      "fact": "On November 15, 2023, Alex Chen's LDL Cholesterol (LDL-C) was 145 mg/dL."
+    },
+    {
+      "id": "F02",
+      "category": "monitoring",
+      "fact": "On February 20, 2024, Alex Chen's LDL Cholesterol (LDL-C) was 115 mg/dL."
+    },
+    {
+      "id": "F03",
+      "category": "monitoring",
+      "fact": "On May 25, 2024, Alex Chen's LDL Cholesterol (LDL-C) was 98 mg/dL."
+    },
+    {
+      "id": "F04",
+      "category": "monitoring",
+      "fact": "On November 15, 2023, Alex Chen's Hemoglobin A1c (HbA1c) was 5.9%."
+    },
+    {
+      "id": "F05",
+      "category": "monitoring",
+      "fact": "On February 20, 2024, Alex Chen's Hemoglobin A1c (HbA1c) was 5.8%."
+    },
+    {
+      "id": "F06",
+      "category": "monitoring",
+      "fact": "On May 25, 2024, Alex Chen's Hemoglobin A1c (HbA1c) was 5.7%."
+    },
+    {
+      "id": "F07",
+      "category": "monitoring",
+      "fact": "On November 15, 2023, Alex Chen's Triglycerides were 180 mg/dL."
+    },
+    {
+      "id": "F08",
+      "category": "monitoring",
+      "fact": "On February 20, 2024, Alex Chen's Triglycerides were 160 mg/dL."
+    },
+    {
+      "id": "F09",
+      "category": "monitoring",
+      "fact": "On May 25, 2024, Alex Chen's Triglycerides were 145 mg/dL."
+    },
+    {
+      "id": "F10",
+      "category": "monitoring",
+      "fact": "On November 15, 2023, Alex Chen's Serum Creatinine was 0.9 mg/dL."
+    },
+    {
+      "id": "F11",
+      "category": "monitoring",
+      "fact": "On February 20, 2024, Alex Chen's Serum Creatinine was 0.9 mg/dL."
+    },
+    {
+      "id": "F12",
+      "category": "monitoring",
+      "fact": "On May 25, 2024, Alex Chen's Serum Creatinine was 1.0 mg/dL."
+    },
+    {
+      "id": "F13",
+      "category": "diagnosis",
+      "fact": "Following the November 15, 2023 lab results, Dr. Evelyn Reed diagnosed Alex Chen with Hyperlipidemia."
+    },
+    {
+      "id": "F14",
+      "category": "diagnosis",
+      "fact": "Based on the consistent HbA1c results, Alex Chen has a standing diagnosis of Prediabetes."
+    },
+    {
+      "id": "F15",
+      "category": "medication",
+      "fact": "On November 17, 2023, Dr. Reed prescribed Rosuvastatin 10 mg to be taken once daily in the evening."
+    },
+    {
+      "id": "F16",
+      "category": "medication",
+      "fact": "The prescription for Rosuvastatin 10 mg (ID# RX789012) was filled at Sterling Pharmacy with 2 refills remaining as of May 28, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "medication",
+      "fact": "Alex Chen has reported no side effects, such as muscle pain or weakness, from taking Rosuvastatin."
+    },
+    {
+      "id": "F18",
+      "category": "lifestyle",
+      "fact": "Dr. Reed recommended a dietary goal of consuming at least 30 grams of fiber per day."
+    },
+    {
+      "id": "F19",
+      "category": "lifestyle",
+      "fact": "A key dietary recommendation for Alex Chen is to limit saturated fat intake to less than 15 grams per day."
+    },
+    {
+      "id": "F20",
+      "category": "lifestyle",
+      "fact": "The recommended exercise regimen is a minimum of 150 minutes of moderate-intensity cardiovascular activity per week, such as brisk walking or cycling."
+    },
+    {
+      "id": "F21",
+      "category": "lifestyle",
+      "fact": "Dr. Reed advised Alex Chen to limit alcohol consumption to a maximum of two standard drinks per day."
+    },
+    {
+      "id": "F22",
+      "category": "monitoring",
+      "fact": "Alex Chen's next follow-up appointment with Dr. Evelyn Reed at Northwood Medical Group is scheduled for November 28, 2024, at 10:30 AM."
+    },
+    {
+      "id": "F23",
+      "category": "monitoring",
+      "fact": "A lab order for a new lipid panel and HbA1c test has been placed with QuestPath Diagnostics for the week before the November 28, 2024 appointment."
+    },
+    {
+      "id": "F24",
+      "category": "support",
+      "fact": "A referral was made on November 17, 2023, for Alex Chen to consult with registered dietitian Maria Flores for personalized meal planning."
+    },
+    {
+      "id": "F25",
+      "category": "support",
+      "fact": "Non-urgent questions for Dr. Reed can be sent via the 'MyHealthLink' patient portal at https://myhealthlink.northwood.fictional."
+    },
+    {
+      "id": "F26",
+      "category": "emergency",
+      "fact": "Alex Chen should immediately report any unexplained severe muscle pain or dark-colored urine to Northwood Medical Group's on-call nurse at 555-0123, as it could be a rare side effect of his medication."
+    },
+    {
+      "id": "F27",
+      "category": "emergency",
+      "fact": "Symptoms of excessive thirst, frequent urination, or blurred vision should be reported promptly, as they may indicate a progression of prediabetes."
+    },
+    {
+      "id": "F28",
+      "category": "emergency",
+      "fact": "If Alex Chen develops excessive thirst, frequent urination, or blurred vision, he should report those symptoms promptly to Dr. Reed's office rather than waiting for the next follow-up appointment."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was my LDL Cholesterol level on November 15, 2023, February 20, 2024, and May 25, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Lipid Panel Trends",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What were my Triglycerides levels on November 15, 2023, February 20, 2024, and May 25, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08",
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "User is comparing lipid panel results across visits, Triglycerides are part of a standard lipid panel.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Lipid Panel Trends",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was the diagnosis following the November 15, 2023 lab results?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Diagnoses & Medication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What medication was prescribed and when was it prescribed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Following a diagnosis, the natural next question is about the prescribed treatment.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Diagnoses & Medication",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What were my Hemoglobin A1c (HbA1c) levels on November 15, 2023, February 20, 2024, and May 25, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "The user is comparing trends across visits, and HbA1c is another key lab result mentioned in the scenario.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "HbA1c & Prediabetes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the standing diagnosis based on the consistent HbA1c results?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After reviewing HbA1c trends, the user would want to know the associated diagnosis.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "HbA1c & Prediabetes",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What were my Serum Creatinine levels on November 15, 2023, February 20, 2024, and May 25, 2024?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "The user is systematically reviewing all lab results across visits to identify trends.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Other Lab Trends",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What fiber intake goal did Dr. Reed recommend as part of the lifestyle plan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the standing prediabetes diagnosis, a practical next question is what concrete lifestyle targets Dr. Reed recommended, starting with the fiber goal.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Lifestyle Recommendations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the recommended limit for saturated fat intake?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Continuing with dietary recommendations, saturated fat is a key concern for lipid management.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Lifestyle Recommendations",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What exercise regimen did Dr. Reed recommend?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the standing prediabetes diagnosis, a practical next question is what exercise regimen Dr. Reed recommended as part of the lifestyle plan.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Lifestyle Recommendations",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N11",
+      "description": "What is the maximum recommended alcohol consumption?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After reviewing the main diet-related limits, asking whether there was also a specific alcohol limit is a more natural follow-up than jumping from exercise.",
+      "turn_order": 11,
+      "reveal_group": "G5",
+      "reveal_group_label": "Lifestyle Recommendations",
+      "reveal_priority": 4
+    },
+    {
+      "id": "N12",
+      "description": "What is the date and time of my next follow-up appointment with Dr. Reed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After systematically reviewing the main lab trends across visits, a practical next question is when the next follow-up appointment is scheduled to review those results.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Next Steps & Follow-up",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What lab tests have been ordered for the week before the next appointment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After systematically reviewing the main lab trends across visits, a practical next question is what follow-up lab tests have already been ordered before the next appointment.",
+      "turn_order": 13,
+      "reveal_group": "G6",
+      "reveal_group_label": "Next Steps & Follow-up",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "If I have non-urgent questions before that follow-up, where can I send them?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After seeing the date and time of the next follow-up, the user may naturally want to know where to send non-urgent questions before that visit.",
+      "turn_order": 14,
+      "reveal_group": "G7",
+      "reveal_group_label": "Contact & Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "If I develop excessive thirst, frequent urination, or blurred vision, what could those symptoms indicate, and should I report them before my next follow-up appointment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After discussing the prediabetes diagnosis, proactively informing the user about symptoms that may signal progression is highly relevant.",
+      "turn_order": 15,
+      "reveal_group": "G8",
+      "reveal_group_label": "Emergency & Warning Signs",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Lipid Panel Trends",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Diagnoses & Medication",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "HbA1c & Prediabetes",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Other Lab Trends",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Lifestyle Recommendations",
+      "member_need_ids": [
+        "N8",
+        "N9",
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Next Steps & Follow-up",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Contact & Support",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Emergency & Warning Signs",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "health_test_results_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

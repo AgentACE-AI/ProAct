@@ -1,0 +1,466 @@
+{
+  "scenario_id": "compliance_audit_readiness_05",
+  "domain": "compliance_management",
+  "description": "An organization is several months away from an audit and wants to know what evidence should be collected gradually now so the review does not become a last-minute scramble.",
+  "user_profile": {
+    "persona": "45-year-old operations and compliance lead trying to make audit preparation more sustainable",
+    "context": "Past audits technically passed, but only after exhausting bursts of reactive evidence gathering",
+    "communication_style": "Preventive and process-minded, prefers steady preparation over heroics"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "audit_framework",
+      "fact": "Stellar Innovations Inc. is preparing for a SOC 2 Type 2 audit for its 'Nexus Platform' product."
+    },
+    {
+      "id": "F02",
+      "category": "audit_framework",
+      "fact": "The audit is being conducted by the firm Veritas Assurance Partners, with Maria Chen as the lead auditor."
+    },
+    {
+      "id": "F03",
+      "category": "audit_framework",
+      "fact": "The official audit observation period is from January 1, 2024, to June 30, 2024."
+    },
+    {
+      "id": "F04",
+      "category": "audit_framework",
+      "fact": "The on-site portion of the audit is scheduled to begin on August 5, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "access_control",
+      "fact": "The Q1 2024 user access review for the AWS production environment (Account ID: 9876-5432-1098) is due by March 31, 2024."
+    },
+    {
+      "id": "F06",
+      "category": "access_control",
+      "fact": "Alex Vega, Compliance Lead, tracks all evidence collection tasks in the Vanta platform, accessible at https://stellar.vanta.com."
+    },
+    {
+      "id": "F07",
+      "category": "access_control",
+      "fact": "All administrative access to production systems requires multi-factor authentication (MFA) managed through Duo Security."
+    },
+    {
+      "id": "F08",
+      "category": "access_control",
+      "fact": "A new developer, Sam Jones, was granted read-only access to the 'staging-db-replica' on March 11, 2024, as approved in Jira ticket ENG-1138."
+    },
+    {
+      "id": "F09",
+      "category": "change_management",
+      "fact": "All standard code changes deployed to production must have an approved Jira ticket, a successful build in the CircleCI pipeline 'prod-deploy-v2', and documented Change Advisory Board (CAB) approval; emergency changes must be documented in an incident report."
+    },
+    {
+      "id": "F10",
+      "category": "change_management",
+      "fact": "Pull Request #729 in the 'webapp-backend' GitHub repository was approved by lead engineer Ben Carter on March 14, 2024 at 2:15 PM PST."
+    },
+    {
+      "id": "F11",
+      "category": "change_management",
+      "fact": "The Change Advisory Board (CAB) meeting occurs every Tuesday at 10:00 AM PST via the Google Meet link meet.google.com/cab-stellar-weekly."
+    },
+    {
+      "id": "F12",
+      "category": "change_management",
+      "fact": "The last emergency change, documented in incident report SIR-2024-005, was deployed on February 20, 2024, to patch a critical vulnerability (CVE-2024-12345)."
+    },
+    {
+      "id": "F13",
+      "category": "security_monitoring",
+      "fact": "Stellar Innovations uses Datadog for infrastructure monitoring and security alerting, with logs retained for 12 months."
+    },
+    {
+      "id": "F14",
+      "category": "security_monitoring",
+      "fact": "A high-severity security alert (ID: DD-ALERT-98172) for unusual login activity was triggered on March 12, 2024, at 11:45 PM UTC and was resolved by on-call engineer Priya Sharma."
+    },
+    {
+      "id": "F15",
+      "category": "security_monitoring",
+      "fact": "The annual penetration test by CyberDefend Solutions is scheduled for the week of May 13, 2024; the SOW is document #CDS-SI-2024-01."
+    },
+    {
+      "id": "F16",
+      "category": "security_monitoring",
+      "fact": "All company-issued laptops are required to have CrowdStrike Falcon sensor version 7.04 or higher installed and active."
+    },
+    {
+      "id": "F17",
+      "category": "security_monitoring",
+      "fact": "The most recent weekly AWS Inspector vulnerability scan from March 13, 2024, identified two medium-severity findings, tracked in tickets SEC-901 and SEC-902."
+    },
+    {
+      "id": "F18",
+      "category": "employee_lifecycle",
+      "fact": "All new hires must complete the 'Stellar Innovations Security Awareness Training 2024' course in KnowBe4 within 7 days of their start date."
+    },
+    {
+      "id": "F19",
+      "category": "employee_lifecycle",
+      "fact": "New hire Chloe Davis (start date March 4, 2024) completed her security training on March 6, 2024; the certificate is stored in her Rippling HR profile."
+    },
+    {
+      "id": "F20",
+      "category": "employee_lifecycle",
+      "fact": "As per policy CM-POL-007, all system access for a departing employee must be revoked within 2 hours of their official termination time."
+    },
+    {
+      "id": "F21",
+      "category": "employee_lifecycle",
+      "fact": "The last departing employee, Mark Robinson, was offboarded on February 28, 2024; the offboarding ticket HR-089 was closed at 4:30 PM PST that day."
+    },
+    {
+      "id": "F22",
+      "category": "vendor_management",
+      "fact": "A new sub-processor, 'DataPipe Analytics', was onboarded on February 15, 2024, to process marketing data."
+    },
+    {
+      "id": "F23",
+      "category": "vendor_management",
+      "fact": "The security review for 'DataPipe Analytics,' including their SOC 2 Type 2 report, was approved by Alex Vega on February 12, 2024, and is stored in Confluence page ID 554321."
+    },
+    {
+      "id": "F24",
+      "category": "vendor_management",
+      "fact": "The annual security review of critical vendor AWS is scheduled for June 10, 2024."
+    },
+    {
+      "id": "F25",
+      "category": "data_management",
+      "fact": "All production RDS databases are encrypted at rest using the AWS KMS key with ARN 'arn:aws:kms:us-west-2:987654321098:key/a1b2c3d4-e5f6-7890-g1h2-i3j4k5l6m7n8'."
+    },
+    {
+      "id": "F26",
+      "category": "data_management",
+      "fact": "Production database backups are taken daily at 02:00 AM UTC and retained for 35 days, as configured in AWS Backup plan 'prod-db-backup-plan-01'."
+    },
+    {
+      "id": "F27",
+      "category": "data_management",
+      "fact": "The company's Data Classification Policy (version 2.1, dated January 5, 2024) defines three levels of data: Public, Internal, and Confidential."
+    },
+    {
+      "id": "F28",
+      "category": "access_control",
+      "fact": "The 'Production DB Admins' Okta group, which grants privileged database access, currently has 4 members: Ben Carter, Priya Sharma, Li Wei, and David Chen."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the product being audited, what is the audit framework, and what is the official observation period?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Audit Scope & Timeline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who is the lead auditor and when does the on-site audit begin?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group follow-up to get more details about the audit personnel and key dates.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Audit Scope & Timeline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the deadline for the Q1 2024 user access review for the AWS production environment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Access Control - Periodic Review",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the details of a recent developer access grant, including who was granted access, to what resource, and the approval ticket?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group follow-up: After identifying the current members of the privileged 'Production DB Admins' group, the user will naturally ask for a concrete recent access-grant example to collect as supporting evidence.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Access Control - Specific Events",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Who are the current members of the 'Production DB Admins' Okta group?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming the user access review deadline, the user will naturally want a current privileged-access population to review, such as the 'Production DB Admins' group.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Access Control - Specific Events",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which AWS KMS key is used to encrypt production RDS databases?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After reviewing who has privileged access to production databases, a natural security follow-up is to verify how that data is protected at rest.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Data Management - Encryption",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What evidence is required for a code change to be deployed to production, and what document is used for an emergency change?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Change Management Process",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Provide an example of a recent, approved pull request, including the repo, approver, and timestamp.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming the audit lead and key on-site date, the user will want to begin collecting concrete sample evidence early; a recent approved production pull request is a natural change-management artifact to gather.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Change Management Process",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the security awareness training requirement for new hires?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Employee Lifecycle - Onboarding",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Provide the details for a recent new hire's training completion, including their name, start date, and completion date.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group follow-up: After asking about the onboarding policy, the user needs a specific example of a new hire who completed the training.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Employee Lifecycle - Onboarding",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What are the details of the most recent employee offboarding, including their name, date, and the ticket closure time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: Discussing onboarding evidence naturally leads to gathering evidence for the other end of the employee lifecycle: offboarding.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Employee Lifecycle - Offboarding",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Describe a recent high-severity security alert, including its ID, the nature of the alert, and who resolved it.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Security Monitoring - Alert Handling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What were the findings from the most recent weekly AWS Inspector vulnerability scan and how are they being tracked?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After reviewing a reactive security event (an alert), the user may want to see evidence of proactive security work, like vulnerability scanning.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Security Monitoring - Vulnerability Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What new sub-processor was recently onboarded and for what purpose?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After clarifying the audit timeline and lead auditor, the user will naturally identify additional evidence domains to collect early, including recent sub-processor onboarding.",
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Vendor Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Where is the security review documentation for 'DataPipe Analytics' stored and who approved it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "Intra-group follow-up: After identifying a new vendor, the user needs to find the associated due diligence evidence.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Vendor Management",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Audit Scope & Timeline",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Access Control - Periodic Review",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Access Control - Specific Events",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Data Management - Encryption",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Change Management Process",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Employee Lifecycle - Onboarding",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Employee Lifecycle - Offboarding",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Security Monitoring - Alert Handling",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Security Monitoring - Vulnerability Management",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Vendor Management",
+      "member_need_ids": [
+        "N14",
+        "N15"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "compliance_audit_readiness_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

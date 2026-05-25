@@ -1,0 +1,401 @@
+{
+  "scenario_id": "library_interloan_status_trace_02",
+  "domain": "public_library_services",
+  "description": "A librarian must keep track of interlibrary loan requests across request, shipment, arrival, pickup, return, and overdue stages when each request can stall in a different place.",
+  "user_profile": {
+    "persona": "35-year-old resource-sharing librarian handling many small requests in parallel",
+    "context": "Patrons ask for updates, but the status trail is distributed across messages, labels, and partner library systems",
+    "communication_style": "Status-oriented and service-focused, wants each request made easy to locate in the pipeline"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Patron_Information",
+      "fact": "Patron Alex Chen's library card number is MCPL-94502."
+    },
+    {
+      "id": "F02",
+      "category": "Patron_Information",
+      "fact": "Patron Maria Garcia's contact email for all library notifications is m.garcia88@email.com."
+    },
+    {
+      "id": "F03",
+      "category": "Patron_Information",
+      "fact": "Ben Carter's library account (MCPL-31108) is currently blocked due to the overdue item ILL-2024-765."
+    },
+    {
+      "id": "F04",
+      "category": "Request_Details",
+      "fact": "Request ILL-2024-781 for the book 'The Gilded Compass' was placed by Alex Chen on October 15, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "Request_Details",
+      "fact": "Request ILL-2024-792 for 'Echoes of the Void' was placed by Maria Garcia on October 18, 2024."
+    },
+    {
+      "id": "F06",
+      "category": "Request_Details",
+      "fact": "Request ILL-2024-765 for the book 'Culinary Cartography' by Ben Carter is currently 7 days overdue."
+    },
+    {
+      "id": "F07",
+      "category": "Request_Details",
+      "fact": "The ISBN for the requested edition of 'The Gilded Compass' is 978-0-123456-78-9."
+    },
+    {
+      "id": "F08",
+      "category": "Lending_Library_Info",
+      "fact": "The lending library for request ILL-2024-781 is the Oak Valley Public Library."
+    },
+    {
+      "id": "F09",
+      "category": "Lending_Library_Info",
+      "fact": "The primary contact for ILL at Oak Valley Public Library is David Lee, reachable at d.lee@oakvalleylib.org."
+    },
+    {
+      "id": "F10",
+      "category": "Lending_Library_Info",
+      "fact": "Crestmont University Library uses the NRE (National Request Exchange) system for all academic loan requests."
+    },
+    {
+      "id": "F11",
+      "category": "Lending_Library_Info",
+      "fact": "Crestmont University Library's phone number for their ILL department is 555-821-4091."
+    },
+    {
+      "id": "F12",
+      "category": "Shipment_Tracking",
+      "fact": "The tracking number for 'The Gilded Compass' (ILL-2024-781) is LLC-881-59B-234 via LibraryLogistics Couriers."
+    },
+    {
+      "id": "F13",
+      "category": "Shipment_Tracking",
+      "fact": "The shipment for 'Echoes of the Void' (ILL-2024-792) from Crestmont University Library has not yet been dispatched as of October 25, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "Shipment_Tracking",
+      "fact": "LibraryLogistics Couriers' online tracking portal is located at https://track.librarylogistics.net."
+    },
+    {
+      "id": "F15",
+      "category": "Item_Status",
+      "fact": "The status of 'The Gilded Compass' (ILL-2024-781) was updated to 'Arrived - Awaiting Pickup' on October 24, 2024, at 11:15 AM."
+    },
+    {
+      "id": "F16",
+      "category": "Item_Status",
+      "fact": "The book 'Culinary Cartography' (ILL-2024-765) was due back to Maplewood City Library on October 18, 2024."
+    },
+    {
+      "id": "F17",
+      "category": "Item_Status",
+      "fact": "A request for the article 'Quantum Entanglement in Mycology' (ILL-2024-795) was filled electronically; a PDF was sent to the patron on October 23, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "Item_Status",
+      "fact": "The physical copy of 'The Gilded Compass' is currently located on Shelf B-3 of the ILL Holding Shelf."
+    },
+    {
+      "id": "F19",
+      "category": "System_and_Tools",
+      "fact": "The primary ILL management software is LibriLink, accessible at https://maplewood.librilink.com."
+    },
+    {
+      "id": "F20",
+      "category": "System_and_Tools",
+      "fact": "The librarian's username for LibriLink is 'sjenkins' and her designated workstation is ILL-DESK-02."
+    },
+    {
+      "id": "F21",
+      "category": "System_and_Tools",
+      "fact": "The state-wide catalog search and request portal is StateShare Connect, with the URL: https://search.stateshareconnect.gov."
+    },
+    {
+      "id": "F22",
+      "category": "System_and_Tools",
+      "fact": "Patron records and local holdings are managed in the Horizon ILS system."
+    },
+    {
+      "id": "F23",
+      "category": "System_and_Tools",
+      "fact": "Automated patron notifications for ILL items are sent from the email address noreply@maplewood-libnotify.org."
+    },
+    {
+      "id": "F24",
+      "category": "System_and_Tools",
+      "fact": "The barcode scanner used to check in ILL items is a Zebra DS2208, located at workstation ILL-DESK-02."
+    },
+    {
+      "id": "F25",
+      "category": "Internal_Procedures",
+      "fact": "All incoming ILL items must be placed on the designated 'ILL Holding Shelf' behind the main circulation desk, in Section B."
+    },
+    {
+      "id": "F26",
+      "category": "Internal_Procedures",
+      "fact": "A bright yellow paper band must be wrapped around any ILL item that is currently in transit between libraries."
+    },
+    {
+      "id": "F27",
+      "category": "Internal_Procedures",
+      "fact": "When an item arrives, its status must be updated in LibriLink within 1 hour of being unpacked from the courier bin."
+    },
+    {
+      "id": "F28",
+      "category": "Internal_Procedures",
+      "fact": "Overdue notices for ILL items are automatically generated by LibriLink on the 3rd, 7th, and 15th day past the due date."
+    },
+    {
+      "id": "F29",
+      "category": "Internal_Procedures",
+      "fact": "The fee for a lost ILL item is the replacement cost set by the lending library, plus a $15.00 processing fee from Maplewood City Library."
+    },
+    {
+      "id": "F30",
+      "category": "Internal_Procedures",
+      "fact": "All returned ILL items must be packed in a gray, padded reusable envelope for shipment back to the lending library."
+    },
+    {
+      "id": "F31",
+      "category": "Communication",
+      "fact": "The dedicated Slack channel for communication with partner libraries in the metro area is #metro-ill-connect."
+    },
+    {
+      "id": "F32",
+      "category": "Communication",
+      "fact": "To request a renewal for an item, the librarian must send an email to the lending library's ILL contact at least 5 business days before the due date."
+    },
+    {
+      "id": "F33",
+      "category": "Communication",
+      "fact": "Patron Alex Chen called for a status update on ILL-2024-781 on October 25, 2024, at 2:30 PM."
+    },
+    {
+      "id": "F34",
+      "category": "Communication",
+      "fact": "The status 'Stalled - Contact Lender' is used in LibriLink when a request has not been updated by the partner library in over 10 days."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "A patron, Alex Chen, called for an update on his request, ILL-2024-781. What is the item's current status and when did it arrive?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F33"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Patron Status Inquiry",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Now that I know 'The Gilded Compass' has arrived, where is its physical location on the holding shelf?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming an item has arrived, the immediate next step is to locate it physically for the patron.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Patron Status Inquiry",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Within how long after unpacking must an arrived ILL item's status be updated in LibriLink?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming that the item has arrived and is awaiting pickup, a direct process follow-up is how quickly its status must be updated in LibriLink after unpacking.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Arrival Processing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the current status of Maria Garcia's request, ILL-2024-792, for 'Echoes of the Void'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Problematic Request Follow-up",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Since the shipment for 'Echoes of the Void' hasn't been dispatched, what is the phone number for the lending library, Crestmont University Library?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: Discovering a request is stalled naturally leads to needing the contact information for the partner library to resolve the issue.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Problematic Request Follow-up",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Which specific overdue ILL item is causing Ben Carter's library account to be blocked?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Overdue Item Management",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Exactly how many days overdue is Ben Carter's book, 'Culinary Cartography' (ILL-2024-765)?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: Once an overdue item is identified, the next logical question is to determine the severity by checking how long it has been overdue.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Overdue Item Management",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "On which days past the due date does the LibriLink system automatically send overdue notices to patrons?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After dealing with a specific overdue item, the librarian may want to confirm the automated system's notification schedule to understand what communications the patron has already received.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "System Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What kind of packaging is required for shipping returned ILL items back to the lending library?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Internal Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "At which workstation is the barcode scanner located for checking in arrived ILL items?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F24"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming the arrival-status update procedure for unpacked ILL items, a direct operational follow-up is which workstation has the barcode scanner used for check-in.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Workstation Tools",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Patron Status Inquiry",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+  {
+    "group_id": "G2",
+    "label": "Arrival Processing",
+    "member_need_ids": [
+      "N3"
+    ],
+    "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Problematic Request Follow-up",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Overdue Item Management",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "System Procedures",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Internal Procedures",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+  {
+    "group_id": "G7",
+    "label": "Workstation Tools",
+    "member_need_ids": [
+      "N10"
+    ],
+    "trigger_after": "G2"
+  }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "library_interloan_status_trace_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

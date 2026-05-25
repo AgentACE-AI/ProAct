@@ -1,0 +1,367 @@
+{
+  "scenario_id": "rent_noise_dispute_03",
+  "domain": "apartment_renting",
+  "description": "A tenant is dealing with repeated late-night noise from a neighboring unit and needs to document incidents, track building responses, and decide when informal communication is no longer enough. All building names are fictional.",
+  "user_profile": {
+    "persona": "33-year-old graduate student who studies and works from home",
+    "context": "Several sleepless weeks have made the problem too disruptive to keep ignoring",
+    "communication_style": "Measured and factual, prefers keeping a clear record before escalating"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Tenant Information",
+      "fact": "The tenant's name is Elara Vance."
+    },
+    {
+      "id": "F02",
+      "category": "Tenant Information",
+      "fact": "Elara Vance resides in Unit 4B at The Constellation Apartments."
+    },
+    {
+      "id": "F03",
+      "category": "Tenant Information",
+      "fact": "Elara Vance is a 33-year-old Ph.D. candidate in Astrophysics at Stellar University."
+    },
+    {
+      "id": "F04",
+      "category": "Building Information",
+      "fact": "The building is named The Constellation Apartments."
+    },
+    {
+      "id": "F05",
+      "category": "Building Information",
+      "fact": "The Constellation Apartments is located at 1400 Nova Street, Aptos, CA 95003."
+    },
+    {
+      "id": "F06",
+      "category": "Building Information",
+      "fact": "Elara Vance's lease for Unit 4B began on August 1, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "Neighbor Information",
+      "fact": "The source of the noise is Unit 4A, which is directly adjacent to Elara Vance's unit."
+    },
+    {
+      "id": "F08",
+      "category": "Neighbor Information",
+      "fact": "The primary type of noise from Unit 4A is loud electronic music with heavy bass."
+    },
+    {
+      "id": "F09",
+      "category": "Neighbor Information",
+      "fact": "A secondary type of noise from Unit 4A includes frequent shouting and laughter from multiple individuals."
+    },
+    {
+      "id": "F10",
+      "category": "Noise Incident",
+      "fact": "On January 12, 2024, loud electronic music emanated from Unit 4A between 1:30 AM and 3:45 AM."
+    },
+    {
+      "id": "F11",
+      "category": "Noise Incident",
+      "fact": "On January 15, 2024, shouting and laughter from Unit 4A was audible from 12:00 AM to 2:00 AM."
+    },
+    {
+      "id": "F12",
+      "category": "Noise Incident",
+      "fact": "On January 19, 2024, bass-heavy music from Unit 4A disturbed Elara Vance between 1:00 AM and 4:00 AM."
+    },
+    {
+      "id": "F13",
+      "category": "Noise Incident",
+      "fact": "On January 26, 2024, loud party noise from Unit 4A occurred from 2:15 AM to 3:30 AM."
+    },
+    {
+      "id": "F14",
+      "category": "Noise Incident",
+      "fact": "On February 2, 2024, sustained bass from Unit 4A was present from 1:00 AM to 2:45 AM."
+    },
+    {
+      "id": "F15",
+      "category": "Noise Incident",
+      "fact": "On February 9, 2024, music and conversation from Unit 4A lasted from 12:30 AM to 3:00 AM."
+    },
+    {
+      "id": "F16",
+      "category": "Noise Incident",
+      "fact": "On February 16, 2024, Elara Vance recorded bass thumping from Unit 4A between 1:45 AM and 3:15 AM."
+    },
+    {
+      "id": "F17",
+      "category": "Noise Incident",
+      "fact": "On February 23, 2024, loud voices and music from Unit 4A were audible from 1:15 AM to 3:00 AM."
+    },
+    {
+      "id": "F18",
+      "category": "Noise Incident",
+      "fact": "On March 1, 2024, a new incident of loud music and shouting from Unit 4A occurred from 1:00 AM to 2:30 AM."
+    },
+    {
+      "id": "F19",
+      "category": "Informal Communication",
+      "fact": "Elara Vance left a polite, handwritten note on Unit 4A's door on January 20, 2024, requesting quiet after 11 PM."
+    },
+    {
+      "id": "F20",
+      "category": "Informal Communication",
+      "fact": "The informal note did not result in a reduction of late-night noise from Unit 4A."
+    },
+    {
+      "id": "F21",
+      "category": "Documentation",
+      "fact": "Elara Vance is documenting all noise incidents in a Google Sheet titled 'Noise Log - Unit 4B'."
+    },
+    {
+      "id": "F22",
+      "category": "Documentation",
+      "fact": "The Google Sheet includes columns for 'Date', 'Start Time', 'End Time', 'Noise Type', and 'Duration (minutes)'."
+    },
+    {
+      "id": "F23",
+      "category": "Documentation",
+      "fact": "Audio recordings of noise incidents are being captured on Elara Vance's smartphone and backed up to cloud storage."
+    },
+    {
+      "id": "F24",
+      "category": "Tenant Impact",
+      "fact": "Elara Vance has experienced an average of 3-4 hours of sleep disruption per week due to the noise."
+    },
+    {
+      "id": "F25",
+      "category": "Property Management",
+      "fact": "The property management company for The Constellation Apartments is 'Aurora Property Group'."
+    },
+    {
+      "id": "F26",
+      "category": "Property Management",
+      "fact": "The primary contact for Aurora Property Group is Property Manager Leo Thorne, reachable at manager@aurorapg.com."
+    },
+    {
+      "id": "F27",
+      "category": "Property Management",
+      "fact": "The official noise complaint policy states quiet hours are from 10:00 PM to 8:00 AM daily."
+    },
+    {
+      "id": "F28",
+      "category": "Escalation Strategy",
+      "fact": "Elara Vance plans to submit a formal written complaint to Aurora Property Group via email on March 4, 2024, if the noise continues."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "From which unit is the noise coming, and what types of noise are they?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident & Documentation Review",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the dates, times, and types of noise for the most recent incidents I've logged in February and March?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident & Documentation Review",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What methods am I using to document the noise incidents?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21",
+        "F23"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After reviewing the logged incidents, the user may want to confirm the methods used for documentation to ensure they are robust.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Incident & Documentation Review",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "When and how did I first attempt to communicate with my neighbor about the noise?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Informal Resolution Attempt",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What was the result of leaving the note for the neighbor in Unit 4A?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: The most direct follow-up to asking about an action is to ask about its outcome.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Informal Resolution Attempt",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What are the official quiet hours for my apartment building?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Since the informal communication failed, the user's next logical step is to understand the official building rules before escalating.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Building Quiet Hours Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who is the property management company and what is the property manager's name and email?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the rules are being broken, the user needs to know who to report the violation to.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Formal Complaint Preparation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is my planned date for submitting a formal complaint to the property manager?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After identifying the contact for a formal complaint, the user will likely want to confirm their timeline for taking that action.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Formal Complaint Preparation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the average weekly sleep disruption I've experienced from the noise?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Supporting Complaint Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "When did my lease for Unit 4B begin?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02",
+        "F06"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After confirming the planned date for a formal complaint, the user may naturally want to gather a few key lease details to include as identifying context in that communication.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Lease Information",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Incident & Documentation Review",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Informal Resolution Attempt",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Building Quiet Hours Policy",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Formal Complaint Preparation",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Supporting Complaint Details",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Lease Information",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "rent_noise_dispute_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

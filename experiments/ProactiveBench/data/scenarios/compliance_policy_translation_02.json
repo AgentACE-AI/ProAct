@@ -1,0 +1,460 @@
+{
+  "scenario_id": "compliance_policy_translation_02",
+  "domain": "compliance_management",
+  "description": "An operations manager understands the formal policy text but cannot translate it into day-to-day team behavior, examples, and exceptions that ordinary staff will reliably follow.",
+  "user_profile": {
+    "persona": "38-year-old department manager tasked with turning compliance language into practice",
+    "context": "The policy itself exists, but the team still does not know what it means in their routine work",
+    "communication_style": "Practical and implementation-focused, wants examples more than doctrine"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Policy_Details",
+      "fact": "The current governing policy is the 'Data Handling and Privacy Policy', document ID IS-DHPP-2023-V4."
+    },
+    {
+      "id": "F02",
+      "category": "Policy_Details",
+      "fact": "Policy IS-DHPP-2023-V4 became effective on October 1, 2023."
+    },
+    {
+      "id": "F03",
+      "category": "Policy_Details",
+      "fact": "The designated owner of the policy is Eleanor Vance, Chief Compliance Officer."
+    },
+    {
+      "id": "F04",
+      "category": "Policy_Details",
+      "fact": "The full policy text is stored on the company network at S-Drive://Policies/Compliance/IS-DHPP-2023-V4.pdf."
+    },
+    {
+      "id": "F05",
+      "category": "Policy_Details",
+      "fact": "The standard internal fine for a single instance of non-compliance resulting in a data leak is $5,000, deducted from the department's operational budget."
+    },
+    {
+      "id": "F06",
+      "category": "Operational_Procedures",
+      "fact": "When creating a new client record in the 'ClientSphere' CRM, the 'Data Consent' checkbox must be ticked, referencing the signed Form-2B from the client."
+    },
+    {
+      "id": "F07",
+      "category": "Operational_Procedures",
+      "fact": "Any file containing client PII (Personally Identifiable Information) must be encrypted using 7-Zip with AES-256 encryption before being attached to an email."
+    },
+    {
+      "id": "F08",
+      "category": "Operational_Procedures",
+      "fact": "To fulfill a client's data deletion request, a ticket must be created in 'HelpDeskPro' and assigned to the 'Data Privacy Team' queue."
+    },
+    {
+      "id": "F09",
+      "category": "Operational_Procedures",
+      "fact": "Passwords for the 'ClientSphere' system must be reset every 90 days."
+    },
+    {
+      "id": "F10",
+      "category": "Operational_Procedures",
+      "fact": "The weekly automated scan for unsecured PII on team workstations is scheduled to run every Friday at 5:00 PM using the 'DataSweep' tool."
+    },
+    {
+      "id": "F11",
+      "category": "Prohibited_Actions",
+      "fact": "Storing client data, including exported reports from ClientSphere, on personal USB drives is strictly forbidden."
+    },
+    {
+      "id": "F12",
+      "category": "Prohibited_Actions",
+      "fact": "Client PII, such as names combined with account numbers, must never be discussed in the company's general Slack channels like #general or #random."
+    },
+    {
+      "id": "F13",
+      "category": "Prohibited_Actions",
+      "fact": "Sharing your individual 'ClientSphere' login credentials with a colleague is a terminable offense."
+    },
+    {
+      "id": "F14",
+      "category": "Prohibited_Actions",
+      "fact": "Accessing the 'ClientSphere' CRM while connected to a public, unsecured Wi-Fi network (e.g., at a coffee shop) is prohibited."
+    },
+    {
+      "id": "F15",
+      "category": "Prohibited_Actions",
+      "fact": "Team members must not leave their workstations unlocked; the system-wide policy enforces an automatic screen lock after 5 minutes of inactivity."
+    },
+    {
+      "id": "F16",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "The sole approved software for managing active client information is the 'ClientSphere' CRM, accessible at https://clientsphere.innovatesolutions.net."
+    },
+    {
+      "id": "F17",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "All executed client contracts containing signatures and financial details must be stored in the restricted network folder: S-Drive://Client_Success/Secure_Contracts/."
+    },
+    {
+      "id": "F18",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "Physical documents containing client PII must be stored in the locked filing cabinet (ID: FC-B7) located next to desk B-12."
+    },
+    {
+      "id": "F19",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "For disposal of printed documents with sensitive data, use the designated 'IronMountain' shredding bin in the 3rd-floor copy room (Room 305)."
+    },
+    {
+      "id": "F20",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "Internal discussions involving client case numbers (but not names or PII) are permitted only in the private Slack channel #cs-team-private."
+    },
+    {
+      "id": "F21",
+      "category": "Escalation_and_Reporting",
+      "fact": "To report a suspected data breach, immediately call the IT Security Hotline at extension 5599."
+    },
+    {
+      "id": "F22",
+      "category": "Escalation_and_Reporting",
+      "fact": "For routine questions about interpreting the data handling policy, team members should first contact their manager, Marcus Thorne, at extension 2101."
+    },
+    {
+      "id": "F23",
+      "category": "Escalation_and_Reporting",
+      "fact": "If Marcus Thorne is unavailable, policy questions can be escalated via email to Eleanor Vance at e.vance@innovatesolutions.com."
+    },
+    {
+      "id": "F24",
+      "category": "Escalation_and_Reporting",
+      "fact": "A formal incident report for any data-related security event must be filed in 'HelpDeskPro' under the 'Security Incident' category within 60 minutes of discovery."
+    },
+    {
+      "id": "F25",
+      "category": "Training_and_Resources",
+      "fact": "All Client Success team members must complete the 'DataGuard 2024' annual compliance training module by March 31, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "Training_and_Resources",
+      "fact": "The 'DataGuard 2024' training is hosted at https://training.innovatesolutions.com/login."
+    },
+    {
+      "id": "F27",
+      "category": "Training_and_Resources",
+      "fact": "A one-page, practical summary of the policy for daily use is available on the team Confluence space: confluence.innovatesolutions.com/CS/PolicySummary."
+    },
+    {
+      "id": "F28",
+      "category": "Access_Control",
+      "fact": "Junior Associates, such as David Chen, have 'Read-Only' access to the 'Billing History' tab within a client's 'ClientSphere' record."
+    },
+    {
+      "id": "F29",
+      "category": "Access_Control",
+      "fact": "Senior Analysts, such as Sarah Jenkins, have 'Read/Write' access to the 'Billing History' tab, which was approved by Marcus Thorne on January 10, 2024, via ticket #AC-9812."
+    },
+    {
+      "id": "F30",
+      "category": "Operational_Procedures",
+      "fact": "When transferring data to the approved third-party vendor 'Acme Analytics', the only permitted method is via the secure SFTP site at sftp.acmeanalytics.com using the department's key-pair authentication."
+    },
+    {
+      "id": "F31",
+      "category": "Prohibited_Actions",
+      "fact": "Printing a client list that contains more than 10 individual records requires explicit email approval from a department manager."
+    },
+    {
+      "id": "F32",
+      "category": "Operational_Procedures",
+      "fact": "ClientSphere passwords must be at least 12 characters long and contain one uppercase letter, one lowercase letter, one number, and one special character (e.g., !@#$%)."
+    },
+    {
+      "id": "F33",
+      "category": "Escalation_and_Reporting",
+      "fact": "The last minor security incident, an accidentally CC'd internal email, was logged on November 15, 2023, with report number #INC-89341."
+    },
+    {
+      "id": "F34",
+      "category": "Policy_Details",
+      "fact": "The policy defines PII as any data combination that can uniquely identify a client, including but not limited to 'Full Name + Zip Code' or 'Client ID + Last 4 Digits of Phone Number'."
+    },
+    {
+      "id": "F35",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "The key for the secure filing cabinet FC-B7 is labeled 'LK-45' and is kept in a lockbox managed by the department administrator, Susan Lee."
+    },
+    {
+      "id": "F36",
+      "category": "Operational_Procedures",
+      "fact": "To create a compliant new client record in 'ClientSphere', staff must open the 'New Client' workflow in ClientSphere, enter the client's required profile fields, verify that a signed Form-2B is on file, tick the 'Data Consent' checkbox, and only then save the record."
+    },
+    {
+      "id": "F37",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "Client PII may be stored only in approved company-controlled locations: active client information in the 'ClientSphere' CRM, executed client contracts in S-Drive://Client_Success/Secure_Contracts/, and physical documents in locked filing cabinet FC-B7."
+    },
+    {
+      "id": "F38",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "Client PII must not be discussed in general Slack channels; internal discussion is limited to private channels such as #cs-team-private and may include client case numbers only, not client names or other PII."
+    },
+    {
+      "id": "F39",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "Sensitive printed documents include any paper containing client PII, signed client forms, or printed client lists. The correct disposal procedure is to place the document directly into the designated 'IronMountain' shredding bin in Room 305; do not place such documents in regular trash or recycling bins."
+    },
+    {
+      "id": "F40",
+      "category": "Operational_Procedures",
+      "fact": "The approved day-to-day process for emailing a file with client PII is: prepare the file, use 7-Zip to create an encrypted archive, choose AES-256 encryption, set a unique password, attach only the encrypted archive to the email, and send the password through a separate communication channel rather than in the same email thread."
+    },
+    {
+      "id": "F41",
+      "category": "Approved_Tools_and_Locations",
+      "fact": "For routine handling of printed documents with client PII, staff may keep the document only while actively working on it, must not leave it unattended on desks or in open trays, must return it to locked cabinet FC-B7 if it still needs to be retained, and must use the IronMountain shredding bin in Room 305 once it is no longer needed. If Susan Lee is unavailable, staff should request cabinet-key access through the department administrator backup process rather than leaving the document unsecured."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the official name of the data handling policy and where can I find the full text?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Policy & Consequences",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the financial penalty for my department if we have a data leak due to non-compliance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Core Policy & Consequences",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the step-by-step procedure for creating a new client record in ClientSphere so my team does it compliantly?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F36"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Daily CRM Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the password requirements for the ClientSphere system and how often must they be reset?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Daily CRM Procedures",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are the practical rules about where my team can and cannot store or discuss client PII in routine work?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12",
+        "F17",
+        "F18",
+        "F20",
+        "F37",
+        "F38"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Prohibited Actions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Is my team allowed to access the ClientSphere CRM while connected to public Wi-Fi?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After discussing system access rules like passwords (N4), a practical concern is about where that access is permitted, such as on external networks.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Prohibited Actions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the correct day-to-day procedure for encrypting and emailing a file containing client PII?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F40"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After clarifying where client PII may and may not be stored or discussed, a natural next implementation question is how to send a file containing that same PII securely by email.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Secure Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the immediate first step to take if we suspect a data breach?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning about the significant financial penalty for a data leak (N2), the immediate next thought for a responsible manager is 'What do I do if one happens?'",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Incident Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where are we required to store physical documents containing client PII, and what should staff do in routine handling if the cabinet key is not immediately available?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18",
+        "F35",
+        "F41"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Physical Document Handling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the correct day-to-day procedure for disposing of sensitive printed documents?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19",
+        "F39"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After asking where to store physical documents, the next logical question in the lifecycle of that document is how to get rid of it securely.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Physical Document Handling",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Is there a simplified, one-page summary of the policy I can give to my team for daily reference?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After asking for the full, formal policy document (N1), a practical manager's next thought would be to find a more accessible, summarized version for their team.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Training Resources",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Core Policy & Consequences",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Daily CRM Procedures",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Prohibited Actions",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Secure Communication",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Incident Reporting",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Physical Document Handling",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Training Resources",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "compliance_policy_translation_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

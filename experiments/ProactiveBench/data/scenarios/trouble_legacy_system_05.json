@@ -1,0 +1,409 @@
+{
+  "scenario_id": "trouble_legacy_system_05",
+  "domain": "troubleshooting",
+  "description": "A developer is maintaining a 15-year-old banking system. They need to troubleshoot a rare 'rounding error' that only appears in leap years when a specific combination of multi-currency transactions occurs. This requires deep memory of historical system logs and architectural changes.",
+  "user_profile": {
+    "persona": "58-year-old Systems Architect",
+    "context": "Rare bug reported once every few years",
+    "communication_style": "Historical, thorough, treats code like an archaeological site"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Incident Details",
+      "fact": "The most recent rounding error was reported under ticket number INC-2024-8819 on March 1, 2024."
+    },
+    {
+      "id": "F02",
+      "category": "Incident Details",
+      "fact": "The specific error logged in the system is 'ERR_FLOAT_PRECISION_MISMATCH' in the 'FX-Ledger-Sync' module."
+    },
+    {
+      "id": "F03",
+      "category": "Incident Details",
+      "fact": "The transaction that triggered the error occurred on February 29, 2024, at 23:58:11 UTC."
+    },
+    {
+      "id": "F04",
+      "category": "Incident Details",
+      "fact": "The bug is triggered by a three-leg transaction sequence: a JPY to GBP conversion, followed by a GBP to CHF transfer, and a final CHF to USD settlement all within the same 60-second window."
+    },
+    {
+      "id": "F05",
+      "category": "Incident Details",
+      "fact": "The rounding error manifests as a consistent deficit of 0.000138 units of the final settlement currency per one million units transacted."
+    },
+    {
+      "id": "F06",
+      "category": "System Architecture",
+      "fact": "The banking system is named the 'Aethelred Core Banking Suite' (ACS) and was first deployed on October 12, 2009."
+    },
+    {
+      "id": "F07",
+      "category": "System Architecture",
+      "fact": "The specific module responsible for multi-currency transaction processing is named 'FX-Ledger-Sync', version 2.7.4."
+    },
+    {
+      "id": "F08",
+      "category": "System Architecture",
+      "fact": "The 'FX-Ledger-Sync' module is written in Java 1.4 and runs on a JBoss Application Server 4.0.5."
+    },
+    {
+      "id": "F09",
+      "category": "System Architecture",
+      "fact": "The system's primary database is a proprietary system called 'OmniDB v3.7', which is known for its non-standard handling of temporal data types."
+    },
+    {
+      "id": "F10",
+      "category": "System Architecture",
+      "fact": "The production 'FX-Ledger-Sync' service runs on a server with the static IP address 10.100.3.15."
+    },
+    {
+      "id": "F11",
+      "category": "System Architecture",
+      "fact": "All currency calculations within ACS are handled by a custom fixed-point arithmetic library named 'FinNum_v1.2.jar'."
+    },
+    {
+      "id": "F12",
+      "category": "Historical Context",
+      "fact": "Previous incidents of this exact error were recorded under tickets INC-2020-1422, INC-2016-0940, and INC-2012-0513."
+    },
+    {
+      "id": "F13",
+      "category": "Historical Context",
+      "fact": "The 'FinNum_v1.2' library was written by a single developer, Dr. Alistair Finch, in 2008."
+    },
+    {
+      "id": "F14",
+      "category": "Historical Context",
+      "fact": "The last major update to the 'FX-Ledger-Sync' module was on July 22, 2011, as part of Project Nightingale."
+    },
+    {
+      "id": "F15",
+      "category": "Historical Context",
+      "fact": "Project Nightingale involved migrating the currency exchange logic from a COBOL mainframe batch process to the current Java 1.4 service."
+    },
+    {
+      "id": "F16",
+      "category": "Historical Context",
+      "fact": "The original architectural diagram for the currency module is a scanned PDF located at '\\\\fileserv01\\archives\\Aethelred\\docs\\FX-Architecture-2009-v1.pdf'."
+    },
+    {
+      "id": "F17",
+      "category": "Historical Context",
+      "fact": "The Aethelred system was originally designed to handle 12 currencies; support for the 45th currency (Thai Baht) was added in 2018."
+    },
+    {
+      "id": "F18",
+      "category": "Historical Context",
+      "fact": "The original IBM z9 Mainframe that ran the COBOL version was decommissioned on August 30, 2015."
+    },
+    {
+      "id": "F19",
+      "category": "Troubleshooting Resources",
+      "fact": "The source code for the 'FX-Ledger-Sync' module is located in a Subversion repository at svn://svn.omnibank.internal/acs/fx-ledger-sync/tags/2.7.4."
+    },
+    {
+      "id": "F20",
+      "category": "Troubleshooting Resources",
+      "fact": "To access the relevant server logs, use the command: `grep 'ERR_FLOAT_PRECISION_MISMATCH' /var/log/jboss/acs/archive/server-2024-02-29.log.gz`."
+    },
+    {
+      "id": "F21",
+      "category": "Troubleshooting Resources",
+      "fact": "The internal Confluence wiki page documenting known issues with the 'FinNum' library is located at http://wiki.omnibank.internal/x/A4jB."
+    },
+    {
+      "id": "F22",
+      "category": "Troubleshooting Resources",
+      "fact": "The designated Slack channel for discussing incident INC-2024-8819 is #inc-2024-8819-leap-year-bug."
+    },
+    {
+      "id": "F23",
+      "category": "Troubleshooting Resources",
+      "fact": "A proprietary log parser named 'LogWeaver' is required to correctly interpret the timestamp format from the OmniDB transaction logs."
+    },
+    {
+      "id": "F24",
+      "category": "Troubleshooting Resources",
+      "fact": "A dedicated testing environment to replicate the issue, 'ACS-LEAP-SANDBOX', can be provisioned by filing a request with the 'Infra-Ops' team."
+    },
+    {
+      "id": "F25",
+      "category": "Key Personnel",
+      "fact": "The lead investigator for this incident is Elias Vance, a Principal Systems Architect with 22 years of experience at OmniBank Global."
+    },
+    {
+      "id": "F26",
+      "category": "Key Personnel",
+      "fact": "The bug was initially reported by Maria Kuznetsova, a Senior Analyst in the International Settlements department."
+    },
+    {
+      "id": "F27",
+      "category": "Key Personnel",
+      "fact": "The current database administrator for OmniDB is David Chen, reachable at d.chen@omnibank.internal."
+    },
+    {
+      "id": "F28",
+      "category": "Key Personnel",
+      "fact": "Dr. Alistair Finch, the original developer of the currency logic, retired on June 5, 2012, and his last known contact information is not on file."
+    },
+    {
+      "id": "F29",
+      "category": "Key Personnel",
+      "fact": "Elias Vance's workstation is located at the corporate headquarters in Apex Tower, Floor 31, Desk 31-C-04."
+    },
+    {
+      "id": "F30",
+      "category": "Key Personnel",
+      "fact": "Jian Li is the on-call compliance officer who must be notified before any patches are deployed to the production ACS environment."
+    },
+    {
+      "id": "F31",
+      "category": "Environment & Access",
+      "fact": "The staging environment, which mirrors production, is accessible via the URL https://acs-staging.omnibank.internal/login."
+    },
+    {
+      "id": "F32",
+      "category": "Environment & Access",
+      "fact": "SSH access to the production log server at 10.100.3.15 requires using the private key file named `evance_prod_rsa` and the username `evance`."
+    },
+    {
+      "id": "F33",
+      "category": "Environment & Access",
+      "fact": "All archived design documents older than 10 years are stored on a network drive at the path `\\\\fileserv01\\archives\\Aethelred\\docs_pre2014`."
+    },
+    {
+      "id": "F34",
+      "category": "Environment & Access",
+      "fact": "A physical access token, ID #774-B, is required to enter the cold-storage data archive room where paper schematics are kept."
+    },
+    {
+      "id": "F35",
+      "category": "Incident Details",
+      "fact": "The triggering event on February 29, 2024 began at 23:58:11 UTC and followed this order: JPY to GBP, then GBP to CHF, then CHF to USD, all within a 60-second window."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the ticket number for the most recent rounding error incident, and what is the specific error message logged?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Incident Triage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "At what exact time did the triggering sequence start on February 29, 2024, and what were the three transaction legs in order?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04",
+        "F35"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After getting the high-level error details, the user will want to know the specific event that caused it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Incident Triage",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the ticket numbers for previous incidents of this exact rounding error?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Historical Precedent",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which system module is responsible for these transactions, what language is it written in, and what application server does it run on?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Understanding the specific transaction (N2) naturally leads to identifying the software components involved.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "System Architecture",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the name of the custom library that handles currency calculations and who was its original developer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After identifying the main module, the user will drill down to the specific library responsible for the faulty calculations.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "System Architecture",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Where is the Subversion source code repository for the 'FX-Ledger-Sync' module located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the responsible module is identified (N4), the immediate next step for a developer is to locate its source code for inspection.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Code Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the command to find the error in the logs and what are the SSH credentials for the production server?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F32"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Log Access",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "When was the last major update to the 'FX-Ledger-Sync' module and what did that project involve?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After accessing the code (N6) and seeing its age, the architect will investigate its history to understand the context of the last significant changes.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Code Archaeology",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where can I find the original architectural diagram for the currency module from 2009?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: Learning about the historical migration project (N8) would prompt a search for the original design documents from that era.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Code Archaeology",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "Is there a dedicated testing environment available to replicate this specific leap year issue?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After accessing the production logs (N7) to confirm the error, a natural next step is to find a safe environment to reproduce and test a fix.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Replication Environment",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Incident Triage",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Historical Precedent",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "System Architecture",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Code Access",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Log Access",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Code Archaeology",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Replication Environment",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "trouble_legacy_system_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

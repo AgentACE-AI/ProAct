@@ -1,0 +1,425 @@
+{
+  "scenario_id": "tax_estimated_payment_watch_05",
+  "domain": "tax_filing_support",
+  "description": "A self-employed worker needs a recurring system to remember quarterly payment deadlines, prior payments, income swings, and underpayment warning signs across the year instead of thinking about taxes only at filing time.",
+  "user_profile": {
+    "persona": "29-year-old independent consultant with irregular income",
+    "context": "Each quarter feels like starting from scratch because prior payments and shifting earnings are not tracked in one place",
+    "communication_style": "Practical and recurring-task oriented, prefers lightweight tracking over complex tax theory"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "User_Profile",
+      "fact": "The self-employed worker is Alex Chen, a 29-year-old independent marketing consultant."
+    },
+    {
+      "id": "F02",
+      "category": "User_Profile",
+      "fact": "Alex Chen operates their business as a sole proprietorship under the name 'Clarity Consulting'."
+    },
+    {
+      "id": "F03",
+      "category": "Tax_System_Setup",
+      "fact": "Alex uses a Google Sheet named 'Quarterly Tax Tracker 2024' to monitor income and tax obligations."
+    },
+    {
+      "id": "F04",
+      "category": "Tax_System_Setup",
+      "fact": "The 'Quarterly Tax Tracker 2024' spreadsheet is bookmarked at the fictional URL https://docs.google.com/spreadsheets/d/1a2b3c-example-url."
+    },
+    {
+      "id": "F05",
+      "category": "Tax_System_Setup",
+      "fact": "Column E in the tracker spreadsheet automatically calculates a 30% estimated tax withholding for each logged income entry."
+    },
+    {
+      "id": "F06",
+      "category": "Deadlines_And_Alerts",
+      "fact": "The 2024 Q1 estimated tax payment deadline was April 15, 2024."
+    },
+    {
+      "id": "F07",
+      "category": "Deadlines_And_Alerts",
+      "fact": "The 2024 Q2 estimated tax payment deadline was June 17, 2024."
+    },
+    {
+      "id": "F08",
+      "category": "Deadlines_And_Alerts",
+      "fact": "The 2024 Q3 estimated tax payment deadline is September 16, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "Deadlines_And_Alerts",
+      "fact": "The 2024 Q4 estimated tax payment deadline is January 15, 2025."
+    },
+    {
+      "id": "F10",
+      "category": "Deadlines_And_Alerts",
+      "fact": "Alex has recurring Google Calendar events titled 'QUARTERLY TAX PAYMENT DUE' set with notifications for 14 days and 3 days before each deadline."
+    },
+    {
+      "id": "F11",
+      "category": "Payment_History_2024",
+      "fact": "Alex made a Q1 2024 estimated tax payment of $3,200 on April 12, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "Payment_History_2024",
+      "fact": "The confirmation number for the Q1 2024 payment via IRS Direct Pay is 24A12B345C678."
+    },
+    {
+      "id": "F13",
+      "category": "Payment_History_2024",
+      "fact": "Alex made a Q2 2024 estimated tax payment of $4,500 on June 14, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "Payment_History_2024",
+      "fact": "The confirmation number for the Q2 2024 payment via IRS Direct Pay is 24F14G567H890."
+    },
+    {
+      "id": "F15",
+      "category": "Income_Tracking",
+      "fact": "In May 2024, Clarity Consulting received its largest single payment of the year: $15,000 from client 'Innovate Inc.' for a project launch."
+    },
+    {
+      "id": "F16",
+      "category": "Income_Tracking",
+      "fact": "Total gross income for Q1 (January 1 - March 31, 2024) was $25,500."
+    },
+    {
+      "id": "F17",
+      "category": "Income_Tracking",
+      "fact": "Total gross income for Q2 (April 1 - June 30, 2024) was $34,000."
+    },
+    {
+      "id": "F18",
+      "category": "Underpayment_Rules",
+      "fact": "Alex's total federal tax liability for the 2023 tax year was exactly $15,000."
+    },
+    {
+      "id": "F19",
+      "category": "Underpayment_Rules",
+      "fact": "To avoid underpayment penalties, Alex uses the 'safe harbor' rule, aiming to pay at least 100% of the prior year's tax, which requires quarterly payments of at least $3,750."
+    },
+    {
+      "id": "F20",
+      "category": "Underpayment_Rules",
+      "fact": "The 'Quarterly Tax Tracker 2024' has a warning cell (G5) that turns red if the cumulative payments made are less than the pro-rated 'safe harbor' amount for the current quarter."
+    },
+    {
+      "id": "F21",
+      "category": "Financial_Accounts",
+      "fact": "All federal estimated tax payments are made from the 'Clarity Consulting Business Checking' account at Meridian Digital Bank, account number ending in 8802."
+    },
+    {
+      "id": "F22",
+      "category": "Tax_System_Setup",
+      "fact": "Alex uses the official IRS Direct Pay portal at https://www.irs.gov/payments/direct-pay to submit all federal estimated tax payments."
+    },
+    {
+      "id": "F23",
+      "category": "Income_Tracking",
+      "fact": "A recurring monthly invoice of $5,000 is sent to the client 'Strive Solutions' on the 25th of each month."
+    },
+    {
+      "id": "F24",
+      "category": "Tax_System_Setup",
+      "fact": "Cell F10 in the 'Quarterly Tax Tracker 2024' sheet shows the year-to-date total estimated tax paid, which currently reads $7,700."
+    },
+    {
+      "id": "F25",
+      "category": "User_Profile",
+      "fact": "As a sole proprietor, Alex files taxes using a Social Security Number that ends in 1234."
+    },
+    {
+      "id": "F26",
+      "category": "Income_Tracking",
+      "fact": "In the 'Quarterly Tax Tracker 2024' sheet, the largest single income entry currently logged is the $15,000 May 2024 payment from 'Innovate Inc.' for a project launch."
+    },
+    {
+      "id": "F27",
+      "category": "Tax_System_Setup",
+      "fact": "Each 'QUARTERLY TAX PAYMENT DUE' calendar reminder tells Alex to review the tracker's year-to-date payments, the current quarter's income entries, and whether warning cell G5 is red before submitting the payment."
+    },
+    {
+      "id": "F28",
+      "category": "Underpayment_Rules",
+      "fact": "Because Alex's 2023 federal tax liability was $15,000, paying 100% of that prior-year amount under the safe-harbor rule means targeting $15,000 across 2024, or $3,750 per quarter."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "When is my next quarterly estimated tax deadline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Deadlines & Alerts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How do I have my deadline reminders set up in my calendar?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10",
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning the next deadline, the user might want to confirm how they are being reminded of it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Deadlines & Alerts",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the year-to-date total of estimated tax I've paid, according to my tracker?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Payment History Review",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What were the specific amounts and payment dates for my Q1 and Q2 estimated taxes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After seeing the total paid, the user would naturally want to see the breakdown of individual payments that make up that total.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Payment History Review",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What was the confirmation number for my Q2 payment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: While reviewing specific payments, the user might ask for a detail like a confirmation number for record-keeping.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Payment History Review",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "What was my total gross income for Q1 and Q2 of this year?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After reviewing the tax amounts paid for Q1 and Q2, the user's next logical thought is to compare it against the income earned in those same periods.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Income Tracking",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What was my total federal tax liability for the 2023 tax year?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Underpayment Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Based on my 2023 tax, what is the minimum quarterly payment I need to make to meet the 'safe harbor' rule?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19",
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Understanding the prior year's tax liability directly leads to calculating the safe harbor payment amount, which is the primary reason for looking up that number.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Underpayment Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the URL for my 'Quarterly Tax Tracker 2024' Google Sheet?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After reviewing summary income figures, the user would want to access the source document where this information is tracked. This is an auditable proactive target.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Access Tax Tracker",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Which bank account do I use to make my federal estimated tax payments?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Payment Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the official IRS website I use to submit payments?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After asking for a payment confirmation number, the user is thinking about the payment process. Proactively providing the URL where payments are made is a helpful next step. This is an auditable proactive target.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Access Payment Portal",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "After opening the tax tracker, what is the largest single payment entry I logged this year and who was it from?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After accessing the tax tracker, a natural follow-up is to check the standout income entry that most affects the year's tracking picture.",
+      "turn_order": 12,
+      "reveal_group": "G3",
+      "reveal_group_label": "Income Tracking",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is my business's legal name and the tax ID I use for filing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Business & Filing Info",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Deadlines & Alerts",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Payment History Review",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Income Tracking",
+      "member_need_ids": [
+        "N6",
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Underpayment Rules",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Access Tax Tracker",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Payment Logistics",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Access Payment Portal",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "Business & Filing Info",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "tax_estimated_payment_watch_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

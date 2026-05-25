@@ -1,0 +1,453 @@
+{
+  "scenario_id": "tax_household_eligibility_boundary_04",
+  "domain": "tax_filing_support",
+  "description": "A filer in a mixed household must sort which shared expenses, dependents, and caregiving costs belong to which filing context so that support provided by several adults is described consistently. All household names and figures are fictional.",
+  "user_profile": {
+    "persona": "45-year-old household organizer coordinating taxes for a multi-generational family",
+    "context": "Several people contributed money and care during the year, making ownership of expenses hard to untangle after the fact",
+    "communication_style": "Boundary-sensitive and organized, wants categories kept separate and defensible"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Household_Composition",
+      "fact": "The household at 123 Oak Lane, Riverbend, OR 97005, consists of Maria Chen, David Chen, Leo Chen, Sofia Chen, Eleanor Vance, and Ben Carter."
+    },
+    {
+      "id": "F02",
+      "category": "Filing_Status",
+      "fact": "Maria Chen and David Chen plan to file their 2023 federal income tax return as 'Married Filing Jointly'."
+    },
+    {
+      "id": "F03",
+      "category": "Filing_Status",
+      "fact": "Ben Carter, age 25, plans to file his 2023 federal income tax return as 'Single'."
+    },
+    {
+      "id": "F04",
+      "category": "Dependent_Information",
+      "fact": "Sofia Chen, age 15, lived with her parents Maria and David Chen for the entire 12 months of 2023."
+    },
+    {
+      "id": "F05",
+      "category": "Dependent_Information",
+      "fact": "Leo Chen, age 19, is a full-time student at Oregon State University and lived at home for 7 months of 2023; his parents provided over half of his total support for the year."
+    },
+    {
+      "id": "F06",
+      "category": "Dependent_Information",
+      "fact": "Maria Chen's mother, Eleanor Vance (age 72), lived in the same household for all 12 months of 2023."
+    },
+    {
+      "id": "F07",
+      "category": "Dependent_Information",
+      "fact": "Maria and David Chen provided over 50% of the total financial support for Eleanor Vance during 2023."
+    },
+    {
+      "id": "F08",
+      "category": "Income_Sources",
+      "fact": "Maria Chen's gross annual salary from her job at Innovate Solutions Inc. in 2023 was $85,000, reported on Form W-2."
+    },
+    {
+      "id": "F09",
+      "category": "Income_Sources",
+      "fact": "David Chen's gross annual income from his freelance graphic design business in 2023 was $72,000, reported on Form 1099-NEC."
+    },
+    {
+      "id": "F10",
+      "category": "Income_Sources",
+      "fact": "Ben Carter earned a total of $18,500 in 2023 from various food delivery services, reported across three Form 1099-NECs."
+    },
+    {
+      "id": "F11",
+      "category": "Income_Sources",
+      "fact": "Eleanor Vance received a total of $9,600 in Social Security benefits during 2023."
+    },
+    {
+      "id": "F12",
+      "category": "Income_Sources",
+      "fact": "Leo Chen earned $4,200 in 2023 from a part-time job at the university bookstore, for which he received a Form W-2."
+    },
+    {
+      "id": "F13",
+      "category": "Financial_Accounts",
+      "fact": "The household uses a joint checking account at Riverbend Community Bank (ending in #5678) to pay for all shared living expenses."
+    },
+    {
+      "id": "F14",
+      "category": "Individual_Contributions",
+      "fact": "Maria and David Chen each transferred $3,000 per month from their personal accounts into the joint household account (#5678) during 2023."
+    },
+    {
+      "id": "F15",
+      "category": "Individual_Contributions",
+      "fact": "Ben Carter contributed $500 per month via Zelle to the joint household account (#5678) as his share of rent and utilities."
+    },
+    {
+      "id": "F16",
+      "category": "Shared_Expenses",
+      "fact": "The total mortgage interest paid in 2023 for the property at 123 Oak Lane was $11,250, as documented on Form 1098 from Riverbend Community Bank."
+    },
+    {
+      "id": "F17",
+      "category": "Shared_Expenses",
+      "fact": "The total property tax paid to Clackamas County for the 123 Oak Lane property in 2023 was $5,800."
+    },
+    {
+      "id": "F18",
+      "category": "Shared_Expenses",
+      "fact": "The total amount paid for household utilities (electricity, gas, water, internet) from the joint account in 2023 was $7,240."
+    },
+    {
+      "id": "F19",
+      "category": "Shared_Expenses",
+      "fact": "The total amount spent on groceries for all six household members from the joint account in 2023 was $15,600."
+    },
+    {
+      "id": "F20",
+      "category": "Caregiving_Costs",
+      "fact": "Maria Chen paid $2,400 from the joint account to 'Golden Years Activity Center' for adult day care for Eleanor Vance, which was necessary for Maria to be able to work."
+    },
+    {
+      "id": "F21",
+      "category": "Caregiving_Costs",
+      "fact": "Maria Chen paid a neighbor, Jane Doe, $1,000 via personal check during 2023 to provide afternoon supervision for Eleanor Vance."
+    },
+    {
+      "id": "F22",
+      "category": "Medical_Expenses",
+      "fact": "A total of $1,800 was spent from the joint account on prescription medications for Eleanor Vance in 2023 at 'Riverbend Pharmacy'."
+    },
+    {
+      "id": "F23",
+      "category": "Medical_Expenses",
+      "fact": "Maria and David Chen paid $6,500 in health insurance premiums through Maria's employer in 2023 for a family plan covering Maria, David, Leo, and Sofia."
+    },
+    {
+      "id": "F24",
+      "category": "Education_Expenses",
+      "fact": "Maria and David Chen paid $8,000 in qualified tuition and fees for Leo Chen's attendance at Oregon State University in 2023, as documented on Form 1098-T."
+    },
+    {
+      "id": "F25",
+      "category": "Dependent_Information",
+      "fact": "Ben Carter provided 100% of his own financial support in 2023 and cannot be claimed as a dependent by anyone."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Who are all the members of the household at 123 Oak Lane?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Filing Units",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the planned tax filing status for me (Maria) and David Chen?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming household members, the user's own filing status is the next logical step.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Filing Units",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is Ben Carter's filing status and can he be claimed as a dependent?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After establishing their own filing unit, the user needs to clarify the status of other adults in the household.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Filing Units",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What are the ages and residency details for my children, Sofia and Leo, for last year?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Dependent Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Did my mother, Eleanor Vance, live with us for the entire year and did we provide over half of her financial support?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After addressing child dependents, the user moves on to other potential dependents like her mother.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Dependent Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What was my gross salary from my job and David's gross income from his business in 2023?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Filer Income",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "How much did David and I each contribute monthly to the joint household account?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Household Contributions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was Ben Carter's monthly contribution to the joint account?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After confirming her own contributions, the user wants to account for other contributions to the shared pool of money.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Household Contributions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What were the total amounts paid for mortgage interest and property taxes for our home last year?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Deductible Housing Expenses",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How much was paid to 'Golden Years Activity Center' for my mother's adult day care?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After establishing that Eleanor is a potential dependent, the user will need to identify specific care costs associated with her, which are potentially deductible.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Dependent Care Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What was Eleanor Vance's total income from Social Security in 2023?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After confirming financial support for Eleanor, knowing her own income is crucial for dependency tests, making this a highly relevant follow-up.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Dependent Income",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What was Leo Chen's income from his part-time job last year?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After identifying Leo as a potential dependent, his own income is a key factor in determining eligibility for certain credits and his dependency status.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Dependent Income",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What amount was paid for Leo Chen's qualified tuition and fees at Oregon State University?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After discussing Leo's status as a student and his income, the user will naturally want to know about education expenses to claim relevant tax credits.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Education Expenses",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "How much was paid to the neighbor, Jane Doe, for Eleanor's afternoon supervision?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After asking about formal day care costs for Eleanor, the user will want to account for other, informal care payments made for her.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Other Care Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What was the total cost of Eleanor Vance's prescription medications paid from the joint account?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "CROSS-GROUP: After detailing caregiving costs for Eleanor, her medical expenses are a related and potentially deductible category the user would want to track.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Medical Expenses",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Filing Units",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Dependent Identification",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Filer Income",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Household Contributions",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Deductible Housing Expenses",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Dependent Care Costs",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G7",
+      "label": "Dependent Income",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "Education Expenses",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Other Care Costs",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G10",
+      "label": "Medical Expenses",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G9"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "tax_household_eligibility_boundary_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

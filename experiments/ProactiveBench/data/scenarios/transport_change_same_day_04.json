@@ -1,0 +1,462 @@
+{
+  "scenario_id": "transport_change_same_day_04",
+  "domain": "school_transportation_operations",
+  "description": "Several families submit same-day transportation changes, and the dispatcher must reconcile which updates are confirmed, provisional, denied, or too late to honor without mixing them up. All schools and families are fictional.",
+  "user_profile": {
+    "persona": "32-year-old dispatch office coordinator handling volatile afternoon change traffic",
+    "context": "The same-day changes are individually small, but together they create too much risk for informal tracking",
+    "communication_style": "Fast and status-driven, wants each requested change tied to a clear final disposition"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel & Workspace",
+      "fact": "The afternoon shift Dispatch Coordinator is Alex Chen."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel & Workspace",
+      "fact": "Alex Chen works at workstation D-04 in the main operations center."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel & Workspace",
+      "fact": "The direct phone line for the dispatch office is 555-821-4000, extension 2."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel & Workspace",
+      "fact": "Alex Chen's shift runs from 11:00 AM to 7:00 PM, Monday through Friday."
+    },
+    {
+      "id": "F05",
+      "category": "Systems & Software",
+      "fact": "The primary software for managing transportation changes is 'DispatchPro 7'."
+    },
+    {
+      "id": "F06",
+      "category": "Systems & Software",
+      "fact": "The login URL for DispatchPro 7 is https://dispatch.ridewell.edu/login."
+    },
+    {
+      "id": "F07",
+      "category": "Systems & Software",
+      "fact": "Parents submit same-day transportation changes via the 'SwiftRide' parent portal."
+    },
+    {
+      "id": "F08",
+      "category": "Systems & Software",
+      "fact": "Internal dispatch team communication for urgent issues is handled in the Slack channel #afternoon-dispatch."
+    },
+    {
+      "id": "F09",
+      "category": "Operational Procedures",
+      "fact": "The firm cutoff time for same-day transportation change submissions is 1:00 PM local time."
+    },
+    {
+      "id": "F10",
+      "category": "Operational Procedures",
+      "fact": "Any change request submitted via the SwiftRide portal after 1:00 PM is automatically assigned the status 'Too Late'."
+    },
+    {
+      "id": "F11",
+      "category": "Operational Procedures",
+      "fact": "A change request status of 'Confirmed' in DispatchPro 7 triggers an automated SMS notification to the parent's registered phone number."
+    },
+    {
+      "id": "F12",
+      "category": "Operational Procedures",
+      "fact": "A request status of 'Denied' requires the dispatcher to select a reason from a predefined list, such as 'Outside Zone' or 'Safety Concern'."
+    },
+    {
+      "id": "F13",
+      "category": "Operational Procedures",
+      "fact": "The 'Provisional' status means a request has been acknowledged by dispatch but has not yet been assigned to a specific driver's route."
+    },
+    {
+      "id": "F14",
+      "category": "Operational Procedures",
+      "fact": "The maximum allowable route deviation for an alternate drop-off request is 1.5 miles from the original route."
+    },
+    {
+      "id": "F15",
+      "category": "Specific Change Requests",
+      "fact": "Request #CHG-20231026-008 for Emily White (Student ID 33214) to be picked up by her grandmother, Carol White, was marked 'Confirmed' at 12:45 PM."
+    },
+    {
+      "id": "F16",
+      "category": "Specific Change Requests",
+      "fact": "Request #CHG-20231026-015 for Maya Singh (Student ID 45678) was 'Denied' because the requested drop-off at 9200 Industrial Park Rd is outside the approved zone for Maple Creek Elementary."
+    },
+    {
+      "id": "F17",
+      "category": "Specific Change Requests",
+      "fact": "Request #CHG-20231026-011 for twins, Ava and Noah Kim (Student IDs 54321, 54322), is currently 'Provisional' pending driver confirmation for a 0.8-mile route deviation."
+    },
+    {
+      "id": "F18",
+      "category": "Specific Change Requests",
+      "fact": "Request #CHG-20231026-021, submitted at 1:15 PM for Liam Johnson (Student ID 99870), was automatically marked 'Too Late'."
+    },
+    {
+      "id": "F19",
+      "category": "Specific Change Requests",
+      "fact": "Request #CHG-20231026-012 for Leo Rodriguez (Student ID 78912) to be dropped at Northwood Public Library (1550 Elm Street) was 'Confirmed' and assigned to Bus #14."
+    },
+    {
+      "id": "F20",
+      "category": "Vehicle & Driver Information",
+      "fact": "Bus #14 is a 2022 Blue Bird Vision model with license plate S-BUS 781."
+    },
+    {
+      "id": "F21",
+      "category": "Vehicle & Driver Information",
+      "fact": "Sarah Jenkins is the assigned driver for Bus #14, which services Route 7B."
+    },
+    {
+      "id": "F22",
+      "category": "Vehicle & Driver Information",
+      "fact": "All bus drivers use a company-issued 'RoutePad 5' tablet to receive real-time updates from dispatch."
+    },
+    {
+      "id": "F23",
+      "category": "Vehicle & Driver Information",
+      "fact": "The emergency contact for driver Sarah Jenkins is listed as Mark Jenkins at 555-234-5678."
+    },
+    {
+      "id": "F24",
+      "category": "School & Family Information",
+      "fact": "Maple Creek Elementary's official dismissal time is 2:45 PM."
+    },
+    {
+      "id": "F25",
+      "category": "School & Family Information",
+      "fact": "Northwood Elementary's official dismissal time is 3:00 PM."
+    },
+    {
+      "id": "F26",
+      "category": "School & Family Information",
+      "fact": "The Rodriguez family's primary contact number for SMS notifications is 555-901-2345."
+    },
+    {
+      "id": "F27",
+      "category": "School & Family Information",
+      "fact": "The Kim family has a pre-authorized alternate drop-off address at 450 Oak Avenue, which is on file."
+    },
+    {
+      "id": "F28",
+      "category": "Systems & Software",
+      "fact": "The IT support contact for DispatchPro 7 software issues is Ben Carter at bcarter@ridewell.edu."
+    },
+    {
+      "id": "F29",
+      "category": "Operational Procedures",
+      "fact": "Alex Chen must generate and email the 'End-of-Day Change Log Summary' (Report ID: EOD-CHG-SUM) to the operations manager before clocking out."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current status of the transportation change request for the Kim twins, Ava and Noah?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Provisional Request Review",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the pre-authorized alternate drop-off address on file for the Kim family?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After reviewing the Kim's provisional request, the dispatcher may need to verify the address details on file.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Provisional Request Review",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Why was the change request for Maya Singh (ID 45678) denied?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Denied Request Review",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the status of request #CHG-20231026-008 for Emily White, and who is authorized for pickup?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Confirmed Request Review",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the specific details of the confirmed change for Leo Rodriguez, request #CHG-20231026-012?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After reviewing one confirmed request, the user is likely to move on to the next confirmed request in their queue.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Confirmed Request Review",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "How was the Rodriguez family notified about their confirmed transportation change?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F26"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After seeing a change is confirmed, verifying that the parent was successfully notified is a critical next step in the workflow.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Confirmed Request Review",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N7",
+      "description": "What alternate drop-off location was confirmed for Leo Rodriguez's transportation change?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "INTRA-GROUP: After reviewing Leo Rodriguez's confirmed change request, a direct follow-up is the exact alternate drop-off location attached to that confirmation.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Driver & Vehicle Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What device does the driver of Bus #14 use to receive Leo Rodriguez's real-time dispatch updates?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After confirming Leo Rodriguez's alternate drop-off and assigned bus, a direct follow-up is what device that driver uses to receive the real-time update.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Driver & Vehicle Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What was the final status of request #CHG-20231026-021 for Liam Johnson?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Late Request & Cutoff Rules",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the official cutoff time for submitting same-day transportation changes?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After seeing a request was marked 'Too Late', the user will want to know the specific rule that triggered this status.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Late Request & Cutoff Rules",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the maximum route deviation allowed for an alternate drop-off request?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: The Kim's request is 'Provisional' due to a route deviation. To resolve it, the dispatcher must know the governing policy on maximum deviation.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Policy Definitions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the definition of the 'Provisional' status in DispatchPro 7?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After encountering a request with an unfamiliar or ambiguous status like 'Provisional', the dispatcher would naturally seek its precise definition to understand the next steps.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Policy Definitions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "When DispatchPro 7 marks a request as denied, what must the dispatcher select to document the reason?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After seeing a same-day change request was denied, a direct follow-up is how the dispatcher is required to document the denial reason inside DispatchPro 7.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Internal Communication",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the mandatory reporting task I need to complete before the end of my shift?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "End of Day Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Before clocking out, which report must Alex Chen generate and email to the operations manager?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N14",
+      "prediction_reason": "INTRA-GROUP: After asking about the mandatory end-of-shift reporting task, the next direct follow-up is the exact report Alex Chen must generate and email before clocking out.",
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "System Support",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Provisional Request Review",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Denied Request Review",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Confirmed Request Review",
+      "member_need_ids": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Driver & Vehicle Details",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Late Request & Cutoff Rules",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Policy Definitions",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Internal Communication",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "End of Day Procedures",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "System Support",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "transport_change_same_day_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

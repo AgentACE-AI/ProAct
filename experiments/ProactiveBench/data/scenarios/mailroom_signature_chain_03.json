@@ -1,0 +1,432 @@
+{
+  "scenario_id": "mailroom_signature_chain_03",
+  "domain": "postal_mailroom_operations",
+  "description": "A sensitive package's handoff path must be reconstructed across intake, secure storage, notification, pickup, and final signature after a recipient questions where the delay occurred. All organizations are fictional.",
+  "user_profile": {
+    "persona": "41-year-old facilities administrator handling accountable deliveries",
+    "context": "The package likely moved correctly, but the exact handoff chain is not currently visible in one place",
+    "communication_style": "Forensic and exact, wants the handoff path rebuilt event by event"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Package_Details",
+      "fact": "The package in question is identified by the internal tracking number VD-MAIL-881701."
+    },
+    {
+      "id": "F02",
+      "category": "Package_Details",
+      "fact": "The external carrier tracking number for the package is QL-987654321-VD, assigned by QuantumLeap Logistics."
+    },
+    {
+      "id": "F03",
+      "category": "Package_Details",
+      "fact": "The package was sent by 'Cygnus Labs' from their facility at 4500 Stellar Way, Astroburg, CA 90210."
+    },
+    {
+      "id": "F04",
+      "category": "Package_Details",
+      "fact": "The intended recipient is Dr. Aris Thorne, Department of Advanced Materials, at Veridian Dynamics."
+    },
+    {
+      "id": "F05",
+      "category": "Timeline_Intake",
+      "fact": "QuantumLeap Logistics driver, Marco Diaz, delivered the package to the Veridian Dynamics mailroom on January 22, 2024, at 09:15 AM."
+    },
+    {
+      "id": "F06",
+      "category": "Timeline_Intake",
+      "fact": "Mailroom Operator Leo Chen (Employee ID: 743-B) signed for the delivery manifest on a digital pad at Intake Station 1A."
+    },
+    {
+      "id": "F07",
+      "category": "Timeline_Intake",
+      "fact": "Leo Chen scanned the package's external barcode using a Zebra TC52 scanner at 09:17 AM, January 22, 2024."
+    },
+    {
+      "id": "F08",
+      "category": "Timeline_Intake",
+      "fact": "The intake event was logged in the 'MailTrak Pro' system under transaction ID 4A9B3C1D-E0F1."
+    },
+    {
+      "id": "F09",
+      "category": "Timeline_Storage",
+      "fact": "The package was categorized as 'Accountable Mail - Signature Required' by the MailTrak Pro system based on sender business rules."
+    },
+    {
+      "id": "F10",
+      "category": "Timeline_Storage",
+      "fact": "At 09:22 AM, Leo Chen placed package VD-MAIL-881701 into secure locker B-07 of the 'SecuriStow' smart locker system."
+    },
+    {
+      "id": "F11",
+      "category": "Timeline_Storage",
+      "fact": "Security camera CAM-MR-02, which covers the SecuriStow lockers, recorded the placement event at timestamp 2024-01-22T09:22:14Z."
+    },
+    {
+      "id": "F12",
+      "category": "Timeline_Notification",
+      "fact": "The MailTrak Pro system automatically generated a pickup notification at 09:23 AM on January 22, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "Timeline_Notification",
+      "fact": "The notification email was sent from 'mailroom-noreply@veridian-dynamics.com' to the recipient's address 'aris.thorne@veridian-dynamics.com'."
+    },
+    {
+      "id": "F14",
+      "category": "Timeline_Notification",
+      "fact": "The email notification included the unique, one-time pickup code '8520-1994'."
+    },
+    {
+      "id": "F15",
+      "category": "Timeline_Notification",
+      "fact": "Microsoft Exchange server logs confirm successful delivery of the notification email to Dr. Thorne's inbox at 09:23:08 AM."
+    },
+    {
+      "id": "F16",
+      "category": "Timeline_Pickup",
+      "fact": "Dr. Aris Thorne arrived at the mailroom pickup window (Station 2B) on January 22, 2024, at 02:45 PM."
+    },
+    {
+      "id": "F17",
+      "category": "Timeline_Pickup",
+      "fact": "Mailroom Operator Jasmine Kaur (Employee ID: 812-C) was staffing the pickup window during this time."
+    },
+    {
+      "id": "F18",
+      "category": "Timeline_Pickup",
+      "fact": "Dr. Thorne provided the pickup code '8520-1994' and presented his employee ID card, number 1138-AT."
+    },
+    {
+      "id": "F19",
+      "category": "Timeline_Pickup",
+      "fact": "Jasmine Kaur retrieved the package from locker B-07 and scanned its barcode to mark it as 'Ready for Handover'."
+    },
+    {
+      "id": "F20",
+      "category": "Timeline_Pickup",
+      "fact": "The final signature was captured from Dr. Aris Thorne at 02:46 PM using a Topaz T-S460-HSB-R signature pad."
+    },
+    {
+      "id": "F21",
+      "category": "Timeline_Pickup",
+      "fact": "The MailTrak Pro system logged the package status as 'Delivered to Recipient' at 02:47 PM under transaction ID 4A9B3C1D-E0F1."
+    },
+    {
+      "id": "F22",
+      "category": "Personnel",
+      "fact": "Leo Chen's work shift on January 22, 2024, was from 07:00 AM to 03:00 PM."
+    },
+    {
+      "id": "F23",
+      "category": "Personnel",
+      "fact": "Jasmine Kaur's work shift on January 22, 2024, was from 11:00 AM to 07:00 PM."
+    },
+    {
+      "id": "F24",
+      "category": "Personnel",
+      "fact": "The Mailroom Supervisor is Marcus Thorne (no relation to recipient), contactable at m.thorne@veridian-dynamics.com."
+    },
+    {
+      "id": "F25",
+      "category": "Systems_And_Tools",
+      "fact": "The mailroom uses MailTrak Pro v3.5, which is accessed via the internal URL https://mailtrak.veridian.local."
+    },
+    {
+      "id": "F26",
+      "category": "Systems_And_Tools",
+      "fact": "The SecuriStow smart locker system logs are stored on server VDSQL04 in the database 'LockerEvents_PROD'."
+    },
+    {
+      "id": "F27",
+      "category": "Systems_And_Tools",
+      "fact": "Security camera footage from the 'OmniView Secure' system is retained for 90 days."
+    },
+    {
+      "id": "F28",
+      "category": "Systems_And_Tools",
+      "fact": "The digital signature image file for this transaction is stored as '881701_sig_202401221446.png' on the primary file server."
+    },
+    {
+      "id": "F29",
+      "category": "Policy_And_Procedure",
+      "fact": "The Standard Operating Procedure for Accountable Mail is documented in file 'SOP-ACC-007b'."
+    },
+    {
+      "id": "F30",
+      "category": "Policy_And_Procedure",
+      "fact": "SOP-ACC-007b requires that accountable mail be placed in a secure locker within 10 minutes of intake scan."
+    },
+    {
+      "id": "F31",
+      "category": "Policy_And_Procedure",
+      "fact": "The service level agreement (SLA) for sending a recipient notification is within 2 minutes of the package being secured in a locker."
+    },
+    {
+      "id": "F32",
+      "category": "Context",
+      "fact": "Dr. Aris Thorne's Outlook calendar shows he was in a 'Project Chimera Deep Dive' meeting from 09:00 AM to 11:30 AM on January 22, 2024."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the internal and external tracking numbers for the package sent by Cygnus Labs to Dr. Aris Thorne?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Package Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which mailroom operator first scanned the package into the MailTrak Pro system, and what was the transaction ID?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "System Intake Event",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "When was the package physically delivered by the carrier, and who signed for the manifest?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group follow-up: After seeing the system scan time, the user will want to know the physical delivery time to compare.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "System Intake Event",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "Where was the package placed for secure storage and at what time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming the package was scanned into the system, the immediate next step in the process is secure storage, making this a highly predictable next question.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Secure Storage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Is there security camera footage of the package being placed into the locker?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group follow-up: Confirming the physical placement in a locker naturally leads to asking for visual evidence.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Secure Storage",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "When was the recipient notification email sent and what was the pickup code provided?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F14"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the package is confirmed to be secured, the next logical step in the chain of custody is notifying the recipient.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Recipient Notification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Can you confirm the exact time the notification email was successfully delivered to Dr. Thorne's inbox?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group follow-up: After establishing when the notification was sent, a forensic user will want confirmation of successful delivery.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Recipient Notification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Which email address was the pickup notification sent to?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After confirming the notification email was successfully delivered, a direct follow-up is the exact address it was sent to.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Notification Address Detail",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When did Dr. Thorne arrive for pickup, which operator assisted him, and what credentials did he provide?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Pickup Event",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "At what time was the final signature captured, and when was the package status updated to 'Delivered' in the system?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group follow-up: After detailing the user's arrival and identity verification, the final actions of signature and system update are the next logical events.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Pickup Event",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+  "description": "What is the filename of the digital signature image tied to the final pickup transaction?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N10",
+  "prediction_reason": "CROSS-GROUP: After confirming the final pickup timestamps and signature capture, a direct follow-up is the stored filename for that proof-of-delivery image.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Proof of Delivery",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the required timeframe for placing accountable mail into a secure locker after the intake scan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Policy Compliance",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Package Identification",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "System Intake Event",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Secure Storage",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Recipient Notification",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Notification Address Detail",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Pickup Event",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Proof of Delivery",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Policy Compliance",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "mailroom_signature_chain_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "scenario_id": "localization_query_handoff_03",
+  "domain": "translation_localization_workflow",
+  "description": "One translator is stepping off a project and another must inherit unresolved terminology questions, client preferences, style exceptions, and unfinished review threads without losing semantic context. All clients and products are fictional.",
+  "user_profile": {
+    "persona": "29-year-old translator inheriting a partially completed enterprise localization project",
+    "context": "The original translator left strong notes in some areas and almost none in others, making continuity fragile",
+    "communication_style": "Careful and context-sensitive, wants the handoff material organized by decision type rather than raw chronology"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Project Management",
+      "fact": "The project code is AEI-QL-DE-2024-007, covering the localization of QuantumLeap CRM v3.5 from English (US) to German (DE)."
+    },
+    {
+      "id": "F02",
+      "category": "Project Management",
+      "fact": "The final delivery deadline for all translated UI strings and documentation is November 30, 2024, at 5:00 PM CET."
+    },
+    {
+      "id": "F03",
+      "category": "Project Management",
+      "fact": "The project manager at OmniLingua Solutions is Sarah Jenkins, reachable at s.jenkins@omnilingua.solutions."
+    },
+    {
+      "id": "F04",
+      "category": "Project Management",
+      "fact": "The project's JIRA board for tracking tasks and issues is accessible at https://jira.omnilingua.net/projects/QLDE."
+    },
+    {
+      "id": "F05",
+      "category": "Project Management",
+      "fact": "The departing translator, Liam Chen, has logged 112 hours out of an estimated total of 200 hours for the project."
+    },
+    {
+      "id": "F06",
+      "category": "Client Communication",
+      "fact": "The primary client contact at Aethelred Innovations is Dr. Anya Sharma, Head of Product, reachable at anya.sharma@aethelred.dev."
+    },
+    {
+      "id": "F07",
+      "category": "Client Communication",
+      "fact": "All project-related communication with the client must happen in the dedicated Slack channel: #aei-quantumleap-de-localization."
+    },
+    {
+      "id": "F08",
+      "category": "Client Communication",
+      "fact": "Aethelred Innovations has explicitly requested that the term 'customer' always be translated as 'Kunde' and never 'Auftraggeber'."
+    },
+    {
+      "id": "F09",
+      "category": "Client Communication",
+      "fact": "The client's in-country reviewer is Klaus Richter, and his feedback is the final authority on linguistic choices."
+    },
+    {
+      "id": "F10",
+      "category": "Terminology",
+      "fact": "The official project termbase is named `Aethelred_QL_v3.5.sdltb` and is located in the project's central repository."
+    },
+    {
+      "id": "F11",
+      "category": "Terminology",
+      "fact": "The term 'Synergy Matrix' is unresolved; JIRA ticket QLDE-112 tracks the discussion on whether to use 'Synergiematrix' or 'Synergie-Matrix'."
+    },
+    {
+      "id": "F12",
+      "category": "Terminology",
+      "fact": "Liam Chen's last note on QLDE-112 from October 15, 2024, indicates the client was leaning towards the hyphenated 'Synergie-Matrix'."
+    },
+    {
+      "id": "F13",
+      "category": "Terminology",
+      "fact": "The proposed translation for 'Actionable Insight' is 'Handlungsorientierte Einblicke', which is pending approval from Klaus Richter."
+    },
+    {
+      "id": "F14",
+      "category": "Terminology",
+      "fact": "The product feature 'Data Weaver' should remain in English and be marked as a non-translatable term."
+    },
+    {
+      "id": "F15",
+      "category": "Terminology",
+      "fact": "All terminology query forms must be submitted via the client portal at https://portal.aethelred.dev/localization/queries by Friday each week."
+    },
+    {
+      "id": "F16",
+      "category": "Style Guide",
+      "fact": "The Aethelred Innovations German Style Guide v2.1 is the authoritative source and is stored at `\\OLS-SERVER-01\\Projects\\AE_Innovations\\StyleGuides\\DE_StyleGuide_v2.1.pdf`."
+    },
+    {
+      "id": "F17",
+      "category": "Style Guide",
+      "fact": "A major style exception is the mandatory use of the Oxford comma in German marketing text, as per a client directive from May 12, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "Style Guide",
+      "fact": "The tone of voice for UI microcopy should be 'Helpful and Professional', avoiding colloquialisms."
+    },
+    {
+      "id": "F19",
+      "category": "Style Guide",
+      "fact": "Liam Chen noted in an email on September 23, 2024, that the client prefers the formal 'Sie' for user address in all contexts."
+    },
+    {
+      "id": "F20",
+      "category": "Style Guide",
+      "fact": "There is an open JIRA ticket, QLDE-98, to update the official style guide with the Oxford comma exception; this has not yet been completed."
+    },
+    {
+      "id": "F21",
+      "category": "Technical Setup",
+      "fact": "The required CAT tool for this project is Trados Studio 2022 Professional, build 17.0.5.15348."
+    },
+    {
+      "id": "F22",
+      "category": "Technical Setup",
+      "fact": "The project package, `AEI-QL-DE-2024-007_Package_v2.sdlppx`, was created on October 10, 2024."
+    },
+    {
+      "id": "F23",
+      "category": "Technical Setup",
+      "fact": "The main translation memory (TM) is hosted on a server and must be accessed via the connection path `tm.omnilingua.net:5432`."
+    },
+    {
+      "id": "F24",
+      "category": "Technical Setup",
+      "fact": "Liam's working files are located at `\\OLS-SERVER-01\\Users\\lchen\\Projects\\AEI-QL-DE-2024-007\\InProgress\\`."
+    },
+    {
+      "id": "F25",
+      "category": "Technical Setup",
+      "fact": "A custom QA check profile, `Aethelred_DE_QA.sdltb`, must be used in Trados Studio for verification."
+    },
+    {
+      "id": "F26",
+      "category": "Review & QA",
+      "fact": "Klaus Richter's feedback from the previous milestone (v3.4) is in an Excel file named `AEI_QL_v3.4_Review_KR_Final.xlsx` in the project's root folder."
+    },
+    {
+      "id": "F27",
+      "category": "Review & QA",
+      "fact": "There is an unresolved review thread regarding the translation of the button 'Engage'. Klaus Richter found the initial translation 'Einbinden' too generic."
+    },
+    {
+      "id": "F28",
+      "category": "Review & QA",
+      "fact": "The review thread for 'Engage' is documented in a comment chain on Confluence: https://confluence.omnilingua.net/pages/viewpage.action?pageId=8675309."
+    },
+    {
+      "id": "F29",
+      "category": "Review & QA",
+      "fact": "Liam's last proposed alternative for 'Engage' was 'Interagieren', submitted on October 18, 2024, but it has not yet been reviewed by Klaus."
+    },
+    {
+      "id": "F30",
+      "category": "Review & QA",
+      "fact": "A bug was logged (QLDE-121) for a string truncation issue in the German UI on the 'Dashboard Settings' modal."
+    },
+    {
+      "id": "F31",
+      "category": "Client Communication",
+      "fact": "The client has a strict character limit of 45 characters for all main menu navigation items."
+    },
+    {
+      "id": "F32",
+      "category": "Project Management",
+      "fact": "The project budget allows for up to 10 hours of dedicated linguistic research, of which Liam Chen has used 3.5 hours."
+    },
+    {
+      "id": "F33",
+      "category": "Terminology",
+      "fact": "The term 'Legacy System' was approved on September 5, 2024, to be translated as 'Altsystem'."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the project code and scope, and who is the internal project manager at OmniLingua?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Identity",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who are the key client contacts for product decisions and final linguistic approval?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After identifying the internal project manager, the user will naturally want to know the key client-side stakeholders.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Project Identity",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where can I find the official style guide and the project termbase?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Core Linguistic Assets",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What are the client's explicit translation rules for the terms 'customer' and 'Data Weaver'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F14"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After locating the main linguistic assets, the user will want to know about any specific, overriding client directives that might not be in them yet.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Specific Client Directives",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the required form of address for users?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: This is a fundamental style question that logically follows from asking about other specific client rules.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Specific Client Directives",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the status of the unresolved term 'Synergy Matrix' and what was the last client indication?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Unresolved Terminology",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the approval status for the proposed translation of 'Actionable Insight'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After asking about one unresolved term, the user will likely ask about other pending terminology items.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Unresolved Terminology",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Is there unresolved review feedback on the translation for 'Engage' and what was the last proposed alternative?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27",
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Unresolved Review Feedback",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Where is the full discussion thread for the 'Engage' feedback documented?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: A direct follow-up to get more context on the unresolved feedback mentioned in the previous turn.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Unresolved Review Feedback",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What CAT tool version is required, and where can I find the project package and server TM connection path?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Technical Setup",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Is there a known issue with the style guide not being updated for the Oxford comma rule?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17",
+        "F20"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After the user asks for the style guide, proactively informing them of a known discrepancy between the guide and a client directive is highly valuable context.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Style Guide Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Has Klaus Richter reviewed Liam Chen's last proposed alternative for 'Engage'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After surfacing the unresolved feedback on 'Engage' and Liam's last proposed alternative, a direct follow-up is whether Klaus Richter has reviewed that latest proposal.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Pending Engage Approval",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "How many hours have been used out of the total estimated hours for the project?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Project Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What are the required channels for general client communication and for submitting formal terminology queries?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F15"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After identifying the key client contacts, the next logical step is to understand the specific processes and channels for communicating with them.",
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Communication Protocols",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Project Identity",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Core Linguistic Assets",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Specific Client Directives",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Unresolved Terminology",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Unresolved Review Feedback",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Technical Setup",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Style Guide Issues",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+    "label": "Pending Engage Approval",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G9",
+      "label": "Project Status",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Communication Protocols",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "localization_query_handoff_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

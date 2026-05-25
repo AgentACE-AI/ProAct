@@ -1,0 +1,383 @@
+{
+  "scenario_id": "farm_harvest_traceability_handoff_04",
+  "domain": "farm_operations",
+  "description": "A harvest crew needs a clean handoff between field picking, bin labeling, wash station intake, and shipment prep so traceability survives a busy multi-stage harvest day.",
+  "user_profile": {
+    "persona": "40-year-old harvest supervisor coordinating several crews and downstream handling steps",
+    "context": "Speed matters during harvest, but mislabeled lots would create serious problems later in the chain",
+    "communication_style": "Operational and chain-aware, wants each handoff point made explicit"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel & Roles",
+      "fact": "Marco Diaz is the Harvest Supervisor for the 2024 Sunstone peach harvest at Veridian Valley Farms."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel & Roles",
+      "fact": "Elena Flores leads Alpha Crew, which is assigned to harvest North Ridge Block 7."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel & Roles",
+      "fact": "Javier Costa leads Bravo Crew, which is assigned to harvest West Slope Block 4."
+    },
+    {
+      "id": "F04",
+      "category": "Personnel & Roles",
+      "fact": "Sofia Rossi is the Wash Station Intake Manager, stationed at Wash Station A."
+    },
+    {
+      "id": "F05",
+      "category": "Equipment & Supplies",
+      "fact": "Each crew lead is issued a Zebra ZD421 mobile thermal printer for printing bin labels in the field."
+    },
+    {
+      "id": "F06",
+      "category": "Equipment & Supplies",
+      "fact": "The standard harvest container is a yellow, 250-lb capacity plastic macro bin."
+    },
+    {
+      "id": "F07",
+      "category": "Equipment & Supplies",
+      "fact": "Bin labels are 4x6 inch weather-resistant polyester stock, model PolyPro 4000T."
+    },
+    {
+      "id": "F08",
+      "category": "Field Picking Protocol",
+      "fact": "The 2024 Sunstone peach harvest began on August 15, 2024."
+    },
+    {
+      "id": "F09",
+      "category": "Field Picking Protocol",
+      "fact": "A bin is considered full when peaches are level with the top rim, which corresponds to an approximate weight of 250 lbs."
+    },
+    {
+      "id": "F10",
+      "category": "Field Picking Protocol",
+      "fact": "Full bins must be moved from the picking row to the designated block-end staging area within 15 minutes."
+    },
+    {
+      "id": "F11",
+      "category": "Bin Labeling Protocol",
+      "fact": "The crew lead is responsible for generating and applying the QR code traceability label immediately after a bin is confirmed full."
+    },
+    {
+      "id": "F12",
+      "category": "Bin Labeling Protocol",
+      "fact": "The bin label must be affixed to the north-facing side of the bin, 5 inches from the top-right corner."
+    },
+    {
+      "id": "F13",
+      "category": "Bin Labeling Protocol",
+      "fact": "Bin labels are generated using the AgriTrace Pro app on the crew's Samsung Galaxy Tab A8 tablet."
+    },
+    {
+      "id": "F14",
+      "category": "Bin Labeling Protocol",
+      "fact": "A bin's unique ID format is VV-YYMMDD-BLOCK-BIN#, for example: VV-240815-NR7-021."
+    },
+    {
+      "id": "F15",
+      "category": "Traceability System",
+      "fact": "Scanning a bin's QR code in the AgriTrace Pro app reveals its block of origin, crop, crew lead, and the exact timestamp of labeling."
+    },
+    {
+      "id": "F16",
+      "category": "Wash Station Intake",
+      "fact": "At Wash Station A, Sofia Rossi must scan each bin's QR code before it is tipped into the hydro-cooler."
+    },
+    {
+      "id": "F17",
+      "category": "Wash Station Intake",
+      "fact": "The water temperature in the hydro-cooler at Wash Station A is maintained at a constant 34°F (1.1°C)."
+    },
+    {
+      "id": "F18",
+      "category": "Wash Station Intake",
+      "fact": "Any bin arriving at the wash station without a scannable label is immediately moved to Quarantine Bay Q2 and flagged for 'Traceability Hold'."
+    },
+    {
+      "id": "F19",
+      "category": "Traceability System",
+      "fact": "The AgriTrace Pro system logs the bin's status as 'Washed' automatically upon a successful intake scan by Sofia Rossi."
+    },
+    {
+      "id": "F20",
+      "category": "Shipment Prep Protocol",
+      "fact": "Washed fruit is transported from Wash Station A to Packing Bay 3 for sorting."
+    },
+    {
+      "id": "F21",
+      "category": "Shipment Prep Protocol",
+      "fact": "To create a 'Pallet Lot' for shipment, the packing lead scans the QR codes of all bins whose fruit is packed onto that specific pallet."
+    },
+    {
+      "id": "F22",
+      "category": "Shipment Prep Protocol",
+      "fact": "The final pallet label for shipping to Golden Grocers Inc. (Purchase Order #GG-8941) must include a master QR code linking to all source bin IDs."
+    },
+    {
+      "id": "F23",
+      "category": "Traceability System",
+      "fact": "The web dashboard for viewing live harvest data is located at https://veridian.agritracepro.com."
+    },
+    {
+      "id": "F24",
+      "category": "Quality Control",
+      "fact": "The AgriTrace Pro system automatically generates an alert if the time between a bin's field scan and its wash station scan exceeds 90 minutes."
+    },
+    {
+      "id": "F25",
+      "category": "Quality Control",
+      "fact": "A 'Mislabeled Bin' incident report must be filed by the crew lead if a label is printed with the wrong block information, requiring a reprint and physical re-labeling within 10 minutes."
+    },
+    {
+      "id": "F26",
+      "category": "Communication & Escalation",
+      "fact": "All urgent operational issues, such as a printer malfunction, must be reported in the #harvest-ops-2024 Slack channel."
+    },
+    {
+      "id": "F27",
+      "category": "Communication & Escalation",
+      "fact": "For any bin placed on 'Traceability Hold', Sofia Rossi must immediately post a photo of the bin in Quarantine Bay Q2 and tag @MarcoDiaz in the Slack channel."
+    },
+    {
+      "id": "F28",
+      "category": "Communication & Escalation",
+      "fact": "The mandatory end-of-day handoff meeting for all crew leads and station managers is held at 5:30 PM at the main equipment barn."
+    },
+    {
+      "id": "F29",
+      "category": "Personnel & Roles",
+      "fact": "The primary contact for AgriTrace Pro software support is support@agritracepro.com, with an expected response time of 30 minutes during harvest hours."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "When is a harvest bin considered full in the field, and where must it be moved next?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Field Labeling Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Who is responsible for labeling a full bin and at what point in the process must this be done?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the process for handling a full bin, the user's next logical question is about the labeling responsibility associated with that task.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Field Labeling Protocol",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the exact format for a bin's unique ID, and where precisely on the bin should the label be placed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F12"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Once the user knows who is responsible for labeling, they will need the specific instructions on what the label should contain and where it must be affixed for compliance.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Field Labeling Protocol",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is the required intake procedure for Sofia Rossi when a bin arrives at Wash Station A?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Wash Station Intake",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What happens if a bin arrives at the wash station without a scannable label?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning the standard intake procedure involves scanning a label, the immediate operational concern for a supervisor is the exception-handling process for when that scan fails.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Wash Station Exception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What exact Slack notification is sent to the harvest supervisor when a bin is placed on 'Traceability Hold'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After learning that a bin can be put on hold, the supervisor's next need is to understand the communication protocol for being alerted to such an event.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Wash Station Exception",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the protocol if a crew lead realizes they have printed a bin label with incorrect block information?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After understanding the correct procedure for creating and placing labels, a chain-aware supervisor would proactively consider the failure mode of an incorrect label being created in the field.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Field Labeling Exception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Does the AgriTrace Pro system automatically generate an alert for time delays between the field scan and the wash station scan?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Understanding the wash station intake process (the second checkpoint) naturally leads a supervisor focused on speed and efficiency to ask how the time between the first and second checkpoints is monitored.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "System Time Alert",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "At shipment prep, how does the packing lead preserve source-bin traceability when creating a final 'Pallet Lot'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: A supervisor with a 'chain-aware' mindset, after confirming the wash station handoff, would logically think ahead to the final step in the chain: palletizing for shipment.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Downstream & Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the required communication channel for reporting an urgent operational issue like a malfunctioning printer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Discussing the specifics of the labeling protocol and equipment naturally surfaces the critical operational question of what to do if that equipment fails.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Downstream & Support",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the URL for the web dashboard to view live harvest data?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Downstream & Support",
+      "reveal_priority": 3
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Field Labeling Protocol",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Wash Station Intake",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Wash Station Exception",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Field Labeling Exception",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "System Time Alert",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Downstream & Support",
+      "member_need_ids": [
+        "N9",
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "farm_harvest_traceability_handoff_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "scenario_id": "disaster_go_bag_completeness_01",
+  "domain": "disaster_preparedness",
+  "description": "A household wants to verify whether each family member's emergency bag actually contains role-specific essentials instead of a generic pile of supplies that may not fit real needs.",
+  "user_profile": {
+    "persona": "39-year-old parent responsible for emergency prep in a four-person household",
+    "context": "The supplies were assembled gradually, and no one is confident the bags are actually complete or balanced",
+    "communication_style": "Preparedness-minded and concrete, wants item sets tied to actual people and situations"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "family_member_profile",
+      "fact": "The Chen-Riley household consists of four members: Alex Chen (39), Jordan Riley (41), Maya Chen (12), and Leo Riley (7)."
+    },
+    {
+      "id": "F02",
+      "category": "family_member_profile",
+      "fact": "Alex Chen's designated emergency role is 'Navigator and Communications Lead'."
+    },
+    {
+      "id": "F03",
+      "category": "family_member_profile",
+      "fact": "Jordan Riley's designated emergency role is 'First Aid and Security Lead'."
+    },
+    {
+      "id": "F04",
+      "category": "family_member_profile",
+      "fact": "Maya Chen is responsible for the family's dog, Buddy, and his emergency kit."
+    },
+    {
+      "id": "F05",
+      "category": "emergency_bag_inventory",
+      "fact": "Alex Chen's emergency bag, tagged 'AC-01', is a red 'TrailPeak 40L' backpack and weighs 22 lbs."
+    },
+    {
+      "id": "F06",
+      "category": "emergency_bag_inventory",
+      "fact": "Jordan Riley's bag, tagged 'JR-02', is a black 'Kodiak 55L' backpack weighing 35 lbs."
+    },
+    {
+      "id": "F07",
+      "category": "emergency_bag_inventory",
+      "fact": "Maya Chen's bag, tagged 'MC-03', is a blue 'Scout Jr.' pack weighing 12 lbs."
+    },
+    {
+      "id": "F08",
+      "category": "emergency_bag_inventory",
+      "fact": "Leo Riley's bag, tagged 'LR-04', is a green dinosaur-themed 'MiniTrek' pack weighing 8 lbs."
+    },
+    {
+      "id": "F09",
+      "category": "medical_supplies",
+      "fact": "Leo Riley has a severe allergy to peanuts; his bag contains two 'EpiPen Jr.' auto-injectors that expire on October 31, 2025."
+    },
+    {
+      "id": "F10",
+      "category": "medical_supplies",
+      "fact": "Jordan's bag contains a 'TraumaStat' first-aid kit, which includes a tourniquet, two chest seals, and 12 sterile 4x4 inch gauze pads."
+    },
+    {
+      "id": "F11",
+      "category": "medical_supplies",
+      "fact": "Alex's bag contains a 90-day supply of Levothyroxine (100 mcg tablets), with the prescription number RX789456 from 'Maple Creek Pharmacy'."
+    },
+    {
+      "id": "F12",
+      "category": "communication_plan",
+      "fact": "The primary out-of-state emergency contact is Aunt Sarah, whose phone number is (555) 867-5309."
+    },
+    {
+      "id": "F13",
+      "category": "communication_plan",
+      "fact": "Alex's bag contains a 'Midland ER310' hand-crank emergency radio tuned to the local NOAA weather frequency 162.475 MHz."
+    },
+    {
+      "id": "F14",
+      "category": "communication_plan",
+      "fact": "Each family member has a laminated card in their bag listing three emergency contact numbers and the primary meeting point address."
+    },
+    {
+      "id": "F15",
+      "category": "evacuation_plan",
+      "fact": "The primary evacuation meeting point is the old oak tree at 'Pioneer Park,' located at 1250 Parkview Drive."
+    },
+    {
+      "id": "F16",
+      "category": "evacuation_plan",
+      "fact": "The secondary meeting point is the 'Maple Creek Public Library' at 400 Main Street."
+    },
+    {
+      "id": "F17",
+      "category": "evacuation_plan",
+      "fact": "A printed map in Alex's bag highlights two distinct evacuation routes from their home at 246 Arbor Lane: one north via Highway 17 and one east via County Road 42."
+    },
+    {
+      "id": "F18",
+      "category": "documentation",
+      "fact": "A waterproof pouch in Alex's bag holds physical copies of birth certificates, social security cards, and passports for all four family members."
+    },
+    {
+      "id": "F19",
+      "category": "documentation",
+      "fact": "A 'Kingston IronKey' 128GB encrypted USB drive, attached to Alex's keychain, contains scanned documents updated on June 1, 2024."
+    },
+    {
+      "id": "F20",
+      "category": "emergency_bag_inventory",
+      "fact": "Leo's bag contains a comfort item (a stuffed velociraptor named 'Raptor') and a 200-piece 'Lego Explorers' set in a zip-top bag."
+    },
+    {
+      "id": "F21",
+      "category": "emergency_bag_inventory",
+      "fact": "Maya's bag includes a 'Leatherman Rev' multi-tool and a 100-foot coil of 550 paracord."
+    },
+    {
+      "id": "F22",
+      "category": "pet_preparedness",
+      "fact": "Buddy's pet emergency kit, managed by Maya, contains a 3-day supply of 'NutriPaws' brand dog food, measured at 3 cups per day."
+    },
+    {
+      "id": "F23",
+      "category": "pet_preparedness",
+      "fact": "Buddy's kit includes a copy of his vaccination records from 'Maple Creek Veterinary Clinic' and a 30-day supply of his flea medication, 'Simparica Trio'."
+    },
+    {
+      "id": "F24",
+      "category": "bag_maintenance",
+      "fact": "The family conducts a full emergency bag check and supply rotation every six months, scheduled for May 1st and November 1st."
+    },
+    {
+      "id": "F25",
+      "category": "emergency_bag_inventory",
+      "fact": "Jordan's bag contains a 'Sawyer Squeeze' water filter rated for 100,000 gallons and four 3600-calorie 'SOS' emergency food bars."
+    },
+    {
+      "id": "F26",
+      "category": "emergency_bag_inventory",
+      "fact": "Each of the four bags contains one 'Nitecore NU25' headlamp, a safety whistle, and three N95 particulate masks."
+    },
+    {
+      "id": "F27",
+      "category": "medical_supplies",
+      "fact": "The family first-aid kit in Jordan's bag includes Ibuprofen (200mg tablets, 50-count bottle, expires 07/2026) and children's Acetaminophen (160mg/5mL liquid, expires 12/2025)."
+    },
+    {
+      "id": "F28",
+      "category": "documentation",
+      "fact": "The password for the encrypted USB drive (model IKVP80ES) is a 24-character passphrase stored in the family's '1Password' vault under the entry 'Emergency USB Key'."
+    },
+    {
+      "id": "F29",
+      "category": "family_member_profile",
+      "fact": "Maya Chen completed the 'PetSafe Junior' online first aid course on March 15, 2024, and her certificate number is PS-1138."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Give me the baseline inventory of each family emergency bag by assigned person, tag ID, pack description, and weight.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Bag Inventory",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which documented navigation and communications items are in my (Alex Chen's) bag for the Navigator and Communications Lead role?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F13",
+        "F17"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After getting a high-level inventory, the user, who is the planner, would naturally want to verify the contents of their own bag against their assigned role.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Alex's Role-Specific Gear",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What important family documents are stored in my bag?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Within the context of checking Alex's bag, after confirming role-specific equipment, verifying the critical documents also assigned to Alex is a logical next step.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Alex's Role-Specific Gear",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What are the contents of the TraumaStat first-aid kit in Jordan Riley's bag?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F10"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After thoroughly checking their own bag and role (Alex/Comms), the user would logically move on to check the gear for the next key role, which is Jordan's First Aid responsibility.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Jordan's First Aid Gear",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "Besides the trauma supplies, what general family medications are in the first-aid kit and when do they expire?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "This is a natural follow-up question after asking about the specialized trauma items, broadening the query to cover general medications within the same first-aid kit.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Jordan's First Aid Gear",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the expiration date for Leo Riley's EpiPen Jr. auto-injectors?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP (Auditable Proactive Target): After reviewing the general first aid supplies and their expiration dates, an intelligent assistant should anticipate a critical follow-up about the expiration of life-saving, person-specific medication like an EpiPen.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Critical Medical Alert",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What food, flea medication, and veterinary record items are documented in Buddy's pet emergency kit, which Maya manages?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Pet Preparedness",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What pet first-aid training has Maya completed for managing Buddy's emergency kit?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Pet Preparedness",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What comfort items and activities are packed in Leo's bag?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Child Comfort Items",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What are the street addresses of our primary and secondary evacuation meeting points?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Evacuation Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is our out-of-state emergency contact and what is their phone number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP (Auditable Proactive Target): Once the user confirms where the family will meet (physical location), the next logical thought is who they need to contact to report their status. This connects the 'where' with the 'who'.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Emergency Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the model of the encrypted USB drive and where is its password stored?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19",
+        "F28"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After confirming the existence of the physical and digital documents (N3), a detailed-oriented user would later circle back to verify the access method for the encrypted digital copies.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Digital Security",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "When are our next scheduled bag check and supply rotation dates?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Maintenance Schedule",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Bag Inventory",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Alex's Role-Specific Gear",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Jordan's First Aid Gear",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Critical Medical Alert",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Pet Preparedness",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Child Comfort Items",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Evacuation Logistics",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Emergency Contacts",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Digital Security",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G10",
+      "label": "Maintenance Schedule",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "disaster_go_bag_completeness_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

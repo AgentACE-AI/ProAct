@@ -1,0 +1,401 @@
+{
+  "scenario_id": "parent_medical_school_bridge_04",
+  "domain": "parenting_support",
+  "description": "A parent needs to make sure a child's school, after-school program, and pediatrician all have the same understanding of a recurring health issue, including symptom triggers, accommodations, and what to do if it flares up.",
+  "user_profile": {
+    "persona": "40-year-old parent managing both medical and school communication",
+    "context": "Recent confusion showed that each adult only knows part of the child's situation",
+    "communication_style": "Clear and protective, wants consistent wording across settings"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Child_Profile",
+      "fact": "The child's full name is Leo Miller."
+    },
+    {
+      "id": "F02",
+      "category": "Child_Profile",
+      "fact": "Leo Miller's date of birth is May 15, 2016."
+    },
+    {
+      "id": "F03",
+      "category": "Health_Condition",
+      "fact": "Leo Miller is diagnosed with Exercise-Induced Bronchospasm with Allergic Triggers (ICD-10 Code: J45.901)."
+    },
+    {
+      "id": "F04",
+      "category": "Health_Condition",
+      "fact": "The diagnosis was formally documented by Dr. Anya Sharma at Riverbend Pediatric Associates on September 2, 2023."
+    },
+    {
+      "id": "F05",
+      "category": "Triggers",
+      "fact": "A primary environmental trigger is outdoor air temperature below 50°F (10°C)."
+    },
+    {
+      "id": "F06",
+      "category": "Triggers",
+      "fact": "A known allergic trigger is airborne pollen from freshly cut grass."
+    },
+    {
+      "id": "F07",
+      "category": "Triggers",
+      "fact": "Inhaling strong chemical odors, specifically from bleach-based cleaning products, will trigger symptoms."
+    },
+    {
+      "id": "F08",
+      "category": "Symptoms",
+      "fact": "The initial symptom of a flare-up is a persistent, dry cough."
+    },
+    {
+      "id": "F09",
+      "category": "Symptoms",
+      "fact": "During a flare-up, an audible high-pitched wheezing sound occurs when Leo exhales."
+    },
+    {
+      "id": "F10",
+      "category": "Medication_Management",
+      "fact": "Leo is prescribed an Albuterol Sulfate inhaler, brand name ProAir HFA."
+    },
+    {
+      "id": "F11",
+      "category": "Medication_Management",
+      "fact": "The standard dosage is two actuations (puffs), totaling 180 mcg, administered via a spacer device."
+    },
+    {
+      "id": "F12",
+      "category": "Medication_Management",
+      "fact": "The inhaler must be administered 15 minutes prior to strenuous physical activity, including school P.E. class."
+    },
+    {
+      "id": "F13",
+      "category": "Key_Contacts",
+      "fact": "Leo's pediatrician is Dr. Anya Sharma at Riverbend Pediatric Associates, reachable at 555-876-5432."
+    },
+    {
+      "id": "F14",
+      "category": "Key_Contacts",
+      "fact": "The school nurse at Maple Creek Elementary is Ms. Carol Dane, whose office phone is 555-112-2334."
+    },
+    {
+      "id": "F15",
+      "category": "Key_Contacts",
+      "fact": "The director of the Bright Horizons Kids Club is Mr. James Finch, contactable at 555-998-8776."
+    },
+    {
+      "id": "F16",
+      "category": "Accommodations_School",
+      "fact": "Leo's school, Maple Creek Elementary, must provide indoor recess when the local Air Quality Index (AQI) exceeds 100."
+    },
+    {
+      "id": "F17",
+      "category": "Accommodations_School",
+      "fact": "Per Leo's 504 Plan dated October 1, 2023, his classroom (Room 204) must only be cleaned with fragrance-free, non-bleach products."
+    },
+    {
+      "id": "F18",
+      "category": "Accommodations_AfterSchool",
+      "fact": "Staff at the Bright Horizons Kids Club are required to supervise Leo's use of his inhaler before outdoor playground activities."
+    },
+    {
+      "id": "F19",
+      "category": "Emergency_Protocol",
+      "fact": "If Leo exhibits shortness of breath that does not improve within 5 minutes of using the inhaler, call 911."
+    },
+    {
+      "id": "F20",
+      "category": "Emergency_Protocol",
+      "fact": "The primary emergency contact is Sarah Miller (mother) at 555-234-5678."
+    },
+    {
+      "id": "F21",
+      "category": "Emergency_Protocol",
+      "fact": "The secondary emergency contact is Robert Miller (father) at 555-234-5679."
+    },
+    {
+      "id": "F22",
+      "category": "Equipment_Location",
+      "fact": "At Maple Creek Elementary, Leo's inhaler (Serial #: AXD4588B) and spacer are stored in a labeled bin in the nurse's office medication cabinet."
+    },
+    {
+      "id": "F23",
+      "category": "Equipment_Location",
+      "fact": "At Bright Horizons Kids Club, a separate inhaler is kept in a red zippered pouch labeled 'Leo Miller' inside the front desk first-aid kit."
+    },
+    {
+      "id": "F24",
+      "category": "Communication_Plan",
+      "fact": "A central Google Doc named 'Leo Miller Health Coordination Plan' contains all official information."
+    },
+    {
+      "id": "F25",
+      "category": "Communication_Plan",
+      "fact": "The 'view-only' share link for the health plan was distributed to all key contacts via email on November 5, 2023."
+    },
+    {
+      "id": "F26",
+      "category": "Communication_Plan",
+      "fact": "All modifications to the plan are logged in the 'Revision History' section of the document, initialed and dated by Sarah Miller."
+    },
+    {
+      "id": "F27",
+      "category": "Communication_Plan",
+      "fact": "The health coordination plan includes Leo's symptom triggers, medication and flare-up response steps, school and after-school accommodations, emergency contacts, and storage locations for inhalers and spacers."
+    },
+    {
+      "id": "F28",
+      "category": "Communication_Plan",
+      "fact": "On November 6, 2023, Sarah Miller received acknowledgments from the school nurse, the Kids Club director, and Leo's parents confirming they had reviewed the shared health plan."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the child's full name and date of birth?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Child Identity & Diagnosis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the official diagnosis and who documented it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the child, the user will naturally state the core health issue being discussed.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Child Identity & Diagnosis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the specific environmental, allergic, and chemical triggers for the child's condition?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Condition Triggers",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the prescribed medication and its standard dosage?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After outlining what causes a flare-up, the next logical topic is how to treat it.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Standard Treatment Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the protocol for administering the inhaler before physical activity?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After establishing the medication and dosage, the user will specify the important preventative use case.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Standard Treatment Protocol",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "Under what circumstances should emergency services (911) be called?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Once the standard treatment is defined, the critical next step is to clarify the protocol for when that treatment fails. This is an auditable proactive target.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Emergency Action",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Who are the primary and secondary emergency contacts for Leo Miller?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Immediately after discussing the 911 protocol, the user will provide the contact information for the parents.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are the contact details for the school nurse and after-school director?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14",
+        "F15"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After providing parent contacts, the user might also want to list the key on-site personnel for non-emergency communication.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "Where are Leo's inhalers kept at the school and the after-school club?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Equipment Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What specific accommodations are in place at school regarding air quality and cleaning supplies?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Facility Accommodations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Where is the master health plan stored, what does it cover, and has it been reviewed by all key caregivers?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24",
+        "F25",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After mentioning specific rules or accommodations, the user might want to explain where the single source of truth for all this information is located. This is an auditable proactive target.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Plan Documentation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Child Identity & Diagnosis",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Condition Triggers",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Standard Treatment Protocol",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Emergency Action",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Key Contacts",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Equipment Logistics",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Facility Accommodations",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Plan Documentation",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G7"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "parent_medical_school_bridge_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

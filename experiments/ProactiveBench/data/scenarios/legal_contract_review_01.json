@@ -1,0 +1,494 @@
+{
+  "scenario_id": "legal_contract_review_01",
+  "domain": "legal_documentation",
+  "description": "A freelancer is reviewing a client services contract before signing and wants to identify which clauses meaningfully change payment risk, revision scope, ownership of work, and termination rights. All parties are fictional.",
+  "user_profile": {
+    "persona": "29-year-old freelance strategist landing a larger-than-usual client",
+    "context": "The contract feels mostly standard, but a few unfamiliar clauses could matter a lot",
+    "communication_style": "Calm and selective, wants material issues separated from boilerplate"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Parties_and_Agreement",
+      "fact": "The client is Innovate Solutions Inc., a Delaware corporation with its principal office at 450 Innovation Drive, Apex City, DE 19901."
+    },
+    {
+      "id": "F02",
+      "category": "Parties_and_Agreement",
+      "fact": "The freelancer is Alex Chen, operating as a sole proprietorship under the name 'Chen Strategy' at 123 Maple Lane, Harmony Creek, CA 90210."
+    },
+    {
+      "id": "F03",
+      "category": "Parties_and_Agreement",
+      "fact": "The contract is identified as Master Services Agreement #MSA-2024-118, dated October 28, 2024."
+    },
+    {
+      "id": "F04",
+      "category": "Parties_and_Agreement",
+      "fact": "The primary client contact for this project is Maria Garcia, Head of Marketing at Innovate Solutions Inc."
+    },
+    {
+      "id": "F05",
+      "category": "Parties_and_Agreement",
+      "fact": "All official notices related to the contract must be sent via email to legal@innovatesolutions.io and alex@chenstrategy.co."
+    },
+    {
+      "id": "F06",
+      "category": "Scope_of_Work",
+      "fact": "The specific services are detailed in Statement of Work #SOW-Helios-01, covering a market entry strategy for 'Project Helios'."
+    },
+    {
+      "id": "F07",
+      "category": "Scope_of_Work",
+      "fact": "The project is divided into three phases: Phase 1 (Market Research), Phase 2 (Strategy Development), and Phase 3 (Implementation Roadmap)."
+    },
+    {
+      "id": "F08",
+      "category": "Scope_of_Work",
+      "fact": "The final deliverable for the project is a 50-page strategy document and an accompanying slide deck presentation."
+    },
+    {
+      "id": "F09",
+      "category": "Scope_of_Work",
+      "fact": "The project start date is November 4, 2024, with a final delivery deadline of January 31, 2025."
+    },
+    {
+      "id": "F10",
+      "category": "Payment_Terms",
+      "fact": "The total fixed fee for Project Helios is $45,000 USD."
+    },
+    {
+      "id": "F11",
+      "category": "Payment_Terms",
+      "fact": "Payment is structured in three installments: $15,000 upon signing, $15,000 upon completion of Phase 2, and $15,000 upon final project acceptance."
+    },
+    {
+      "id": "F12",
+      "category": "Payment_Terms",
+      "fact": "Clause 5.3 specifies that all invoices are due on a NET 30 basis from the date of receipt."
+    },
+    {
+      "id": "F13",
+      "category": "Payment_Terms",
+      "fact": "According to Clause 5.4, a late payment fee of 1.5% per month will be applied to all overdue invoices."
+    },
+    {
+      "id": "F14",
+      "category": "Payment_Terms",
+      "fact": "All payments are to be made via ACH transfer to Chen Strategy's account at Summit National Bank, account ending in 5678."
+    },
+    {
+      "id": "F15",
+      "category": "Payment_Terms",
+      "fact": "The client, Innovate Solutions Inc., is responsible for all transaction fees associated with payment transfers."
+    },
+    {
+      "id": "F16",
+      "category": "Revision_Scope",
+      "fact": "Clause 3.2 states that the fee includes up to two rounds of consolidated feedback and revisions for each major deliverable (Phase 1, 2, and 3 reports)."
+    },
+    {
+      "id": "F17",
+      "category": "Revision_Scope",
+      "fact": "Any additional revision rounds or work requested outside the SOW will be billed at an hourly rate of $200."
+    },
+    {
+      "id": "F18",
+      "category": "Revision_Scope",
+      "fact": "A 'revision round' is defined in the SOW as a single document of compiled feedback from all client stakeholders, submitted within 5 business days of deliverable submission."
+    },
+    {
+      "id": "F19",
+      "category": "Revision_Scope",
+      "fact": "Changes to the project scope require a formal Change Order document signed by both Alex Chen and Maria Garcia."
+    },
+    {
+      "id": "F20",
+      "category": "Intellectual_Property",
+      "fact": "Clause 7.1 dictates that Innovate Solutions Inc. will own the full intellectual property rights to the final, accepted deliverables upon receipt of the final payment."
+    },
+    {
+      "id": "F21",
+      "category": "Intellectual_Property",
+      "fact": "Alex Chen retains ownership of all preliminary work, drafts, and concepts not included in the final deliverables."
+    },
+    {
+      "id": "F22",
+      "category": "Intellectual_Property",
+      "fact": "Alex Chen is granted the right to display the final work in his professional portfolio 6 months after the project's official completion date."
+    },
+    {
+      "id": "F23",
+      "category": "Intellectual_Property",
+      "fact": "The portfolio usage right is contingent upon receiving written approval from Innovate Solutions Inc., which cannot be unreasonably withheld."
+    },
+    {
+      "id": "F24",
+      "category": "Termination",
+      "fact": "Either party may terminate the agreement 'for convenience' with 30 days' written notice to the other party."
+    },
+    {
+      "id": "F25",
+      "category": "Termination",
+      "fact": "Innovate Solutions Inc. may terminate the agreement 'for cause' if Alex Chen fails to cure a material breach within 10 business days of receiving written notice."
+    },
+    {
+      "id": "F26",
+      "category": "Termination",
+      "fact": "If Innovate Solutions Inc. terminates for convenience, they must pay for all work completed to date plus a 'kill fee' of 25% of the remaining contract value."
+    },
+    {
+      "id": "F27",
+      "category": "Termination",
+      "fact": "If Alex Chen terminates for convenience, he forfeits any payment for the current, incomplete milestone."
+    },
+    {
+      "id": "F28",
+      "category": "Termination",
+      "fact": "Upon termination for any reason, Alex Chen must deliver all work-in-progress to Innovate Solutions Inc. within 5 business days."
+    },
+    {
+      "id": "F29",
+      "category": "Confidentiality",
+      "fact": "Both parties are bound by a mutual non-disclosure agreement outlined in Clause 9, which remains in effect for 3 years after contract termination."
+    },
+    {
+      "id": "F30",
+      "category": "Confidentiality",
+      "fact": "Confidential Information includes all business, technical, and financial information disclosed during the project, including the existence of 'Project Helios'."
+    },
+    {
+      "id": "F31",
+      "category": "Legal_and_Disputes",
+      "fact": "The agreement is governed by the laws of the State of Delaware, without regard to its conflict of law principles."
+    },
+    {
+      "id": "F32",
+      "category": "Legal_and_Disputes",
+      "fact": "Clause 12.2 requires any disputes arising from the contract to be resolved through binding arbitration in Wilmington, Delaware."
+    },
+    {
+      "id": "F33",
+      "category": "Legal_and_Disputes",
+      "fact": "The prevailing party in any legal dispute is entitled to recover reasonable attorney's fees and costs."
+    },
+    {
+      "id": "F34",
+      "category": "Miscellaneous",
+      "fact": "Alex Chen is classified as an independent contractor, not an employee, and is solely responsible for his own taxes and insurance."
+    },
+    {
+      "id": "F35",
+      "category": "Miscellaneous",
+      "fact": "The contract includes an indemnification clause (Clause 8) where Alex Chen agrees to indemnify Innovate Solutions Inc. against claims arising from his gross negligence or willful misconduct."
+    },
+    {
+      "id": "F36",
+      "category": "Miscellaneous",
+      "fact": "Clause 8 is limited to claims arising from Alex Chen's gross negligence or willful misconduct and does not create a broad indemnity for ordinary performance disputes or routine project disagreements."
+    },
+    {
+      "id": "F37",
+      "category": "Miscellaneous",
+      "fact": "The agreement does not state a separate dollar cap inside the indemnification clause itself."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the total fee for the project and what is the payment installment schedule?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Payment Schedule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What payment term applies to each invoice, and what late-payment penalty applies if an invoice becomes overdue?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the total fee and installment schedule, the user's next payment-risk question is when invoices are due and what happens if the client pays late.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Payment Schedule",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "How many rounds of revisions are included in the project fee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Revision Scope",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the hourly rate for any additional revision rounds or work requested outside the SOW?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Once the user understands the included revision limit, the immediate follow-up question is about the cost of exceeding that limit.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Revision Scope",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What happens if the client, Innovate Solutions, terminates the agreement for convenience, and what payment am I entitled to?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F26"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discussing out-of-scope work (a source of conflict) often leads to concerns about project cancellation and the financial safety net if that happens.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Termination Rights",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are the consequences if I, the freelancer, terminate the contract for convenience?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24",
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After understanding the client's termination rights, the user will want to know their own corresponding rights and penalties.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Termination Rights",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Who owns the intellectual property of the final deliverables, and when does that ownership transfer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Intellectual Property",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What are my rights to display the final work in my professional portfolio?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22",
+        "F23"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "For a freelancer, confirming ownership naturally leads to the next most important IP question: portfolio usage rights.",
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Intellectual Property",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the penalty if the client pays an invoice late?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming invoice due dates, the most critical risk for a freelancer is late payment, making the penalty clause a high-priority follow-up.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Late Payment Penalty",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Where will legal disputes be resolved and which state's law governs the agreement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31",
+        "F32"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Discussing termination scenarios, which are a form of dispute, naturally leads to questions about the formal process for resolving any legal issues.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Dispute Resolution",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What are my obligations for work-in-progress if the contract is terminated for any reason?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After considering the financial outcomes of termination, a user would logically consider the procedural requirement of what to do with unfinished work.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Post-Termination Obligations",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Who is responsible for covering payment transaction fees?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: While discussing payment logistics like due dates, a less critical but still relevant detail is who bears the cost of the transaction itself.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Payment Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "According to the indemnification clause, for what kinds of claims would I have to indemnify the client, and what is not covered?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F35",
+        "F36",
+        "F37"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Liability",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the official definition of a 'revision round'?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After establishing the number of revisions and the cost of extras, clarifying the exact definition of the unit of work ('revision round') is a detailed follow-up.",
+      "turn_order": 14,
+      "reveal_group": "G2",
+      "reveal_group_label": "Revision Scope",
+      "reveal_priority": 3
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Payment Schedule",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Revision Scope",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Termination Rights",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Intellectual Property",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Late Payment Penalty",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Dispute Resolution",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Post-Termination Obligations",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G8",
+      "label": "Payment Details",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "Liability",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "legal_contract_review_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

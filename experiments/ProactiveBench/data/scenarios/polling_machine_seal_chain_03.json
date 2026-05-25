@@ -1,0 +1,484 @@
+{
+  "scenario_id": "polling_machine_seal_chain_03",
+  "domain": "election_polling_operations",
+  "description": "A site must reconstruct the custody chain for voting machine seals, opening records, intermediate checks, and closing confirmations after one inconsistency is discovered. All sites and machines are fictional.",
+  "user_profile": {
+    "persona": "39-year-old election integrity coordinator reviewing a reported inconsistency",
+    "context": "The issue may be harmless, but it cannot be assessed until the full seal and handling chain is rebuilt clearly",
+    "communication_style": "Forensic and documentation-driven, wants custody events anchored in order"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personnel",
+      "fact": "Brenda Wallace, Site Manager for Precinct 42B, holds certification ID ACBOE-SM-3381 from the Aethelred County Board of Elections."
+    },
+    {
+      "id": "F02",
+      "category": "Personnel",
+      "fact": "David Chen, Elections Technician for Aethelred County, has employee ID 7295 and was responsible for machine delivery to Precinct 42B."
+    },
+    {
+      "id": "F03",
+      "category": "Personnel",
+      "fact": "Maria Flores, a non-partisan observer from the Civic Integrity Alliance, was assigned to Precinct 42B and signed the opening and closing logs."
+    },
+    {
+      "id": "F04",
+      "category": "Polling_Site_Information",
+      "fact": "The polling site in question is the Northwood Community Center, located at 1550 Arbor Lane, Maple Creek, AW 98210."
+    },
+    {
+      "id": "F05",
+      "category": "Polling_Site_Information",
+      "fact": "Northwood Community Center serves as the designated polling location for voters in Precinct 42B."
+    },
+    {
+      "id": "F06",
+      "category": "Equipment_Details",
+      "fact": "The voting machine with the seal discrepancy is a VeriVote 8000 model, with serial number VV8K-7714."
+    },
+    {
+      "id": "F07",
+      "category": "Equipment_Details",
+      "fact": "Machine VV8K-7714 was assigned memory card #MC4-B-2099 for the November 5, 2024 general election."
+    },
+    {
+      "id": "F08",
+      "category": "Equipment_Details",
+      "fact": "Aethelred County uses blue plastic pull-tight seals from the 'AC' series for securing ballot box slots."
+    },
+    {
+      "id": "F09",
+      "category": "Equipment_Details",
+      "fact": "Aethelred County uses red metal cable seals from the 'R-TRANS' series for securing machines during warehouse storage and transport."
+    },
+    {
+      "id": "F10",
+      "category": "Chain_of_Custody_Log",
+      "fact": "On November 4, 2024, at 14:30 PST, Technician David Chen delivered machine VV8K-7714 to Site Manager Brenda Wallace."
+    },
+    {
+      "id": "F11",
+      "category": "Chain_of_Custody_Log",
+      "fact": "Upon delivery on Nov 4, the chassis of machine VV8K-7714 was secured with transport seal R-TRANS-5501."
+    },
+    {
+      "id": "F12",
+      "category": "Chain_of_Custody_Log",
+      "fact": "On November 5, 2024, at 05:45 PST, Site Manager Brenda Wallace and Observer Maria Flores co-verified that transport seal R-TRANS-5501 was intact."
+    },
+    {
+      "id": "F13",
+      "category": "Chain_of_Custody_Log",
+      "fact": "Transport seal R-TRANS-5501 was cut at 05:47 PST on Nov 5 by Brenda Wallace and retained in the reconciliation envelope as per procedure."
+    },
+    {
+      "id": "F14",
+      "category": "Chain_of_Custody_Log",
+      "fact": "The 'Zero Tape' for machine VV8K-7714 was printed at 05:52 PST, confirming a public vote count of zero before polling opened."
+    },
+    {
+      "id": "F15",
+      "category": "Chain_of_Custody_Log",
+      "fact": "At 05:55 PST on Nov 5, the ballot box slot on machine VV8K-7714 was secured with blue plastic seal AC-8842."
+    },
+    {
+      "id": "F16",
+      "category": "Chain_of_Custody_Log",
+      "fact": "The opening seal number AC-8842 was recorded on line 3 of paper Form 17B (Opening/Closing Log) by Brenda Wallace."
+    },
+    {
+      "id": "F17",
+      "category": "Chain_of_Custody_Log",
+      "fact": "The opening seal number AC-8842 was also entered into the county's digital tracking system, 'ElecTrack', at 05:58 PST from terminal T2 at the site."
+    },
+    {
+      "id": "F18",
+      "category": "Chain_of_Custody_Log",
+      "fact": "A mandatory mid-day seal check was performed at 13:00 PST on Nov 5 by Brenda Wallace and poll worker Sam Jones."
+    },
+    {
+      "id": "F19",
+      "category": "Chain_of_Custody_Log",
+      "fact": "The 13:00 PST check confirmed that seal AC-8842 was present and untampered; this was noted in the site's official hourly logbook on page 8."
+    },
+    {
+      "id": "F20",
+      "category": "Chain_of_Custody_Log",
+      "fact": "Polling for Precinct 42B officially closed at 20:00 PST on November 5, 2024, with no outstanding voters in line."
+    },
+    {
+      "id": "F21",
+      "category": "Chain_of_Custody_Log",
+      "fact": "At 20:15 PST, Brenda Wallace cut the opening seal AC-8842 in the presence of observer Maria Flores to access the voted ballots."
+    },
+    {
+      "id": "F22",
+      "category": "Chain_of_Custody_Log",
+      "fact": "The final 'Results Tape' for machine VV8K-7714 was printed at 20:25 PST and signed by Wallace and Flores."
+    },
+    {
+      "id": "F23",
+      "category": "Chain_of_Custody_Log",
+      "fact": "At 20:35 PST, the ballot box slot was secured for transport with a new blue seal."
+    },
+    {
+      "id": "F24",
+      "category": "Chain_of_Custody_Log",
+      "fact": "Memory card #MC4-B-2099 was sealed in tamper-evident bag TEB-0451 at 20:40 PST."
+    },
+    {
+      "id": "F25",
+      "category": "Discrepancy_Details",
+      "fact": "The paper Form 17B (Opening/Closing Log) shows the closing seal number for machine VV8K-7714 was handwritten as 'AC-9012'."
+    },
+    {
+      "id": "F26",
+      "category": "Discrepancy_Details",
+      "fact": "The digital entry made in the ElecTrack system at 20:41 PST for the closing seal number of machine VV8K-7714 is 'AC-9102'."
+    },
+    {
+      "id": "F27",
+      "category": "Discrepancy_Details",
+      "fact": "The discrepancy between the paper log (AC-9012) and the digital log (AC-9102) was automatically flagged by audit script 'AUD-SEAL-COMPARE-01' at 23:50 PST on Nov 5."
+    },
+    {
+      "id": "F28",
+      "category": "Discrepancy_Details",
+      "fact": "An unused seal with number AC-9102 was found in the precinct's 'Contingency Seals' envelope during the post-election supply inventory on November 6."
+    },
+    {
+      "id": "F29",
+      "category": "Discrepancy_Details",
+      "fact": "The physical seal currently attached to the transported machine VV8K-7714, as verified at the central counting facility, is AC-9012."
+    },
+    {
+      "id": "F30",
+      "category": "Procedural_Reference",
+      "fact": "Aethelred County Board of Elections procedure manual, document ACBOE-PROC-2024.v3, section 7.4, requires dual entry of all seal numbers into both the paper log and the ElecTrack system."
+    },
+    {
+      "id": "F31",
+      "category": "Procedural_Reference",
+      "fact": "Section 7.5 of ACBOE-PROC-2024.v3 requires a two-person verification for all seal applications, with both individuals initialing the paper log entry. The entry for seal 'AC-9012' has initials 'BW' and 'MF'."
+    },
+    {
+      "id": "F32",
+      "category": "Communication_Log",
+      "fact": "Brenda Wallace was notified of the flagged discrepancy via email by the central office on November 6, 2024, at 09:15 PST and asked to provide a written statement explaining the data entry error."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the specific seal discrepancy that was flagged by the audit script for machine VV8K-7714?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Discrepancy Report",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the seal number physically attached to machine VV8K-7714 at the central counting facility?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning about a discrepancy between records, the user's first forensic step is to verify the physical evidence.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Physical Seal Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What was the closing seal number recorded on the paper log, and who initialed the entry?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F31"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After confirming the physical seal matches one of the records, the user will want to examine the details of that specific record.",
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Paper Log Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Where was seal number AC-9102 found during the post-election inventory?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning about the two conflicting seal numbers, a natural question is to investigate the provenance of the number that was entered digitally but is not on the machine.",
+      "turn_order": 4,
+      "reveal_group": "G4",
+      "reveal_group_label": "Erroneous Seal Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What opening seal number was applied to the ballot box slot of machine VV8K-7714 at the start of the day?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G5",
+      "reveal_group_label": "Opening Seal Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "How was the opening seal number AC-8842 documented?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After identifying the opening seal, the next logical step is to verify its documentation to ensure the chain of custody was solid from the beginning.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Opening Seal Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Was the integrity of the opening seal checked during polling hours?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Having established the opening seal and its initial documentation, the user wants to confirm its state was maintained throughout the day.",
+      "turn_order": 7,
+      "reveal_group": "G6",
+      "reveal_group_label": "Mid-Day Seal Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "When and by whom was the opening seal AC-8842 removed at the end of the day?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: This question completes the lifecycle of the opening seal, confirming when it was properly removed before the closing seal was applied.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Mid-Day Seal Check",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "How was machine VV8K-7714 secured for transport to the polling site?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Pre-Opening Security",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who were the primary site manager and non-partisan observer at Precinct 42B?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "Key Personnel Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who was the technician responsible for delivering the machine to the site?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02",
+        "F10"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: After identifying the on-site personnel, the user may want to identify other individuals involved in the machine's chain of custody.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Key Personnel Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What is the standard procedure for documenting seal numbers according to the county manual?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Understanding the nature of the data entry error prompts a question about the official procedure that should have been followed.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Procedural Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What was the first follow-up action taken after the system flagged the discrepancy?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After learning about the automated flag, the user will want to know what, if any, human follow-up has already occurred.",
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Post-Flag Follow-up",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Which VeriVote 8000 machine serial number is involved, and which precinct does the Northwood Community Center serve?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G11",
+      "reveal_group_label": "Asset Identification",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Discrepancy Report",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Physical Seal Verification",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Paper Log Details",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Erroneous Seal Status",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G5",
+      "label": "Opening Seal Identification",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Mid-Day Seal Check",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Pre-Opening Security",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Key Personnel Identification",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Procedural Requirements",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G10",
+      "label": "Post-Flag Follow-up",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G11",
+      "label": "Asset Identification",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G8"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "polling_machine_seal_chain_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

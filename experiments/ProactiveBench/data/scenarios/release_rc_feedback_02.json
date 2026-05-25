@@ -1,0 +1,471 @@
+{
+  "scenario_id": "release_rc_feedback_02",
+  "domain": "software_release_management",
+  "description": "A release candidate has feedback coming in from QA, support, and beta users, and the release owner needs to group issues into blockers, deferrals, watch items, and noise before launch decisions are made.",
+  "user_profile": {
+    "persona": "31-year-old product operations lead managing the release candidate review phase",
+    "context": "Feedback is arriving from multiple channels, but not all of it should carry the same weight",
+    "communication_style": "Categorical and level-headed, wants decisions tied to impact"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "release_candidate_details",
+      "fact": "The software release candidate under review is named 'NexusFlow v3.5.0-RC2'."
+    },
+    {
+      "id": "F02",
+      "category": "release_candidate_details",
+      "fact": "NexusFlow v3.5.0-RC2 was deployed to the internal staging environment on October 26, 2023, at 11:00 PM UTC."
+    },
+    {
+      "id": "F03",
+      "category": "release_candidate_details",
+      "fact": "The target launch date for the NexusFlow v3.5.0 release is November 3, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "personnel_and_roles",
+      "fact": "Priya Sharma is the Product Operations Lead and the designated Release Owner for the NexusFlow v3.5.0 release."
+    },
+    {
+      "id": "F05",
+      "category": "personnel_and_roles",
+      "fact": "Priya Sharma's employee ID is E7845 and her email address is priya.sharma@synapseinnovations.com."
+    },
+    {
+      "id": "F06",
+      "category": "personnel_and_roles",
+      "fact": "Kenji Tanaka is the QA Lead responsible for providing the final QA sign-off on release stability."
+    },
+    {
+      "id": "F07",
+      "category": "personnel_and_roles",
+      "fact": "Maria Garcia is the Head of Customer Support and provides feedback based on escalated pre-release support tickets."
+    },
+    {
+      "id": "F08",
+      "category": "tooling_and_systems",
+      "fact": "All engineering issues are tracked in the company's instance of SynapseTracker, accessible at https://track.synapseinnovations.net."
+    },
+    {
+      "id": "F09",
+      "category": "tooling_and_systems",
+      "fact": "The primary Slack channel for real-time discussion about the release candidate is #nexusflow-rc-feedback."
+    },
+    {
+      "id": "F10",
+      "category": "tooling_and_systems",
+      "fact": "Beta user feedback is formally submitted through a dedicated portal at https://feedback.synapseinnovations.com."
+    },
+    {
+      "id": "F11",
+      "category": "triage_process",
+      "fact": "The final Go/No-Go decision meeting for NexusFlow v3.5.0 is scheduled for November 2, 2023, at 2:00 PM PST."
+    },
+    {
+      "id": "F12",
+      "category": "triage_process",
+      "fact": "A 'Blocker' is formally defined as an issue that causes data loss, a critical security vulnerability (CVSS score > 7.0), or prevents a core workflow from being completed for more than 20% of users."
+    },
+    {
+      "id": "F13",
+      "category": "triage_process",
+      "fact": "An issue categorized as 'Deferral' must have a documented workaround and a severity rating of 'Low' or 'Trivial' in SynapseTracker."
+    },
+    {
+      "id": "F14",
+      "category": "triage_process",
+      "fact": "A 'Watch Item' is an issue with unclear impact or low reproducibility that requires active monitoring via Datadog dashboards post-launch."
+    },
+    {
+      "id": "F15",
+      "category": "triage_process",
+      "fact": "Feedback is categorized as 'Noise' if it is a feature request for functionality not included in the v3.5.0 scope."
+    },
+    {
+      "id": "F16",
+      "category": "specific_issues",
+      "fact": "Ticket NF-3451, reported by the QA team, describes a data corruption bug in the new Snowflake connector and is categorized as a Blocker."
+    },
+    {
+      "id": "F17",
+      "category": "specific_issues",
+      "fact": "The engineering lead, Sarah Jenkins, has estimated that fixing NF-3451 will require 12 developer-hours and a new release candidate build, v3.5.0-RC3."
+    },
+    {
+      "id": "F18",
+      "category": "specific_issues",
+      "fact": "Ticket NF-3458, from beta user 'beta_user_07', details a cosmetic UI bug where an icon is misaligned by 3 pixels on 1440p monitors; it is categorized as a Deferral."
+    },
+    {
+      "id": "F19",
+      "category": "specific_issues",
+      "fact": "The fix for the UI bug in NF-3458 has been merged into the 'v3.6-dev' Git branch and is scheduled for the next minor release."
+    },
+    {
+      "id": "F20",
+      "category": "specific_issues",
+      "fact": "Ticket NF-3460 reports an intermittent 5% increase in API latency under heavy load, observed by 2 out of 50 beta testers, and is categorized as a Watch Item."
+    },
+    {
+      "id": "F21",
+      "category": "specific_issues",
+      "fact": "To monitor NF-3460 post-launch, an alert has been configured in Datadog to trigger if P95 latency for the '/api/v2/process' endpoint exceeds 250ms for more than 5 minutes."
+    },
+    {
+      "id": "F22",
+      "category": "specific_issues",
+      "fact": "Feedback item BETA-211 from the portal requests native support for Google BigQuery, which is out of scope for v3.5.0, and has been categorized as Noise."
+    },
+    {
+      "id": "F23",
+      "category": "feedback_metrics",
+      "fact": "As of November 1, 2023, the QA team has filed a total of 18 issues against NexusFlow v3.5.0-RC2 in SynapseTracker."
+    },
+    {
+      "id": "F24",
+      "category": "feedback_metrics",
+      "fact": "The Customer Support team has escalated 3 tickets from beta customers who are also enterprise partners with service-level agreements."
+    },
+    {
+      "id": "F25",
+      "category": "feedback_metrics",
+      "fact": "The beta program for v3.5.0 consists of 50 external users, from which 32 have provided at least one piece of feedback."
+    },
+    {
+      "id": "F26",
+      "category": "decision_criteria",
+      "fact": "The release cannot proceed to production if there is one or more unresolved Blocker issue."
+    },
+    {
+      "id": "F27",
+      "category": "decision_criteria",
+      "fact": "The release can proceed with a maximum of 3 open Watch Items, provided each has a monitoring plan approved by Sarah Jenkins."
+    },
+    {
+      "id": "F28",
+      "category": "decision_criteria",
+      "fact": "There is no limit to the number of Deferral issues, as long as each one has been reviewed and approved for deferral by Priya Sharma."
+    },
+    {
+      "id": "F29",
+      "category": "specific_issues",
+      "fact": "Ticket NF-3451 affects the new Snowflake connector by corrupting exported data mappings during sync, making connector output unreliable for downstream use; because it is a data corruption bug, it is categorized as a Blocker under the release triage rules."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the name of the release candidate I'm reviewing and what is its target launch date?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Release Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "When is the Go/No-Go decision meeting scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After learning the target launch date, the user will want to know the date of the decision meeting that precedes it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Release Context",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the details of the data corruption bug, NF-3451, that is categorized as a Blocker?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Blocker Issue Deep Dive",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the engineering team's estimate to fix the blocker NF-3451?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: Once a blocker is identified, the immediate next question is about the effort and time required to fix it.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Blocker Issue Deep Dive",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the official release criteria regarding unresolved Blocker issues?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding a specific blocker and its fix estimate, the release owner needs to know the formal policy that governs the decision.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Blocker Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "How many total issues has the QA team filed against this release candidate?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Feedback Volume",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "How many tickets have been escalated by the Customer Support team?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After getting the feedback count from one channel (QA), it's natural to ask for the count from another key channel (Support).",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Feedback Volume",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What is the intermittent API latency issue, NF-3460, that's being treated as a Watch Item?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Watch Item Deep Dive",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the monitoring plan for the latency Watch Item, NF-3460, post-launch?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: For any Watch Item, the required action is monitoring, so the user will immediately want to know the specifics of the monitoring plan.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Watch Item Deep Dive",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the maximum number of open Watch Items permitted for the release to proceed?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After reviewing a specific watch item and its monitoring plan, the user will need to know the overall policy limit for this category of issues.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Watch Item Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Can you show me the details for the cosmetic UI bug, NF-3458, which was categorized as a Deferral?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Deferral Example",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Where has the fix for the deferred UI bug NF-3458 been merged?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Deferral Example",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What is the policy regarding the number of Deferral issues for a release?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After reviewing the formal policy for unresolved Blocker issues, a level-headed release owner may reasonably compare it with the policy for Deferral issues to understand how different categories affect the launch decision.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Deferral Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is an example of feedback that has been categorized as Noise?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: While reviewing examples of valid but non-critical issues like deferrals, the user might want to see an example of feedback that is completely out of scope to calibrate their understanding of the categories.",
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Noise Example",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Who are the leads for QA and Customer Support that I would need to contact for sign-off or clarification?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: Once the release candidate and launch context are established, a practical next step is to identify the key QA and Customer Support leads needed for sign-off or clarification during review.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Key Personnel",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Release Context",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Blocker Issue Deep Dive",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Blocker Policy",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Feedback Volume",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Watch Item Deep Dive",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Watch Item Policy",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Deferral Example",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Deferral Policy",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G9",
+      "label": "Noise Example",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G10",
+      "label": "Key Personnel",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "release_rc_feedback_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

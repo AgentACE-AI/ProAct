@@ -1,0 +1,429 @@
+{
+  "scenario_id": "parent_behavior_pattern_02",
+  "domain": "parenting_support",
+  "description": "A parent is trying to understand what usually triggers their child's after-school meltdowns by comparing several recent days that looked similar on the surface but felt different in outcome.",
+  "user_profile": {
+    "persona": "34-year-old parent who notices emotional patterns but struggles to interpret them",
+    "context": "The child is not 'always difficult,' but the parent cannot yet see what factors make the bad days worse",
+    "communication_style": "Observant and reflective, wants patterns rather than quick fixes"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "child_profile",
+      "fact": "Leo Chen is 6 years old and is in the first grade at Maple Creek Elementary School."
+    },
+    {
+      "id": "F02",
+      "category": "child_profile",
+      "fact": "Leo Chen has a documented sensory sensitivity to loud, unexpected noises, noted in his file by pediatrician Dr. Anya Sharma."
+    },
+    {
+      "id": "F03",
+      "category": "sleep",
+      "fact": "On the night of Sunday, October 20th, 2024, Leo Chen went to bed at 8:15 PM and woke up at 6:45 AM, totaling 10.5 hours of sleep."
+    },
+    {
+      "id": "F04",
+      "category": "daily_schedule",
+      "fact": "On Monday, October 21st, 2024, Leo Chen's school day at Maple Creek Elementary ran from 8:30 AM to 3:00 PM."
+    },
+    {
+      "id": "F05",
+      "category": "school_activity",
+      "fact": "A surprise fire drill occurred at Maple Creek Elementary School at 10:05 AM on Monday, October 21st, 2024."
+    },
+    {
+      "id": "F06",
+      "category": "after_school_activity",
+      "fact": "Leo Chen attended the 'Adventure Club' after-school program from 3:00 PM until his parent, Alex, picked him up at 5:10 PM on Monday, October 21st."
+    },
+    {
+      "id": "F07",
+      "category": "nutrition",
+      "fact": "The after-school snack provided by Adventure Club on Monday, October 21st, was a bag of pretzels and a 4.23 oz apple juice box."
+    },
+    {
+      "id": "F08",
+      "category": "emotional_outcome",
+      "fact": "At 5:45 PM on Monday, October 21st, Leo Chen had an intense 20-minute meltdown involving crying and yelling after being asked to put his backpack away."
+    },
+    {
+      "id": "F09",
+      "category": "sleep",
+      "fact": "On the night of Monday, October 21st, 2024, Leo Chen went to bed at 8:05 PM and woke up at 7:05 AM, totaling 11 hours of sleep."
+    },
+    {
+      "id": "F10",
+      "category": "daily_schedule",
+      "fact": "On Tuesday, October 22nd, 2024, Alex picked Leo Chen up from the Adventure Club at 4:30 PM."
+    },
+    {
+      "id": "F11",
+      "category": "nutrition",
+      "fact": "For an after-school snack on Tuesday, October 22nd, Alex gave Leo Chen a cheese stick and a handful of grapes in the car immediately upon pickup."
+    },
+    {
+      "id": "F12",
+      "category": "after_school_activity",
+      "fact": "The main activity at Adventure Club on Tuesday, October 22nd, was a quiet reading and drawing session in the school library."
+    },
+    {
+      "id": "F13",
+      "category": "emotional_outcome",
+      "fact": "On Tuesday, October 22nd, 2024, Leo Chen was calm and cooperative after school, helping to set the table for dinner at 6:00 PM without prompting."
+    },
+    {
+      "id": "F14",
+      "category": "sleep",
+      "fact": "On the night of Tuesday, October 22nd, 2024, Leo Chen went to bed at 8:00 PM and woke up at 6:30 AM, totaling 10.5 hours of sleep."
+    },
+    {
+      "id": "F15",
+      "category": "school_activity",
+      "fact": "On Wednesday, October 23rd, 2024, Leo Chen's class had a substitute teacher, Mr. Gable, as his regular teacher, Ms. Albright, was out sick."
+    },
+    {
+      "id": "F16",
+      "category": "nutrition",
+      "fact": "For lunch on Wednesday, October 23rd, Leo Chen reported that he did not eat his packed turkey sandwich because another child said the bread looked 'squishy'."
+    },
+    {
+      "id": "F17",
+      "category": "after_school_activity",
+      "fact": "The activity at Adventure Club on Wednesday, October 23rd, was a high-energy game of dodgeball in the gymnasium."
+    },
+    {
+      "id": "F18",
+      "category": "daily_schedule",
+      "fact": "Alex picked Leo Chen up from Adventure Club at 5:15 PM on Wednesday, October 23rd."
+    },
+    {
+      "id": "F19",
+      "category": "nutrition",
+      "fact": "The provided snack at Adventure Club on Wednesday, October 23rd, was a granola bar containing peanuts, which Leo Chen dislikes and did not eat."
+    },
+    {
+      "id": "F20",
+      "category": "emotional_outcome",
+      "fact": "A meltdown occurred on Wednesday, October 23rd, at 5:25 PM in the car on the way home, triggered by Alex asking Leo about his day."
+    },
+    {
+      "id": "F21",
+      "category": "parent_observation",
+      "fact": "Alex noted that on both Monday and Wednesday evenings, Leo's backpack contained three unfinished classwork papers."
+    },
+    {
+      "id": "F22",
+      "category": "child_profile",
+      "fact": "Leo Chen's Individualized Education Program (IEP) allows him to use noise-canceling headphones during loud school activities, but he often forgets to ask for them."
+    },
+    {
+      "id": "F23",
+      "category": "parent_observation",
+      "fact": "Alex observed that on Tuesday, the 'good day,' the transition from the car to the house was slow and unhurried, taking approximately 5 minutes."
+    },
+    {
+      "id": "F24",
+      "category": "nutrition",
+      "fact": "Leo Chen's 16 oz reusable water bottle was still completely full at the end of the school day on Wednesday, October 23rd."
+    },
+    {
+      "id": "F25",
+      "category": "parent_observation",
+      "fact": "Alex's log shows that Leo Chen's meltdowns on Monday and Wednesday both occurred within 30-40 minutes of being picked up from the after-school program."
+    },
+    {
+      "id": "F26",
+      "category": "school_day_summary",
+      "fact": "On Monday, Leo's notable school-day and after-school schedule events were the 10:05 AM surprise fire drill and attendance at Adventure Club from 3:00 PM to 5:10 PM."
+    },
+    {
+      "id": "F27",
+      "category": "coping_support",
+      "fact": "Leo's IEP accommodation for loud school activities is access to noise-canceling headphones, but the recurring problem is that he often forgets to ask for them."
+    },
+    {
+      "id": "F28",
+      "category": "school_day_detail",
+      "fact": "On Monday, Leo followed his regular first-grade school day from 8:30 AM until dismissal at 3:00 PM, with the main deviation being the surprise fire drill at 10:05 AM."
+    },
+    {
+      "id": "F29",
+      "category": "after_school_detail",
+      "fact": "Immediately after school dismissal on Monday, Leo transitioned straight into Adventure Club, stayed there for the full session, and was picked up by Alex at 5:10 PM."
+    },
+    {
+      "id": "F30",
+      "category": "coping_support",
+      "fact": "School notes say Leo often does not ask for his noise-canceling headphones during sudden loud events because he becomes overwhelmed quickly and has trouble initiating the request once distressed."
+    },
+    {
+      "id": "F31",
+      "category": "coping_support",
+      "fact": "When Leo misses the chance to use his headphones during loud activities, he tends to stay dysregulated through later transitions, which Alex has flagged as a possible contributor to after-school meltdowns."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What was the immediate trigger and timing of Leo's meltdown on Monday?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Monday Meltdown Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What major schedule events happened during Leo's school and after-school day on Monday?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F26",
+        "F28",
+        "F29"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After establishing the outcome, the user will naturally want to know the preceding events of that day to look for causes.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Monday Meltdown Context",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What triggered the meltdown on Wednesday and when/where did it happen?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Wednesday Meltdown Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What was Leo's behavior on Tuesday evening, the 'good day'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After establishing the facts of the two 'bad' days, the user will want to bring in the 'good' day for comparison.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Tuesday 'Good Day' Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What was the after-school activity on Tuesday?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After learning about the positive outcome on Tuesday, the user will want to know the specific activities of that day for contrast.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Tuesday 'Good Day' Comparison",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What snacks were provided or eaten after school on Monday, Tuesday, and Wednesday?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F11",
+        "F19"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the outcomes of all three days are established, the user will start comparing specific variables like nutrition.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Nutrition Investigation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Did Leo eat his lunch or drink his water on Wednesday?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F24"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Learning that Leo skipped his after-school snack on Wednesday would naturally lead to a question about his overall food and water intake that day.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Nutrition Investigation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "Remind me of Leo's documented sensory issues.",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Sensory Factors",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Was there a loud, unexpected noise at school on Monday?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "This is a direct follow-up to reviewing the child's sensory profile, checking if a known trigger occurred on a meltdown day.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Sensory Factors",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What accommodation can Leo use during loud school activities, and what problem comes up with using it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22",
+        "F27",
+        "F30",
+        "F31"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After identifying a known trigger (the fire drill), the next logical step is to explore available coping mechanisms or tools, making this a valuable proactive suggestion.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Coping Tools",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "How many hours of sleep did Leo get the night before his meltdown on Monday?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Sleep Patterns",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What did my log note about the timing of the meltdowns relative to pickup on the difficult days?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After broadly comparing the good and bad days, the user may want to consult their own specific observations to find a more subtle pattern like timing.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Observed Timing Patterns",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Monday Meltdown Context",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Wednesday Meltdown Context",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Tuesday 'Good Day' Comparison",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Nutrition Investigation",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Sensory Factors",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Coping Tools",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Sleep Patterns",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Observed Timing Patterns",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G3"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "parent_behavior_pattern_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

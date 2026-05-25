@@ -1,0 +1,480 @@
+{
+  "scenario_id": "museum_outgoing_loan_packet_03",
+  "domain": "museum_collection_management",
+  "description": "A museum is lending objects out and must assemble condition reports, packing instructions, courier notes, environmental requirements, and return conditions into one coherent outgoing loan packet.",
+  "user_profile": {
+    "persona": "34-year-old loans coordinator managing a complex inter-institutional shipment",
+    "context": "The objects are approved for travel, but the supporting documentation still lives in several separate work streams",
+    "communication_style": "Process-heavy and exact, wants every shipping and return requirement tied to the right object"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "loan_administration",
+      "fact": "The outgoing loan is designated by the loan number L2024.15."
+    },
+    {
+      "id": "F02",
+      "category": "loan_administration",
+      "fact": "The borrower is the Galiano Art Institute, located at 1800 West Cliff Drive, Port Royal, CA 90210."
+    },
+    {
+      "id": "F03",
+      "category": "loan_administration",
+      "fact": "The loan period is from October 15, 2024, to April 15, 2025, inclusive of transit times."
+    },
+    {
+      "id": "F04",
+      "category": "object_details",
+      "fact": "The loan includes the 'Scythian Griffin Rhyton', a ceramic vessel with accession number AM-2011.45.1."
+    },
+    {
+      "id": "F05",
+      "category": "object_details",
+      "fact": "The loan includes 'The Vespucci Folio', a single-leaf manuscript with accession number AM-1998.12.3."
+    },
+    {
+      "id": "F06",
+      "category": "object_details",
+      "fact": "The loan includes the 'Dancing Satyr of Naxos', a bronze sculpture with accession number AM-1978.2.11."
+    },
+    {
+      "id": "F07",
+      "category": "condition_reporting",
+      "fact": "The condition report for AM-2011.45.1, updated on September 5, 2024, by conservator Lena Petrova, notes a stable 2mm chip on the upper rim."
+    },
+    {
+      "id": "F08",
+      "category": "condition_reporting",
+      "fact": "All condition report photography must be captured as 300 dpi TIFF files, with a color checker and scale included in each shot."
+    },
+    {
+      "id": "F09",
+      "category": "condition_reporting",
+      "fact": "The Galiano Art Institute must submit their incoming condition report to Elara Vance within 24 hours of uncrating."
+    },
+    {
+      "id": "F10",
+      "category": "condition_reporting",
+      "fact": "Handling of 'The Vespucci Folio' (AM-1998.12.3) requires powder-free nitrile gloves at all times."
+    },
+    {
+      "id": "F11",
+      "category": "packing_instructions",
+      "fact": "The 'Scythian Griffin Rhyton' (AM-2011.45.1) is to be packed in Crate ATL-101, using a custom-cut Ethafoam L200 cavity mount."
+    },
+    {
+      "id": "F12",
+      "category": "packing_instructions",
+      "fact": "The 'Vespucci Folio' (AM-1998.12.3) must be housed in a Mylar L-sleeve before being placed into its archival clamshell box."
+    },
+    {
+      "id": "F13",
+      "category": "packing_instructions",
+      "fact": "The 'Dancing Satyr' (AM-1978.2.11) must have its base wrapped in Tyvek 1443R before being nested in its foam support."
+    },
+    {
+      "id": "F14",
+      "category": "packing_instructions",
+      "fact": "All three objects will travel together in a single consolidated shipment under ArtTrans Logistics master waybill 880-19374652."
+    },
+    {
+      "id": "F15",
+      "category": "environmental_requirements",
+      "fact": "The required environmental conditions for all objects in transit and on display are 68-72°F (20-22°C)."
+    },
+    {
+      "id": "F16",
+      "category": "environmental_requirements",
+      "fact": "The required relative humidity (RH) for all objects is 45-50%, with fluctuations not to exceed +/- 3% in a 24-hour period."
+    },
+    {
+      "id": "F17",
+      "category": "environmental_requirements",
+      "fact": "Light exposure for 'The Vespucci Folio' (AM-1998.12.3) must not exceed 5 foot-candles (50 lux)."
+    },
+    {
+      "id": "F18",
+      "category": "environmental_requirements",
+      "fact": "Two HOBO MX1101 data loggers, serial numbers 20884591 and 20884592, must be activated and placed inside Crate ATL-101 prior to sealing."
+    },
+    {
+      "id": "F19",
+      "category": "transport_logistics",
+      "fact": "The designated courier is Sofia Rossi from ArtTrans Logistics, reachable at +1-212-555-0188."
+    },
+    {
+      "id": "F20",
+      "category": "transport_logistics",
+      "fact": "The shipment will travel on AirCargo flight AC788 from JFK to LAX on October 10, 2024."
+    },
+    {
+      "id": "F21",
+      "category": "transport_logistics",
+      "fact": "Ground transport must be a dual-driver, climate-controlled, air-ride truck with GPS tracking."
+    },
+    {
+      "id": "F22",
+      "category": "transport_logistics",
+      "fact": "The courier's approved per diem for meals and incidentals is $75 USD per day."
+    },
+    {
+      "id": "F23",
+      "category": "personnel_and_contacts",
+      "fact": "The primary contact at the lending institution is Elara Vance, Loans Coordinator, at evance@aethelburgmuseum.org."
+    },
+    {
+      "id": "F24",
+      "category": "personnel_and_contacts",
+      "fact": "The authorizing registrar at the Aethelburg Museum is Mr. Julian Croft, reachable at extension 4501."
+    },
+    {
+      "id": "F25",
+      "category": "personnel_and_contacts",
+      "fact": "The receiving registrar at the Galiano Art Institute is Dr. Kenji Tanaka, contactable at ktanaka@galianoinstitute.org."
+    },
+    {
+      "id": "F26",
+      "category": "personnel_and_contacts",
+      "fact": "In case of emergency during transit, the first call is to the Aethelburg Museum 24-hour security desk at +1-212-555-0112."
+    },
+    {
+      "id": "F27",
+      "category": "personnel_and_contacts",
+      "fact": "The Galiano Art Institute's lead art handler for this loan is Maria Flores."
+    },
+    {
+      "id": "F28",
+      "category": "systems_and_locations",
+      "fact": "All official loan documents are stored on the shared network drive at the path: //AM-SERVER/Registrar/OutgoingLoans/L2024.15_Galiano."
+    },
+    {
+      "id": "F29",
+      "category": "systems_and_locations",
+      "fact": "Object records and condition reports are managed in the MuseionDB collections management system, accessible at https://cms.aethelburgmuseum.org/login."
+    },
+    {
+      "id": "F30",
+      "category": "return_procedures",
+      "fact": "The borrower must use the exact same crates and packing materials for the return shipment."
+    },
+    {
+      "id": "F31",
+      "category": "return_procedures",
+      "fact": "Return shipping arrangements must be initiated with ArtTrans Logistics no later than March 20, 2025."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the loan number, borrower, and loan period for this outgoing shipment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Loan Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which objects are included in loan L2024.15?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F05",
+        "F06"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying a loan, the user will naturally want to know which specific objects are part of it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Loan Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the specific packing instructions for the 'Scythian Griffin Rhyton' and the 'Dancing Satyr'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Once the objects are listed, the user needs to know the physical packing requirements for each one to prepare for shipment.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Object Packing",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What glove and enclosure requirements apply when handling and packing 'The Vespucci Folio'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "This is a follow-up to the previous packing question, addressing the final object on the list which often has unique needs.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Object Packing",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the most recent condition note for the Scythian Griffin Rhyton?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Condition Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "By when and to whom must the borrower's incoming condition report be submitted after uncrating?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After reviewing the outgoing condition, the user needs to document the requirements for the borrower's corresponding incoming report.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Condition Reporting",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the required temperature and relative humidity levels for all objects?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After detailing the physical packing for all objects, the next logical step is to define the environmental conditions for the packed shipment.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Environmental Controls",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the master waybill for the consolidated shipment and what are the flight details?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Shipping Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "Who is the designated courier and what is their contact information?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Once the shipment's waybill and flight are known, identifying the courier responsible for it is the immediate next step.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Courier Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who are the primary contacts at the lending and borrowing institutions for this loan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is the first point of contact in an emergency during transit?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After identifying the standard contacts, the user will need to know the specific protocol for emergencies.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Emergency Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Which data loggers must be placed inside the crate?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After defining the required environmental conditions, the user must know what equipment is needed to monitor them.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Environmental Monitoring",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What are the instructions regarding the use of packing materials for the return shipment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30",
+        "F31"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: When reviewing the initial loan agreement details, it's helpful to also clarify the requirements for the eventual return shipment.",
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Return Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What are the technical specifications for condition report photography?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G11",
+      "reveal_group_label": "Documentation Standards",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Loan Identification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Object Packing",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Condition Reporting",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Environmental Controls",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Shipping Logistics",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Courier Details",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Contacts",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Emergency Protocol",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Environmental Monitoring",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G10",
+      "label": "Return Procedures",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G11",
+      "label": "Documentation Standards",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "museum_outgoing_loan_packet_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

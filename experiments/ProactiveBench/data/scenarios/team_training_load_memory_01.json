@@ -1,0 +1,460 @@
+{
+  "scenario_id": "team_training_load_memory_01",
+  "domain": "sports_team_operations",
+  "description": "A coach needs to remember each player's recent workload, soreness notes, modified drills, and missed sessions before designing the next practice. All team names and athlete names are fictional.",
+  "user_profile": {
+    "persona": "41-year-old head coach managing a competitive youth squad with uneven player fitness",
+    "context": "Recent sessions have varied enough that planning the next practice by feel alone would likely overload the wrong players",
+    "communication_style": "Direct and practical, wants athlete-specific status summarized clearly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "player_profile",
+      "fact": "Liam Chen's primary position on the Northwood Raptors is Goalkeeper."
+    },
+    {
+      "id": "F02",
+      "category": "player_profile",
+      "fact": "Mia Garcia, jersey number 10, has a documented allergy to ibuprofen."
+    },
+    {
+      "id": "F03",
+      "category": "player_profile",
+      "fact": "Ben Carter has a known history of Osgood-Schlatter disease in his left knee."
+    },
+    {
+      "id": "F04",
+      "category": "attendance_log",
+      "fact": "Sofia Rossi was absent from the May 11, 2024 conditioning session due to a scheduled dental appointment."
+    },
+    {
+      "id": "F05",
+      "category": "attendance_log",
+      "fact": "Jake Miller arrived 15 minutes late to the May 13, 2024 practice due to a school exam."
+    },
+    {
+      "id": "F06",
+      "category": "attendance_log",
+      "fact": "Omar Jones has perfect attendance for all training sessions in the month of May 2024."
+    },
+    {
+      "id": "F07",
+      "category": "session_workload",
+      "fact": "The skills practice on May 13, 2024, lasted for a total of 90 minutes."
+    },
+    {
+      "id": "F08",
+      "category": "session_workload",
+      "fact": "Liam Chen's session RPE (Rate of Perceived Exertion) for the May 13, 2024 practice was 8 out of 10."
+    },
+    {
+      "id": "F09",
+      "category": "session_workload",
+      "fact": "Mia Garcia's GPS tracker recorded a total distance of 5.2 kilometers during the May 13, 2024 practice."
+    },
+    {
+      "id": "F10",
+      "category": "session_workload",
+      "fact": "Ben Carter's session RPE for the May 13, 2024 practice was recorded as 6 out of 10."
+    },
+    {
+      "id": "F11",
+      "category": "session_workload",
+      "fact": "Omar Jones completed 12 high-intensity sprints exceeding 20 km/h during the May 13, 2024 session."
+    },
+    {
+      "id": "F12",
+      "category": "health_soreness_report",
+      "fact": "In the wellness check on May 14, 2024, Liam Chen reported significant delayed onset muscle soreness (DOMS) in his shoulders, rated 7/10."
+    },
+    {
+      "id": "F13",
+      "category": "health_soreness_report",
+      "fact": "Mia Garcia reported moderate soreness (4/10) in her left quadriceps in her wellness submission on May 14, 2024."
+    },
+    {
+      "id": "F14",
+      "category": "health_soreness_report",
+      "fact": "Ben Carter reported mild pain (3/10) directly below his left kneecap after the May 13, 2024 practice."
+    },
+    {
+      "id": "F15",
+      "category": "health_soreness_report",
+      "fact": "Chloe Davis reported tightness in her right hamstring, rated 3/10, on the morning of May 14, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "health_soreness_report",
+      "fact": "Jake Miller reported no significant soreness on May 14, 2024, rating his overall muscle readiness as 9/10."
+    },
+    {
+      "id": "F17",
+      "category": "drill_modification",
+      "fact": "For the May 13, 2024 session, Ben Carter's box jump height was reduced from 24 inches to 18 inches to manage knee load."
+    },
+    {
+      "id": "F18",
+      "category": "drill_modification",
+      "fact": "For the upcoming May 15, 2024 practice, Liam Chen is scheduled for no-impact diving drills onto crash mats to manage his shoulder soreness."
+    },
+    {
+      "id": "F19",
+      "category": "drill_modification",
+      "fact": "During the final 20 minutes of the May 13, 2024 practice, Mia Garcia was switched from scrimmage to low-impact passing drills."
+    },
+    {
+      "id": "F20",
+      "category": "drill_modification",
+      "fact": "Chloe Davis is scheduled for a mandatory 15-minute dynamic stretching routine focusing on hamstrings before the May 15, 2024 practice."
+    },
+    {
+      "id": "F21",
+      "category": "team_operations",
+      "fact": "All players are required to submit their daily wellness questionnaire via the TeamBuildr app before 9:00 AM."
+    },
+    {
+      "id": "F22",
+      "category": "team_operations",
+      "fact": "The head coach for the Northwood Raptors is Alex Davis."
+    },
+    {
+      "id": "F23",
+      "category": "team_schedule",
+      "fact": "The next practice is scheduled for May 15, 2024, at 4:30 PM on Westlake Park Field B."
+    },
+    {
+      "id": "F24",
+      "category": "team_schedule",
+      "fact": "The primary focus for the May 15, 2024 practice is defensive formations and set pieces."
+    },
+    {
+      "id": "F25",
+      "category": "session_workload",
+      "fact": "The team's average session RPE for the May 13, 2024 practice was 7.2, which is 15% higher than the previous week's average."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the focus, date, time, and location of the next practice?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Practice Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the team's average session RPE for the last practice, and how did it compare to the previous week?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Team Workload Review",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Which player is explicitly recorded as having missed a recent session, and why?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G3",
+      "reveal_group_label": "Attendance Issues",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Did any players arrive late to a recent practice?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After asking about absences, asking about other attendance issues like tardiness is a natural follow-up.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Attendance Issues",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What is the status of Ben Carter's left knee, including his known condition and his recent pain report?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Ben Carter Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What was Ben Carter's RPE in the last session and what drill modifications were made for his knee?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After learning about a player's pain, the coach needs to know their recent workload and how it was managed.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Ben Carter Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What was Liam Chen's reported shoulder soreness on May 14th?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After reviewing one player with a health concern (Ben Carter), the coach will likely move to the next player with a significant issue (Liam Chen).",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Liam Chen Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was Liam Chen's session RPE for the May 13th practice?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: Similar to the previous player, understanding the workload (RPE) associated with the reported soreness is the next logical step.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Liam Chen Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What are the planned drill modifications for Liam Chen for the upcoming practice?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After reviewing a player's soreness and workload, the immediate need is to know the plan to manage it. This is a crucial action item for the coach.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Liam Chen Action Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What soreness did Mia Garcia report on May 14th?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Mia Garcia Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What was Mia Garcia's total distance covered on May 13th and were any in-session modifications made for her?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F19"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: Following the established pattern, the coach investigates the workload metrics and management actions related to Mia's soreness report.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Mia Garcia Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What did Chloe Davis report about her hamstring on May 14th?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Continuing the review of health reports, the coach moves to the next player with a minor issue after covering those with moderate-to-severe ones.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Chloe Davis Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is Chloe Davis scheduled to do before the next practice for her hamstring?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After learning about a player's tightness, knowing the specific management plan is a natural and actionable follow-up.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Chloe Davis Action Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What was Jake Miller's soreness and readiness report on May 14th?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Positive Readiness Reports",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What is Omar Jones's attendance record for May and what was his high-intensity sprint count on May 13th?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G11",
+      "reveal_group_label": "High Performer Data",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Practice Context",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Team Workload Review",
+      "member_need_ids": [
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Attendance Issues",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Ben Carter Status",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Liam Chen Status",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Liam Chen Action Plan",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Mia Garcia Status",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Chloe Davis Status",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Chloe Davis Action Plan",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Positive Readiness Reports",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G11",
+      "label": "High Performer Data",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G10"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "team_training_load_memory_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

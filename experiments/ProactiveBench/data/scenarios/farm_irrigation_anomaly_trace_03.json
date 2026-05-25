@@ -1,0 +1,486 @@
+{
+  "scenario_id": "farm_irrigation_anomaly_trace_03",
+  "domain": "farm_operations",
+  "description": "Water use looks wrong in one irrigation zone, and the operator needs to reconstruct when the anomaly began, under what conditions it appears, and whether it lines up with crop stress observations.",
+  "user_profile": {
+    "persona": "38-year-old farm operations lead who watches both field conditions and equipment behavior",
+    "context": "The anomaly is not catastrophic yet, but it has become too persistent to dismiss as random variation",
+    "communication_style": "Diagnostic and observational, wants field evidence linked to equipment patterns"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "operational_context",
+      "fact": "The area under investigation is Irrigation Zone 7B at Veridian Fields, which covers 40 acres of alfalfa."
+    },
+    {
+      "id": "F02",
+      "category": "irrigation_system_data",
+      "fact": "The standard irrigation cycle for Zone 7B is programmed in the AgriLogic Suite to deliver 2.5 acre-inches of water over a 6-hour period."
+    },
+    {
+      "id": "F03",
+      "category": "irrigation_system_data",
+      "fact": "Since June 18, 2024, the AgriLogic Suite has logged an average water usage of 3.8 acre-inches per cycle for Zone 7B."
+    },
+    {
+      "id": "F04",
+      "category": "personnel",
+      "fact": "The farm operations lead investigating the issue is Alex Torres."
+    },
+    {
+      "id": "F05",
+      "category": "crop_observation",
+      "fact": "On July 12, 2024, drone imagery from the AeroScout AG-4 showed NDVI values as low as 0.65 in the southwest corner of Zone 7B, indicating crop stress."
+    },
+    {
+      "id": "F06",
+      "category": "crop_observation",
+      "fact": "Healthy sections of alfalfa in the adjacent Zone 7A have a consistent NDVI reading of 0.82."
+    },
+    {
+      "id": "F07",
+      "category": "equipment_details",
+      "fact": "The primary flow meter for Zone 7B is Meter ID #7B-FM-01, a Mag-Meter model X2."
+    },
+    {
+      "id": "F08",
+      "category": "equipment_maintenance",
+      "fact": "Flow meter #7B-FM-01 was last calibrated on April 5, 2024, by field technician Maria Garcia."
+    },
+    {
+      "id": "F09",
+      "category": "irrigation_system_data",
+      "fact": "During anomalous cycles, the flow rate at meter #7B-FM-01 spikes from the target 800 GPM to 950 GPM for periods of 15-20 minutes."
+    },
+    {
+      "id": "F10",
+      "category": "irrigation_system_data",
+      "fact": "System pressure at Pump Station Delta, which feeds Zone 7B, drops from a normal 55 PSI to 48 PSI during the flow rate spikes."
+    },
+    {
+      "id": "F11",
+      "category": "environmental_conditions",
+      "fact": "Soil moisture sensor #7B-SM-03, located in the stressed area, has recorded volumetric water content (VWC) reaching 42%, indicating oversaturation."
+    },
+    {
+      "id": "F12",
+      "category": "operational_context",
+      "fact": "The target VWC for the alfalfa crop in Zone 7B is 35% before irrigation cutoff."
+    },
+    {
+      "id": "F13",
+      "category": "environmental_conditions",
+      "fact": "Log analysis shows that 8 out of the last 10 anomalous water usage events occurred when wind speeds recorded at Veridian Weather Station #2 exceeded 15 mph from the west."
+    },
+    {
+      "id": "F14",
+      "category": "equipment_maintenance",
+      "fact": "A visual inspection by Maria Garcia on July 14, 2024, revealed a slow leak at the main gasket of valve assembly #7B-V-12."
+    },
+    {
+      "id": "F15",
+      "category": "personnel",
+      "fact": "Alex Torres created ticket #IRR-2024-113 for the leaking gasket in the AgriLogic Suite maintenance module on July 15, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "equipment_details",
+      "fact": "The irrigation system in Zone 7B is an AquaFlow 5000 center pivot system."
+    },
+    {
+      "id": "F17",
+      "category": "equipment_maintenance",
+      "fact": "The last preventative maintenance schedule for the AquaFlow 5000 pivot in Zone 7B was completed on March 20, 2024."
+    },
+    {
+      "id": "F18",
+      "category": "crop_observation",
+      "fact": "Maria Garcia's field notes from July 13, 2024, mention 'visible yellowing and standing water' near sprinkler head #104 on the pivot's outer span."
+    },
+    {
+      "id": "F19",
+      "category": "equipment_details",
+      "fact": "The irrigation control panel is an AquaFlow Control v3.2, accessible via the IP address 192.168.1.50 on the farm's internal network."
+    },
+    {
+      "id": "F20",
+      "category": "operational_context",
+      "fact": "The cost of water is billed at $65 per acre-foot by the San Joaquin Water District."
+    },
+    {
+      "id": "F21",
+      "category": "financial_impact",
+      "fact": "The anomalous water usage represents an estimated excess operational cost of $150 per week for Zone 7B alone."
+    },
+    {
+      "id": "F22",
+      "category": "personnel",
+      "fact": "Alex Torres contacted David Chen, an external consultant from Precision Irrigation Solutions, on July 15, 2024, via email at d.chen@precision-irrigation.com for a second opinion."
+    },
+    {
+      "id": "F23",
+      "category": "equipment_maintenance",
+      "fact": "The service log for Pump Station Delta shows no unscheduled shutdowns or pressure faults in the last 90 days."
+    },
+    {
+      "id": "F24",
+      "category": "environmental_conditions",
+      "fact": "The average daily evapotranspiration (ET) rate for the first two weeks of July was 0.25 inches, which is within the historical norm for the period."
+    },
+    {
+      "id": "F25",
+      "category": "crop_observation",
+      "fact": "The yellowing in the crop is consistent with symptoms of root hypoxia due to waterlogging, not nutrient deficiency."
+    },
+    {
+      "id": "F26",
+      "category": "equipment_details",
+      "fact": "The firmware version on the AquaFlow Control v3.2 panel is 3.2.1-build-20231102."
+    },
+    {
+      "id": "F27",
+      "category": "operational_context",
+      "fact": "Veridian Fields' standard operating procedure, document #VF-IRR-004, requires a full system diagnostic if water usage deviates by more than 15% for three consecutive cycles."
+    },
+    {
+      "id": "F28",
+      "category": "irrigation_system_data",
+      "fact": "The water usage deviation in Zone 7B has been approximately 52% (3.8 vs 2.5 acre-inches) for the past 14 irrigation cycles."
+    },
+    {
+      "id": "F29",
+      "category": "personnel",
+      "fact": "Maria Garcia's work phone number for urgent field dispatch is 555-018-2345."
+    },
+    {
+      "id": "F30",
+      "category": "equipment_maintenance",
+      "fact": "The replacement part for the leaking gasket at valve assembly #7B-V-12 is a 'Model AF-G-300', with 3 units in stock in the main supply shed, bin C-4."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the average water usage being logged for Zone 7B since June 18, 2024, and what is the standard programmed amount per cycle?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Quantification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What was the crop stress indicator (NDVI value) in the southwest corner of Zone 7B on July 12, and what is the NDVI in a healthy adjacent zone?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Crop Impact Assessment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What did the field notes from July 13 mention about the area near sprinkler head #104?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: After seeing remote sensing data showing crop stress, the user will want to know if there are any corresponding on-the-ground observations.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Crop Impact Assessment",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "What happens to the flow rate at meter #7B-FM-01 and the pressure at Pump Station Delta during these anomalous cycles?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After establishing that water usage is abnormally high, the user's next diagnostic step is to understand the specific system behaviors (flow and pressure) during the anomaly.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "System Behavior Diagnostics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What weather condition has coincided with most of the anomalous water-usage events?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After learning about erratic system behavior like pressure drops and flow spikes, a user would investigate potential external correlating factors, such as weather conditions.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Environmental Correlation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the recorded volumetric water content (VWC) from the sensor in the stressed area, and what is the target VWC for that crop?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: The mention of 'standing water' in field notes directly prompts the user to verify the condition with quantitative data from the soil moisture sensor.",
+      "turn_order": 6,
+      "reveal_group": "G5",
+      "reveal_group_label": "Soil and Crop Condition",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Based on the July 13 field notes, is the yellowing near sprinkler head #104 more consistent with root hypoxia from waterlogging or with nutrient deficiency?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F18",
+        "F25"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After confirming oversaturation from the sensor data, the next natural question is whether the yellowing near sprinkler head #104 points to waterlogging rather than a nutrient issue.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Soil and Crop Condition",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What did the visual inspection on July 14 reveal at valve assembly #7B-V-12?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After identifying a correlation with high winds, the user would investigate physical components that could be stressed by weather, making the results of a recent visual inspection highly relevant.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Physical Inspection Finding",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the ticket number created for the leaking gasket and who created it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Discovering a physical fault like a leak immediately leads to the question of whether this issue has been formally logged for maintenance.",
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Maintenance Actions",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "For the leaking gasket at valve assembly #7B-V-12, what replacement part model is needed and where is it stored in inventory?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After confirming the maintenance ticket for the leak, the next practical step is to identify the exact replacement gasket model and where it can be pulled from inventory.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Maintenance Actions",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "Based on the excess water use in Zone 7B, what is the estimated weekly cost impact of the anomaly?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After quantifying the amount of water being wasted, the user will likely want to understand the financial impact of that waste.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Financial Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "When was the flow meter #7B-FM-01 last calibrated and by whom?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Equipment Maintenance History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "When was the AquaFlow 5000 pivot in Zone 7B last given preventative maintenance?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "Intra-group: After checking the calibration history of a specific sensor (the flow meter), it's logical to broaden the inquiry to the maintenance history of the entire system (the pivot).",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Equipment Maintenance History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N14",
+      "description": "Which external consultant was contacted for a second opinion and on what date?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "External Consultation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "What is the water usage deviation percentage in Zone 7B, and what is the standard operating procedure's threshold for requiring a full system diagnostic?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28",
+        "F27"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G11",
+      "reveal_group_label": "SOP Compliance",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Problem Quantification",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Crop Impact Assessment",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "System Behavior Diagnostics",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Environmental Correlation",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Soil and Crop Condition",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Physical Inspection Finding",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Maintenance Actions",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Financial Impact",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "Equipment Maintenance History",
+      "member_need_ids": [
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "External Consultation",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G11",
+      "label": "SOP Compliance",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "farm_irrigation_anomaly_trace_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

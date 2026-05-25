@@ -1,0 +1,478 @@
+{
+  "scenario_id": "makerspace_tool_certification_01",
+  "domain": "makerspace_operations",
+  "description": "A makerspace needs to know which members are certified on which machines, who is due for re-training, and which certifications are temporary, expired, or limited to supervised use. All spaces and member names are fictional.",
+  "user_profile": {
+    "persona": "34-year-old makerspace manager balancing open access with machine safety",
+    "context": "The certification process exists, but the current status of several members is no longer obvious from scattered training records",
+    "communication_style": "Safety-minded and status-oriented, wants machine permissions tied clearly to each member"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Member Profile",
+      "fact": "Kenji Tanaka is an active member of SparkForge Labs with Member ID M-123."
+    },
+    {
+      "id": "F02",
+      "category": "Member Profile",
+      "fact": "Priya Sharma is an active member of SparkForge Labs with Member ID M-456."
+    },
+    {
+      "id": "F03",
+      "category": "Member Profile",
+      "fact": "Javier 'Javi' Rodriguez is an active member of SparkForge Labs with Member ID M-789."
+    },
+    {
+      "id": "F04",
+      "category": "Machine Certification",
+      "fact": "Kenji Tanaka (M-123) holds certification C-CNC-009 for the 'Tormach PCNC 440 Mill' (ID: CNC-01)."
+    },
+    {
+      "id": "F05",
+      "category": "Machine Certification",
+      "fact": "Priya Sharma (M-456) holds certification C-LC-011 for the 'Helios 100W Laser Cutter' (ID: LC-01)."
+    },
+    {
+      "id": "F06",
+      "category": "Machine Certification",
+      "fact": "Javier Rodriguez (M-789) holds certification C-TS-007 for the 'SawStop Table Saw' (ID: TS-01)."
+    },
+    {
+      "id": "F07",
+      "category": "Machine Certification",
+      "fact": "Aisha Al-Farsi (M-555) holds a temporary certification C-WD-004-T for the 'WeldPro TIG Welder' (ID: WD-01)."
+    },
+    {
+      "id": "F08",
+      "category": "Machine Certification",
+      "fact": "Kenji Tanaka (M-123) also holds certification C-3DP-018 for the 'ForgePrint Resin Printer' (ID: 3DP-02)."
+    },
+    {
+      "id": "F09",
+      "category": "Machine Certification",
+      "fact": "Javier Rodriguez (M-789) holds certification C-LC-015 for the 'Helios 100W Laser Cutter' (ID: LC-01)."
+    },
+    {
+      "id": "F10",
+      "category": "Machine Certification",
+      "fact": "The certification C-CNC-008 for the 'Tormach PCNC 440 Mill', previously held by member Leo Grant (M-246), is marked as 'Inactive' due to membership lapse."
+    },
+    {
+      "id": "F11",
+      "category": "Machine Certification",
+      "fact": "Priya Sharma (M-456) holds certification C-3DP-022 for the 'ForgePrint Resin Printer' (ID: 3DP-02)."
+    },
+    {
+      "id": "F12",
+      "category": "Certification Status",
+      "fact": "Certification C-CNC-009 held by Kenji Tanaka (M-123) is active and has a renewal date of 2025-06-01."
+    },
+    {
+      "id": "F13",
+      "category": "Certification Status",
+      "fact": "Certification C-LC-011 held by Priya Sharma (M-456) expired on 2024-07-31."
+    },
+    {
+      "id": "F14",
+      "category": "Certification Status",
+      "fact": "The certification C-TS-007 for Javier Rodriguez (M-789) is currently active and requires re-training every 24 months."
+    },
+    {
+      "id": "F15",
+      "category": "Certification Status",
+      "fact": "Aisha Al-Farsi's temporary certification C-WD-004-T for the TIG welder is valid until 2024-09-30."
+    },
+    {
+      "id": "F16",
+      "category": "Certification Status",
+      "fact": "Priya Sharma's certification C-3DP-022 for the 'ForgePrint Resin Printer' is limited to 'Supervised Use Only'."
+    },
+    {
+      "id": "F17",
+      "category": "Certification Status",
+      "fact": "The designated supervisor for 'Supervised Use Only' certifications on the 'ForgePrint Resin Printer' is Sam Chen, Lead Technician."
+    },
+    {
+      "id": "F18",
+      "category": "Certification Status",
+      "fact": "Javier Rodriguez's certification C-LC-015 for the 'Helios 100W Laser Cutter' is due for re-training by 2024-12-31."
+    },
+    {
+      "id": "F19",
+      "category": "Certification Status",
+      "fact": "A 'Level 2' certification is required to operate the 'Tormach PCNC 440 Mill' (ID: CNC-01) without supervision; Kenji Tanaka (M-123) holds this level."
+    },
+    {
+      "id": "F20",
+      "category": "Training & Retraining",
+      "fact": "A mandatory re-training session for the 'SawStop Table Saw' (ID: TS-01) is scheduled for 2024-09-15 from 10:00 AM to 11:30 AM."
+    },
+    {
+      "id": "F21",
+      "category": "Training & Retraining",
+      "fact": "The reason for the mandatory 'SawStop Table Saw' re-training is the installation of a new 'DustSentry' dust collection system on 2024-09-02."
+    },
+    {
+      "id": "F22",
+      "category": "Training & Retraining",
+      "fact": "Priya Sharma (M-456) is registered for the laser cutter re-certification class on 2024-09-10 at 6:00 PM to renew her expired C-LC-011 certification."
+    },
+    {
+      "id": "F23",
+      "category": "Training & Retraining",
+      "fact": "The next basic safety orientation for new members is scheduled for 2024-10-01, conducted by Safety Officer Dana Kowalski."
+    },
+    {
+      "id": "F24",
+      "category": "Safety Policy",
+      "fact": "Use of the 'WeldPro TIG Welder' (ID: WD-01) requires a pre-use safety checklist (Form SF-WD-03) to be completed and signed by a staff member."
+    },
+    {
+      "id": "F25",
+      "category": "Safety Policy",
+      "fact": "Any member whose certification has been expired for more than 90 days must retake the full certification course, not just the re-training class."
+    },
+    {
+      "id": "F26",
+      "category": "Machine Access",
+      "fact": "Access to the 'Tormach PCNC 440 Mill' (ID: CNC-01) is controlled via an RFID card reader linked to the member certification database."
+    },
+    {
+      "id": "F27",
+      "category": "Machine Access",
+      "fact": "The RFID reader on the 'Helios 100W Laser Cutter' (ID: LC-01) will deny access to any member with an expired or suspended certification for that machine."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the status of Priya Sharma's certification for the Helios 100W Laser Cutter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Priya's Expired Laser Certification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Is Priya Sharma scheduled for a re-certification class for the laser cutter?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning a member's certification is expired, the manager's immediate next question would be about the plan to remedy it.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Priya's Expired Laser Certification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "When is Javier Rodriguez's certification for the Helios 100W Laser Cutter due for re-training?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F18"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Javier's Laser Re-training",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which members hold a certification for the SawStop Table Saw that requires periodic re-training?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Table Saw Re-training Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the reason for the mandatory re-training on the SawStop Table Saw?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Upon learning that re-training is required for a machine, the manager would want to know the context or reason for it.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Table Saw Re-training Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "When is the mandatory re-training session for the SawStop Table Saw scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After identifying that re-training is needed for the table saw, the next logical step is to find out the specific date and time for the session.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Table Saw Re-training Schedule",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the status and validity period of Aisha Al-Farsi's temporary certification for the TIG welder?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Aisha's Temporary Certification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Are there any special safety procedures required for using the WeldPro TIG Welder?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Discussing a temporary certification on a potentially dangerous machine like a welder would prompt a safety-conscious manager to immediately inquire about required operational protocols.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Welder Safety Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What are the specific limitations on Priya Sharma's certification for the ForgePrint Resin Printer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Priya's Supervised Certification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is the designated supervisor for 'Supervised Use Only' certifications on the ForgePrint Resin Printer?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After learning a certification is for 'Supervised Use Only', the manager needs to know who the authorized supervisor is.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Priya's Supervised Certification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is Kenji Tanaka's certification level for the Tormach PCNC 440 Mill?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Kenji's Advanced Certification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What access-control device is used on the Tormach PCNC 440 Mill?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: Understanding a member has an advanced certification for a complex machine leads to a question about how the system enforces that certification for access.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Machine Access Control",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the status of the certification for the Tormach PCNC 440 Mill previously held by Leo Grant?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G10",
+      "reveal_group_label": "Inactive Member Certification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the policy for members whose certification has been expired for more than 90 days?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying a member with an expired certification (Priya), the manager would want to know the general policy for such cases to understand the consequences.",
+      "turn_order": 14,
+      "reveal_group": "G11",
+      "reveal_group_label": "Expired Certification Policy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "When is the next basic safety orientation for new members scheduled?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G12",
+      "reveal_group_label": "General Training Schedule",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Priya's Expired Laser Certification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Javier's Laser Re-training",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Table Saw Re-training Status",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Table Saw Re-training Schedule",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Aisha's Temporary Certification",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Welder Safety Procedures",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Priya's Supervised Certification",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Kenji's Advanced Certification",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G9",
+      "label": "Machine Access Control",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Inactive Member Certification",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G11",
+      "label": "Expired Certification Policy",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G12",
+      "label": "General Training Schedule",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "makerspace_tool_certification_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

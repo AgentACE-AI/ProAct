@@ -1,0 +1,406 @@
+{
+  "scenario_id": "negotiate_equity_conflict_03",
+  "domain": "negotiation_support",
+  "description": "A co-founder is negotiating equity split with a new late-stage partner. Conflict: The partner brings huge capital but wants a seat on the board and 20% equity, which would dilute the original founders' control. They need to structure a 'weighted voting' or 'milestone-based' vesting solution.",
+  "user_profile": {
+    "persona": "36-year-old CEO",
+    "context": "Series B funding round in progress",
+    "communication_style": "Strategic, cautious about power dynamics"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "company_profile",
+      "fact": "Innovatech Solutions Inc. was incorporated in Delaware on June 15, 2019."
+    },
+    {
+      "id": "F02",
+      "category": "company_profile",
+      "fact": "The company's primary product is 'NexusAI', an enterprise AI integration platform with 15 active B2B clients."
+    },
+    {
+      "id": "F03",
+      "category": "company_profile",
+      "fact": "Innovatech Solutions' headquarters is located at 455 Riverbend Parkway, Suite 300, Meridian City, CA 94043."
+    },
+    {
+      "id": "F04",
+      "category": "company_profile",
+      "fact": "Innovatech Solutions' Annual Recurring Revenue (ARR) was $8.2 million as of the end of Q3 2024."
+    },
+    {
+      "id": "F05",
+      "category": "founding_team",
+      "fact": "CEO Alex Chen, age 36, currently holds 35% of the company's common stock."
+    },
+    {
+      "id": "F06",
+      "category": "founding_team",
+      "fact": "CTO Dr. Lena Petrova currently holds 35% of the company's common stock."
+    },
+    {
+      "id": "F07",
+      "category": "capitalization_table",
+      "fact": "Prior to the Series B round, the remaining 30% of equity is split between Series A investors (20%) and an employee stock option pool (10%)."
+    },
+    {
+      "id": "F08",
+      "category": "funding_round_details",
+      "fact": "The current funding round is a Series B with a target raise of $20 million."
+    },
+    {
+      "id": "F09",
+      "category": "funding_round_details",
+      "fact": "The pre-money valuation for the Series B round has been set at $80 million by Apex Valuations LLC."
+    },
+    {
+      "id": "F10",
+      "category": "negotiation_partner",
+      "fact": "The lead investor for the Series B round is Venture Growth Capital (VGC)."
+    },
+    {
+      "id": "F11",
+      "category": "negotiation_partner",
+      "fact": "The VGC representative leading the negotiation is Senior Partner Marcus Thorne."
+    },
+    {
+      "id": "F12",
+      "category": "negotiation_partner",
+      "fact": "Marcus Thorne's direct contact email is m.thorne@venturegrowthcap.com."
+    },
+    {
+      "id": "F13",
+      "category": "negotiation_terms",
+      "fact": "VGC's current offer is a $20 million investment for 20% of the post-money equity."
+    },
+    {
+      "id": "F14",
+      "category": "negotiation_terms",
+      "fact": "The offer from VGC explicitly requires one board seat for a VGC-appointed representative."
+    },
+    {
+      "id": "F15",
+      "category": "key_concerns",
+      "fact": "Accepting the current offer would dilute the combined founder stake of Alex Chen and Lena Petrova from 70% to 56%."
+    },
+    {
+      "id": "F16",
+      "category": "key_concerns",
+      "fact": "The current board of directors has 3 seats: Alex Chen, Lena Petrova, and one Series A investor representative, Ms. Anya Sharma."
+    },
+    {
+      "id": "F17",
+      "category": "key_concerns",
+      "fact": "Adding a VGC board member would create a 4-person board, risking a 2-2 deadlock on critical decisions."
+    },
+    {
+      "id": "F18",
+      "category": "proposed_solutions",
+      "fact": "Innovatech's legal counsel proposed a dual-class stock structure with weighted voting rights for founders."
+    },
+    {
+      "id": "F19",
+      "category": "proposed_solutions",
+      "fact": "The proposed Class B shares for founders would carry 10 votes per share, while all other shares (Class A) would carry 1 vote per share."
+    },
+    {
+      "id": "F20",
+      "category": "proposed_solutions",
+      "fact": "An alternative proposal involves milestone-based equity vesting for VGC's 20% stake."
+    },
+    {
+      "id": "F21",
+      "category": "proposed_solutions",
+      "fact": "The milestone proposal suggests an initial 10% equity grant, with a second 5% tranche vesting upon achieving $15M ARR."
+    },
+    {
+      "id": "F22",
+      "category": "proposed_solutions",
+      "fact": "The final 5% tranche in the milestone proposal would vest upon NexusAI securing 3 active Fortune 500 clients."
+    },
+    {
+      "id": "F23",
+      "category": "legal_advisory",
+      "fact": "Innovatech Solutions is represented by Ms. Evelyn Hayes from the law firm Sterling & Reed LLP."
+    },
+    {
+      "id": "F24",
+      "category": "legal_advisory",
+      "fact": "The retainer agreement with Sterling & Reed LLP for the Series B transaction is capped at $75,000 in fees."
+    },
+    {
+      "id": "F25",
+      "category": "meetings_communications",
+      "fact": "The next negotiation meeting with Marcus Thorne is scheduled for October 26, 2024, at 10:00 AM PST via Zoom."
+    },
+    {
+      "id": "F26",
+      "category": "meetings_communications",
+      "fact": "The internal strategy session with Alex Chen, Lena Petrova, and Evelyn Hayes is scheduled for October 24, 2024, at 2:00 PM PST."
+    },
+    {
+      "id": "F27",
+      "category": "key_concerns",
+      "fact": "Under the current board charter, major financing and governance decisions require a simple majority vote of directors."
+    },
+    {
+      "id": "F28",
+      "category": "negotiation_partner",
+      "fact": "Marcus Thorne has asked that any VGC-appointed board seat carry full voting rights equal to the existing directors."
+    },
+    {
+      "id": "F29",
+      "category": "proposed_solutions",
+      "fact": "In legal counsel's dual-class draft, VGC would still receive its negotiated 20% economic stake as Class A shares; the proposal changes voting power, not the economic split."
+    },
+    {
+      "id": "F30",
+      "category": "proposed_solutions",
+      "fact": "The weighted-voting proposal is intended to let Alex Chen and Lena Petrova preserve effective founder control even after their combined ownership is diluted to 56%."
+    },
+    {
+      "id": "F31",
+      "category": "proposed_solutions",
+      "fact": "The milestone-based vesting alternative would give VGC 10% equity at closing, 5% more at $15M ARR, and the final 5% after NexusAI signs 3 active Fortune 500 clients."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is Venture Growth Capital's current investment offer and what equity percentage are they requesting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Investment Offer Terms",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Besides the equity stake, what other key requirement is part of VGC's offer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After understanding the primary financial term (equity), the user would naturally ask about other significant conditions like board representation.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Investment Offer Terms",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What will the combined founder equity stake be diluted to if we accept the current offer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Understanding the full offer (equity + board seat) directly leads to the primary concern: its impact on founder ownership.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Impact on Founder Control",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Who is on the current board, and why would adding a fully voting VGC member create deadlock risk?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17",
+        "F27",
+        "F28"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After learning about equity dilution, the user's focus shifts to the other control aspect mentioned in the offer: the board seat and its potential for deadlock.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Impact on Founder Control",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "Under legal counsel's dual-class draft, what voting rights would the founders keep, and would VGC's 20% economic stake change?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19",
+        "F29",
+        "F30"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After fully grasping the control problem (equity dilution and board deadlock), the user's next logical step is to explore the proposed solutions, starting with the weighted voting option.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Proposed Solution: Weighted Voting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What is the high-level structure of the milestone-based vesting alternative for VGC's 20% stake?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F31"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: Having reviewed the first proposed solution, the user would naturally ask about the other available option to compare.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Proposed Solution: Milestone Vesting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What are the specific tranches and performance targets for the milestone-based vesting proposal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After hearing about the milestone-based vesting concept, the user needs the precise details to evaluate its feasibility.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Proposed Solution: Milestone Vesting",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "When is the internal strategy session with Lena and Evelyn scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After reviewing the details of all proposed solutions, the immediate next step is to prepare for the internal meeting where these options will be discussed.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Internal Prep Meeting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "When is the next negotiation meeting with Marcus Thorne scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Knowing the internal prep meeting time naturally leads to asking about the deadline it's preparing for: the negotiation meeting itself.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "External Negotiation Meeting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who from legal counsel is joining the internal strategy session to review the milestone-based vesting terms?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23",
+        "F26"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After reviewing the milestone tranches and targets, a practical next step is to identify which legal advisor will be in the internal session reviewing those enforceability details.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Legal Review Support",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the fee cap for our legal counsel on this Series B transaction?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: Once the legal representative is identified, a practical follow-up question is about the cost associated with their services for this specific deal.",
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Legal Review Support",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Investment Offer Terms",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Impact on Founder Control",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Proposed Solution: Weighted Voting",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Proposed Solution: Milestone Vesting",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Internal Prep Meeting",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "External Negotiation Meeting",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Legal Review Support",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "negotiate_equity_conflict_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

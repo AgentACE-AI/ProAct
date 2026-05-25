@@ -1,0 +1,444 @@
+{
+  "scenario_id": "trouble_python_02",
+  "domain": "troubleshooting",
+  "description": "A student is getting a 'ModuleNotFoundError' and 'Version Conflict' in their Python environment. They need to fix their virtual environment and dependency tree.",
+  "user_profile": {
+    "persona": "21-year-old data science student",
+    "context": "Trying to run a GitHub repo for a project",
+    "communication_style": "Technical but needs guidance on best practices"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "User_Profile",
+      "fact": "The student encountering the error is Alex Chen, a 21-year-old data science major at Northwood University."
+    },
+    {
+      "id": "F02",
+      "category": "Project_Details",
+      "fact": "The project is titled 'Project Quasar' for the course CS410: Applied Machine Learning."
+    },
+    {
+      "id": "F03",
+      "category": "System_Environment",
+      "fact": "Alex is working on a MacBook Pro running macOS Ventura 13.5."
+    },
+    {
+      "id": "F04",
+      "category": "System_Environment",
+      "fact": "The project's virtual environment, named 'quasar-env', was created with Python 3.11.4."
+    },
+    {
+      "id": "F05",
+      "category": "Error_Log",
+      "fact": "When running the primary script `main.py`, the terminal displays the error: `ModuleNotFoundError: No module named 'geoplotter'`."
+    },
+    {
+      "id": "F06",
+      "category": "Error_Log",
+      "fact": "During the `pip install` process, a version conflict error was logged for the 'scikit-learn' package."
+    },
+    {
+      "id": "F07",
+      "category": "Project_Details",
+      "fact": "The project was cloned from the GitHub repository at https://github.com/CS410-NU/project-quasar."
+    },
+    {
+      "id": "F08",
+      "category": "Dependency_File",
+      "fact": "The project's `requirements.txt` file specifies `datavizpro==1.5.2`."
+    },
+    {
+      "id": "F09",
+      "category": "Dependency_File",
+      "fact": "The `datavizpro==1.5.2` package has a strict dependency on `scikit-learn==1.2.1`."
+    },
+    {
+      "id": "F10",
+      "category": "Dependency_File",
+      "fact": "The `requirements.txt` file also lists `statmodels-plus==0.8.1`."
+    },
+    {
+      "id": "F11",
+      "category": "Dependency_File",
+      "fact": "The `statmodels-plus==0.8.1` package requires a version of `scikit-learn` that is less than 1.2.0 (`scikit-learn<1.2.0`)."
+    },
+    {
+      "id": "F12",
+      "category": "Troubleshooting_Steps",
+      "fact": "Alex's initial attempt to resolve the issue involved running `pip install --force-reinstall -r requirements.txt`."
+    },
+    {
+      "id": "F13",
+      "category": "System_Environment",
+      "fact": "Running `pip freeze` inside 'quasar-env' reveals that `scikit-learn` was installed at version 1.1.3."
+    },
+    {
+      "id": "F14",
+      "category": "System_Environment",
+      "fact": "The output of `pip freeze` also shows that the `datavizpro` and `geoplotter` packages are not installed in the environment."
+    },
+    {
+      "id": "F15",
+      "category": "Support_Resources",
+      "fact": "The teaching assistant for CS410 is Ben Carter."
+    },
+    {
+      "id": "F16",
+      "category": "Support_Resources",
+      "fact": "Ben Carter's office hours are held on Tuesdays from 2:00 PM to 4:00 PM in the Turing Lab, room 303."
+    },
+    {
+      "id": "F17",
+      "category": "User_Profile",
+      "fact": "Alex Chen's student ID is 901255."
+    },
+    {
+      "id": "F18",
+      "category": "Project_Details",
+      "fact": "The final submission for Project Quasar is due on November 25, 2023, at 11:59 PM."
+    },
+    {
+      "id": "F19",
+      "category": "Support_Resources",
+      "fact": "The course professor, Dr. Eva Rostova, can be contacted for non-technical questions."
+    },
+    {
+      "id": "F20",
+      "category": "Resolution",
+      "fact": "Ben Carter advised Alex to first completely remove the existing virtual environment with the command `rm -rf quasar-env`."
+    },
+    {
+      "id": "F21",
+      "category": "Resolution",
+      "fact": "The recommended best practice was to create a new virtual environment using `python3.11 -m venv venv`."
+    },
+    {
+      "id": "F22",
+      "category": "Resolution",
+      "fact": "Ben suggested using `pip-tools` to resolve the dependency tree conflicts before installation."
+    },
+    {
+      "id": "F23",
+      "category": "Resolution",
+      "fact": "A new file, `requirements.in`, was created containing only the top-level, direct dependencies of the project."
+    },
+    {
+      "id": "F24",
+      "category": "Troubleshooting_Steps",
+      "fact": "Alex installed `pip-tools` in the new environment using `pip install pip-tools`."
+    },
+    {
+      "id": "F25",
+      "category": "Resolution",
+      "fact": "The command `pip-compile requirements.in` was run to generate a new, fully-pinned `requirements.txt` file."
+    },
+    {
+      "id": "F26",
+      "category": "Error_Log",
+      "fact": "The original installation failed on November 17, 2023."
+    },
+    {
+      "id": "F27",
+      "category": "Resolution",
+      "fact": "The newly generated `requirements.txt` resolved the conflict by pinning `scikit-learn==1.1.3` and an older compatible version of `datavizpro`, `datavizpro==1.4.9`."
+    },
+    {
+      "id": "F28",
+      "category": "Resolution",
+      "fact": "Alex successfully installed all dependencies from the new file using `pip install -r requirements.txt`."
+    },
+    {
+      "id": "F29",
+      "category": "Resolution",
+      "fact": "On November 18, 2023, the command `python main.py` executed without any 'ModuleNotFoundError' or 'Version Conflict' errors."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the specific errors I'm getting when I run the main project script?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Error Diagnosis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "According to `pip freeze`, which key packages like `datavizpro` and `geoplotter` are not installed in my 'quasar-env'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After seeing a 'ModuleNotFoundError', the user will want to confirm which packages are missing from their environment.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Error Diagnosis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What operating system and Python version was the 'quasar-env' created with?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Initial Error Diagnosis",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "Which two packages in my `requirements.txt` have conflicting requirements for `scikit-learn`, and what are those specific version constraints?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After seeing the 'Version Conflict' error, the user's immediate next step is to understand which dependencies are causing it.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Dependency Conflict Analysis",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What version of `scikit-learn` ended up being installed in my environment despite the conflict?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After identifying the conflicting requirements, the user will want to know which version pip ultimately installed.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Dependency Conflict Analysis",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What was the command I previously tried to fix the installation?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Failed Troubleshooting Attempt",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What tool did Ben Carter recommend for resolving the dependency conflict cleanly?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After identifying the conflicting dependencies, the next logical question is what tool to use to resolve the dependency tree cleanly.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Dependency Resolution Strategy",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What were the two commands Ben Carter recommended for removing the old virtual environment and creating a new one?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20",
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After identifying the recommended dependency-resolution approach, the next step is to recreate a clean virtual environment with the exact commands.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Resolution Steps",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What command did I run to install the recommended dependency-resolution tool in the new environment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After recreating the environment, the natural next step is to install the tool that will be used to rebuild the dependency set cleanly.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Resolution Steps",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What file did I need to create for `pip-tools` and what command did I run to generate the new `requirements.txt` file?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23",
+        "F25"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "After installing the new tool, the user needs to know the specific commands and files required to use it.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Resolution Steps",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N11",
+      "description": "What specific versions of `scikit-learn` and `datavizpro` were pinned in the newly generated `requirements.txt` to resolve the conflict?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After running the command to generate the new requirements file, the user will want to see the specific changes that resolved the conflict.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Verifying the Fix",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "After generating the new requirements file, what was the final installation command?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Once the user confirms the new requirements file is correct, their final step is to install from it and verify that the program runs.",
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "Verifying the Fix",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "What command confirmed the repaired environment was working, and when did that successful verification happen?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": "N12",
+      "prediction_reason": "CROSS-GROUP: After the final installation step, the natural follow-up is to verify which command confirmed the environment was fixed and when that happened.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Final Verification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What is the GitHub repository URL for Project Quasar?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Project Context",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Initial Error Diagnosis",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Dependency Conflict Analysis",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Failed Troubleshooting Attempt",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Dependency Resolution Strategy",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Resolution Steps",
+      "member_need_ids": [
+        "N8",
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Verifying the Fix",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Final Verification",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G6"
+    },
+    {
+      "group_id": "G8",
+      "label": "Project Context",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "trouble_python_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

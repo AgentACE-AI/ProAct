@@ -1,0 +1,407 @@
+{
+  "scenario_id": "bus_behavior_and_support_note_03",
+  "domain": "school_transportation_operations",
+  "description": "A driver wants a usable summary of which students need seating accommodations, behavior reminders, sensory considerations, or extra supervision so the ride stays safe without relying on memory alone. All schools are fictional.",
+  "user_profile": {
+    "persona": "46-year-old veteran driver who knows the route well but wants student-specific support notes kept current",
+    "context": "Small support details matter on the bus, but they are easy to forget when several students have distinct needs",
+    "communication_style": "Practical and student-centered, wants concise notes tied to concrete rider needs"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "student_seating_accommodation",
+      "fact": "Liam Chen (Student ID: 45821) requires seating in seat 3A, the window seat directly behind the driver, for all trips."
+    },
+    {
+      "id": "F02",
+      "category": "student_seating_accommodation",
+      "fact": "Ava Garcia (Student ID: 51233) uses a custom booster seat with a five-point harness, which must be secured in seat 2B."
+    },
+    {
+      "id": "F03",
+      "category": "student_behavior_support",
+      "fact": "Sophia Rodriguez (Student ID: 59374) responds positively to a verbal reminder: 'Sophia, we use quiet voices on the bus.'"
+    },
+    {
+      "id": "F04",
+      "category": "student_sensory_consideration",
+      "fact": "Liam Chen (Student ID: 45821) is sensitive to loud, sudden noises; he wears blue noise-canceling headphones during the ride."
+    },
+    {
+      "id": "F05",
+      "category": "student_supervision_protocol",
+      "fact": "Mason Miller (Student ID: 60198) must be the last student to exit the bus at Northwood Elementary to ensure a safe handoff to school staff member Ms. Gable."
+    },
+    {
+      "id": "F06",
+      "category": "bus_route_information",
+      "fact": "The morning pickup for Bus Route #14 'The Bluebird Route' begins at 7:05 AM at the corner of Juniper Ave & 12th St."
+    },
+    {
+      "id": "F07",
+      "category": "communication_protocol",
+      "fact": "All student-specific support notes are updated bi-weekly in the 'RiderNotes' tablet application, with the last sync on October 23, 2023."
+    },
+    {
+      "id": "F08",
+      "category": "student_medical_alert",
+      "fact": "Mason Miller (Student ID: 60198) has a severe peanut allergy; his EpiPen is located in the red pouch on his backpack strap."
+    },
+    {
+      "id": "F09",
+      "category": "student_behavior_support",
+      "fact": "If Noah Patel (Student ID: 62045) becomes agitated, offering him his designated fidget spinner often helps him self-regulate."
+    },
+    {
+      "id": "F10",
+      "category": "vehicle_equipment",
+      "fact": "Bus #14 is equipped with a Zonar V4 telematics system for GPS tracking and route management."
+    },
+    {
+      "id": "F11",
+      "category": "student_supervision_protocol",
+      "fact": "A visual confirmation (thumbs-up) is required from Liam Chen's father, Mr. Chen, before pulling away from the morning stop at 845 Oak Street."
+    },
+    {
+      "id": "F12",
+      "category": "student_sensory_consideration",
+      "fact": "Sophia Rodriguez (Student ID: 59374) is sensitive to strong smells; the use of air fresheners is prohibited on Bus #14."
+    },
+    {
+      "id": "F13",
+      "category": "emergency_contact",
+      "fact": "The primary contact for the Transportation Department is Ms. Evelyn Reed, reachable at 555-0125 during operational hours (6:00 AM - 5:00 PM)."
+    },
+    {
+      "id": "F14",
+      "category": "student_seating_accommodation",
+      "fact": "Noah Patel (Student ID: 62045) must have an empty seat next to him (seat 5B) to prevent physical crowding."
+    },
+    {
+      "id": "F15",
+      "category": "student_behavior_support",
+      "fact": "A 2-minute verbal warning before arriving at her stop helps Sophia Rodriguez (Student ID: 59374) prepare for the transition off the bus."
+    },
+    {
+      "id": "F16",
+      "category": "bus_route_information",
+      "fact": "The total mileage for one complete round-trip of Route #14 is 28.7 miles."
+    },
+    {
+      "id": "F17",
+      "category": "vehicle_equipment",
+      "fact": "The fire extinguisher on Bus #14 is located under the driver's seat and its next inspection date is December 1, 2023."
+    },
+    {
+      "id": "F18",
+      "category": "student_supervision_protocol",
+      "fact": "Driver David Carter must mark 'present' for each of the 18 students on the 'RiderNotes' app during both morning and afternoon boarding."
+    },
+    {
+      "id": "F19",
+      "category": "student_medical_alert",
+      "fact": "Ava Garcia (Student ID: 51233) has asthma; her emergency inhaler is in the side mesh pocket of her purple backpack."
+    },
+    {
+      "id": "F20",
+      "category": "communication_protocol",
+      "fact": "Non-urgent incident reports for Route #14 must be submitted via the 'SafeRide' online portal by 6:00 PM on the day of the incident."
+    },
+    {
+      "id": "F21",
+      "category": "student_sensory_consideration",
+      "fact": "The bus radio volume should be kept at or below level 8 to accommodate students with auditory sensitivity."
+    },
+    {
+      "id": "F22",
+      "category": "student_behavior_support",
+      "fact": "Praising Mason Miller (Student ID: 60198) for 'safe hands and feet' reinforces positive bus behavior."
+    },
+    {
+      "id": "F23",
+      "category": "bus_route_information",
+      "fact": "The afternoon drop-off for Route #14 concludes at 4:15 PM at 1920 Maple Drive."
+    },
+    {
+      "id": "F24",
+      "category": "student_supervision_protocol",
+      "fact": "At the end of the afternoon route, a full bus walk-through is mandatory to check for sleeping children or forgotten items."
+    },
+    {
+      "id": "F25",
+      "category": "vehicle_equipment",
+      "fact": "Bus #14's on-board security camera system records to a 256GB solid-state drive that retains footage for 7 days."
+    },
+    {
+      "id": "F26",
+      "category": "emergency_contact",
+      "fact": "For a medical emergency, after calling 911, the second call is to Northwood Elementary's school nurse, Jennifer Kim, at 555-0199."
+    },
+    {
+      "id": "F27",
+      "category": "student_seating_accommodation",
+      "fact": "Siblings Sophia and Leo Rodriguez must sit together in seats 4A and 4B."
+    },
+    {
+      "id": "F28",
+      "category": "communication_protocol",
+      "fact": "The code word for a potential external threat requiring radio silence is 'Bluebird is nesting'."
+    },
+    {
+      "id": "F29",
+      "category": "student_sensory_consideration",
+      "fact": "Ava Garcia (Student ID: 51233) prefers the window on her right to be closed to reduce wind noise."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the specific seating and sensory support needs for Liam Chen?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Liam Chen Support Needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the required supervision protocol for Liam Chen's morning pickup?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After reviewing a student's on-bus needs, the user will likely want to confirm the specific protocols for pickup and drop-off for that same student.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Liam Chen Support Needs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are Mason Miller's drop-off supervision protocol and medical alert information?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Mason Miller Critical Info",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Which school staff member must receive Mason Miller at drop-off?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning Mason Miller's drop-off supervision protocol, a direct follow-up is which specific school staff member must receive him.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Mason Miller Supervision Detail",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What verbal reminders and warnings support Sophia Rodriguez on the bus?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Sophia Rodriguez Support Needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "What are Sophia Rodriguez's seating arrangements and sensory considerations?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F27"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After addressing a student's behavioral needs, it's natural to inquire about their other environmental needs, such as seating and sensory issues.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Sophia Rodriguez Support Needs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are Ava Garcia's seating accommodation and medical information?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Ava Garcia Critical Info",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Where is Ava Garcia's emergency inhaler kept during the ride?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After reviewing Ava Garcia's seating accommodation and medical information, a direct follow-up is where her emergency inhaler is kept during the ride.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Ava Garcia Medical Detail",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What are the seating and behavior support notes for Noah Patel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Noah Patel Support Needs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What maximum bus radio volume should the driver use to support students with auditory sensitivity?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After discussing a specific student's auditory sensitivity (Liam Chen's headphones), the driver might want to know the general policy that applies to the entire bus.",
+      "turn_order": 10,
+      "reveal_group": "G8",
+      "reveal_group_label": "General Sensory Protocol",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the mandatory supervision task after the afternoon route is complete?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G9",
+      "reveal_group_label": "End-of-Route Procedure",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Liam Chen Support Needs",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Mason Miller Critical Info",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Mason Miller Supervision Detail",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Sophia Rodriguez Support Needs",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Ava Garcia Critical Info",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Ava Garcia Medical Detail",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Noah Patel Support Needs",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "General Sensory Protocol",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "End-of-Route Procedure",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "bus_behavior_and_support_note_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

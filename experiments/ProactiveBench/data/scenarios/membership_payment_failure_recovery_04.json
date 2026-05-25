@@ -1,0 +1,479 @@
+{
+  "scenario_id": "membership_payment_failure_recovery_04",
+  "domain": "subscription_membership_administration",
+  "description": "A membership failed to renew, and support must track what notices were sent, which grace rules apply, what benefits are partially suspended, and what will happen automatically if payment succeeds later. All programs are fictional.",
+  "user_profile": {
+    "persona": "33-year-old retention specialist handling failed renewal recovery cases",
+    "context": "The billing failure is recent, but the member experience now depends on a sequence of prior notices and grace-period rules",
+    "communication_style": "State-machine oriented and practical, wants payment recovery tied to current entitlement status"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Member Account Details",
+      "fact": "The member's account ID is 'MEM-7B3D-4A9C-8E1F'."
+    },
+    {
+      "id": "F02",
+      "category": "Member Account Details",
+      "fact": "The member's name is Jasmine Chen."
+    },
+    {
+      "id": "F03",
+      "category": "Member Account Details",
+      "fact": "The membership program is 'InnovateSphere Pro'."
+    },
+    {
+      "id": "F04",
+      "category": "Member Account Details",
+      "fact": "The member's registered email address is j.chen@email-provider.net."
+    },
+    {
+      "id": "F05",
+      "category": "Billing & Payment",
+      "fact": "The last attempted renewal charge was for $129.00 USD."
+    },
+    {
+      "id": "F06",
+      "category": "Billing & Payment",
+      "fact": "The payment was attempted on 2023-11-15 at 02:00 AM UTC."
+    },
+    {
+      "id": "F07",
+      "category": "Billing & Payment",
+      "fact": "The payment processor, 'PayGrid', returned the decline code '51 - Insufficient Funds'."
+    },
+    {
+      "id": "F08",
+      "category": "Billing & Payment",
+      "fact": "The payment card on file is a Mastercard ending in the digits '5588'."
+    },
+    {
+      "id": "F09",
+      "category": "Membership State & Timeline",
+      "fact": "The membership's official expiration date was 2023-11-14."
+    },
+    {
+      "id": "F10",
+      "category": "Membership State & Timeline",
+      "fact": "The current membership status is 'GRACE_PERIOD_SOFT'."
+    },
+    {
+      "id": "F11",
+      "category": "Membership State & Timeline",
+      "fact": "The 'GRACE_PERIOD_SOFT' status was automatically applied on 2023-11-15."
+    },
+    {
+      "id": "F12",
+      "category": "Membership State & Timeline",
+      "fact": "The membership will transition to 'SUSPENDED_HARD' on 2023-11-22 if payment is not received."
+    },
+    {
+      "id": "F13",
+      "category": "Membership State & Timeline",
+      "fact": "The membership will be marked as 'TERMINATED' on 2023-12-06 if payment is not received."
+    },
+    {
+      "id": "F14",
+      "category": "Grace Period Rules",
+      "fact": "The 'GRACE_PERIOD_SOFT' allows for 7 days of partial benefits after a failed renewal."
+    },
+    {
+      "id": "F15",
+      "category": "Grace Period Rules",
+      "fact": "The 'SUSPENDED_HARD' state lasts for 14 days after the soft grace period ends, with all benefits revoked."
+    },
+    {
+      "id": "F16",
+      "category": "Benefit Suspension",
+      "fact": "During 'GRACE_PERIOD_SOFT', access to the 'Quantum Compute Cloud' is disabled."
+    },
+    {
+      "id": "F17",
+      "category": "Benefit Suspension",
+      "fact": "During 'GRACE_PERIOD_SOFT', access to the 'Creator's Hub' asset library and 'Nexus Forum' remains active."
+    },
+    {
+      "id": "F18",
+      "category": "Benefit Suspension",
+      "fact": "During 'SUSPENDED_HARD', all benefits are disabled, including 'Creator's Hub' and 'Nexus Forum' access."
+    },
+    {
+      "id": "F19",
+      "category": "Benefit Suspension",
+      "fact": "Any project data in the 'Quantum Compute Cloud' is scheduled for permanent deletion 30 days after the 'TERMINATED' status is set."
+    },
+    {
+      "id": "F20",
+      "category": "Automated Communications",
+      "fact": "Email notice 'RF-01: Payment Failure' was sent to the member on 2023-11-15 at 03:30 AM UTC."
+    },
+    {
+      "id": "F21",
+      "category": "Automated Communications",
+      "fact": "Email notice 'RF-02: Action Required' was sent to the member on 2023-11-18 at 03:30 AM UTC."
+    },
+    {
+      "id": "F22",
+      "category": "Automated Communications",
+      "fact": "The final soft grace period warning, email template 'RF-03: Grace Period Ending', is scheduled for 2023-11-21."
+    },
+    {
+      "id": "F23",
+      "category": "Recovery Process",
+      "fact": "If payment succeeds during 'GRACE_PERIOD_SOFT', all benefits are restored within 15 minutes."
+    },
+    {
+      "id": "F24",
+      "category": "Recovery Process",
+      "fact": "If payment succeeds during 'SUSPENDED_HARD', benefits are restored within 2 hours via a manual review queue."
+    },
+    {
+      "id": "F25",
+      "category": "Recovery Process",
+      "fact": "A successful payment automatically triggers the 'PAYMENT_SUCCESS_REINSTATE_V2' workflow in the system."
+    },
+    {
+      "id": "F26",
+      "category": "Recovery Process",
+      "fact": "Upon successful payment, the member's next renewal date is set to 2024-11-14, maintaining the original anniversary date."
+    },
+    {
+      "id": "F27",
+      "category": "Internal Systems & Tools",
+      "fact": "This case is being tracked in the 'CaseFlow' CRM under ticket ID 'CF-2023-91842'."
+    },
+    {
+      "id": "F28",
+      "category": "Internal Systems & Tools",
+      "fact": "The retention specialist assigned is Alex Rivera, at workstation RS-07."
+    },
+    {
+      "id": "F29",
+      "category": "Internal Systems & Tools",
+      "fact": "The complete member event log is accessible at the internal URL: https://admin.innovatesphere.net/members/MEM-7B3D-4A9C-8E1F/log."
+    },
+    {
+      "id": "F30",
+      "category": "Internal Systems & Tools",
+      "fact": "The membership status state machine diagram is documented in Confluence under page ID 'MSP-301'."
+    },
+    {
+      "id": "F31",
+      "category": "Internal Systems & Tools",
+      "fact": "A manual payment override can be initiated by a Tier 2 specialist using the 'PayGrid Admin Console' at https://paygrid.admin/merch-innovate/override."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "For case CF-2023-91842, what is the member's ID, name, and membership program?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Case Identification & Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the member's current account status and when was it applied?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After identifying the member, the next logical step is to check their current high-level status.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Case Identification & Status",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What was the reason, amount, and date for the last failed renewal charge?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Billing Failure Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Given the current 'GRACE_PERIOD_SOFT' status, which benefits are suspended and which remain active?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: Once the status 'GRACE_PERIOD_SOFT' is known, understanding its direct impact on the member's benefits is the immediate next concern.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Current Benefit Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What payment failure notices have been sent to the member's email?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F20",
+        "F21"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Communication History",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Is another automated notice scheduled before the soft grace period ends?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "After reviewing past communications, inquiring about upcoming scheduled communications is a natural follow-up.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Communication History",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "When will the membership transition to 'SUSPENDED_HARD' if payment is not received?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After learning the current status is a temporary grace period, the most critical next piece of information is when that period ends and what the next state is.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Next State Trigger",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "And after that, when would the membership be marked as 'TERMINATED'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "This follows the state machine logic; after learning about the next state (SUSPENDED_HARD), the user will want to know the subsequent state (TERMINATED).",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Subsequent States & Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What happens to benefits when the state changes to 'SUSPENDED_HARD'?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: Along with the timing of the next state transition, the user needs to know the impact of that state on member benefits.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Subsequent States & Impact",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "If the case needs manual recovery after termination risk, where can a Tier 2 specialist initiate a payment override?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After learning when termination would occur, a direct recovery-oriented follow-up is where a Tier 2 specialist can initiate a manual payment override.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Subsequent States & Recovery Option",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N11",
+      "description": "If payment succeeds during the current 'GRACE_PERIOD_SOFT', how quickly are all benefits restored?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G7",
+      "reveal_group_label": "Recovery Process & Outcomes",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is the restoration time if payment succeeds during the later 'SUSPENDED_HARD' state?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "After understanding the recovery process for the current state, it's logical to ask about the process for the next potential state.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Recovery Process & Outcomes",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "After a successful recovery payment, what will the member's next renewal date be?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Once the immediate restoration is understood, the specialist needs to know the long-term implication for the billing cycle, specifically the anniversary date.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Recovery Process & Outcomes",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N14",
+      "description": "What is the system workflow ID triggered by a successful payment?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N13",
+      "prediction_reason": "CROSS-GROUP: After understanding the business outcomes of a successful payment, a technically-minded specialist would want to know the underlying system process responsible for it.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Internal System Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Where is the official membership status state machine diagram documented?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: After learning about multiple state transitions (GRACE -> SUSPENDED -> TERMINATED), the specialist will want to see the complete, official diagram of all possible states and transitions.",
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "System Documentation",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Case Identification & Status",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Billing Failure Details",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Current Benefit Impact",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Communication History",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Next State Trigger",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Subsequent States & Recovery Option",
+      "member_need_ids": [
+        "N8",
+        "N9",
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Recovery Process & Outcomes",
+      "member_need_ids": [
+        "N11",
+        "N12",
+        "N13"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Internal System Details",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "System Documentation",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G6"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "membership_payment_failure_recovery_04",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

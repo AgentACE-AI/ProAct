@@ -1,0 +1,503 @@
+{
+  "scenario_id": "disaster_reentry_damage_check_05",
+  "domain": "disaster_preparedness",
+  "description": "After returning home following a disruption, a family needs a safe re-entry checklist for utilities, contamination signs, structural warnings, documentation photos, and short-term stabilization steps.",
+  "user_profile": {
+    "persona": "43-year-old homeowner preparing for the part after evacuation that people often forget",
+    "context": "The household has plans for leaving quickly but almost none for how to assess the home safely on return",
+    "communication_style": "Sequential and safety-focused, wants re-entry broken into clear inspection stages"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Initial Safety Assessment",
+      "fact": "Before approaching the house at 452 Willow Creek Lane, check for downed power lines; the primary utility pole is #CPL-8814 located at the southwest corner of the property."
+    },
+    {
+      "id": "F02",
+      "category": "Initial Safety Assessment",
+      "fact": "Use a UEi Test Instruments CD100A Combustible Gas Leak Detector to check for natural gas leaks around the exterior gas meter (model: American Meter AC-250) before entering the property."
+    },
+    {
+      "id": "F03",
+      "category": "Initial Safety Assessment",
+      "fact": "The main gas shutoff valve for the property is a wrench-operated valve located 18 inches to the left of the AC-250 gas meter and requires a 12-inch adjustable wrench to turn."
+    },
+    {
+      "id": "F04",
+      "category": "Initial Safety Assessment",
+      "fact": "Visually inspect the foundation for major cracks from a distance of 15 feet before attempting to open any doors."
+    },
+    {
+      "id": "F05",
+      "category": "Initial Safety Assessment",
+      "fact": "The designated family emergency contact is Aunt Carol at (555) 867-5309; call her to confirm your safe arrival at the property before you begin the re-entry inspection."
+    },
+    {
+      "id": "F06",
+      "category": "Utility Checks",
+      "fact": "The main electrical breaker is located inside a Square D QO 200 Amp panel in the garage; ensure the main 200A breaker at the top is in the 'OFF' position before inspecting interior wiring."
+    },
+    {
+      "id": "F07",
+      "category": "Utility Checks",
+      "fact": "If the house has flooded, do not restore power until an inspection is completed by a certified electrician from a company like Oakridge Electrical Services."
+    },
+    {
+      "id": "F08",
+      "category": "Utility Checks",
+      "fact": "The home's main water shutoff is a red, quarter-turn ball valve located in the basement utility closet, 3 feet from the floor on the north-facing wall."
+    },
+    {
+      "id": "F09",
+      "category": "Utility Checks",
+      "fact": "After shutting off the main water supply, open the lowest faucet in the house (basement utility sink) to drain the system and relieve pressure."
+    },
+    {
+      "id": "F10",
+      "category": "Utility Checks",
+      "fact": "Check the 40-gallon Rheem water heater (model RR40-PRO) for signs of damage, tipping, or gas line breaks before attempting to relight the pilot."
+    },
+    {
+      "id": "F11",
+      "category": "Utility Checks",
+      "fact": "The local utility company, Cascade Power & Light, has an emergency hotline for reporting issues: (555) 247-POWR."
+    },
+    {
+      "id": "F12",
+      "category": "Structural Assessment",
+      "fact": "Examine the chimney on the east side of the house for cracks or separation from the main structure; a gap wider than 1/2 inch indicates a significant structural shift."
+    },
+    {
+      "id": "F13",
+      "category": "Structural Assessment",
+      "fact": "The front door and the garage door should be checked to see if they stick or jam, which can indicate the frame has shifted due to structural stress."
+    },
+    {
+      "id": "F14",
+      "category": "Structural Assessment",
+      "fact": "Inspect the concrete foundation slab for any new cracks wider than 1/4 inch, paying special attention to the corners of the structure."
+    },
+    {
+      "id": "F15",
+      "category": "Structural Assessment",
+      "fact": "Look for a sagging roofline along the main ridge, which could indicate broken rafters or truss damage."
+    },
+    {
+      "id": "F16",
+      "category": "Structural Assessment",
+      "fact": "If you hear any popping or cracking noises after entering the house, evacuate immediately and call the Oakridge City Building Inspector at (555) 734-INSP."
+    },
+    {
+      "id": "F17",
+      "category": "Contamination Inspection",
+      "fact": "Wear an N95 respirator, safety goggles, and waterproof boots before entering any area that may have been flooded."
+    },
+    {
+      "id": "F18",
+      "category": "Contamination Inspection",
+      "fact": "Look for a distinct water line on drywall and furniture; a 2-foot high line was observed in the living room after the last storm event."
+    },
+    {
+      "id": "F19",
+      "category": "Contamination Inspection",
+      "fact": "Any drywall that has been saturated with floodwater for more than 48 hours is at high risk for black mold (Stachybotrys chartarum) growth."
+    },
+    {
+      "id": "F20",
+      "category": "Contamination Inspection",
+      "fact": "Food stored in the Kenmore Elite refrigerator (model 795.7205) must be discarded if the power has been out for more than 4 hours."
+    },
+    {
+      "id": "F21",
+      "category": "Contamination Inspection",
+      "fact": "The Oakridge Municipal Water authority issued a boil-water advisory on 10/26/2023; do not drink tap water until advisory #BWA-1026 is lifted."
+    },
+    {
+      "id": "F22",
+      "category": "Contamination Inspection",
+      "fact": "Check for signs of pests or wild animals that may have taken shelter in the home, such as droppings or nesting materials in the attic or crawlspace."
+    },
+    {
+      "id": "F23",
+      "category": "Documentation",
+      "fact": "Before moving or cleaning anything, take at least 20 wide-angle and 15 close-up photos of the damage in each affected room using your smartphone."
+    },
+    {
+      "id": "F24",
+      "category": "Documentation",
+      "fact": "The family's homeowners insurance is with Summit Secure Insurance, policy number SSP-789-HO-452."
+    },
+    {
+      "id": "F25",
+      "category": "Documentation",
+      "fact": "The insurance agent for policy SSP-789-HO-452 is Maria Garcia, and her direct line is (555) 912-3456."
+    },
+    {
+      "id": "F26",
+      "category": "Documentation",
+      "fact": "Create a written inventory of damaged items using the 'Home Inventory Checklist' template from Ready.gov, noting the item's brand, model number, and estimated value."
+    },
+    {
+      "id": "F27",
+      "category": "Documentation",
+      "fact": "Store digital copies of all photos, videos, and inventory lists in a cloud service like Dropbox under the folder 'Home Damage Claim 2023'."
+    },
+    {
+      "id": "F28",
+      "category": "Documentation",
+      "fact": "Keep all receipts for immediate post-disaster expenses, such as tarps, plywood, or temporary lodging, as they are reimbursable under Rider 7B of the insurance policy."
+    },
+    {
+      "id": "F29",
+      "category": "Short-Term Stabilization",
+      "fact": "Cover any broken windows with 5/8-inch plywood, cut to be 4 inches wider and taller than the window frame."
+    },
+    {
+      "id": "F30",
+      "category": "Short-Term Stabilization",
+      "fact": "If the roof is damaged, use a Blue Tarp Pro 20x30 ft heavy-duty tarp to cover the hole, securing it with 2x4 lumber boards along the edges."
+    },
+    {
+      "id": "F31",
+      "category": "Short-Term Stabilization",
+      "fact": "To begin drying out a flooded area, open all windows and use at least two 20-inch Lasko box fans to create cross-ventilation."
+    },
+    {
+      "id": "F32",
+      "category": "Short-Term Stabilization",
+      "fact": "The pre-approved emergency restoration company on the Summit Secure Insurance policy is Rapid Response Restoration, reachable 24/7 at (555) 234-5678."
+    },
+    {
+      "id": "F33",
+      "category": "Short-Term Stabilization",
+      "fact": "Remove and discard all wet carpeting and padding within 24 hours to prevent mold and subfloor damage."
+    },
+    {
+      "id": "F34",
+      "category": "Short-Term Stabilization",
+      "fact": "Place a notice on the front door with the date, your name (Chen Family), and a safe contact number, (555) 123-4567, for emergency responders or insurance adjusters."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "Before I get close to my house at 452 Willow Creek Lane, what is the first thing I should check for?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Exterior Safety Approach",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "How do I check for a natural gas leak at the exterior meter, and what specific detector should I use?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After checking for electrical hazards, checking for gas hazards is the next logical safety step before approaching the house.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Exterior Safety Approach",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Where is the main gas shutoff valve located and what tool do I need to turn it off?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After identifying a potential gas leak, the user's immediate need is to know how to stop the flow of gas.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Utility Shutoffs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Where is the main electrical breaker panel and how do I confirm the main breaker is off?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Utility Shutoffs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "From a safe distance, how should I inspect the foundation for major cracks?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: While performing the initial exterior safety check, assessing the home's basic structural integrity from a distance is a parallel safety concern.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Initial Structural View",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Where can I find the main water shutoff valve inside the house?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Water System",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "After turning off the main water supply, what is the next step to drain the pipes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F09"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: This is a direct follow-up action after locating and operating the main water shutoff.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Water System",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What specific structural issues should I look for on the chimney, doors, and roofline?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13",
+        "F15"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After checking the foundation, the user will naturally want to know about other key structural points to inspect.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Detailed Structural Assessment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What personal protective equipment should I wear before entering an area that may have been flooded?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Contamination Safety",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the procedure for photographing damage before I start cleaning anything?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Once the user identifies structural damage, the next logical step is to document it for insurance purposes, making this a highly relevant proactive suggestion.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Damage Photography",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "Who is my homeowners insurance provider and what is my policy number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "CROSS-GROUP: After being told how to document damage, the user will immediately need their insurance information to prepare for filing a claim.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Insurance Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "What is my insurance agent's name and direct contact number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "Intra-group: After getting the policy number, asking for the specific contact person for that policy is a natural follow-up.",
+      "turn_order": 12,
+      "reveal_group": "G8",
+      "reveal_group_label": "Insurance Details",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N13",
+      "description": "Who is the pre-approved emergency restoration company on my insurance policy and how can I contact them?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N11",
+      "prediction_reason": "CROSS-GROUP: While discussing insurance details, proactively providing the contact for the approved restoration company helps the user move from assessment to action.",
+      "turn_order": 13,
+      "reveal_group": "G9",
+      "reveal_group_label": "Restoration Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What materials should I use to cover broken windows and damaged sections of the roof?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29",
+        "F30"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G10",
+      "reveal_group_label": "Temporary Repairs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Who is our designated family emergency contact and what is their phone number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G11",
+      "reveal_group_label": "Communication",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Exterior Safety Approach",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Utility Shutoffs",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Initial Structural View",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Water System",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Detailed Structural Assessment",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "Contamination Safety",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Damage Photography",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G8",
+      "label": "Insurance Details",
+      "member_need_ids": [
+        "N11",
+        "N12"
+      ],
+      "trigger_after": "G7"
+    },
+    {
+      "group_id": "G9",
+      "label": "Restoration Contact",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G8"
+    },
+    {
+      "group_id": "G10",
+      "label": "Temporary Repairs",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G11",
+      "label": "Communication",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "disaster_reentry_damage_check_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

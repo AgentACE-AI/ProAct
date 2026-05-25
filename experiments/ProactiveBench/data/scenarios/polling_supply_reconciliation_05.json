@@ -1,0 +1,463 @@
+{
+  "scenario_id": "polling_supply_reconciliation_05",
+  "domain": "election_polling_operations",
+  "description": "At close, the team needs to reconcile unused supplies, spoiled ballots, issued materials, return packaging, and closing bundles so nothing is left in an ambiguous state. All election materials are fictional.",
+  "user_profile": {
+    "persona": "35-year-old closing supervisor responsible for final site reconciliation",
+    "context": "The day is ending, fatigue is high, and the last step must still be done with enough precision to support a clean return",
+    "communication_style": "Closure-focused and systematic, wants end-of-day categories reconciled explicitly"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Ballot Reconciliation",
+      "fact": "Polling Site #12 at Northwood Community Center received a total of 500 Form B-17 Standard Ballots at the start of the day."
+    },
+    {
+      "id": "F02",
+      "category": "Ballot Reconciliation",
+      "fact": "A total of 350 voters were processed, resulting in 350 issued ballots."
+    },
+    {
+      "id": "F03",
+      "category": "Ballot Reconciliation",
+      "fact": "There are 12 spoiled ballots, which have been recorded on the 'Spoiled Ballot Log' (Form SB-04)."
+    },
+    {
+      "id": "F04",
+      "category": "Ballot Reconciliation",
+      "fact": "There are 138 unused Form B-17 ballots remaining in their sealed packages."
+    },
+    {
+      "id": "F05",
+      "category": "Ballot Reconciliation",
+      "fact": "The sum of issued (350), spoiled (12), and unused (138) ballots equals the initial total of 500."
+    },
+    {
+      "id": "F06",
+      "category": "Supply Inventory",
+      "fact": "There are 2 full, unopened rolls of 'I Voted Today!' stickers, each containing 100 stickers, for a total of 200 unused stickers."
+    },
+    {
+      "id": "F07",
+      "category": "Supply Inventory",
+      "fact": "Seventeen unused 'Provisional Ballot Envelopes' (Form PV-E9) must be returned."
+    },
+    {
+      "id": "F08",
+      "category": "Supply Inventory",
+      "fact": "The supply kit contains 8 unused black ink pens from the original box of 20."
+    },
+    {
+      "id": "F09",
+      "category": "Supply Inventory",
+      "fact": "All 25 official voter privacy sleeves provided in the morning must be accounted for and returned."
+    },
+    {
+      "id": "F10",
+      "category": "Sealing and Packaging",
+      "fact": "The main 'Secure Ballot Transport Bag' (Model SBB-2) must be sealed with two Red Tamper-Evident Seals from series R-7000."
+    },
+    {
+      "id": "F11",
+      "category": "Sealing and Packaging",
+      "fact": "The serial numbers of the Red Seals used for the SBB-2 are R-7101 and R-7102."
+    },
+    {
+      "id": "F12",
+      "category": "Sealing and Packaging",
+      "fact": "The cardboard box containing the 12 spoiled ballots must be sealed with a single Blue Transport Seal from series B-4500."
+    },
+    {
+      "id": "F13",
+      "category": "Sealing and Packaging",
+      "fact": "The serial number of the Blue Seal used for the spoiled ballot box is B-4558."
+    },
+    {
+      "id": "F14",
+      "category": "Sealing and Packaging",
+      "fact": "The 'Precinct Closing Bundle', containing paperwork, is secured with a large green rubber band, not a numbered seal."
+    },
+    {
+      "id": "F15",
+      "category": "Documentation",
+      "fact": "The 'Official Ballot Statement' (Form OBS-11) is the primary reconciliation document and must be completed in triplicate."
+    },
+    {
+      "id": "F16",
+      "category": "Documentation",
+      "fact": "Closing Supervisor Anya Sharma must sign and date Line 14 on all three copies of Form OBS-11."
+    },
+    {
+      "id": "F17",
+      "category": "Documentation",
+      "fact": "A second designated polling officer, Leo Chen, must provide a co-signature on Line 15 of Form OBS-11."
+    },
+    {
+      "id": "F18",
+      "category": "Documentation",
+      "fact": "Copy 1 (white) of Form OBS-11 is placed inside the Secure Ballot Transport Bag before sealing."
+    },
+    {
+      "id": "F19",
+      "category": "Documentation",
+      "fact": "Copy 2 (yellow) of Form OBS-11 is placed on top of the paperwork inside the Precinct Closing Bundle."
+    },
+    {
+      "id": "F20",
+      "category": "Documentation",
+      "fact": "Copy 3 (pink) of Form OBS-11 is retained by the Closing Supervisor as a personal record."
+    },
+    {
+      "id": "F21",
+      "category": "Personnel and Contacts",
+      "fact": "The designated drop-off point for all election materials is the Aethelgard County Elections Hub at 4500 Civic Plaza."
+    },
+    {
+      "id": "F22",
+      "category": "Personnel and Contacts",
+      "fact": "The absolute deadline for material drop-off at the Elections Hub is 10:30 PM on election night."
+    },
+    {
+      "id": "F23",
+      "category": "Personnel and Contacts",
+      "fact": "For reconciliation discrepancies over +/- 2 ballots, immediately call the County Elections Coordinator, Elias Vance, at 555-0182."
+    },
+    {
+      "id": "F24",
+      "category": "Personnel and Contacts",
+      "fact": "The authorized two-person transport team for Polling Site #12 is Driver Maria Flores and Observer David Kim."
+    },
+    {
+      "id": "F25",
+      "category": "Digital Reporting",
+      "fact": "Final ballot counts must be entered into the Aethelgard Elections Portal (AEP) at the URL: https://aep.aethelgard.gov/closeout."
+    },
+    {
+      "id": "F26",
+      "category": "Digital Reporting",
+      "fact": "The login credentials for Polling Site #12 are username 'PS12-SUP' and password 'CloseDay!2024'."
+    },
+    {
+      "id": "F27",
+      "category": "Digital Reporting",
+      "fact": "After submitting totals in the AEP, a confirmation receipt with transaction ID must be printed and placed in the Precinct Closing Bundle."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "How many Form B-17 Standard Ballots did this polling site receive, and how many were issued to voters?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F01",
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Ballot Reconciliation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the final counts for spoiled ballots and unused ballots?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming the number of issued ballots, the user needs the other components of the reconciliation equation.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Ballot Reconciliation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "Does the sum of issued, spoiled, and unused ballots equal the initial total received?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: This is the final validation step of the ballot reconciliation process.",
+      "turn_order": 3,
+      "reveal_group": "G1",
+      "reveal_group_label": "Ballot Reconciliation",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N4",
+      "description": "What is the primary reconciliation document, and who is required to sign it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16",
+        "F17"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: Once ballot counts are confirmed, the immediate next step is to formally document them on the official form.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Official Paperwork",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the distribution plan for the three copies of the Official Ballot Statement?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19",
+        "F20"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After completing the form, the user needs to know how to correctly file each copy.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Official Paperwork",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What are the sealing requirements for the Secure Ballot Transport Bag, including the specific seal serial numbers used?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Sealing Procedures",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "How should the box of spoiled ballots be sealed, and what is its seal number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F13"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: This is the next logical sealing task after securing the main ballot bag.",
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "Sealing Procedures",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "How is the Precinct Closing Bundle containing paperwork secured?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After preparing the paperwork bundle, the user needs to know how to secure it for transport.",
+      "turn_order": 8,
+      "reveal_group": "G3",
+      "reveal_group_label": "Sealing Procedures",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N9",
+      "description": "What are the URL and login details for submitting final counts to the Aethelgard Elections Portal?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G4",
+      "reveal_group_label": "Digital Reporting",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "After submitting the totals online, what needs to be done with the confirmation receipt?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: This is the final step in the digital reporting workflow.",
+      "turn_order": 10,
+      "reveal_group": "G4",
+      "reveal_group_label": "Digital Reporting",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What is the location and deadline for dropping off all election materials?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After sealing the primary transport bag, the user's next logical concern is its destination and deadline.",
+      "turn_order": 11,
+      "reveal_group": "G5",
+      "reveal_group_label": "Final Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "How many unused black ink pens and voter privacy sleeves must be returned?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 12,
+      "reveal_group": "G6",
+      "reveal_group_label": "General Supply Inventory",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the return quantity for unused 'I Voted Today!' stickers and Provisional Ballot Envelopes?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After completing the critical ballot count, the user may turn their attention to reconciling less critical supplies.",
+      "turn_order": 13,
+      "reveal_group": "G7",
+      "reveal_group_label": "Paper Supply Inventory",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Who should be contacted in case of a ballot reconciliation discrepancy greater than two ballots?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: This is a natural contingency question that arises directly from the ballot reconciliation result.",
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Contingency Plan",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "Who is the authorized two-person team for transporting materials from Polling Site #12?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 15,
+      "reveal_group": "G9",
+      "reveal_group_label": "Transport Personnel",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Ballot Reconciliation",
+      "member_need_ids": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Official Paperwork",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Sealing Procedures",
+      "member_need_ids": [
+        "N6",
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Digital Reporting",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Final Logistics",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G6",
+      "label": "General Supply Inventory",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G7",
+      "label": "Paper Supply Inventory",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G8",
+      "label": "Contingency Plan",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G9",
+      "label": "Transport Personnel",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "polling_supply_reconciliation_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "scenario_id": "finance_buy_vs_rent_03",
+  "domain": "financial_planning",
+  "description": "A user is deciding between buying a home and continuing to rent. The conflict: high interest rates make buying expensive, but high inflation makes renting risky. They need to factor in taxes, maintenance, and opportunity cost of the down payment.",
+  "user_profile": {
+    "persona": "30-year-old married couple",
+    "context": "Lease is up in 4 months, deciding whether to enter the housing market",
+    "communication_style": "Logical, focused on long-term Net Worth"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Personal_Profile",
+      "fact": "The user persona consists of a married couple, Alex and Ben Carter, both aged 30."
+    },
+    {
+      "id": "F02",
+      "category": "Personal_Profile",
+      "fact": "The Carters have a combined gross annual income of $160,000."
+    },
+    {
+      "id": "F03",
+      "category": "Personal_Profile",
+      "fact": "Alex Carter's FICO credit score is 780."
+    },
+    {
+      "id": "F04",
+      "category": "Personal_Profile",
+      "fact": "Ben Carter's FICO credit score is 795."
+    },
+    {
+      "id": "F05",
+      "category": "Financial_Assets",
+      "fact": "The couple has saved $115,000 in a high-yield savings account with Apex Digital Bank, designated for a home down payment."
+    },
+    {
+      "id": "F06",
+      "category": "Financial_Assets",
+      "fact": "The Carters hold a separate investment portfolio valued at $50,000 in a Global Index Fund ETF (ticker: GIF)."
+    },
+    {
+      "id": "F07",
+      "category": "Financial_Assets",
+      "fact": "The Carters' combined 401(k) retirement savings balance is $95,000, which is not being considered for the down payment."
+    },
+    {
+      "id": "F08",
+      "category": "Current_Living_Situation",
+      "fact": "They currently rent apartment 4B at 'The Willow Creek Apartments' in the fictional city of Maple Creek, Northwood."
+    },
+    {
+      "id": "F09",
+      "category": "Current_Living_Situation",
+      "fact": "Their current monthly rent payment is $2,200."
+    },
+    {
+      "id": "F10",
+      "category": "Key_Dates_Deadlines",
+      "fact": "Their current apartment lease agreement expires on August 31, 2024."
+    },
+    {
+      "id": "F11",
+      "category": "Key_Dates_Deadlines",
+      "fact": "A notice to vacate their current apartment must be provided to the landlord by July 1, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "Key_Dates_Deadlines",
+      "fact": "A mortgage rate pre-approval from Pioneer Trust Bank is valid until July 15, 2024."
+    },
+    {
+      "id": "F13",
+      "category": "Potential_Home_Purchase",
+      "fact": "The target property is a single-family home located at 452 Oak Lane, Maple Creek, Northwood."
+    },
+    {
+      "id": "F14",
+      "category": "Potential_Home_Purchase",
+      "fact": "The listing price for the 452 Oak Lane property is $550,000."
+    },
+    {
+      "id": "F15",
+      "category": "Potential_Home_Purchase",
+      "fact": "The estimated annual maintenance budget for the 452 Oak Lane property is $5,500 (1% of home value)."
+    },
+    {
+      "id": "F16",
+      "category": "Potential_Home_Purchase",
+      "fact": "The annual property tax rate in Maple Creek is 1.2% of the home's assessed value."
+    },
+    {
+      "id": "F17",
+      "category": "Market_Conditions",
+      "fact": "The current 30-year fixed mortgage interest rate quoted by Pioneer Trust Bank is 6.95%."
+    },
+    {
+      "id": "F18",
+      "category": "Market_Conditions",
+      "fact": "The most recently reported national Consumer Price Index (CPI) shows a year-over-year inflation rate of 3.4%."
+    },
+    {
+      "id": "F19",
+      "category": "Market_Conditions",
+      "fact": "The historical average annual home price appreciation in the Maple Creek metropolitan area is 4.5%."
+    },
+    {
+      "id": "F20",
+      "category": "Purchase_Cost_Analysis",
+      "fact": "A 20% down payment on the $550,000 property requires $110,000 cash."
+    },
+    {
+      "id": "F21",
+      "category": "Purchase_Cost_Analysis",
+      "fact": "The mortgage loan principal for the 452 Oak Lane property would be $440,000 after a 20% down payment."
+    },
+    {
+      "id": "F22",
+      "category": "Purchase_Cost_Analysis",
+      "fact": "The calculated monthly mortgage payment (principal and interest only) is $2,913.25."
+    },
+    {
+      "id": "F23",
+      "category": "Purchase_Cost_Analysis",
+      "fact": "The estimated monthly property tax payment for 452 Oak Lane is $550, based on the list price."
+    },
+    {
+      "id": "F24",
+      "category": "Purchase_Cost_Analysis",
+      "fact": "The estimated monthly homeowner's insurance premium is $150, for an annual policy cost of $1,800."
+    },
+    {
+      "id": "F25",
+      "category": "Purchase_Cost_Analysis",
+      "fact": "The total estimated monthly housing cost for buying (PITI + Maintenance) is $4,071.25."
+    },
+    {
+      "id": "F26",
+      "category": "Purchase_Cost_Analysis",
+      "fact": "Estimated closing costs for the home purchase are 3% of the sale price, totaling $16,500."
+    },
+    {
+      "id": "F27",
+      "category": "Rental_Cost_Analysis",
+      "fact": "The landlord at The Willow Creek Apartments has indicated a 5% rent increase for lease renewals, making the new rent $2,310 per month."
+    },
+    {
+      "id": "F28",
+      "category": "Rental_Cost_Analysis",
+      "fact": "The Carters' renter's insurance policy costs $20 per month."
+    },
+    {
+      "id": "F29",
+      "category": "Financial_Projections_Assumptions",
+      "fact": "The financial analysis assumes an average annual return of 7% on their Global Index Fund ETF (GIF) for calculating opportunity cost."
+    },
+    {
+      "id": "F30",
+      "category": "Financial_Projections_Assumptions",
+      "fact": "The opportunity cost of the $110,000 down payment, if invested at an assumed 7% annual return, would be a potential gain of $7,700 in the first year."
+    },
+    {
+      "id": "F31",
+      "category": "Financial_Projections_Assumptions",
+      "fact": "The Carters' marginal federal income tax bracket is 24%."
+    },
+    {
+      "id": "F32",
+      "category": "Financial_Projections_Assumptions",
+      "fact": "The projected first-year tax-deductible amount from mortgage interest is approximately $30,500."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "When does my current apartment lease expire and by what date must I provide notice to vacate?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Lease Deadlines and Renewal Cost",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What will my new monthly rent be if I choose to renew my lease?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After confirming lease deadlines, the user will naturally want to know the cost of the alternative, which is renewing the lease.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Lease Deadlines and Renewal Cost",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the listing price of the target home on Oak Lane?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Purchase Price and Down Payment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Based on the home's listing price, what is the required 20% down payment amount?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: The down payment is a direct calculation from the home price, making it the immediate next question when evaluating upfront costs.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Purchase Price and Down Payment",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "How do our current down payment savings compare to the required 20% down payment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F20"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "Intra-group: After determining the required down payment, the user will naturally want to compare it against the cash they have already set aside.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Purchase Price and Down Payment",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "What is the total estimated monthly housing cost to buy this home, including PITI and maintenance?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After establishing the monthly cost of renting, the user's primary goal is to compare it with the monthly cost of buying.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Monthly Cost of Homeownership",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "What is the quoted 30-year fixed mortgage interest rate?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: After confirming they have the down payment, the user's focus shifts to the loan terms, with the interest rate being the most critical factor.",
+      "turn_order": 7,
+      "reveal_group": "G3",
+      "reveal_group_label": "Monthly Cost of Homeownership",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N8",
+      "description": "What are the estimated closing costs for the home purchase?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 8,
+      "reveal_group": "G4",
+      "reveal_group_label": "Upfront Closing Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the potential first-year gain I'd miss out on by using the down payment instead of investing it?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "CROSS-GROUP: For a user focused on long-term net worth, understanding the opportunity cost is a critical next step after confirming they have the necessary down payment funds.",
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Opportunity Cost of Down Payment",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "What is the projected first-year tax-deductible amount from mortgage interest?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After seeing the high monthly cost of buying, the user will want to know about any mitigating factors, such as tax benefits.",
+      "turn_order": 10,
+      "reveal_group": "G6",
+      "reveal_group_label": "Tax Implications of Buying",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is our marginal federal income tax bracket?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N10",
+      "prediction_reason": "Intra-group: To understand the actual value of the tax deduction, the user needs to know their tax bracket.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Tax Implications of Buying",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N12",
+      "description": "What is the historical average annual home price appreciation in this area?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning the purchase price, a user focused on net worth will want to understand the potential for the asset to grow in value.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Long-Term Growth Outlook",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is our combined gross annual income?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Personal Financial Profile",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "What are our individual FICO credit scores?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03",
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G8",
+      "reveal_group_label": "Personal Financial Profile",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Lease Deadlines and Renewal Cost",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Purchase Price and Down Payment",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Monthly Cost of Homeownership",
+      "member_need_ids": [
+        "N6",
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G4",
+      "label": "Upfront Closing Costs",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G5",
+      "label": "Opportunity Cost of Down Payment",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G6",
+      "label": "Tax Implications of Buying",
+      "member_need_ids": [
+        "N10",
+        "N11"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Long-Term Growth Outlook",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "Personal Financial Profile",
+      "member_need_ids": [
+        "N13",
+        "N14"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "finance_buy_vs_rent_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

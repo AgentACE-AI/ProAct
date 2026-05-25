@@ -1,0 +1,429 @@
+{
+  "scenario_id": "vehicle_registration_transfer_03",
+  "domain": "vehicle_ownership_management",
+  "description": "A vehicle is changing owners within a family, and the paperwork, inspection status, title transfer, plates, and insurance timing need to stay aligned without leaving a gap in legal status.",
+  "user_profile": {
+    "persona": "49-year-old parent transferring a vehicle to an adult child",
+    "context": "The transfer seems simple socially but involves several steps that have to line up correctly",
+    "communication_style": "Administrative and careful, wants a clean handoff with no missed documents"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "vehicle_details",
+      "fact": "The vehicle being transferred is a 2018 Kestrel Sparrow hatchback, color 'Glacier Blue'."
+    },
+    {
+      "id": "F02",
+      "category": "vehicle_details",
+      "fact": "The Vehicle Identification Number (VIN) for the 2018 Kestrel Sparrow is 1K8SPRW45J7B91234."
+    },
+    {
+      "id": "F03",
+      "category": "vehicle_details",
+      "fact": "The vehicle's current mileage at the time of transfer is 58,241 miles."
+    },
+    {
+      "id": "F04",
+      "category": "current_owner_details",
+      "fact": "The current registered owner of the vehicle is Maria Santos, born April 15, 1974."
+    },
+    {
+      "id": "F05",
+      "category": "current_owner_details",
+      "fact": "Maria Santos's driver's license number is D44-591-3307, issued by the state of Norview."
+    },
+    {
+      "id": "F06",
+      "category": "current_owner_details",
+      "fact": "Maria Santos's active auto insurance policy for the vehicle is with Apex Assurance Group, policy number APX987654321."
+    },
+    {
+      "id": "F07",
+      "category": "new_owner_details",
+      "fact": "The new owner receiving the vehicle is Leo Santos, born June 2, 2002."
+    },
+    {
+      "id": "F08",
+      "category": "new_owner_details",
+      "fact": "Leo Santos's driver's license number is D81-220-7854, issued by the state of Norview."
+    },
+    {
+      "id": "F09",
+      "category": "new_owner_details",
+      "fact": "Leo Santos has secured a new auto insurance policy from Apex Assurance Group, policy number APX123456789."
+    },
+    {
+      "id": "F10",
+      "category": "insurance_management",
+      "fact": "Leo Santos's new insurance policy (APX123456789) becomes effective at 12:01 AM on October 26, 2023."
+    },
+    {
+      "id": "F11",
+      "category": "insurance_management",
+      "fact": "Maria Santos is scheduled to remove the 2018 Kestrel Sparrow from her policy (APX987654321) on October 26, 2023, after the title transfer is confirmed."
+    },
+    {
+      "id": "F12",
+      "category": "vehicle_inspection",
+      "fact": "The vehicle passed its required state safety and emissions inspection on October 22, 2023."
+    },
+    {
+      "id": "F13",
+      "category": "vehicle_inspection",
+      "fact": "The inspection was performed at Sterling Auto Care, located at 789 Industrial Parkway, Silver Creek, NV 89429."
+    },
+    {
+      "id": "F14",
+      "category": "vehicle_inspection",
+      "fact": "The official inspection certificate number issued is NV-INSP-C23-884019, which is valid for 90 days."
+    },
+    {
+      "id": "F15",
+      "category": "title_transfer",
+      "fact": "The original Certificate of Title for the vehicle is number T7702-34B-5591."
+    },
+    {
+      "id": "F16",
+      "category": "title_transfer",
+      "fact": "Maria Santos signed the 'Seller/Transferor' section of the title in black ink on October 25, 2023."
+    },
+    {
+      "id": "F17",
+      "category": "title_transfer",
+      "fact": "A 'Gift Affidavit' (Form MV-27G) was completed and notarized to exempt the transfer from sales tax."
+    },
+    {
+      "id": "F18",
+      "category": "title_transfer",
+      "fact": "An appointment for the title transfer is scheduled at the Norview Department of Motor Vehicles (NDMV) for October 26, 2023, at 10:30 AM."
+    },
+    {
+      "id": "F19",
+      "category": "contact_information",
+      "fact": "The NDMV office for the appointment is the Silver Creek branch, located at 55 Government Center Drive, Silver Creek, NV 89429."
+    },
+    {
+      "id": "F20",
+      "category": "contact_information",
+      "fact": "The insurance agent handling both policies is David Chen at Apex Assurance Group, reachable at 555-0182."
+    },
+    {
+      "id": "F21",
+      "category": "registration_plates",
+      "fact": "Maria Santos's current license plate number for the vehicle is 'NV 345-LMP'."
+    },
+    {
+      "id": "F22",
+      "category": "registration_plates",
+      "fact": "The 'NV 345-LMP' license plates must be surrendered to the NDMV by Maria Santos at the time of the transfer."
+    },
+    {
+      "id": "F23",
+      "category": "registration_plates",
+      "fact": "Leo Santos will be issued a new license plate number upon successful registration on October 26, 2023."
+    },
+    {
+      "id": "F24",
+      "category": "financials",
+      "fact": "The fee for the state vehicle inspection at Sterling Auto Care was $45.50."
+    },
+    {
+      "id": "F25",
+      "category": "financials",
+      "fact": "The NDMV title transfer fee is $28.25."
+    },
+    {
+      "id": "F26",
+      "category": "financials",
+      "fact": "The annual vehicle registration fee for Leo Santos will be $112.00, due at the NDMV appointment."
+    },
+    {
+      "id": "F27",
+      "category": "financials",
+      "fact": "The vehicle is being transferred as a gift, so the sale price recorded on all forms is $0.00."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What date, time, and exact NDMV branch address is the title transfer appointment scheduled for?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "DMV Appointment Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What is the vehicle's Certificate of Title number and on what date was it signed by the transferor?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After confirming the appointment details, the user's next logical step is to verify they have the correct primary document (the title) prepared.",
+      "turn_order": 2,
+      "reveal_group": "G2",
+      "reveal_group_label": "Required Documents",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N3",
+      "description": "What is the name of the tax exemption form that was completed for this gift transfer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "Intra-group: While thinking about the title document, the user would naturally think of other special forms required for the transfer, like the gift affidavit.",
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Required Documents",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N4",
+      "description": "When did the vehicle pass its state inspection and what is the certificate number?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F12",
+        "F14"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Vehicle Inspection Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What is the new owner's auto insurance policy number and when does it become effective?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Insurance Coordination",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "On what date should I remove the vehicle from my insurance policy?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "Intra-group: After confirming the start date of the new policy, the user needs to know the end date for their own policy to ensure there are no gaps or overlaps.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Insurance Coordination",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the current license plate number and what needs to be done with it during the transfer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21",
+        "F22"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: When thinking about the DMV appointment, a user will consider the physical items involved, such as what to do with the old license plates.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "License Plate Handling",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "How much are the NDMV fees for the title transfer and the new annual registration?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F25",
+        "F26"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: A careful user planning for a DMV appointment will want to know exactly how much money to bring or be prepared to pay.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Transfer Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What was the cost for the state vehicle inspection?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "Intra-group: After asking about the primary fees due at the DMV, the user might want to recall other related costs for their personal records.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Transfer Costs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is the new owner's full name and driver's license number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07",
+        "F08"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "New Owner Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the vehicle's VIN and its current mileage?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F02",
+        "F03"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: While reviewing the title document information, the user may want to cross-reference the vehicle's specific identifiers like VIN and mileage for accuracy.",
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Vehicle Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Who is the insurance agent handling our policies and what is their contact number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F20"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the plan to cancel their old policy, the user might proactively ask for the agent's contact information in case any issues arise with the insurance transition.",
+      "turn_order": 12,
+      "reveal_group": "G9",
+      "reveal_group_label": "Contact Information",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What is the sale price being recorded on the transfer forms?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F27"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After confirming the gift affidavit form, the user would logically want to confirm the specific monetary value ($0.00) that should be written on all documents to align with that affidavit.",
+      "turn_order": 13,
+      "reveal_group": "G2",
+      "reveal_group_label": "Required Documents",
+      "reveal_priority": 3
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "DMV Appointment Logistics",
+      "member_need_ids": [
+        "N1"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Required Documents",
+      "member_need_ids": [
+        "N2",
+        "N3",
+        "N13"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G3",
+      "label": "Vehicle Inspection Status",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Insurance Coordination",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "License Plate Handling",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G6",
+      "label": "Transfer Costs",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "New Owner Details",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G8",
+      "label": "Vehicle Details",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G9",
+      "label": "Contact Information",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G4"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "vehicle_registration_transfer_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

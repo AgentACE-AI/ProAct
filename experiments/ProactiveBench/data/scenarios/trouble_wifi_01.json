@@ -1,0 +1,400 @@
+{
+  "scenario_id": "trouble_wifi_01",
+  "domain": "troubleshooting",
+  "description": "A user's home Wi-Fi is slow and dropping intermittently. They need to go through a standard diagnostic process: checking the router, ISP status, and device interference.",
+  "user_profile": {
+    "persona": "29-year-old working from home",
+    "context": "Important video call in 30 minutes, internet is acting up",
+    "communication_style": "Urgent and frustrated"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "User Profile",
+      "fact": "The user's name is Alex Chen."
+    },
+    {
+      "id": "F02",
+      "category": "User Profile",
+      "fact": "Alex Chen is 29 years old and works from home as a Project Manager for Innovate Inc."
+    },
+    {
+      "id": "F03",
+      "category": "Upcoming Event",
+      "fact": "Alex Chen has a critical project kickoff video call scheduled for 11:00 AM on October 26, 2023."
+    },
+    {
+      "id": "F04",
+      "category": "Upcoming Event",
+      "fact": "The video call is with a major client, Globex Corp, and will be hosted on Zoom."
+    },
+    {
+      "id": "F05",
+      "category": "Upcoming Event",
+      "fact": "The Zoom Meeting ID for the Globex Corp call is 852 1199 0456."
+    },
+    {
+      "id": "F06",
+      "category": "Troubleshooting Event",
+      "fact": "The internet connectivity issues began at approximately 9:45 AM on October 26, 2023."
+    },
+    {
+      "id": "F07",
+      "category": "Troubleshooting Event",
+      "fact": "The primary symptom is intermittent connection drops, where the internet is unavailable for 10-30 seconds at a time."
+    },
+    {
+      "id": "F08",
+      "category": "Troubleshooting Event",
+      "fact": "A speed test run at 10:15 AM showed a download speed of 12.5 Mbps and an upload speed of 3.1 Mbps."
+    },
+    {
+      "id": "F09",
+      "category": "Troubleshooting Event",
+      "fact": "A command-line ping to dns.google (8.8.8.8) at 10:16 AM showed an average latency of 450 ms with 25% packet loss."
+    },
+    {
+      "id": "F10",
+      "category": "Troubleshooting Event",
+      "fact": "The 'Internet' status light on the Wi-Fi router is blinking amber, whereas the manual indicates it should be solid green for a stable connection."
+    },
+    {
+      "id": "F11",
+      "category": "Troubleshooting Event",
+      "fact": "The connectivity issue is affecting all devices on the network, including a laptop connected directly via an Ethernet cable."
+    },
+    {
+      "id": "F12",
+      "category": "ISP Information",
+      "fact": "The Internet Service Provider is 'AetherNet Solutions'."
+    },
+    {
+      "id": "F13",
+      "category": "ISP Information",
+      "fact": "The internet plan is the 'FiberStream 500', with advertised speeds of 500 Mbps download and 100 Mbps upload."
+    },
+    {
+      "id": "F14",
+      "category": "ISP Information",
+      "fact": "Alex Chen's AetherNet Solutions account number is AE-774-9012-B."
+    },
+    {
+      "id": "F15",
+      "category": "ISP Information",
+      "fact": "The 24/7 technical support phone number for AetherNet Solutions is 1-888-555-0123."
+    },
+    {
+      "id": "F16",
+      "category": "ISP Information",
+      "fact": "The AetherNet Solutions network status webpage is located at status.aether.net."
+    },
+    {
+      "id": "F17",
+      "category": "Network Setup",
+      "fact": "The Wi-Fi router is a QuantumLink model QL-7500."
+    },
+    {
+      "id": "F18",
+      "category": "Network Setup",
+      "fact": "The router's current firmware version is 2.1.34_build20230815."
+    },
+    {
+      "id": "F19",
+      "category": "Network Setup",
+      "fact": "The Wi-Fi network SSID is 'QuantumLink_AC_5G'."
+    },
+    {
+      "id": "F20",
+      "category": "Network Setup",
+      "fact": "The router is physically located on a wooden bookshelf in the living room, 3 feet from the floor."
+    },
+    {
+      "id": "F21",
+      "category": "Network Setup",
+      "fact": "The router's administration panel is accessible at the IP address http://192.168.1.1."
+    },
+    {
+      "id": "F22",
+      "category": "Network Setup",
+      "fact": "The last configuration change to the router was made on September 1, 2023, to update the Wi-Fi password."
+    },
+    {
+      "id": "F23",
+      "category": "Device Information",
+      "fact": "Alex's work laptop, a 'StellarBook Pro' with serial number SN789XYZ, is connected to the network."
+    },
+    {
+      "id": "F24",
+      "category": "Device Information",
+      "fact": "The StellarBook Pro's Wi-Fi MAC address is 00:1A:2B:3C:4D:5E."
+    },
+    {
+      "id": "F25",
+      "category": "Device Information",
+      "fact": "A 'VividView 4K' smart TV in the living room is attempting to stream a video service."
+    },
+    {
+      "id": "F26",
+      "category": "Device Information",
+      "fact": "An 'EchoSphere' smart speaker is connected to the network in the kitchen."
+    },
+    {
+      "id": "F27",
+      "category": "Device Information",
+      "fact": "Alex's personal smartphone, a 'Pixelate 8', is also connected to the Wi-Fi."
+    },
+    {
+      "id": "F28",
+      "category": "Device Information",
+      "fact": "A new 'SmartFlow' brand microwave oven, model SF-200X, was installed yesterday and is located 10 feet from the router."
+    },
+    {
+      "id": "F29",
+      "category": "Device Information",
+      "fact": "There are a total of 7 devices currently attempting to connect to the network."
+    },
+    {
+      "id": "F30",
+      "category": "Troubleshooting Steps Taken",
+      "fact": "At 10:20 AM, Alex performed a power cycle on the QuantumLink QL-7500 router by unplugging it for 60 seconds."
+    },
+    {
+      "id": "F31",
+      "category": "Troubleshooting Steps Taken",
+      "fact": "At 10:22 AM, Alex checked the AetherNet Solutions status page, which reported 'All Systems Operational' for his zip code, 98101."
+    },
+    {
+      "id": "F32",
+      "category": "Troubleshooting Steps Taken",
+      "fact": "Alex disconnected his Pixelate 8 smartphone from the Wi-Fi at 10:25 AM to reduce network load, but this action resulted in no improvement."
+    },
+    {
+      "id": "F33",
+      "category": "User Profile",
+      "fact": "Alex Chen's service address is 456 Tech Vista Lane, Apt 3B, Seattle, WA 98101."
+    },
+    {
+      "id": "F34",
+      "category": "Upcoming Event",
+      "fact": "Alex needs to present a 1.2 GB PowerPoint file during the 11:00 AM meeting."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What are the specific symptoms of my internet problem and when did they start?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Identification",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What were the results of the speed and ping tests I ran?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F09"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After describing the symptoms, a user would naturally want to see the quantitative data that confirms the problem's severity.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Problem Identification",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the status light on my Wi-Fi router showing?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Router Status",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What did the ISP's network status page say when I checked it?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F31"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After seeing a router error light, a user's next logical step is to determine if the fault is local or with the provider by checking for a reported outage.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "ISP Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are my plan's advertised speeds compared to the speeds I'm actually getting?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08",
+        "F13"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After confirming there's no official outage, the user will want to compare their current poor performance against the service level they pay for.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "ISP Check",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N6",
+      "description": "What is the technical support phone number for my ISP, AetherNet Solutions?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: Once the user confirms via the status page that there is no widespread outage, the immediate next step is to contact support directly. This is an auditable proactive target.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "ISP Contact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Is the connection problem affecting all devices, including my wired computer?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Problem Scope",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "Were any new appliances recently installed near the router?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After learning the issue affects the entire network (wired and wireless), a user might consider environmental factors. This auditable proactive target suggests a potential source of interference.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Interference Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the Zoom Meeting ID for my important 11:00 AM call?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G7",
+      "reveal_group_label": "Meeting Details",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How large is the presentation file I need for this meeting?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F34"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Meeting Details",
+      "reveal_priority": 2
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Problem Identification",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Router Status",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "ISP Check",
+      "member_need_ids": [
+        "N4",
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "ISP Contact",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Problem Scope",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Interference Check",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Meeting Details",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "trouble_wifi_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

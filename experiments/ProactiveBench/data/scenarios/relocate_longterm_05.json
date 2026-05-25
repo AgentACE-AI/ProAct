@@ -1,0 +1,368 @@
+{
+  "scenario_id": "relocate_longterm_05",
+  "domain": "relocation",
+  "description": "A user is planning a multi-stage life relocation: moving to a new country for work, then bringing their parents over 3 years later. They need to track changing immigration policies and savings goals over a long horizon to ensure the family reunion is feasible.",
+  "user_profile": {
+    "persona": "31-year-old architect, family-oriented",
+    "context": "Phase 1 of a multi-year family migration plan",
+    "communication_style": "Patient, focused on long-term stability and contingency planning"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "immigration",
+      "fact": "Elara Vance's Skilled Worker Visa for the Republic of Aethelgard, number AE-SW-88432, is valid from March 15, 2024, to March 14, 2029."
+    },
+    {
+      "id": "F02",
+      "category": "immigration",
+      "fact": "The 'Family Reunification Visa (Parental)' in Aethelgard currently requires the sponsoring child to have 5 years of continuous, documented residency before applying."
+    },
+    {
+      "id": "F03",
+      "category": "immigration",
+      "fact": "Elara's immigration consultant is Julian Croft of Croft Immigration Partners, reachable at j.croft@croftip.com."
+    },
+    {
+      "id": "F04",
+      "category": "immigration",
+      "fact": "A recurring calendar event is set for the 1st of every quarter to check the official Aethelgard Immigration Ministry website for policy changes; the next check is scheduled for July 1, 2024."
+    },
+    {
+      "id": "F05",
+      "category": "financial",
+      "fact": "The target savings for the parents' (Liam and Sofia Vance) relocation is 75,000 Aethelgardian Crowns (AEC) by March 1, 2027."
+    },
+    {
+      "id": "F06",
+      "category": "financial",
+      "fact": "The 'Family Relocation Fund' is held in a high-yield savings account (#45-882-109) at Meridian Trust Bank, currently holding 12,550 AEC."
+    },
+    {
+      "id": "F07",
+      "category": "financial",
+      "fact": "An automatic transfer of 1,500 AEC is scheduled from Elara's checking account to the Family Relocation Fund on the 28th of each month."
+    },
+    {
+      "id": "F08",
+      "category": "financial",
+      "fact": "A separate emergency fund of 20,000 AEC is maintained in account #45-882-110 at Meridian Trust Bank for unexpected travel or legal fees."
+    },
+    {
+      "id": "F09",
+      "category": "financial",
+      "fact": "Elara's annual gross salary at Starkweather & Thorne Architects is 110,000 Aethelgardian Crowns (AEC)."
+    },
+    {
+      "id": "F10",
+      "category": "employment",
+      "fact": "Elara Vance is employed as a Project Architect at the firm Starkweather & Thorne Architects in the city of Silverwood."
+    },
+    {
+      "id": "F11",
+      "category": "employment",
+      "fact": "Elara's official start date at Starkweather & Thorne Architects was April 1, 2024."
+    },
+    {
+      "id": "F12",
+      "category": "housing",
+      "fact": "Elara resides at Apartment 14B, The Azure Spire, 255 Skyview Lane, Silverwood, Aethelgard, Postal Code SW7 3PQ."
+    },
+    {
+      "id": "F13",
+      "category": "housing",
+      "fact": "The monthly rent for Apartment 14B is 2,200 AEC, payable to Silverwood Property Group."
+    },
+    {
+      "id": "F14",
+      "category": "housing",
+      "fact": "The current lease for Apartment 14B is a 24-month term, ending on March 31, 2026."
+    },
+    {
+      "id": "F15",
+      "category": "admin",
+      "fact": "Elara registered her residency at the Silverwood Civic Registry on April 5, 2024, and received Resident ID card #AGR-901-773-C."
+    },
+    {
+      "id": "F16",
+      "category": "admin",
+      "fact": "A secure digital folder named 'Vance_Family_Docs_2027' on a password-protected drive contains scanned copies of her parents' birth certificates and passports."
+    },
+    {
+      "id": "F17",
+      "category": "admin",
+      "fact": "Elara's Aethelgardian Tax Identification Number (ATIN) is 440-815-921."
+    },
+    {
+      "id": "F18",
+      "category": "admin",
+      "fact": "Elara has a notarized power of attorney document for her parents' financial affairs in their home country, dated February 10, 2024."
+    },
+    {
+      "id": "F19",
+      "category": "services",
+      "fact": "Elara is covered under the 'Aethelgard Premier Health Plan' provided by her employer, policy number ST-HP-EV31."
+    },
+    {
+      "id": "F20",
+      "category": "services",
+      "fact": "Her registered primary care physician is Dr. Aris Thorne at the Silverwood General Clinic, located at 12 Civic Plaza."
+    },
+    {
+      "id": "F21",
+      "category": "immigration",
+      "fact": "Research indicates that non-resident parents over 65 must have private health insurance with a minimum coverage of 100,000 AEC per person to qualify for a visa."
+    },
+    {
+      "id": "F22",
+      "category": "utilities",
+      "fact": "The apartment has a 1 Gbps fiber internet plan with AetherLink Broadband, account number AL-SV-77592, for 85 AEC per month."
+    },
+    {
+      "id": "F23",
+      "category": "utilities",
+      "fact": "Elara's mobile phone number is +441 883 204 917, with provider ConnectaMobile on the 'Global Connect 50' plan."
+    },
+    {
+      "id": "F24",
+      "category": "community",
+      "fact": "Elara attends an intermediate Aethelgardian language class at the Silverwood Community Center every Tuesday from 7:00 PM to 8:30 PM."
+    },
+    {
+      "id": "F25",
+      "category": "community",
+      "fact": "Elara has a scheduled video call with her parents, Liam and Sofia Vance, every Sunday at 15:00 UTC."
+    },
+    {
+      "id": "F26",
+      "category": "financial",
+      "fact": "25% of Elara's monthly savings transfer (375 AEC) is invested in a low-risk index fund named 'Meridian Global 100' to hedge against inflation."
+    },
+    {
+      "id": "F27",
+      "category": "admin",
+      "fact": "Elara's primary checking account at Meridian Trust Bank is account number 45-791-330."
+    },
+    {
+      "id": "F28",
+      "category": "employment",
+      "fact": "Elara's direct manager at Starkweather & Thorne Architects is Anya Sharma, Head of Residential Design."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the current continuous residency requirement for sponsoring a parent under the Family Reunification Visa?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F02"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Parent Visa Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What date do my records show for my official residency registration in Aethelgard?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After learning the continuous residency requirement, the user would naturally want to check the official residency-registration date in their records.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Parent Visa Requirements",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What is the savings target for my parents' relocation, and what is the current balance in the Family Relocation Fund?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Relocation Savings",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the scheduled monthly automatic transfer amount to the Family Relocation Fund?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Upon reviewing the savings target and current balance, the user would naturally want to confirm the contribution rate to understand the savings trajectory.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Relocation Savings",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "How much is maintained in the separate emergency fund for unexpected travel or legal fees?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F08"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: A user focused on long-term financial planning and stability, after reviewing their primary savings goal, would likely also want to check on their contingency funds.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Emergency Fund",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "When is my next recurring check for Aethelgard immigration policy changes scheduled?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Policy Monitoring",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Do I already have an immigration consultant on file, and if so, what are their contact details?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the schedule for monitoring policy changes, the user may want to confirm whether a consultant is already on file so they can reach out quickly if rules change.",
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Professional Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the minimum private health insurance coverage required per person for non-resident parents over 65?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "CROSS-GROUP: After establishing the primary residency requirement for their parents' visa, the user's next concern would be other major, specific eligibility criteria like mandatory health insurance.",
+      "turn_order": 8,
+      "reveal_group": "G6",
+      "reveal_group_label": "Parent-Specific Requirements",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "What is the name of the secure folder where I already store my parents' passport and birth certificate scans?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Parent-Specific Requirements",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N10",
+      "description": "What is my Aethelgardian Tax Identification Number (ATIN)?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Personal Admin",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Parent Visa Requirements",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Relocation Savings",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Emergency Fund",
+      "member_need_ids": [
+        "N5"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Policy Monitoring",
+      "member_need_ids": [
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Professional Contacts",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Parent-Specific Requirements",
+      "member_need_ids": [
+        "N8",
+        "N9"
+      ],
+      "trigger_after": "G1"
+    },
+    {
+      "group_id": "G7",
+      "label": "Personal Admin",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "relocate_longterm_05",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

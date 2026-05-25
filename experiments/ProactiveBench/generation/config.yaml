@@ -1,0 +1,34 @@
+# ProactiveBench 数据生成配置
+# 各脚本的 CLI 参数 (--model 等) 可覆盖此文件中的默认值
+
+# LLM 模型配置
+llm:
+  # 场景生成 (fact_sheet + user_needs)
+  generation_model: "gpt-4o"
+  generation_temperature: 0.7
+
+  # 变体扩展
+  expansion_model: "gpt-4o"
+  expansion_temperature: 0.8
+
+  # 验证 (预判合理性检查)
+  validation_model: "gpt-4o-mini"
+  validation_temperature: 0.2
+
+# 生成参数
+generation:
+  max_retries: 2
+
+  # fact 数量范围：每个场景从此范围内随机取值
+  # 种子文件中可通过 num_facts 精确指定，此处为未指定时的随机范围
+  num_facts_min: 25
+  num_facts_max: 35
+
+  # need 数量范围：同上
+  num_needs_min: 10
+  num_needs_max: 15
+
+# 路径 (相对于 generation/ 目录)
+paths:
+  seeds: "../data/seeds/seed_descriptions.json"
+  scenarios: "../data/scenarios/"

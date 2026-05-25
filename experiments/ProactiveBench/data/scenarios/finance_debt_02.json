@@ -1,0 +1,405 @@
+{
+  "scenario_id": "finance_debt_02",
+  "domain": "financial_planning",
+  "description": "A user is looking to consolidate high-interest credit card debt. They need to compare personal loans, balance transfer cards, and debt snowball vs. avalanche methods.",
+  "user_profile": {
+    "persona": "35-year-old with moderate debt and stable income",
+    "context": "Feeling overwhelmed by monthly interest charges",
+    "communication_style": "Needs encouragement and a clear, math-based plan"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "user_profile",
+      "fact": "The user persona is Alex Chen, age 35, working as a Senior Project Manager."
+    },
+    {
+      "id": "F02",
+      "category": "user_profile",
+      "fact": "Alex Chen's annual gross income is $85,000."
+    },
+    {
+      "id": "F03",
+      "category": "user_profile",
+      "fact": "Alex's primary financial goal is to become debt-free within 3 years to start saving for a home down payment."
+    },
+    {
+      "id": "F04",
+      "category": "debt_portfolio",
+      "fact": "Alex has a total credit card debt of $15,000 spread across three cards."
+    },
+    {
+      "id": "F05",
+      "category": "debt_portfolio",
+      "fact": "The 'Apex Credit' card has a balance of $8,500 with a 24.99% Annual Percentage Rate (APR)."
+    },
+    {
+      "id": "F06",
+      "category": "debt_portfolio",
+      "fact": "The 'Momentum Visa' card has a balance of $4,200 with a 19.50% APR."
+    },
+    {
+      "id": "F07",
+      "category": "debt_portfolio",
+      "fact": "The 'Summit Rewards' card has a balance of $2,300 with a 28.90% APR."
+    },
+    {
+      "id": "F08",
+      "category": "debt_portfolio",
+      "fact": "Alex's current total minimum monthly payment for all three cards is $475."
+    },
+    {
+      "id": "F09",
+      "category": "budget_and_income",
+      "fact": "Alex's monthly take-home pay after taxes and deductions is $5,100."
+    },
+    {
+      "id": "F10",
+      "category": "budget_and_income",
+      "fact": "After all essential monthly expenses (rent, utilities, food, etc.), Alex has allocated $800 for debt repayment."
+    },
+    {
+      "id": "F11",
+      "category": "personal_loan_option",
+      "fact": "Keystone Lending has pre-approved Alex for a $15,000 personal loan with a 36-month term."
+    },
+    {
+      "id": "F12",
+      "category": "personal_loan_option",
+      "fact": "The Keystone Lending loan has a fixed APR of 11.9%."
+    },
+    {
+      "id": "F13",
+      "category": "personal_loan_option",
+      "fact": "This loan includes a 3% origination fee, which amounts to $450 deducted from the loan disbursement."
+    },
+    {
+      "id": "F14",
+      "category": "personal_loan_option",
+      "fact": "The calculated monthly payment for the Keystone Lending loan would be $497.58."
+    },
+    {
+      "id": "F15",
+      "category": "balance_transfer_option",
+      "fact": "Horizon Trust Bank offers the 'Horizon Zero' credit card with a 0% introductory APR for 18 months on balance transfers."
+    },
+    {
+      "id": "F16",
+      "category": "balance_transfer_option",
+      "fact": "The 'Horizon Zero' card has a balance transfer fee of 5% of the total amount transferred."
+    },
+    {
+      "id": "F17",
+      "category": "balance_transfer_option",
+      "fact": "To transfer Alex's full $15,000 debt, the fee would be $750, making the new balance $15,750."
+    },
+    {
+      "id": "F18",
+      "category": "balance_transfer_option",
+      "fact": "After the 18-month introductory period, the 'Horizon Zero' card's APR will become a variable rate of 21.99%."
+    },
+    {
+      "id": "F19",
+      "category": "balance_transfer_option",
+      "fact": "To pay off the $15,750 balance within the 18-month 0% APR period, Alex would need to pay $875 per month."
+    },
+    {
+      "id": "F20",
+      "category": "debt_repayment_strategy",
+      "fact": "The Debt Snowball method involves paying off debts in order from the smallest balance to the largest, regardless of interest rate."
+    },
+    {
+      "id": "F21",
+      "category": "debt_repayment_strategy",
+      "fact": "Using the Snowball method, Alex's payoff order would be: 1. Summit Rewards ($2,300), 2. Momentum Visa ($4,200), 3. Apex Credit ($8,500)."
+    },
+    {
+      "id": "F22",
+      "category": "debt_repayment_strategy",
+      "fact": "The Debt Avalanche method involves paying off debts in order from the highest interest rate to the lowest."
+    },
+    {
+      "id": "F23",
+      "category": "debt_repayment_strategy",
+      "fact": "Using the Avalanche method, Alex's payoff order would be: 1. Summit Rewards (28.90%), 2. Apex Credit (24.99%), 3. Momentum Visa (19.50%)."
+    },
+    {
+      "id": "F24",
+      "category": "debt_repayment_strategy",
+      "fact": "Mathematically, the Debt Avalanche method will result in paying $642 less in total interest compared to the Debt Snowball method for Alex's specific debts."
+    },
+    {
+      "id": "F25",
+      "category": "debt_repayment_strategy",
+      "fact": "The psychological benefit of the Snowball method is achieving quick wins by eliminating smaller debts first, which can build motivation."
+    },
+    {
+      "id": "F26",
+      "category": "financial_advisor_details",
+      "fact": "Alex has a consultation scheduled with Maria Garcia, a Certified Financial Planner at 'Clarity Financial Partners'."
+    },
+    {
+      "id": "F27",
+      "category": "financial_advisor_details",
+      "fact": "Maria Garcia's direct office phone number is 555-0182, and her email is m.garcia@clarityfp.com."
+    },
+    {
+      "id": "F28",
+      "category": "financial_advisor_details",
+      "fact": "The initial consultation with Clarity Financial Partners on June 15th, 2024, has a flat fee of $250."
+    },
+    {
+      "id": "F29",
+      "category": "online_tools",
+      "fact": "Alex is using the 'DebtDash' web application (app.debtdash.io) to model repayment scenarios."
+    },
+    {
+      "id": "F30",
+      "category": "online_tools",
+      "fact": "The 'DebtDash' simulation (ID #A7B3C9) shows that the personal loan option would save Alex approximately $4,500 in interest over 3 years compared to his current path."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is my total credit card debt and what is my monthly budget for repayment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F04",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current Debt Situation",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "What are the specific balances and APRs for each of my three credit cards?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "After understanding the total debt, the user will want a detailed breakdown of the individual components.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Current Debt Situation",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the term length and APR for the Keystone Lending personal loan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Personal Loan Option",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "What is the monthly payment and origination fee for the Keystone loan?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F13"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "After learning the basic loan terms, the user's next logical questions are about the actual costs: the monthly payment and any upfront fees.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Personal Loan Option",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What are the 0% intro APR period and balance transfer fee for the Horizon Zero card?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15",
+        "F16"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After understanding the full cost of the personal loan option, the user will naturally want to evaluate the other primary consolidation option, the balance transfer card.",
+      "turn_order": 5,
+      "reveal_group": "G3",
+      "reveal_group_label": "Balance Transfer Option",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "To pay off the balance transfer within the intro period, what would the required monthly payment be?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "This is a direct follow-up to determine if paying off the debt within the 0% APR period is feasible with the user's budget.",
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Balance Transfer Option",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What is the payoff order for my debts using the Debt Avalanche method?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After exploring the two consolidation options, the user will likely consider the alternative: not consolidating and instead using a specific repayment strategy. The math-based Avalanche method is a natural first query.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Debt Avalanche Method",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the payoff order for my debts using the Debt Snowball method?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "CROSS-GROUP: After asking about one repayment strategy (Avalanche), it is highly predictable the user will ask about the other common strategy (Snowball) for comparison.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Debt Snowball Method",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N9",
+      "description": "How much less in total interest does the Debt Avalanche method save compared to the Debt Snowball method for my debts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F24"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Once the user understands the two methods, the most important question is the quantitative difference in their financial outcomes.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Strategy Comparison",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Based on my current card balances/APRs and the Keystone loan terms, about how much interest could the personal loan save compared with my current path?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F30"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "CROSS-GROUP: After getting the loan's monthly payment and origination fee, a natural next question is the bigger-picture benefit—roughly how much interest the personal loan could save compared with staying on the current repayment path.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Online Tool Result",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N11",
+      "description": "What is the fee for the initial consultation with Clarity Financial Partners and when is it scheduled?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 11,
+      "reveal_group": "G8",
+      "reveal_group_label": "Financial Advisor Details",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Current Debt Situation",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Personal Loan Option",
+      "member_need_ids": [
+        "N3",
+        "N4"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Balance Transfer Option",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Debt Avalanche Method",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Debt Snowball Method",
+      "member_need_ids": [
+        "N8"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G6",
+      "label": "Strategy Comparison",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G5"
+    },
+    {
+      "group_id": "G7",
+      "label": "Online Tool Result",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G8",
+      "label": "Financial Advisor Details",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": null
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "finance_debt_02",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

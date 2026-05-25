@@ -1,0 +1,399 @@
+{
+  "scenario_id": "bus_route_exception_memory_01",
+  "domain": "school_transportation_operations",
+  "description": "A dispatcher needs to remember recurring route exceptions such as temporary closures, alternate stops, construction detours, and seasonal access changes that affect one school route. All districts and routes are fictional.",
+  "user_profile": {
+    "persona": "43-year-old transportation dispatcher overseeing several school routes with frequent local disruptions",
+    "context": "The official route map is stable, but daily reality includes enough exceptions that drivers still need a reliable memory aid",
+    "communication_style": "Operational and route-focused, wants recurring exceptions separated from one-off incidents"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "Route_Profile",
+      "fact": "Route 12 is designated for students attending Northwood Elementary School."
+    },
+    {
+      "id": "F02",
+      "category": "Route_Profile",
+      "fact": "The operating district for Route 12 is the Maple Creek School District."
+    },
+    {
+      "id": "F03",
+      "category": "Route_Profile",
+      "fact": "The standard morning departure time for Route 12 from the main depot is 6:45 AM."
+    },
+    {
+      "id": "F04",
+      "category": "Route_Profile",
+      "fact": "The primary driver assigned to Route 12 is Maria Garcia."
+    },
+    {
+      "id": "F05",
+      "category": "Seasonal_Exceptions",
+      "fact": "Elk Ridge Road is closed to all school bus traffic from December 1st to March 15th annually due to hazardous winter conditions."
+    },
+    {
+      "id": "F06",
+      "category": "Seasonal_Exceptions",
+      "fact": "The approved winter detour for the Elk Ridge Road closure is via Aspen Drive to Pine Street, rejoining the route at Hilltop Lane."
+    },
+    {
+      "id": "F07",
+      "category": "Seasonal_Exceptions",
+      "fact": "The winter detour for Elk Ridge Road adds approximately 12 minutes to the Route 12 morning schedule."
+    },
+    {
+      "id": "F08",
+      "category": "Seasonal_Exceptions",
+      "fact": "The spring reopening of Elk Ridge Road must be confirmed by a road condition report from the Aspen Falls County Public Works department, report code 'RC-CLEAR'."
+    },
+    {
+      "id": "F09",
+      "category": "Construction_Detours",
+      "fact": "The Oak Street Bridge is closed for a reconstruction project with a scheduled completion date of October 31, 2024."
+    },
+    {
+      "id": "F10",
+      "category": "Construction_Detours",
+      "fact": "The official detour for the Oak Street Bridge closure is east on Willow Avenue, south on 5th Street, and west on Chestnut Boulevard."
+    },
+    {
+      "id": "F11",
+      "category": "Construction_Detours",
+      "fact": "Bus stops #12-08 (Oak & 2nd) and #12-09 (Oak & 4th) are suspended for the duration of the Oak Street Bridge construction."
+    },
+    {
+      "id": "F12",
+      "category": "Construction_Detours",
+      "fact": "A temporary stop, #12-08T, has been established at the corner of Willow Avenue and 3rd Street to accommodate students from the suspended stops."
+    },
+    {
+      "id": "F13",
+      "category": "Construction_Detours",
+      "fact": "The municipal construction project ID for the Oak Street Bridge is AF-CONST-2024-07B."
+    },
+    {
+      "id": "F14",
+      "category": "Recurring_Events",
+      "fact": "Main Street, between First Avenue and Third Avenue, is closed every Friday from 7:00 AM to 1:00 PM for the weekly farmer's market."
+    },
+    {
+      "id": "F15",
+      "category": "Recurring_Events",
+      "fact": "The Friday morning detour for the Main Street closure is to use Cedar Street, which runs parallel one block north."
+    },
+    {
+      "id": "F16",
+      "category": "Recurring_Events",
+      "fact": "The Friday Main Street closure affects stop #12-04; students are instructed to use stop #12-03 at Main & First Avenue."
+    },
+    {
+      "id": "F17",
+      "category": "Recurring_Events",
+      "fact": "The farmer's market on Main Street operates seasonally from May 1st through September 30th each year."
+    },
+    {
+      "id": "F18",
+      "category": "Alternate_Stops",
+      "fact": "An alternate pickup stop is required for student Liam Miller (Student ID: 481516) every Tuesday morning."
+    },
+    {
+      "id": "F19",
+      "category": "Alternate_Stops",
+      "fact": "Liam Miller's alternate pickup location is the Maple Creek Community Clinic at 789 Healthway Drive."
+    },
+    {
+      "id": "F20",
+      "category": "Alternate_Stops",
+      "fact": "The scheduled pickup time for Liam Miller at the clinic is exactly 7:55 AM on Tuesdays."
+    },
+    {
+      "id": "F21",
+      "category": "Alternate_Stops",
+      "fact": "Liam Miller's parent, Sarah Miller, must confirm the alternate pickup via the ParentLink app by 8:00 PM the prior evening, or the bus defaults to the home stop."
+    },
+    {
+      "id": "F22",
+      "category": "Alternate_Stops",
+      "fact": "The reason code on file for Liam Miller's alternate stop is 'MED-RECUR', for recurring physical therapy appointments."
+    },
+    {
+      "id": "F23",
+      "category": "Vehicle_Information",
+      "fact": "The assigned vehicle for Route 12 is Bus #207, a 2022 Blue Bird Vision model."
+    },
+    {
+      "id": "F24",
+      "category": "Vehicle_Information",
+      "fact": "Bus #207 has a maximum passenger capacity of 72 elementary school students."
+    },
+    {
+      "id": "F25",
+      "category": "Communication_Protocols",
+      "fact": "All real-time updates and exception alerts for Route 12 are posted in the dispatch Slack channel `#route12-alerts`."
+    },
+    {
+      "id": "F26",
+      "category": "Communication_Protocols",
+      "fact": "The official radio call sign for the bus operating Route 12 is 'Badger 12'."
+    },
+    {
+      "id": "F27",
+      "category": "Communication_Protocols",
+      "fact": "Driver Maria Garcia is required to confirm receipt of any same-day route changes via a 'copy that' radio call back to dispatch."
+    },
+    {
+      "id": "F28",
+      "category": "Communication_Protocols",
+      "fact": "A daily route exception summary must be emailed to the substitute driver pool alias `sub_drivers@maplecreek.edu` by 5:30 AM."
+    },
+    {
+      "id": "F29",
+      "category": "System_and_Tools",
+      "fact": "The district's official routing and scheduling software is RouteOptix Pro version 4.1."
+    },
+    {
+      "id": "F30",
+      "category": "System_and_Tools",
+      "fact": "The login URL for the RouteOptix Pro dispatcher portal is https://maplecreek.routeoptix.com/login."
+    },
+    {
+      "id": "F31",
+      "category": "System_and_Tools",
+      "fact": "The in-vehicle navigation and communication tablet assigned to Bus #207 is a Samsung Galaxy Tab Active3, asset tag #MCSD-T3-045."
+    },
+    {
+      "id": "F32",
+      "category": "Key_Contacts",
+      "fact": "The primary contact at Northwood Elementary for attendance and student drop-off issues is front desk administrator Susan Bell at 555-0102."
+    },
+    {
+      "id": "F33",
+      "category": "Key_Contacts",
+      "fact": "The Maple Creek School District Transportation Manager is David Chen, reachable at extension 4501 for route emergencies or schedule approvals."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the detour and scheduled completion date for the Oak Street Bridge construction project?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F09",
+        "F10"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Construction Detour",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Which bus stops are suspended due to the Oak Street Bridge closure, and where is the temporary replacement stop located?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "This is a natural follow-up to learning about a major construction detour, focusing on its direct impact on student pickups.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Construction Detour",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What are the dates and the approved detour for the annual winter closure of Elk Ridge Road?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05",
+        "F06"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Seasonal Closure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "How much extra time does the Elk Ridge Road winter detour add to the morning schedule?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F07"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "CROSS-GROUP: After learning about a seasonal detour, the dispatcher's immediate next concern would be its impact on the route's timing.",
+      "turn_order": 4,
+      "reveal_group": "G3",
+      "reveal_group_label": "Schedule Impact",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N5",
+      "description": "What are the details of the recurring Friday closure on Main Street, including the detour and the seasonal dates of operation?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F14",
+        "F15",
+        "F17"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 5,
+      "reveal_group": "G4",
+      "reveal_group_label": "Weekly Event Closure",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N6",
+      "description": "Which bus stop is affected by the Friday farmer's market, and what are the instructions for students on those days?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F16"
+      ],
+      "predictable_after": "N5",
+      "prediction_reason": "This is an intra-group follow-up to clarify the specific impact of the weekly closure on students and stops.",
+      "turn_order": 6,
+      "reveal_group": "G4",
+      "reveal_group_label": "Weekly Event Closure",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N7",
+      "description": "What are the specific details for Liam Miller's alternate pickup, including the day, location, and time?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F18",
+        "F19",
+        "F20"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 7,
+      "reveal_group": "G5",
+      "reveal_group_label": "Student-Specific Exception",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What is the confirmation procedure required for Liam Miller's alternate pickup to be active?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F21"
+      ],
+      "predictable_after": "N7",
+      "prediction_reason": "After learning about a conditional student exception, the dispatcher must know the specific protocol to follow.",
+      "turn_order": 8,
+      "reveal_group": "G5",
+      "reveal_group_label": "Student-Specific Exception",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What deadline and substitute-driver email alias apply to the daily route exception summary?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After covering all major recurring route exceptions, a logical next thought is how to communicate this summary to other drivers, especially substitutes.",
+      "turn_order": 9,
+      "reveal_group": "G6",
+      "reveal_group_label": "Communication Protocols",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "Who is the contact person at Northwood Elementary for student drop-off issues?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F32"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Discussing a specific student's alternate stop protocol naturally leads to the need for a contact at the destination school in case of any issues.",
+      "turn_order": 10,
+      "reveal_group": "G7",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Construction Detour",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Seasonal Closure",
+      "member_need_ids": [
+        "N3"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Schedule Impact",
+      "member_need_ids": [
+        "N4"
+      ],
+      "trigger_after": "G2"
+    },
+    {
+      "group_id": "G4",
+      "label": "Weekly Event Closure",
+      "member_need_ids": [
+        "N5",
+        "N6"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G5",
+      "label": "Student-Specific Exception",
+      "member_need_ids": [
+        "N7",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Communication Protocols",
+      "member_need_ids": [
+        "N9"
+      ],
+      "trigger_after": "G4"
+    },
+    {
+      "group_id": "G7",
+      "label": "Key Contacts",
+      "member_need_ids": [
+        "N10"
+      ],
+      "trigger_after": "G5"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "bus_route_exception_memory_01",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "scenario_id": "relocate_pet_03",
+  "domain": "relocation",
+  "description": "A user is moving to Australia with a pet dog. They face a conflict: the apartment they signed has a 'no pets' clause (discovered late), and Australia's quarantine laws require 6 months of prep. They must reconcile housing and strict biosecurity rules.",
+  "user_profile": {
+    "persona": "27-year-old graphic designer, devoted dog owner",
+    "context": "Moving in 3 months, just realized the rental agreement conflict",
+    "communication_style": "Highly protective of pet, needs specific legal/procedural advice"
+  },
+  "fact_sheet": [
+    {
+      "id": "F01",
+      "category": "housing",
+      "fact": "Zara Kowalski signed a 12-month lease for Unit 12B at The Quay Residences, 45 Harbourview Parade, Sydney, NSW 2000."
+    },
+    {
+      "id": "F02",
+      "category": "housing",
+      "fact": "The lease agreement, signed on May 15, 2024, has a tenancy start date of September 1, 2024."
+    },
+    {
+      "id": "F03",
+      "category": "housing",
+      "fact": "Clause 27.4 of the residential tenancy agreement explicitly states 'No animals or pets of any kind are to be kept on the premises without prior written consent from the landlord'."
+    },
+    {
+      "id": "F04",
+      "category": "housing",
+      "fact": "The monthly rent for Unit 12B is AUD $3,200."
+    },
+    {
+      "id": "F05",
+      "category": "financial",
+      "fact": "Zara paid a rental bond of AUD $12,800, equivalent to four weeks' rent, on May 16, 2024, via the NSW Rental Bonds Online portal."
+    },
+    {
+      "id": "F06",
+      "category": "housing",
+      "fact": "The property manager for The Quay Residences is David Chen of Harbourfront Properties Pty Ltd."
+    },
+    {
+      "id": "F07",
+      "category": "admin",
+      "fact": "David Chen's direct email address is d.chen@harbourfrontprop.com.au."
+    },
+    {
+      "id": "F08",
+      "category": "legal",
+      "fact": "Zara contacted 'Tenancy Rights NSW', a fictional community legal center, on June 3, 2024, for advice."
+    },
+    {
+      "id": "F09",
+      "category": "legal",
+      "fact": "Her case file number with Tenancy Rights NSW is TR-2024-815."
+    },
+    {
+      "id": "F10",
+      "category": "legal",
+      "fact": "Paralegal Priya Sharma advised Zara that breaking the lease before the start date could incur a break fee equivalent to 4 weeks' rent (AUD $3,200)."
+    },
+    {
+      "id": "F11",
+      "category": "pet_quarantine",
+      "fact": "Zara's dog, Milo, is a 4-year-old male Beagle with microchip number 985112007458123."
+    },
+    {
+      "id": "F12",
+      "category": "timeline",
+      "fact": "The mandatory 180-day quarantine preparation period for Milo started on March 10, 2024, following his initial rabies antibody blood test."
+    },
+    {
+      "id": "F13",
+      "category": "pet_quarantine",
+      "fact": "Milo's rabies antibody test, performed by Dr. Emily Vance at Oakwood Veterinary Clinic, showed a result of 0.9 IU/mL."
+    },
+    {
+      "id": "F14",
+      "category": "pet_quarantine",
+      "fact": "The Australian Department of Agriculture, Fisheries and Forestry (DAFF) requires a minimum passing rabies antibody test result of 0.5 IU/mL."
+    },
+    {
+      "id": "F15",
+      "category": "timeline",
+      "fact": "Milo's earliest possible date of entry into Australia is September 6, 2024."
+    },
+    {
+      "id": "F16",
+      "category": "admin",
+      "fact": "Zara submitted the import permit application for Milo on April 5, 2024, via the BICON online portal."
+    },
+    {
+      "id": "F17",
+      "category": "financial",
+      "fact": "The import permit application fee paid to DAFF was AUD $480."
+    },
+    {
+      "id": "F18",
+      "category": "pet_quarantine",
+      "fact": "Milo is booked for a mandatory 10-day stay at the Eastern Creek Post-Entry Quarantine Facility in Sydney."
+    },
+    {
+      "id": "F19",
+      "category": "financial",
+      "fact": "The cost for the 10-day quarantine stay is AUD $2,100, which includes accommodation, food, and standard veterinary checks."
+    },
+    {
+      "id": "F20",
+      "category": "logistics",
+      "fact": "Zara hired 'Global Paws Logistics' to manage Milo's relocation from San Francisco (SFO) to Sydney (SYD)."
+    },
+    {
+      "id": "F21",
+      "category": "financial",
+      "fact": "The total quote from Global Paws Logistics is USD $5,500, which includes the flight, IATA-compliant travel crate, and final health certifications."
+    },
+    {
+      "id": "F22",
+      "category": "logistics",
+      "fact": "The relocation consultant at Global Paws Logistics is Ben Carter, contactable at ben.carter@globalpawslogistics.com."
+    },
+    {
+      "id": "F23",
+      "category": "logistics",
+      "fact": "Due to the potential 6-day gap between Zara's arrival and Milo's, Zara has booked Milo into 'Happy Tails Boarding Kennels' in San Francisco from August 30 to September 5, 2024."
+    },
+    {
+      "id": "F24",
+      "category": "financial",
+      "fact": "The cost for the 6-night stay at Happy Tails Boarding Kennels is USD $360."
+    },
+    {
+      "id": "F25",
+      "category": "timeline",
+      "fact": "Zara's own flight to Sydney is booked for August 31, 2024."
+    },
+    {
+      "id": "F26",
+      "category": "logistics",
+      "fact": "Milo's flight (QF74) is tentatively booked to depart SFO on September 5, 2024, arriving in SYD on September 7, 2024."
+    },
+    {
+      "id": "F27",
+      "category": "admin",
+      "fact": "Zara is moving to Australia on a Skilled Independent visa (subclass 189)."
+    },
+    {
+      "id": "F28",
+      "category": "admin",
+      "fact": "The DAFF-issued import permit number for Milo is IAP-2024-M7890."
+    },
+    {
+      "id": "F29",
+      "category": "financial",
+      "fact": "The total estimated cost for Milo's relocation, including all fees, services, and quarantine, is AUD $11,540."
+    },
+    {
+      "id": "F30",
+      "category": "legal",
+      "fact": "Priya Sharma advised Zara to formally request an exemption to the 'no pets' clause from the landlord, referencing the NSW Strata Schemes Management Act 2015."
+    },
+    {
+      "id": "F31",
+      "category": "housing",
+      "fact": "On June 5, 2024, Zara sent a formal email to David Chen attaching a 'pet resume' for Milo, including his training certificates and vaccination records."
+    },
+    {
+      "id": "F32",
+      "category": "pet_quarantine",
+      "fact": "Milo requires a final government-endorsed veterinary examination (Vet B) within 5 days of his departure to Australia."
+    },
+    {
+      "id": "F33",
+      "category": "pet_quarantine",
+      "fact": "Milo must receive two internal parasite treatments effective against nematodes and cestodes, with the second treatment administered within 5 days of departure."
+    },
+    {
+      "id": "F35",
+      "category": "legal",
+      "fact": "Tenancy Rights NSW advised Zara to email the property manager requesting written consent for Milo, reference Clause 27.4 and the NSW Strata Schemes Management Act 2015, and attach supporting pet documents such as vaccination records and training certificates."
+    },
+    {
+      "id": "F34",
+      "category": "admin",
+      "fact": "Zara's new employer in Sydney is 'PixelPerfect Design Studio', located at 100 George Street, The Rocks."
+    }
+  ],
+  "user_needs": [
+    {
+      "id": "N1",
+      "description": "What is the exact wording of the 'no pets' clause in my Sydney apartment lease?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F03"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 1,
+      "reveal_group": "G1",
+      "reveal_group_label": "Lease Conflict",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N2",
+      "description": "Given the 'no pets' clause, what break fee was I told to expect if I decide to cancel the lease before it starts?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F10"
+      ],
+      "predictable_after": "N1",
+      "prediction_reason": "Intra-group: After reviewing the exact wording of the 'no pets' clause, the user's next concern is the concrete financial penalty if they back out before move-in.",
+      "turn_order": 2,
+      "reveal_group": "G1",
+      "reveal_group_label": "Lease Conflict",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N3",
+      "description": "What specific steps did Tenancy Rights NSW advise me to take with the landlord about the 'no pets' clause?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F30",
+        "F35"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 3,
+      "reveal_group": "G2",
+      "reveal_group_label": "Lease Resolution Path",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N4",
+      "description": "Who should I address the formal pet exemption request to, and through which contact channel?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "predictable_after": "N3",
+      "prediction_reason": "Intra-group: After recalling the advice to make a formal request, the next step is identifying the correct contact and channel to use.",
+      "turn_order": 4,
+      "reveal_group": "G2",
+      "reveal_group_label": "Lease Resolution Path",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N5",
+      "description": "What supporting material should I include with the formal pet exemption request to strengthen my case with the landlord?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F31",
+        "F35"
+      ],
+      "predictable_after": "N4",
+      "prediction_reason": "After identifying who to send the exemption request to and through which channel, the next natural step is deciding what supporting material to attach.",
+      "turn_order": 5,
+      "reveal_group": "G2",
+      "reveal_group_label": "Lease Resolution Path",
+      "reveal_priority": 3
+    },
+    {
+      "id": "N6",
+      "description": "Based on Australia's import timeline alone, what is the earliest possible date that Milo can enter Australia?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F15"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 6,
+      "reveal_group": "G3",
+      "reveal_group_label": "Pet Arrival Timeline",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N7",
+      "description": "Did Milo's rabies antibody test meet the minimum requirement for entry into Australia?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F13",
+        "F14"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "CROSS-GROUP: After confirming the earliest arrival date for the pet, the user would naturally want to verify that the most critical prerequisite (the rabies test) was successfully met to enable that timeline.",
+      "turn_order": 7,
+      "reveal_group": "G4",
+      "reveal_group_label": "Pet Health Check",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N8",
+      "description": "What tentative travel dates do I currently have on hold for Milo's SFO-to-Sydney flight?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F26"
+      ],
+      "predictable_after": "N6",
+      "prediction_reason": "Intra-group: After confirming the earliest possible arrival date, the user may want to check the tentative flight dates lined up to meet that window.",
+      "turn_order": 8,
+      "reveal_group": "G3",
+      "reveal_group_label": "Pet Arrival Timeline",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N9",
+      "description": "What is the current all-in estimated cost budgeted for Milo's relocation to Australia?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F29"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 9,
+      "reveal_group": "G5",
+      "reveal_group_label": "Pet Relocation Costs",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N10",
+      "description": "How much is the mandatory 10-day quarantine stay at the Eastern Creek facility?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F19"
+      ],
+      "predictable_after": "N9",
+      "prediction_reason": "Intra-group: After seeing the total relocation cost, the user is likely to ask about the cost of specific major components, like the mandatory quarantine.",
+      "turn_order": 10,
+      "reveal_group": "G5",
+      "reveal_group_label": "Pet Relocation Costs",
+      "reveal_priority": 2
+    },
+    {
+      "id": "N11",
+      "description": "What are the specific final veterinary treatments Milo must receive within 5 days of his departure?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F32",
+        "F33"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Knowing the specific flight date makes the user focus on the immediate, time-sensitive tasks that must be completed just before departure.",
+      "turn_order": 11,
+      "reveal_group": "G6",
+      "reveal_group_label": "Final Pet Prep",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N12",
+      "description": "Do I already have Milo's Australian import permit on file, and what is its permit number?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F28"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "After reviewing the tentative flight plan, the user may want to confirm that the import permit is already in hand and note its reference number.",
+      "turn_order": 12,
+      "reveal_group": "G7",
+      "reveal_group_label": "Admin Identifiers",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N13",
+      "description": "What boarding arrangements have been made for Milo in San Francisco for the gap between my departure and his?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F23"
+      ],
+      "predictable_after": "N8",
+      "prediction_reason": "CROSS-GROUP: Reviewing Milo's flight date (Sept 5) and knowing their own flight date (Aug 31) highlights a logistical gap, prompting a question about the interim care arrangements.",
+      "turn_order": 13,
+      "reveal_group": "G8",
+      "reveal_group_label": "Interim Logistics",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N14",
+      "description": "Who is my consultant at Global Paws Logistics and what is their email?",
+      "level": "nice-to-have",
+      "key_fact_ids": [
+        "F22"
+      ],
+      "predictable_after": null,
+      "prediction_reason": null,
+      "turn_order": 14,
+      "reveal_group": "G9",
+      "reveal_group_label": "Key Contacts",
+      "reveal_priority": 1
+    },
+    {
+      "id": "N15",
+      "description": "If I end up breaking the lease before it starts, how much rental bond is currently tied up in the apartment?",
+      "level": "must-have",
+      "key_fact_ids": [
+        "F05"
+      ],
+      "predictable_after": "N2",
+      "prediction_reason": "CROSS-GROUP: After discussing the potential lease break fee, the user would likely want to confirm how much rental bond is currently tied up in the property.",
+      "turn_order": 15,
+      "reveal_group": "G10",
+      "reveal_group_label": "Housing Financials",
+      "reveal_priority": 1
+    }
+  ],
+  "reveal_groups": [
+    {
+      "group_id": "G1",
+      "label": "Lease Conflict",
+      "member_need_ids": [
+        "N1",
+        "N2"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G2",
+      "label": "Lease Resolution Path",
+      "member_need_ids": [
+        "N3",
+        "N4",
+        "N5"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G3",
+      "label": "Pet Arrival Timeline",
+      "member_need_ids": [
+        "N6",
+        "N8"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G4",
+      "label": "Pet Health Check",
+      "member_need_ids": [
+        "N7"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G5",
+      "label": "Pet Relocation Costs",
+      "member_need_ids": [
+        "N9",
+        "N10"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G6",
+      "label": "Final Pet Prep",
+      "member_need_ids": [
+        "N11"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G7",
+      "label": "Admin Identifiers",
+      "member_need_ids": [
+        "N12"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G8",
+      "label": "Interim Logistics",
+      "member_need_ids": [
+        "N13"
+      ],
+      "trigger_after": "G3"
+    },
+    {
+      "group_id": "G9",
+      "label": "Key Contacts",
+      "member_need_ids": [
+        "N14"
+      ],
+      "trigger_after": null
+    },
+    {
+      "group_id": "G10",
+      "label": "Housing Financials",
+      "member_need_ids": [
+        "N15"
+      ],
+      "trigger_after": "G1"
+    }
+  ],
+  "simulator_config": {
+    "need_reveal_strategy": "grouped",
+    "patience": "medium",
+    "max_turns": 10
+  },
+  "metadata": {
+    "seed_id": "relocate_pet_03",
+    "variant": null,
+    "generated_by": "gemini-2.5-pro",
+    "reviewed": false,
+    "review_status": null
+  }
+}

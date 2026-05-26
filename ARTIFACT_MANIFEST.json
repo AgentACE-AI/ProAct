@@ -2,7 +2,8 @@
   "artifact": "proact-public-release",
   "paper": "ProAct",
   "publication": {
-    "arxiv": "pending",
+    "arxiv": "https://arxiv.org/abs/2605.25971",
+    "showcase": "https://agentace-ai.github.io/proact-showcase/",
     "repository": "https://github.com/AgentACE-AI/ProAct"
   },
   "anonymous": false,

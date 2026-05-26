@@ -1,6 +1,6 @@
 # Reproduction Commands
 
-Run these commands from the repository root.
+Run these commands from the repository root. The README gives the recommended quick path; this file is the compact command appendix.
 
 ## Environment
 
@@ -26,6 +26,25 @@ python -m unittest \
 ```
 
 ## ProActEval Main Evaluation
+
+Single-scenario smoke run:
+
+```bash
+python -m experiments.ProactiveBench.eval.runner \
+  --scenario-dir experiments/ProactiveBench/data/scenarios \
+  --output-dir outputs/proacteval_smoke \
+  --conditions Baseline Blind Full-single-idle \
+  --seed 42 \
+  --judge-model gpt-4o-mini \
+  --simulator-model gpt-4o \
+  --max-queries-per-search 1 \
+  --max-intents-per-idle 3 \
+  --idle-trigger-seconds 5.0 \
+  --max-total-searches 999 \
+  --only finance_basic_01
+```
+
+Full 200-scenario run:
 
 ```bash
 python -m experiments.ProactiveBench.eval.runner \
